@@ -3587,7 +3587,7 @@
 			(pintype "passive")
 			(uuid "7679723f-11a0-4ba6-a8a3-62fb5c1cd208")
 		)
-		(model "/Users/michaelsmith/git/rp2040-decoder-e24/rp2040-decoder-usb-adapter/505070-2422.stp"
+		(model "505070-2422.stp"
 			(offset
 				(xyz 0 0 0.01999999925)
 			)
