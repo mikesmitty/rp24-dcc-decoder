@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.7,
+          "width": 1.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,15 +60,13 @@
       ],
       "drc_exclusions": [
         "lib_footprint_mismatch|100852500|107775000|1a844749-ed6d-4d41-bfe5-b8cbee214620|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|101367500|101897500|02713301-f9dc-4423-8c72-d9cfff68b263|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|101237500|101897500|02713301-f9dc-4423-8c72-d9cfff68b263|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|103092500|107770000|b646b5cc-a56f-42dc-8444-e3c9ccc93530|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|104612500|107800000|acf8504d-dc75-4e2d-8c31-bd90e40cb269|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|104647500|107780000|acf8504d-dc75-4e2d-8c31-bd90e40cb269|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|105390000|100800000|6378df5f-91f2-4f33-a4fe-945780e2b92d|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|107470000|107520000|facf3d01-5d5e-4c77-8272-e10cdc4c578f|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|113247500|102110000|42691da1-12fa-4099-aa7c-09a746d981d1|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|117960000|105400000|722ffe13-ede9-4184-8325-d7bfb0252953|00000000-0000-0000-0000-000000000000",
-        "silk_overlap|105793755|102780171|e88ba72a-796d-4486-b31e-ce7d6a23c734|1c78bcb4-e57a-48d7-b927-e19991565b6e",
-        "silk_overlap|107955629|101477027|e88ba72a-796d-4486-b31e-ce7d6a23c734|cf4c6926-4063-476c-83d3-ec675702a282"
+        "lib_footprint_mismatch|106420000|107530000|facf3d01-5d5e-4c77-8272-e10cdc4c578f|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|107522500|101210000|ac653203-d99d-479c-9eb4-48177ed58ea0|00000000-0000-0000-0000-000000000000",
+        "silk_overlap|106720000|106665000|761ea452-d419-42ef-986c-10ae8dde6f53|1e81ee57-346c-4884-855f-162d1c876cc2"
       ],
       "meta": {
         "version": 2
@@ -520,7 +518,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
+        "track_width": 0.15,
         "via_diameter": 0.4,
         "via_drill": 0.3,
         "wire_width": 6
@@ -537,7 +535,7 @@
         "name": "USB_Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
+        "track_width": 0.15,
         "via_diameter": 0.4,
         "via_drill": 0.3,
         "wire_width": 6
