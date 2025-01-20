@@ -8443,9 +8443,9 @@
 		)
 		(uuid "ff2963fd-2a06-43ca-86fa-fdd247ebbf3f")
 	)
-	(text "Inrush current is unrestricted so \nCAP_ENABLE is off unless moving"
+	(text "Inrush current is restricted only by PWMing CAP_ENABLE. 100% duty cycle\nnot recommended with large caps, and only after receiving move command"
 		(exclude_from_sim no)
-		(at 92.202 82.296 0)
+		(at 92.202 80.518 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8531,9 +8531,9 @@
 		)
 		(uuid "af65f85f-bed2-4ec9-929a-f21403368729")
 	)
-	(text "Keep Alive Cap Low Voltage Cutoff"
+	(text "Ext. Capacitor Low Rail Voltage Cutoff"
 		(exclude_from_sim no)
-		(at 17.526 73.406 0)
+		(at 14.732 73.406 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -8542,7 +8542,7 @@
 		)
 		(uuid "cefb9bdc-87c5-487c-8cc5-d563010915f6")
 	)
-	(text "Keep Alive Cap Control"
+	(text "Ext. Capacitor Charge Control"
 		(exclude_from_sim no)
 		(at 94.234 73.66 0)
 		(effects
