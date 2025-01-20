@@ -5322,10 +5322,22 @@
 		(uuid "4cb08744-da9b-4090-bfbb-ee85b9855425")
 	)
 	(junction
+		(at 138.43 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51069172-e4ba-4aa0-96cd-0260d36bf98f")
+	)
+	(junction
 		(at 256.54 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "581cdba3-2ac7-4563-aa01-09e4492da9f1")
+	)
+	(junction
+		(at 138.43 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d858da5-3f6e-40d4-9e90-ff0078c8f85d")
 	)
 	(junction
 		(at 46.99 102.87)
@@ -5362,12 +5374,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72c5d92b-b3e2-420a-961f-f51b06c8e386")
-	)
-	(junction
-		(at 120.65 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78a5da0b-85d7-4e30-ba63-3ac440b3fb0d")
 	)
 	(junction
 		(at 218.44 143.51)
@@ -5513,6 +5519,12 @@
 		(color 0 0 0 0)
 		(uuid "f5ed8986-873d-4a7e-99cc-e02a7f7243f7")
 	)
+	(junction
+		(at 120.65 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f759bdb0-e4da-4066-a330-a2d0d84dc253")
+	)
 	(no_connect
 		(at 237.49 207.01)
 		(uuid "02c51a39-ede3-4d15-8f47-86ee30280527")
@@ -5610,6 +5622,16 @@
 			(type default)
 		)
 		(uuid "022f558c-e6b0-4882-9d54-1f7ae392cf65")
+	)
+	(wire
+		(pts
+			(xy 138.43 85.09) (xy 149.86 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03b1f68e-3c59-4511-9b92-01a042184b87")
 	)
 	(wire
 		(pts
@@ -6033,6 +6055,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 105.41) (xy 120.65 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c2fb70b-b698-4f63-9fad-3313d1966369")
+	)
+	(wire
+		(pts
 			(xy 104.14 153.67) (xy 111.76 153.67)
 		)
 		(stroke
@@ -6293,7 +6325,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 106.68) (xy 120.65 106.68)
+			(xy 116.84 105.41) (xy 120.65 105.41)
 		)
 		(stroke
 			(width 0)
@@ -6683,7 +6715,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 106.68) (xy 132.08 106.68)
+			(xy 120.65 105.41) (xy 138.43 105.41)
 		)
 		(stroke
 			(width 0)
@@ -6753,7 +6785,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 85.09) (xy 120.65 85.09)
+			(xy 120.65 85.09) (xy 138.43 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6870,6 +6902,16 @@
 			(type default)
 		)
 		(uuid "6ebda513-9717-4ba7-a24f-64fee913e91c")
+	)
+	(wire
+		(pts
+			(xy 138.43 105.41) (xy 149.86 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ecd88a1-eff9-49d1-b071-68e13218e824")
 	)
 	(wire
 		(pts
@@ -7213,16 +7255,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 106.68) (xy 120.65 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b176582-37fb-4243-846a-61e1175de213")
-	)
-	(wire
-		(pts
 			(xy 234.95 204.47) (xy 237.49 204.47)
 		)
 		(stroke
@@ -7543,6 +7575,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 90.17) (xy 138.43 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b44861cb-c2d5-43c6-ac36-0cebccf7e7cd")
+	)
+	(wire
+		(pts
 			(xy 172.72 179.07) (xy 184.15 179.07)
 		)
 		(stroke
@@ -7603,7 +7645,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 106.68) (xy 109.22 106.68)
+			(xy 107.95 105.41) (xy 109.22 105.41)
 		)
 		(stroke
 			(width 0)
@@ -8183,6 +8225,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 97.79) (xy 138.43 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15ec8a5-e60b-4b39-871f-08c8974812ca")
+	)
+	(wire
+		(pts
 			(xy 341.63 153.67) (xy 326.39 153.67)
 		)
 		(stroke
@@ -8686,7 +8738,7 @@
 		(uuid "33562d35-d4c1-440a-aead-58dd200db01d")
 	)
 	(label "CAP_VDC"
-		(at 132.08 106.68 180)
+		(at 149.86 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9076,7 +9128,7 @@
 		(uuid "9bd3c6b2-a454-49dc-b895-f586800a9de2")
 	)
 	(label "CAP+"
-		(at 132.08 85.09 180)
+		(at 149.86 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11410,7 +11462,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 113.03 106.68 0)
+		(at 113.03 105.41 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11419,23 +11471,23 @@
 		(dnp no)
 		(uuid "3fa41824-d0bf-4d81-bfa7-05aa8d6779b9")
 		(property "Reference" "D4"
-			(at 113.3475 100.33 0)
+			(at 113.3475 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1N5819WS"
-			(at 113.3475 102.87 0)
+		(property "Value" "PSBD2FD40V1H"
+			(at 113.3475 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 113.03 106.68 0)
+		(property "Footprint" "Diode_SMD:D_SOD-882"
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11443,8 +11495,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409300937_Guangdong-Hottech-1N5819WS_C191023.pdf"
-			(at 113.03 106.68 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2003091236_Shanghai-Prisemi-Elec-PSBD2FD40V1H_C492733.pdf"
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11453,7 +11505,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 113.03 106.68 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11461,8 +11513,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C191023"
-			(at 113.03 106.68 0)
+		(property "LCSC" "C492733"
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14795,7 +14847,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 107.95 106.68 90)
+		(at 107.95 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14804,7 +14856,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4d7c46f-541b-4cdf-8589-2927abf81674")
 		(property "Reference" "#PWR039"
-			(at 111.76 106.68 0)
+			(at 111.76 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14813,7 +14865,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 104.14 106.6799 90)
+			(at 104.14 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14822,7 +14874,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 106.68 0)
+			(at 107.95 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14831,7 +14883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 106.68 0)
+			(at 107.95 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14840,7 +14892,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 107.95 106.68 0)
+			(at 107.95 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14921,6 +14973,83 @@
 			(project "rp2040-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 138.43 93.98 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9a9a541-4f6f-49cc-83a2-8b6e33d4d79d")
+		(property "Reference" "D3"
+			(at 146.558 92.964 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PSBD2FD40V1H"
+			(at 146.812 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882"
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2003091236_Shanghai-Prisemi-Elec-PSBD2FD40V1H_C492733.pdf"
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C492733"
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "634a6f2c-169d-4873-bf29-7373d4fdfc27")
+		)
+		(pin "2"
+			(uuid "55dd623b-bf8b-4310-bf87-c32a9943f244")
+		)
+		(instances
+			(project "rp2040-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "D3")
 					(unit 1)
 				)
 			)

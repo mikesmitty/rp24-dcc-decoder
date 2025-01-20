@@ -47,6 +47,7 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 | N/A | i2s LRCLK | GPIO5 |
 | N/A | i2s BCLK | GPIO6 |
 | N/A | i2s DIN | GPIO7 |
+| N/A | Enable external keepalive capacitor | GPIO16 |
 
 # Images
 ## RP2040 Decoder E24
