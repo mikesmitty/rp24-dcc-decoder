@@ -12112,7 +12112,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "47uF"
 			(at 331.47 201.93 0)
 			(effects
 				(font
@@ -12121,7 +12121,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 333.0448 205.74 0)
 			(effects
 				(font
@@ -12165,7 +12165,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C96446"
+		(property "LCSC" "C403725"
 			(at 334.01 201.93 0)
 			(effects
 				(font
@@ -13424,7 +13424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.3x3.24mm"
+		(property "Footprint" "Package_SON:WSON-8-1EP_4x4mm_P0.8mm_EP2.2x3mm"
 			(at 120.65 176.53 0)
 			(effects
 				(font
@@ -15145,9 +15145,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "af8293a2-4c56-4fcb-ad83-4b43de96d411")
 		(property "Reference" "C4"
 			(at 72.39 52.705 0)
@@ -15185,7 +15185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Redundant to motor driver VDC cap"
 			(at 74.93 54.61 0)
 			(effects
 				(font
