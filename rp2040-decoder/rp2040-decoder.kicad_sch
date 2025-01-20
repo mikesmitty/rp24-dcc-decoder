@@ -5554,10 +5554,6 @@
 		(uuid "9ee07be5-9880-4e99-8ef2-6cded7f9c799")
 	)
 	(no_connect
-		(at 237.49 212.09)
-		(uuid "a030851b-e4ff-4727-9b38-395ac879e273")
-	)
-	(no_connect
 		(at 205.74 74.93)
 		(uuid "c5e3b0e2-0fe0-43a1-a506-68c50a26416a")
 	)
@@ -6907,16 +6903,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 212.09) (xy 237.49 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7447cb7d-a294-4174-952b-fb91e9d3ef3c")
-	)
-	(wire
-		(pts
 			(xy 274.32 143.51) (xy 274.32 144.78)
 		)
 		(stroke
@@ -7844,6 +7830,16 @@
 			(type default)
 		)
 		(uuid "d40257bd-e30b-4808-96a0-ba1c8b4c403b")
+	)
+	(wire
+		(pts
+			(xy 234.95 212.09) (xy 247.65 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d51005e8-17ee-4c2f-be28-ead37fcd5670")
 	)
 	(wire
 		(pts
@@ -9098,6 +9094,16 @@
 			(justify right bottom)
 		)
 		(uuid "a548a10e-e7c5-49e0-8e70-81318b32f4a6")
+	)
+	(label "CAP_ENABLE"
+		(at 247.65 212.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aadcbe32-722e-41e3-8503-768429df274d")
 	)
 	(label "GPIO26"
 		(at 325.12 68.58 0)
