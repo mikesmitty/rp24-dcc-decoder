@@ -8544,7 +8544,7 @@
 	)
 	(text "Ext. Capacitor Charge Control"
 		(exclude_from_sim no)
-		(at 94.234 73.66 0)
+		(at 95.758 73.152 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -10197,6 +10197,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_CORRECTION" "0;0;-90"
+			(at 88.9 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "27b9d20d-893e-4124-8cf6-b9e13c186a38")
 		)
@@ -11433,7 +11442,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;90"
+		(property "JLCPCB_CORRECTION" "0;0;-90"
 			(at 337.82 46.99 0)
 			(effects
 				(font
@@ -11666,7 +11675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2101111937_Shanghai-Mingda-Microelectronics-MD9927_C2684662.pdf"
 			(at 355.6 213.36 0)
 			(effects
 				(font
@@ -11987,7 +11996,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "-0.25;0;0"
+		(property "JLCPCB_CORRECTION" "0;-0.25;0"
 			(at 49.53 48.26 0)
 			(effects
 				(font
@@ -13415,7 +13424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Local Library:W25Q64JVXGIQ"
+		(property "Footprint" "Package_SON:WSON-8-1EP_4x4mm_P0.8mm_EP2.2x3mm"
 			(at 120.65 176.53 0)
 			(effects
 				(font
@@ -13433,7 +13442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "64Mb Serial Flash Memory, Standard/Dual/Quad SPI, WSON-8"
+		(property "Description" "64Mb Serial Flash Memory, Standard/Dual/Quad SPI, XSON-8"
 			(at 120.65 171.45 0)
 			(effects
 				(font
@@ -13451,7 +13460,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;90"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 120.65 199.39 0)
 			(effects
 				(font
@@ -13855,6 +13864,15 @@
 			)
 		)
 		(property "LCSC" "C7976"
+			(at 49.53 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
 			(at 49.53 95.25 0)
 			(effects
 				(font
@@ -14576,7 +14594,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;-90"
+		(property "JLCPCB_CORRECTION" "0;0;90"
 			(at 367.03 46.99 0)
 			(effects
 				(font
