@@ -11666,7 +11666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+		(property "Footprint" "Local Library:LM293QT"
 			(at 355.6 213.36 0)
 			(effects
 				(font
@@ -13424,7 +13424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_4x4mm_P0.8mm_EP2.2x3mm"
+		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.3x3.24mm"
 			(at 120.65 176.53 0)
 			(effects
 				(font
