@@ -67,8 +67,6 @@
         "lib_footprint_mismatch|106580000|107800000|facf3d01-5d5e-4c77-8272-e10cdc4c578f|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|107522500|101210000|ac653203-d99d-479c-9eb4-48177ed58ea0|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|117500000|105562500|de49199c-3c57-4a5b-8567-c02bd7e6c49e|00000000-0000-0000-0000-000000000000",
-        "silk_overlap|109040000|102840000|435af853-fe0a-4e7a-8a06-209c2bcffdae|140d5ef0-b0a8-4003-90b2-92f39f8352f9",
-        "silk_overlap|109040000|103510000|140d5ef0-b0a8-4003-90b2-92f39f8352f9|7f4d2d95-9b07-4462-bc31-5c94f1aad4af",
         "silk_overlap|113430000|106281252|0669f9c0-3a9b-466b-9d6f-1cbbeabf408b|553247c6-4681-4917-bdbd-69bfbb3fadfd"
       ],
       "meta": {
@@ -529,9 +527,9 @@
       {
         "bus_width": 12,
         "clearance": 0.11,
-        "diff_pair_gap": 0.18,
+        "diff_pair_gap": 0.11,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.25,
+        "diff_pair_width": 0.1443,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
