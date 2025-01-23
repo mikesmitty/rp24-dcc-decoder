@@ -5925,7 +5925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Local Library:Xunpu_TS-1088-AR02016"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816"
 			(at 113.03 78.74 0)
 			(effects
 				(font
@@ -5952,7 +5952,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C720477"
+		(property "LCSC" "C5504987"
 			(at 113.03 83.82 0)
 			(effects
 				(font
