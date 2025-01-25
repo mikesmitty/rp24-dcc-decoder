@@ -1,3 +1,5 @@
+View this project on [CADLAB.io](https://cadlab.io/project/28797). 
+
 # rp2040-decoder-e24
 DIY DCC decoder for model railroad locomotives in an E24 form factor suitable for N scale/gauge locomotives
 
