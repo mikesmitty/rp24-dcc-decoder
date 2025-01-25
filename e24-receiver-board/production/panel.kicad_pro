@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.5,
+          "width": 1.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -183,6 +183,7 @@
         0.14,
         0.15,
         0.2,
+        0.25,
         0.4
       ],
       "tuning_pattern_settings": {
@@ -315,6 +316,176 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
+        "name": "Board_10-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_11-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_12-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_13-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_14-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_15-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_16-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_17-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_18-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_19-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "Board_2-Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -339,6 +510,108 @@
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_4-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_5-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_6-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_7-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_8-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_9-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -349,7 +622,19 @@
     "netclass_patterns": [
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX7 (VDC)"
+        "pattern": "Board_0-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX3"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX10"
       },
       {
         "netclass": "Board_0-Default",
@@ -357,23 +642,31 @@
       },
       {
         "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_0-Default",
         "pattern": "Board_0-/AUX11"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-VDC"
+        "pattern": "Board_0-VCC"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX2 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/TRACK_RIGHT"
+        "pattern": "Board_0-/AUX4"
       },
       {
         "netclass": "Board_0-Default",
         "pattern": "Board_0-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/TRACK_RIGHT"
       },
       {
         "netclass": "Board_0-Default",
@@ -385,51 +678,11 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX4"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX1 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX10"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX3"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/MOTOR_A"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX5 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-VCC"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX8 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/LAMP_REAR"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX6 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
         "pattern": "Board_0-/AUX12"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-GND"
+        "pattern": "Board_0-VDC"
       },
       {
         "netclass": "Board_0-Default",
@@ -437,27 +690,27 @@
       },
       {
         "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-GND"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_0-Default",
         "pattern": "Board_0-/SPEAKER_N"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-GND"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/SPEAKER_N"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX6 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/MOTOR_A"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX10"
       },
       {
         "netclass": "Board_1-Default",
@@ -465,63 +718,7 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX2 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/TRACK_RIGHT"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX8 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/LAMP_REAR"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-VCC"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX12"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX5 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX7 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX4"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/TRACK_LEFT"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/MOTOR_B"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX3"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/LAMP_FRONT"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-VDC"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX11"
+        "pattern": "Board_1-/MOTOR_A"
       },
       {
         "netclass": "Board_1-Default",
@@ -529,27 +726,83 @@
       },
       {
         "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-VCC"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX4"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-GND"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX11"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX10"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX12"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX3"
+      },
+      {
+        "netclass": "Board_1-Default",
         "pattern": "Board_1-/SPEAKER_P"
       },
       {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/TRACK_LEFT"
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/TRACK_LEFT"
       },
       {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/MOTOR_B"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/SPEAKER_N"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX10"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX11"
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-VDC"
       },
       {
         "netclass": "Board_2-Default",
@@ -557,35 +810,11 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/LAMP_REAR"
+        "pattern": "Board_2-/AUX8 (VDC)"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX1 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/TRACK_RIGHT"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX3"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-GND"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX12"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX6 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/SPEAKER_P"
+        "pattern": "Board_2-/AUX10"
       },
       {
         "netclass": "Board_2-Default",
@@ -593,23 +822,15 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-VDC"
+        "pattern": "Board_2-/SPEAKER_N"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX8 (VDC)"
+        "pattern": "Board_2-/AUX12"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/MOTOR_A"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX2 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX4"
+        "pattern": "Board_2-VCC"
       },
       {
         "netclass": "Board_2-Default",
@@ -617,47 +838,63 @@
       },
       {
         "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX4"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_2-Default",
         "pattern": "Board_2-/LAMP_FRONT"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-VCC"
+        "pattern": "Board_2-/AUX1 (VDC)"
       },
       {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX7 (VDC)"
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-GND"
       },
       {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/LAMP_FRONT"
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX2 (VDC)"
       },
       {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/MOTOR_A"
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX11"
       },
       {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/SPEAKER_N"
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/TRACK_RIGHT"
       },
       {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/LAMP_REAR"
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-VDC"
       },
       {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX4"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX5 (VDC)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX6 (VDC)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/TRACK_LEFT"
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX3"
       },
       {
         "netclass": "Board_3-Default",
@@ -665,15 +902,15 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/CAP+"
+        "pattern": "Board_3-/LAMP_FRONT"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-VCC"
+        "pattern": "Board_3-/AUX6 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX2 (VDC)"
+        "pattern": "Board_3-/LAMP_REAR"
       },
       {
         "netclass": "Board_3-Default",
@@ -681,7 +918,15 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX8 (VDC)"
+        "pattern": "Board_3-/CAP+"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/SPEAKER_P"
       },
       {
         "netclass": "Board_3-Default",
@@ -689,11 +934,15 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX11"
+        "pattern": "Board_3-/AUX8 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX10"
+        "pattern": "Board_3-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX7 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
@@ -701,11 +950,7 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/MOTOR_B"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/SPEAKER_P"
+        "pattern": "Board_3-/AUX2 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
@@ -714,6 +959,1506 @@
       {
         "netclass": "Board_3-Default",
         "pattern": "Board_3-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX10"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-VCC"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX4"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX11"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX3"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-VDC"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-VCC"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX12"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/CAP+"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX11"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX4"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-GND"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/AUX10"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX3"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-GND"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/CAP+"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX11"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX12"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX4"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-VDC"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-VCC"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/AUX10"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/CAP+"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-GND"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX4"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX3"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-VDC"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-VCC"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX11"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX10"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX12"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-VDC"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX11"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-VCC"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX4"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/CAP+"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX10"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX3"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX12"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-GND"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX4"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX12"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX10"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-VDC"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX3"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-GND"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/CAP+"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-VCC"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX11"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_8-Default",
+        "pattern": "Board_8-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX4"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX10"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX3"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/CAP+"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-GND"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX12"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX11"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-VDC"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-VCC"
+      },
+      {
+        "netclass": "Board_9-Default",
+        "pattern": "Board_9-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX12"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX3"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/CAP+"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-VCC"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-GND"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-VDC"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX4"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX10"
+      },
+      {
+        "netclass": "Board_10-Default",
+        "pattern": "Board_10-/AUX11"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX12"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-VCC"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX11"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX10"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/CAP+"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-VDC"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-GND"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX4"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX3"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_11-Default",
+        "pattern": "Board_11-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX4"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX10"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX3"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-VCC"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX12"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/CAP+"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-VDC"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX11"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-GND"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_12-Default",
+        "pattern": "Board_12-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/CAP+"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX4"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX12"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX3"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-VDC"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-VCC"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX10"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX11"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-GND"
+      },
+      {
+        "netclass": "Board_13-Default",
+        "pattern": "Board_13-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX10"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/CAP+"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-VCC"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX4"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX11"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX12"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-GND"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX3"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-VDC"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_14-Default",
+        "pattern": "Board_14-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX12"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX3"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/CAP+"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX11"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-VCC"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-VDC"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-GND"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX10"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX4"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_15-Default",
+        "pattern": "Board_15-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX4"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX10"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-GND"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-VDC"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-VCC"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX11"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX12"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/CAP+"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/AUX3"
+      },
+      {
+        "netclass": "Board_16-Default",
+        "pattern": "Board_16-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX3"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX11"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX12"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-VDC"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX10"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/CAP+"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-VCC"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-GND"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/AUX4"
+      },
+      {
+        "netclass": "Board_17-Default",
+        "pattern": "Board_17-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX12"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX11"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX10"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX3"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/SPEAKER_P"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-VDC"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/CAP+"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX4"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-VCC"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-GND"
+      },
+      {
+        "netclass": "Board_18-Default",
+        "pattern": "Board_18-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-VDC"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX4"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX3"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-VCC"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/CAP+"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/SPEAKER_N"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX10"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX12"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-GND"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/AUX11"
+      },
+      {
+        "netclass": "Board_19-Default",
+        "pattern": "Board_19-/SPEAKER_P"
       }
     ]
   },

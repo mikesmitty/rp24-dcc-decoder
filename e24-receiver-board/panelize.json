@@ -2,7 +2,7 @@
     "layout": {
         "space": "2mm",
         "cols": "2",
-        "rows": "4"
+        "rows": "10"
     },
     "tabs": {
         "type": "fixed",
@@ -10,8 +10,6 @@
     },
     "cuts": {
         "type": "mousebites",
-        "drill": "0.3mm",
-        "spacing": "0.6mm",
         "offset": "-0.03mm"
     },
     "source": {
