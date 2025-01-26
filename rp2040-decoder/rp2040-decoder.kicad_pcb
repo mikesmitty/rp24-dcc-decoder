@@ -738,7 +738,7 @@
 				)
 			)
 		)
-		(property "Value" "20K"
+		(property "Value" "4.7K"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -789,7 +789,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C473466"
+		(property "LCSC" "C270346"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1211,7 +1211,7 @@
 				)
 			)
 		)
-		(property "Value" "100K"
+		(property "Value" "6.8K"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1262,7 +1262,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C270364"
+		(property "LCSC" "C423451"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1433,7 +1433,7 @@
 				)
 			)
 		)
-		(property "Value" "33K"
+		(property "Value" "2.2K"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2359,7 +2359,7 @@
 				)
 			)
 		)
-		(property "Value" "33K"
+		(property "Value" "6.8K"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2410,7 +2410,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C473534"
+		(property "LCSC" "C423451"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5694,7 +5694,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C21"
-			(at 0 -1.05 360)
+			(at 0 -1.05 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0fda56a7-9be2-4e1c-ad4c-f073a3cce9c0")
@@ -5706,7 +5706,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eedddb8d-ed81-43b5-b3ad-c9cc7371a39b")
@@ -5881,7 +5881,7 @@
 			(uuid "a9879a6f-a18e-40a7-933b-05f19e93dcb6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "959cbb89-eaf5-42e2-bef3-d12e053b0e9c")
 			(effects
@@ -8686,7 +8686,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -1.05 360)
+			(at 0 -1.05 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e062122b-d71e-4db1-a080-8f14a7257848")
@@ -8698,7 +8698,7 @@
 			)
 		)
 		(property "Value" "6.8K"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "325702af-3e3f-4dda-8fe4-f63172469c37")
@@ -8873,7 +8873,7 @@
 			(uuid "d4faf8d1-b4eb-4844-aec7-a0f0cb11a3c9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "950de992-4f16-4dba-b560-8811d6db7d69")
 			(effects
@@ -13753,6 +13753,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "472f6c4d-a3cf-44d0-b2ae-7db78613e4d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "087845f2-0dd1-4036-88ad-b906b52a0e7d")
 			(effects
 				(font
 					(size 1 1)

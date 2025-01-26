@@ -9697,7 +9697,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33K"
+		(property "Value" "2.2K"
 			(at 31.75 124.4599 0)
 			(effects
 				(font
@@ -11018,7 +11018,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100K"
+		(property "Value" "6.8K"
 			(at 31.75 116.8399 0)
 			(effects
 				(font
@@ -11054,7 +11054,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C270364"
+		(property "LCSC" "C423451"
 			(at 34.29 115.57 0)
 			(effects
 				(font
@@ -15552,6 +15552,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 101.6 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d4974d8-4af0-40c7-9bd2-929d75981390")
 		)
@@ -15591,7 +15600,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20K"
+		(property "Value" "4.7K"
 			(at 64.77 116.8399 0)
 			(effects
 				(font
@@ -15627,7 +15636,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C473466"
+		(property "LCSC" "C270346"
 			(at 62.23 115.57 0)
 			(effects
 				(font
@@ -17020,7 +17029,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33K"
+		(property "Value" "6.8K"
 			(at 64.77 124.4599 0)
 			(effects
 				(font
@@ -17056,7 +17065,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C473534"
+		(property "LCSC" "C423451"
 			(at 62.23 123.19 0)
 			(effects
 				(font
