@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "rp2350-decoder")(type "KiCad")(uri "${KIPRJMOD}/rp2350-decoder.kicad_sym")(options "")(descr ""))
+)

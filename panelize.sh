@@ -10,8 +10,8 @@ if [ -z "$PCB" ]; then
     exit 1
 fi
 
-if [ "$2" = "small" ]; then
-    BATCH_MOD="-p ${PCB_DIR}/panelize-small.json"
+if [ -n "$2" ]; then
+    BATCH_MOD="-p ${PCB_DIR}/panelize-${2}.json"
 fi
 
 mkdir -p "$OUTPUT"

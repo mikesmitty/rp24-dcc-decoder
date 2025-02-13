@@ -1,0 +1,141 @@
+(footprint "IND-SMD_L2.5-W2.0-VLS252012CX-150M"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.05 0)
+		(layer "F.SilkS")
+		(uuid "bf46e00e-f9f3-4df2-bfdc-2ce69164d708")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND-SMD_L2.5-W2.0-VLS252012CX-150M"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "ba82d39d-20bf-4d1c-8404-5dc37da0f419")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05ce442d-c103-42b2-878d-98777cf7ebe8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d187b75-53f6-4ed1-a5fb-3dd71dec3494")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d7f3db27-7faf-4b56-bf95-7a84a9edb737")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.29 -1.09)
+		(end 0.29 -1.09)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd8ab792-a265-45f0-a000-35cf36785470")
+	)
+	(fp_line
+		(start 0.29 1.1)
+		(end -0.29 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0032f255-ab3b-453d-a8e3-76ba9a9eff61")
+	)
+	(fp_rect
+		(start -1.5 -1.25)
+		(end 1.5 1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "4d4640bd-4bf4-443a-bf85-6afcf7734bc3")
+	)
+	(fp_circle
+		(center -1.25 1)
+		(end -1.22 1)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "2f57fe55-d246-4a82-8b64-7218232b48f8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "da6b5ebe-7343-4932-a986-8609e3210625")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8375 0)
+		(size 0.95 2.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7c176f29-9e47-4490-8825-0363985fd3c9")
+	)
+	(pad "2" smd rect
+		(at 0.8375 0)
+		(size 0.95 2.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f557e01d-fe94-47e6-8566-cf57ead9d2b6")
+	)
+	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/IND-SMD_L2.5-W2.0-VLS252012CX-150M.wrl"
+		(offset
+			(xyz 0 -0 0.85)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
