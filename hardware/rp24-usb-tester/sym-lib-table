@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "rp24-usb-tester")(type "KiCad")(uri "${KIPRJMOD}/rp24-usb-tester.kicad_sym")(options "")(descr ""))
+)
