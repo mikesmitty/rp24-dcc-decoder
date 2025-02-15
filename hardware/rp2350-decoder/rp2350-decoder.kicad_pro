@@ -751,12 +751,6 @@
           "label": "LCSC Part",
           "name": "LCSC Part",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Frequency",
-          "name": "Frequency",
-          "show": false
         }
       ],
       "filter_string": "",

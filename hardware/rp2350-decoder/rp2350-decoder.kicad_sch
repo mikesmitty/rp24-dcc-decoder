@@ -14167,7 +14167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Motor-Drivers_Shanghai-Mingda-Microelectronics-MD9927_C2684662.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2101111937_Shanghai-Mingda-Microelectronics-MD9927_C2684662.pdf"
 			(at 355.346 235.458 0)
 			(effects
 				(font
@@ -16387,14 +16387,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Frequency" "12MHz"
-			(at 123.952 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19035,7 +19027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "1.0"
+		(property "Height" "0.9"
 			(at 74.93 54.61 0)
 			(effects
 				(font
