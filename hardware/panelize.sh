@@ -6,7 +6,7 @@ PCB_DIR="${SCRIPT_DIR}/${PCB}"
 OUTPUT=${PCB_DIR}/production
 
 if [ -z "$PCB" ]; then
-    echo "Usage: $0 <pcb-name> [small]"
+    echo "Usage: $0 <pcb-name> [panel-option]"
     exit 1
 fi
 

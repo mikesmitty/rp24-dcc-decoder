@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-PROJECT="${1:-'rp2350-decoder'}"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+PROJECT=$1
 LCSC_ID=$2
 
 if [ -z "$LCSC_ID" ]; then
@@ -13,5 +14,5 @@ if [ ! -d "$PROJECT" ]; then
     exit 1
 fi
 
-cd $PROJECT
+cd "${SCRIPT_DIR}/${PROJECT}"
 easyeda2kicad --full --project-relative --output ./$PROJECT --lcsc_id $LCSC_ID
