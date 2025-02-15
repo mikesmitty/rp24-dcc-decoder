@@ -1,0 +1,23 @@
+Drill report for pico2-test-mule.kicad_pcb
+Created on 2025-02-15T12:31:35-0500
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'pico2-test-mule.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (75 holes)
+    T2  1.000mm  0.0394"  (57 holes)
+
+    Total plated holes count 132
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

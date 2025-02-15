@@ -1,0 +1,160 @@
+(footprint "DIO-SMD_L1.0-W0.6-P0.65-RD"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "6a27c808-880b-4f12-b6eb-245dd8ab4587")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DIO-SMD_L1.0-W0.6-P0.65-RD"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "25d82b74-7283-4563-808b-0d108af4a9d3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17c677b1-69a9-4161-8c3e-395262e9de6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0949f952-a306-42ae-9513-a2dcac973c63")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c64282d-5317-4688-898f-c961752489ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.01 -0.51)
+		(end -1.01 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "798a6458-c200-46c2-bf56-e8dcb75b9d12")
+	)
+	(fp_line
+		(start -0.7 -0.51)
+		(end -0.7 -0.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "824c3a68-6d20-47d5-9b6f-563f92302212")
+	)
+	(fp_line
+		(start -0.7 -0.51)
+		(end 0.7 -0.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "428f3f43-bd81-4855-ba69-26bb1faa934a")
+	)
+	(fp_line
+		(start 0.7 -0.51)
+		(end 0.7 0.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d8a03d7-5140-4113-a34c-0489e8710b75")
+	)
+	(fp_line
+		(start 0.7 0.51)
+		(end -0.7 0.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "63d6fec1-57a3-49b3-a18f-42994bb70a51")
+	)
+	(fp_circle
+		(center -0.5 0.3)
+		(end -0.47 0.3)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "87b8689b-f68d-4ade-b015-a693d3e75b58")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "46bd732c-c7e7-4d2a-a3bb-fdc779a51c7e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.33 0)
+		(size 0.4 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e10bed00-321b-433b-9475-a0999332e0f1")
+	)
+	(pad "2" smd rect
+		(at 0.32 0)
+		(size 0.4 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f3c8eac6-bbc3-4688-87f8-596efbe4239d")
+	)
+	(model "${KIPRJMOD}/pico2-test-mule.3dshapes/DIO-SMD_L1.0-W0.6-P0.65-RD.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
