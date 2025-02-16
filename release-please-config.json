@@ -3,14 +3,6 @@
     "release-type": "simple",
     "separate-pull-requests": true,
     "packages": {
-        ".": {
-            "bump-minor-pre-major": true,
-            "exclude-paths": [
-                "hardware"
-            ],
-            "include-component-in-tag": false,
-            "release-type": "go"
-        },
         "hardware/e24-receiver-board": {
             "component": "e24-receiver-board",
             "include-component-in-tag": true
@@ -26,6 +18,14 @@
         "hardware/rp24-usb-tester": {
             "component": "rp24-usb-tester",
             "include-component-in-tag": true
+        },
+        ".": {
+            "bump-minor-pre-major": true,
+            "exclude-paths": [
+                "hardware"
+            ],
+            "include-component-in-tag": false,
+            "release-type": "go"
         }
     }
 }
