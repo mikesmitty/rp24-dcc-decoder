@@ -7,6 +7,10 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(date "2025-02-02")
+		(rev "v0.1.0")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -4225,7 +4229,7 @@
 		(uuid "3a1ea6bb-a186-4b2d-891b-a448ef1dea9d")
 	)
 	(gr_text "E24 Adapter"
-		(at 143.74 70.61 0)
+		(at 143.25 69.85 0)
 		(layer "B.SilkS")
 		(uuid "2ae0320a-a506-499e-b035-fd25668288e9")
 		(effects
@@ -4235,6 +4239,19 @@
 				(bold yes)
 			)
 			(justify bottom mirror)
+		)
+	)
+	(gr_text "${REVISION}"
+		(at 143.25 70.95 0)
+		(layer "B.SilkS")
+		(uuid "af5bdfbc-b464-48d8-a4ed-e1524e6f6600")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify mirror)
 		)
 	)
 	(gr_text "SPK"

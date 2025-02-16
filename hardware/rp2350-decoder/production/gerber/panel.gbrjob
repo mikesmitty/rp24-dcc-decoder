@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "8.0.8"
     },
-    "CreationDate": "2025-02-16T00:34:03-05:00"
+    "CreationDate": "2025-02-16T13:21:55-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "panel",
       "GUID": "70616e65-6c2e-46b6-9963-61645f706362",
-      "Revision": "rev?"
+      "Revision": "v0.0.0"
     },
     "Size": {
       "X": 70.1,

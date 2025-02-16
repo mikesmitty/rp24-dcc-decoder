@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "8.0.8"
     },
-    "CreationDate": "2025-02-16T00:32:13-05:00"
+    "CreationDate": "2025-02-16T13:22:54-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "pico2-test-mule",
       "GUID": "7069636f-322d-4746-9573-742d6d756c65",
-      "Revision": "rev?"
+      "Revision": "v0.1.0"
     },
     "Size": {
       "X": 52.55,

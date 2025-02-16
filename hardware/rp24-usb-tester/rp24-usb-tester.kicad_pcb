@@ -7,6 +7,10 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(date "2025-02-13")
+		(rev "v0.2.0")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -12538,8 +12542,8 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "RP24 Decoder\nProgrammer/Tester"
-		(at 150.7 110.8 0)
+	(gr_text "RP24 Decoder\nProgrammer/Tester\n${REVISION}"
+		(at 150.7 109.5 0)
 		(layer "F.SilkS")
 		(uuid "3dff0e9d-ea7b-4bce-b727-be6a8353ed76")
 		(effects
@@ -12548,7 +12552,6 @@
 				(thickness 0.2)
 				(bold yes)
 			)
-			(justify bottom)
 		)
 	)
 	(gr_text "LF"
