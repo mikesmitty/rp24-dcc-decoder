@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>mikesmitty/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "INTI-CMNB/KiBot"
+      ],
+      "versioning": "regex:^(?<compatibility>v\\d+_k\\d+)_(?<major>\\d+)_(?<minor>\\d+)_(?<patch>\\d+)$"
+    }
   ]
 }
