@@ -22,7 +22,7 @@ jobs:
         with:
           dir_names: true
           files: |
-            **/CHANGELOG.md
+            hardware/**/CHANGELOG.md
           json: true
 
       - name: Update KiCad revisions
