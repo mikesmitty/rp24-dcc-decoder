@@ -43,12 +43,13 @@ jobs:
       matrix: 
         file: ${{ fromJSON(needs.get-changed-files.outputs.matrix) }}
       fail-fast: false
+      max-parallel: 1
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: main
           fetch-depth: 0
 
       - name: Update KiCad file dates
