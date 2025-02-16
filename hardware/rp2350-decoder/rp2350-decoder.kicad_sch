@@ -9981,7 +9981,7 @@
 		(uuid "29858028-b9d7-4cfc-aee6-77f61adf5279")
 	)
 	(label "I2S_BCLK"
-		(at 246.38 219.71 180)
+		(at 246.38 217.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10191,7 +10191,7 @@
 		(uuid "54c897ee-2b7f-4ce3-a998-4798cf03dfc5")
 	)
 	(label "I2S_DIN"
-		(at 246.38 217.17 180)
+		(at 246.38 214.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10291,7 +10291,7 @@
 		(uuid "6e40dd89-d02c-4705-8f59-f0a079ab2c3b")
 	)
 	(label "I2S_LRCLK"
-		(at 246.38 214.63 180)
+		(at 246.38 219.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
