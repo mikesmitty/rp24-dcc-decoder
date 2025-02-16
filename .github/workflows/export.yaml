@@ -74,7 +74,7 @@ jobs:
           echo "project-dir=$PROJECT_DIR" >> "$GITHUB_OUTPUT"
 
       - name: Run KiBot
-        uses: INTI-CMNB/KiBot@v2_k8
+        uses: INTI-CMNB/KiBot@v2_k8_1_8_0
         with:
           board: ${{ matrix.files }}
           config: ./${{ steps.get-paths.outputs.kicad-dir }}/cad.kibot.yaml
