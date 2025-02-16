@@ -711,12 +711,25 @@
 				)
 			)
 		)
-		(property "Frequency" ""
+		(property "Height" "1.0"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1b917691-4985-4fd8-861c-2ea59c7d59a2")
+			(uuid "9c72856c-81ae-4de2-9371-8652e4e14f3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "C42411119"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8efec1eb-9ca0-4de4-919d-68802f2d640e")
 			(effects
 				(font
 					(size 1 1)
@@ -898,6 +911,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d9f6aa1a-987e-466a-968b-b138613e829c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.26"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14af4293-86ff-4bb7-90f1-d792f708c05b")
 			(effects
 				(font
 					(size 1 1)
@@ -1377,12 +1403,12 @@
 				)
 			)
 		)
-		(property "Frequency" ""
+		(property "Height" "0.26"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f0496b5e-bd33-4e9c-8fa4-17b0aee57a9e")
+			(uuid "923d0905-cd6d-41a9-ba01-e25c1a4ab5c4")
 			(effects
 				(font
 					(size 1 1)
@@ -1855,6 +1881,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "169bedc9-7192-4d82-9493-91cce9f4678f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.26"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f242c248-9a21-4f6e-a266-614cac7b4042")
 			(effects
 				(font
 					(size 1 1)
@@ -2615,6 +2654,19 @@
 				)
 			)
 		)
+		(property "Height" "0.26"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04122750-3bc3-4998-b78a-829669a5ccba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/12f26eb7-1d3e-4d18-abcc-fe8f9c0ce9e7")
 		(sheetname "Root")
@@ -3049,6 +3101,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "176a153c-3f4d-4fd9-8eb0-fbda87161e54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.26"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d32e58b3-6215-431d-8f2e-141ee1a329c6")
 			(effects
 				(font
 					(size 1 1)
@@ -4184,7 +4249,7 @@
 				)
 			)
 		)
-		(property "Height" "0.7"
+		(property "Height" "0.55"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4203,32 +4268,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0d3f4787-2d6b-4998-8451-9ca632e78a5b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Alternative Part" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "abfb3e9c-2cee-4134-8cca-534bcd5a426d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Frequency" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "faaca6fb-ab86-46f8-ba5f-c896235f0540")
 			(effects
 				(font
 					(size 1 1)
@@ -4447,6 +4486,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a955560e-fe87-41b9-ab4c-6454e6cdd2ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.9"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0b146b0-95ee-4224-99b9-710d3ab5d689")
 			(effects
 				(font
 					(size 1 1)
@@ -10426,6 +10478,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Height" "0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9d5032b8-e9c2-44aa-95b9-e2c8fa74f1c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5ed70163-4ade-4f4d-9b74-1a45a7f24d5e")
 		(sheetname "Root")
@@ -11003,7 +11069,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "6.8K"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -11072,26 +11138,12 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C270365"
+		(property "LCSC" "C423451"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "25fe5b51-66a2-4178-b87e-637e84b593f3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Frequency" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "69d27643-79f0-4d76-b6a9-18fb33b92fbd")
 			(effects
 				(font
 					(size 1 1)
@@ -13000,6 +13052,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Height" "0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "89f2012e-b782-46cb-ab1a-6ea6e97fff26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/a95f02cd-1574-4b6f-a603-5002318e1758")
 		(sheetname "Root")
@@ -14171,6 +14237,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Height" "0.4"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c1e4af37-099f-4666-8db3-30595e0a8169")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?363*")
 		(path "/69ae14e4-12fa-44d1-b32e-1c690a98f77d")
 		(sheetname "Root")
@@ -15213,6 +15293,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "c7dff79e-1ad0-4008-8bed-7635ca76dd9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "0.4"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f5ef5a6c-29f0-4d9e-975c-91eafa989c28")
 			(effects
 				(font
 					(size 1 1)
@@ -16958,12 +17052,12 @@
 				(justify mirror)
 			)
 		)
-		(property "Frequency" ""
+		(property "LCSC" "C270365"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8d68b16a-a37f-4ad5-a6e6-02c6ca5a3efd")
+			(uuid "a4a88b18-a67e-4abf-a4e4-990be5585ef9")
 			(effects
 				(font
 					(size 1 1)
@@ -16972,12 +17066,12 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C270365"
-			(at 0 0 0)
+		(property "Height" "0.26"
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a4a88b18-a67e-4abf-a4e4-990be5585ef9")
+			(uuid "4e04cea4-a391-402c-b0dc-a945a7ec2db5")
 			(effects
 				(font
 					(size 1 1)

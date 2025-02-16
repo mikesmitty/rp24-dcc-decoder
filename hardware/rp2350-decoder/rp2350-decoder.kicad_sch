@@ -3700,6 +3700,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "AOTA-B201610S3R3-101-T_1_1"
 				(pin unspecified line
 					(at -5.08 0 0)
 					(length 1.016)
@@ -3713,7 +3715,7 @@
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0 0)
 							)
 						)
 					)
@@ -3731,7 +3733,7 @@
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0 0)
 							)
 						)
 					)
@@ -7178,7 +7180,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 201.93) (xy 158.75 204.47)
+			(xy 158.75 203.2) (xy 158.75 204.47)
 		)
 		(stroke
 			(width 0)
@@ -7775,6 +7777,16 @@
 			(type default)
 		)
 		(uuid "6d155db7-6f01-4c22-a3db-d1660d3fbbcf")
+	)
+	(wire
+		(pts
+			(xy 158.75 193.04) (xy 158.75 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6db8d551-9267-4c52-887e-45e16e58a2b6")
 	)
 	(wire
 		(pts
@@ -11252,6 +11264,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0.4"
+			(at 215.9 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cd17a3c9-326b-4902-84c0-21e70e8e82e2")
 		)
@@ -11923,6 +11944,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0.26"
+			(at 224.79 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b03cfd4c-3efa-46c5-af95-28d8430a8904")
 		)
@@ -12410,6 +12440,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0.26"
+			(at 96.52 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afd8ee10-3794-447c-a868-e176aca034ab")
 		)
@@ -12583,6 +12622,15 @@
 			)
 		)
 		(property "LCSC" "C896443"
+			(at 201.93 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
 			(at 201.93 76.2 0)
 			(effects
 				(font
@@ -13154,6 +13202,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0.26"
+			(at 172.72 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e7485460-ba7e-4eb7-9584-d9c147f033b0")
 		)
@@ -13685,7 +13742,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:AOTA-B201610S3R3-101-T")
-		(at 158.75 196.85 90)
+		(at 158.75 198.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13694,7 +13751,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ec33bf2-348f-473a-961a-dd8f876a8864")
 		(property "Reference" "L2"
-			(at 160.02 195.5799 90)
+			(at 160.02 196.8499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13703,7 +13760,7 @@
 			)
 		)
 		(property "Value" "3.3uH"
-			(at 160.02 198.1199 90)
+			(at 160.02 199.3899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13712,7 +13769,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T"
-			(at 166.37 196.85 0)
+			(at 166.37 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13721,7 +13778,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8567843503118221312"
-			(at 158.75 196.85 0)
+			(at 158.75 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13730,7 +13787,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 196.85 0)
+			(at 158.75 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13739,7 +13796,25 @@
 			)
 		)
 		(property "LCSC" "C42411119"
-			(at 168.91 196.85 0)
+			(at 168.91 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.0"
+			(at 158.75 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C42411119"
+			(at 168.91 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14064,7 +14139,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "6.8K"
 			(at 140.97 223.52 90)
 			(effects
 				(font
@@ -14108,7 +14183,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C270365"
+		(property "LCSC" "C423451"
 			(at 140.97 227.33 0)
 			(effects
 				(font
@@ -15220,6 +15295,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0"
+			(at 160.02 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e30525cc-8925-43e2-aa8d-9175e5485529")
 		)
@@ -15401,7 +15485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.7"
+		(property "Height" "0.55"
 			(at 236.22 140.97 0)
 			(effects
 				(font
@@ -15905,6 +15989,15 @@
 			)
 		)
 		(property "LCSC" "C896443"
+			(at 209.55 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
 			(at 209.55 57.15 0)
 			(effects
 				(font
@@ -17012,6 +17105,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0.26"
+			(at 207.01 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8c460f5f-ab2b-4903-a619-aadc584871f2")
 		)
@@ -18074,6 +18176,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0.4"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "eae75a3f-e00e-49da-a2a9-674e8730203e")
 		)
@@ -18320,6 +18431,15 @@
 		)
 		(property "LCSC" "C270355"
 			(at 172.72 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.26"
+			(at 172.72 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18707,6 +18827,15 @@
 				(hide yes)
 			)
 		)
+		(property "Height" "0"
+			(at 160.02 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8aaa2f0-3bc7-4bd3-923c-72557f433d22")
 		)
@@ -18774,6 +18903,15 @@
 		)
 		(property "LCSC" "C423356"
 			(at 246.38 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.26"
+			(at 246.38 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20178,6 +20316,15 @@
 		)
 		(property "LCSC" "C42411118"
 			(at 210.82 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.9"
+			(at 210.82 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
