@@ -4,6 +4,10 @@
     "separate-pull-requests": true,
     "packages": {
         ".": {
+            "bump-minor-pre-major": true,
+            "exclude-paths": [
+                "hardware"
+            ],
             "include-component-in-tag": false,
             "release-type": "go"
         },
