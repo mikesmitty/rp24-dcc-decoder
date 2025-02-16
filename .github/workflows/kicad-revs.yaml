@@ -1,0 +1,54 @@
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+name: KiCad Revision Update
+
+jobs:
+  kicad-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Get release directory
+        id: changed-files
+        uses: tj-actions/changed-files@v45
+        with:
+          dir_names: true
+          files: |
+            **/CHANGELOG.md
+          json: true
+
+      - name: Update KiCad revisions
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          cat <<EOF
+          ${{ steps.changed-files.outputs.all_changed_files }}
+          EOF
+          PROJECT_DIR="$(echo ${{ steps.changed-files.outputs.all_changed_files }} | jq -r '.[0]')"
+          VERSION="$(echo $TITLE | awk '{print $NF}')"
+          if [ -z "$VERSION" ]; then
+            echo "No version found in PR title, skipping"
+            exit
+          fi
+          if [ -z "$PROJECT_DIR" ]; then
+            echo "No project dir found, skipping"
+            exit
+          fi
+          # Update the revision in the KiCad files
+          find "$PROJECT_DIR" -regextype egrep -regex ".*\.kicad_(sch|pcb)" -print -exec sed -i "s/(rev \".*\"/(rev \"v$VERSION\"/" {} \;
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+
+      - name: Commit changes
+        if: steps.changed-files.outputs.any_changed == 'true'
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actor
+          message: "chore: update KiCad revisions"

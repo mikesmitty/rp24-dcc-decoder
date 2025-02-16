@@ -1,0 +1,7 @@
+{
+    ".": "0.0.0",
+    "hardware/e24-receiver-board": "0.1.0",
+    "hardware/pico2-test-mule": "0.1.0",
+    "hardware/rp2350-decoder": "0.0.0",
+    "hardware/rp24-usb-tester": "0.2.0"
+}

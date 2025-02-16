@@ -1,0 +1,118 @@
+on:
+  push:
+    branches:
+      # - main # TODO: convert to exporting images
+      - disabled
+    paths:
+      - '**.kicad_pcb'
+
+name: KiCad Export
+
+jobs:
+  get-changed-files:
+    name: Get changed files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Get changed PCB files
+        id: changed-files
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            **/*.kicad_pcb
+          matrix: true
+
+    outputs:
+      any-changed: ${{ steps.changed-files.outputs.any_changed }}
+      matrix: ${{ steps.changed-files.outputs.all_changed_files }}
+
+  export-cad:
+    if: ${{ fromJson(needs.get-changed-files.outputs.any-changed) }}
+    needs: get-changed-files
+
+    name: Render PCB
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto:1.8.1
+
+    strategy:
+      matrix:
+        files: ${{ fromJSON(needs.get-changed-files.outputs.matrix) }}
+      max-parallel: 4
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Cache 3D models data
+        id: models-cache
+        uses: set-soft/cache@main
+        with:
+          path: ~/cache_3d
+          key: cache_3d
+
+      - name: Get output directories
+        id: get-paths
+        run: |
+          # Get the directory of the PCB file
+          KICAD_DIR="$(dirname "${{ matrix.files }}")"
+          echo "kicad-dir=$KICAD_DIR" >> "$GITHUB_OUTPUT"
+
+          # Get the name of the hardware module
+          MODULE_NAME="$(basename $(dirname $KICAD_DIR))"
+          echo "module-name=$MODULE_NAME" >> "$GITHUB_OUTPUT"
+
+          # Get the parent project directory
+          PROJECT_DIR="$(dirname "${KICAD_DIR}")"
+          echo "project-dir=$PROJECT_DIR" >> "$GITHUB_OUTPUT"
+
+      - name: Run KiBot
+        uses: INTI-CMNB/KiBot@v2_k8
+        with:
+          board: ${{ matrix.files }}
+          config: ./${{ steps.get-paths.outputs.kicad-dir }}/cad.kibot.yaml
+          dir: ${{ steps.get-paths.outputs.project-dir }}/CAD/
+          cache3D: YES
+          verbose: 4
+
+      - name: Clean up log files
+        run: |
+          rm -fv ${{ steps.get-paths.outputs.project-dir }}/CAD/*.log
+
+      - name: Store exported CAD files
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.get-paths.outputs.module-name }}
+          path: "${{ steps.get-paths.outputs.project-dir }}/CAD/*.step"
+          overwrite: true
+
+  push-changes:
+    needs: export-cad
+
+    name: Render PCB
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: hardware/CAD/
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: hardware/CAD/
+          default_author: github_actor
+          message: "chore: KiBot CAD update"
