@@ -6,16 +6,16 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 - 5x GPIO pins (3.3V input/output)
 - Up to 0.75A motor current
 - E24 form factor (approx 20mm x 9mm)
-- i2s audio output chip
+- i2s audio speaker output
 - 12V nominal rail voltage (16V max)
 
 # USB Programmer/E24 Tester Features
-- USB-C port and SWD header for programming/debugging
-- Built-in front/rear "lamp" LEDs for decoder testing
-- Breakout header for most E24 pins, including speaker, motor, and 9 functions
-- Rail contact pads on underside of board allow for testing the decoder as a stationary dummy-loco as well as CV programming on N-gauge track
+- USB-C port for easy programming and loading sound files
+- Onboard LEDs for all aux outputs for simple decoder testing
+- Breakout header for most E24 pins, including speaker, motor, rectified rail power, Vcc, plus all five E24 GPIO pins (Aux 3, 4, 10, 11, 12)
+- Programming track input header allows for stationary decoder testing and CV programming
 
-# E24 Receiver Breakout Board Pinout
+# RP24 Decoder Pinout
 | E24 Pin | Function | GPIO Pin |
 | --- | --- | --- |
 | 1 | Speaker+ | USB D+ |
@@ -48,9 +48,9 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 | N/A | DCC signal TTL | GPIO21 |
 | N/A | RailCom Out | GPIO11 |
 | N/A | Status LED | GPIO19 |
-| N/A | i2s LRCLK | GPIO22 |
-| N/A | i2s DIN | GPIO23 |
-| N/A | i2s BCLK | GPIO24 |
+| N/A | i2s DIN | GPIO22 |
+| N/A | i2s BCLK | GPIO23 |
+| N/A | i2s LRCLK | GPIO24 |
 | N/A | Charge external keepalive capacitor (PWM at very low duty cycle only) | GPIO20 |
 
 # Images
@@ -58,7 +58,7 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 ![decoder top](images/rp2350-decoder-top.png)
 ![decoder bottom](images/rp2350-decoder-bottom.png)
 
-## E24 USB Programmer
+## RP24 USB Programmer/E24 Decoder Tester
 ![programmer top](images/rp2040-decoder-usb-adapter-top.png)
 ![programmer bottom](images/rp2040-decoder-usb-adapter-bottom.png)
 
