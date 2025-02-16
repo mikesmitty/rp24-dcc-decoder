@@ -37,7 +37,7 @@ jobs:
 
     name: Render PCB
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad8_auto:1.8.1
+    container: ghcr.io/inti-cmnb/kicad8_auto:1.8.2
 
     strategy:
       matrix:
