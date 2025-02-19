@@ -16418,7 +16418,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
-		(at 107.95 167.64 0)
+		(at 107.95 167.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16426,22 +16426,22 @@
 		(dnp no)
 		(uuid "72ea94f2-aa70-4caa-86c6-7cd37027a3ec")
 		(property "Reference" "Y1"
-			(at 112.776 161.29 0)
+			(at 112.014 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "X252012MMB4SI"
-			(at 119.38 163.8614 0)
+		(property "Value" "ABM8-272-T3"
+			(at 118.618 163.8614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm"
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 107.95 167.64 0)
 			(effects
 				(font
@@ -16450,7 +16450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403291506_YXC-Crystal-Oscillators-X252012MMB4SI-24_C2896601.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8559470777180311552"
 			(at 107.95 167.64 0)
 			(effects
 				(font
@@ -16468,7 +16468,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2896601"
+		(property "LCSC" "C20625731"
 			(at 107.95 167.64 0)
 			(effects
 				(font
@@ -16477,7 +16477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.65"
+		(property "Height" "0.8"
 			(at 107.95 167.64 0)
 			(effects
 				(font
