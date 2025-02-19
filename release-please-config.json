@@ -1,21 +1,24 @@
 {
-    "bump-minor-pre-major": true,
     "release-type": "simple",
     "separate-pull-requests": true,
     "packages": {
         "hardware/e24-receiver-board": {
+            "bump-minor-pre-major": true,
             "component": "e24-receiver-board",
             "include-component-in-tag": true
         },
         "hardware/pico2-test-mule": {
+            "bump-minor-pre-major": true,
             "component": "pico2-test-mule",
             "include-component-in-tag": true
         },
         "hardware/rp2350-decoder": {
+            "bump-minor-pre-major": true,
             "component": "rp2350-decoder",
             "include-component-in-tag": true
         },
         "hardware/rp24-usb-tester": {
+            "bump-minor-pre-major": true,
             "component": "rp24-usb-tester",
             "include-component-in-tag": true
         },
