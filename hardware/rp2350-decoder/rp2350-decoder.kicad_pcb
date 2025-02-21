@@ -13829,7 +13829,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "6.8K"
+		(property "Value" "2.2K"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13898,21 +13898,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Alternative Part" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "009e2d3e-7308-4f33-95d1-f778ce5a0a1a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "LCSC" "C423451"
+		(property "LCSC" "C473534"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13932,20 +13918,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "b2aa45aa-12a5-45c1-aa21-7b84b1b508ce")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Frequency" ""
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "82eb2756-e3c7-4166-9037-be2bd16ce5fc")
 			(effects
 				(font
 					(size 1 1)
