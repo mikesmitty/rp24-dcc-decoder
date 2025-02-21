@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.0.1...rp2350-decoder-v0.0.2) (2025-02-21)
+
+
+### Bug Fixes
+
+* lower gate voltage to the dcc signal mosfet ([6cb97c4](https://github.com/mikesmitty/rp24-dcc-decoder/commit/6cb97c431d6f1eea73aafedfe1a02bb732defedf))
+
 ## 0.0.1 (2025-02-19)
 
 
