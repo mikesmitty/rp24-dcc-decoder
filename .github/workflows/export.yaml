@@ -1,8 +1,7 @@
 on:
   push:
     branches:
-      # - main # TODO: convert to exporting images
-      - disabled
+      - main
     paths:
       - '**.kicad_pcb'
 
@@ -31,13 +30,13 @@ jobs:
       any-changed: ${{ steps.changed-files.outputs.any_changed }}
       matrix: ${{ steps.changed-files.outputs.all_changed_files }}
 
-  export-cad:
+  export-images:
     if: ${{ fromJson(needs.get-changed-files.outputs.any-changed) }}
     needs: get-changed-files
 
     name: Render PCB
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad8_auto:1.8.2
+    container: ghcr.io/kicad/kicad:9.0
 
     strategy:
       matrix:
@@ -51,52 +50,30 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Cache 3D models data
-        id: models-cache
-        uses: set-soft/cache@main
-        with:
-          path: ~/cache_3d
-          key: cache_3d
-
-      - name: Get output directories
-        id: get-paths
+      - name: Render PCB images
         run: |
           # Get the directory of the PCB file
           KICAD_DIR="$(dirname "${{ matrix.files }}")"
           echo "kicad-dir=$KICAD_DIR" >> "$GITHUB_OUTPUT"
 
           # Get the name of the hardware module
-          MODULE_NAME="$(basename $(dirname $KICAD_DIR))"
+          MODULE_NAME="$(basename $KICAD_DIR)"
           echo "module-name=$MODULE_NAME" >> "$GITHUB_OUTPUT"
 
-          # Get the parent project directory
-          PROJECT_DIR="$(dirname "${KICAD_DIR}")"
-          echo "project-dir=$PROJECT_DIR" >> "$GITHUB_OUTPUT"
+          # Render the images
+          bash hardware/images.sh $MODULE_NAME
 
-      - name: Run KiBot
-        uses: INTI-CMNB/KiBot@v2_k8_1_8_1
-        with:
-          board: ${{ matrix.files }}
-          config: ./${{ steps.get-paths.outputs.kicad-dir }}/cad.kibot.yaml
-          dir: ${{ steps.get-paths.outputs.project-dir }}/CAD/
-          cache3D: YES
-          verbose: 4
-
-      - name: Clean up log files
-        run: |
-          rm -fv ${{ steps.get-paths.outputs.project-dir }}/CAD/*.log
-
-      - name: Store exported CAD files
+      - name: Store exported images
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.get-paths.outputs.module-name }}
-          path: "${{ steps.get-paths.outputs.project-dir }}/CAD/*.step"
+          path: "images/${{ steps.get-paths.outputs.module-name }}-*.png"
           overwrite: true
 
   push-changes:
-    needs: export-cad
+    needs: export-images
 
-    name: Render PCB
+    name: Push Changes
     runs-on: ubuntu-latest
 
     steps:
@@ -108,11 +85,11 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           merge-multiple: true
-          path: hardware/CAD/
+          path: images/
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: hardware/CAD/
+          add: images/
           default_author: github_actor
-          message: "chore: KiBot CAD update"
+          message: "chore: update board images"
