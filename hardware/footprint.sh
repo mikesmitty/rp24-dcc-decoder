@@ -9,7 +9,7 @@ if [ -z "$LCSC_ID" ]; then
     exit 1
 fi
 
-if [ ! -d "$PROJECT" ]; then
+if [ ! -d "${SCRIPT_DIR}/${PROJECT}" ]; then
     echo "Project $PROJECT does not exist"
     exit 1
 fi
