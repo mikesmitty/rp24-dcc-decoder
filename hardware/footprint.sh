@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+REPO_DIR="$(git rev-parse --show-toplevel)"
 PROJECT=$1
 LCSC_ID=$2
 
@@ -9,10 +9,10 @@ if [ -z "$LCSC_ID" ]; then
     exit 1
 fi
 
-if [ ! -d "${SCRIPT_DIR}/${PROJECT}" ]; then
+if [ ! -d "${REPO_DIR}/hardware/${PROJECT}" ]; then
     echo "Project $PROJECT does not exist"
     exit 1
 fi
 
-cd "${SCRIPT_DIR}/${PROJECT}"
+cd "${REPO_DIR}/hardware/${PROJECT}"
 easyeda2kicad --full --project-relative --output ./$PROJECT --lcsc_id $LCSC_ID
