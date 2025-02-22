@@ -1,12 +1,13 @@
 (footprint "X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -4.27 0)
 		(layer "F.SilkS")
-		(uuid "24f3416b-f7fa-47e7-8891-da6c77ad0423")
+		(hide yes)
+		(uuid "924ee55f-665e-4714-807e-a8d87f0b8d78")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
+	(property "Value" "DMN2991UDA-7B"
 		(at 0 4.27 0)
 		(layer "F.Fab")
-		(uuid "bb189797-778e-4e26-9596-a09ecb410b3b")
+		(hide yes)
+		(uuid "ee10dbe3-7ef3-423d-9ada-f2bd776852fe")
 		(effects
 			(font
 				(size 1 1)
@@ -25,11 +27,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0f504783-61d0-454d-b9fa-9967cf203570")
+		(uuid "b5d5cd4f-1042-43cb-ba40-0bbb633805cd")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,11 +39,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "725e8409-37e7-43ad-a8de-b507207f1dfa")
+		(uuid "18bd4547-d82d-47f1-bf48-5c1918154851")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -49,38 +51,65 @@
 			)
 		)
 	)
-	(property "Description" ""
-		(at 0 0 0)
+	(property "LCSC" "C2937136"
+		(at 0 0 180)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5c9eac24-3904-4283-96eb-dfd99565e0eb")
+		(uuid "6312f6a3-39e9-4abb-bc1f-b7b92ddc0c4a")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.4"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "edfe27cc-38a8-44f9-a0cd-17e205927e94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Frequency" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9eca85bc-0425-41c4-b05d-81a3f2c78b21")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
 	(fp_line
-		(start -0.57 0.3)
-		(end -0.57 -0.3)
+		(start 0.57 0.3)
+		(end 0.57 -0.3)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "9200b7c1-2dd6-4fa2-854f-c8690c8b762b")
+		(uuid "2c074461-9963-47b9-b3fc-9655ab4e6cae")
 	)
 	(fp_line
-		(start 0.57 -0.3)
-		(end 0.57 0.3)
+		(start -0.57 -0.3)
+		(end -0.57 0.3)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "89d69379-0625-461e-82b1-447a0eb53e59")
+		(uuid "82aaa1e0-4173-401d-8317-a6710bb1bf31")
 	)
 	(fp_circle
 		(center -0.55 0.47)
@@ -89,9 +118,9 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
-		(uuid "a002253b-9f4f-47dc-98f5-0134447a5ffa")
+		(uuid "78ada4a7-bd52-4b4d-867d-e8086f6ba12c")
 	)
 	(fp_rect
 		(start -0.55 -0.45)
@@ -100,14 +129,15 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "63d95942-c7eb-48a2-b681-aa260a47d2e6")
+		(uuid "db27e2d7-dd0b-42a5-bc33-adbd1feab91b")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "3f4b4b44-6177-4ed6-bb4b-d00432338bbe")
+		(hide yes)
+		(uuid "73077668-462f-4c1a-9e50-4f57f3a7522a")
 		(effects
 			(font
 				(size 1 1)
@@ -116,41 +146,42 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -0.35 0.27)
+		(at -0.35 0.27 180)
 		(size 0.1 0.28)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "d79437ba-b3b0-4c3b-bf1c-c21d1aff2797")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6a03977f-8dd2-497c-b945-e9c76be9b459")
 	)
 	(pad "2" smd rect
-		(at -0.05 0.27)
+		(at -0.05 0.27 180)
 		(size 0.1 0.28)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "16438638-915f-4bf7-b872-14f765a9b14a")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2055a057-d4b0-4603-942d-113bed34196d")
 	)
 	(pad "3" smd rect
-		(at 0.27 0.24)
+		(at 0.27 0.24 180)
 		(size 0.15 0.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "c538390e-974d-437d-ae95-667810acb856")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ed68192a-63bd-4a5f-b013-83d2f342d796")
 	)
 	(pad "4" smd rect
-		(at 0.35 -0.27)
+		(at 0.35 -0.27 180)
 		(size 0.1 0.28)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "d8d34f79-39bd-4361-a3ec-f3250f5d1f2a")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e6353cdc-32a7-4f6d-911b-956f7c3fcf0b")
 	)
 	(pad "5" smd rect
-		(at 0.05 -0.27)
+		(at 0.05 -0.27 180)
 		(size 0.1 0.28)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "109f57cc-b7f6-441c-a6ee-e61838af5b41")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "deab4914-1968-4250-8329-cb0bf72ec1db")
 	)
 	(pad "6" smd rect
-		(at -0.28 -0.24)
+		(at -0.28 -0.24 180)
 		(size 0.15 0.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "3d9e8288-b61a-4272-98c5-4070bf4815d8")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "52c24357-46bb-41d6-8f58-7e60d5ea3492")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6.wrl"
 		(offset
 			(xyz 0 -0 -0)

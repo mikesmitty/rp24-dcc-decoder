@@ -1,12 +1,13 @@
 (footprint "DIO-SMD_L1.0-W0.6-P0.65-RD"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -1.3 0)
 		(layer "F.SilkS")
-		(uuid "28ddf603-929b-4ce7-858c-9011b6b011c4")
+		(hide yes)
+		(uuid "4a258d85-0d67-4fb1-acf5-b1e016cb69e2")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "DIO-SMD_L1.0-W0.6-P0.65-RD"
+	(property "Value" "RB161QS-40"
 		(at 0 1.55 0)
 		(layer "F.Fab")
-		(uuid "fec6789f-83e3-40e7-8560-1e1e2e2c9564")
+		(hide yes)
+		(uuid "f12a27b6-63fb-4c5b-8790-3fb0c946d145")
 		(effects
 			(font
 				(size 1 1)
@@ -25,11 +27,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304281727_FUXINSEMI-RB161QS-40_C5563750.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c212f699-9ec5-4007-8e08-4c5401a3efba")
+		(uuid "dd4c1b29-5185-4fec-8a7e-e46112e6ab53")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,11 +39,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Description" "Schottky diode"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b431c7ba-818f-47d8-9ee8-d035ef7189c0")
+		(uuid "31833cd9-7d4a-4f0d-a66c-45ddc3518d7a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -49,28 +51,55 @@
 			)
 		)
 	)
-	(property "Description" ""
-		(at 0 0 0)
+	(property "LCSC" "C5563750"
+		(at 0 0 180)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "cda16cc5-dd3a-4de5-a851-8cdd2f7f1a4b")
+		(uuid "fe46298d-cae1-43cb-b973-7c75aeea7b52")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.55"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d74418d3-0aab-4e56-9a55-173021ef8631")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB_CORRECTION" "0;0;180"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30d66557-0555-4901-a0cf-84c22ac7882d")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
 	(fp_line
-		(start -0.65 -0.4)
-		(end -0.65 0.4)
+		(start -0.65 0.4)
+		(end -0.65 -0.4)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "fff8b7b1-265a-4a47-87e6-496a6bb10fad")
+		(uuid "39ae5fc4-182f-4281-977b-7c89f620eccc")
 	)
 	(fp_rect
 		(start -0.65 -0.45)
@@ -79,9 +108,39 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "729a9914-0e9b-484d-9708-a9ad6e65dd85")
+		(uuid "b4a83958-06a1-4bbd-832f-1c804f38502c")
+	)
+	(fp_line
+		(start 0.7 0.51)
+		(end 0.7 -0.51)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4e1fe689-b64b-452a-8f20-c753f60b4b25")
+	)
+	(fp_line
+		(start 0.7 -0.51)
+		(end -0.7 -0.51)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ff80b6cb-e4aa-42f6-9155-33bbd343f613")
+	)
+	(fp_line
+		(start -0.7 0.51)
+		(end 0.7 0.51)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8df295df-f9a6-4ecc-b8f3-5c6ab86167d5")
 	)
 	(fp_line
 		(start -0.7 -0.51)
@@ -91,37 +150,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4f6bf874-540b-4f17-8c3e-995d80e932d1")
-	)
-	(fp_line
-		(start -0.7 -0.51)
-		(end 0.7 -0.51)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "8127b674-b56b-4ddd-b9c1-a25dcc85c6b6")
-	)
-	(fp_line
-		(start 0.7 -0.51)
-		(end 0.7 0.51)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "42880f84-6df4-4062-9a0b-8db20a3d4062")
-	)
-	(fp_line
-		(start 0.7 0.51)
-		(end -0.7 0.51)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "cef0828d-1ed9-4bc1-b99a-1ec45765a1b1")
+		(uuid "cad46ea5-94c2-4b24-9cf5-4d750b926c1d")
 	)
 	(fp_circle
 		(center -0.5 0.3)
@@ -130,14 +159,15 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "fc0710f1-c8d6-439b-8e61-6fff149f7c82")
+		(uuid "b14525c1-aeb3-4e08-a39e-a97e4f128dba")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "9b13a5a4-b83f-41bc-bd26-4070d74e61a1")
+		(hide yes)
+		(uuid "bf84bb77-55bf-49a0-b432-3b3e8508271c")
 		(effects
 			(font
 				(size 1 1)
@@ -146,17 +176,18 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -0.325 0)
+		(at -0.325 0 180)
 		(size 0.35 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "63b97c35-90ab-443d-b5a7-8bfa0473fc0d")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "014a4b0b-8391-45bb-a06d-14ad4aedee9d")
 	)
 	(pad "2" smd rect
-		(at 0.325 0)
+		(at 0.325 0 180)
 		(size 0.35 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "6c5e5462-72ab-496d-a3e3-2c61b1ac2039")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fae0f435-baed-489a-add6-fe5512f80e18")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/DIO-SMD_L1.0-W0.6-P0.65-RD.wrl"
 		(offset
 			(xyz 0 -0 -0)

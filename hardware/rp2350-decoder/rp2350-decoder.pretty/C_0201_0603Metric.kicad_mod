@@ -1,0 +1,230 @@
+(footprint "C_0201_0603Metric"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
+	(tags "capacitor")
+	(property "Reference" "REF**"
+		(at 0 -1.05 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "67218a04-bd9d-4e7b-acf9-b7422e30a656")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "10pF"
+		(at 0 1.05 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "32fcad2d-8362-4b6a-96a9-83d29f8368c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c0dcdce-00b5-460d-a82e-9f9aae66471a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Unpolarized capacitor"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c24c6184-4fad-42f3-a55f-06abcc2bc2ff")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C384956"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcd9947b-3761-4169-b331-dee121befa27")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.3"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b0b6ebd-1cd9-40a1-94cc-08bff543d57e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Frequency" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "956f1788-83e9-4461-8236-6b2e3e0581e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.7 0.35)
+		(end 0.7 -0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "50644d3a-82e9-41d8-9cf1-08ad2850f333")
+	)
+	(fp_line
+		(start 0.7 -0.35)
+		(end -0.7 -0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "be8282ed-b45e-42be-aa8f-86426d28484c")
+	)
+	(fp_line
+		(start -0.7 0.35)
+		(end 0.7 0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "91ea3f38-2e63-4ddf-85c7-f63c1409629d")
+	)
+	(fp_line
+		(start -0.7 -0.35)
+		(end -0.7 0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5b97817d-b883-4d6b-abcb-a56aca7f31d9")
+	)
+	(fp_line
+		(start 0.3 0.15)
+		(end 0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "91647772-6dcd-44f6-ad2c-0c3254b96a75")
+	)
+	(fp_line
+		(start 0.3 -0.15)
+		(end -0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "905fca3f-5f0c-450f-9146-272783c93444")
+	)
+	(fp_line
+		(start -0.3 0.15)
+		(end 0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4ac7241e-cd7f-4856-8e59-ce67723010a5")
+	)
+	(fp_line
+		(start -0.3 -0.15)
+		(end -0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "aefe0cd4-7cf4-484e-860c-a4fca07dec23")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.68 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c0a7976-0a04-4a43-b17f-3a0a65e0fc0b")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.04)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.345 0 180)
+		(size 0.318 0.36)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "94d403b4-3543-4612-9150-e077f733e2c2")
+	)
+	(pad "" smd roundrect
+		(at 0.345 0 180)
+		(size 0.318 0.36)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "fee165f4-6151-43bd-af9e-40ded8ecd6b1")
+	)
+	(pad "1" smd roundrect
+		(at -0.32 0 180)
+		(size 0.46 0.4)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "c149fe69-52ce-46fa-b708-27ddd4c74f6b")
+	)
+	(pad "2" smd roundrect
+		(at 0.32 0 180)
+		(size 0.46 0.4)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "9c8cce9e-5fa0-402b-8018-1303136dcfd4")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

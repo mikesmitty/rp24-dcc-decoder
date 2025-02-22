@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "139be664-fb54-41f1-a01f-7316e3835554")
 	(paper "A3")
 	(title_block
@@ -11,9 +11,13 @@
 	(lib_symbols
 		(symbol "+1V1_1"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -85,7 +89,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -97,7 +101,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -128,1280 +132,17 @@
 					)
 				)
 			)
-		)
-		(symbol "Connector_Generic:Conn_01x01"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_1_1"
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:C"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:Crystal_GND24"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 3.175 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Crystal_GND24"
-				(at 3.175 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "quartz ceramic resonator oscillator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Crystal*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Crystal_GND24_0_1"
-				(rectangle
-					(start -1.143 2.54)
-					(end 1.143 -2.54)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -1.27) (xy -2.032 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy 0 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.556) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 -1.27) (xy 2.032 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Crystal_GND24_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 1.27)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:D_45deg"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "D_45deg"
-				(at 1.27 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode, rotated by 45°"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*Bridge* D*Rectifier*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_45deg_0_1"
-				(polyline
-					(pts
-						(xy -0.635 0.635) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 1.27) (xy 0.635 -0.635) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_45deg_1_1"
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 0)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 2.54 0)
-					(length 0)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:L"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:LED"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "GND_1"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1492,8 +233,485 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Local Symbol Library:505066-2422"
+		(symbol "rp2350-decoder:+1V1"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+1V1"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V1\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+1V1_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V1_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:1TS026A-1000-0550-CT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1TS026A-1000-0550-CT"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "rp2350-decoder:SW-SMD_4P-L2.6-W1.6-P0.75-LS3.0"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C913778"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1TS026A-1000-0550-CT_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.52) (xy 0 0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0.76)
+					(radius 0.25)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -0.76)
+					(radius 0.25)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.02) (xy 0.25 -0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:505066-2422"
 			(pin_names
 				(offset 0.762)
 			)
@@ -1623,6 +841,42 @@
 			)
 			(symbol "505066-2422_1_0"
 				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "X1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "X1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "X1B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "X1B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 7.62 12.7 270)
 					(length 5.08)
 					(name "1"
@@ -1633,6 +887,312 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -15.24 90)
+					(length 5.08)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 12.7 270)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -15.24 90)
+					(length 5.08)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 12.7 270)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -15.24 90)
+					(length 5.08)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 12.7 270)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -15.24 90)
+					(length 5.08)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 12.7 270)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -15.24 90)
+					(length 5.08)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 12.7 270)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -15.24 90)
+					(length 5.08)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 12.7 270)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -15.24 90)
+					(length 5.08)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 12.7 270)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -15.24 90)
+					(length 5.08)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 12.7 270)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -15.24 90)
+					(length 5.08)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1659,6 +1219,24 @@
 					)
 				)
 				(pin passive line
+					(at 30.48 -15.24 90)
+					(length 5.08)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 33.02 12.7 270)
 					(length 5.08)
 					(name "11"
@@ -1669,6 +1247,24 @@
 						)
 					)
 					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -15.24 90)
+					(length 5.08)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1713,384 +1309,6 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -15.24 90)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -15.24 90)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 -15.24 90)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -15.24 90)
-					(length 5.08)
-					(name "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 90)
-					(length 5.08)
-					(name "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 -15.24 90)
-					(length 5.08)
-					(name "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 12.7 270)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -15.24 90)
-					(length 5.08)
-					(name "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -15.24 90)
-					(length 5.08)
-					(name "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -15.24 90)
-					(length 5.08)
-					(name "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -15.24 90)
-					(length 5.08)
-					(name "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -15.24 90)
-					(length 5.08)
-					(name "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 12.7 270)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 12.7 270)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 12.7 270)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 12.7 270)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 12.7 270)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 12.7 270)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 12.7 270)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "X1A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "X1A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "X1B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "X1B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 43.18 0 180)
 					(length 5.08)
 					(name "X2A"
@@ -2127,38 +1345,30 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Memory_Flash:W25Q128JVP"
+		(symbol "rp2350-decoder:AOTA-B201610S3R3-101-T"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U3"
-				(at -9.906 -7.874 0)
+			(property "Reference" "L"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "W25Q128JVPIQ"
-				(at -15.748 -10.16 0)
+			(property "Value" "AOTA-B201610S3R3-101-T"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
-				(at 0 25.4 0)
+			(property "Footprint" "rp2350-decoder:IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2166,16 +1376,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, WSON-8"
-				(at 0 27.94 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C190862"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2184,7 +1385,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB_CORRECTION" "0;0;0"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2193,8 +1394,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" ""
-				(at 0 0 0)
+			(property "LCSC Part" "C42411119"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2202,51 +1403,61 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flash memory SPI"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "WSON*1EP*6x5mm*P1.27mm*EP3.4x4.3mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "W25Q128JVP_0_1"
-				(rectangle
-					(start -7.62 10.16)
-					(end 7.62 -10.16)
+			(symbol "AOTA-B201610S3R3-101-T_0_1"
+				(arc
+					(start -4.06 -0.01)
+					(mid -3.055 1.013)
+					(end -2.03 0.01)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(arc
+					(start -2.03 -0.01)
+					(mid -1.025 1.013)
+					(end 0 0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.01)
+					(mid 1.005 1.013)
+					(end 2.03 0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.03 -0.01)
+					(mid 3.035 1.013)
+					(end 4.06 0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
-			(symbol "W25Q128JVP_1_1"
-				(pin input line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "~{CS}"
+			(symbol "AOTA-B201610S3R3-101-T_1_1"
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 1.016)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2256,15 +1467,15 @@
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0 0)
 							)
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "DO(IO1)"
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 1.016)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2274,140 +1485,15 @@
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "IO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "DI(IO0)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "IO3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
+								(size 0 0)
 							)
 						)
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:AP63203WU"
+		(symbol "rp2350-decoder:AP63203WU"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2486,17 +1572,17 @@
 				)
 			)
 			(symbol "AP63203WU_1_1"
-				(pin input line
-					(at 10.16 -2.54 180)
+				(pin power_in line
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "FB"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2515,24 +1601,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2594,11 +1662,32 @@
 						)
 					)
 				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC847BPN"
+		(symbol "rp2350-decoder:BC847BPN"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2712,6 +1801,18 @@
 			(symbol "BC847BPN_1_1"
 				(polyline
 					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
@@ -2736,18 +1837,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
 					)
 					(stroke
@@ -2756,24 +1845,6 @@
 					)
 					(fill
 						(type outline)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 				(pin input line
@@ -2812,8 +1883,38 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "BC847BPN_2_1"
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -2840,18 +1941,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778) (xy 2.286 -1.778)
 					)
 					(stroke
@@ -2860,6 +1949,24 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin passive line
@@ -2898,10 +2005,818 @@
 						)
 					)
 				)
-				(pin input line
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:Crystal_GND24"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_GND24_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:DMN2991UDA-7B"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "DMN2991UDA-7B"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "rp2350-decoder:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
+				(at 0 -13.208 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NMOS Alpha-Omega"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DMN2991UDA-7B_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DMN2991UDA-7B_1_1"
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "B2"
+					(name "G1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DMN2991UDA-7B_2_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2916,31 +2831,72 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:+1V1"
-			(power)
-			(pin_numbers hide)
+		(symbol "rp2350-decoder:D_45deg"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "D"
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
+					(justify left)
 				)
 			)
-			(property "Value" "+1V1"
-				(at 0 3.556 0)
+			(property "Value" "D_45deg"
+				(at 1.27 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -2952,7 +2908,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2961,7 +2917,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+1V1\""
+			(property "Description" "Diode, rotated by 45°"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2970,7 +2926,25 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "Sim.Device" "D"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2979,10 +2953,31 @@
 					(hide yes)
 				)
 			)
-			(symbol "+1V1_0_1"
+			(property "ki_fp_filters" "D*Bridge* D*Rectifier*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_45deg_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.27 0) (xy 0 1.27) (xy 0.635 -0.635) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0.635) (xy -2.54 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2994,10 +2989,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 -1.27) (xy 1.27 0)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -3006,7 +3001,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 2.54 -2.54) (xy 0.635 -0.635)
 					)
 					(stroke
 						(width 0)
@@ -3017,11 +3012,29 @@
 					)
 				)
 			)
-			(symbol "+1V1_1_1"
-				(pin power_in line
-					(at 0 0 90)
+			(symbol "D_45deg_1_1"
+				(pin passive line
+					(at -2.54 2.54 0)
 					(length 0)
-					(name "~"
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3037,26 +3050,29 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
+		(symbol "rp2350-decoder:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3072,7 +3088,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3081,7 +3097,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Schottky diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3090,7 +3106,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3099,10 +3115,43 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -3112,36 +3161,12 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3156,13 +3181,36 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "rp2350-decoder:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3253,26 +3301,29 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:VDC"
-			(power)
-			(pin_numbers hide)
+		(symbol "rp2350-decoder:L"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "L"
+				(at -1.27 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Value" "VDC"
-				(at 0 3.556 0)
+			(property "Value" "L"
+				(at 1.905 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3288,7 +3339,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3297,7 +3348,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(property "Description" "Inductor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3306,7 +3357,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3315,95 +3366,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "VDC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "rp2350-decoder:1TS026A-1000-0550-CT"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1TS026A-1000-0550-CT"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "rp2350-decoder:SW-SMD_4P-L2.6-W1.6-P0.75-LS3.0"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3412,122 +3375,60 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(hide yes)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
 				)
 			)
-			(property "LCSC Part" "C913778"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1TS026A-1000-0550-CT_0_1"
-				(circle
-					(center 0 -0.76)
-					(radius 0.25)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -0.76)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.52) (xy 0 0.76)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.02) (xy 0.25 -0.76)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0.76)
-					(radius 0.25)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 5.08 2.54 180)
-					(length 2.54)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
 					(name "1"
 						(effects
 							(font
@@ -3543,9 +3444,9 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at -5.08 2.54 0)
-					(length 2.54)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name "2"
 						(effects
 							(font
@@ -3561,74 +3462,37 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "rp2350-decoder:AOTA-B201610S3R3-101-T"
+		(symbol "rp2350-decoder:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "L"
-				(at 0 5.08 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "AOTA-B201610S3R3-101-T"
-				(at 0 -5.08 0)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "rp2350-decoder:IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -3637,7 +3501,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3646,158 +3510,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C42411119"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AOTA-B201610S3R3-101-T_0_1"
-				(arc
-					(start -2.03 0.01)
-					(mid -3.055 1.013)
-					(end -4.06 -0.01)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.01)
-					(mid -1.025 1.013)
-					(end -2.03 -0.01)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.03 0.01)
-					(mid 1.005 1.013)
-					(end 0 -0.01)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 4.06 0.01)
-					(mid 3.035 1.013)
-					(end 2.03 -0.01)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AOTA-B201610S3R3-101-T_1_1"
-				(pin unspecified line
-					(at -5.08 0 0)
-					(length 1.016)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 5.08 0 180)
-					(length 1.016)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "rp2350-decoder:DMN2991UDA-7B"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "DMN2991UDA-7B"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "rp2350-decoder:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-				(at 0 -13.208 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "NMOS Alpha-Omega"
+			(property "Description" "Light emitting diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3806,7 +3519,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3815,10 +3528,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "DMN2991UDA-7B_0_1"
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -3830,7 +3552,31 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -3842,7 +3588,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -3850,143 +3596,14 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
-			(symbol "DMN2991UDA-7B_1_1"
+			(symbol "LED_1_1"
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "S1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4002,9 +3619,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "G1"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4019,81 +3636,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
-			(symbol "DMN2991UDA-7B_2_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "rp2350-decoder:MAX98357AEWL+T"
 			(exclude_from_sim no)
@@ -4164,60 +3708,6 @@
 					)
 				)
 				(pin input line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "~{SD_MODE}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 7.62 180)
-					(length 2.54)
-					(name "OUTP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -12.7 7.62 0)
 					(length 2.54)
 					(name "DIN"
@@ -4228,42 +3718,6 @@
 						)
 					)
 					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "GAIN_SLOT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "OUTN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4289,24 +3743,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -12.7 2.54 0)
 					(length 2.54)
@@ -4325,7 +3761,116 @@
 						)
 					)
 				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "~{SD_MODE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "GAIN_SLOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "OUTP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "OUTN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "rp2350-decoder:MD9927"
 			(exclude_from_sim no)
@@ -4397,17 +3942,17 @@
 				)
 			)
 			(symbol "MD9927_1_1"
-				(pin power_in line
-					(at -1.27 8.89 270)
+				(pin output line
+					(at -8.89 2.54 0)
 					(length 2.54)
-					(name "VM"
+					(name "IN1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4433,17 +3978,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 8.89 -2.54 180)
+				(pin power_in line
+					(at -1.27 8.89 270)
 					(length 2.54)
-					(name "OUT2"
+					(name "VM"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4469,53 +4014,18 @@
 						)
 					)
 				)
-				(pin output line
-					(at 8.89 2.54 180)
-					(length 2.54)
-					(name "IN2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -8.89 2.54 0)
-					(length 2.54)
-					(name "IN1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
-					(at 8.89 0 180)
+					(at 0 -8.89 90)
 					(length 2.54)
-					(name "nSLEEP"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4541,17 +4051,53 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -8.89 90)
-					(length 2.54) hide
-					(name "GND"
+				(pin output line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "IN2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "nSLEEP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4560,6 +4106,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "rp2350-decoder:NCS2220AMUT1G"
 			(exclude_from_sim no)
@@ -4713,52 +4260,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 11.43 -5.08 180)
+					(at 11.43 5.08 180)
 					(length 2.54)
-					(name "IN+2"
+					(name "EP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -2.54 180)
-					(length 2.54)
-					(name "IN−2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 0 180)
-					(length 2.54)
-					(name "OUT2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4785,16 +4296,52 @@
 					)
 				)
 				(pin unspecified line
-					(at 11.43 5.08 180)
+					(at 11.43 0 180)
 					(length 2.54)
-					(name "EP"
+					(name "OUT2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -2.54 180)
+					(length 2.54)
+					(name "IN−2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -5.08 180)
+					(length 2.54)
+					(name "IN+2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4803,6 +4350,131 @@
 					)
 				)
 			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 		(symbol "rp2350-decoder:RP2350A_C42411118"
 			(exclude_from_sim no)
@@ -4884,6 +4556,366 @@
 					)
 				)
 				(pin unspecified line
+					(at -21.59 31.75 0)
+					(length 2.54)
+					(name "RUN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 24.13 0)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 21.59 0)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 13.97 0)
+					(length 2.54)
+					(name "USB_DM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 11.43 0)
+					(length 2.54)
+					(name "USB_DP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 3.81 0)
+					(length 2.54)
+					(name "XIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 1.27 0)
+					(length 2.54)
+					(name "XOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -6.35 0)
+					(length 2.54)
+					(name "VREG_FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -8.89 0)
+					(length 2.54)
+					(name "VREG_LX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -11.43 0)
+					(length 2.54)
+					(name "VREG_VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -19.05 0)
+					(length 2.54)
+					(name "QSPI_SS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -21.59 0)
+					(length 2.54)
+					(name "QSPI_SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -24.13 0)
+					(length 2.54)
+					(name "QSPI_SD0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -26.67 0)
+					(length 2.54)
+					(name "QSPI_SD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -29.21 0)
+					(length 2.54)
+					(name "QSPI_SD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -21.59 -31.75 0)
+					(length 2.54)
+					(name "QSPI_SD3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 59.69 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -12.7 59.69 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 59.69 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 59.69 270)
+					(length 2.54)
+					(name "ADC_AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
 					(at -5.08 59.69 270)
 					(length 2.54)
 					(name "IOVDD"
@@ -4902,24 +4934,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 21.59 19.05 180)
-					(length 2.54)
-					(name "GPIO7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at -2.54 59.69 270)
 					(length 2.54)
 					(name "IOVDD"
@@ -4930,6 +4944,312 @@
 						)
 					)
 					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -1.27 -59.69 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 59.69 270)
+					(length 2.54)
+					(name "IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 1.27 -59.69 90)
+					(length 2.54)
+					(name "VREG_PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 2.54 59.69 270)
+					(length 2.54)
+					(name "IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 59.69 270)
+					(length 2.54)
+					(name "IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 59.69 270)
+					(length 2.54)
+					(name "IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 59.69 270)
+					(length 2.54)
+					(name "QSPI_IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 12.7 59.69 270)
+					(length 2.54)
+					(name "USB_OTP_VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 59.69 270)
+					(length 2.54)
+					(name "VREG_AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 36.83 180)
+					(length 2.54)
+					(name "GPIO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 34.29 180)
+					(length 2.54)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 31.75 180)
+					(length 2.54)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 29.21 180)
+					(length 2.54)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 26.67 180)
+					(length 2.54)
+					(name "GPIO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 24.13 180)
+					(length 2.54)
+					(name "GPIO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 21.59 180)
+					(length 2.54)
+					(name "GPIO6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 21.59 19.05 180)
+					(length 2.54)
+					(name "GPIO7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5082,150 +5402,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 21.59 36.83 180)
-					(length 2.54)
-					(name "GPIO0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 59.69 270)
-					(length 2.54)
-					(name "IOVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 3.81 0)
-					(length 2.54)
-					(name "XIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 1.27 0)
-					(length 2.54)
-					(name "XOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 59.69 270)
-					(length 2.54)
-					(name "DVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 24.13 0)
-					(length 2.54)
-					(name "SWCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 21.59 0)
-					(length 2.54)
-					(name "SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 31.75 0)
-					(length 2.54)
-					(name "RUN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at 21.59 -3.81 180)
 					(length 2.54)
 					(name "GPIO16"
@@ -5272,42 +5448,6 @@
 						)
 					)
 					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 21.59 34.29 180)
-					(length 2.54)
-					(name "GPIO1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 2.54 59.69 270)
-					(length 2.54)
-					(name "IOVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5442,60 +5582,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 59.69 270)
-					(length 2.54)
-					(name "IOVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 59.69 270)
-					(length 2.54)
-					(name "DVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 21.59 31.75 180)
-					(length 2.54)
-					(name "GPIO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at 21.59 -29.21 180)
 					(length 2.54)
 					(name "GPIO26_ADC0"
@@ -5567,17 +5653,124 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at -7.62 59.69 270)
-					(length 2.54)
-					(name "ADC_AVDD"
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:VDC"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VDC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VDC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "44"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5585,17 +5778,135 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 7.62 59.69 270)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:W25Q128JVP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U3"
+				(at -9.906 -7.874 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "W25Q128JVPIQ"
+				(at -15.748 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
+				(at 0 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, WSON-8"
+				(at 0 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C190862"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB_CORRECTION" "0;0;0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flash memory SPI"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "WSON*1EP*6x5mm*P1.27mm*EP3.4x4.3mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "W25Q128JVP_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "W25Q128JVP_1_1"
+				(pin input line
+					(at -10.16 7.62 0)
 					(length 2.54)
-					(name "IOVDD"
+					(name "~{CS}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "45"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5603,280 +5914,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 15.24 59.69 270)
+				(pin input line
+					(at -10.16 5.08 0)
 					(length 2.54)
-					(name "VREG_AVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "46"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 1.27 -59.69 90)
-					(length 2.54)
-					(name "VREG_PGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "47"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -8.89 0)
-					(length 2.54)
-					(name "VREG_LX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -11.43 0)
-					(length 2.54)
-					(name "VREG_VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "49"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 21.59 29.21 180)
-					(length 2.54)
-					(name "GPIO3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -6.35 0)
-					(length 2.54)
-					(name "VREG_FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "50"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 13.97 0)
-					(length 2.54)
-					(name "USB_DM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "51"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 11.43 0)
-					(length 2.54)
-					(name "USB_DP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "52"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 59.69 270)
-					(length 2.54)
-					(name "USB_OTP_VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "53"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 10.16 59.69 270)
-					(length 2.54)
-					(name "QSPI_IOVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "54"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -31.75 0)
-					(length 2.54)
-					(name "QSPI_SD3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "55"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -21.59 0)
-					(length 2.54)
-					(name "QSPI_SCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "56"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -24.13 0)
-					(length 2.54)
-					(name "QSPI_SD0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "57"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -29.21 0)
-					(length 2.54)
-					(name "QSPI_SD2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "58"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -21.59 -26.67 0)
-					(length 2.54)
-					(name "QSPI_SD1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "59"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 59.69 270)
-					(length 2.54)
-					(name "DVDD"
+					(name "CLK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5891,17 +5932,17 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at -21.59 -19.05 0)
+				(pin bidirectional line
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "QSPI_SS"
+					(name "DI(IO0)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "60"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5909,17 +5950,17 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at -1.27 -59.69 90)
+				(pin bidirectional line
+					(at -10.16 0 0)
 					(length 2.54)
-					(name "GND"
+					(name "DO(IO1)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "61"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5927,10 +5968,28 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 21.59 26.67 180)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "GPIO4"
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "IO3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5945,10 +6004,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 21.59 24.13 180)
+				(pin power_in line
+					(at 0 12.7 270)
 					(length 2.54)
-					(name "GPIO5"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5963,10 +6022,29 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 21.59 21.59 180)
+				(pin power_in line
+					(at 0 -12.7 90)
 					(length 2.54)
-					(name "GPIO6"
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5982,7 +6060,162 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Inrush current is restricted only by PWMing CAP_ENABLE. 100% duty cycle\nnot recommended with large caps, and only after receiving move command."
+		(exclude_from_sim no)
+		(at 100.838 109.728 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d007afa-2cff-4311-912f-dc5cfe536d5b")
+	)
+	(text "CAP_ENABLE is strongly pulled\nlow when VDC drops below 8V"
+		(exclude_from_sim no)
+		(at 30.988 112.014 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48e2bae3-55e0-48ef-bcf6-2302f45fe874")
+	)
+	(text "Aux Outputs"
+		(exclude_from_sim no)
+		(at 341.122 19.304 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "5842aa93-f97e-4d42-98c9-455f1249e6ee")
+	)
+	(text "RailCom Transmit"
+		(exclude_from_sim no)
+		(at 200.66 31.496 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "63b2b0a4-a1e0-49a6-8122-ad739b6a75cc")
+	)
+	(text "Convert DCC rail signals into a logic-level signal"
+		(exclude_from_sim no)
+		(at 136.906 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66000aa7-a493-4f0d-8209-0aa9d4f476f1")
+	)
+	(text "Motor Driver"
+		(exclude_from_sim no)
+		(at 343.154 189.484 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "867b6963-a7c7-4f6b-9c7e-e1192bfde94e")
+	)
+	(text "Oscillator"
+		(exclude_from_sim no)
+		(at 98.552 154.178 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c407a66-7673-47c2-8c5a-f85d601117a7")
+	)
+	(text "Power Supply"
+		(exclude_from_sim no)
+		(at 65.024 31.496 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "a62fa377-5372-4cd0-976f-55e5514931a3")
+	)
+	(text "Flash"
+		(exclude_from_sim no)
+		(at 102.108 208.788 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "af65f85f-bed2-4ec9-929a-f21403368729")
+	)
+	(text "Ext. Capacitor Low Rail Voltage Cutoff"
+		(exclude_from_sim no)
+		(at 17.272 103.886 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "cefb9bdc-87c5-487c-8cc5-d563010915f6")
+	)
+	(text "Ext. Capacitor Charge Control"
+		(exclude_from_sim no)
+		(at 104.14 103.886 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0a38075-2b8c-4c9a-83c8-b45bf5456d6d")
+	)
+	(text "Audio Output"
+		(exclude_from_sim no)
+		(at 340.36 129.032 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "d259c864-377c-4d4a-9f79-877f46ae3838")
+	)
+	(text "E24 Connector"
+		(exclude_from_sim no)
+		(at 262.89 31.369 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed2bcf50-143d-442e-9827-f3d4816664ef")
+	)
+	(text "DCC Signal"
+		(exclude_from_sim no)
+		(at 147.828 31.75 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "f26b9b64-dbed-4079-be17-0fb616fadf89")
 	)
 	(junction
 		(at 210.82 107.95)
@@ -9692,160 +9925,6 @@
 		)
 		(uuid "ff2963fd-2a06-43ca-86fa-fdd247ebbf3f")
 	)
-	(text "Inrush current is restricted only by PWMing CAP_ENABLE. 100% duty cycle\nnot recommended with large caps, and only after receiving move command."
-		(exclude_from_sim no)
-		(at 100.838 109.728 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0d007afa-2cff-4311-912f-dc5cfe536d5b")
-	)
-	(text "CAP_ENABLE is strongly pulled\nlow when VDC drops below 8V"
-		(exclude_from_sim no)
-		(at 30.988 112.014 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "48e2bae3-55e0-48ef-bcf6-2302f45fe874")
-	)
-	(text "Aux Outputs"
-		(exclude_from_sim no)
-		(at 341.122 19.304 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "5842aa93-f97e-4d42-98c9-455f1249e6ee")
-	)
-	(text "RailCom Transmit"
-		(exclude_from_sim no)
-		(at 200.66 31.496 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "63b2b0a4-a1e0-49a6-8122-ad739b6a75cc")
-	)
-	(text "Convert DCC rail signals into a logic-level signal"
-		(exclude_from_sim no)
-		(at 136.906 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "66000aa7-a493-4f0d-8209-0aa9d4f476f1")
-	)
-	(text "Motor Driver"
-		(exclude_from_sim no)
-		(at 343.154 189.484 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "867b6963-a7c7-4f6b-9c7e-e1192bfde94e")
-	)
-	(text "Oscillator"
-		(exclude_from_sim no)
-		(at 98.552 154.178 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c407a66-7673-47c2-8c5a-f85d601117a7")
-	)
-	(text "Power Supply"
-		(exclude_from_sim no)
-		(at 65.024 31.496 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "a62fa377-5372-4cd0-976f-55e5514931a3")
-	)
-	(text "Flash"
-		(exclude_from_sim no)
-		(at 102.108 208.788 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "af65f85f-bed2-4ec9-929a-f21403368729")
-	)
-	(text "Ext. Capacitor Low Rail Voltage Cutoff"
-		(exclude_from_sim no)
-		(at 17.272 103.886 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "cefb9bdc-87c5-487c-8cc5-d563010915f6")
-	)
-	(text "Ext. Capacitor Charge Control"
-		(exclude_from_sim no)
-		(at 104.14 103.886 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "d0a38075-2b8c-4c9a-83c8-b45bf5456d6d")
-	)
-	(text "Audio Output"
-		(exclude_from_sim no)
-		(at 340.36 129.032 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "d259c864-377c-4d4a-9f79-877f46ae3838")
-	)
-	(text "E24 Connector"
-		(exclude_from_sim no)
-		(at 262.89 31.369 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "ed2bcf50-143d-442e-9827-f3d4816664ef")
-	)
-	(text "DCC Signal"
-		(exclude_from_sim no)
-		(at 147.828 31.75 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "f26b9b64-dbed-4079-be17-0fb616fadf89")
-	)
 	(label "AUX6 (VDC)"
 		(at 251.46 69.85 0)
 		(effects
@@ -10997,7 +11076,7 @@
 		(uuid "f7936e70-3f24-49eb-a1d1-af06b1a633d3")
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 77.47 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11063,7 +11142,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 236.22 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11129,7 +11208,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 154.94 232.41 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11205,7 +11284,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847BPN")
+		(lib_id "rp2350-decoder:BC847BPN")
 		(at 215.9 48.26 0)
 		(mirror x)
 		(unit 2)
@@ -11305,7 +11384,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_45deg")
+		(lib_id "rp2350-decoder:D_45deg")
 		(at 48.26 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11515,7 +11594,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 35.56 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11582,7 +11661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 340.36 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11647,7 +11726,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 102.87 45.72 90)
 		(mirror x)
 		(unit 1)
@@ -11733,7 +11812,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 36.83 156.21 0)
 		(mirror y)
 		(unit 1)
@@ -11822,7 +11901,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 370.84 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11887,7 +11966,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 224.79 57.15 90)
 		(mirror x)
 		(unit 1)
@@ -11973,7 +12052,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 342.9 220.98 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12066,7 +12145,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:AP63203WU")
+		(lib_id "rp2350-decoder:AP63203WU")
 		(at 88.9 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12173,7 +12252,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 306.07 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12240,7 +12319,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 144.78 207.01 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12316,7 +12395,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "rp2350-decoder:VDC")
 		(at 250.19 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12383,7 +12462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 96.52 167.64 270)
 		(mirror x)
 		(unit 1)
@@ -12571,7 +12650,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847BPN")
+		(lib_id "rp2350-decoder:BC847BPN")
 		(at 201.93 76.2 0)
 		(mirror y)
 		(unit 1)
@@ -12671,7 +12750,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 369.57 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12736,7 +12815,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 354.33 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12802,7 +12881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 248.92 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12990,7 +13069,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 36.83 148.59 0)
 		(mirror y)
 		(unit 1)
@@ -13078,7 +13157,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 144.78 199.39 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13145,7 +13224,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 172.72 181.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13231,7 +13310,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 64.77 148.59 0)
 		(mirror y)
 		(unit 1)
@@ -13319,7 +13398,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 189.23 113.03 0)
 		(mirror y)
 		(unit 1)
@@ -13417,7 +13496,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 369.57 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13584,7 +13663,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 153.67 57.15 0)
 		(mirror x)
 		(unit 1)
@@ -13680,7 +13759,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 377.19 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13944,7 +14023,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 147.32 195.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14031,7 +14110,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "rp2350-decoder:D_Schottky")
 		(at 115.57 123.19 0)
 		(mirror y)
 		(unit 1)
@@ -14126,7 +14205,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 140.97 227.33 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14337,7 +14416,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 255.27 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14505,7 +14584,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 64.77 160.02 0)
 		(mirror y)
 		(unit 1)
@@ -14572,7 +14651,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 327.66 201.93 0)
 		(mirror y)
 		(unit 1)
@@ -14669,7 +14748,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 153.67 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14734,7 +14813,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 114.3 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14821,7 +14900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 222.25 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14887,7 +14966,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 359.41 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14974,7 +15053,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Local Symbol Library:505066-2422")
+		(lib_id "rp2350-decoder:505066-2422")
 		(at 279.4 39.37 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14998,7 +15077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Local Library:5050662422"
+		(property "Footprint" "rp2350-decoder:CONN-SMD_5052702412"
 			(at 287.02 78.74 0)
 			(effects
 				(font
@@ -15170,7 +15249,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 210.82 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15245,7 +15324,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "rp2350-decoder:Conn_01x01")
 		(at 160.02 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15321,7 +15400,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 214.63 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15418,7 +15497,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 236.22 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15617,7 +15696,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 354.33 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15682,7 +15761,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 252.73 207.01 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15777,7 +15856,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 74.93 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15842,7 +15921,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 237.49 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15939,7 +16018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847BPN")
+		(lib_id "rp2350-decoder:BC847BPN")
 		(at 209.55 57.15 180)
 		(unit 2)
 		(exclude_from_sim no)
@@ -16038,7 +16117,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Memory_Flash:W25Q128JVP")
+		(lib_id "rp2350-decoder:W25Q128JVP")
 		(at 107.95 234.95 0)
 		(mirror y)
 		(unit 1)
@@ -16154,7 +16233,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
+		(lib_id "rp2350-decoder:L")
 		(at 110.49 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16343,7 +16422,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 269.24 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16417,7 +16496,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND24")
+		(lib_id "rp2350-decoder:Crystal_GND24")
 		(at 107.95 167.64 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16610,7 +16689,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 210.82 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16696,7 +16775,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 36.83 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16980,7 +17059,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 64.77 144.78 0)
 		(mirror y)
 		(unit 1)
@@ -17047,7 +17126,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 207.01 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17134,7 +17213,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 370.84 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17221,7 +17300,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "rp2350-decoder:VDC")
 		(at 36.83 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17389,7 +17468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "rp2350-decoder:VDC")
 		(at 55.88 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17456,7 +17535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 66.04 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17726,7 +17805,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 36.83 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17792,7 +17871,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 107.95 162.56 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17867,7 +17946,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 129.54 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17954,7 +18033,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 64.77 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18043,7 +18122,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 189.23 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18117,7 +18196,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847BPN")
+		(lib_id "rp2350-decoder:BC847BPN")
 		(at 219.71 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18217,7 +18296,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+1V1")
+		(lib_id "rp2350-decoder:+1V1")
 		(at 144.78 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18293,7 +18372,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 36.83 127 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18381,7 +18460,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 172.72 184.15 90)
 		(mirror x)
 		(unit 1)
@@ -18468,7 +18547,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 118.11 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18533,7 +18612,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "rp2350-decoder:VDC")
 		(at 110.49 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18703,7 +18782,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 248.92 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18777,7 +18856,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "rp2350-decoder:Conn_01x01")
 		(at 160.02 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18853,7 +18932,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 246.38 134.62 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18939,7 +19018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 340.36 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19004,7 +19083,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_45deg")
+		(lib_id "rp2350-decoder:D_45deg")
 		(at 48.26 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19098,7 +19177,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 74.93 54.61 0)
 		(mirror y)
 		(unit 1)
@@ -19194,7 +19273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_45deg")
+		(lib_id "rp2350-decoder:D_45deg")
 		(at 43.18 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19289,7 +19368,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 355.6 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19355,7 +19434,7 @@
 	)
 	(symbol
 		(lib_name "+1V1_1")
-		(lib_id "power:+1V1")
+		(lib_id "rp2350-decoder:+1V1_1")
 		(at 200.66 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19429,7 +19508,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 368.3 231.14 0)
 		(mirror x)
 		(unit 1)
@@ -19523,7 +19602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 250.19 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19590,7 +19669,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 342.9 231.14 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19683,7 +19762,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "rp2350-decoder:LED")
 		(at 262.89 207.01 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19777,7 +19856,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 326.39 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19843,7 +19922,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 340.36 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19908,7 +19987,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_45deg")
+		(lib_id "rp2350-decoder:D_45deg")
 		(at 43.18 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19993,7 +20072,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 250.19 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20060,7 +20139,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 340.36 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20126,7 +20205,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 95.25 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20200,7 +20279,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 369.57 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20529,7 +20608,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 118.11 41.91 0)
 		(mirror y)
 		(unit 1)
@@ -20595,7 +20674,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 368.3 220.98 0)
 		(mirror x)
 		(unit 1)
@@ -20689,7 +20768,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 226.06 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20786,7 +20865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 101.6 172.72 0)
 		(mirror y)
 		(unit 1)
@@ -20874,7 +20953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 118.11 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20961,7 +21040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 95.25 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21037,7 +21116,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 327.66 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21102,7 +21181,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 144.78 232.41 270)
 		(mirror x)
 		(unit 1)
@@ -21178,7 +21257,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "rp2350-decoder:D_Schottky")
 		(at 157.48 130.81 90)
 		(mirror x)
 		(unit 1)
@@ -21273,7 +21352,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 107.95 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21349,7 +21428,7 @@
 	)
 	(symbol
 		(lib_name "GND_1")
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND_1")
 		(at 88.9 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21414,7 +21493,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "rp2350-decoder:R")
 		(at 153.67 45.72 0)
 		(mirror x)
 		(unit 1)
@@ -21509,7 +21588,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 95.25 232.41 0)
 		(mirror y)
 		(unit 1)
@@ -21607,7 +21686,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 250.19 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21673,7 +21752,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 358.14 195.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21738,7 +21817,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 209.55 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21813,7 +21892,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 377.19 201.93 0)
 		(mirror y)
 		(unit 1)
@@ -21901,7 +21980,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "rp2350-decoder:GND")
 		(at 369.57 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21966,7 +22045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "rp2350-decoder:+3.3V")
 		(at 207.01 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22041,7 +22120,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "rp2350-decoder:C")
 		(at 147.32 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22132,4 +22211,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

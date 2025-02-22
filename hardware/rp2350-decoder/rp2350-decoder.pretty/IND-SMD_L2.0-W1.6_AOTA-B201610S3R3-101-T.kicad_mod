@@ -1,12 +1,13 @@
 (footprint "IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -4 0)
+		(at 0 -4 180)
 		(layer "F.SilkS")
-		(uuid "60fb4570-bafb-49fa-8980-88778fd97385")
+		(hide yes)
+		(uuid "9431ca1f-7e43-41f7-b1ef-2c6f5d7a0329")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T"
-		(at 0 4 0)
+	(property "Value" "3.3uH"
+		(at 0 4 180)
 		(layer "F.Fab")
-		(uuid "de1d921a-205c-4910-843b-4d2e9ccc1cfc")
+		(hide yes)
+		(uuid "7a4cf38a-ce14-4515-83a5-3b7e6e411629")
 		(effects
 			(font
 				(size 1 1)
@@ -25,23 +27,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8567843503118221312"
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1ef61ec0-0643-407a-9abc-9edc358c07ec")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Datasheet" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "35c61c07-1675-47d5-ad5b-256b60c7e00a")
+		(uuid "5828cd49-53e8-4398-b5b1-61133120cf45")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -50,13 +40,52 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c160494a-bcb6-4cbc-a8f7-23e68249d1d4")
+		(uuid "6af792bd-3d4c-4313-8f89-bf8036df405d")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C42411119"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f22abfe-60b4-43ba-9678-346ff7ad23e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "1.0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22f47486-83c5-4f58-91aa-a6925f04947b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C42411119"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a1d1a6a-11d0-4921-b984-84c37da4ed76")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -70,7 +99,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "2b364567-95b2-409a-b21a-b09a6d5e5772")
+		(uuid "9b75112b-24c5-40b2-bc97-ed8dfdea77a2")
 	)
 	(fp_line
 		(start -0.27 0.8)
@@ -80,18 +109,18 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "66967c38-e513-4287-8a0d-320ba8e6c12f")
+		(uuid "167bea2f-3147-49d3-920e-92fd3246576e")
 	)
 	(fp_circle
-		(center 0.9 -1.1)
-		(end 1 -1.1)
+		(center 1.2 -1.1)
+		(end 1.3 -1.1)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "ec566040-9be8-4566-a851-fc362839125d")
+		(uuid "329451dd-3726-42f0-b632-3196335dfffa")
 	)
 	(fp_rect
 		(start -1.75 -1.05)
@@ -100,9 +129,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "6df68fcb-eb64-4924-a9ab-b2a9f7ba272d")
+		(uuid "488a1766-775c-4025-a589-7c119625f56b")
 	)
 	(fp_circle
 		(center -1 0.8)
@@ -111,14 +140,15 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "6a0fc7b8-0750-4cac-8a2e-598edad7b67b")
+		(uuid "615ff0dd-1a42-46e0-8d82-e3343d2a6cd2")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
-		(uuid "4734c91c-f773-4429-a5e4-b417f156097f")
+		(hide yes)
+		(uuid "4321e8d7-7e92-46a7-84a9-d7f13a3d31fb")
 		(effects
 			(font
 				(size 1 1)
@@ -129,15 +159,16 @@
 	(pad "1" smd rect
 		(at -1 0)
 		(size 1 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "2d94f476-bc2c-4af9-b780-528898d69e49")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d5d200d0-b418-4116-812c-bd5c0216b8c8")
 	)
 	(pad "2" smd rect
 		(at 1 0)
 		(size 1 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "55417b06-ad91-4fdf-bf6b-65b76b7a343a")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "30f3cdbd-0a58-4add-a18a-2c194f530c9b")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T.wrl"
 		(offset
 			(xyz 0 -0 -0)

@@ -1,0 +1,242 @@
+(footprint "Crystal_SMD_3225-4Pin_3.2x2.5mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, 3.2x2.5mm^2 package")
+	(tags "SMD SMT crystal")
+	(property "Reference" "REF**"
+		(at 0 -2.45 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9eb37cff-2ea9-4778-bd89-04ee3aee6197")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ABM8-272-T3"
+		(at 0 2.45 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1959bcb-b9be-485d-a4f1-d8db33184fc3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8559470777180311552"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a425ad9-7536-4d99-81c9-beb33c26f5cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Four pin crystal, GND on pins 2 and 4"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3271f9c-f68a-4819-8b14-c7fab44f1265")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C20625731"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d098cc9c-8d34-47a1-a10f-e160649aed07")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.8"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "949beca3-22b0-4446-8a0b-5734f7ee66bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 2 1.65)
+		(end -2 1.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b3aa6838-9d3e-4c51-ab9d-f00b1aaa53cd")
+	)
+	(fp_line
+		(start -2 1.65)
+		(end -2 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aab8bb15-cd31-49e8-8770-7e10f9f6b4b3")
+	)
+	(fp_line
+		(start 2.1 1.7)
+		(end -2.1 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f08ac13e-b626-4ee7-91dc-3bb24cd77d20")
+	)
+	(fp_line
+		(start 2.1 -1.7)
+		(end 2.1 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b9c63507-2382-46c5-adaa-db9f425eb6b5")
+	)
+	(fp_line
+		(start -2.1 1.7)
+		(end -2.1 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "30976d4f-12ff-4c56-a68f-c6475ff1d143")
+	)
+	(fp_line
+		(start -2.1 -1.7)
+		(end 2.1 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2257c319-52b8-46b9-80a9-906bcf9954df")
+	)
+	(fp_line
+		(start 1.6 1.25)
+		(end -1.6 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41db0f6a-6f33-424f-a5d0-5830dbb5b413")
+	)
+	(fp_line
+		(start 1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "26e7621c-f2c4-4eac-ab62-9a91e3b1d150")
+	)
+	(fp_line
+		(start -0.6 1.25)
+		(end -1.6 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cfb31f61-3dcf-433f-adc9-f75bab9730f2")
+	)
+	(fp_line
+		(start -1.6 1.25)
+		(end -1.6 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "414f1c44-f372-4a3d-8d7d-3f885b930fda")
+	)
+	(fp_line
+		(start -1.6 -1.25)
+		(end 1.6 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a34123e-2b24-4c85-9267-8fe1929b2cc7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "865f401b-a6d5-4db6-b659-dd51fc9af7f7")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.1 0.85 180)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7134e009-4377-4176-a779-766fbe6dfa89")
+	)
+	(pad "2" smd rect
+		(at 1.1 0.85 180)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fbd80e49-0f9b-42a3-8e30-47c082248a54")
+	)
+	(pad "3" smd rect
+		(at 1.1 -0.85 180)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e9095f30-4b7f-4986-9dc9-dfd3dfeafc26")
+	)
+	(pad "4" smd rect
+		(at -1.1 -0.85 180)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "de109fb6-194a-43d0-bb85-e6ae003095c4")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

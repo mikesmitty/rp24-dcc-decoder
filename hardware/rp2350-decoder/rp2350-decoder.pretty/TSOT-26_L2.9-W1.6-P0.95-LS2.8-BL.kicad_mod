@@ -1,12 +1,13 @@
 (footprint "TSOT-26_L2.9-W1.6-P0.95-LS2.8-BL"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -2.5 0)
 		(layer "F.SilkS")
-		(uuid "e8fa8516-bfba-47d1-8d22-1532a2a7c8d3")
+		(hide yes)
+		(uuid "fa08a24d-4ee9-4d59-bb4d-e7e90bab758c")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "TSOT-26_L2.9-W1.6-P0.95-LS2.8-BL"
+	(property "Value" "AP63203WU"
 		(at 0 5.2 0)
 		(layer "F.Fab")
-		(uuid "e6af9942-8ca1-4ffa-b523-19304a834394")
+		(hide yes)
+		(uuid "9440a7eb-8055-4364-a9c7-8785bdea009e")
 		(effects
 			(font
 				(size 1 1)
@@ -25,11 +27,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "fcde54f7-a693-4b83-aa23-55088e54e2aa")
+		(uuid "f800e938-cc0f-4a3a-ab64-2726252a9c7c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,11 +39,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Description" "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e880f233-3500-4a18-af2e-3011934b2380")
+		(uuid "5de8b52c-a125-479e-b7b8-4b35431dd931")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -49,14 +51,41 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "LCSC" "C780769"
 		(at 0 0 0)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "603c5d07-d314-4f81-8ab1-675888f3482f")
+		(uuid "4c7ed88c-70d9-4f5e-91ef-d01e2b193619")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB_CORRECTION" "0;0;0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ec7f454-2b24-4a91-9853-86874cda9718")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "1.0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb86fd9f-e635-417d-9705-671f689ea9a9")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -70,28 +99,18 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "637d8e94-95c8-445a-97ba-5a814065c30a")
-	)
-	(fp_line
-		(start 1.5 -0.57)
-		(end 1.5 0.57)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c322d99e-207a-4fea-a978-2c750ed63815")
+		(uuid "146feade-3fc9-4cd3-893c-31d23b53dae5")
 	)
 	(fp_circle
-		(center -1.8 1.1)
-		(end -1.66 1.1)
+		(center -1.5 1.6)
+		(end -1.36 1.6)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "0e59428b-5576-4d46-a84f-57392bf4330a")
+		(uuid "e7719a04-cb06-4f5e-a778-9a3d3f34d4c9")
 	)
 	(fp_rect
 		(start -1.7 -1.9)
@@ -100,9 +119,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "342546ba-a587-4c95-850d-fb3388ffd7e8")
+		(uuid "76cf6063-0c0b-4a93-ad63-499ccd5e7889")
 	)
 	(fp_rect
 		(start -1.45 -0.8)
@@ -111,9 +130,9 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "4a2e8053-7469-4637-8f82-1a7775fc682a")
+		(uuid "69956112-3ab6-4c71-a4e0-75745959aa07")
 	)
 	(fp_circle
 		(center -1.45 1.4)
@@ -122,14 +141,15 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "577be058-f108-467c-86ad-0c13086234bb")
+		(uuid "97e68bc3-75e9-45b7-b457-9246e5d1d17c")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.45 0)
 		(layer "F.Fab")
-		(uuid "0e46ae0e-e941-4871-b8bb-16c4f92f29f0")
+		(hide yes)
+		(uuid "4521499a-ceca-45b2-af39-077f7f0370ac")
 		(effects
 			(font
 				(size 1 1)
@@ -140,42 +160,43 @@
 	(pad "1" smd rect
 		(at -0.95 1.2 180)
 		(size 0.55 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "562c8742-41c5-469f-96bf-e5e184d11696")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2198c29d-39e0-4be1-a22e-55b82362b690")
 	)
 	(pad "2" smd rect
 		(at 0 1.2 180)
 		(size 0.55 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "e1f60c54-f100-4ade-8c3e-162c1b55f992")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7db876f5-114b-4f57-9ecf-9ec355b7b493")
 	)
 	(pad "3" smd rect
 		(at 0.95 1.2 180)
 		(size 0.55 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "8254d38f-8330-44ed-b384-cbc1ff4ef68d")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4cc9c8b5-95c5-4b81-a850-56e7f8cbc0cf")
 	)
 	(pad "4" smd rect
 		(at 0.95 -1.2 180)
 		(size 0.55 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "094f6dc3-b99b-4c86-9bea-c4a3ffe27ce5")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b2250558-9785-4b0a-9dab-bd1484a2b2e3")
 	)
 	(pad "5" smd rect
 		(at 0 -1.2 180)
 		(size 0.55 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "5b6fe003-3fdc-4ae4-a832-7e8ade433b4b")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0b4dbd33-85b7-4b7b-9779-4414e6f904b7")
 	)
 	(pad "6" smd rect
 		(at -0.95 -1.2 180)
 		(size 0.55 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "5093b46c-47e0-4744-9d73-8711d336d3d9")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8dd5daf8-f9e4-4f3e-a651-e470aa8b25f7")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/TSOT-26_L2.9-W1.6-P0.95-LS2.8-BL.wrl"
 		(offset
-			(xyz 0 -0 -0)
+			(xyz 0 -0 0.61)
 		)
 		(scale
 			(xyz 1 1 1)

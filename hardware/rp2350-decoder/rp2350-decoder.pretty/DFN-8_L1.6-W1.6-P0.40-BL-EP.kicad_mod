@@ -1,12 +1,13 @@
 (footprint "DFN-8_L1.6-W1.6-P0.40-BL-EP"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -4.7 0)
 		(layer "F.SilkS")
-		(uuid "a371a936-e21d-4c59-b3e6-e6e87abd9970")
+		(hide yes)
+		(uuid "6d0d5263-c54b-4661-9dc1-fd578b9e83a2")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "DFN-8_L1.6-W1.6-P0.40-BL-EP"
+	(property "Value" "NCS2220AMUT1G"
 		(at 0 4.7 0)
 		(layer "F.Fab")
-		(uuid "8e222298-485c-4812-95ef-ae6f504991d0")
+		(hide yes)
+		(uuid "d6091adc-0f61-4360-bf07-47ff6e0d0b89")
 		(effects
 			(font
 				(size 1 1)
@@ -25,11 +27,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Datasheet" "https://lcsc.com/product-detail/Analog-Comparators_ON-Semicon-ON-NCS2220AMUT1G_C464059.html"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "71e238db-9bab-4b37-8988-ca110246774e")
+		(uuid "9e57094f-d604-4e75-8dc3-952467cd8f17")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,11 +39,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Description" "Single General-Purpose Low-Voltage Comparator, SOT-23-5/SC-70-5"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b3d028da-99a2-43a4-b7f0-7ee4a896bfc1")
+		(uuid "d85d3b35-1522-4db4-b8a4-75fdcaff5b51")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -49,38 +51,65 @@
 			)
 		)
 	)
-	(property "Description" ""
-		(at 0 0 0)
+	(property "LCSC" "C464059"
+		(at 0 0 180)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "13a9e77e-12d8-41b2-97de-a95216334308")
+		(uuid "cc54e158-675a-449b-9ba1-a2cf0bed5672")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB_CORRECTION" "0;0;0"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0003ee0d-1b07-41c3-ab64-16e3776fd146")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.55"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "085d17db-f115-4396-bd0e-19474ade085d")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
 	(fp_line
-		(start -0.9 -0.9)
-		(end -0.9 0.9)
+		(start 0.9 0.9)
+		(end 0.9 -0.9)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f00e9245-32b1-4d54-8414-9724cd1e9146")
+		(uuid "511fff35-0bcc-4049-b522-69601e86de0f")
 	)
 	(fp_line
-		(start 0.9 -0.9)
-		(end 0.9 0.9)
+		(start -0.9 0.9)
+		(end -0.9 -0.9)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0c79281b-7bcb-4e3c-8ede-7c77535ff401")
+		(uuid "69cfbb1e-8b63-47b6-bd00-37570b16679d")
 	)
 	(fp_circle
 		(center -0.6 1.2)
@@ -89,9 +118,9 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "e0287381-fa65-4bdd-991a-c39386bacaf6")
+		(uuid "6e4e4368-bb0d-45e8-b32f-77b286749a9a")
 	)
 	(fp_rect
 		(start -1.05 -1.05)
@@ -100,9 +129,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "54d28b69-6c82-4511-a447-cc412a3ba589")
+		(uuid "d0f4e5ca-d61b-4d95-b0b7-e05a71789600")
 	)
 	(fp_circle
 		(center -0.8 0.8)
@@ -111,14 +140,15 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "c70f7c7e-dffa-4891-a17b-f9fe4c28febd")
+		(uuid "7be6d087-e977-440e-8eb1-36611501c467")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "0c50a70e-87c0-4a93-b274-62ec6a4256c7")
+		(hide yes)
+		(uuid "ab0c98d0-b3ae-4998-970b-1983c6c22cff")
 		(effects
 			(font
 				(size 1 1)
@@ -127,59 +157,60 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -0.6 0.7 90)
+		(at -0.6 0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "fca67d23-46df-468f-98bd-1d56141f0636")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4a6c9b8c-9a93-44a2-9bf3-31b484102642")
 	)
 	(pad "2" smd rect
-		(at -0.2 0.7 90)
+		(at -0.2 0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "9e9aa2ff-b3f3-427d-920c-62944678b67e")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "06876522-512c-4470-8fc1-189d92a7674a")
 	)
 	(pad "3" smd rect
-		(at 0.2 0.7 90)
+		(at 0.2 0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "229c8d17-dbb1-4c58-8e0f-d0fd261f15bd")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3a78175a-f6e6-4829-83b5-350c6d4486dc")
 	)
 	(pad "4" smd rect
-		(at 0.6 0.7 90)
+		(at 0.6 0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "1e2431ea-8e73-4820-b02c-148b48bb1d78")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ea5bde18-e135-4f4d-92d2-0163c78cb13f")
 	)
 	(pad "5" smd rect
-		(at 0.6 -0.7 90)
+		(at 0.6 -0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "34d4afce-08cb-48a8-a758-4cf2de509413")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "00e7e461-5711-4d80-b759-737b98aa7f8f")
 	)
 	(pad "6" smd rect
-		(at 0.2 -0.7 90)
+		(at 0.2 -0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "4d8e2569-d1d1-49c3-b684-c94063c878ad")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6f8c8a39-fd40-4050-b788-4e1ac5d49349")
 	)
 	(pad "7" smd rect
-		(at -0.2 -0.7 90)
+		(at -0.2 -0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "56dcffc7-36a3-4185-9c1c-99768c33e96d")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1c5fdddd-a482-4002-a64a-efdf9bd1299e")
 	)
 	(pad "8" smd rect
-		(at -0.6 -0.7 90)
+		(at -0.6 -0.7 270)
 		(size 0.4 0.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "ba08a503-0edf-46fd-8151-f68aa4ba26a4")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c48f8853-af19-4fa0-88be-67680b51aa58")
 	)
 	(pad "9" smd rect
-		(at 0 0 90)
+		(at 0 0 270)
 		(size 0.5 0.9)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "f2b5603e-5fb0-4a83-97f8-69c9e49d4370")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "77369abf-c5af-4a75-87c3-83e5feb4cbe5")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/DFN-8_L1.6-W1.6-P0.40-BL-EP.wrl"
 		(offset
 			(xyz 0 -0 -0)
