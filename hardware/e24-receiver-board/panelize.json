@@ -1,8 +1,8 @@
 {
     "layout": {
         "space": "2mm",
-        "cols": "2",
-        "rows": "10"
+        "cols": "1",
+        "rows": "4"
     },
     "tabs": {
         "type": "fixed",
