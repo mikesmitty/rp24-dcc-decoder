@@ -4217,7 +4217,7 @@
 		(uuid "11a63c1c-4a72-4805-b16d-a0b4bfc5ecf0")
 		(at 131.85 69.65 90)
 		(property "Reference" "J1"
-			(at 0 4.91 270)
+			(at 0 4.91 90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "01d3b6e1-bc4e-4797-a0a1-0ed184f10bf8")
@@ -4230,7 +4230,7 @@
 			)
 		)
 		(property "Value" "505070-2422"
-			(at 0 -4.91 270)
+			(at 0 -4.91 90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "e71ecf46-b48f-4353-b993-6bf54147227f")
@@ -4243,7 +4243,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/505070-2422.pdf"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "ac891c26-cd93-482a-a670-0a54557e679c")
@@ -4256,7 +4256,7 @@
 			)
 		)
 		(property "Description" "SlimStack Board-to-Board Connector, 0.35mm Pitch, SSB RP Series, Plug, 0.60 or 0.70mm Mated Height, 2.00mm Mated Width,  Circuits, Armor Nail, 0.15mm Fitting Nail Width"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "c7370915-024c-4478-8fa2-d42b55de3749")
@@ -4325,11 +4325,11 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "e7919ad3-0c81-4b12-ba1c-07adbb82076c")
+			(uuid "1b9a812b-45a4-42e6-a43b-4b26336f40b5")
 			(effects
 				(font
 					(size 1 1)
@@ -4339,11 +4339,11 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "9a77068b-03d6-4903-a4ac-2897dea7cee7")
+			(uuid "7ffdaaf6-300f-4b74-a267-3afe64f631ce")
 			(effects
 				(font
 					(size 1 1)
@@ -4353,11 +4353,11 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d9a8d4c9-b7ce-4a9a-9ee3-e6c2faa03a54")
+			(uuid "8093e9df-a76d-4361-94e8-c1da56b2c035")
 			(effects
 				(font
 					(size 1 1)
@@ -4378,7 +4378,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "5c24a427-730c-4a03-a56e-af84b7990945")
+			(uuid "0966df7e-d762-4b1b-a18f-9b18c603343e")
 		)
 		(fp_line
 			(start -2.59 -0.6)
@@ -4388,7 +4388,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "49c6c678-6e3a-4db1-b753-886d9fd6f146")
+			(uuid "d26cda90-f6b5-4c00-b488-e1fff1822ae8")
 		)
 		(fp_line
 			(start -2.72 -0.6)
@@ -4398,7 +4398,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "7b26c89a-5c81-4f8b-9e79-885bb8051e13")
+			(uuid "e8dc260e-555b-43b7-a56c-9b9971134f46")
 		)
 		(fp_line
 			(start 2.83 0.6)
@@ -4408,7 +4408,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "bf0c23c5-d2f8-404c-81f7-7c84ab3f8bdc")
+			(uuid "b354a148-d6b0-49c3-a83b-54faa56628b7")
 		)
 		(fp_line
 			(start 2.6 0.6)
@@ -4418,7 +4418,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "ea383456-06c9-49ac-8cd4-015ebe716985")
+			(uuid "01d88a0f-bcc2-4966-96d7-1561e7755f2a")
 		)
 		(fp_line
 			(start -2.72 0.6)
@@ -4428,7 +4428,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "683538f1-187d-418f-9424-e3eca63cddad")
+			(uuid "9e300686-bedb-4ce1-acd4-5e971c09844c")
 		)
 		(fp_circle
 			(center -2.82 1.1)
@@ -4439,7 +4439,7 @@
 			)
 			(fill yes)
 			(layer "B.SilkS")
-			(uuid "71985f32-e653-4a92-8672-df1c1a88e64b")
+			(uuid "cbe59d5c-2581-460c-a5d0-fbd7e3df31cf")
 		)
 		(fp_circle
 			(center -2.75 1)
@@ -4450,10 +4450,10 @@
 			)
 			(fill no)
 			(layer "B.Fab")
-			(uuid "00693ca9-1977-421b-97d9-72c03ff7c4de")
+			(uuid "d1bfc956-08c7-4f42-b087-6e0cd394a1c5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(uuid "55b4b6b9-aa3d-4081-8b17-45d3940392a1")
 			(effects
@@ -4465,7 +4465,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.93 0.91 90)
+			(at -1.93 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 22 "/SPEAKER_N")
@@ -4474,7 +4474,7 @@
 			(uuid "14f34ed5-b619-478e-ab70-ffaed36cf0e3")
 		)
 		(pad "2" smd rect
-			(at -1.58 0.91 90)
+			(at -1.58 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 23 "/SPEAKER_P")
@@ -4483,7 +4483,7 @@
 			(uuid "d6efef6c-5aec-4c6d-9178-8c59f059bcfa")
 		)
 		(pad "3" smd rect
-			(at -1.23 0.91 90)
+			(at -1.23 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 10 "GND")
@@ -4492,7 +4492,7 @@
 			(uuid "315c7046-e27b-4dae-a871-b40fc495fb33")
 		)
 		(pad "4" smd rect
-			(at -0.88 0.91 90)
+			(at -0.88 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 11 "/MOTOR_B")
@@ -4501,7 +4501,7 @@
 			(uuid "1d87f7fa-a799-452d-9543-9c8d35afb8c7")
 		)
 		(pad "5" smd rect
-			(at -0.53 0.91 90)
+			(at -0.53 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 11 "/MOTOR_B")
@@ -4510,7 +4510,7 @@
 			(uuid "0289abb4-9e09-4076-aa3b-229e56ac5129")
 		)
 		(pad "6" smd rect
-			(at -0.18 0.91 90)
+			(at -0.18 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 9 "/MOTOR_A")
@@ -4519,7 +4519,7 @@
 			(uuid "a5d41878-fcaf-4a51-ab87-8e435589312f")
 		)
 		(pad "7" smd rect
-			(at 0.17 0.91 90)
+			(at 0.17 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 9 "/MOTOR_A")
@@ -4528,7 +4528,7 @@
 			(uuid "e1f839fb-8d2c-4282-a569-94e75a930be7")
 		)
 		(pad "8" smd rect
-			(at 0.52 0.91 90)
+			(at 0.52 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 17 "/CAP+")
@@ -4537,7 +4537,7 @@
 			(uuid "0d897303-9177-41ff-8d3e-ec53b684a7bc")
 		)
 		(pad "9" smd rect
-			(at 0.87 0.91 90)
+			(at 0.87 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 1 "/LAMP_FRONT")
@@ -4546,7 +4546,7 @@
 			(uuid "b3ca333d-e2ea-4c0d-9dcd-078ac47ba40b")
 		)
 		(pad "10" smd rect
-			(at 1.22 0.91 90)
+			(at 1.22 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "/LAMP_REAR")
@@ -4555,7 +4555,7 @@
 			(uuid "20c4a825-163b-40c5-8797-e114bed77029")
 		)
 		(pad "11" smd rect
-			(at 1.57 0.91 90)
+			(at 1.57 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 14 "/AUX1 (VDC)")
@@ -4564,7 +4564,7 @@
 			(uuid "377f61a0-76ce-41ad-8e64-0674c7010693")
 		)
 		(pad "12" smd rect
-			(at 1.92 0.91 90)
+			(at 1.92 0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 12 "/AUX2 (VDC)")
@@ -4573,7 +4573,7 @@
 			(uuid "e3739572-fcca-4d70-b6ef-ee618fdecb91")
 		)
 		(pad "13" smd rect
-			(at 1.92 -0.91 90)
+			(at 1.92 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 2 "/AUX8 (VDC)")
@@ -4582,7 +4582,7 @@
 			(uuid "72d58079-e7d8-43ac-a9a2-c5125df3e1e2")
 		)
 		(pad "14" smd rect
-			(at 1.57 -0.91 90)
+			(at 1.57 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 19 "/AUX7 (VDC)")
@@ -4591,7 +4591,7 @@
 			(uuid "fb9031c0-1598-4005-8ce3-caad58ffc389")
 		)
 		(pad "15" smd rect
-			(at 1.22 -0.91 90)
+			(at 1.22 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 21 "/AUX6 (VDC)")
@@ -4600,7 +4600,7 @@
 			(uuid "d065e858-827f-4d8b-bba9-a30df6bca47d")
 		)
 		(pad "16" smd rect
-			(at 0.87 -0.91 90)
+			(at 0.87 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 20 "/AUX5 (VDC)")
@@ -4609,7 +4609,7 @@
 			(uuid "d6399ea3-4bfb-4ecc-8c26-bcf962cf634b")
 		)
 		(pad "17" smd rect
-			(at 0.52 -0.91 90)
+			(at 0.52 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 15 "VDC")
@@ -4618,7 +4618,7 @@
 			(uuid "7069668c-5c79-48a6-a73b-45abfa4e5ecc")
 		)
 		(pad "18" smd rect
-			(at 0.17 -0.91 90)
+			(at 0.17 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 5 "VCC")
@@ -4627,7 +4627,7 @@
 			(uuid "1393c0ed-76da-43f7-b33a-8fd295f380d6")
 		)
 		(pad "19" smd rect
-			(at -0.18 -0.91 90)
+			(at -0.18 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 7 "/AUX10")
@@ -4636,7 +4636,7 @@
 			(uuid "a91eb31c-5bb8-4e4f-862f-42453f71f4e4")
 		)
 		(pad "20" smd rect
-			(at -0.53 -0.91 90)
+			(at -0.53 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 4 "/AUX4")
@@ -4645,7 +4645,7 @@
 			(uuid "d6c6e7d8-635b-459b-b3a0-5548137c9c47")
 		)
 		(pad "21" smd rect
-			(at -0.88 -0.91 90)
+			(at -0.88 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 3 "/AUX3")
@@ -4654,7 +4654,7 @@
 			(uuid "3c18e967-9444-44e9-8f34-0fa4e4fabf88")
 		)
 		(pad "22" smd rect
-			(at -1.23 -0.91 90)
+			(at -1.23 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 10 "GND")
@@ -4663,7 +4663,7 @@
 			(uuid "0c3e5355-b7e2-4e61-b0f7-9d6fe1a94069")
 		)
 		(pad "23" smd rect
-			(at -1.58 -0.91 90)
+			(at -1.58 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 8 "/AUX11")
@@ -4672,7 +4672,7 @@
 			(uuid "13b420a9-3cf7-4042-baa4-4449ad57dbb3")
 		)
 		(pad "24" smd rect
-			(at -1.93 -0.91 90)
+			(at -1.93 -0.91 270)
 			(size 0.18 0.49)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 16 "/AUX12")
@@ -4681,7 +4681,7 @@
 			(uuid "8f2efcdd-ec91-4f13-8c51-7ecded611177")
 		)
 		(pad "X1A" smd rect
-			(at -2.3 0.77 90)
+			(at -2.3 0.77 270)
 			(size 0.23 0.54)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "/TRACK_LEFT")
@@ -4690,7 +4690,7 @@
 			(uuid "2e68bd57-24c7-43a7-bafe-4ff94e316c6a")
 		)
 		(pad "X1B" smd rect
-			(at -2.3 -0.77 90)
+			(at -2.3 -0.77 270)
 			(size 0.23 0.54)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "/TRACK_LEFT")
@@ -4699,7 +4699,7 @@
 			(uuid "888f6b60-3f79-4335-98cf-a719742c23a8")
 		)
 		(pad "X2A" smd rect
-			(at 2.3 0.77 90)
+			(at 2.3 0.77 270)
 			(size 0.23 0.54)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 13 "/TRACK_RIGHT")
@@ -4708,7 +4708,7 @@
 			(uuid "8f662f83-ba1f-4d79-a22d-829338ea2ae8")
 		)
 		(pad "X2B" smd rect
-			(at 2.3 -0.77 90)
+			(at 2.3 -0.77 270)
 			(size 0.23 0.54)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 13 "/TRACK_RIGHT")
