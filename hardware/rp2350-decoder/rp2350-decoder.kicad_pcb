@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(date "2025-02-23")
+		(date "2025-02-21")
 		(rev "v0.0.2")
 	)
 	(layers
@@ -57,7 +57,7 @@
 			)
 			(layer "F.Mask"
 				(type "Top Solder Mask")
-				(color "Black")
+				(color "Green")
 				(thickness 0.01)
 			)
 			(layer "F.Cu"
@@ -126,7 +126,7 @@
 			)
 			(layer "B.Mask"
 				(type "Bottom Solder Mask")
-				(color "Black")
+				(color "Green")
 				(thickness 0.01)
 			)
 			(layer "B.Paste"
