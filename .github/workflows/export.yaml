@@ -51,11 +51,13 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
-          set-safe-directory: true
 
       - name: Render PCB images
         shell: bash
         run: |
+          # Fix permissions for github actions
+          chown -R 1001:1001 .
+
           # Get the directory of the PCB file
           KICAD_DIR="$(dirname "${{ matrix.files }}")"
           echo "kicad-dir=$KICAD_DIR" >> "$GITHUB_OUTPUT"
