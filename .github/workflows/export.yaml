@@ -53,6 +53,7 @@ jobs:
           fetch-depth: 0
 
       - name: Render PCB images
+        id: get-paths
         shell: bash
         run: |
           # Get the directory of the PCB file
