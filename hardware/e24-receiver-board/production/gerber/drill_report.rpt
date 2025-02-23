@@ -1,5 +1,5 @@
-Drill report for panel.kicad_pcb
-Created on 2025-02-22T22:51:47-0500
+Drill report for e24-receiver-board.kicad_pcb
+Created on 2025-02-23T11:03:10-0500
 
 Copper Layer Stackup:
     =============================================================
@@ -7,7 +7,7 @@ Copper Layer Stackup:
     L1 :  B.Cu                      back
 
 
-Drill file 'panel-PTH.drl' contains
+Drill file 'e24-receiver-board-PTH.drl' contains
     plated through holes:
     =============================================================
     T1  0.300mm  0.0118"  (164 holes)
@@ -15,10 +15,10 @@ Drill file 'panel-PTH.drl' contains
     Total plated holes count 164
 
 
-Drill file 'panel-NPTH.drl' contains
+Drill file 'e24-receiver-board-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T1  0.500mm  0.0197"  (104 holes)
+    T1  0.500mm  0.0197"  (212 holes)
     T2  1.152mm  0.0454"  (3 holes)
 
-    Total unplated holes count 107
+    Total unplated holes count 215

@@ -11311,7 +11311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "rp2350-decoder:SOT-963"
 			(at 220.98 50.8 0)
 			(effects
 				(font
@@ -11548,15 +11548,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C2682619"
-			(at 354.33 189.992 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "B2"
 			(uuid "9fd17de3-72f1-432b-a0f3-6882d04d7ea4")
 		)
@@ -11751,7 +11742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 106.68 46.6852 0)
 			(effects
 				(font
@@ -11839,7 +11830,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 38.608 156.21 90)
 			(effects
 				(font
@@ -11991,7 +11982,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 224.79 55.372 90)
 			(effects
 				(font
@@ -12076,7 +12067,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 344.678 220.98 90)
 			(effects
 				(font
@@ -12487,7 +12478,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 96.52 169.418 90)
 			(effects
 				(font
@@ -12677,7 +12668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "rp2350-decoder:SOT-963"
 			(at 196.85 73.66 0)
 			(effects
 				(font
@@ -12907,7 +12898,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 251.841 115.3414 0)
 			(effects
 				(font
@@ -13096,7 +13087,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 38.608 148.59 90)
 			(effects
 				(font
@@ -13249,7 +13240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 172.72 183.388 90)
 			(effects
 				(font
@@ -13337,7 +13328,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 66.548 148.59 90)
 			(effects
 				(font
@@ -13425,7 +13416,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 186.309 115.3414 0)
 			(effects
 				(font
@@ -13688,7 +13679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 151.892 57.15 90)
 			(effects
 				(font
@@ -13896,15 +13887,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C42411119"
-			(at 168.91 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "ff3bd1ee-f713-4508-82fc-06a5c77fa2ee")
 		)
@@ -14049,7 +14031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 148.2852 199.39 0)
 			(effects
 				(font
@@ -14180,7 +14162,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 115.57 123.19 0)
 			(effects
 				(font
@@ -14230,7 +14212,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 140.97 229.108 90)
 			(effects
 				(font
@@ -14352,17 +14334,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 355.6 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2684662"
-			(at 355.346 237.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14678,7 +14651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "rp2350-decoder:C_1206_3216Metric"
 			(at 326.6948 205.74 0)
 			(effects
 				(font
@@ -14839,7 +14812,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 115.2652 176.53 0)
 			(effects
 				(font
@@ -14992,7 +14965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 360.3752 146.05 0)
 			(effects
 				(font
@@ -15118,26 +15091,6 @@
 		)
 		(property "Height" "0.53"
 			(at 279.4 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Molex"
-			(at 271.78 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "505270-2412"
-			(at 269.24 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15426,7 +15379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 217.551 115.3414 0)
 			(effects
 				(font
@@ -15523,7 +15476,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 237.1852 144.78 0)
 			(effects
 				(font
@@ -15785,7 +15738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 252.73 205.232 90)
 			(effects
 				(font
@@ -15947,7 +15900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 240.411 115.3414 0)
 			(effects
 				(font
@@ -16044,7 +15997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "rp2350-decoder:SOT-963"
 			(at 204.47 59.69 0)
 			(effects
 				(font
@@ -16142,7 +16095,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
+		(property "Footprint" "rp2350-decoder:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
 			(at 107.95 212.09 0)
 			(effects
 				(font
@@ -16178,7 +16131,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;90"
+		(property "JLCPCB_CORRECTION" "0;0;270"
 			(at 107.95 234.95 0)
 			(effects
 				(font
@@ -16520,7 +16473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+		(property "Footprint" "rp2350-decoder:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 107.95 167.64 0)
 			(effects
 				(font
@@ -16714,7 +16667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 210.82 77.978 90)
 			(effects
 				(font
@@ -17152,7 +17105,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 205.232 44.45 90)
 			(effects
 				(font
@@ -17239,7 +17192,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 371.8052 146.05 0)
 			(effects
 				(font
@@ -17972,7 +17925,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "rp2350-decoder:C_1206_3216Metric"
 			(at 130.5052 50.8 0)
 			(effects
 				(font
@@ -18060,7 +18013,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 62.992 156.21 90)
 			(effects
 				(font
@@ -18223,7 +18176,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "rp2350-decoder:SOT-963"
 			(at 224.79 73.66 0)
 			(effects
 				(font
@@ -18398,7 +18351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 33.909 124.6886 0)
 			(effects
 				(font
@@ -18485,7 +18438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 172.72 182.372 90)
 			(effects
 				(font
@@ -18957,7 +18910,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 246.38 136.398 90)
 			(effects
 				(font
@@ -19204,7 +19157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "rp2350-decoder:C_0603_1608Metric"
 			(at 73.9648 58.42 0)
 			(effects
 				(font
@@ -19533,7 +19486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 366.522 231.14 90)
 			(effects
 				(font
@@ -19693,7 +19646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 344.678 231.14 90)
 			(effects
 				(font
@@ -19786,7 +19739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "rp2350-decoder:LED_0402_1005Metric"
 			(at 262.89 207.01 0)
 			(effects
 				(font
@@ -20699,7 +20652,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 366.522 220.98 90)
 			(effects
 				(font
@@ -20794,7 +20747,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 228.981 115.3414 0)
 			(effects
 				(font
@@ -20892,7 +20845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 100.6348 176.53 0)
 			(effects
 				(font
@@ -20979,7 +20932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "rp2350-decoder:C_0603_1608Metric"
 			(at 119.0752 50.8 0)
 			(effects
 				(font
@@ -21327,7 +21280,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 157.48 130.81 90)
 			(effects
 				(font
@@ -21518,7 +21471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
 			(at 151.892 45.72 90)
 			(effects
 				(font
@@ -21615,7 +21568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 92.329 234.7214 0)
 			(effects
 				(font
@@ -21919,7 +21872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 376.2248 205.74 0)
 			(effects
 				(font
@@ -22146,7 +22099,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 148.2852 207.01 0)
 			(effects
 				(font

@@ -7769,7 +7769,7 @@
 				(justify mirror)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8261,7 +8261,7 @@
 				(justify mirror)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -12962,26 +12962,12 @@
 				(justify mirror)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6dccc661-e805-4c35-bae8-b3bad5191a80")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "LCSC Part" "C2684662"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "fbd1600f-cd68-436e-9494-49ff4f45d46c")
 			(effects
 				(font
 					(size 1 1)
@@ -13955,7 +13941,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/505270-2412.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13968,7 +13954,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SlimStack Board-to-Board Connector, 0.35mm Pitch, SSB RP Series, Plug, 0.60 or 0.70mm Mated Height, 2.00mm Mated Width,  Circuits, Armor Nail, 0.15mm Fitting Nail Width"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -14001,34 +13987,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "29f33f17-bdca-4377-bdfd-8757eb574154")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Manufacturer_Name" "Molex"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "39d91198-6629-407e-aa32-ea053b811c23")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Manufacturer_Part_Number" "505270-2412"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "335d34e2-88dd-4d84-ab01-a56b9d2dcfaf")
 			(effects
 				(font
 					(size 1 1)
@@ -15111,7 +15069,7 @@
 				(justify mirror)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;90"
+		(property "JLCPCB_CORRECTION" "0;0;270"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")

@@ -20,7 +20,9 @@
         "slotwidth": "3mm",
         "fillet": "1mm",
         "space": "3mm",
-        "width": "5mm"
+        "width": "5mm",
+        "mintotalheight": "70mm",
+        "mintotalwidth": "70mm"
     },
     "tooling": {
         "type": "3hole",
