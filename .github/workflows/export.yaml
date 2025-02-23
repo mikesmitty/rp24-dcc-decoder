@@ -70,8 +70,10 @@ jobs:
       - name: Store exported images
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.get-paths.outputs.module-name }}
-          path: "images/${{ steps.get-paths.outputs.module-name }}-*.png"
+          name: ${{ steps.get-paths.outputs.module-name }}-images
+          path: |
+            images/${{ steps.get-paths.outputs.module-name }}-top.png
+            images/${{ steps.get-paths.outputs.module-name }}-bottom.png
           overwrite: true
 
   export-gerbers:
@@ -113,8 +115,8 @@ jobs:
       - name: Store exported gerbers
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.get-paths.outputs.module-name }}
-          path: "hardware/${{ steps.get-paths.outputs.module-name }}/production/*"
+          name: ${{ steps.get-paths.outputs.module-name }}-gerbers
+          path: "hardware/${{ steps.get-paths.outputs.module-name }}/production"
           overwrite: true
 
   push-changes:
@@ -137,6 +139,5 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: images/
           default_author: github_actor
           message: "chore: export board files"
