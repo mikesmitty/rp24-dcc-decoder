@@ -1,7 +1,10 @@
 # rp24-dcc-decoder
 DIY DCC decoder for model railroad locomotives in an E24 form factor suitable for N scale/gauge locomotives
 
-# Features
+![decoder top](images/rp2350-decoder-top.png)
+![decoder bottom](images/rp2350-decoder-bottom.png)
+
+## Features
 - 8x MOSFET-switched functions
 - 5x GPIO pins (3.3V input/output)
 - Up to 0.75A motor current
@@ -9,7 +12,8 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 - i2s audio speaker output
 - 12V nominal rail voltage (16V max)
 
-# USB Programmer/E24 Tester Features
+# USB Programmer/E24 Tester
+![programmer top](images/rp24-usb-tester-top.png)
 - USB-C port for easy programming and loading sound files
 - Onboard LEDs for all aux outputs for simple decoder testing
 - Breakout header for most E24 pins, including speaker, motor, rectified rail power, Vcc, plus all five E24 GPIO pins (Aux 3, 4, 10, 11, 12)
@@ -53,18 +57,31 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 | N/A | i2s LRCLK | GPIO24 |
 | N/A | Charge external keepalive capacitor (PWM at very low duty cycle only) | GPIO20 |
 
-# Images
-## RP2350 Decoder
-![decoder top](images/rp2350-decoder-top.png)
-![decoder bottom](images/rp2350-decoder-bottom.png)
+# E24 Receiver/Wire Breakout Board
+![receiver top](images/e24-receiver-board-top.png)
+![receiver bottom](images/e24-receiver-board-bottom.png)
 
-## RP24 USB Programmer/E24 Decoder Tester
-![programmer top](images/rp24-usb-tester-top.png)
-![programmer bottom](images/rp24-usb-tester-bottom.png)
-
-## E24 Receiver/Wire Breakout
-![programmer top](images/e24-receiver-board-top.png)
-![programmer bottom](images/e24-receiver-board-bottom.png)
+## Receiver Board Solder Pads
+| E24 Pin | Function | Label |
+| --- | --- | --- |
+| 1 | Speaker+ | SPK |
+| 2 | Speaker- | SPK |
+| 3 | GND | G |
+| 4-5 | Motor- | - MOTOR + |
+| 6-7 | Motor+ | - MOTOR + |
+| 8 | External Capacitor+ | C |
+| 9 | Lamp Front | F LAMP R |
+| 10 | Lamp Rear | F LAMP R |
+| 11 | AUX1 | 1 |
+| 12 | AUX2 | 2 |
+| 17 | DC Rail Voltage | RV |
+| 18 | Microcontroller Voltage Output | Vcc |
+| 19 | AUX10 | 10 |
+| 20 | AUX4 | 4 |
+| 21 | AUX3 | 3 |
+| 22 | GND | G |
+| 23 | AUX11 | 11 |
+| 24 | AUX12 | 12 |
 
 Inspired by the rp2040-decoder project by gab-k: https://github.com/gab-k/RP2040-Decoder
 
