@@ -51,6 +51,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
+          set-safe-directory: true
 
       - name: Render PCB images
         shell: bash
