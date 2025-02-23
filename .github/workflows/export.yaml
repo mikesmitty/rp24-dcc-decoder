@@ -3,7 +3,7 @@ on:
     branches:
       - main
     paths:
-      - '**.kicad_pcb'
+      - 'hardware/*/*.kicad_pcb'
 
 name: KiCad Export
 
