@@ -74,7 +74,51 @@ jobs:
           path: "images/${{ steps.get-paths.outputs.module-name }}-*.png"
           overwrite: true
 
+  export-gerbers:
+    #if: ${{ fromJson(needs.get-changed-files.outputs.any-changed) }}
+    if: ${{ false }}
+    needs: get-changed-files
+
+    name: Export Gerbers
+    runs-on: ubuntu-latest
+    container: yaqwsx/kikit:v1.7.0-v9
+
+    strategy:
+      matrix:
+        files: ${{ fromJSON(needs.get-changed-files.outputs.matrix) }}
+      max-parallel: 4
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Render PCB images
+        id: get-paths
+        shell: bash
+        run: |
+          # Get the directory of the PCB file
+          KICAD_DIR="$(dirname "${{ matrix.files }}")"
+          echo "kicad-dir=$KICAD_DIR" >> "$GITHUB_OUTPUT"
+
+          # Get the name of the hardware module
+          MODULE_NAME="$(basename $KICAD_DIR)"
+          echo "module-name=$MODULE_NAME" >> "$GITHUB_OUTPUT"
+
+          # Generate the production gerber files
+          bash hardware/export.sh $MODULE_NAME
+
+      - name: Store exported gerbers
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.get-paths.outputs.module-name }}
+          path: "hardware/${{ steps.get-paths.outputs.module-name }}/production/*"
+          overwrite: true
+
   push-changes:
+    #needs: [export-images, export-gerbers]
     needs: export-images
 
     name: Push Changes
@@ -89,11 +133,10 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           merge-multiple: true
-          path: images/
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           add: images/
           default_author: github_actor
-          message: "chore: update board images"
+          message: "chore: export board files"
