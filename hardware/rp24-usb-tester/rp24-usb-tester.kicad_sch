@@ -7657,7 +7657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "5050702422"
+		(property "Footprint" "rp24-usb-tester:CONN-SMD_24P-P0.35_5050702422"
 			(at 243.84 76.2 0)
 			(effects
 				(font

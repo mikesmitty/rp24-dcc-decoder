@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-02-22T20:52:15-05:00"
+    "CreationDate": "2025-02-22T22:05:41-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "rp24-usb-tester",
       "GUID": "72703234-2d75-4736-922d-746573746572",
-      "Revision": "v0.3.0"
+      "Revision": "v0.3.1"
     },
     "Size": {
       "X": 50.05,
