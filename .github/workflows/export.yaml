@@ -70,7 +70,7 @@ jobs:
       - name: Store exported images
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.get-paths.outputs.module-name }}-images
+          name: images-${{ steps.get-paths.outputs.module-name }}
           path: |
             images/${{ steps.get-paths.outputs.module-name }}-top.png
             images/${{ steps.get-paths.outputs.module-name }}-bottom.png
@@ -115,7 +115,7 @@ jobs:
       - name: Store exported gerbers
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.get-paths.outputs.module-name }}-gerbers
+          name: gerbers-${{ steps.get-paths.outputs.module-name }}
           path: "hardware/${{ steps.get-paths.outputs.module-name }}/production"
           overwrite: true
 
@@ -132,9 +132,18 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - uses: actions/download-artifact@v4
+      - name: Download images
+        uses: actions/download-artifact@v4
         with:
+          path: images
+          pattern: images-*
           merge-multiple: true
+
+      # - name: Download gerbers
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     pattern: gerbers-*
+      #     merge-multiple: true
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
