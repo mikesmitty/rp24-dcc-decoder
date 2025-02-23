@@ -1,0 +1,197 @@
+(footprint "SolderWirePad_1x01_SMD_1x2mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Wire Pad, Square, SMD Pad,  1mm x 2mm,")
+	(tags "MesurementPoint Square SMDPad 1mmx2mm ")
+	(property "Reference" "REF**"
+		(at 0 -2.54 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cb9b3dac-0a25-42b6-a7d6-70f756f56875")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LAMP_FRONT"
+		(at 0 2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97d1912c-17c3-40ff-a604-289f678de46b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "128d6a00-3a83-4c2b-950c-7c7606e4e3f8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6deedc65-45f7-485e-9996-06fc58f29619")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description_1" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e058f22e-be83-4d26-8ff4-2c8d6a15f9fc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb004ca9-0990-4e0e-bd5e-5798877b97bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f844542-9358-4d36-949d-fd19f4e8b7c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files)
+	(fp_line
+		(start -0.63 -1.27)
+		(end -0.63 1.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e0e08720-68e6-45f2-9341-8ba329c11b1f")
+	)
+	(fp_line
+		(start -0.63 1.27)
+		(end 0.63 1.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f103b980-25c7-4f81-be31-3523e3ff89a0")
+	)
+	(fp_line
+		(start 0.63 -1.27)
+		(end -0.63 -1.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f5a0e319-3e4c-4095-a829-60c5caa35e1e")
+	)
+	(fp_line
+		(start 0.63 1.27)
+		(end 0.63 -1.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "778ed5ba-3ee3-4726-8c4f-3486e17c752c")
+	)
+	(fp_line
+		(start -0.63 -1.27)
+		(end 0.63 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1a598cf0-0460-4652-aaff-fb838796022c")
+	)
+	(fp_line
+		(start -0.63 1.27)
+		(end -0.63 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d080bd3f-6a7d-434a-afaf-79c832fe15a3")
+	)
+	(fp_line
+		(start 0.63 -1.27)
+		(end 0.63 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ced475ca-5096-46d1-a5e0-ec42fe4186a4")
+	)
+	(fp_line
+		(start 0.63 1.27)
+		(end -0.63 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "34fe8757-f4d3-4404-992e-6f6a8d2f451f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a50de934-10ec-4776-9548-9e68a4b03402")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 1 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ad9b0309-0a9c-4a5f-9b7a-eef5fb7c9135")
+	)
+	(embedded_fonts no)
+)

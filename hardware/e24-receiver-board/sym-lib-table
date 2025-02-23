@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "e24-receiver-board")(type "KiCad")(uri "${KIPRJMOD}/e24-receiver-board.kicad_sym")(options "")(descr ""))
+)

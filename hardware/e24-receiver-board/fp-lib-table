@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "e24-receiver-board")(type "KiCad")(uri "${KIPRJMOD}/e24-receiver-board.pretty")(options "")(descr ""))
+)

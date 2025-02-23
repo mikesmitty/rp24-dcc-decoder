@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "f5113d4f-d14d-41e6-9ae9-919ea90fc275")
 	(paper "A4")
 	(title_block
@@ -9,117 +9,7 @@
 		(rev "v0.1.0")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x01"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_1_1"
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Local Symbol Library:505070-2422"
+		(symbol "e24-receiver-board:505070-2422"
 			(pin_names
 				(offset 0.762)
 			)
@@ -249,6 +139,42 @@
 			)
 			(symbol "505070-2422_1_0"
 				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "X1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "X1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "X1B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "X1B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 7.62 12.7 270)
 					(length 5.08)
 					(name "1"
@@ -259,6 +185,312 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -15.24 90)
+					(length 5.08)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 12.7 270)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -15.24 90)
+					(length 5.08)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 12.7 270)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -15.24 90)
+					(length 5.08)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 12.7 270)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -15.24 90)
+					(length 5.08)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 12.7 270)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -15.24 90)
+					(length 5.08)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 12.7 270)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -15.24 90)
+					(length 5.08)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 12.7 270)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -15.24 90)
+					(length 5.08)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 12.7 270)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -15.24 90)
+					(length 5.08)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 12.7 270)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -15.24 90)
+					(length 5.08)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -285,6 +517,24 @@
 					)
 				)
 				(pin passive line
+					(at 30.48 -15.24 90)
+					(length 5.08)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 33.02 12.7 270)
 					(length 5.08)
 					(name "11"
@@ -295,6 +545,24 @@
 						)
 					)
 					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -15.24 90)
+					(length 5.08)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -339,384 +607,6 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -15.24 90)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -15.24 90)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 -15.24 90)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -15.24 90)
-					(length 5.08)
-					(name "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 90)
-					(length 5.08)
-					(name "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 -15.24 90)
-					(length 5.08)
-					(name "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 12.7 270)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -15.24 90)
-					(length 5.08)
-					(name "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -15.24 90)
-					(length 5.08)
-					(name "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -15.24 90)
-					(length 5.08)
-					(name "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -15.24 90)
-					(length 5.08)
-					(name "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -15.24 90)
-					(length 5.08)
-					(name "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 12.7 270)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 12.7 270)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 12.7 270)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 12.7 270)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 12.7 270)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 12.7 270)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 12.7 270)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "X1A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "X1A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "X1B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "X1B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 43.18 0 180)
 					(length 5.08)
 					(name "X2A"
@@ -753,12 +643,130 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
+		(symbol "e24-receiver-board:Conn_01x01"
 			(pin_names
-				(offset 0) hide)
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "e24-receiver-board:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -849,12 +857,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
+		(symbol "e24-receiver-board:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -926,7 +939,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -938,7 +951,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -969,12 +982,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:VDC"
+		(symbol "e24-receiver-board:VDC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1046,7 +1064,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1058,7 +1076,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1089,7 +1107,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "E24 Connector"
+		(exclude_from_sim no)
+		(at 63.5 25.654 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1ff7aea-cf2f-4649-9f9d-8c9f24a26072")
 	)
 	(junction
 		(at 74.93 30.48)
@@ -1114,22 +1144,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfc5fecd-d013-4a08-8497-80cbb17cef1b")
-	)
-	(no_connect
-		(at 49.53 64.77)
-		(uuid "89498436-94a3-4ee1-b74a-da7db39b5096")
-	)
-	(no_connect
-		(at 49.53 67.31)
-		(uuid "ae222abc-3c10-492a-bac8-c145c98bab28")
-	)
-	(no_connect
-		(at 49.53 59.69)
-		(uuid "dbd2820f-e3c0-412c-85b5-7ec61245e58c")
-	)
-	(no_connect
-		(at 49.53 62.23)
-		(uuid "dde66e5d-d127-4a41-ac78-aea31705ce59")
 	)
 	(wire
 		(pts
@@ -1651,17 +1665,6 @@
 		)
 		(uuid "fd040e7c-b9d9-4553-b0cf-02c05820f429")
 	)
-	(text "E24 Connector"
-		(exclude_from_sim no)
-		(at 63.5 25.654 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "b1ff7aea-cf2f-4649-9f9d-8c9f24a26072")
-	)
 	(label "LAMP_REAR"
 		(at 171.45 49.53 0)
 		(effects
@@ -2033,7 +2036,7 @@
 		(uuid "f4ec7587-a9f2-45e9-9271-c7912ee532ca")
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "e24-receiver-board:GND")
 		(at 105.41 44.45 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2100,7 +2103,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2127,7 +2130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 54.61 0)
 			(effects
 				(font
@@ -2154,6 +2157,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "734c25a3-a8bd-43a9-8241-5d55ad7869c2")
 		)
@@ -2167,7 +2194,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2194,7 +2221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 69.85 0)
 			(effects
 				(font
@@ -2221,6 +2248,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3f63a0ff-8fb7-4492-89af-27d6aef8ea27")
 		)
@@ -2234,7 +2285,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2261,7 +2312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 80.01 0)
 			(effects
 				(font
@@ -2288,6 +2339,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8b3d40a3-38c1-4016-87fa-7fbeb4e1d9ed")
 		)
@@ -2301,7 +2376,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2328,7 +2403,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Local Library:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1.5x3mm"
 			(at 153.67 39.37 0)
 			(effects
 				(font
@@ -2355,6 +2430,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14d67298-36a2-42f5-b47d-4f2fa007366e")
 		)
@@ -2368,7 +2467,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
+		(lib_id "e24-receiver-board:VCC")
 		(at 49.53 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2435,7 +2534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2462,7 +2561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Local Library:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1.5x3mm"
 			(at 153.67 85.09 0)
 			(effects
 				(font
@@ -2489,6 +2588,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1e85b99d-6591-43ea-a11f-b0451d7aa0b2")
 		)
@@ -2502,7 +2625,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2529,7 +2652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 64.77 0)
 			(effects
 				(font
@@ -2556,6 +2679,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dacdc67f-3c1f-4591-a04b-b7c37093e325")
 		)
@@ -2569,7 +2716,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "e24-receiver-board:VDC")
 		(at 49.53 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2636,7 +2783,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2663,7 +2810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 69.85 0)
 			(effects
 				(font
@@ -2690,6 +2837,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3c4b383a-4134-414c-a620-96b3abfae9bf")
 		)
@@ -2703,7 +2874,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Local Symbol Library:505070-2422")
+		(lib_id "e24-receiver-board:505070-2422")
 		(at 77.47 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2730,7 +2901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "5050702422"
+		(property "Footprint" "e24-receiver-board:CONN-SMD_24P-P0.35_5050702422"
 			(at 85.09 71.12 0)
 			(effects
 				(font
@@ -2756,16 +2927,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SlimStack Board-to-Board Connector, 0.35mm Pitch, SSB RP Series, Plug, 0.60 or 0.70mm Mated Height, 2.00mm Mated Width,  Circuits, Armor Nail, 0.15mm Fitting Nail Width"
-			(at 80.01 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2808,13 +2969,20 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 77.47 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Mouser Part Number" ""
 			(at 77.47 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
@@ -2823,7 +2991,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "5"
@@ -2920,7 +3087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2947,7 +3114,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 59.69 0)
 			(effects
 				(font
@@ -2974,6 +3141,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6cc4639c-4584-4c04-b0be-b1d0c48059f9")
 		)
@@ -2987,7 +3178,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
+		(lib_id "e24-receiver-board:VCC")
 		(at 142.24 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3054,7 +3245,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3081,7 +3272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 74.93 0)
 			(effects
 				(font
@@ -3108,6 +3299,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "45b5f06c-9b5b-4846-b7b4-629827e26508")
 		)
@@ -3121,7 +3336,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3148,7 +3363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Local Library:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1.5x3mm"
 			(at 190.5 39.37 0)
 			(effects
 				(font
@@ -3175,6 +3390,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8d5cbe1-f8fc-4481-87ec-0fd3ec92652d")
 		)
@@ -3188,7 +3427,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "e24-receiver-board:GND")
 		(at 49.53 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3255,7 +3494,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "e24-receiver-board:GND")
 		(at 142.24 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3322,7 +3561,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3349,7 +3588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 59.69 0)
 			(effects
 				(font
@@ -3376,6 +3615,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ff4f4507-b995-4339-a6a7-9301051565a9")
 		)
@@ -3389,7 +3652,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3416,7 +3679,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 74.93 0)
 			(effects
 				(font
@@ -3443,6 +3706,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "94d2aa1e-21cb-483d-a880-77beaa65db88")
 		)
@@ -3456,7 +3743,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3483,7 +3770,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Local Library:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1.5x3mm"
 			(at 190.5 44.45 0)
 			(effects
 				(font
@@ -3510,6 +3797,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "35db9d34-32ce-42ad-8d7e-adde34830637")
 		)
@@ -3523,7 +3834,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "e24-receiver-board:GND")
 		(at 179.07 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3590,7 +3901,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3617,7 +3928,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Local Library:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1.5x3mm"
 			(at 153.67 44.45 0)
 			(effects
 				(font
@@ -3644,6 +3955,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eb76af24-2bca-4e14-887d-745d2227b5a4")
 		)
@@ -3657,7 +3992,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3684,7 +4019,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 64.77 0)
 			(effects
 				(font
@@ -3711,6 +4046,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "66708181-6406-4084-8a78-de407a8fb9c9")
 		)
@@ -3724,7 +4083,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3751,7 +4110,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Local Library:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1.5x3mm"
 			(at 190.5 85.09 0)
 			(effects
 				(font
@@ -3778,6 +4137,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8aacc72d-21cf-4bc1-acf4-2c8c5bae9b10")
 		)
@@ -3791,7 +4174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3818,7 +4201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 80.01 0)
 			(effects
 				(font
@@ -3845,6 +4228,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c12f1699-bf7c-42e1-938c-7505af92f9bb")
 		)
@@ -3858,7 +4265,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3885,7 +4292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 54.61 0)
 			(effects
 				(font
@@ -3912,6 +4319,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5d1c913a-e737-4610-8b1a-ead852c17d05")
 		)
@@ -3925,7 +4356,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "e24-receiver-board:VDC")
 		(at 179.07 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3992,7 +4423,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 153.67 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4019,7 +4450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 153.67 49.53 0)
 			(effects
 				(font
@@ -4046,6 +4477,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 153.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 153.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 153.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "120fcf5a-2a77-4c83-b044-112146cbbbf0")
 		)
@@ -4059,7 +4514,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
+		(lib_id "e24-receiver-board:Conn_01x01")
 		(at 190.5 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4086,7 +4541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+		(property "Footprint" "e24-receiver-board:SolderWirePad_1x01_SMD_1x2mm"
 			(at 190.5 49.53 0)
 			(effects
 				(font
@@ -4113,6 +4568,30 @@
 				(hide yes)
 			)
 		)
+		(property "Description_1" ""
+			(at 190.5 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "98702fcb-8950-49ef-8fc9-e4c24b41059e")
 		)
@@ -4130,4 +4609,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
