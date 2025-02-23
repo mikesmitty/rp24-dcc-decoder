@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.8"
+      "Version": "9.0.0"
     },
-    "CreationDate": "2025-02-16T13:22:54-05:00"
+    "CreationDate": "2025-02-22T21:13:36-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "pico2-test-mule",
       "GUID": "7069636f-322d-4746-9573-742d6d756c65",
-      "Revision": "v0.1.0"
+      "Revision": "v0.2.0"
     },
     "Size": {
       "X": 52.55,

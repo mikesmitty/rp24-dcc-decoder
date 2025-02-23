@@ -1,12 +1,13 @@
 (footprint "DIO-SMD_L1.0-W0.6-P0.65-RD"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -4 0)
+		(at 0 -4 180)
 		(layer "F.SilkS")
-		(uuid "6a27c808-880b-4f12-b6eb-245dd8ab4587")
+		(hide yes)
+		(uuid "1cc98bd4-40f8-4622-98f1-78b10d9f766d")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "DIO-SMD_L1.0-W0.6-P0.65-RD"
-		(at 0 4 0)
+	(property "Value" "RB161QS-40"
+		(at 0 4 180)
 		(layer "F.Fab")
-		(uuid "25d82b74-7283-4563-808b-0d108af4a9d3")
+		(hide yes)
+		(uuid "7bc3b0f2-4cea-41cd-a914-1b1cf3548e57")
 		(effects
 			(font
 				(size 1 1)
@@ -25,11 +27,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304281727_FUXINSEMI-RB161QS-40_C5563750.pdf"
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "17c677b1-69a9-4161-8c3e-395262e9de6f")
+		(uuid "6b4e89ec-d26b-4c90-8ba8-775e5e17421c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,11 +39,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Description" "Schottky diode"
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0949f952-a306-42ae-9513-a2dcac973c63")
+		(uuid "5fc070d3-c6a1-4a82-bc20-2be42d96ed85")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -49,14 +51,41 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "LCSC" "C5563750"
 		(at 0 0 0)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1c64282d-5317-4688-898f-c961752489ea")
+		(uuid "58289d15-771c-4030-8498-349126795752")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.55"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c455987-e14e-4d7c-a0e0-546e9edd951c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB_CORRECTION" "0;0;0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f65595d1-b1b4-4c48-8661-a4391c1f6f39")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -70,7 +99,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "798a6458-c200-46c2-bf56-e8dcb75b9d12")
+		(uuid "2aba593e-7e98-4742-93ea-249b9422d848")
 	)
 	(fp_line
 		(start -0.7 -0.51)
@@ -80,7 +109,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "824c3a68-6d20-47d5-9b6f-563f92302212")
+		(uuid "d7a0baeb-71b0-4c39-aec6-e2070b6465f1")
 	)
 	(fp_line
 		(start -0.7 -0.51)
@@ -90,7 +119,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "428f3f43-bd81-4855-ba69-26bb1faa934a")
+		(uuid "ec73eb91-0800-4228-8d61-889d77261e93")
 	)
 	(fp_line
 		(start 0.7 -0.51)
@@ -100,7 +129,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "5d8a03d7-5140-4113-a34c-0489e8710b75")
+		(uuid "19049f86-4a7d-450d-abf2-9db1d9fffa92")
 	)
 	(fp_line
 		(start 0.7 0.51)
@@ -110,7 +139,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "63d6fec1-57a3-49b3-a18f-42994bb70a51")
+		(uuid "3d3064b4-8204-4958-a694-5142664efa19")
 	)
 	(fp_circle
 		(center -0.5 0.3)
@@ -119,14 +148,14 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "87b8689b-f68d-4ade-b015-a693d3e75b58")
+		(uuid "57192cd4-3e80-45d4-a17f-1b75ba2b8234")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
-		(uuid "46bd732c-c7e7-4d2a-a3bb-fdc779a51c7e")
+		(uuid "225c8ecc-8f03-49cd-855b-1fbefccbc825")
 		(effects
 			(font
 				(size 1 1)
@@ -137,15 +166,16 @@
 	(pad "1" smd rect
 		(at -0.33 0)
 		(size 0.4 0.7)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "e10bed00-321b-433b-9475-a0999332e0f1")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dfee0b95-07a1-48fc-a5b7-6c85fbb017e9")
 	)
 	(pad "2" smd rect
 		(at 0.32 0)
 		(size 0.4 0.7)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "f3c8eac6-bbc3-4688-87f8-596efbe4239d")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1b17d3fe-f4bd-40e7-835d-f6e4dcb291c8")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/pico2-test-mule.3dshapes/DIO-SMD_L1.0-W0.6-P0.65-RD.wrl"
 		(offset
 			(xyz 0 -0 -0)

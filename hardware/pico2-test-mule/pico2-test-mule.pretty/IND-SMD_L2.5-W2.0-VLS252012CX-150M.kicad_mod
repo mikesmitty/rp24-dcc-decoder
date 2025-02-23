@@ -1,22 +1,147 @@
-(module easyeda2kicad:IND-SMD_L2.5-W2.0-VLS252012CX-150M (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "IND-SMD_L2.5-W2.0-VLS252012CX-150M"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "648ba8a5-765b-4af1-bf08-10e453435efc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "4.7uH"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a751770-f948-4032-a1ac-362c33ec84a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306021632_cjiang--Changjiang-Microelectronics-Tech-FTC252010S4R7MBCA_C5832360.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3e5a8c6b-fc16-4daf-b534-c3994004f7a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Inductor"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4cae7384-c892-43e4-8cb5-3de04e74e535")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C5832360"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a10c56b3-d5b2-4fa8-9b97-679bb33c8970")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "1.0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "768db1b4-c967-4661-9d14-8fb2ac480bd6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(attr smd)
-	(fp_text reference REF** (at 0 -4.0) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -0.29 -1.09)
+		(end 0.29 -1.09)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c1f94fc8-30da-453b-8156-c6adc2db7174")
 	)
-	(fp_text value IND-SMD_L2.5-W2.0-VLS252012CX-150M (at 0 4.0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start 0.29 1.1)
+		(end -0.29 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ffe1930d-8763-4e5a-9ea3-e0b8ccc0dc94")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_circle
+		(center -1.25 1)
+		(end -1.22 1)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ef82cc41-84bf-4822-b043-ede1d47c7fc4")
 	)
-	(fp_line (start 0.29 1.10) (end -0.29 1.10) (layer F.SilkS) (width 0.10))
-	(fp_line (start -0.29 -1.09) (end 0.29 -1.09) (layer F.SilkS) (width 0.10))
-	(pad 2 smd rect (at 0.83 0.00 0.00) (size 0.85 2.00) (layers F.Cu F.Paste F.Mask))
-	(pad 1 smd rect (at -0.83 0.00 0.00) (size 0.85 2.00) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center -1.25 1.00) (end -1.22 1.00) (layer F.Fab) (width 0.06))
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6c0974ce-de19-40c0-89be-52a7179f9b6e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.83 0)
+		(size 0.85 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "27f1dcbd-1d80-4f73-9f6f-35e8cb4c047f")
+	)
+	(pad "2" smd rect
+		(at 0.83 0)
+		(size 0.85 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7d05e049-09c9-47bd-aaee-201050bdc945")
+	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/pico2-test-mule.3dshapes/IND-SMD_L2.5-W2.0-VLS252012CX-150M.wrl"
-		(offset (xyz -0.000 -0.000 -0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+		(offset
+			(xyz -0 -0 0.87)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

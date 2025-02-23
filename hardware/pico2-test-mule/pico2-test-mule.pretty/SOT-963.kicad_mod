@@ -1,0 +1,259 @@
+(footprint "SOT-963"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOT 963 6 pins package 1x0.8mm pitch 0.35mm")
+	(tags "SOT 963 6 pins package 1x0.8mm pitch 0.35mm")
+	(property "Reference" "REF**"
+		(at 0.01 -1.75 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "24bebec5-6b8f-4bd3-890a-7b8b514496b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "NST847BPDP6T5G"
+		(at 0.01 1.53 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f09fa50-ad5a-4085-a7d2-54efa5858e1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28bd8ca6-2ef0-4bc6-a519-fd2ad21ce21c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "100mA IC, 45V Vce, Dual NPN/PNP Transistors, SOT-363"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd6fc5c5-68d9-488c-b94a-be5c74622751")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C896443"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3fe280e-017a-41fa-abd0-a0c81f30ffb6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.4 -0.71)
+		(end -0.19 -0.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c9df540-11fb-454b-a8c5-54dd22aa2c78")
+	)
+	(fp_line
+		(start 0.4 0.71)
+		(end -0.4 0.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0e4c05b-b42d-4196-a1fb-fa6b003820b0")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5 -0.71) (xy -0.78 -0.71) (xy -0.5 -0.99) (xy -0.5 -0.71)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "4028c074-14b5-4c1b-91b1-0abeed815dc8")
+	)
+	(fp_line
+		(start -0.8 -0.75)
+		(end 0.8 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "aafe7385-b075-4b10-9fce-7015c9ccaaf5")
+	)
+	(fp_line
+		(start -0.8 0.75)
+		(end -0.8 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bbf607d3-aeb3-46a3-b177-7da557e9d7db")
+	)
+	(fp_line
+		(start 0.8 -0.75)
+		(end 0.8 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c644a2ca-c31b-429e-9564-6c6cd8786298")
+	)
+	(fp_line
+		(start 0.8 0.75)
+		(end -0.8 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c4f6c298-fb3c-4eb4-9aa9-f7a1c796aaf8")
+	)
+	(fp_line
+		(start -0.4 -0.2)
+		(end -0.1 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "783943a6-d3ac-4827-95fe-e981057f02f8")
+	)
+	(fp_line
+		(start -0.4 0.5)
+		(end -0.4 -0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f82089b5-43a3-473a-9d0b-27c0de26dc3d")
+	)
+	(fp_line
+		(start -0.1 -0.5)
+		(end 0.4 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3e95cc31-5b24-41fc-b542-137171c515b8")
+	)
+	(fp_line
+		(start 0.4 -0.5)
+		(end 0.4 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2d35e193-a00d-47f7-b723-4cf635541059")
+	)
+	(fp_line
+		(start 0.4 0.5)
+		(end -0.4 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2eb7e4bf-b9fd-48b6-af7c-770602707bbc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "a36a773e-9587-443a-8ba9-6c22cb32a150")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.0625)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.45 -0.35)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "99586420-6381-4745-a5c9-f5708b8dac33")
+	)
+	(pad "2" smd roundrect
+		(at -0.45 0)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "dd86d409-1113-47dd-b937-098ec5e763f9")
+	)
+	(pad "3" smd roundrect
+		(at -0.45 0.35)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "7fcfd7bc-64bd-4773-8166-0f0375e9f66a")
+	)
+	(pad "4" smd roundrect
+		(at 0.45 0.35)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b67cb8ff-eb24-400f-8e28-a2bada92b17d")
+	)
+	(pad "5" smd roundrect
+		(at 0.45 0)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "66342dc5-8541-4539-92e0-25d19eb7f373")
+	)
+	(pad "6" smd roundrect
+		(at 0.45 -0.35)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "717b4bd2-084d-4dc6-90c8-53c8d8c84127")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-963.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
