@@ -59,8 +59,8 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 ![decoder bottom](images/rp2350-decoder-bottom.png)
 
 ## RP24 USB Programmer/E24 Decoder Tester
-![programmer top](images/rp2040-decoder-usb-adapter-top.png)
-![programmer bottom](images/rp2040-decoder-usb-adapter-bottom.png)
+![programmer top](images/rp24-usb-tester-top.png)
+![programmer bottom](images/rp24-usb-tester-bottom.png)
 
 ## E24 Receiver/Wire Breakout
 ![programmer top](images/e24-receiver-board-top.png)
