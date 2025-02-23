@@ -23,7 +23,7 @@ jobs:
         uses: tj-actions/changed-files@v45
         with:
           files: |
-            **/*.kicad_pcb
+            hardware/*/*.kicad_pcb
           matrix: true
 
     outputs:
