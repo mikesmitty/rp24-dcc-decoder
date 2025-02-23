@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.8"
+      "Version": "9.0.0"
     },
-    "CreationDate": "2025-02-21T09:15:23-05:00"
+    "CreationDate": "2025-02-22T20:49:32-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "panel",
       "GUID": "70616e65-6c2e-46b6-9963-61645f706362",
-      "Revision": "v0.0.0"
+      "Revision": "v0.0.2"
     },
     "Size": {
       "X": 70.1,
@@ -25,21 +25,21 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.2,
-      "PadToTrack": 0.2,
-      "TrackToTrack": 0.2,
+      "PadToPad": 0.11,
+      "PadToTrack": 0.11,
+      "TrackToTrack": 0.11,
       "MinLineWidth": 0.11,
-      "TrackToRegion": 0.2,
-      "RegionToRegion": 0.2
+      "TrackToRegion": 0.11,
+      "RegionToRegion": 0.11
     },
     {
       "Layers": "Inner",
       "PadToPad": 0.0,
       "PadToTrack": 0.0,
-      "TrackToTrack": 0.2,
+      "TrackToTrack": 0.11,
       "MinLineWidth": 0.12,
-      "TrackToRegion": 0.2,
-      "RegionToRegion": 0.2
+      "TrackToRegion": 0.11,
+      "RegionToRegion": 0.11
     }
   ],
   "FilesAttributes": [
@@ -94,22 +94,22 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panel-inner1.g2",
-      "FileFunction": "Copper,L2,Inr",
+      "Path": "panel-inner1.gts",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "panel-inner2.gbl",
+      "FileFunction": "Copper,L6,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panel-inner2.g3",
-      "FileFunction": "Copper,L3,Inr",
-      "FilePolarity": "Positive"
+      "Path": "panel-inner3.gbs",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
     },
     {
-      "Path": "panel-inner3.g4",
-      "FileFunction": "Copper,L4,Inr",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "panel-inner4.g5",
+      "Path": "panel-inner4.g1",
       "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     }
@@ -126,7 +126,7 @@
     },
     {
       "Type": "SolderMask",
-      "Color": "Black",
+      "Color": "Green",
       "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
@@ -212,7 +212,7 @@
     },
     {
       "Type": "SolderMask",
-      "Color": "Black",
+      "Color": "Green",
       "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
