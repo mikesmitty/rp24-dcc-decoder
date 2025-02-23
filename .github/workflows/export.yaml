@@ -36,7 +36,9 @@ jobs:
 
     name: Render PCB
     runs-on: ubuntu-latest
-    container: ghcr.io/kicad/kicad:9.0
+    container:
+      image: ghcr.io/kicad/kicad:9.0
+      options: --user root
 
     strategy:
       matrix:
@@ -51,6 +53,7 @@ jobs:
           fetch-depth: 0
 
       - name: Render PCB images
+        shell: bash
         run: |
           # Get the directory of the PCB file
           KICAD_DIR="$(dirname "${{ matrix.files }}")"
