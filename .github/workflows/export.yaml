@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/kicad/kicad:9.0
-      options: --user root
+      options: --user 1001
 
     strategy:
       matrix:
@@ -55,9 +55,6 @@ jobs:
       - name: Render PCB images
         shell: bash
         run: |
-          # Fix permissions for github actions
-          chown -R 1001:1001 .
-
           # Get the directory of the PCB file
           KICAD_DIR="$(dirname "${{ matrix.files }}")"
           echo "kicad-dir=$KICAD_DIR" >> "$GITHUB_OUTPUT"
