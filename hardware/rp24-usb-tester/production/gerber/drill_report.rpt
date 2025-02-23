@@ -1,13 +1,13 @@
 Drill report for rp24-usb-tester.kicad_pcb
-Created on 2025-02-16T13:24:11-0500
+Created on 2025-02-22T20:52:15-0500
 
 Copper Layer Stackup:
     =============================================================
     L1 :  F.Cu                      front
-    L2 :  B.Cu                      back
+    L1 :  B.Cu                      back
 
 
-Drill file 'rp24-usb-tester.drl' contains
+Drill file 'rp24-usb-tester-PTH.drl' contains
     plated through holes:
     =============================================================
     T1  0.300mm  0.0118"  (92 holes)
@@ -17,9 +17,9 @@ Drill file 'rp24-usb-tester.drl' contains
     Total plated holes count 113
 
 
-Not plated through holes are merged with plated holes
+Drill file 'rp24-usb-tester-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T4  0.650mm  0.0256"  (2 holes)
+    T1  0.650mm  0.0256"  (2 holes)
 
     Total unplated holes count 2
