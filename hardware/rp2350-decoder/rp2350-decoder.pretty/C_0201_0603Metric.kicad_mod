@@ -9,7 +9,7 @@
 		(at 0 -1.05 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "67218a04-bd9d-4e7b-acf9-b7422e30a656")
+		(uuid "a561cac2-b183-405a-9e39-3a28858f0257")
 		(effects
 			(font
 				(size 1 1)
@@ -21,7 +21,7 @@
 		(at 0 1.05 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "32fcad2d-8362-4b6a-96a9-83d29f8368c4")
+		(uuid "82924510-8115-4aee-b159-2b6c563ce3d9")
 		(effects
 			(font
 				(size 1 1)
@@ -34,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3c0dcdce-00b5-460d-a82e-9f9aae66471a")
+		(uuid "498cc700-f4cd-4261-b6c3-15153a308886")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -47,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c24c6184-4fad-42f3-a55f-06abcc2bc2ff")
+		(uuid "932a6bc3-7109-406d-92c0-e6402ea486f6")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bcd9947b-3761-4169-b331-dee121befa27")
+		(uuid "fcc7b8f7-282a-4e39-863e-f028974af9f0")
 		(effects
 			(font
 				(size 1 1)
@@ -73,7 +73,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0b0b6ebd-1cd9-40a1-94cc-08bff543d57e")
+		(uuid "56b7f622-b122-419f-8139-2d6f2cbdd4da")
 		(effects
 			(font
 				(size 1 1)
@@ -86,7 +86,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "956f1788-83e9-4461-8236-6b2e3e0581e5")
+		(uuid "56c38c93-11b9-4453-b239-f56f50bcb71f")
 		(effects
 			(font
 				(size 1 1)
@@ -103,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "50644d3a-82e9-41d8-9cf1-08ad2850f333")
+		(uuid "962b2d2b-da72-435e-86eb-6e61606a6bc3")
 	)
 	(fp_line
 		(start 0.7 -0.35)
@@ -113,7 +113,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "be8282ed-b45e-42be-aa8f-86426d28484c")
+		(uuid "67462cb9-acb7-401d-b411-434c17d3f871")
 	)
 	(fp_line
 		(start -0.7 0.35)
@@ -123,7 +123,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "91ea3f38-2e63-4ddf-85c7-f63c1409629d")
+		(uuid "d3658ca6-b879-4808-9e69-7511529752af")
 	)
 	(fp_line
 		(start -0.7 -0.35)
@@ -133,7 +133,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "5b97817d-b883-4d6b-abcb-a56aca7f31d9")
+		(uuid "96ebd79a-fd91-4135-a6b2-454bbe7d167e")
 	)
 	(fp_line
 		(start 0.3 0.15)
@@ -143,7 +143,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "91647772-6dcd-44f6-ad2c-0c3254b96a75")
+		(uuid "a2caa614-b180-4405-a0dc-fecf7f0ae197")
 	)
 	(fp_line
 		(start 0.3 -0.15)
@@ -153,7 +153,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "905fca3f-5f0c-450f-9146-272783c93444")
+		(uuid "33c0e801-7f10-457e-8019-4598e84aeffe")
 	)
 	(fp_line
 		(start -0.3 0.15)
@@ -163,7 +163,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4ac7241e-cd7f-4856-8e59-ce67723010a5")
+		(uuid "d3df47b2-0f8a-470d-82cb-e9acc0f4eb2f")
 	)
 	(fp_line
 		(start -0.3 -0.15)
@@ -173,13 +173,13 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "aefe0cd4-7cf4-484e-860c-a4fca07dec23")
+		(uuid "e477876b-27e5-4214-a633-139753d2e259")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -0.68 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8c0a7976-0a04-4a43-b17f-3a0a65e0fc0b")
+		(uuid "06bb49ce-0ed7-4e45-8f6f-d31067eec216")
 		(effects
 			(font
 				(size 0.25 0.25)
@@ -192,28 +192,28 @@
 		(size 0.318 0.36)
 		(layers "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "94d403b4-3543-4612-9150-e077f733e2c2")
+		(uuid "0c6afd76-ad39-4918-96b0-6249a260e2df")
 	)
 	(pad "" smd roundrect
 		(at 0.345 0 180)
 		(size 0.318 0.36)
 		(layers "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "fee165f4-6151-43bd-af9e-40ded8ecd6b1")
+		(uuid "af2f9048-04a5-49ab-b858-de7c8c98e6e5")
 	)
 	(pad "1" smd roundrect
 		(at -0.32 0 180)
 		(size 0.46 0.4)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
-		(uuid "c149fe69-52ce-46fa-b708-27ddd4c74f6b")
+		(uuid "31b81073-38b3-4d96-9827-ef4f05701a4c")
 	)
 	(pad "2" smd roundrect
 		(at 0.32 0 180)
 		(size 0.46 0.4)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
-		(uuid "9c8cce9e-5fa0-402b-8018-1303136dcfd4")
+		(uuid "c418cd36-054c-4b8e-8c95-0a8128dc1e72")
 	)
 	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.wrl"
