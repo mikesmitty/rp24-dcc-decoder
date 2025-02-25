@@ -8937,7 +8937,7 @@
 		)
 		(uuid "fe8a9807-cb47-4636-ab0f-7b84d1ce13d1")
 	)
-	(label "GPIO26"
+	(label "GPIO17"
 		(at 285.75 181.61 180)
 		(effects
 			(font
@@ -9097,7 +9097,7 @@
 		)
 		(uuid "2c5482d6-5d70-46b8-8891-d04df5eff7e2")
 	)
-	(label "GPIO25"
+	(label "GPIO16"
 		(at 342.9 215.9 0)
 		(effects
 			(font
@@ -9357,7 +9357,7 @@
 		)
 		(uuid "6dfec755-290c-4043-ab85-a4a5368709fa")
 	)
-	(label "GPIO26"
+	(label "GPIO17"
 		(at 378.46 215.9 180)
 		(effects
 			(font
@@ -9547,7 +9547,7 @@
 		)
 		(uuid "936d9fd6-41ae-4165-bce3-b40cb97bfb64")
 	)
-	(label "GPIO25"
+	(label "GPIO16"
 		(at 285.75 184.15 180)
 		(effects
 			(font
