@@ -5999,6 +5999,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 67.31) (xy 147.32 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f0a141-1668-41fc-bb1e-69b77693f711")
+	)
+	(wire
+		(pts
 			(xy 271.78 173.99) (xy 285.75 173.99)
 		)
 		(stroke
@@ -7359,6 +7369,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 68.58) (xy 154.94 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e2deda3-7604-49ae-8ad6-d9280a35ba0d")
+	)
+	(wire
+		(pts
 			(xy 128.27 144.78) (xy 154.94 144.78)
 		)
 		(stroke
@@ -8159,6 +8179,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 59.69) (xy 147.32 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d33ed5-dcc2-4d1e-8c6b-1665dfd898d0")
+	)
+	(wire
+		(pts
 			(xy 154.94 55.88) (xy 154.94 57.15)
 		)
 		(stroke
@@ -8786,6 +8816,16 @@
 			(type default)
 		)
 		(uuid "ead5107a-aa42-473a-9048-9dd08649c04a")
+	)
+	(wire
+		(pts
+			(xy 147.32 57.15) (xy 154.94 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb025e5f-3a52-44ff-9595-68c7a564f69d")
 	)
 	(wire
 		(pts
@@ -17994,6 +18034,84 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico2-test-mule:C")
+		(at 147.32 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b46cf8c6-16d6-46fe-afc4-411d91bb8bc9")
+		(property "Reference" "C3"
+			(at 143.51 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 143.51 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 148.2852 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 147.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1710"
+			(at 147.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b97a575e-f59e-4bc2-bf5c-b6c9fe07c0cb")
+		)
+		(pin "2"
+			(uuid "cacfbc48-7a33-4fe2-8b4e-148d35c96aad")
+		)
+		(instances
+			(project ""
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "C3")
 					(unit 1)
 				)
 			)
