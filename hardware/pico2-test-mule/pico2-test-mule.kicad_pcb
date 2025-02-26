@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(date "2025-02-26")
-		(rev "v0.2.1")
+		(rev "v0.2.2")
 	)
 	(layers
 		(0 "F.Cu" signal)
