@@ -11834,7 +11834,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1.2nF"
+		(property "Value" "10nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -11875,7 +11875,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C3037634"
+		(property "LCSC" "C85930"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
