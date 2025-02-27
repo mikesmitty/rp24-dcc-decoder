@@ -9,7 +9,7 @@
 		(at 0 -1.43 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d44142c6-9f28-46a6-86ba-6fc227eba2f2")
+		(uuid "5d6b8a39-7620-46db-88b2-4b5eb98c6a64")
 		(effects
 			(font
 				(size 1 1)
@@ -21,7 +21,7 @@
 		(at 0 1.43 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e1627b81-7630-483d-b4ca-16049f5b99e4")
+		(uuid "c0317c2b-6f14-4c4a-9812-eec54ba99a96")
 		(effects
 			(font
 				(size 1 1)
@@ -34,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d1e08cd9-b0e3-4cf2-a267-c638e9d93b16")
+		(uuid "3687feb5-6348-40fc-97cd-ff6c880594cb")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -47,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6d02d541-6df3-49a0-a556-2388c43bc17a")
+		(uuid "ae67845e-1f64-4293-ba54-bd4cf373cb42")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7c89188a-c104-4bd2-958a-7f37e0c5b19b")
+		(uuid "7502d232-c6a8-4b01-a775-0f7460b8f5eb")
 		(effects
 			(font
 				(size 1 1)
@@ -73,7 +73,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a05682d5-b0f2-45be-8103-88e1687ac59c")
+		(uuid "45f1bc3f-8b0d-40e4-a325-8bebc158583d")
 		(effects
 			(font
 				(size 1 1)
@@ -86,7 +86,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a76c7274-50e3-4e1c-bdbd-b1c0380aaf44")
+		(uuid "5464934b-7caf-452c-a448-d8aaec730bdb")
 		(effects
 			(font
 				(size 1 1)
@@ -103,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "a0334654-fc47-4137-b5a4-9d2c88868dbd")
+		(uuid "3fe3c13d-2856-48c9-a69d-26062e0242d3")
 	)
 	(fp_line
 		(start -0.14058 0.51)
@@ -113,7 +113,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "81a9f15d-49af-4275-bd1e-63bb4d913a5a")
+		(uuid "92427771-b63d-4d19-9ddb-4691fb2adb0c")
 	)
 	(fp_line
 		(start -1.48 -0.73)
@@ -123,7 +123,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f15f27cc-3432-4f59-9c6d-8ed5d3807604")
+		(uuid "644c8c17-b5fe-466b-a11c-110461735607")
 	)
 	(fp_line
 		(start -1.48 0.73)
@@ -133,7 +133,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "55793f6b-72ec-42eb-96b5-1c5455e16090")
+		(uuid "f06450c3-a8df-4676-ab88-d5ec6cc68137")
 	)
 	(fp_line
 		(start 1.48 -0.73)
@@ -143,7 +143,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "fbd5871b-db09-4a05-ae0b-7f69972ead1f")
+		(uuid "480af95d-f567-45ce-9909-80cbb7ee7ee2")
 	)
 	(fp_line
 		(start 1.48 0.73)
@@ -153,7 +153,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "4d7e00a7-f199-4a6e-9371-e2fda13421e5")
+		(uuid "7888489f-e700-457a-a86e-2eb90095b40f")
 	)
 	(fp_line
 		(start -0.8 -0.4)
@@ -163,7 +163,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6b296652-a529-4a04-9e69-9b8ba34e46a4")
+		(uuid "16482336-ed56-4fab-a001-a706690bf3f1")
 	)
 	(fp_line
 		(start -0.8 0.4)
@@ -173,7 +173,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "ede8bcd8-f07c-4171-8b14-b504aacdfaa3")
+		(uuid "fc62d9cb-3b9f-4414-b0b6-4aa688ee769f")
 	)
 	(fp_line
 		(start 0.8 -0.4)
@@ -183,7 +183,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "33e316ee-8e7f-4cd7-b388-63a2b69429c0")
+		(uuid "79917234-4a91-4a5a-9a7e-4c97a3b090cb")
 	)
 	(fp_line
 		(start 0.8 0.4)
@@ -193,12 +193,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "08ef9a4c-7d8e-4f63-a518-367084f1fe65")
+		(uuid "34a40629-a003-4d81-8584-3de6d737e4cd")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "297ed431-e7b8-46e4-bc82-f255347de38a")
+		(uuid "0ee19c68-0710-476d-9949-fbb3bd975b2a")
 		(effects
 			(font
 				(size 0.4 0.4)
@@ -211,14 +211,14 @@
 		(size 0.9 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "c5d901ff-fd44-4e54-a88f-9cba36916937")
+		(uuid "ad6eee89-d364-416b-883b-43ccbe1e3fc3")
 	)
 	(pad "2" smd roundrect
 		(at 0.775 0)
 		(size 0.9 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "e760cbfa-ba0b-41d6-be65-776951a449ba")
+		(uuid "4be8d0df-411b-4042-a2b4-4cca68ffa92d")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"

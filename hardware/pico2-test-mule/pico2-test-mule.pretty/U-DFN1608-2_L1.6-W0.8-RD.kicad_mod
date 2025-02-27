@@ -4,10 +4,10 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -4 180)
+		(at 0 -4 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "b91c17f6-ae3c-4df7-9b6a-da8583524a50")
+		(uuid "c13bf3b3-4f6d-4c49-aa5a-2a62ab92cc69")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +16,10 @@
 		)
 	)
 	(property "Value" "LMBR4020H3T5G"
-		(at 0 4 180)
+		(at 0 4 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6a18e2f5-32f3-4442-944a-faa88f478b7c")
+		(uuid "0934fa10-c3d6-4025-86c0-c15122263077")
 		(effects
 			(font
 				(size 1 1)
@@ -28,10 +28,10 @@
 		)
 	)
 	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2108150030_LRC-LMBR4020H3T5G_C2852608.pdf"
-		(at 0 0 180)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "edc002bd-92c0-49d4-8a06-23d944a98a30")
+		(uuid "c67580d0-a9e3-4c6c-aa14-d4ec7da307d0")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,10 +40,10 @@
 		)
 	)
 	(property "Description" "40V Independent Type 2A 560mV DFN-2(0.8x1.6) Schottky Diodes ROHS"
-		(at 0 0 180)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "314feb6e-6511-4f38-a452-39aead0f7778")
+		(uuid "7f865f9b-94b2-4751-a275-92ca145ae179")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,7 +56,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "010f7f57-fa3e-4986-aff6-80cb5e3279db")
+		(uuid "25c5c82a-6b39-4feb-b4e2-cd99f0b7240b")
 		(effects
 			(font
 				(size 1 1)
@@ -69,7 +69,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e6cc074c-2848-4c29-8424-9beb94b994a9")
+		(uuid "35b4ba5c-cad4-4225-9fbb-9b1f4d6fcbfd")
 		(effects
 			(font
 				(size 1 1)
@@ -82,7 +82,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "777ef2ab-b47e-4222-81c4-8c58ff16657b")
+		(uuid "7bc49089-67bd-42d0-9a3d-1bf08203f528")
 		(effects
 			(font
 				(size 1 1)
@@ -99,7 +99,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f4979ad6-f8f3-419f-b162-5846b675b8fd")
+		(uuid "3c891e19-eae5-4ff1-94a4-06128b3ebe17")
 	)
 	(fp_line
 		(start -1.52 0.63)
@@ -109,7 +109,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "422cc6a8-e680-47dd-bfbf-2672f0713d41")
+		(uuid "950655c9-6d06-42f3-81d5-45b5ad235e12")
 	)
 	(fp_line
 		(start -1.39 -0.63)
@@ -119,7 +119,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8675385e-ac72-42a1-949c-0eab02c3d83a")
+		(uuid "a25e78ae-f190-4a00-ab34-3e07be829e70")
 	)
 	(fp_line
 		(start -1.39 0.63)
@@ -129,7 +129,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "eab28215-ef01-4709-a3ab-7b5164e5d8af")
+		(uuid "77304edb-740c-4af9-b473-9d04b996c396")
 	)
 	(fp_line
 		(start -1.39 0.63)
@@ -139,7 +139,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f65d7082-c0ed-4e26-8238-407d06e79227")
+		(uuid "3e08e4fd-b1ee-43f6-ad5b-216dfb4ec1b9")
 	)
 	(fp_line
 		(start -1.27 0.63)
@@ -149,7 +149,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "a364794f-0116-45cf-b49f-9e757582d250")
+		(uuid "f71d3f20-ea64-43a9-bd13-4989e148b4ea")
 	)
 	(fp_line
 		(start -1.25 -0.63)
@@ -159,7 +159,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f10ddbd8-e62d-4074-8a6d-ee689a51fd6c")
+		(uuid "35d4f3f0-acdc-4e11-815c-a5eaf2172ecb")
 	)
 	(fp_line
 		(start -1.25 -0.63)
@@ -169,7 +169,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "055f8650-39bc-4c49-9d46-d1a6182ebbc7")
+		(uuid "3625d784-2539-401d-8f98-ba6d26cdf786")
 	)
 	(fp_line
 		(start 1.1 -0.63)
@@ -179,7 +179,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6d9ddeff-9477-48ab-8685-fc661c7ea76d")
+		(uuid "2b7c07a4-7b88-4bfb-b11b-edd16a54a6c1")
 	)
 	(fp_line
 		(start 1.1 0.64)
@@ -189,7 +189,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1e249831-3040-4cca-bfc3-7059360640b3")
+		(uuid "b4d6b1e1-b514-4fa1-b6c8-f959e549c3cb")
 	)
 	(fp_circle
 		(center -1.02 0.4)
@@ -200,12 +200,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "0ff92ede-6a37-4159-9ea3-fb95bd665649")
+		(uuid "7eea6142-bca3-4f73-af96-96c6c0042bbe")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 180)
+		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "088db611-5550-49d2-af8f-5ca1d279d916")
+		(uuid "e18883b5-eaaf-4509-8c8b-5a9ddb68d85f")
 		(effects
 			(font
 				(size 1 1)
@@ -217,13 +217,13 @@
 		(at -0.58 0 90)
 		(size 0.8 1.01)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "d006c1d7-7d7f-45e6-a10a-263f3e387cb0")
+		(uuid "14756f38-7677-4a44-babf-ab2fa8333f5a")
 	)
 	(pad "2" smd rect
 		(at 0.58 0 90)
 		(size 0.8 0.61)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "ed72f91e-a3dd-44d1-a832-b629eb3a3a53")
+		(uuid "2fc5f0da-31ed-4a33-8287-141597e773e3")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/pico2-test-mule.3dshapes/U-DFN1608-2_L1.6-W0.8-H0.5-RD.wrl"

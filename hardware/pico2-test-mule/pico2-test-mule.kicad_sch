@@ -1708,6 +1708,333 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "pico2-test-mule:Conn_01x06_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x06_Pin"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x06, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x06_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -7.62) (xy 0.8636 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "pico2-test-mule:DMN2991UDA-7B"
 			(pin_names
 				(hide yes)
@@ -6019,7 +6346,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 246.38) (xy 285.75 246.38)
+			(xy 279.4 234.95) (xy 290.83 234.95)
 		)
 		(stroke
 			(width 0)
@@ -6229,7 +6556,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 246.38) (xy 255.27 246.38)
+			(xy 248.92 250.19) (xy 255.27 250.19)
 		)
 		(stroke
 			(width 0)
@@ -6599,7 +6926,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 267.97) (xy 285.75 267.97)
+			(xy 279.4 256.54) (xy 290.83 256.54)
 		)
 		(stroke
 			(width 0)
@@ -6739,7 +7066,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 265.43) (xy 257.81 265.43)
+			(xy 248.92 228.6) (xy 261.62 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6879,7 +7206,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 236.22) (xy 285.75 236.22)
+			(xy 248.92 236.22) (xy 261.62 236.22)
 		)
 		(stroke
 			(width 0)
@@ -7329,7 +7656,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 248.92) (xy 285.75 248.92)
+			(xy 279.4 237.49) (xy 290.83 237.49)
 		)
 		(stroke
 			(width 0)
@@ -7679,7 +8006,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 236.22) (xy 261.62 236.22)
+			(xy 248.92 241.3) (xy 261.62 241.3)
 		)
 		(stroke
 			(width 0)
@@ -7919,7 +8246,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 265.43) (xy 285.75 265.43)
+			(xy 279.4 254) (xy 290.83 254)
 		)
 		(stroke
 			(width 0)
@@ -7949,7 +8276,7 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 146.05) (xy 287.02 146.05)
+			(xy 271.78 146.05) (xy 299.72 146.05)
 		)
 		(stroke
 			(width 0)
@@ -7969,7 +8296,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 251.46) (xy 285.75 251.46)
+			(xy 279.4 240.03) (xy 290.83 240.03)
 		)
 		(stroke
 			(width 0)
@@ -8049,7 +8376,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 233.68) (xy 285.75 233.68)
+			(xy 248.92 233.68) (xy 261.62 233.68)
 		)
 		(stroke
 			(width 0)
@@ -8269,7 +8596,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 254) (xy 255.27 254)
+			(xy 248.92 257.81) (xy 255.27 257.81)
 		)
 		(stroke
 			(width 0)
@@ -8419,7 +8746,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 256.54) (xy 285.75 256.54)
+			(xy 279.4 245.11) (xy 290.83 245.11)
 		)
 		(stroke
 			(width 0)
@@ -8449,7 +8776,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 248.92) (xy 255.27 248.92)
+			(xy 248.92 252.73) (xy 255.27 252.73)
 		)
 		(stroke
 			(width 0)
@@ -8599,7 +8926,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 254) (xy 285.75 254)
+			(xy 279.4 242.57) (xy 290.83 242.57)
 		)
 		(stroke
 			(width 0)
@@ -8809,7 +9136,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 233.68) (xy 261.62 233.68)
+			(xy 248.92 238.76) (xy 261.62 238.76)
 		)
 		(stroke
 			(width 0)
@@ -8859,7 +9186,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 267.97) (xy 255.27 267.97)
+			(xy 248.92 231.14) (xy 261.62 231.14)
 		)
 		(stroke
 			(width 0)
@@ -8909,7 +9236,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 251.46) (xy 255.27 251.46)
+			(xy 248.92 255.27) (xy 255.27 255.27)
 		)
 		(stroke
 			(width 0)
@@ -8988,7 +9315,7 @@
 		(uuid "00ab7531-317c-4461-8968-d9ea017cfa5e")
 	)
 	(label "GPIO2"
-		(at 359.41 104.14 0)
+		(at 330.2 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9008,7 +9335,7 @@
 		(uuid "06247969-8483-4f81-8fd1-a7e4ddf98be0")
 	)
 	(label "SPEAKER_N"
-		(at 261.62 233.68 180)
+		(at 261.62 238.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9048,7 +9375,7 @@
 		(uuid "17ad98c9-f404-4e12-88e8-dd138c9ee130")
 	)
 	(label "AUX10"
-		(at 285.75 251.46 180)
+		(at 290.83 240.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9058,7 +9385,7 @@
 		(uuid "18826274-761f-42d2-9569-ebf509520386")
 	)
 	(label "GPIO3"
-		(at 330.2 104.14 0)
+		(at 359.41 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9118,7 +9445,7 @@
 		(uuid "27b9df86-98db-4937-835d-aa37a93146d1")
 	)
 	(label "GPIO5"
-		(at 359.41 39.37 0)
+		(at 359.41 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9158,7 +9485,7 @@
 		(uuid "2e445aba-3a9d-435e-9aac-205ce094c0f8")
 	)
 	(label "LAMP_REAR"
-		(at 334.01 54.61 0)
+		(at 334.01 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9208,7 +9535,7 @@
 		(uuid "368a7204-20db-4800-bc8e-ae4e715b043a")
 	)
 	(label "AUX8 (VDC)"
-		(at 363.22 76.2 0)
+		(at 363.22 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9248,7 +9575,7 @@
 		(uuid "473f10f7-bf34-44c4-947d-15458477b004")
 	)
 	(label "AUX7 (VDC)"
-		(at 334.01 97.79 0)
+		(at 363.22 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9268,7 +9595,7 @@
 		(uuid "4e5d1dc0-c983-4ae1-be8d-f0179f3315f9")
 	)
 	(label "AUX3"
-		(at 285.75 246.38 180)
+		(at 290.83 234.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9308,7 +9635,7 @@
 		(uuid "5869979e-e6cb-4127-b923-2a1ef5ee05b7")
 	)
 	(label "TRACK_LEFT"
-		(at 285.75 233.68 180)
+		(at 261.62 233.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9338,7 +9665,7 @@
 		(uuid "63d63f54-96c4-4325-b559-79438d361c6c")
 	)
 	(label "LAMP_FRONT"
-		(at 363.22 54.61 0)
+		(at 363.22 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9348,7 +9675,7 @@
 		(uuid "6427b33b-e7a0-49b4-9dd9-2b52d203f7e2")
 	)
 	(label "GPIO8"
-		(at 330.2 39.37 0)
+		(at 330.2 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9428,7 +9755,7 @@
 		(uuid "754a5fdf-9602-4246-b97e-2cd918ff1ebc")
 	)
 	(label "AUX4"
-		(at 285.75 248.92 180)
+		(at 290.83 237.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9448,7 +9775,7 @@
 		(uuid "77a4612f-4461-48bc-8ddc-4414a861473c")
 	)
 	(label "TRACK_RIGHT"
-		(at 285.75 236.22 180)
+		(at 261.62 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9458,7 +9785,7 @@
 		(uuid "7827d16f-3066-4143-95a1-767d02be0dba")
 	)
 	(label "GPIO6"
-		(at 359.41 60.96 0)
+		(at 359.41 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9478,7 +9805,7 @@
 		(uuid "7d1e8caf-47a7-4faa-a6f4-e8b409963c29")
 	)
 	(label "AUX1 (VDC)"
-		(at 334.01 33.02 0)
+		(at 334.01 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9518,7 +9845,7 @@
 		(uuid "8adaa2e0-1634-4d33-8f72-1a600d24bd3c")
 	)
 	(label "AUX2 (VDC)"
-		(at 363.22 33.02 0)
+		(at 363.22 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9528,7 +9855,7 @@
 		(uuid "8b64c259-6750-4e31-bf56-415c3043b7ef")
 	)
 	(label "AUX6 (VDC)"
-		(at 334.01 76.2 0)
+		(at 334.01 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9568,7 +9895,7 @@
 		(uuid "8f8eee0f-e491-45ba-84f9-06ceeabd6818")
 	)
 	(label "MOTOR_A"
-		(at 285.75 265.43 180)
+		(at 290.83 254 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9628,7 +9955,7 @@
 		(uuid "9864d565-96e6-4004-95d7-bf9fb8f72357")
 	)
 	(label "AUX11"
-		(at 285.75 254 180)
+		(at 290.83 242.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9698,7 +10025,7 @@
 		(uuid "b2748990-2395-454e-8d75-81904165a26f")
 	)
 	(label "AUX5 (VDC)"
-		(at 363.22 97.79 0)
+		(at 334.01 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9708,7 +10035,7 @@
 		(uuid "b2877f62-c765-4d60-a820-fd496e26f2dd")
 	)
 	(label "MOTOR_B"
-		(at 285.75 267.97 180)
+		(at 290.83 256.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9738,7 +10065,7 @@
 		(uuid "be024720-1f1b-4a2f-9152-b35217b30de3")
 	)
 	(label "SPEAKER_P"
-		(at 261.62 236.22 180)
+		(at 261.62 241.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9768,7 +10095,7 @@
 		(uuid "c0db25cd-a7bf-40ed-b82a-3c97d9521a81")
 	)
 	(label "CAP+"
-		(at 257.81 265.43 180)
+		(at 261.62 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9778,7 +10105,7 @@
 		(uuid "c843a3c6-903e-483f-b5ac-3d7548347c9a")
 	)
 	(label "GPIO7"
-		(at 330.2 60.96 0)
+		(at 330.2 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9788,7 +10115,7 @@
 		(uuid "ca29dd58-a9d6-4370-a971-13a03767ec02")
 	)
 	(label "AUX12"
-		(at 285.75 256.54 180)
+		(at 290.83 245.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9818,7 +10145,7 @@
 		(uuid "ce536717-14a9-46d4-b260-d0cffa5bd626")
 	)
 	(label "GPIO9"
-		(at 330.2 82.55 0)
+		(at 330.2 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9828,7 +10155,7 @@
 		(uuid "d180de6a-c2a9-4c37-8b33-52ea74eb9e69")
 	)
 	(label "GPIO4"
-		(at 359.41 82.55 0)
+		(at 359.41 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9956,7 +10283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "056b5022-051d-43de-a763-ca760819aaa6")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR047"
 			(at 345.44 53.34 0)
 			(effects
 				(font
@@ -10006,7 +10333,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR042")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -10022,7 +10349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "090d0dda-190a-4420-beb7-28b0463a98f2")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR010"
 			(at 76.2 217.17 0)
 			(effects
 				(font
@@ -10090,7 +10417,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR025")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10107,7 +10434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ca016ca-fb86-459b-8e96-3598133f95bd")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR039"
 			(at 293.37 153.67 0)
 			(effects
 				(font
@@ -10158,7 +10485,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR020")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -10173,7 +10500,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f362a7a-6bcb-4177-bfa4-7221d98297b6")
-		(property "Reference" "R16"
+		(property "Reference" "R11"
 			(at 344.805 224.155 0)
 			(effects
 				(font
@@ -10251,7 +10578,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R16")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10266,7 +10593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "119a6a81-02ab-4207-9fab-06baac567ca5")
-		(property "Reference" "C8"
+		(property "Reference" "C5"
 			(at 137.16 50.165 0)
 			(effects
 				(font
@@ -10338,7 +10665,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C8")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10354,7 +10681,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11e9a9e1-bd25-4bbc-8159-e05afe1b69c6")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR023"
 			(at 186.69 214.63 0)
 			(effects
 				(font
@@ -10422,7 +10749,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR036")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -10438,7 +10765,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12faf3b1-3d18-463f-b015-e5f1486efd4a")
-		(property "Reference" "Q10"
+		(property "Reference" "Q3"
 			(at 107.95 232.4099 0)
 			(effects
 				(font
@@ -10534,7 +10861,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q10")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -10646,7 +10973,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1830a577-be87-4e5a-ad73-0829aac265f6")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR046"
 			(at 344.17 165.1 0)
 			(effects
 				(font
@@ -10697,7 +11024,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR040")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10712,7 +11039,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "18879c6f-8436-4677-a33e-5c6de8cc4401")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 346.71 150.368 0)
 			(effects
 				(font
@@ -10722,7 +11049,7 @@
 			)
 		)
 		(property "Value" "MAX98357AEWL+T"
-			(at 369.57 178.562 0)
+			(at 355.346 152.654 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10846,7 +11173,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -10950,7 +11277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ab020ba-dcfd-4780-a3fd-05229cae29d9")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR029"
 			(at 215.9 179.07 0)
 			(effects
 				(font
@@ -11001,7 +11328,7 @@
 		(instances
 			(project ""
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR012")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -11017,7 +11344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bbf6c21-7983-4d24-835b-c2d650daa532")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR027"
 			(at 215.9 153.67 0)
 			(effects
 				(font
@@ -11068,7 +11395,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR014")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -11076,15 +11403,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 342.9 82.55 0)
+		(at 342.9 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1d25048c-f11e-4489-9f50-83717aa84427")
-		(property "Reference" "Q7"
-			(at 348.488 75.946 0)
+		(property "Reference" "Q13"
+			(at 348.488 97.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11093,7 +11420,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 348.488 78.232 0)
+			(at 348.488 99.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11102,7 +11429,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 347.98 84.455 0)
+			(at 347.98 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11113,7 +11440,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 347.98 86.36 0)
+			(at 347.98 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11123,7 +11450,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 342.9 95.758 0)
+			(at 342.9 117.348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11132,7 +11459,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 342.9 82.55 0)
+			(at 342.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11141,7 +11468,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 342.9 82.55 0)
+			(at 342.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11170,7 +11497,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q7")
+					(reference "Q13")
 					(unit 1)
 				)
 			)
@@ -11266,7 +11593,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:VDC")
-		(at 255.27 246.38 270)
+		(at 255.27 250.19 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11274,8 +11601,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f9c1170-0305-4567-951a-a8e5e407d5cc")
-		(property "Reference" "#PWR038"
-			(at 251.46 246.38 0)
+		(property "Reference" "#PWR031"
+			(at 251.46 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11284,7 +11611,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 259.08 246.3799 90)
+			(at 259.08 250.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11293,7 +11620,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 246.38 0)
+			(at 255.27 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11302,7 +11629,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 246.38 0)
+			(at 255.27 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11311,7 +11638,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 255.27 246.38 0)
+			(at 255.27 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11325,7 +11652,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR038")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -11426,6 +11753,92 @@
 		)
 	)
 	(symbol
+		(lib_id "pico2-test-mule:Conn_01x02_Pin")
+		(at 304.8 146.05 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "240b0331-cf95-435e-a788-4633efecbd21")
+		(property "Reference" "J5"
+			(at 304.038 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 304.038 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 304.8 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 304.8 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 304.8 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 304.8 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3af4e02d-1130-4c05-ab7d-8904bb65e9cd")
+		)
+		(pin "1"
+			(uuid "d66952c5-5451-4a29-8312-25d0f7362ef8")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "pico2-test-mule:BC847BPN")
 		(at 214.63 62.23 180)
 		(unit 2)
@@ -11434,7 +11847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25918fec-f421-474b-8af7-123cfed25515")
-		(property "Reference" "Q3"
+		(property "Reference" "Q7"
 			(at 209.55 61.2139 0)
 			(effects
 				(font
@@ -11509,7 +11922,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q3")
+					(reference "Q7")
 					(unit 2)
 				)
 			)
@@ -11627,7 +12040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aa6b163-dc79-4cef-9e82-a2edcd685899")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR025"
 			(at 212.09 238.76 0)
 			(effects
 				(font
@@ -11677,7 +12090,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR037")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -11692,7 +12105,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2aa976c9-4c3c-484e-a9e3-1ba60fc66ff3")
-		(property "Reference" "C19"
+		(property "Reference" "C9"
 			(at 342.9 142.875 0)
 			(effects
 				(font
@@ -11764,7 +12177,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C19")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -11780,7 +12193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c8b91fb-ffa4-4564-9634-ac6c640b1436")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 41.91 142.24 0)
 			(effects
 				(font
@@ -11830,7 +12243,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -11846,7 +12259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cae67db-8d20-476d-9c9d-fc9f8110f0d4")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR028"
 			(at 215.9 166.37 0)
 			(effects
 				(font
@@ -11897,7 +12310,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR013")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12034,7 +12447,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d0e1a88-0ea5-4f39-9dd7-0ab60ffa31f8")
-		(property "Reference" "Q2"
+		(property "Reference" "Q4"
 			(at 144.78 138.43 0)
 			(effects
 				(font
@@ -12122,7 +12535,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q2")
+					(reference "Q4")
 					(unit 2)
 				)
 			)
@@ -12138,7 +12551,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e52490a-c2a3-4244-ad54-b0bd6248edc6")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 107.95 56.134 90)
 			(effects
 				(font
@@ -12208,7 +12621,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -12216,15 +12629,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:Conn_01x04_Pin")
-		(at 243.84 248.92 0)
+		(at 243.84 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "2ebd5d1a-e99d-4260-ac45-1edf751ccbf0")
-		(property "Reference" "J4"
-			(at 244.602 240.538 0)
+		(property "Reference" "J2"
+			(at 244.602 244.348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12232,7 +12645,7 @@
 			)
 		)
 		(property "Value" "POWER"
-			(at 244.602 243.078 0)
+			(at 244.602 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12240,7 +12653,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 243.84 248.92 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12249,7 +12662,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 248.92 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12258,7 +12671,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 243.84 248.92 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12267,7 +12680,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 243.84 248.92 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12276,7 +12689,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 243.84 248.92 0)
+			(at 243.84 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12299,7 +12712,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12307,15 +12720,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 372.11 39.37 0)
+		(at 372.11 60.96 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "2fa7ee15-a7b6-4a3d-9dbe-5a577b111e80")
-		(property "Reference" "Q5"
-			(at 377.698 32.766 0)
+		(property "Reference" "Q11"
+			(at 377.698 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12324,7 +12737,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 377.698 35.052 0)
+			(at 377.698 56.642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12333,7 +12746,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 377.19 41.275 0)
+			(at 377.19 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12344,7 +12757,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 377.19 43.18 0)
+			(at 377.19 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12354,7 +12767,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 372.11 52.578 0)
+			(at 372.11 74.168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12363,7 +12776,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 372.11 39.37 0)
+			(at 372.11 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12372,7 +12785,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 372.11 39.37 0)
+			(at 372.11 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12401,7 +12814,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q5")
+					(reference "Q11")
 					(unit 2)
 				)
 			)
@@ -12417,7 +12830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31aca3ce-d9f6-46e0-abf2-b72332b1b87f")
-		(property "Reference" "Q13"
+		(property "Reference" "Q8"
 			(at 214.63 226.0599 0)
 			(effects
 				(font
@@ -12513,7 +12926,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q13")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -12530,7 +12943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35d906ab-9a66-48ed-97e9-724769d4422c")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR08"
 			(at 69.85 171.45 0)
 			(effects
 				(font
@@ -12580,7 +12993,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR07")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -12597,7 +13010,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3833dc8b-1f3c-481b-8750-e56ffdfe2426")
-		(property "Reference" "D17"
+		(property "Reference" "D16"
 			(at 161.6075 234.95 0)
 			(effects
 				(font
@@ -12676,7 +13089,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D17")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -12769,91 +13182,6 @@
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:Conn_01x02_Pin")
-		(at 243.84 265.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "4140dd4f-1f69-488b-b013-d9f08ba430fe")
-		(property "Reference" "J5"
-			(at 244.602 258.318 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EXT_CAP"
-			(at 244.602 260.858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 243.84 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 243.84 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 243.84 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 243.84 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "02a3ba30-0eaf-4dc8-ac3d-ec89082c2f3c")
-		)
-		(pin "1"
-			(uuid "be6fb8e2-c71d-495d-aabf-44df0c6c7ec4")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pico2-test-mule:C")
 		(at 328.93 144.78 0)
 		(unit 1)
@@ -12862,7 +13190,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44d67a7a-8525-414a-afc3-0043208ccd04")
-		(property "Reference" "C18"
+		(property "Reference" "C7"
 			(at 331.47 142.875 0)
 			(effects
 				(font
@@ -12934,7 +13262,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C18")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -12949,7 +13277,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4669e898-e573-4a8f-b625-777f6619af5d")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR049"
 			(at 345.44 96.52 0)
 			(effects
 				(font
@@ -12999,7 +13327,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR044")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -13081,7 +13409,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49072f01-2e80-4c53-9c29-61ff81875fe2")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR015"
 			(at 120.65 238.76 0)
 			(effects
 				(font
@@ -13132,7 +13460,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR028")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -13147,7 +13475,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d102604-2719-41b8-8d21-e088f77cbfa6")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR057"
 			(at 374.65 118.11 0)
 			(effects
 				(font
@@ -13197,7 +13525,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR053")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -13271,7 +13599,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:GND")
-		(at 255.27 267.97 90)
+		(at 261.62 231.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13279,8 +13607,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5698dc49-26a3-4f78-a809-2877f2b1ad6f")
-		(property "Reference" "#PWR059"
-			(at 261.62 267.97 0)
+		(property "Reference" "#PWR035"
+			(at 267.97 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13289,7 +13617,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.08 267.9699 90)
+			(at 265.43 231.1399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13298,7 +13626,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 267.97 0)
+			(at 261.62 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13307,7 +13635,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 267.97 0)
+			(at 261.62 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13316,7 +13644,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 267.97 0)
+			(at 261.62 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13330,7 +13658,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR059")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -13346,7 +13674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5912a397-4dd0-4dd8-85b3-6b2239962bac")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR058"
 			(at 382.27 218.44 0)
 			(effects
 				(font
@@ -13396,7 +13724,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR055")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -13411,7 +13739,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a190ecc-f4b7-414c-bd15-1a7d07093d36")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR055"
 			(at 374.65 74.93 0)
 			(effects
 				(font
@@ -13461,7 +13789,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR051")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -13478,7 +13806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5af8edd3-171d-4f1e-abf1-e54fb05bee9d")
-		(property "Reference" "D9"
+		(property "Reference" "D5"
 			(at 52.3875 234.95 0)
 			(effects
 				(font
@@ -13557,7 +13885,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D9")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -13572,7 +13900,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b1b2cef-63d3-4339-8835-1c98e07d1145")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR054"
 			(at 374.65 53.34 0)
 			(effects
 				(font
@@ -13622,7 +13950,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR050")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -13637,7 +13965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b596b36-b542-41c5-9ade-8a00a2030541")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 363.22 210.566 0)
 			(effects
 				(font
@@ -13738,7 +14066,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -13755,7 +14083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "635a5d47-6f8f-47bf-a7aa-a5abd817a798")
-		(property "Reference" "D10"
+		(property "Reference" "D6"
 			(at 52.3875 246.38 0)
 			(effects
 				(font
@@ -13834,7 +14162,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D10")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -13842,15 +14170,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 372.11 104.14 0)
+		(at 342.9 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "63651920-9382-4eec-85ee-885ff8009e1f")
-		(property "Reference" "Q8"
-			(at 377.698 97.536 0)
+		(property "Reference" "Q12"
+			(at 348.488 75.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13859,7 +14187,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 377.698 99.822 0)
+			(at 348.488 78.232 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13868,7 +14196,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 377.19 106.045 0)
+			(at 347.98 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13879,7 +14207,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 377.19 107.95 0)
+			(at 347.98 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13889,7 +14217,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 372.11 117.348 0)
+			(at 342.9 95.758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13898,7 +14226,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 372.11 104.14 0)
+			(at 342.9 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13907,7 +14235,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 372.11 104.14 0)
+			(at 342.9 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13936,7 +14264,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q8")
+					(reference "Q12")
 					(unit 1)
 				)
 			)
@@ -13952,7 +14280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "647c7363-7a0c-4078-a94a-9d00c8e5d99b")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR019"
 			(at 133.35 215.9 0)
 			(effects
 				(font
@@ -14020,7 +14348,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR029")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -14037,7 +14365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66ec4404-49c9-4f3d-96cd-b89ed9c5b471")
-		(property "Reference" "D15"
+		(property "Reference" "D14"
 			(at 161.6075 212.09 0)
 			(effects
 				(font
@@ -14116,7 +14444,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D15")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -14131,7 +14459,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "68e84413-68ec-45b9-9986-dde3f66b3912")
-		(property "Reference" "R11"
+		(property "Reference" "R8"
 			(at 209.55 48.2599 0)
 			(effects
 				(font
@@ -14194,7 +14522,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R11")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -14210,7 +14538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c10b736-fb80-4392-8376-fb8d03373e84")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 34.29 53.34 0)
 			(effects
 				(font
@@ -14261,7 +14589,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -14277,7 +14605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d1fbd40-f588-49f0-8983-e5a14f387677")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -14327,7 +14655,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -14343,7 +14671,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d2724b6-d93e-402f-a373-b373732306d9")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR044"
 			(at 340.36 154.94 0)
 			(effects
 				(font
@@ -14393,7 +14721,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR054")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -14409,7 +14737,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ebdc551-d45a-458a-8f45-4960e6cb7b2f")
-		(property "Reference" "Q4"
+		(property "Reference" "Q9"
 			(at 226.06 50.038 0)
 			(effects
 				(font
@@ -14484,7 +14812,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q4")
+					(reference "Q9")
 					(unit 2)
 				)
 			)
@@ -14499,7 +14827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f24b66f-2a78-45a8-b4a0-949d0c9e3347")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR048"
 			(at 345.44 74.93 0)
 			(effects
 				(font
@@ -14549,7 +14877,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR043")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -14557,7 +14885,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:+3.3V")
-		(at 255.27 251.46 270)
+		(at 255.27 255.27 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14565,8 +14893,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71401ca7-18dc-448e-98c8-b46591e3fe4f")
-		(property "Reference" "#PWR039"
-			(at 251.46 251.46 0)
+		(property "Reference" "#PWR033"
+			(at 251.46 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14575,7 +14903,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 259.08 251.4599 90)
+			(at 259.08 255.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14584,7 +14912,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 251.46 0)
+			(at 255.27 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14593,7 +14921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 251.46 0)
+			(at 255.27 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14602,7 +14930,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 255.27 251.46 0)
+			(at 255.27 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14616,7 +14944,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR039")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -14869,7 +15197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75a8e50d-0bf5-4438-a982-0107a891eaf4")
-		(property "Reference" "R18"
+		(property "Reference" "R13"
 			(at 376.555 224.155 0)
 			(effects
 				(font
@@ -14947,7 +15275,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R18")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -14955,7 +15283,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:GND")
-		(at 255.27 248.92 90)
+		(at 255.27 252.73 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14963,8 +15291,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "796fb700-8ac4-4b2f-b626-eedbceb7b615")
-		(property "Reference" "#PWR056"
-			(at 261.62 248.92 0)
+		(property "Reference" "#PWR032"
+			(at 261.62 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14973,7 +15301,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.08 248.9199 90)
+			(at 259.08 252.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14982,7 +15310,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 248.92 0)
+			(at 255.27 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14991,7 +15319,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 248.92 0)
+			(at 255.27 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15000,7 +15328,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 248.92 0)
+			(at 255.27 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15014,7 +15342,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR056")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -15118,7 +15446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e23f750-00c7-44e3-ba89-1ef073ffe4e7")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR024"
 			(at 212.09 48.26 0)
 			(effects
 				(font
@@ -15177,7 +15505,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR027")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -15193,7 +15521,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "804eaebc-1b3d-496d-ac15-2cd3e3565d90")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR014"
 			(at 120.65 222.25 0)
 			(effects
 				(font
@@ -15244,22 +15572,22 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR026")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:Conn_01x02_Pin")
+		(lib_id "pico2-test-mule:Conn_01x06_Pin")
 		(at 243.84 233.68 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "817d91d8-c0c5-4be8-87c5-e442cd635517")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 244.602 227.584 0)
 			(effects
 				(font
@@ -15275,7 +15603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 243.84 233.68 0)
 			(effects
 				(font
@@ -15293,7 +15621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" "Generic connector, single row, 01x06, script generated"
 			(at 243.84 233.68 0)
 			(effects
 				(font
@@ -15326,10 +15654,22 @@
 		(pin "1"
 			(uuid "cedbc3f4-642f-41aa-b260-9bbfdd5c5086")
 		)
+		(pin "3"
+			(uuid "bbf5efbe-58a7-406e-ab87-23684fb24b1f")
+		)
+		(pin "4"
+			(uuid "95994e2f-1748-456f-8e72-738ff6cfa10f")
+		)
+		(pin "5"
+			(uuid "86974ce2-3bac-48a1-9075-0157f1f46052")
+		)
+		(pin "6"
+			(uuid "8cbcb5af-ec0a-4cb6-b6c4-3cbe73de165c")
+		)
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -15345,7 +15685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82272b53-efb9-4a1b-a605-1b49cfab82d8")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR012"
 			(at 82.55 142.24 0)
 			(effects
 				(font
@@ -15395,7 +15735,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR010")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -15411,7 +15751,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82c7b584-5967-4582-966d-b81c4a03f5e5")
-		(property "Reference" "R19"
+		(property "Reference" "R14"
 			(at 376.555 234.315 0)
 			(effects
 				(font
@@ -15489,7 +15829,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R19")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -15505,7 +15845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "859a376f-362c-407d-8b41-b3f87db92dc1")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 194.31 213.36 90)
 			(effects
 				(font
@@ -15584,7 +15924,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -15600,7 +15940,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8670facf-90f5-4e4f-a783-e5ef30dea2cc")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR052"
 			(at 360.68 248.92 0)
 			(effects
 				(font
@@ -15650,7 +15990,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR048")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -15666,7 +16006,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bd1d3a1-45b5-4aa7-be28-e0c5cd7fd15a")
-		(property "Reference" "Q4"
+		(property "Reference" "Q9"
 			(at 229.87 80.0099 0)
 			(effects
 				(font
@@ -15741,7 +16081,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q4")
+					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -15757,7 +16097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c17dbe6-9bde-4fb9-a593-509fca181ff4")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR036"
 			(at 283.21 135.89 0)
 			(effects
 				(font
@@ -15826,7 +16166,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR057")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -15842,7 +16182,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d81bc61-b270-4df7-a508-7753d89487a9")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 159.385 50.165 0)
 			(effects
 				(font
@@ -15921,7 +16261,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R7")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -15929,15 +16269,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 372.11 60.96 0)
+		(at 372.11 39.37 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8f655186-ff15-439f-9eb8-43538d47fc82")
-		(property "Reference" "Q6"
-			(at 377.698 54.356 0)
+		(property "Reference" "Q10"
+			(at 377.698 32.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15946,7 +16286,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 377.698 56.642 0)
+			(at 377.698 35.052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15955,7 +16295,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 377.19 62.865 0)
+			(at 377.19 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15966,7 +16306,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 377.19 64.77 0)
+			(at 377.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15976,7 +16316,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 372.11 74.168 0)
+			(at 372.11 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15985,7 +16325,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 372.11 60.96 0)
+			(at 372.11 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15994,7 +16334,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 372.11 60.96 0)
+			(at 372.11 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16023,93 +16363,8 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q6")
+					(reference "Q10")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "pico2-test-mule:Conn_01x02_Pin")
-		(at 269.24 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "8f9f0028-884a-4817-85f5-5a56f1f0c06e")
-		(property "Reference" "J6"
-			(at 270.002 227.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RAILS"
-			(at 270.002 230.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 269.24 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 269.24 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 269.24 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 269.24 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 269.24 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "89e4b00b-c92b-4c9c-932f-fb27a71d43f9")
-		)
-		(pin "1"
-			(uuid "3a08aa16-f82b-4c0c-a485-0d73f84700b9")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "J6")
-					(unit 1)
 				)
 			)
 		)
@@ -16354,7 +16609,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96e808dc-11f4-4921-b8c8-c85f41095382")
-		(property "Reference" "D16"
+		(property "Reference" "D15"
 			(at 161.6075 223.52 0)
 			(effects
 				(font
@@ -16433,7 +16688,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D16")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -16449,7 +16704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c2a419d-c49d-4b20-b34a-3ea13e5cf3c2")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR043"
 			(at 332.74 218.44 0)
 			(effects
 				(font
@@ -16499,7 +16754,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR041")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -16516,7 +16771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dbd2d65-6d14-47b9-bec1-0d66b80d78c7")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR040"
 			(at 293.37 166.37 0)
 			(effects
 				(font
@@ -16567,7 +16822,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR021")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -16583,7 +16838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dd02472-5515-4341-83fa-c88abb44c8f9")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR026"
 			(at 215.9 140.97 0)
 			(effects
 				(font
@@ -16634,7 +16889,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR015")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -16642,15 +16897,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 342.9 60.96 0)
+		(at 342.9 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "a3ff027d-7928-4ce3-ae68-c59fd574060c")
-		(property "Reference" "Q6"
-			(at 348.488 54.356 0)
+		(property "Reference" "Q10"
+			(at 348.488 32.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16659,7 +16914,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 348.488 56.642 0)
+			(at 348.488 35.052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16668,7 +16923,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 347.98 62.865 0)
+			(at 347.98 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16679,7 +16934,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 347.98 64.77 0)
+			(at 347.98 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16689,7 +16944,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 342.9 74.168 0)
+			(at 342.9 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16698,7 +16953,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 342.9 60.96 0)
+			(at 342.9 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16707,7 +16962,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 342.9 60.96 0)
+			(at 342.9 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16736,7 +16991,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q6")
+					(reference "Q10")
 					(unit 1)
 				)
 			)
@@ -16752,7 +17007,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a48152b5-b1a2-4554-b9c0-2a9e9c971ba0")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR020"
 			(at 154.94 76.2 0)
 			(effects
 				(font
@@ -16802,7 +17057,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR023")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -16817,7 +17072,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a60f6a3f-7be4-4aa5-9902-531a9cd6d723")
-		(property "Reference" "R17"
+		(property "Reference" "R12"
 			(at 344.805 234.315 0)
 			(effects
 				(font
@@ -16895,7 +17150,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R17")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -16999,7 +17254,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7508ca4-1c05-44cd-b62b-fc7a882ace4a")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 93.98 64.77 0)
 			(effects
 				(font
@@ -17049,7 +17304,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -17065,7 +17320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a80b246e-b810-4877-8bb9-a39518c21652")
-		(property "Reference" "R12"
+		(property "Reference" "R9"
 			(at 215.9 74.93 90)
 			(effects
 				(font
@@ -17135,7 +17390,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R12")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -17248,7 +17503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abf547f4-de38-48ea-be6a-2bb4cd9db55b")
-		(property "Reference" "D14"
+		(property "Reference" "D12"
 			(at 100.6475 250.19 0)
 			(effects
 				(font
@@ -17327,7 +17582,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D14")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -17342,7 +17597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af62fb54-756a-4ba5-928e-40c66d4409b7")
-		(property "Reference" "D3"
+		(property "Reference" "D7"
 			(at 56.896 49.022 0)
 			(effects
 				(font
@@ -17421,7 +17676,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D3")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -17437,7 +17692,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0922cfa-6b98-43be-a96d-ed6db0ef26d4")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 57.15 53.34 0)
 			(effects
 				(font
@@ -17488,7 +17743,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -17503,7 +17758,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0c863ab-91cf-454b-96a0-470e2c9fda9e")
-		(property "Reference" "Q2"
+		(property "Reference" "Q4"
 			(at 132.08 138.43 0)
 			(effects
 				(font
@@ -17590,7 +17845,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q2")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -17598,16 +17853,16 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:+3.3V")
-		(at 287.02 146.05 270)
+		(at 299.72 148.59 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b27e99f3-8c8d-4128-92ed-a81a1179c02f")
-		(property "Reference" "#PWR060"
-			(at 283.21 146.05 0)
+		(property "Reference" "#PWR038"
+			(at 303.53 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17616,7 +17871,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 290.83 146.0499 90)
+			(at 295.91 148.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17625,7 +17880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 287.02 146.05 0)
+			(at 299.72 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17634,7 +17889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 287.02 146.05 0)
+			(at 299.72 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17643,7 +17898,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 287.02 146.05 0)
+			(at 299.72 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17657,7 +17912,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR060")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -17673,7 +17928,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2e314e4-a57e-406d-b25d-d0a3534a765f")
-		(property "Reference" "C20"
+		(property "Reference" "C10"
 			(at 379.73 205.105 0)
 			(effects
 				(font
@@ -17745,7 +18000,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C20")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -17762,7 +18017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b377a94d-f4a0-476d-be31-c9cc09bea3d0")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR041"
 			(at 293.37 179.07 0)
 			(effects
 				(font
@@ -17813,7 +18068,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR022")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -17895,7 +18150,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3a74271-0fbb-40f8-9d84-83bf6fcb4cb8")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR051"
 			(at 359.41 186.69 0)
 			(effects
 				(font
@@ -17945,7 +18200,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR047")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -18048,7 +18303,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b46cf8c6-16d6-46fe-afc4-411d91bb8bc9")
-		(property "Reference" "C3"
+		(property "Reference" "C6"
 			(at 143.51 62.2299 0)
 			(effects
 				(font
@@ -18111,7 +18366,7 @@
 		(instances
 			(project ""
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C3")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -18127,7 +18382,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb6cb2a3-3f23-4db2-906d-3cfca2471ae4")
-		(property "Reference" "C17"
+		(property "Reference" "C8"
 			(at 330.2 205.105 0)
 			(effects
 				(font
@@ -18207,7 +18462,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C17")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -18223,7 +18478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc557a9e-9679-447f-9967-c94bb3a2102c")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR021"
 			(at 180.34 251.46 0)
 			(effects
 				(font
@@ -18274,7 +18529,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR031")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -18290,7 +18545,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd17666e-f3d0-4eb1-bfa0-4d473b9da726")
-		(property "Reference" "Q12"
+		(property "Reference" "Q6"
 			(at 167.64 264.1599 0)
 			(effects
 				(font
@@ -18386,7 +18641,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q12")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -18402,7 +18657,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "bd2ec1c1-6031-495a-800e-6d230d98e02b")
-		(property "Reference" "U7"
+		(property "Reference" "U3"
 			(at 260.0041 189.23 0)
 			(effects
 				(font
@@ -18597,7 +18852,7 @@
 		(instances
 			(project ""
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "U7")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -18680,7 +18935,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0621dd6-33bb-4484-9052-dc19eb468dec")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR011"
 			(at 80.01 69.85 0)
 			(effects
 				(font
@@ -18730,7 +18985,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR09")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -18746,7 +19001,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0665e44-1201-4a28-ae21-30801382df34")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR045"
 			(at 334.01 162.56 0)
 			(effects
 				(font
@@ -18797,7 +19052,7 @@
 		(instances
 			(project ""
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR033")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -18813,7 +19068,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6871f33-f0a2-4a03-86d9-91de1d7341ea")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR060"
 			(at 396.24 170.18 0)
 			(effects
 				(font
@@ -18864,7 +19119,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR035")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -18881,7 +19136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c72e615a-1992-493f-9e6e-6c219acfca57")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 69.85 153.67 0)
 			(effects
 				(font
@@ -18931,7 +19186,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -18939,7 +19194,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:GND")
-		(at 255.27 254 90)
+		(at 255.27 257.81 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18947,8 +19202,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7cb36f4-5c8b-431f-9498-d9deb72f3085")
-		(property "Reference" "#PWR058"
-			(at 261.62 254 0)
+		(property "Reference" "#PWR034"
+			(at 261.62 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18957,7 +19212,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.08 253.9999 90)
+			(at 259.08 257.8099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18966,7 +19221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 254 0)
+			(at 255.27 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18975,7 +19230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 254 0)
+			(at 255.27 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18984,7 +19239,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 254 0)
+			(at 255.27 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18998,7 +19253,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR058")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -19014,7 +19269,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c83387a8-c13b-44d1-bedf-5dda6c7254a3")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR042"
 			(at 323.85 144.78 0)
 			(effects
 				(font
@@ -19064,7 +19319,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR046")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -19080,7 +19335,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc18d55b-43fb-45d0-950e-b643f66d8f56")
-		(property "Reference" "R13"
+		(property "Reference" "R10"
 			(at 229.87 65.532 90)
 			(effects
 				(font
@@ -19141,7 +19396,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R13")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -19157,7 +19412,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc3b1425-5815-40fd-a010-31330ea0ad5a")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR059"
 			(at 396.24 160.02 0)
 			(effects
 				(font
@@ -19208,7 +19463,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR034")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -19224,7 +19479,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc56c4b7-69cb-4c3b-8118-2f7147070ce7")
-		(property "Reference" "Q3"
+		(property "Reference" "Q7"
 			(at 201.93 80.0099 0)
 			(effects
 				(font
@@ -19299,7 +19554,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q3")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -19314,7 +19569,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd0cb7ab-bea8-4450-9964-762bfb9c3832")
-		(property "Reference" "D4"
+		(property "Reference" "D8"
 			(at 56.896 57.404 90)
 			(effects
 				(font
@@ -19384,7 +19639,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D4")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -19501,7 +19756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d393fb33-5fa3-468b-b131-607b0d32087a")
-		(property "Reference" "C7"
+		(property "Reference" "C4"
 			(at 125.73 50.165 0)
 			(effects
 				(font
@@ -19573,7 +19828,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C7")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -19588,7 +19843,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d49346b2-be6b-4474-9c7a-8b5a6d702fbf")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR050"
 			(at 345.44 118.11 0)
 			(effects
 				(font
@@ -19638,7 +19893,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR045")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -19655,7 +19910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5172806-eaaf-4005-b161-78c8d15afb8e")
-		(property "Reference" "D11"
+		(property "Reference" "D9"
 			(at 100.6475 205.74 0)
 			(effects
 				(font
@@ -19734,7 +19989,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D11")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -19742,15 +19997,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 372.11 82.55 0)
+		(at 372.11 104.14 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d573f75c-c347-4d13-a0cf-53860e9072dc")
-		(property "Reference" "Q7"
-			(at 377.698 75.946 0)
+		(property "Reference" "Q13"
+			(at 377.698 97.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19759,7 +20014,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 377.698 78.232 0)
+			(at 377.698 99.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19768,7 +20023,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 377.19 84.455 0)
+			(at 377.19 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19779,7 +20034,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 377.19 86.36 0)
+			(at 377.19 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19789,7 +20044,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 372.11 95.758 0)
+			(at 372.11 117.348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19798,7 +20053,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 372.11 82.55 0)
+			(at 372.11 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19807,7 +20062,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 372.11 82.55 0)
+			(at 372.11 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19836,7 +20091,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q7")
+					(reference "Q13")
 					(unit 2)
 				)
 			)
@@ -19852,7 +20107,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d60fd550-ae86-4160-a09f-444950f56abf")
-		(property "Reference" "D6"
+		(property "Reference" "D18"
 			(at 167.386 134.62 90)
 			(effects
 				(font
@@ -19931,7 +20186,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D6")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -20033,7 +20288,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db7e1f94-d469-403b-9aac-6c0f2bad5f47")
-		(property "Reference" "D12"
+		(property "Reference" "D10"
 			(at 100.6475 222.25 0)
 			(effects
 				(font
@@ -20112,7 +20367,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D12")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -20129,7 +20384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddcb0870-5769-4596-88c9-52fbc3971ec1")
-		(property "Reference" "D7"
+		(property "Reference" "D3"
 			(at 52.3875 212.09 0)
 			(effects
 				(font
@@ -20208,7 +20463,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D7")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -20216,15 +20471,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 342.9 39.37 0)
+		(at 342.9 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "de83b484-7126-480f-a005-2acba2392c39")
-		(property "Reference" "Q5"
-			(at 348.488 32.766 0)
+		(property "Reference" "Q11"
+			(at 348.488 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20233,7 +20488,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 348.488 35.052 0)
+			(at 348.488 56.642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20242,7 +20497,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 347.98 41.275 0)
+			(at 347.98 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20253,7 +20508,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 347.98 43.18 0)
+			(at 347.98 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20263,7 +20518,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 342.9 52.578 0)
+			(at 342.9 74.168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20272,7 +20527,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 342.9 39.37 0)
+			(at 342.9 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20281,7 +20536,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 342.9 39.37 0)
+			(at 342.9 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20310,7 +20565,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q5")
+					(reference "Q11")
 					(unit 1)
 				)
 			)
@@ -20325,7 +20580,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "def7de0f-de42-414e-a99a-278d4c63e0f0")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR056"
 			(at 374.65 96.52 0)
 			(effects
 				(font
@@ -20375,7 +20630,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR052")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -20391,7 +20646,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e066ecc1-e5ab-4437-812f-2cbe479217dd")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR04"
 			(at 41.91 153.67 0)
 			(effects
 				(font
@@ -20441,7 +20696,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR03")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -20458,7 +20713,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1668b83-e728-4ca3-8354-6ed05b83cc79")
-		(property "Reference" "D8"
+		(property "Reference" "D4"
 			(at 52.3875 223.52 0)
 			(effects
 				(font
@@ -20537,7 +20792,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D8")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -20552,7 +20807,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3df80a0-0e87-4ffa-b0f6-7759dd2aa201")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR053"
 			(at 363.22 204.47 0)
 			(effects
 				(font
@@ -20602,7 +20857,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR049")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -20618,7 +20873,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8cda485-fa23-45ae-a9e1-7f2d69ad255b")
-		(property "Reference" "D5"
+		(property "Reference" "D13"
 			(at 119.38 121.92 0)
 			(effects
 				(font
@@ -20697,7 +20952,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D5")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -20713,7 +20968,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ea98d81c-deeb-497b-b9d5-2c89b3fa886f")
-		(property "Reference" "Q9"
+		(property "Reference" "Q2"
 			(at 107.95 215.8999 0)
 			(effects
 				(font
@@ -20809,7 +21064,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q9")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -20825,7 +21080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f01479ed-15f7-4cb7-9aac-dc788ed14c2a")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR022"
 			(at 180.34 270.51 0)
 			(effects
 				(font
@@ -20876,7 +21131,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR032")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -20892,7 +21147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f20fca10-8303-4a17-ab4b-9efb72013897")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR01"
 			(at 27.94 217.17 0)
 			(effects
 				(font
@@ -20960,7 +21215,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR024")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -20976,7 +21231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f24a24e0-d83b-46df-b475-833aa525863a")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05"
 			(at 41.91 171.45 0)
 			(effects
 				(font
@@ -21026,7 +21281,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -21042,7 +21297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f26cc2be-ffdb-44d8-8538-6709d6c731d1")
-		(property "Reference" "Q11"
+		(property "Reference" "Q5"
 			(at 167.64 245.1099 0)
 			(effects
 				(font
@@ -21138,7 +21393,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q11")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -21155,7 +21410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f35e23e6-76dd-4f37-aa3c-7efc9e0276f8")
-		(property "Reference" "D13"
+		(property "Reference" "D11"
 			(at 100.6475 238.76 0)
 			(effects
 				(font
@@ -21234,7 +21489,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D13")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -21250,7 +21505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5be963d-bf3f-47cb-92b9-f61d4a1296e3")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 159.385 61.595 0)
 			(effects
 				(font
@@ -21329,7 +21584,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -21337,15 +21592,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:Conn_01x05_Pin")
-		(at 269.24 251.46 0)
+		(at 274.32 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "f6774ba0-a7b7-4bad-8f04-07e8b9d3d620")
-		(property "Reference" "J7"
-			(at 270.002 240.792 0)
+		(property "Reference" "J3"
+			(at 275.082 229.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21353,7 +21608,7 @@
 			)
 		)
 		(property "Value" "AUX"
-			(at 270.256 243.078 0)
+			(at 275.336 231.648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21361,7 +21616,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 269.24 251.46 0)
+			(at 274.32 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21370,7 +21625,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 269.24 251.46 0)
+			(at 274.32 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21379,7 +21634,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 269.24 251.46 0)
+			(at 274.32 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21388,7 +21643,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 269.24 251.46 0)
+			(at 274.32 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21397,7 +21652,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 269.24 251.46 0)
+			(at 274.32 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21423,7 +21678,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "J7")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -21440,7 +21695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f80f534c-877d-4a15-bad3-3d4bfa933e8d")
-		(property "Reference" "D18"
+		(property "Reference" "D17"
 			(at 161.6075 254 0)
 			(effects
 				(font
@@ -21519,7 +21774,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "D18")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -21527,15 +21782,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:Conn_01x02_Pin")
-		(at 269.24 265.43 0)
+		(at 274.32 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "f896a4ef-fb8f-420a-b698-d28427218f7f")
-		(property "Reference" "J8"
-			(at 270.002 258.318 0)
+		(property "Reference" "J4"
+			(at 275.082 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21543,7 +21798,7 @@
 			)
 		)
 		(property "Value" "MOTOR"
-			(at 270.002 260.858 0)
+			(at 275.082 249.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21551,7 +21806,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 269.24 265.43 0)
+			(at 274.32 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21560,7 +21815,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 269.24 265.43 0)
+			(at 274.32 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21569,7 +21824,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 269.24 265.43 0)
+			(at 274.32 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21578,7 +21833,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 269.24 265.43 0)
+			(at 274.32 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21587,7 +21842,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 269.24 265.43 0)
+			(at 274.32 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21604,7 +21859,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "J8")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -21612,15 +21867,15 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 342.9 104.14 0)
+		(at 372.11 82.55 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "fdaa1e1a-3b5f-40f1-928d-aa292dc45bf5")
-		(property "Reference" "Q8"
-			(at 348.488 97.536 0)
+		(property "Reference" "Q12"
+			(at 377.698 75.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21629,7 +21884,7 @@
 			)
 		)
 		(property "Value" "DMN2991UDA-7B"
-			(at 348.488 99.822 0)
+			(at 377.698 78.232 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21638,7 +21893,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 347.98 106.045 0)
+			(at 377.19 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21649,7 +21904,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 347.98 107.95 0)
+			(at 377.19 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21659,7 +21914,7 @@
 			)
 		)
 		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 342.9 117.348 0)
+			(at 372.11 95.758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21668,7 +21923,7 @@
 			)
 		)
 		(property "LCSC" "C2937136"
-			(at 342.9 104.14 0)
+			(at 372.11 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21677,7 +21932,7 @@
 			)
 		)
 		(property "Height" "0.4"
-			(at 342.9 104.14 0)
+			(at 372.11 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21706,7 +21961,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q8")
+					(reference "Q12")
 					(unit 2)
 				)
 			)
@@ -21723,7 +21978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe23ac78-12e9-4da9-852e-b4cc0aee36df")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR037"
 			(at 293.37 140.97 0)
 			(effects
 				(font
@@ -21774,7 +22029,7 @@
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR019")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
