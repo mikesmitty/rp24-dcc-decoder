@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.2...pico2-test-mule-v0.2.3) (2025-02-27)
+
+
+### Bug Fixes
+
+* combine left side headers ([8ec852f](https://github.com/mikesmitty/rp24-dcc-decoder/commit/8ec852fca5bbab5de6a5f5c44ad002712fa8c7b9))
+* minor trace rerouting ([e47bcee](https://github.com/mikesmitty/rp24-dcc-decoder/commit/e47bceee5babf562b35d44f7a8becf1b144da8fe))
+
 ## [0.2.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.1...pico2-test-mule-v0.2.2) (2025-02-26)
 
 
