@@ -7,7 +7,7 @@
 		(at 0 -4 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "37727cb4-123d-4b80-bdf8-3d0dd7817df8")
+		(uuid "5e0b9ec5-6efc-4ca1-ae73-181af2874edd")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 4 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "be2bacb7-9413-45ec-a5bc-d186ac1f9617")
+		(uuid "4e49cedf-05e8-4399-b54b-512f970ea4db")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6770e5c8-7392-4ff9-84b0-c73a0d322793")
+		(uuid "6446c73a-cbfb-4d6e-be0b-72ec6bdb579c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8a5a3754-9779-42ad-a815-667eb457a924")
+		(uuid "9436fc52-4217-49ab-8992-46149a0152f4")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,7 +56,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "60491701-a50e-47b3-9663-988786e95273")
+		(uuid "e6978ac9-7615-43b5-9180-fb2af807996b")
 		(effects
 			(font
 				(size 1 1)
@@ -69,7 +69,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7332fe83-8c0a-409d-909b-2d62fd1a7322")
+		(uuid "97d785d0-5e0c-40a8-9cac-308b7c458c16")
 		(effects
 			(font
 				(size 1 1)
@@ -86,7 +86,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d35d3bc4-a34c-4cc4-8d77-f2c5c6bd391b")
+		(uuid "deae9989-8ec7-4abc-9c7d-a2ed18529769")
 	)
 	(fp_line
 		(start 0.29 1.1)
@@ -96,7 +96,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "951adae3-bcfb-4228-8a08-ac14b7d585a6")
+		(uuid "e6c3a7f6-4421-454c-9247-0a7f7485a385")
 	)
 	(fp_circle
 		(center -1.25 1)
@@ -107,12 +107,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "1b9737b3-d8f5-4d0f-aff6-b19f384e7153")
+		(uuid "51960dac-6f38-441c-a5b9-4c9b5519f244")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "6d5f45de-09be-4fb0-92c6-7cf27a6b3569")
+		(uuid "4e477dce-1b9c-4d25-bc12-fd8d2f2f0182")
 		(effects
 			(font
 				(size 1 1)
@@ -124,13 +124,13 @@
 		(at -0.83 0)
 		(size 0.85 2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "5cf382cd-3940-4cf4-b833-cbcb65eba2ed")
+		(uuid "916d05ce-8bd4-439f-9eb4-e0da84b076d1")
 	)
 	(pad "2" smd rect
 		(at 0.83 0)
 		(size 0.85 2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "cccb21cd-b3dd-4824-af77-8cdccdc6a2c6")
+		(uuid "dd8973b5-e29a-4cff-943a-2be5a07dafd7")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/pico2-test-mule.3dshapes/IND-SMD_L2.5-W2.0-VLS252012CX-150M.wrl"

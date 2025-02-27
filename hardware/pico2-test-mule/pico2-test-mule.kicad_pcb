@@ -371,7 +371,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-963"
+	(footprint "pico2-test-mule:SOT-963"
 		(layer "F.Cu")
 		(uuid "08110101-e1b7-42a7-9110-308e3f25cd47")
 		(at 117.3 66.25 90)
@@ -651,7 +651,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "085ced66-6f3e-432b-a27a-2e8364bc1d13")
 		(at 117.3 68.25 90)
@@ -893,7 +893,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0e26af52-a744-4ec7-8a38-7ec62fe99b7e")
 		(at 116.25 68.25 90)
@@ -1135,7 +1135,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
+	(footprint "pico2-test-mule:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "0e9eec9b-d32c-46c2-9cf7-d10e25e9c93b")
 		(at 104.2 75.2725 -90)
@@ -1444,7 +1444,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0eee83ab-0965-4e5b-88c9-ce6f70598de1")
 		(at 105.025 78.185 90)
@@ -1708,7 +1708,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "173bc6c0-ae46-444f-a059-fff0dc5e1061")
 		(at 112 78.185 90)
@@ -1972,7 +1972,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "pico2-test-mule:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "1c1fa04d-3250-4498-8d11-47f5f4c8c151")
 		(at 99.15 66.1 180)
@@ -2201,7 +2201,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+	(footprint "pico2-test-mule:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "26d6eec6-6b2b-4a09-8229-f427a2f6c6d1")
 		(at 98.275 61.4 90)
@@ -2484,7 +2484,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "28823404-20ba-4d15-bba7-fbfeb69494d0")
 		(at 102.7 78.185 90)
@@ -2748,7 +2748,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "pico2-test-mule:SOT-23"
 		(layer "F.Cu")
 		(uuid "3327331f-923f-465f-a305-9d82406dab4c")
 		(at 116.6 74.3725 -90)
@@ -3269,7 +3269,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "pico2-test-mule:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "364a3340-914a-4da6-9228-76711446763e")
 		(at 109 67.05)
@@ -3498,7 +3498,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
+	(footprint "pico2-test-mule:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "4a398698-50c0-43bf-9dc1-d208ebb8675f")
 		(at 94.8 75.285 -90)
@@ -3807,7 +3807,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+	(footprint "pico2-test-mule:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "4b52d270-7919-4e6a-9194-afc5b034e535")
 		(at 125.11 77.935 90)
@@ -4365,7 +4365,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "4c8679ef-c125-42ed-9259-63723604efc2")
 		(at 120.45 68.25 -90)
@@ -4817,7 +4817,7 @@
 			)
 		)
 	)
-	(footprint "Module:RaspberryPi_Pico_Common_THT"
+	(footprint "pico2-test-mule:RaspberryPi_Pico_Common_THT"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "52ddbcd8-f29d-4d4e-8e7d-1f38c3d4e7bd")
@@ -6788,7 +6788,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
+	(footprint "pico2-test-mule:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "53db13f4-3827-4fe3-8566-0979c7906f1d")
 		(at 113.6 75.2725 -90)
@@ -7097,7 +7097,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5a69e5bf-cbb5-4a45-9c6a-dbb8559563ab")
 		(at 109 70.85)
@@ -7339,7 +7339,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+	(footprint "pico2-test-mule:PinHeader_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "5c2f38f2-2bf8-44dd-b81e-dac84f5cbf7d")
 		(at 90.3 64.47)
@@ -7666,7 +7666,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_1206_3216Metric"
+	(footprint "pico2-test-mule:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "5e86d984-f4ff-403a-9ace-c2c37c68d2a6")
 		(at 106.49 68.95 -90)
@@ -7908,7 +7908,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5e94a7e0-3912-4e92-976a-c70557412b8c")
 		(at 119.4 75.285 -90)
@@ -8150,7 +8150,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6173282c-f98c-4379-b144-56f0ddba1613")
 		(at 107.35 78.185 90)
@@ -8414,7 +8414,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6534b08f-260a-4a6c-b83f-f00c1a79f4bd")
 		(at 96.71 64.05 180)
@@ -8643,7 +8643,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "pico2-test-mule:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "67311d8e-297d-4a35-ae98-af4e9387f34d")
 		(at 119.82 70.35)
@@ -8859,7 +8859,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6f78b016-0e9f-4727-9417-df89f9288947")
 		(at 121.3 78.185 90)
@@ -9123,7 +9123,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "pico2-test-mule:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "72364b0e-0398-4052-9338-d4c9cd6f1e1b")
 		(at 109.95 63.955 90)
@@ -9352,7 +9352,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-963"
+	(footprint "pico2-test-mule:SOT-963"
 		(layer "F.Cu")
 		(uuid "80548109-2f94-4fcf-bf95-24263677710e")
 		(at 117.3 70.3 -90)
@@ -9632,7 +9632,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "89b89766-b54b-43c9-bf71-11ce1c5fc43a")
 		(at 109 68)
@@ -9874,7 +9874,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "8cf65ef8-201a-4bbb-8105-6e5f82f41412")
 		(at 98.05 78.185 90)
@@ -10138,7 +10138,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "8d71f7a0-e45a-49d9-a5e3-4875fb1c9520")
 		(at 109 68.95)
@@ -10380,7 +10380,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+	(footprint "pico2-test-mule:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "943de73c-300c-4095-b992-138d580706bc")
 		(at 121.775 63.6 90)
@@ -10663,7 +10663,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9790ddda-ffdb-47a6-b271-b816a604f688")
 		(at 96.71 66 180)
@@ -10892,7 +10892,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "pico2-test-mule:SOT-23"
 		(layer "F.Cu")
 		(uuid "9eb230fc-1890-413f-b029-386bd9f5cb73")
 		(at 101.2 74.7725 -90)
@@ -11199,7 +11199,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "pico2-test-mule:SOT-23"
 		(layer "F.Cu")
 		(uuid "9fbae726-78e7-4fac-892d-bd057092666f")
 		(at 107.2 74.435 -90)
@@ -11506,7 +11506,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a0025d1c-a32a-4fb6-bbe0-d49cdf67a8bd")
 		(at 95.725 78.185 90)
@@ -11770,7 +11770,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_1206_3216Metric"
+	(footprint "pico2-test-mule:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "a310fabb-c906-403b-81fe-31cd2736e16b")
 		(at 104.19 68.95 -90)
@@ -11999,7 +11999,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a461eafe-cde7-48a7-9f4a-794b55a9d3e0")
 		(at 100.375 78.185 90)
@@ -13286,7 +13286,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b3ae7f06-43ee-4afd-b6a3-f74521348b98")
 		(at 116.65 78.185 90)
@@ -13550,7 +13550,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "pico2-test-mule:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "b66542c3-c421-48d5-afab-2feddf496631")
 		(at 101.38 70.55)
@@ -13993,7 +13993,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bfd82aa8-fe53-448b-a5b7-63145fa7f973")
 		(at 118.35 68.2475 90)
@@ -14222,7 +14222,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c3215ce1-077d-481f-8146-bbb2d422a299")
 		(at 109 69.9)
@@ -14464,7 +14464,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c4fddb87-c9a3-4f5f-9740-27aac09fc3a2")
 		(at 96.71 65)
@@ -14693,7 +14693,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "pico2-test-mule:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c6572c9d-a00b-4662-8c1a-c1994e224cd7")
 		(at 105.8 62.105 180)
@@ -15171,7 +15171,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "pico2-test-mule:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d1da6d61-95ca-4394-9c47-3411b6d639e9")
 		(at 101.9 64.25 90)
@@ -15413,7 +15413,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d95e405a-3e78-4c94-a5a3-d7a67bcb257b")
 		(at 118.975 78.185 90)
@@ -15677,7 +15677,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "da29ca65-0602-42bb-aab5-074fca381939")
 		(at 96.71 66.95 180)
@@ -15906,7 +15906,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "pico2-test-mule:SOT-23"
 		(layer "F.Cu")
 		(uuid "e146d8bd-0a67-4148-bcab-31cd5e2af813")
 		(at 110.6 74.435 -90)
@@ -16427,7 +16427,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e966b77b-a7ae-4070-b2f4-580659690dae")
 		(at 93.4 78.185 90)
@@ -16691,7 +16691,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "pico2-test-mule:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "ec670f17-0855-4cec-8909-7253681f6b16")
 		(at 101.38 69.6)
@@ -16920,7 +16920,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "f1172d4f-edd1-4ada-85c4-512b5ddeb67b")
 		(at 109.675 78.185 90)
@@ -17184,7 +17184,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "pico2-test-mule:SOT-23"
 		(layer "F.Cu")
 		(uuid "f1412a8b-7d1c-4cda-901a-293bfb92a6db")
 		(at 97.8 74.7725 -90)
@@ -17705,7 +17705,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "pico2-test-mule:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f163939f-2389-495a-b10e-d224450c6e0a")
 		(at 119.4 68.25 -90)
@@ -17921,7 +17921,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+	(footprint "pico2-test-mule:PinHeader_1x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f1cc9dbf-2a69-4936-9c6c-966551f0d4ce")
 		(at 122.56 74.05 90)
@@ -18918,7 +18918,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "pico2-test-mule:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "ff632756-7259-4f8c-be16-9162d52ccc00")
 		(at 114.325 78.185 90)

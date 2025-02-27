@@ -4,10 +4,10 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -4.27 0)
+		(at 0 -4.27 180)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "b4d8678e-7c1d-4577-bd01-91b2f5e06672")
+		(uuid "45fa36cb-ac94-4e3a-a277-90ac5e56e589")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +16,10 @@
 		)
 	)
 	(property "Value" "DMN2991UDA-7B"
-		(at 0 4.27 0)
+		(at 0 4.27 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c7d240f3-0376-4259-8192-385e6bf6dc30")
+		(uuid "59d79159-3bc6-43bb-b8bf-c87b8fcf4f77")
 		(effects
 			(font
 				(size 1 1)
@@ -28,10 +28,10 @@
 		)
 	)
 	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8b431a02-1f9a-4c4e-ad15-45a9e7facf77")
+		(uuid "2faaab1b-5d0a-4e70-a5ef-573c0decd573")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,10 +40,10 @@
 		)
 	)
 	(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f834722d-125e-49de-92d3-6a6dc370abff")
+		(uuid "b6afca1e-c00f-4993-a1ae-31f1855c414a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,7 +56,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a66fdab6-fa60-4f1a-a5e5-0f7a148cf005")
+		(uuid "3863f33b-9aa5-4254-a681-7d0d8d379efc")
 		(effects
 			(font
 				(size 1 1)
@@ -69,7 +69,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "41ea5eca-d74c-41b4-b34e-0264a89e1250")
+		(uuid "4b3f1a83-ec8a-4417-aa5a-643e4cfd525c")
 		(effects
 			(font
 				(size 1 1)
@@ -86,7 +86,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "04a4f61e-4224-4676-889f-7c61831a5671")
+		(uuid "2f1c52d7-9a7e-4a69-a08e-bef367e7980d")
 	)
 	(fp_line
 		(start 0.57 -0.3)
@@ -96,7 +96,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d0626d94-cfe5-4049-8cc6-2f74534d5d2a")
+		(uuid "ecd798de-f4bf-4b3e-bf27-54f124284a56")
 	)
 	(fp_circle
 		(center -0.55 0.47)
@@ -107,7 +107,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "4ce85819-4651-4b5e-a392-8aff0c4fa469")
+		(uuid "2a0327ce-e45a-4757-b1a4-65423e7b8b97")
 	)
 	(fp_circle
 		(center -0.39 0.34)
@@ -118,7 +118,7 @@
 		)
 		(fill no)
 		(layer "Cmts.User")
-		(uuid "44c34197-d05a-4003-9fb8-5f7e50e9b301")
+		(uuid "6f9a3088-beed-4b0f-be55-458e403a3999")
 	)
 	(fp_circle
 		(center -0.4 0.3)
@@ -129,12 +129,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "078cd5b9-f6e3-449b-a0e8-fa05fa0a298f")
+		(uuid "2f05d039-d5fa-4ded-8cdf-000f9f4b016e")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
-		(uuid "58ad18cc-6e49-4ab8-a3cf-780529f60ceb")
+		(uuid "d9f79aab-73c7-4e26-8f73-56adfa68f55f")
 		(effects
 			(font
 				(size 1 1)
@@ -146,37 +146,37 @@
 		(at -0.35 0.27)
 		(size 0.1 0.28)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "b3c9dd77-6485-49f1-9677-0809c2729fa1")
+		(uuid "25e55767-c9b2-49d3-897b-e7d5ce47ffbf")
 	)
 	(pad "2" smd rect
 		(at -0.05 0.27)
 		(size 0.1 0.28)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "7905cddb-b4da-4311-92c1-c48817d90352")
+		(uuid "0d564563-a981-4796-8c24-599dac23b1e2")
 	)
 	(pad "3" smd rect
 		(at 0.27 0.24)
 		(size 0.15 0.35)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "092fc5f5-94b6-45c1-bce2-989b5df052e7")
+		(uuid "1b931361-6dba-4567-a169-fafdf848c32d")
 	)
 	(pad "4" smd rect
 		(at 0.35 -0.27)
 		(size 0.1 0.28)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "43c0444e-c5ad-4087-96f4-f33eb33aa0ad")
+		(uuid "8470b094-04e6-473a-8d31-e5edaaac9bd3")
 	)
 	(pad "5" smd rect
 		(at 0.05 -0.27)
 		(size 0.1 0.28)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "e30373e3-ede1-4a51-bdf0-6769854ba9fd")
+		(uuid "833d39a8-f5f4-4264-ae62-f8753cdb8bbc")
 	)
 	(pad "6" smd rect
 		(at -0.28 -0.24)
 		(size 0.15 0.35)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "d95dea5f-5c18-431d-ba85-87f3907a67ca")
+		(uuid "1bb1e602-fbc3-4f96-8a2a-25303138b243")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/pico2-test-mule.3dshapes/X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6.wrl"
