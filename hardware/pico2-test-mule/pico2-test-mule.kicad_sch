@@ -9485,7 +9485,7 @@
 		(uuid "2e445aba-3a9d-435e-9aac-205ce094c0f8")
 	)
 	(label "LAMP_REAR"
-		(at 334.01 33.02 0)
+		(at 363.22 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9665,7 +9665,7 @@
 		(uuid "63d63f54-96c4-4325-b559-79438d361c6c")
 	)
 	(label "LAMP_FRONT"
-		(at 363.22 33.02 0)
+		(at 334.01 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9785,7 +9785,7 @@
 		(uuid "7827d16f-3066-4143-95a1-767d02be0dba")
 	)
 	(label "GPIO6"
-		(at 359.41 39.37 0)
+		(at 330.2 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10105,7 +10105,7 @@
 		(uuid "c843a3c6-903e-483f-b5ac-3d7548347c9a")
 	)
 	(label "GPIO7"
-		(at 330.2 39.37 0)
+		(at 359.41 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
