@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.1...pico2-test-mule-v0.2.2) (2025-02-26)
+
+
+### Bug Fixes
+
+* add debounce capacitor to dcc signal gate ([8eee1f6](https://github.com/mikesmitty/rp24-dcc-decoder/commit/8eee1f6eb663765a5d2aa30e55fa527f804a481f))
+
 ## [0.2.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.0...pico2-test-mule-v0.2.1) (2025-02-23)
 
 
