@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.4](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.3...pico2-test-mule-v0.2.4) (2025-03-08)
+
+
+### Bug Fixes
+
+* reduce DCC_TTL gate voltage ([8bb2ff3](https://github.com/mikesmitty/rp24-dcc-decoder/commit/8bb2ff398a00977e3ff73f020af28f2f82988a62))
+* tweak DCC_TTL debounce cap value ([8bb2ff3](https://github.com/mikesmitty/rp24-dcc-decoder/commit/8bb2ff398a00977e3ff73f020af28f2f82988a62))
+
 ## [0.2.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.2...pico2-test-mule-v0.2.3) (2025-02-27)
 
 
