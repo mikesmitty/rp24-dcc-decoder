@@ -59,34 +59,34 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|140955000|37935000|9df30ab9-ad7e-4e20-aeef-a3211b19f364|57c90c36-af53-4a35-9817-023c37f4c642",
-        "courtyards_overlap|142315000|37935000|9df30ab9-ad7e-4e20-aeef-a3211b19f364|db4a0576-1914-4b38-947d-74417b6b39a8",
-        "courtyards_overlap|156685000|38605000|adb020b2-fe1c-444a-94e0-3acf8570b9ca|963f370d-7907-4490-8b4c-2932a957cfaf",
-        "courtyards_overlap|158085000|38605000|adb020b2-fe1c-444a-94e0-3acf8570b9ca|8c968300-92e3-4895-a080-b56dbfb581f2",
-        "courtyards_overlap|158265000|39345000|08757d74-0135-4c17-b9fe-e1d3c8f08eb7|2583241b-c0c4-4b1a-ba6c-15af5eb1ccd9",
-        "silk_overlap|144600000|40570000|e1345ea2-5266-4280-ba69-64b5b3e25b63|65086ef3-f744-41ba-9ca4-5cbf5b1f3ea5",
-        "text_thickness|152130000|35180000|8840fa6b-089d-4e9f-974d-6bcd524a3c7a|00000000-0000-0000-0000-000000000000",
-        "courtyards_overlap|140955000|48735000|28ed0fb2-9dc4-4174-8515-def45e2e13ab|d7da3368-bf46-47f1-bab9-faad5c3eb81d",
-        "courtyards_overlap|142315000|48735000|28ed0fb2-9dc4-4174-8515-def45e2e13ab|165e41e0-bf75-4242-a947-6445d106ce49",
-        "courtyards_overlap|156685000|49405000|e8e92ada-e4db-4c26-8221-df62a3997bfe|198aa2da-ad8f-488b-99d7-d412d1c0c1e2",
-        "courtyards_overlap|158085000|49405000|e8e92ada-e4db-4c26-8221-df62a3997bfe|421e3a83-1669-4b89-ac60-5a63bcf119df",
-        "courtyards_overlap|158265000|50145000|cbe349ad-fcb3-4a1f-bebc-340c257a1805|9ed2765f-52a3-42d5-a517-9aa0101b925e",
-        "silk_overlap|144600000|51370000|95f352e8-e20b-44f9-b585-fe85b76974e2|b8634a25-7837-4511-abd0-0a86f18e91fd",
-        "text_thickness|152130000|45980000|868d7854-e403-478d-872a-e180f6d48dd5|00000000-0000-0000-0000-000000000000",
-        "courtyards_overlap|140955000|59535000|efb6a48e-bc66-4ee1-90ac-53dd91fd138b|5fb04341-d9ed-4fc3-80dc-8389b34b6bfb",
-        "courtyards_overlap|142315000|59535000|efb6a48e-bc66-4ee1-90ac-53dd91fd138b|ca4d983d-dbef-4465-8f3e-59b90b0783f2",
-        "courtyards_overlap|156685000|60205000|99db5044-57f9-45d4-b2e3-e420ae81a363|cc92d620-1f20-40b2-88f5-a852adaa9243",
-        "courtyards_overlap|158085000|60205000|99db5044-57f9-45d4-b2e3-e420ae81a363|f7c00d77-b66d-4cb9-9779-7c0f0e4be2cb",
-        "courtyards_overlap|158265000|60945000|049b2c57-b39f-47eb-a34f-74c3e280c5b4|797e5c99-7cdc-4a76-a332-3b1830258364",
-        "silk_overlap|144600000|62170000|37472359-8072-4bef-8579-99a5f35a2e6b|5ee92dfc-ae93-43a4-8c4d-7fc395260e04",
-        "text_thickness|152130000|56780000|9119d961-c30a-46ec-b219-e3a1a0f076d0|00000000-0000-0000-0000-000000000000",
-        "courtyards_overlap|140955000|70335000|1848f624-6e20-450b-8b7d-ff583de2df2f|415d530c-3e3e-4dd3-84a6-85cedf8bbed2",
-        "courtyards_overlap|142315000|70335000|1848f624-6e20-450b-8b7d-ff583de2df2f|aca84e1d-1c6c-40de-8278-589470e273bf",
-        "courtyards_overlap|156685000|71005000|898fd21f-0746-4547-b16c-39ea1f9ce208|59d3e686-8e82-461e-9444-92735b655f44",
-        "courtyards_overlap|158085000|71005000|898fd21f-0746-4547-b16c-39ea1f9ce208|b7db8dab-cd88-4604-92e9-29a527bbc62b",
-        "courtyards_overlap|158265000|71745000|1f32497e-2cea-4371-943f-fbc5f37f4046|c4c9f6f9-83cb-45e0-b317-1429cf215dfc",
-        "silk_overlap|144600000|72970000|d0542673-023c-4709-85e7-69c41d105d68|64a3ff0c-0400-4cf4-a64d-2ff463b27c90",
-        "text_thickness|152130000|67580000|0c4d2e48-6651-47f0-bd79-73e89b60bf23|00000000-0000-0000-0000-000000000000"
+        "courtyards_overlap|140955000|37935000|5619f7ce-a1c5-40af-92bf-1b5f38912346|019b1456-3e69-495b-94e7-d50b5e45c84f",
+        "courtyards_overlap|142315000|37935000|5619f7ce-a1c5-40af-92bf-1b5f38912346|2473f5f7-eab6-4ce6-846e-7c07512ced00",
+        "courtyards_overlap|156685000|38605000|cf00ed04-181f-4849-8873-40e24396adde|e0921995-6488-4b6f-a4ae-1d34e49b678e",
+        "courtyards_overlap|158085000|38605000|cf00ed04-181f-4849-8873-40e24396adde|7a81e148-5f34-434a-be56-e79a76606539",
+        "courtyards_overlap|158265000|39345000|39cc7d3e-de98-4764-ab10-140ac0dacd77|3fabe7ee-00a6-4c22-b99a-0fbb8161b095",
+        "silk_overlap|144600000|40570000|5ae0fe4a-a0f1-49a8-98bb-608e4b779e3b|30a86d86-6e3e-496a-8584-44e8f6eacfaf",
+        "text_thickness|152130000|35180000|1f745003-0841-4b1a-a0b0-dde0f890d1bc|00000000-0000-0000-0000-000000000000",
+        "courtyards_overlap|140955000|48735000|acaca1d4-3ae2-4079-9f61-82ec208f007f|23cf126e-cedd-475d-a193-930eb9950e98",
+        "courtyards_overlap|142315000|48735000|acaca1d4-3ae2-4079-9f61-82ec208f007f|29f61436-e9a8-464e-ab6d-409482856570",
+        "courtyards_overlap|156685000|49405000|e8ab0616-2ebc-4a37-a2f0-54c5f2cc1f18|8464b380-ca1d-473d-9c17-6b08eb1e5c9a",
+        "courtyards_overlap|158085000|49405000|e8ab0616-2ebc-4a37-a2f0-54c5f2cc1f18|85c7b50c-c17a-4c55-95f6-b6b9f966fdf1",
+        "courtyards_overlap|158265000|50145000|70f134e7-9f67-4045-9dc4-0aad21a8d319|912a12ed-4c64-443f-ad35-9bce9a831a51",
+        "silk_overlap|144600000|51370000|b98b3508-2b63-40f4-9f64-94be9db44b91|33f52465-c3cf-4fa2-8c97-926e1aa1959b",
+        "text_thickness|152130000|45980000|07e5b244-2896-40b1-8ba6-f419140d62fa|00000000-0000-0000-0000-000000000000",
+        "courtyards_overlap|140955000|59535000|ef5d0741-5079-44f6-9f6f-33d66d89fbf2|9e9327c6-f859-4a7b-93e8-095b9c1451b3",
+        "courtyards_overlap|142315000|59535000|ef5d0741-5079-44f6-9f6f-33d66d89fbf2|bdaee1f4-52c0-4526-88e2-9ed19ec1785c",
+        "courtyards_overlap|156685000|60205000|28bb30e0-02fe-44bb-8b99-0d554f1d504f|9c5ff861-d456-48c2-86a7-6d97a0a43f66",
+        "courtyards_overlap|158085000|60205000|28bb30e0-02fe-44bb-8b99-0d554f1d504f|70b14efc-55fc-4bc3-937e-20ef3bb0ec20",
+        "courtyards_overlap|158265000|60945000|06ec2db0-56fa-400b-8feb-b369945611fa|95344f6f-2e31-4591-9692-bfc78733566f",
+        "silk_overlap|144600000|62170000|1673365c-b83d-48b0-8766-c8c8e38af6be|dcd3f11b-90c7-4856-be46-1560181db176",
+        "text_thickness|152130000|56780000|d68ba664-986a-4ea5-b15c-c51f0453239e|00000000-0000-0000-0000-000000000000",
+        "courtyards_overlap|140955000|70335000|8293df7c-fe5c-4391-9f2a-697b407c09f5|1c9b7ca7-66ed-4a0f-a460-918494cf0f0f",
+        "courtyards_overlap|142315000|70335000|8293df7c-fe5c-4391-9f2a-697b407c09f5|4582037e-ed6d-4891-ba82-c1ad51c4f685",
+        "courtyards_overlap|156685000|71005000|6a2df66f-1c51-432d-813d-4c024454a062|31ce1207-154c-4a2b-b9fc-3655c1f0e419",
+        "courtyards_overlap|158085000|71005000|6a2df66f-1c51-432d-813d-4c024454a062|efbfe867-f71c-4476-b0f7-05cb5ed0902c",
+        "courtyards_overlap|158265000|71745000|9aaf2d08-49b2-45c6-8e5c-6ff296e6d932|f2787363-0a49-4514-9191-1a9c32fcdfc1",
+        "silk_overlap|144600000|72970000|bfc80290-315d-4501-a885-8b141a74298b|fd491891-4efe-456f-9223-d89cabf8d22c",
+        "text_thickness|152130000|67580000|326e4b4e-0ac4-4047-b900-885efaef8803|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -690,99 +690,7 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-unconnected-(U1-EP-Pad9)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/QSPI_SD2"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-unconnected-(U1-OUT1-Pad1)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-unconnected-(U1-IN\u22121-Pad2)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(Q1B-G2)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/XOUT"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-VDC"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-unconnected-(U4-RUN-Pad26)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-+1V1"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/CAP+"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/MOTOR_A"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/SWITCH"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/LAMP_FRONT"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/TRACK_RIGHT"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/MOTOR_B"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/QSPI_SCLK"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-GND"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/QSPI_CS"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/RC_TX"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/XIN"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(Q3B-B2)"
-      },
-      {
-        "netclass": "Board_0-Default",
         "pattern": "Board_0-/ADC_EMF_B"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/I2S_DIN"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(U4-VREG_AVDD)"
       },
       {
         "netclass": "Board_0-Default",
@@ -790,15 +698,15 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-unconnected-(SW1-Pad1)"
+        "pattern": "Board_0-/AUX1 (VDC)"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX5 (VDC)"
+        "pattern": "Board_0-/QSPI_SCLK"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX6 (VDC)"
+        "pattern": "Board_0-Net-(R6-Pad2)"
       },
       {
         "netclass": "Board_0-Default",
@@ -806,23 +714,7 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(D7-A)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX7 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/CAP_ENABLE"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/I2S_LRCLK"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(Q3B-E2)"
+        "pattern": "Board_0-/AUX2 (VDC)"
       },
       {
         "netclass": "Board_0-Default",
@@ -830,7 +722,19 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-+3.3V"
+        "pattern": "Board_0-/I2S_LRCLK"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-VDC"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U4-VREG_AVDD)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MOTOR_A"
       },
       {
         "netclass": "Board_0-Default",
@@ -838,11 +742,123 @@
       },
       {
         "netclass": "Board_0-Default",
+        "pattern": "Board_0-/I2S_BCLK"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/QSPI_CS"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(D7-A)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-+3.3V"
+      },
+      {
+        "netclass": "Board_0-Default",
         "pattern": "Board_0-/QSPI_SD3"
       },
       {
         "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(SW1-Pad1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(Q3B-B2)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/XOUT"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(Q1B-G2)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(Q3B-E2)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U4-VREG_LX)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-GND"
+      },
+      {
+        "netclass": "Board_0-Default",
         "pattern": "Board_0-/TRACK_LEFT"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U1-IN\u22121-Pad2)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/QSPI_SD1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U1-EP-Pad9)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/CAP+"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/QSPI_SD0"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/QSPI_SD2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(Q1A-G1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/CAP_ENABLE"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/DCC_TTL"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U1-OUT1-Pad1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(Q4A-B1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/RC_TX"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U4-RUN-Pad26)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/AUX6 (VDC)"
       },
       {
         "netclass": "Board_0-Default",
@@ -854,15 +870,7 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(U2-BST)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(U4-VREG_LX)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX1 (VDC)"
+        "pattern": "Board_0-+1V1"
       },
       {
         "netclass": "Board_0-Default",
@@ -870,27 +878,19 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/QSPI_SD1"
+        "pattern": "Board_0-Net-(U2-BST)"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(Q1A-G1)"
+        "pattern": "Board_0-/AUX5 (VDC)"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(Q4A-B1)"
+        "pattern": "Board_0-/I2S_DIN"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-Net-(R6-Pad2)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/AUX2 (VDC)"
-      },
-      {
-        "netclass": "Board_0-Default",
-        "pattern": "Board_0-/DCC_TTL"
+        "pattern": "Board_0-/XIN"
       },
       {
         "netclass": "Board_0-Default",
@@ -898,11 +898,11 @@
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/QSPI_SD0"
+        "pattern": "Board_0-/SWITCH"
       },
       {
         "netclass": "Board_0-Default",
-        "pattern": "Board_0-/I2S_BCLK"
+        "pattern": "Board_0-/AUX7 (VDC)"
       },
       {
         "netclass": "Board_0-USB_Data_Inner",
@@ -922,55 +922,11 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX8 (VDC)"
+        "pattern": "Board_1-unconnected-(U1-IN\u22121-Pad2)"
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/I2S_LRCLK"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/CAP+"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(U2-BST)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/QSPI_CS"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(Q1A-G1)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/TRACK_RIGHT"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(U4-VREG_AVDD)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-unconnected-(U4-RUN-Pad26)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-+1V1"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(C4-Pad1)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/MOTOR_B"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/MOTOR_A"
+        "pattern": "Board_1-/QSPI_SD0"
       },
       {
         "netclass": "Board_1-Default",
@@ -978,11 +934,23 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/LAMP_FRONT"
+        "pattern": "Board_1-/SWDIO"
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-+3.3V"
+        "pattern": "Board_1-unconnected-(U1-OUT1-Pad1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/ADC_EMF_A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/CAP_VDC"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-VDC"
       },
       {
         "netclass": "Board_1-Default",
@@ -994,27 +962,7 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-VDC"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/CAP_VDC"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/CAP_ENABLE"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-unconnected-(U1-IN+1-Pad3)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX1 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(R6-Pad2)"
+        "pattern": "Board_1-/QSPI_SCLK"
       },
       {
         "netclass": "Board_1-Default",
@@ -1022,47 +970,15 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(D7-A)"
+        "pattern": "Board_1-/AUX8 (VDC)"
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX5 (VDC)"
+        "pattern": "Board_1-/MOTOR_A"
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/SWDIO"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(Q4A-B1)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/ADC_EMF_A"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/LAMP_REAR"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/XIN"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(Q3B-B2)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(U4-VREG_LX)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-unconnected-(U1-IN\u22121-Pad2)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-unconnected-(U1-OUT1-Pad1)"
+        "pattern": "Board_1-/TRACK_RIGHT"
       },
       {
         "netclass": "Board_1-Default",
@@ -1070,59 +986,7 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-/XOUT"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/I2S_BCLK"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/I2S_DIN"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX2 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/ADC_EMF_B"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/QSPI_SD0"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/DCC_TTL"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/QSPI_SD2"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-unconnected-(SW1-Pad1)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX7 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(Q3B-E2)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/QSPI_SCLK"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/AUX6 (VDC)"
-      },
-      {
-        "netclass": "Board_1-Default",
-        "pattern": "Board_1-/SWCLK"
+        "pattern": "Board_1-/XIN"
       },
       {
         "netclass": "Board_1-Default",
@@ -1130,7 +994,11 @@
       },
       {
         "netclass": "Board_1-Default",
-        "pattern": "Board_1-Net-(Q3A-B1)"
+        "pattern": "Board_1-/CAP_ENABLE"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MOTOR_B"
       },
       {
         "netclass": "Board_1-Default",
@@ -1138,7 +1006,139 @@
       },
       {
         "netclass": "Board_1-Default",
+        "pattern": "Board_1-/DCC_TTL"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(C4-Pad1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(R6-Pad2)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/CAP+"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(D7-A)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/I2S_BCLK"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/XOUT"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U4-RUN-Pad26)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U4-VREG_LX)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U1-IN+1-Pad3)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(Q3B-E2)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/ADC_EMF_B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(Q3A-B1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(SW1-Pad1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/I2S_DIN"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/QSPI_SD2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/SWCLK"
+      },
+      {
+        "netclass": "Board_1-Default",
         "pattern": "Board_1-GND"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(Q3B-B2)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-+1V1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-+3.3V"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(Q4A-B1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(Q1A-G1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U4-VREG_AVDD)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/I2S_LRCLK"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-BST)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/QSPI_CS"
       },
       {
         "netclass": "Board_1-USB_Data_Inner",
@@ -1158,71 +1158,7 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-unconnected-(U1-IN\u22121-Pad2)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/QSPI_SD0"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX5 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/CAP_VDC"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/MOTOR_A"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(C4-Pad1)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-unconnected-(U4-RUN-Pad26)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/I2S_LRCLK"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX7 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-unconnected-(U1-EP-Pad9)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/QSPI_SD2"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/I2S_DIN"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(Q3B-B2)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(Q4A-B1)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX2 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-+1V1"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/MOTOR_B"
+        "pattern": "Board_2-Net-(Q1A-G1)"
       },
       {
         "netclass": "Board_2-Default",
@@ -1230,23 +1166,19 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/QSPI_SD3"
+        "pattern": "Board_2-Net-(Q4A-B1)"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/RC_TX"
+        "pattern": "Board_2-/CAP_VDC"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(Q1A-G1)"
+        "pattern": "Board_2-/LAMP_FRONT"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/ADC_EMF_B"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/XOUT"
+        "pattern": "Board_2-VDC"
       },
       {
         "netclass": "Board_2-Default",
@@ -1254,7 +1186,87 @@
       },
       {
         "netclass": "Board_2-Default",
+        "pattern": "Board_2-/XIN"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/ADC_EMF_A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/QSPI_CS"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/TRACK_RIGHT"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/QSPI_SD0"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-GND"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(C4-Pad1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U1-IN\u22121-Pad2)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U4-RUN-Pad26)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX1 (VDC)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX5 (VDC)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/ADC_EMF_B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/SWDIO"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/I2S_DIN"
+      },
+      {
+        "netclass": "Board_2-Default",
         "pattern": "Board_2-Net-(Q3A-B1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/I2S_LRCLK"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/QSPI_SCLK"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/QSPI_SD3"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MOTOR_A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/RC_TX"
       },
       {
         "netclass": "Board_2-Default",
@@ -1266,23 +1278,7 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/CAP_ENABLE"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/LAMP_FRONT"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/SWCLK"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/I2S_BCLK"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(Q3B-E2)"
+        "pattern": "Board_2-/TRACK_LEFT"
       },
       {
         "netclass": "Board_2-Default",
@@ -1290,23 +1286,7 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/SWDIO"
-      },
-      {
-        "netclass": "Board_2-Default",
         "pattern": "Board_2-+3.3V"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/QSPI_SCLK"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(Q1B-G2)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/XIN"
       },
       {
         "netclass": "Board_2-Default",
@@ -1314,31 +1294,7 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/DCC_TTL"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(R6-Pad2)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-unconnected-(SW1-Pad1)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/TRACK_LEFT"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-GND"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/LAMP_REAR"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-VDC"
+        "pattern": "Board_2-Net-(U2-BST)"
       },
       {
         "netclass": "Board_2-Default",
@@ -1346,19 +1302,7 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/ADC_EMF_A"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX8 (VDC)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-Net-(U2-BST)"
-      },
-      {
-        "netclass": "Board_2-Default",
-        "pattern": "Board_2-/TRACK_RIGHT"
+        "pattern": "Board_2-/CAP_ENABLE"
       },
       {
         "netclass": "Board_2-Default",
@@ -1366,15 +1310,71 @@
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/AUX1 (VDC)"
+        "pattern": "Board_2-Net-(Q3B-B2)"
       },
       {
         "netclass": "Board_2-Default",
-        "pattern": "Board_2-/QSPI_CS"
+        "pattern": "Board_2-/AUX2 (VDC)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/SWCLK"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-+1V1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/XOUT"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(SW1-Pad1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/QSPI_SD2"
       },
       {
         "netclass": "Board_2-Default",
         "pattern": "Board_2-unconnected-(U1-IN+1-Pad3)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(Q3B-E2)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U1-EP-Pad9)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/DCC_TTL"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MOTOR_B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/I2S_BCLK"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(R6-Pad2)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/LAMP_REAR"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(Q1B-G2)"
       },
       {
         "netclass": "Board_2-USB_Data_Inner",
@@ -1398,11 +1398,11 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-GND"
+        "pattern": "Board_3-VDC"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-unconnected-(SW1-Pad1)"
+        "pattern": "Board_3-Net-(Q1A-G1)"
       },
       {
         "netclass": "Board_3-Default",
@@ -1410,11 +1410,11 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-+1V1"
+        "pattern": "Board_3-GND"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/I2S_BCLK"
+        "pattern": "Board_3-/I2S_DIN"
       },
       {
         "netclass": "Board_3-Default",
@@ -1422,55 +1422,23 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/QSPI_SD0"
+        "pattern": "Board_3-/MOTOR_B"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/RC_TX"
+        "pattern": "Board_3-/I2S_BCLK"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-+3.3V"
+        "pattern": "Board_3-/TRACK_LEFT"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(Q1B-G2)"
+        "pattern": "Board_3-/TRACK_RIGHT"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(Q3B-B2)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/CAP_VDC"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-unconnected-(U1-IN\u22121-Pad2)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX7 (VDC)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-unconnected-(U1-OUT1-Pad1)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/ADC_EMF_A"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(C4-Pad1)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(D7-A)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/QSPI_SCLK"
+        "pattern": "Board_3-/AUX1 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
@@ -1478,23 +1446,83 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/MOTOR_B"
+        "pattern": "Board_3-unconnected-(SW1-Pad1)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX2 (VDC)"
+        "pattern": "Board_3-Net-(C4-Pad1)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(U4-VREG_AVDD)"
+        "pattern": "Board_3-/ADC_EMF_A"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-unconnected-(U4-RUN-Pad26)"
+        "pattern": "Board_3-Net-(Q3A-B1)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U4-VREG_LX)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX7 (VDC)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/XIN"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(Q1B-G2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX8 (VDC)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX6 (VDC)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(Q3B-B2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(Q4A-B1)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U1-IN\u22121-Pad2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/SWCLK"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(Q3B-E2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/QSPI_SD3"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/CAP_VDC"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/ADC_EMF_B"
       },
       {
         "netclass": "Board_3-Default",
         "pattern": "Board_3-Net-(U2-BST)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/QSPI_SD2"
       },
       {
         "netclass": "Board_3-Default",
@@ -1506,79 +1534,23 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-VDC"
+        "pattern": "Board_3-/XOUT"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX1 (VDC)"
+        "pattern": "Board_3-unconnected-(U4-RUN-Pad26)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(Q3B-E2)"
+        "pattern": "Board_3-/RC_TX"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX5 (VDC)"
+        "pattern": "Board_3-/QSPI_SD0"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/TRACK_LEFT"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/LAMP_FRONT"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/ADC_EMF_B"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/I2S_DIN"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(Q1A-G1)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/XIN"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(Q3A-B1)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/QSPI_SD2"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/QSPI_SD3"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX8 (VDC)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/SWDIO"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/QSPI_SD1"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-/SWITCH"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(Q4A-B1)"
-      },
-      {
-        "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(R6-Pad2)"
+        "pattern": "Board_3-unconnected-(U1-OUT1-Pad1)"
       },
       {
         "netclass": "Board_3-Default",
@@ -1586,19 +1558,19 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/XOUT"
+        "pattern": "Board_3-Net-(U4-VREG_AVDD)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-Net-(U4-VREG_LX)"
+        "pattern": "Board_3-/SWDIO"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/SWCLK"
+        "pattern": "Board_3-Net-(D7-A)"
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/TRACK_RIGHT"
+        "pattern": "Board_3-/AUX2 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
@@ -1606,11 +1578,39 @@
       },
       {
         "netclass": "Board_3-Default",
-        "pattern": "Board_3-/AUX6 (VDC)"
+        "pattern": "Board_3-+3.3V"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/LAMP_FRONT"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/SWITCH"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/AUX5 (VDC)"
       },
       {
         "netclass": "Board_3-Default",
         "pattern": "Board_3-/QSPI_CS"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/QSPI_SD1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-+1V1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(R6-Pad2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/QSPI_SCLK"
       },
       {
         "netclass": "Board_3-USB_Data_Inner",
