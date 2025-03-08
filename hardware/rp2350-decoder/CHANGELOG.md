@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.0.3...rp2350-decoder-v0.0.4) (2025-03-08)
+
+
+### Bug Fixes
+
+* update DCC_TTL debounce capacitor value ([732472c](https://github.com/mikesmitty/rp24-dcc-decoder/commit/732472c98f50376903bb764d93151fdd62facd41))
+
 ## [0.0.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.0.2...rp2350-decoder-v0.0.3) (2025-02-27)
 
 
