@@ -18312,7 +18312,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "470pF"
 			(at 143.51 64.7699 0)
 			(effects
 				(font
@@ -18348,7 +18348,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1710"
+		(property "LCSC" "C1743"
 			(at 147.32 63.5 0)
 			(effects
 				(font
@@ -21513,7 +21513,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8K"
+		(property "Value" "2.2K"
 			(at 158.75 63.5 0)
 			(effects
 				(font
@@ -21557,7 +21557,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25944"
+		(property "LCSC" "C25879"
 			(at 154.94 63.5 0)
 			(effects
 				(font

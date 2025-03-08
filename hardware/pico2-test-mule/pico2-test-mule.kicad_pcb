@@ -669,7 +669,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8K"
+		(property "Value" "2.2K"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -720,7 +720,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25944"
+		(property "LCSC" "C25879"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8661,7 +8661,7 @@
 				)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "470pF"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8699,7 +8699,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1710"
+		(property "LCSC" "C1743"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
