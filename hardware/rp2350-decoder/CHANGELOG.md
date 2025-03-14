@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.0.4...rp2350-decoder-v0.0.5) (2025-03-14)
+
+
+### Bug Fixes
+
+* add ground vias near motor driver ([d3c346b](https://github.com/mikesmitty/rp24-dcc-decoder/commit/d3c346b67aaa05e254f0cf5fc2168e786e9e2e42))
+
 ## [0.0.4](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.0.3...rp2350-decoder-v0.0.4) (2025-03-08)
 
 
