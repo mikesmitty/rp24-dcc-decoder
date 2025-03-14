@@ -4229,7 +4229,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "505070-2422"
+		(property "Value" "5052742412"
 			(at 0 -4.91 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -4242,7 +4242,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/505070-2422.pdf"
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/505274-2412.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -4282,82 +4282,12 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Name" "Molex"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "9f0422e6-355f-4e4b-b94c-750585672aeb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Manufacturer_Part_Number" "505070-2422"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "dac95862-077d-43ca-ab8f-7231ef62dd9b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "LCSC" "C724143"
+		(property "LCSC" "C3649712"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "48142cab-262d-483a-bd54-2eb7f5078529")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description_1" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "1b9a812b-45a4-42e6-a43b-4b26336f40b5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7ffdaaf6-300f-4b74-a267-3afe64f631ce")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "8093e9df-a76d-4361-94e8-c1da56b2c035")
 			(effects
 				(font
 					(size 1 1)

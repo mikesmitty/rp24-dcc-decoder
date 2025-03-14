@@ -2724,7 +2724,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "505070-2422"
+		(property "Value" "5052742412"
 			(at 80.4865 34.29 90)
 			(effects
 				(font
@@ -2743,7 +2743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/505070-2422.pdf"
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/505274-2412.pdf"
 			(at 82.55 71.12 0)
 			(effects
 				(font
@@ -2772,27 +2772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Molex"
-			(at 69.85 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "505070-2422"
-			(at 67.31 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C724143"
+		(property "LCSC" "C3649712"
 			(at 77.47 31.75 90)
 			(effects
 				(font
