@@ -1,5 +1,5 @@
 Drill report for rp2350-decoder.kicad_pcb
-Created on 2025-03-14T09:55:04-0400
+Created on 2025-03-14T10:27:33-0400
 
 Copper Layer Stackup:
     =============================================================
@@ -14,12 +14,12 @@ Copper Layer Stackup:
 Drill file 'rp2350-decoder-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.200mm  0.0079"  (476 holes)
+    T1  0.200mm  0.0079"  (488 holes)
     T2  0.250mm  0.0098"  (40 holes)
     T3  0.300mm  0.0118"  (168 holes)
     T4  0.350mm  0.0138"  (8 holes)
 
-    Total plated holes count 692
+    Total plated holes count 704
 
 
 Drill file 'rp2350-decoder-NPTH.drl' contains
