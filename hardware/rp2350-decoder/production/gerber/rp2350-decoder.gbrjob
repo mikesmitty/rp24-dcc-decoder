@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-03-13T21:18:11-04:00"
+    "CreationDate": "2025-03-14T09:55:04-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -94,23 +94,23 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "rp2350-decoder-inner1.gts",
-      "FileFunction": "SolderMask,Top",
-      "FilePolarity": "Negative"
-    },
-    {
-      "Path": "rp2350-decoder-inner2.gbl",
-      "FileFunction": "Copper,L6,Bot",
+      "Path": "rp2350-decoder-inner1.g1",
+      "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "rp2350-decoder-inner3.gbs",
-      "FileFunction": "SolderMask,Bot",
-      "FilePolarity": "Negative"
+      "Path": "rp2350-decoder-inner2.g2",
+      "FileFunction": "Copper,L7,Inr",
+      "FilePolarity": "Positive"
     },
     {
-      "Path": "rp2350-decoder-inner4.g1",
-      "FileFunction": "Copper,L5,Inr",
+      "Path": "rp2350-decoder-inner3.g3",
+      "FileFunction": "Copper,L9,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "rp2350-decoder-inner4.g4",
+      "FileFunction": "Copper,L11,Inr",
       "FilePolarity": "Positive"
     }
   ],
