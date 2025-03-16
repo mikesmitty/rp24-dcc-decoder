@@ -20,7 +20,7 @@ jobs:
 
       - name: Get changed PCB files
         id: changed-files
-        uses: tj-actions/changed-files@v45
+        uses: tj-actions/changed-files@v46
         with:
           files: |
             hardware/*/*.kicad_pcb
