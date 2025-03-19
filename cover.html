@@ -1,0 +1,1629 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>cv: Go Coverage Report</title>
+		<style>
+			body {
+				background: black;
+				color: rgb(80, 80, 80);
+			}
+			body, pre, #legend span {
+				font-family: Menlo, monospace;
+				font-weight: bold;
+			}
+			#topbar {
+				background: black;
+				position: fixed;
+				top: 0; left: 0; right: 0;
+				height: 42px;
+				border-bottom: 1px solid rgb(80, 80, 80);
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#nav, #legend {
+				float: left;
+				margin-left: 10px;
+			}
+			#legend {
+				margin-top: 12px;
+			}
+			#nav {
+				margin-top: 10px;
+			}
+			#legend span {
+				margin: 0 5px;
+			}
+			.cov0 { color: rgb(192, 0, 0) }
+.cov1 { color: rgb(128, 128, 128) }
+.cov2 { color: rgb(116, 140, 131) }
+.cov3 { color: rgb(104, 152, 134) }
+.cov4 { color: rgb(92, 164, 137) }
+.cov5 { color: rgb(80, 176, 140) }
+.cov6 { color: rgb(68, 188, 143) }
+.cov7 { color: rgb(56, 200, 146) }
+.cov8 { color: rgb(44, 212, 149) }
+.cov9 { color: rgb(32, 224, 152) }
+.cov10 { color: rgb(20, 236, 155) }
+
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="nav">
+				<select id="files">
+				
+				<option value="file0">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv.go (0.0%)</option>
+				
+				<option value="file1">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_defaults.go (0.0%)</option>
+				
+				<option value="file2">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_mock.go (0.0%)</option>
+				
+				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
+				
+				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (25.0%)</option>
+				
+				<option value="file5">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message.go (76.9%)</option>
+				
+				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
+				
+				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (98.0%)</option>
+				
+				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (82.1%)</option>
+				
+				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_xpom.go (33.3%)</option>
+				
+				<option value="file10">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/monitor.go (0.0%)</option>
+				
+				<option value="file11">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/hal_mock.go (0.0%)</option>
+				
+				<option value="file12">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/i2s.go (0.0%)</option>
+				
+				<option value="file13">github.com/mikesmitty/rp24-dcc-decoder/pkg/iir/iir.go (0.0%)</option>
+				
+				<option value="file14">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/flash_mock.go (33.3%)</option>
+				
+				<option value="file15">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/store.go (76.1%)</option>
+				
+				</select>
+			</div>
+			<div id="legend">
+				<span>not tracked</span>
+			
+				<span class="cov0">not covered</span>
+				<span class="cov8">covered</span>
+			
+			</div>
+		</div>
+		<div id="content">
+		
+		<pre class="file" id="file0" style="display: none">package cv
+
+import "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+
+type Handler interface {
+        CV(uint16) uint8
+        CVOk(uint16) (uint8, bool)
+        IndexedCV(uint16, uint16) uint8
+        IndexedCVOk(uint16, uint16) (uint8, bool)
+        Set(uint16, uint8) bool
+        SetSync(uint16, uint8) bool
+        IndexedSet(uint16, uint16, uint8) bool
+        IndexedSetSync(uint16, uint16, uint8) bool
+        Reset(uint16) bool
+        ResetAll()
+        ProcessChanges()
+        SetDefault(uint16, uint8, store.CVFlags)
+        RegisterCallback(uint16, func(uint16, uint8) bool)
+        IndexPage(...uint8) uint16
+}
+
+var _ Handler = (*CVHandler)(nil)
+
+type CVHandler struct {
+        cvStore     *store.Store
+        cvCallbacks map[uint16][]func(uint16, uint8) bool
+}
+
+type CVCallbackFunc func(uint16, uint8) bool
+
+func NewCVHandler(version uint8) *CVHandler <span class="cov0" title="0">{
+        s := store.NewStore()
+        c := &amp;CVHandler{
+                cvCallbacks: make(map[uint16][]func(uint16, uint8) bool),
+                cvStore:     s,
+        }
+
+        lastVersion, _ := s.CV(7)
+        if lastVersion != version </span>{<span class="cov0" title="0">
+                /* FIXME: Do stuff if the version has changed
+                s.ResetAll()
+                */
+        }</span>
+
+        <span class="cov0" title="0">c.setDefaults(s, version)
+
+        return c</span>
+}
+
+func (c *CVHandler) RegisterCallback(cvNumber uint16, fn func(cvNumber uint16, value uint8) bool) <span class="cov0" title="0">{
+        if _, ok := c.CVOk(cvNumber); !ok </span><span class="cov0" title="0">{
+                // It's not likely this will ever happen, but just to be sure
+                panic("CV not found")</span>
+        }
+        <span class="cov0" title="0">c.cvCallbacks[cvNumber] = append(c.cvCallbacks[cvNumber], fn)</span>
+}
+
+// Return the current index page indicated by CV31/32 or a provided equivalent
+func (c *CVHandler) IndexPage(indexCVs ...uint8) uint16 <span class="cov0" title="0">{
+        // FIXME: Set limits around max index pages
+
+        var cv31, cv32 uint8
+        if len(indexCVs) &lt; 2 </span><span class="cov0" title="0">{
+                cv31, _ = c.cvStore.CV(31)
+                cv32, _ = c.cvStore.CV(32)
+        }</span> else<span class="cov0" title="0"> {
+                cv31 = indexCVs[0]
+                cv32 = indexCVs[1]
+        }</span>
+        // 00010000
+        <span class="cov0" title="0">if cv31 &lt; 16 </span><span class="cov0" title="0">{
+                return 0
+        }</span>
+        // 00000000 00000000 is page 0
+        // 00010000 00000000 is page 1 (257-512)
+        <span class="cov0" title="0">return (uint16(cv31-16)&lt;&lt;8 | uint16(cv32)) + 1</span>
+}
+
+func (c *CVHandler) CV(cvNumber uint16) uint8 <span class="cov0" title="0">{
+        v, _ := c.CVOk(cvNumber)
+        return v
+}</span>
+
+func (c *CVHandler) CVOk(cvNumber uint16) (uint8, bool) <span class="cov0" title="0">{
+        return c.CVOk(cvNumber)
+}</span>
+
+// IndexedCV returns the value of a CV given an index page and CV number
+func (c *CVHandler) IndexedCV(index, cvNumber uint16) uint8 <span class="cov0" title="0">{
+        v, _ := c.IndexedCVOk(index, cvNumber)
+        return v
+}</span>
+
+// IndexedCVOk returns the value and pre-existence of a CV given an index page and CV number
+func (c *CVHandler) IndexedCVOk(index, cvNumber uint16) (uint8, bool) <span class="cov0" title="0">{
+        return c.cvStore.IndexedCV(index, cvNumber)
+}</span>
+
+// Set sets a CV value and allows it to be written to flash in batches
+func (c *CVHandler) Set(cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        return c.Set(cvNumber, value)
+}</span>
+
+// SetSync sets a CV and does not return until it is persisted to flash
+func (c *CVHandler) SetSync(cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        return c.SetSync(cvNumber, value)
+}</span>
+
+// IndexedSet sets a CV value given a paging index and allows it to be written to flash in batches
+// FIXME: Implement the batching
+func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        // Check if the CV exists first. Unset CVs are not allowed to be set
+        // FIXME: We are the arbiter of what is allowed to be set, check against our cv bitmaps
+        prev, ok := c.cvStore.CV(cvNumber)
+        if !ok </span><span class="cov0" title="0">{
+                return false
+        }</span>
+        <span class="cov0" title="0">rejected := false
+
+        // Run the callbacks first to make sure the value isn't rejected
+        if callbacks, ok := c.cvCallbacks[cvNumber]; ok </span><span class="cov0" title="0">{
+                for _, fn := range callbacks </span><span class="cov0" title="0">{
+                        if !fn(cvNumber, value) </span><span class="cov0" title="0">{
+                                rejected = true
+                        }</span>
+                }
+                <span class="cov0" title="0">if rejected </span><span class="cov0" title="0">{
+                        // Run it back now ya'll
+                        // Prod the callbacks to roll back their caches
+                        for _, fn := range callbacks </span><span class="cov0" title="0">{
+                                fn(cvNumber, prev)
+                        }</span>
+                }
+        }
+        <span class="cov0" title="0">return c.cvStore.Set(cvNumber, value)</span>
+}
+
+// IndexedSetSync sets a CV given a paging index and does not return until it is persisted to flash
+func (c *CVHandler) IndexedSetSync(index, cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        if !c.IndexedSet(index, cvNumber, value) </span><span class="cov0" title="0">{
+                return false
+        }</span>
+        <span class="cov0" title="0">return c.cvStore.IndexedPersist(index, cvNumber, value)</span>
+}
+
+func (c *CVHandler) indexedCVNumber(index, cvNumber uint16) uint16 <span class="cov0" title="0">{
+        switch cvNumber </span>{
+        case 31, 32:<span class="cov0" title="0"></span>
+        // These CVs ignore the index
+        default:<span class="cov0" title="0">
+                cvNumber += index * 256</span>
+        }
+        <span class="cov0" title="0">return cvNumber</span>
+}
+
+func (c *CVHandler) Reset(cvNumber uint16) bool <span class="cov0" title="0">{
+        return c.cvStore.Reset(cvNumber)
+}</span>
+
+func (c *CVHandler) ResetAll() <span class="cov0" title="0">{
+        c.cvStore.ResetAll()
+}</span>
+
+func (c *CVHandler) ProcessChanges() <span class="cov0" title="0">{
+        c.cvStore.ProcessChanges()
+}</span>
+
+func (c *CVHandler) SetDefault(cvNumber uint16, value uint8, flags store.CVFlags) <span class="cov0" title="0">{
+        c.cvStore.SetDefault(cvNumber, value, flags)
+}</span>
+</pre>
+		
+		<pre class="file" id="file1" style="display: none">package cv
+
+import "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+
+func (c *CVHandler) setDefaults(s *store.Store, version uint8) <span class="cov0" title="0">{
+        roPersist := store.Persistent | store.ReadOnly
+
+        // Number, Default, Flags
+        s.SetDefault(1, 3, store.Persistent)   // ADDR: Primary address
+        s.SetDefault(2, 10, store.Persistent)  // MOTOR: Vstart (minimum throttle required to start moving)
+        s.SetDefault(3, 0, store.Persistent)   // MOTOR: Default acceleration rate (0 = immediate)
+        s.SetDefault(4, 0, store.Persistent)   // MOTOR: Default deceleration rate (0 = immediate)
+        s.SetDefault(5, 255, store.Persistent) // MOTOR: Vmax - maximum voltage
+        s.SetDefault(6, 128, store.Persistent) // MOTOR: Vmid - mid-range voltage
+        s.SetDefault(7, version, roPersist)    // SYS: Version number
+        s.SetDefault(8, 0x0D, store.ReadOnly)  // SYS: Manufacturer ID: "Public Domain &amp; DIY Decoders"
+        s.SetDefault(9, 40, store.Persistent)  // MOTOR: PWM frequency in kHz (1-250)
+        s.SetDefault(10, 0, store.Persistent)  // MOTOR: Back EMF motor control cutoff speed
+        s.SetDefault(11, 10, store.Persistent) // SYS: Control packet keepalive timeout in 100ms units
+
+        // Extended address - Top 2 bits of MSB must be 1 and are ignored (min 192, max 231), allowing for any 4 digit number
+        s.SetDefault(17, 0, store.Persistent) // ADDR: MSB
+        s.SetDefault(18, 0, store.Persistent) // ADDR: LSB
+        s.SetDefault(19, 0, store.Persistent) // CONSIST: ADDR: Consist address
+        s.SetDefault(20, 0, store.Persistent) // CONSIST: ADDR: Consist extended address
+
+        s.SetDefault(23, 0, store.Persistent) // MOTOR: No acceleration adjustment
+        s.SetDefault(24, 0, store.Persistent) // MOTOR: No deceleration adjustment
+        s.SetDefault(25, 2, store.Persistent) // MOTOR: Linear speed curve by default FIXME: Check on this
+
+        // CV 29:
+        // Bit 7: 0 = Mobile decoder, 1 = Accessory decoder
+        // Bit 6: Reserved
+        // Bit 5: 0 = Short address mode, 1 = Extended address mode
+        // Bit 4: 0 = CV 2,5,6 speed curve, 1 = CV 25 speed table
+        // Bit 3: 1 = RailCom enabled
+        // Bit 2: 0 = DCC only, 1 = DCC &amp; DC
+        // Bit 1: 0 = 14 speed steps, 1 = 28/128 speed steps
+        // Bit 0: 0 = Forward direction, 1 = Reverse direction
+        s.SetDefault(29, 0b00001010, store.Persistent) // RailCom enabled, 28/128 speed steps
+
+        s.SetDefault(31, 0, store.Volatile) // INDEX: CV index paging MSB (0 is disabled, 1-15 are reserved)
+        s.SetDefault(32, 0, store.Volatile) // INDEX: CV index paging LSB
+        // CV 33-46 are reserved for function mapping, but in a rather restrictive way. Will implement another method elsewhere
+        s.SetDefault(51, 10, store.Persistent)  // MOTOR: Low to high PID gain cutover speed step
+        s.SetDefault(52, 10, store.Persistent)  // MOTOR: Low speed Kp gain (proportional)
+        s.SetDefault(53, 130, store.Persistent) // MOTOR: Max speed EMF voltage
+        s.SetDefault(54, 50, store.Persistent)  // MOTOR: High speed Kp gain (proportional)
+        s.SetDefault(55, 100, store.Persistent) // MOTOR: Ki gain (integral)
+        s.SetDefault(56, 255, store.Persistent) // MOTOR: Low speed PID scaling factor
+
+        s.SetDefault(116, 50, store.Persistent)  // MOTOR: Speed step 1 back EMF measurement interval in 0.1ms steps (50-200)
+        s.SetDefault(117, 150, store.Persistent) // MOTOR: Speed step max back EMF measurement interval in 0.1ms steps (50-200)
+        s.SetDefault(118, 15, store.Persistent)  // MOTOR: Speed step 1 back EMF measurement cutout duration in 0.1ms steps (10-40)
+        s.SetDefault(119, 20, store.Persistent)  // MOTOR: Speed step max back EMF measurement cutout duration in 0.1ms steps (10-40)
+
+        /* FIXME: Cleanup. This would require AUX numbers to be n+2 which is annoying (AUX1/output 3, etc.)
+        // Function mapping
+        s.SetDefault(33, 0b00000001, store.Persistent) // F0f
+        s.SetDefault(34, 0b00000010, store.Persistent) // F0r
+        s.SetDefault(35, 0b00000100, store.Persistent) // F1
+        s.SetDefault(36, 0b00001000, store.Persistent) // F2
+        s.SetDefault(37, 0b00010000, store.Persistent) // F3
+        s.SetDefault(38, 0b00000100, store.Persistent) // F4
+        s.SetDefault(39, 0b00001000, store.Persistent) // F5
+        s.SetDefault(40, 0b00010000, store.Persistent) // F6
+        s.SetDefault(41, 0b00100000, store.Persistent) // F7
+        s.SetDefault(42, 0b01000000, store.Persistent) // F8
+        s.SetDefault(43, 0b00010000, store.Persistent) // F9
+        s.SetDefault(44, 0b00100000, store.Persistent) // F10
+        s.SetDefault(45, 0b01000000, store.Persistent) // F11
+        s.SetDefault(46, 0b10000000, store.Persistent) // F12
+        */
+}</span>
+</pre>
+		
+		<pre class="file" id="file2" style="display: none">package cv
+
+import "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+
+var _ Handler = (*MockHandler)(nil)
+
+type MockHandler struct {
+        returnValue bool
+        store       map[uint16]uint8
+}
+
+func NewMockHandler(returnValue bool, values map[uint16]uint8) *MockHandler <span class="cov0" title="0">{
+        return &amp;MockHandler{
+                returnValue: returnValue,
+                store:       values,
+        }
+}</span>
+
+func (m *MockHandler) SetCV(cv uint16, value uint8) bool <span class="cov0" title="0">{
+        m.store[cv] = value
+        return m.returnValue
+}</span>
+
+func (m *MockHandler) CV(cv uint16) uint8 <span class="cov0" title="0">{
+        return m.store[cv]
+}</span>
+
+func (m *MockHandler) CVOk(cv uint16) (uint8, bool) <span class="cov0" title="0">{
+        return m.store[cv], m.returnValue
+}</span>
+
+func (m *MockHandler) IndexedCV(index uint16, cv uint16) uint8 <span class="cov0" title="0">{
+        return m.store[cv]
+}</span>
+
+func (m *MockHandler) IndexedCVOk(index uint16, cv uint16) (uint8, bool) <span class="cov0" title="0">{
+        return m.store[cv], m.returnValue
+}</span>
+
+func (m *MockHandler) IndexedSet(index uint16, cv uint16, value uint8) bool <span class="cov0" title="0">{
+        return m.returnValue
+}</span>
+
+func (m *MockHandler) IndexedSetSync(index uint16, cv uint16, value uint8) bool <span class="cov0" title="0">{
+        return m.returnValue
+}</span>
+
+func (m *MockHandler) Reset(cv uint16) bool <span class="cov0" title="0">{
+        return m.returnValue
+}</span>
+
+func (m *MockHandler) ResetAll() {<span class="cov0" title="0">
+}</span>
+
+func (m *MockHandler) ProcessChanges() {<span class="cov0" title="0">
+}</span>
+
+func (m *MockHandler) Set(cv uint16, value uint8) bool <span class="cov0" title="0">{
+        return m.returnValue
+}</span>
+
+func (m *MockHandler) SetSync(cv uint16, value uint8) bool <span class="cov0" title="0">{
+        return m.returnValue
+}</span>
+
+func (m *MockHandler) SetDefault(cv uint16, value uint8, flags store.CVFlags) {<span class="cov0" title="0">
+}</span>
+
+func (m *MockHandler) RegisterCallback(cv uint16, fn func(cvNumber uint16, value uint8) bool) {<span class="cov0" title="0">
+}</span>
+
+func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 <span class="cov0" title="0">{
+        return 0
+}</span>
+</pre>
+		
+		<pre class="file" id="file3" style="display: none">//go:build !rp
+
+package dcc
+
+// initPIO is a stub for non-RP platforms
+func initPIO(pioNum int, pin Pin) error <span class="cov0" title="0">{
+        return nil
+}</span>
+
+func (d *Decoder) Reset() {<span class="cov8" title="1">}</span>
+
+func (d *Decoder) SetOpMode(mode opMode) {<span class="cov0" title="0">}</span>
+</pre>
+		
+		<pre class="file" id="file4" style="display: none">package dcc
+
+type FnHandler func(bool)
+
+// Register a function handler
+func (d *Decoder) RegisterFunction(number uint16, fn FnHandler) <span class="cov0" title="0">{
+        d.fnHandlers[number] = append(d.fnHandlers[number], fn)
+}</span>
+
+// Control DCC functions
+func (d *Decoder) callFunction(number uint16, state bool) <span class="cov8" title="1">{
+        if handlers, ok := d.fnHandlers[number]; ok </span><span class="cov0" title="0">{
+                for _, fn := range handlers </span><span class="cov0" title="0">{
+                        fn(state)
+                }</span>
+        } else <span class="cov8" title="1">{
+                // FIXME: Log error?
+                // println("function not found:", number)
+        }</span>
+}
+</pre>
+		
+		<pre class="file" id="file5" style="display: none">package dcc
+
+import (
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
+)
+
+type MessageType int
+
+const (
+        UnknownMsg MessageType = iota
+        ServiceMsg
+        ExtendedMsg
+        AdvancedExtendedMsg
+)
+
+type AddressType int
+
+const (
+        UnknownAddress AddressType = iota
+        BroadcastAddress
+        DirectAddress
+        ConsistAddress
+        IdleAddress
+)
+
+type Message struct {
+        addr    AddressType
+        buf     []byte
+        msgType MessageType
+
+        cv      cv.Handler
+        decoder *Decoder
+
+        cvConfirm map[uint16]uint8
+        lastXPOM  []byte
+}
+
+func NewMessage(cvHandler cv.Handler, decoder *Decoder) *Message <span class="cov8" title="1">{
+        return &amp;Message{
+                buf:       make([]byte, 0, 11),
+                cv:        cvHandler,
+                cvConfirm: make(map[uint16]uint8),
+                decoder:   decoder,
+                lastXPOM:  make([]byte, 0, 8),
+        }
+}</span>
+
+func (m *Message) AddByte(b byte) <span class="cov8" title="1">{
+        m.buf = append(m.buf, b)
+}</span>
+
+func (m *Message) AddBytes(b []byte) <span class="cov8" title="1">{
+        m.buf = append(m.buf, b...)
+}</span>
+
+func (m *Message) Bytes() []byte <span class="cov8" title="1">{
+        return m.buf
+}</span>
+
+func (m *Message) Reset() <span class="cov8" title="1">{
+        m.buf = m.buf[:0]
+        m.msgType = UnknownMsg
+}</span>
+
+func (m *Message) XOR() bool <span class="cov8" title="1">{
+        var xor byte
+        for _, b := range m.buf </span><span class="cov8" title="1">{
+                xor ^= b
+        }</span>
+        <span class="cov8" title="1">return xor == 0</span>
+}
+
+func (m *Message) IsEmpty() bool <span class="cov8" title="1">{
+        return len(m.buf) == 0
+}</span>
+
+func (m *Message) IsFull() bool <span class="cov8" title="1">{
+        return len(m.buf) == cap(m.buf)
+}</span>
+
+func (m *Message) Length() int <span class="cov8" title="1">{
+        return len(m.buf)
+}</span>
+
+func (m *Message) Process() <span class="cov0" title="0">{
+        // FIXME: Implement hard-reset mode
+
+        /* FIXME: Check if this is needed here
+        if m.isResetPacket() {
+                m.decoder.Reset()
+                println("reset packet received")
+                return
+        } */
+
+        if !m.decoder.Snoop &amp;&amp; !m.checkAddress() </span><span class="cov0" title="0">{
+                // Ignore messages not addressed to us
+                return
+        }</span>
+        // FIXME: Make sure we disregard UnknownAddress messages
+
+        <span class="cov0" title="0">for i := range m.buf </span><span class="cov0" title="0">{
+                printUintN(8, uint32(m.buf[i]))
+                print(" ")
+        }</span>
+
+        // Check the message type to determine how to handle it
+        <span class="cov0" title="0">m.msgType = m.messageType()
+
+        switch m.msgType </span>{
+        case ServiceMsg:<span class="cov0" title="0">
+                m.serviceModePacket()</span>
+        case ExtendedMsg:<span class="cov0" title="0">
+                m.extendedPacket()</span>
+        case AdvancedExtendedMsg:<span class="cov0" title="0">
+                m.advancedExtendedPacket()</span>
+        default:<span class="cov0" title="0"></span>
+                // Unknown message type
+        }
+
+        <span class="cov0" title="0">println()</span> // FIXME: Cleanup
+}
+
+func (m *Message) messageType() MessageType <span class="cov8" title="1">{
+        b := m.buf[0]
+
+        if m.decoder.opMode == ServiceMode || m.decoder.svcModeReady </span><span class="cov8" title="1">{
+                if b &gt;= 112 &amp;&amp; b &lt;= 127 </span><span class="cov8" title="1">{
+                        // Received a service mode packet
+                        return ServiceMsg
+                }</span> else<span class="cov0" title="0"> {
+                        // Ignore non-service mode packets while in service mode
+                        return UnknownMsg
+                }</span>
+        }
+
+        <span class="cov8" title="1">if b &lt; 128 || b &gt;= 192 &amp;&amp; b &lt;= 231 </span><span class="cov8" title="1">{
+                // Extended message format
+                return ExtendedMsg
+        }</span> else<span class="cov8" title="1"> if b == 253 || b == 254 </span><span class="cov8" title="1">{
+                // Advanced extended message format
+                return AdvancedExtendedMsg
+        }</span>
+        // We're intentionally ignoring accessory decoder messages for now, may implement later
+        // Basic messages are superseded by extended messages
+        <span class="cov8" title="1">return UnknownMsg</span>
+}
+
+func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) <span class="cov8" title="1">{
+        if len(bytes) &gt; 1 &amp;&amp; m.decoder.speedMode == motor.SpeedMode14 </span><span class="cov0" title="0">{
+                // We're configured for 14 speed mode, ignore 128 speed commands
+                return 1, false, false
+        }</span>
+
+        <span class="cov8" title="1">var speed uint8
+        var reverse bool
+
+        switch len(bytes) </span>{
+        case 1:<span class="cov8" title="1">
+                speed = uint8(bytes[0] &amp; 0x0F)
+                reverse = (bytes[0] &amp; 0b00100000) == 0
+                if m.decoder.speedMode == motor.SpeedMode14 </span>{<span class="cov8" title="1">
+                        // 14-speed mode: 01DCSSSS
+                        // D: Direction (0 = reverse, 1 = forward)
+                        // S: Speed step (0-15)
+                        // C: Ignored
+                        // No changes needed
+                }</span> else<span class="cov8" title="1"> {
+                        // 28-speed mode: 01DLSSSS
+                        // D: Direction (0 = reverse, 1 = forward)
+                        // L: Low bit
+                        // S: Speed step (0-27)
+                        speed = speed&lt;&lt;1 | (bytes[0] &gt;&gt; 4 &amp; 1)
+                        if speed &lt; 4 </span><span class="cov8" title="1">{
+                                // Stop and emergency stop ignore the extra low bit value
+                                speed = bytes[0] &amp; 0x01
+                        }</span> else<span class="cov8" title="1"> {
+                                speed -= 2
+                        }</span>
+                        // 28/128 speed modes are selected by the last speed command received
+                        <span class="cov8" title="1">m.decoder.speedMode = motor.SpeedMode28</span>
+                }
+        case 2:<span class="cov8" title="1">
+                if bytes[0] == 0b00111111 </span><span class="cov8" title="1">{
+                        // 128-speed mode: 00111111 DSSSSSSS
+                        // D: Direction (0 = reverse, 1 = forward)
+                        // S: Speed step (0-127)
+                        speed = bytes[1] &amp; 0x7F
+                        reverse = (bytes[1] &amp; 0x80) == 0
+
+                        // 28/128 speed modes are selected by the last speed command received
+                        m.decoder.speedMode = motor.SpeedMode128
+                }</span> else<span class="cov0" title="0"> {
+                        // FIXME: Error, invalid speed mode
+                        return 1, false, false
+                }</span>
+        default:<span class="cov0" title="0">
+                println("Invalid speed command length")
+                return 1, false, false</span>
+        }
+
+        /*
+                if speed == 0 {
+                        print("speed: stop reverse: ", reverse)
+                } else if speed == 1 {
+                        print("speed: emergency stop reverse: ", reverse)
+                } else {
+                        print("speed: ", speed-1, " reverse: ", reverse)
+                }
+        */
+
+        <span class="cov8" title="1">return speed, reverse, true</span>
+}
+
+func (m *Message) checkAddress() bool <span class="cov8" title="1">{
+        // FIXME: Handle consist addresses (CV19, 21, 22), also in motor package for ndotReverse
+
+        switch m.buf[0] </span>{
+        case 0x00:<span class="cov8" title="1">
+                // Broadcast address
+                m.addr = BroadcastAddress
+                println("broadcast message")
+                return true</span>
+        case 0xFF:<span class="cov8" title="1">
+                // Idle packet, ignore
+                m.addr = IdleAddress</span>
+                // FIXME: Idle packets count as valid data packets to return to operations mode, I think?
+        case 253, 254:<span class="cov0" title="0"></span>
+                // Advanced extended packet format, not supported yet
+        default:<span class="cov8" title="1">
+                // We don't know how to interprest accessory decoder messages
+                if m.buf[0] &gt;= 128 &amp;&amp; m.buf[0] &lt;= 191 </span><span class="cov0" title="0">{
+                        m.addr = UnknownAddress
+                        return false
+                }</span>
+
+                // Check for direct or consist address match
+                <span class="cov8" title="1">if m.addressMatch(m.decoder.address) </span><span class="cov8" title="1">{
+                        m.addr = DirectAddress
+                        return true
+                }</span> else<span class="cov8" title="1"> if m.addressMatch(m.decoder.consistAddress) </span><span class="cov8" title="1">{
+                        m.addr = ConsistAddress
+                        return true
+                }</span>
+
+                // FIXME: Differentiate recognized message types with unrecognized addresses while snooping
+                // No recognized addresses
+                <span class="cov8" title="1">m.addr = UnknownAddress
+                // If we're snooping that's okay anyway
+                return m.decoder.Snoop</span>
+        }
+        <span class="cov8" title="1">return false</span>
+}
+
+// addressMatch checks if the first bytes of the message match the provided buffer
+func (m *Message) addressMatch(b []byte) bool <span class="cov8" title="1">{
+        if len(b) &gt; len(m.buf) </span><span class="cov8" title="1">{
+                return false
+        }</span>
+        <span class="cov8" title="1">for i, v := range b </span><span class="cov8" title="1">{
+                if m.buf[i] != v </span><span class="cov8" title="1">{
+                        return false
+                }</span>
+        }
+        <span class="cov8" title="1">return true</span>
+}
+</pre>
+		
+		<pre class="file" id="file6" style="display: none">package dcc
+
+func (m *Message) advancedExtendedPacket() {<span class="cov0" title="0">
+        // FIXME: To be implemented
+}</span>
+</pre>
+		
+		<pre class="file" id="file7" style="display: none">package dcc
+
+func (m *Message) extendedPacket() bool <span class="cov8" title="1">{
+        // Extended message format
+        l := len(m.buf)
+
+        // First command byte
+        fb := 1
+        switch m.addr </span>{
+        case BroadcastAddress:<span class="cov0" title="0"></span>
+                // Broadcast address is always 1 byte, no change
+        case DirectAddress:<span class="cov8" title="1">
+                fb = len(m.decoder.address)</span>
+        case ConsistAddress:<span class="cov8" title="1">
+                fb = len(m.decoder.consistAddress)</span>
+        }
+
+        // Command type is in the top 3 bits of the first command byte
+        <span class="cov8" title="1">switch m.buf[fb] &gt;&gt; 5 </span>{
+        case 0b000:<span class="cov8" title="1">
+                return m.decoderConsistControlInstruction(m.buf[fb : l-1])</span>
+        case 0b001:<span class="cov8" title="1">
+                return m.advancedOperationInstruction(m.buf[fb : l-1])</span>
+        case 0b010, 0b011:<span class="cov8" title="1">
+                // Speed and Direction Instruction
+                //speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
+                // FIXME: Do stuff with speed and reverse
+                _, _, ok := m.motionCommand(m.buf[fb : l-1])
+                return ok</span>
+        case 0b100:<span class="cov8" title="1">
+                return m.functionGroupOneInstruction(m.buf[fb])</span>
+        case 0b101:<span class="cov8" title="1">
+                return m.functionGroupTwoInstruction(m.buf[fb])</span>
+        case 0b110:<span class="cov8" title="1">
+                return m.featureExpansion(m.buf[fb : l-1])</span>
+        case 0b111:<span class="cov8" title="1">
+                // Don't allow editing CVs from consist-addressed messages
+                if m.addr == ConsistAddress </span><span class="cov8" title="1">{
+                        return false
+                }</span>
+                <span class="cov8" title="1">return m.configVariableAccessInstruction(m.buf[fb : l-1])</span>
+        }
+        <span class="cov0" title="0">return false</span>
+}
+
+func (m *Message) decoderConsistControlInstruction(b []byte) bool <span class="cov8" title="1">{
+        // 0b0000xxxx
+        l := len(b)
+        switch b[0] &gt;&gt; 4 </span>{
+        case 0b0000:<span class="cov8" title="1">
+                // Decoder control 0000xxxx
+                switch b[0] </span>{
+                case 0b00000000:<span class="cov8" title="1">
+                        // Decoder reset packet
+                        // FIXME: Duplicate of existing reset packet logic?
+                        println("reset packet received")
+                        m.decoder.Reset()
+                        return true</span>
+                case 0b00000001:<span class="cov8" title="1">
+                        // Decoder hard reset packet
+                        m.cv.Reset(29)
+                        m.cv.Reset(31)  // CV257-512 index
+                        m.cv.Reset(32)  // CV257-512 index
+                        m.cv.Set(19, 0) // Consist address
+                        m.decoder.Reset()
+                        return true</span>
+                case 0b00000010, 0b00000011:<span class="cov0" title="0"></span>
+                        // Factory test mode, not supported
+                case 0b00001010, 0b00001011:<span class="cov8" title="1">
+                        // Set advanced addressing mode (CV29 bit 5)
+                        cv29 := m.cv.CV(29)
+                        return m.cv.Set(29, (cv29&amp;^0b00100000)|(b[0]&amp;1)&lt;&lt;5)</span>
+                case 0b00001111:<span class="cov0" title="0"></span>
+                        // Decoder ack request
+                        // FIXME: Implement
+                }
+        // 0b0001xxxx
+        case 0b0001:<span class="cov8" title="1">
+                /* Consist control 0001xxxx
+                FIXME: Implement the other logic:
+                When Consist Control is in effect, the decoder will ignore any speed or direction instructions
+                addressed to its normal locomotive address (unless this address is the same as its consist address).
+                190 Speed and direction instructions now apply to the consist address only
+
+                Functions controlled by Function Group One (100) and Function Group Two (101) will continue to
+                respond to the decoder’s baseline address. Functions controlled by instructions 100 and 101 also
+                respond to the consist address if the appropriate bits in CVs 21 and 22 have been activated.
+
+                By default, all forms of Bi-directional communication are not activated in response to commands
+                sent to the consist address until specifically activated by a Decoder Control instruction.
+
+                https://www.nmra.org/sites/default/files/standards/sandrp/DCC/S/s-9.2.1_dcc_extended_packet_formats.pdf
+                Page 5
+                */
+                switch b[0] </span>{
+                case 0b00010010:<span class="cov8" title="1">
+                        // Set consist address
+                        if l &gt; 1 &amp;&amp; b[1] &lt; 128 </span><span class="cov8" title="1">{
+                                return m.cv.Set(19, b[1])
+                        }</span>
+                case 0b00010011:<span class="cov8" title="1">
+                        // Set consist address and reverse direction
+                        if l &gt; 1 </span><span class="cov8" title="1">{
+                                return m.cv.Set(19, b[1]|0x80)
+                        }</span>
+                }
+        }
+        <span class="cov0" title="0">return false</span>
+}
+
+func (m *Message) advancedOperationInstruction(b []byte) bool <span class="cov8" title="1">{
+        // 0b001xxxxx
+        // 128-step speed control
+        switch b[0] </span>{
+        case 0b00111111:<span class="cov8" title="1">
+                // speed, reverse, ok := m.motionCommand(b)
+                // println(speed, reverse) // FIXME: Cleanup
+                // FIXME: Do stuff with speed and reverse
+                _, _, ok := m.motionCommand(b)
+                return ok</span>
+        default:<span class="cov8" title="1">
+                return false</span>
+        }
+}
+
+func (m *Message) functionGroupOneInstruction(b uint8) bool <span class="cov8" title="1">{
+        // Function Group One Instruction
+        // 100DDDD
+        // FL (F0)
+        m.decoder.callFunction(0, b&amp;(1&lt;&lt;4) != 0)
+        // F1-F4
+        for i := uint16(0); i &lt; 4; i++ </span><span class="cov8" title="1">{
+                m.decoder.callFunction(i+1, b&amp;(1&lt;&lt;i) != 0)
+        }</span>
+        <span class="cov8" title="1">return true</span>
+}
+
+func (m *Message) functionGroupTwoInstruction(b uint8) bool <span class="cov8" title="1">{
+        // Function Group Two Instruction
+        // 101SDDDD
+        // Bit 4 (S) is a shift bit. If set to 1, bits 0-3 (D) are F5-F8. If set to 0, bits 0-3 are F9-F12
+        offset := uint16(5)
+        if b&amp;(1&lt;&lt;4) == 0 </span><span class="cov8" title="1">{
+                offset = 9
+        }</span>
+        <span class="cov8" title="1">for i := uint16(0); i &lt; 4; i++ </span><span class="cov8" title="1">{
+                m.decoder.callFunction(i+offset, b&amp;(1&lt;&lt;i) != 0)
+        }</span>
+        <span class="cov8" title="1">return true</span>
+}
+
+func (m *Message) functionGroupNInstruction(n uint16, b uint8) bool <span class="cov8" title="1">{
+        // Function Group N Instruction
+        // Each bit in the command byte represents a function (starting with F13)
+        for i := uint16(0); i &lt; 8; i++ </span><span class="cov8" title="1">{
+                m.decoder.callFunction(i+n, b&amp;(1&lt;&lt;i) != 0)
+        }</span>
+        <span class="cov8" title="1">return true</span>
+}
+
+func (m *Message) featureExpansion(b []byte) bool <span class="cov8" title="1">{
+        // Feature Expansion Instruction
+        // 110GGGGG DDDDDDDD [DDDDDDDD]
+        switch b[0] </span>{
+        case 0b11000000:<span class="cov8" title="1"></span>
+        // Binary state control long form
+        // 32,767 binary states, 0 resets all states to off
+        // 11000000 DLLLLLLL HHHHHHHH
+        // L = 7-bit low byte
+        // H = optional 8-bit high byte (treated as 0 if not present)
+        // D = data bit
+        // FIXME: Implement
+        case 0b11000001:<span class="cov0" title="0"></span>
+        // Model time and date command
+        // Not supported at this time, possibly in the future
+        case 0b11000010:<span class="cov0" title="0"></span>
+        // System time (0-65535 milliseconds)
+        // Not supported at this time, possibly in the future
+        case 0b11011101:<span class="cov0" title="0"></span>
+        // Binary state control short form
+        // 127 binary states, 0 resets all states to off
+        // 11011101 DLLLLLLL
+        // L = 7-bit low byte
+        // D = data bit
+        // FIXME: Implement
+        case 0b11011110:<span class="cov8" title="1">
+                // Functions F13-F20
+                return m.functionGroupNInstruction(13, b[1])</span>
+        case 0b11011111:<span class="cov8" title="1">
+                // Functions F21-F28
+                return m.functionGroupNInstruction(21, b[1])</span>
+        case 0b11011000:<span class="cov8" title="1">
+                // Functions F29-F36
+                return m.functionGroupNInstruction(29, b[1])</span>
+        case 0b11011001:<span class="cov8" title="1">
+                // Functions F37-F44
+                return m.functionGroupNInstruction(37, b[1])</span>
+        case 0b11011010:<span class="cov8" title="1">
+                // Functions F45-F52
+                return m.functionGroupNInstruction(45, b[1])</span>
+        case 0b11011011:<span class="cov8" title="1">
+                // Functions F53-F60
+                return m.functionGroupNInstruction(53, b[1])</span>
+        case 0b11011100:<span class="cov8" title="1">
+                // Functions F61-F68
+                return m.functionGroupNInstruction(61, b[1])</span>
+        }
+        <span class="cov8" title="1">return false</span>
+}
+
+func (m *Message) configVariableAccessInstruction(b []byte) bool <span class="cov8" title="1">{
+        l := len(b)
+        // All CV access commands are at least 2 bytes
+        if l &lt; 2 </span><span class="cov8" title="1">{
+                return false
+        }</span>
+        // Long form - 1110xxxx
+        <span class="cov8" title="1">if b[0]&amp;0xF0 == 0xE0 </span><span class="cov8" title="1">{
+                if l == 3 </span><span class="cov8" title="1">{
+                        // Format is 1110CCAA AAAAAAAA DDDDDDDD
+                        return m.setCVCommand(m.cv.IndexPage(), b)
+                }</span> else<span class="cov8" title="1"> if l &gt; 3 </span><span class="cov8" title="1">{
+                        // XPOM - Extended Programming On Main
+                        // Up to 8 bytes plus short/long address and checksum (max 11 bytes)
+                        // 1110GGSS VVVVVVVV VVVVVVVV VVVVVVVV [DDDDDDDD [DDDDDDDD [DDDDDDDD [DDDDDDDD]]]]
+                        return m.handleXPOM(b)
+                }</span>
+        } else<span class="cov8" title="1"> {
+                // Short form - 1111xxxx
+                switch b[0] </span>{
+                case 0b11110010:<span class="cov8" title="1">
+                        // CV23 Acceleration rate adjustment
+                        return m.cv.Set(23, b[1])</span>
+                case 0b11110011:<span class="cov8" title="1">
+                        // CV24 Deceleration rate adjustment
+                        return m.cv.Set(24, b[1])</span>
+                case 0b11110100:<span class="cov8" title="1">
+                        // Extended address programming (CV17, CV18, CV29)
+                        // Must receive two identical packets to confirm before setting
+                        if l &lt; 3 </span><span class="cov8" title="1">{
+                                return false
+                        }</span>
+                        // Check for confirmed values
+                        <span class="cov8" title="1">if m.cvConfirmCheck(17, b[1]) &amp;&amp; m.cvConfirmCheck(18, b[2]) </span><span class="cov8" title="1">{
+                                // Values confirmed, set the CVs
+                                cv29 := m.cv.CV(29) &amp;^ (1 &lt;&lt; 5) // Clear bit 5
+                                if b[1] &gt;= 192 &amp;&amp; b[1] &lt;= 231 </span><span class="cov8" title="1">{
+                                        // If CV17 is valid, set bit 5 to enable it
+                                        cv29 |= 1 &lt;&lt; 5
+                                }</span>
+                                <span class="cov8" title="1">return m.cv.Set(17, b[1]) &amp;&amp;
+                                        m.cv.Set(18, b[2]) &amp;&amp;
+                                        m.cv.Set(29, cv29)</span>
+                        } else<span class="cov8" title="1"> {
+                                // cvConfirmCheck will store the values for the next packet
+                                return true
+                        }</span>
+                case 0b11110101:<span class="cov8" title="1">
+                        // Indexed CVs (CV257-512), set CV31/32 index values
+                        // Must receive two identical packets to confirm before setting
+                        if l &lt; 3 || b[1] &lt; 16 </span><span class="cov8" title="1">{
+                                // CV31 values &lt; 16 are reserved
+                                return false
+                        }</span>
+                        // Check for confirmed values
+                        <span class="cov8" title="1">if m.cvConfirmCheck(31, b[1]) &amp;&amp; m.cvConfirmCheck(32, b[2]) </span><span class="cov8" title="1">{
+                                // Values confirmed, set the CVs
+                                return m.cv.Set(31, b[1]) &amp;&amp; m.cv.Set(32, b[2])
+                        }</span> else<span class="cov8" title="1"> {
+                                // cvConfirmCheck will store the values for the next packet
+                                return true
+                        }</span>
+                case 0b11110110:<span class="cov8" title="1">
+                        // Consist extended address
+                        // Must receive two identical packets to confirm before setting
+                        if l &lt; 3 </span><span class="cov8" title="1">{
+                                return false
+                        }</span>
+                        // Check for confirmed values
+                        <span class="cov8" title="1">if m.cvConfirmCheck(19, b[1]) &amp;&amp; m.cvConfirmCheck(20, b[2]) </span><span class="cov8" title="1">{
+                                // Values confirmed, set the CVs
+                                return m.cv.Set(19, b[1]) &amp;&amp; m.cv.Set(20, b[2])
+                        }</span> else<span class="cov8" title="1"> {
+                                // cvConfirmCheck will store the values for the next packet
+                                return true
+                        }</span>
+                case 0b11111001:<span class="cov0" title="0"></span>
+                        // Service Mode Decoder Lock S-9.2.3 Appendix B
+                        // Not implemented
+                }
+        }
+
+        <span class="cov8" title="1">return false</span>
+}
+
+// Confirm we've received the same value for a CV twice before setting it
+func (m *Message) cvConfirmCheck(cv uint16, value uint8) bool <span class="cov8" title="1">{
+        value, ok := m.cvConfirm[cv]
+        if ok &amp;&amp; value == value </span><span class="cov8" title="1">{
+                return true
+        }</span>
+        <span class="cov8" title="1">m.cvConfirm[cv] = value
+        return false</span>
+}
+</pre>
+		
+		<pre class="file" id="file8" style="display: none">package dcc
+
+func (m *Message) isResetPacket() bool <span class="cov0" title="0">{
+        return m.buf[0] == 0 &amp;&amp; m.buf[1] == 0 &amp;&amp; len(m.buf) == 3
+}</span>
+
+func (m *Message) serviceModePacket() <span class="cov0" title="0">{
+        m.decoder.SetOpMode(ServiceMode)
+        /* For now, service mode is hotel california. We'll depend on losing power to return to operations mode
+        if time.Now().Sub(m.decoder.lastSvcResetTime) &gt; 20*time.Millisecond {
+                // If it's been more than 20ms since the last reset packet, service mode is no longer ready, back to operations mode
+                // Check to ensure we didn't receive a service mode packet before switching back to operations mode per S-9.2.3C
+                //m.decoder.SetOpMode(UndefinedMode)
+                return
+        } */
+        // 0111CCAA AAAAAAAA DDDDDDDD EEEEEEEE
+        if m.buf[0]&amp;0b11110000 == 0b01110000 </span><span class="cov0" title="0">{
+                // CV programming command
+                if m.setCVCommand(m.cv.IndexPage(), m.buf) </span>{<span class="cov0" title="0">
+                        // FIXME: Acknowledge
+                }</span>
+        }
+}
+
+func (m *Message) setCVCommand(index uint16, b []byte) bool <span class="cov8" title="1">{
+        // CV programming command format
+        // C = command type, A = address, D = data
+        // C: 01 = verify, 11 = write byte
+        // xxxxCCAA AAAAAAAA DDDDDDDD
+        //
+        // C: 10 = bit manipulation
+        // F: 0 = verify, 1 = write
+        // D: bit value
+        // B: bit position
+        // xxxxCCAA AAAAAAAA 111FDBBB
+
+        op := (b[0] &gt;&gt; 2) &amp; 0b11                     // CC
+        cvNum := uint16(b[0]&amp;0b11)&lt;&lt;8 | uint16(b[1]) // AA AAAAAAAA
+        data := b[2]                                 // DDDDDDDD
+
+        ack := false
+        switch op </span>{
+        case 0b01:<span class="cov8" title="1">
+                // Verify byte
+                if v, ok := m.cv.IndexedCVOk(index, cvNum); ok &amp;&amp; v == data </span><span class="cov8" title="1">{
+                        ack = true
+                }</span>
+        case 0b10:<span class="cov8" title="1">
+                // Bit manipulation (write/verify bit)
+                if data&amp;0b11100000 != 0b11100000 </span><span class="cov8" title="1">{
+                        // Invalid command
+                        return false
+                }</span>
+                <span class="cov8" title="1">pos := data &amp; 0b111
+                bit := (data &gt;&gt; 3) &amp; 1
+                v, ok := m.cv.IndexedCVOk(index, cvNum)
+
+                if data&amp;0b10000 == 0 </span><span class="cov8" title="1">{
+                        // Verify
+                        if ok &amp;&amp; (v&gt;&gt;pos)&amp;1 == bit </span><span class="cov8" title="1">{
+                                ack = true
+                        }</span>
+                } else<span class="cov8" title="1"> if ok </span><span class="cov8" title="1">{
+                        // Write
+                        if ok := m.cv.IndexedSetSync(index, cvNum, (v&amp;^(1&lt;&lt;pos))|(bit&lt;&lt;pos)); ok </span><span class="cov8" title="1">{
+                                ack = true
+                        }</span> else<span class="cov0" title="0"> {
+                                println("CV write error")
+                        }</span>
+                } else<span class="cov8" title="1"> {
+                        println("CV not found")
+                }</span>
+        case 0b11:<span class="cov8" title="1">
+                // Write byte
+                if ok := m.cv.IndexedSetSync(index, cvNum, data); ok </span><span class="cov8" title="1">{
+                        ack = true
+                }</span> else<span class="cov8" title="1"> {
+                        println("CV write error")
+                }</span>
+        }
+        <span class="cov8" title="1">return ack</span>
+}
+</pre>
+		
+		<pre class="file" id="file9" style="display: none">package dcc
+
+func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
+        // XPOM - Extended Programming On Main
+        // Up to 8 bytes plus short/long address and checksum (max 11 bytes)
+        // Two identical packets must be received to confirm correctness
+
+        // All XPOM commands are at least 4 bytes
+        if len(b) &lt; 4 </span><span class="cov0" title="0">{
+                return false
+        }</span>
+
+        // Don't process XPOM commands addressed to the consist address
+        <span class="cov8" title="1">if m.addr == ConsistAddress </span><span class="cov0" title="0">{
+                return false
+        }</span>
+
+        // Check for identical packets
+        <span class="cov8" title="1">match := false
+        if len(b) == len(m.lastXPOM) </span><span class="cov0" title="0">{
+                match = true
+                for i, v := range b </span><span class="cov0" title="0">{
+                        if v != m.lastXPOM[i] </span><span class="cov0" title="0">{
+                                match = false
+                                break</span>
+                        }
+                }
+        }
+        // If we don't have a match, store this one and wait for the next
+        // Technically any addressed messages received including broadcasts should invalidate
+        // lastXPOM but for now we'll just make sure the last received XPOM message is identical
+        <span class="cov8" title="1">if !match </span><span class="cov8" title="1">{
+                m.lastXPOM = m.lastXPOM[:0]
+                for _, v := range b </span><span class="cov8" title="1">{
+                        m.lastXPOM = append(m.lastXPOM, v)
+                }</span>
+                <span class="cov8" title="1">return false</span>
+        }
+
+        // 1110CCSS AAAAAAAA AAAAAAAA AAAAAAAA [DDDDDDDD [DDDDDDDD [DDDDDDDD [DDDDDDDD]]]]
+        // CC = Command
+        // SS = Sequence number
+        // A = CV Number (CV31 index, CV32 index, Relative CV Number)
+        // D = Data
+
+        // Commands:
+        // 01 = read bytes
+        // 11 = write bytes
+        // 10 = write bits
+
+        // seq := b[0] &amp; 0b11 // FIXME: What is this for?
+        // Find in https://www.nmra.org/sites/default/files/standards/sandrp/Draft/DCC/s-9.3.2_bi-directional_communication.pdf
+        <span class="cov0" title="0">index := m.cv.IndexPage(b[1], b[2])
+        switch (b[0] &gt;&gt; 2) &amp; 0b11 </span>{
+        case 0b01:<span class="cov0" title="0"></span>
+                // Read bytes
+                // All XPOM commands respond with four consecutive CV values
+                // This one just doesn't write anything
+        case 0b11:<span class="cov0" title="0">
+                // Write bytes
+                for i, v := range b[4:] </span><span class="cov0" title="0">{
+                        if !m.cv.IndexedSet(index, uint16(b[3])+uint16(i), v) </span><span class="cov0" title="0">{
+                                return false
+                        }</span>
+                }
+        case 0b10:<span class="cov0" title="0">
+                // Write bits
+                if len(b) &lt; 5 </span><span class="cov0" title="0">{
+                        return false
+                }</span>
+                <span class="cov0" title="0">m.setCVCommand(index, b[3:])</span>
+        }
+
+        // Return the four bytes via BiDi communication
+        <span class="cov0" title="0">for i := uint16(0); i &lt; 4; i++ </span><span class="cov0" title="0">{
+                // FIXME: Do BiDi communication
+                m.cv.IndexedCV(index, uint16(b[3])+i)
+        }</span>
+
+        <span class="cov0" title="0">return true</span>
+}
+</pre>
+		
+		<pre class="file" id="file10" style="display: none">package dcc
+
+import "runtime"
+
+func (d *Decoder) Monitor() <span class="cov0" title="0">{
+        var bit int
+        var out byte
+        var ticks uint32
+
+        msg := NewMessage(d.cv, d)
+
+        i := 0
+        state := Preamble
+        for </span><span class="cov0" title="0">{
+                if !d.sm.IsRxFIFOEmpty() </span><span class="cov0" title="0">{
+                        // Two cycles per loop / 2 MHz clock = 1 microsecond per tick
+                        ticks = d.sm.RxGet()
+
+                        // Make sure the bit is within the valid ranges
+                        bit = 0
+                        if ticks &gt;= tr1Min &amp;&amp; ticks &lt;= tr1Max </span><span class="cov0" title="0">{
+                                bit = 1
+                        }</span> else<span class="cov0" title="0"> if ticks &lt; tr0Min || ticks &gt; tr0Max </span><span class="cov0" title="0">{
+                                // Noise
+                                continue</span>
+                        }
+
+                        // Increment the bit counter
+                        <span class="cov0" title="0">i++
+
+                        switch state </span>{
+                        case Preamble:<span class="cov0" title="0">
+                                // Waiting for the preamble count to be satisfied
+                                if bit == 0 </span><span class="cov0" title="0">{
+                                        if i &gt;= preambleLength </span><span class="cov0" title="0">{
+                                                // Preamble terminator bit received, ready to decode data
+                                                state = Bits
+                                                i = 0
+                                        }</span> else<span class="cov0" title="0"> {
+                                                // Reset the bit counter, we got a premature terminating bit
+                                                i = 0
+                                        }</span>
+                                }
+                        case Bits:<span class="cov0" title="0">
+                                // Shift in a zero bit
+                                out &lt;&lt;= 1
+                                // Set it to 1
+                                if bit == 1 </span><span class="cov0" title="0">{
+                                        out |= 1
+                                }</span>
+                                // Next bit will be a terminator, save byte and prep for the next loop
+                                <span class="cov0" title="0">if i == 8 </span><span class="cov0" title="0">{
+                                        msg.AddByte(out)
+                                        out = 0
+                                        state = Terminator
+                                }</span>
+                        case Terminator:<span class="cov0" title="0">
+                                i = 0
+                                state = Bits
+
+                                if bit == 1 </span><span class="cov0" title="0">{
+                                        // End of message terminator bit received, wait for a preamble next loop
+                                        state = Preamble
+
+                                        if !msg.XOR() </span><span class="cov0" title="0">{
+                                                for _, b := range msg.Bytes() </span><span class="cov0" title="0">{
+                                                        printByte(b)
+                                                        print(" ")
+                                                }</span>
+                                                <span class="cov0" title="0">println("checksum error")</span>
+                                        } else<span class="cov0" title="0"> {
+                                                msg.Process()
+                                        }</span>
+
+                                        // Reset the message buffer for the next message
+                                        <span class="cov0" title="0">msg.Reset()</span>
+                                }
+                        default:<span class="cov0" title="0">
+                                println("ERROR: invalid decoder state: ", state)
+                                state = Preamble
+                                msg.Reset()</span>
+                        }
+                }
+                <span class="cov0" title="0">runtime.Gosched()</span>
+        }
+}
+
+// Print a byte as bits
+func printByte(b byte) <span class="cov0" title="0">{
+        for i := 7; i &gt;= 0; i-- </span><span class="cov0" title="0">{
+                if b&amp;(1&lt;&lt;i) != 0 </span><span class="cov0" title="0">{
+                        print("1")
+                }</span> else<span class="cov0" title="0"> {
+                        print("0")
+                }</span>
+        }
+}
+
+// Print the n leftmost bits of b as a binary number
+func printUintN(n int, b uint32) <span class="cov0" title="0">{
+        for i := n - 1; i &gt;= 0; i-- </span><span class="cov0" title="0">{
+                if b&amp;(1&lt;&lt;i) != 0 </span><span class="cov0" title="0">{
+                        print("1")
+                }</span> else<span class="cov0" title="0"> {
+                        print("0")
+                }</span>
+        }
+}
+</pre>
+		
+		<pre class="file" id="file11" style="display: none">//go:build !rp
+
+package hal
+
+type HAL struct {
+        pins map[string]Pin
+}
+
+type Pin interface {
+}
+
+// Stub for non-RP platforms
+func NewHAL() *HAL <span class="cov0" title="0">{
+        return &amp;HAL{}
+}</span>
+
+// initI2SPIO is a stub for non-RP platforms
+func (h *HAL) initI2SPIO(_ int, _, _ Pin) (I2S, error) <span class="cov0" title="0">{
+        return nil, nil
+}</span>
+</pre>
+		
+		<pre class="file" id="file12" style="display: none">package hal
+
+type I2S interface {
+        SetSampleFrequency(f uint32) error
+        WriteMono(data []uint16) (int, error)
+}
+
+func (h *HAL) InitI2S() error <span class="cov0" title="0">{
+        // LRCLKPin is expected to be BCLKPin + 1
+        i2s, err := h.initI2SPIO(0, h.pins["i2sDIN"], h.pins["i2sBLCK"])
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        // FIXME: Make configurable
+        <span class="cov0" title="0">i2s.SetSampleFrequency(44100) // FIXME: Use 48kHz or 96kHz for ultrasonic frequencies
+
+        /* FIXME: Implement
+        i2s.WriteStereo(data)
+        }
+        */
+        return nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file13" style="display: none">package iir
+
+type IIRFilter struct {
+        Alpha float32
+        empty bool
+        last  float32
+}
+
+func NewIIRFilter(alpha float32) *IIRFilter <span class="cov0" title="0">{
+        return &amp;IIRFilter{
+                Alpha: alpha,
+                empty: true,
+                last:  0,
+        }
+}</span>
+
+func (f *IIRFilter) Filter(values ...float32) float32 <span class="cov0" title="0">{
+        if f.empty &amp;&amp; len(values) &gt; 0 </span><span class="cov0" title="0">{
+                f.last = values[0]
+                f.empty = false
+        }</span>
+        <span class="cov0" title="0">for _, value := range values </span><span class="cov0" title="0">{
+                f.last = f.Alpha*f.last + (1-f.Alpha)*value
+        }</span>
+        <span class="cov0" title="0">return f.last</span>
+}
+
+func (f *IIRFilter) Output() float32 <span class="cov0" title="0">{
+        return f.last
+}</span>
+
+func (f *IIRFilter) Reset() <span class="cov0" title="0">{
+        f.empty = true
+        f.last = 0
+}</span>
+</pre>
+		
+		<pre class="file" id="file14" style="display: none">//go:build !rp
+
+package store
+
+func (c *Store) initFlash() error <span class="cov8" title="1">{
+        return nil
+}</span>
+
+func (c *Store) persist(index, cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        return true
+}</span>
+
+func (c *Store) ReadCVFromFlash(index, cvNumber uint16) (uint8, bool) <span class="cov0" title="0">{
+        return 0, true
+}</span>
+</pre>
+		
+		<pre class="file" id="file15" style="display: none">package store
+
+import (
+        "tinygo.org/x/tinyfs"
+)
+
+// CVFlags uses a bitmap for efficient storage and checking
+type CVFlags uint8
+
+const (
+        Volatile   CVFlags = 0         // No flags
+        Dirty      CVFlags = 1 &lt;&lt; iota // CV has been written to
+        ReadOnly                       // CV is read-only
+        Persistent                     // CV should be saved to non-volatile memory
+)
+
+// Data holds the value, default, and flags for a single CV
+type Data struct {
+        Value   uint8
+        Default uint8
+        Flags   CVFlags
+}
+
+type Store struct {
+        // Store is our map of CV number to CVData
+        // uint16 because 64kV ought to be enough for anybody
+        data      map[uint16]Data
+        fs        tinyfs.Filesystem
+        index     uint16
+        indexFile string
+}
+
+/* FIXME: Implement this?
+- After Delay:  You could use a time.Timer to implement a delay, resetting the timer on each CV write.
+- On Demand:  This would be triggered by your DCC command parsing logic.
+- Combination:  Combine the ticker with a "last write time" check.  This is the most robust approach.
+
+func StartCVProcessingTimer() {
+        ticker := time.NewTicker(50 * time.Millisecond)
+        go func() {
+                for range ticker.C {
+                        ProcessCVChanges()
+                }
+        }()
+}
+*/
+
+// NewStore sets up the CV store and mounts the filesystem
+func NewStore() *Store <span class="cov8" title="1">{
+        c := &amp;Store{
+                data: make(map[uint16]Data, 256),
+        }
+
+        err := c.initFlash()
+        if err != nil </span><span class="cov0" title="0">{
+                println("could not initialize flash: " + err.Error())
+        }</span>
+
+        <span class="cov8" title="1">return c</span>
+}
+
+// SetDefault sets the value, default value and flags for a CV
+func (c *Store) SetDefault(cvNumber uint16, defaultValue uint8, flags CVFlags) <span class="cov8" title="1">{
+        c.data[cvNumber] = Data{
+                Value:   defaultValue,
+                Default: defaultValue,
+                Flags:   flags,
+        }
+}</span>
+
+// SetReadOnly sets a CV to read-only
+func (c *Store) SetReadOnly(cvNumber uint16) <span class="cov8" title="1">{
+        data, ok := c.data[cvNumber]
+        if !ok </span><span class="cov0" title="0">{
+                return // CV not found or unused
+        }</span>
+        <span class="cov8" title="1">data.Flags |= ReadOnly
+        c.data[cvNumber] = data</span>
+}
+
+// CV retrieves the value of a CV
+func (c *Store) CV(cvNumber uint16) (uint8, bool) <span class="cov8" title="1">{
+        data, ok := c.data[cvNumber]
+        if !ok </span><span class="cov0" title="0">{
+                return 0, false // CV not found or unused
+        }</span>
+        <span class="cov8" title="1">return data.Value, true</span>
+}
+
+// IndexedCV retrieves the value of a CV using the provided index
+// Does not check whether or not the CV is valid, only if the read succeeded
+func (c *Store) IndexedCV(index, cvNumber uint16) (uint8, bool) <span class="cov0" title="0">{
+        if index == c.index </span><span class="cov0" title="0">{
+                return c.CV(cvNumber)
+        }</span>
+        <span class="cov0" title="0">return c.ReadCVFromFlash(index, cvNumber)</span>
+}
+
+// Set sets the value of a CV, marking it as dirty if it's not read-only
+func (c *Store) Set(cvNumber uint16, value uint8) bool <span class="cov8" title="1">{
+        data, ok := c.data[cvNumber]
+        if (data.Flags &amp; ReadOnly) != 0 </span><span class="cov8" title="1">{
+                return false // CV is read-only
+        }</span>
+        <span class="cov8" title="1">if !ok || data.Value != value </span><span class="cov8" title="1">{ // Only update if the value is different or key is missing
+                data.Value = value
+                data.Flags |= Dirty     // Mark as dirty
+                c.data[cvNumber] = data // Store back into the map
+        }</span>
+
+        <span class="cov8" title="1">return true</span>
+}
+
+// Reset resets a single CV to its default value
+func (c *Store) Reset(cvNumber uint16) bool <span class="cov8" title="1">{
+        data, ok := c.data[cvNumber]
+        if !ok </span><span class="cov0" title="0">{
+                return false // CV not found or unused
+        }</span>
+        <span class="cov8" title="1">if data.Value != data.Default </span><span class="cov8" title="1">{ // Only update and mark dirty if needed
+                data.Value = data.Default
+                data.Flags |= Dirty
+                c.data[cvNumber] = data
+        }</span>
+        <span class="cov8" title="1">return true</span>
+}
+
+// ResetAllCVs resets all used CVs to their default values
+func (c *Store) ResetAll() <span class="cov8" title="1">{
+        for cvNumber := range c.data </span><span class="cov8" title="1">{
+                c.Reset(cvNumber)
+        }</span>
+}
+
+// ProcessChanges iterates through the CV table and processes any dirty CVs
+// FIXME: Implement an index of handlers for each CV?
+func (c *Store) ProcessChanges() <span class="cov8" title="1">{
+        for cvNumber, data := range c.data </span><span class="cov8" title="1">{
+                if (data.Flags &amp; Dirty) != 0 </span><span class="cov8" title="1">{
+                        // Process the change based on the CV number
+                        switch cvNumber </span>{
+                        // case 1: // Direction
+                        //         SetMotorDirection(data.Value)
+                        // case 3: // Acceleration
+                        //         SetAccelerationRate(data.Value)
+                        // case 4: // Deceleration
+                        //         SetDecelerationRate(data.Value)
+                        // case 29: // Configuration Variable 1
+                        //         UpdateConfiguration(data.Value)
+                        // ... handle other CVs ...
+                        default:<span class="cov8" title="1"></span>
+                                // Handle unknown or unsupported changed CVs
+                        }
+
+                        // Clear the dirty flag
+                        <span class="cov8" title="1">data.Flags &amp;^= Dirty    // Use bitwise AND NOT to clear the flag
+                        c.data[cvNumber] = data // Store back into the map
+
+                        // If persistent, save to flash
+                        if (data.Flags &amp; Persistent) != 0 </span><span class="cov0" title="0">{
+                                c.Persist(cvNumber, data.Value)
+                        }</span>
+                }
+        }
+}
+
+// Persist sets a CV value and immediately writes it to onboard flash
+func (c *Store) Persist(cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        // Since this is for the current index, also set the current value
+        c.Set(cvNumber, value)
+        return c.persist(c.index, cvNumber, value)
+}</span>
+
+// IndexedPersist writes a CV value to onboard flash using the provided index
+func (c *Store) IndexedPersist(index, cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
+        return c.persist(index, cvNumber, value)
+}</span>
+</pre>
+		
+		</div>
+	</body>
+	<script>
+	(function() {
+		var files = document.getElementById('files');
+		var visible;
+		files.addEventListener('change', onChange, false);
+		function select(part) {
+			if (visible)
+				visible.style.display = 'none';
+			visible = document.getElementById(part);
+			if (!visible)
+				return;
+			files.value = part;
+			visible.style.display = 'block';
+			location.hash = part;
+		}
+		function onChange() {
+			select(files.value);
+			window.scrollTo(0, 0);
+		}
+		if (location.hash != "") {
+			select(location.hash.substr(1));
+		}
+		if (!visible) {
+			select("file0");
+		}
+	})();
+	</script>
+</html>

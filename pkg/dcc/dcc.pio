@@ -1,0 +1,33 @@
+; Count the number of cycles in the low half of a square wave input
+; and publish the count to the FIFO
+
+.program dcc
+
+; Wait for the high part of the wave to pass before timing the low half
+wait_restart:
+    jmp pin, wait_restart
+
+loop:
+    ; Publish the cycle count when the wave goes high again
+    jmp pin, publish
+    ; One must imagine the scratch register happy
+    jmp x-- loop
+
+publish:
+    ; Invert the "negative" counter back to positive and publish the count
+    mov isr, ~x
+    push noblock
+
+    ; Reset counter to inverse-zero (all 1s) and wait to start again
+    set x, 0
+    jmp x-- wait_restart
+
+% go {
+//go:build rp
+
+package dcc
+
+import (
+	pio "github.com/tinygo-org/pio/rp2-pio"
+)
+%}
