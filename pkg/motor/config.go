@@ -35,6 +35,10 @@ func (m *Motor) CVCallback() cv.CVCallbackFunc {
 			// Update PWM frequency
 			m.setPWMFreq(uint64(value) * machine.KHz)
 
+		case 10:
+			// Back EMF motor control cutoff speed
+			// TODO: Implement this
+
 		case 29:
 			// CV 29:
 			// Bits 7-5 are not relevant here
@@ -58,11 +62,12 @@ func (m *Motor) CVCallback() cv.CVCallbackFunc {
 			// Max speed EMF voltage
 			m.emfMax = float32(value) / 100
 
-		case 51, 52, 54, 55:
+		case 51, 52, 54, 55, 56:
 			// CV51 Kp gain cutover speed step
 			// CV52 Low speed Kp gain (proportional)
 			// CV54 High speed Kp gain (proportional)
 			// CV55 Ki gain (integral)
+			// CV56 Low speed PID scaling factor
 			defer m.updatePIDConfig() // FIXME: Is this the right idea? Not sure how to handle high/low speed switch
 
 		case 65:
@@ -142,7 +147,7 @@ func (m *Motor) calculateAccelDecelRates() {
 	m.decelRate = max(0, (decelBase+decelAdj)*0.896/float32(m.speedMode))
 }
 
-// updatePIDConfig updates the PID controller based on CVs 51, 52, 54, and 55
+// updatePIDConfig updates the PID controller based on CVs 51, 52, 54, 55, and 56
 func (m *Motor) updatePIDConfig() {
 	// Get the cutover speed step
 	m.kpCutover = m.cv[51]

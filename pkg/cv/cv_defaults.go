@@ -39,7 +39,6 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		c.cvStore.SetDefault(22, 0, store.Persistent) // CONSIST: Consist address function activation F0f, F0r, F9-F12 // FIXME: Implement this
 		c.cvStore.SetDefault(23, 0, store.Persistent) // MOTOR: No acceleration adjustment
 		c.cvStore.SetDefault(24, 0, store.Persistent) // MOTOR: No deceleration adjustment
-		c.cvStore.SetDefault(25, 2, store.Persistent) // MOTOR: Linear speed curve by default FIXME: Check on this
 
 		// CV 28:
 		// Used to configure decoder’s Bi-Directional communication characteristics when CV29-Bit 3 is set
@@ -62,7 +61,7 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		c.cvStore.SetDefault(30, 0, store.Volatile) // ERROR: Error code
 		c.cvStore.SetDefault(31, 0, store.Volatile) // INDEX: CV index paging MSB (0 is disabled, 1-15 are reserved)
 		c.cvStore.SetDefault(32, 0, store.Volatile) // INDEX: CV index paging LSB
-		// CV 33-46 are reserved for function mapping, but in a rather restrictive way. Will implement another method elsewhere
+
 		c.cvStore.SetDefault(51, 10, store.Persistent)  // MOTOR: Low to high PID gain cutover speed step
 		c.cvStore.SetDefault(52, 10, store.Persistent)  // MOTOR: Low speed Kp gain (proportional)
 		c.cvStore.SetDefault(53, 130, store.Persistent) // MOTOR: Max speed EMF voltage
@@ -70,39 +69,38 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		c.cvStore.SetDefault(55, 100, store.Persistent) // MOTOR: Ki gain (integral)
 		c.cvStore.SetDefault(56, 255, store.Persistent) // MOTOR: Low speed PID scaling factor
 
-		// TODO: Implement
-		// c.cvStore.SetDefault(65, 0, store.Persistent) // MOTOR: Startup kick to overcome static friction from a stop to speed step 1
-		c.cvStore.SetDefault(66, 128, store.Persistent) // MOTOR: Forward trim FIXME: Implement
+		c.cvStore.SetDefault(65, 0, store.Persistent)   // MOTOR: Startup kick to overcome static friction from a stop to speed step 1
+		c.cvStore.SetDefault(66, 128, store.Persistent) // MOTOR: Forward trim
 		// CV67-CV94: Speed table
-		c.cvStore.SetDefault(67, 0, store.Persistent)   // MOTOR: Speed 1 FIXME: Implement
-		c.cvStore.SetDefault(68, 0, store.Persistent)   // MOTOR: Speed 2 FIXME: Implement
-		c.cvStore.SetDefault(69, 0, store.Persistent)   // MOTOR: Speed 3 FIXME: Implement
-		c.cvStore.SetDefault(70, 0, store.Persistent)   // MOTOR: Speed 4 FIXME: Implement
-		c.cvStore.SetDefault(71, 0, store.Persistent)   // MOTOR: Speed 5 FIXME: Implement
-		c.cvStore.SetDefault(72, 0, store.Persistent)   // MOTOR: Speed 6 FIXME: Implement
-		c.cvStore.SetDefault(73, 0, store.Persistent)   // MOTOR: Speed 7 FIXME: Implement
-		c.cvStore.SetDefault(74, 0, store.Persistent)   // MOTOR: Speed 8 FIXME: Implement
-		c.cvStore.SetDefault(75, 0, store.Persistent)   // MOTOR: Speed 9 FIXME: Implement
-		c.cvStore.SetDefault(76, 0, store.Persistent)   // MOTOR: Speed 10 FIXME: Implement
-		c.cvStore.SetDefault(77, 0, store.Persistent)   // MOTOR: Speed 11 FIXME: Implement
-		c.cvStore.SetDefault(78, 0, store.Persistent)   // MOTOR: Speed 12 FIXME: Implement
-		c.cvStore.SetDefault(79, 0, store.Persistent)   // MOTOR: Speed 13 FIXME: Implement
-		c.cvStore.SetDefault(80, 0, store.Persistent)   // MOTOR: Speed 14 FIXME: Implement
-		c.cvStore.SetDefault(81, 0, store.Persistent)   // MOTOR: Speed 15 FIXME: Implement
-		c.cvStore.SetDefault(82, 0, store.Persistent)   // MOTOR: Speed 16 FIXME: Implement
-		c.cvStore.SetDefault(83, 0, store.Persistent)   // MOTOR: Speed 17 FIXME: Implement
-		c.cvStore.SetDefault(84, 0, store.Persistent)   // MOTOR: Speed 18 FIXME: Implement
-		c.cvStore.SetDefault(85, 0, store.Persistent)   // MOTOR: Speed 19 FIXME: Implement
-		c.cvStore.SetDefault(86, 0, store.Persistent)   // MOTOR: Speed 20 FIXME: Implement
-		c.cvStore.SetDefault(87, 0, store.Persistent)   // MOTOR: Speed 21 FIXME: Implement
-		c.cvStore.SetDefault(88, 0, store.Persistent)   // MOTOR: Speed 22 FIXME: Implement
-		c.cvStore.SetDefault(89, 0, store.Persistent)   // MOTOR: Speed 23 FIXME: Implement
-		c.cvStore.SetDefault(90, 0, store.Persistent)   // MOTOR: Speed 24 FIXME: Implement
-		c.cvStore.SetDefault(91, 0, store.Persistent)   // MOTOR: Speed 25 FIXME: Implement
-		c.cvStore.SetDefault(92, 0, store.Persistent)   // MOTOR: Speed 26 FIXME: Implement
-		c.cvStore.SetDefault(93, 0, store.Persistent)   // MOTOR: Speed 27 FIXME: Implement
-		c.cvStore.SetDefault(94, 0, store.Persistent)   // MOTOR: Speed 28 FIXME: Implement
-		c.cvStore.SetDefault(95, 128, store.Persistent) // MOTOR: Reverse trim FIXME: Implement
+		c.cvStore.SetDefault(67, 0, store.Persistent)   // MOTOR: Speed 1
+		c.cvStore.SetDefault(68, 0, store.Persistent)   // MOTOR: Speed 2
+		c.cvStore.SetDefault(69, 0, store.Persistent)   // MOTOR: Speed 3
+		c.cvStore.SetDefault(70, 0, store.Persistent)   // MOTOR: Speed 4
+		c.cvStore.SetDefault(71, 0, store.Persistent)   // MOTOR: Speed 5
+		c.cvStore.SetDefault(72, 0, store.Persistent)   // MOTOR: Speed 6
+		c.cvStore.SetDefault(73, 0, store.Persistent)   // MOTOR: Speed 7
+		c.cvStore.SetDefault(74, 0, store.Persistent)   // MOTOR: Speed 8
+		c.cvStore.SetDefault(75, 0, store.Persistent)   // MOTOR: Speed 9
+		c.cvStore.SetDefault(76, 0, store.Persistent)   // MOTOR: Speed 10
+		c.cvStore.SetDefault(77, 0, store.Persistent)   // MOTOR: Speed 11
+		c.cvStore.SetDefault(78, 0, store.Persistent)   // MOTOR: Speed 12
+		c.cvStore.SetDefault(79, 0, store.Persistent)   // MOTOR: Speed 13
+		c.cvStore.SetDefault(80, 0, store.Persistent)   // MOTOR: Speed 14
+		c.cvStore.SetDefault(81, 0, store.Persistent)   // MOTOR: Speed 15
+		c.cvStore.SetDefault(82, 0, store.Persistent)   // MOTOR: Speed 16
+		c.cvStore.SetDefault(83, 0, store.Persistent)   // MOTOR: Speed 17
+		c.cvStore.SetDefault(84, 0, store.Persistent)   // MOTOR: Speed 18
+		c.cvStore.SetDefault(85, 0, store.Persistent)   // MOTOR: Speed 19
+		c.cvStore.SetDefault(86, 0, store.Persistent)   // MOTOR: Speed 20
+		c.cvStore.SetDefault(87, 0, store.Persistent)   // MOTOR: Speed 21
+		c.cvStore.SetDefault(88, 0, store.Persistent)   // MOTOR: Speed 22
+		c.cvStore.SetDefault(89, 0, store.Persistent)   // MOTOR: Speed 23
+		c.cvStore.SetDefault(90, 0, store.Persistent)   // MOTOR: Speed 24
+		c.cvStore.SetDefault(91, 0, store.Persistent)   // MOTOR: Speed 25
+		c.cvStore.SetDefault(92, 0, store.Persistent)   // MOTOR: Speed 26
+		c.cvStore.SetDefault(93, 0, store.Persistent)   // MOTOR: Speed 27
+		c.cvStore.SetDefault(94, 0, store.Persistent)   // MOTOR: Speed 28
+		c.cvStore.SetDefault(95, 128, store.Persistent) // MOTOR: Reverse trim
 
 		c.cvStore.SetDefault(105, 0, store.Persistent) // MISC: User identification number
 		c.cvStore.SetDefault(106, 0, store.Persistent) // MISC: User identification number
