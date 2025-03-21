@@ -46,8 +46,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		c.cvStore.SetDefault(18, 0, store.Persistent) // ADDR: LSB
 		c.cvStore.SetDefault(19, 0, store.Persistent) // CONSIST: ADDR: Consist address
 		c.cvStore.SetDefault(20, 0, store.Persistent) // CONSIST: ADDR: Consist extended address
-		c.cvStore.SetDefault(21, 0, store.Persistent) // CONSIST: Consist address function activation F1-F8 // FIXME: Implement this
-		c.cvStore.SetDefault(22, 0, store.Persistent) // CONSIST: Consist address function activation F0f, F0r, F9-F12 // FIXME: Implement this
+		c.cvStore.SetDefault(21, 0, store.Persistent) // CONSIST: Consist address function activation F1-F8
+		c.cvStore.SetDefault(22, 0, store.Persistent) // CONSIST: Consist address function activation F0f, F0r, F9-F12
 		c.cvStore.SetDefault(23, 0, store.Persistent) // MOTOR: No acceleration adjustment
 		c.cvStore.SetDefault(24, 0, store.Persistent) // MOTOR: No deceleration adjustment
 
