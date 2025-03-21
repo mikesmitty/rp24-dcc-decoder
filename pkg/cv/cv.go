@@ -88,12 +88,11 @@ func (c *CVHandler) IndexPage(indexCVs ...uint8) uint16 {
 }
 
 func (c *CVHandler) CV(cvNumber uint16) uint8 {
-	v, _ := c.CVOk(cvNumber)
-	return v
+	return c.IndexedCV(c.IndexPage(), cvNumber)
 }
 
 func (c *CVHandler) CVOk(cvNumber uint16) (uint8, bool) {
-	return c.CVOk(cvNumber)
+	return c.IndexedCVOk(c.IndexPage(), cvNumber)
 }
 
 // IndexedCV returns the value of a CV given an index page and CV number
@@ -122,14 +121,23 @@ func (c *CVHandler) Set(cvNumber uint16, value uint8) bool {
 
 // SetSync sets a CV and does not return until it is persisted to flash
 func (c *CVHandler) SetSync(cvNumber uint16, value uint8) bool {
-	return c.SetSync(cvNumber, value)
+	ok := c.Set(cvNumber, value)
+	if !ok {
+		return false
+	}
+	return c.cvStore.Persist(cvNumber, value)
 }
 
 // IndexedSet sets a CV value given a paging index and allows it to be written to flash in batches
 func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
-	// Check if the CV exists first. Unset CVs are not allowed to be set
-	// FIXME: We are the arbiter of what is allowed to be set, check against our cv bitmaps
-	prev, ok := c.cvStore.CV(cvNumber)
+	// Ignore indexes beyond those we support
+	if index > maxCVIndexPage {
+		return false
+	}
+
+	// Check if the CV exists. Unset CVs are not allowed to be set
+	// TODO: Need some way of checking if a CV in another index is valid before using higher level CVs
+	prev, ok := c.IndexedCVOk(index, cvNumber)
 	if !ok {
 		return false
 	}
@@ -151,7 +159,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 			return false
 		}
 	}
-	return c.cvStore.Set(cvNumber, value)
+	return c.IndexedSet(index, cvNumber, value)
 }
 
 // IndexedSetSync sets a CV given a paging index and does not return until it is persisted to flash

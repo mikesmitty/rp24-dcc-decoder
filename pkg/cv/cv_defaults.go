@@ -1,11 +1,22 @@
 package cv
 
-import "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+import (
+	"errors"
+
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+)
 
 // Save the current version to flash in case we decide to change the storage format or update logic
 const roPersist = store.Persistent | store.ReadOnly
 
+const maxCVIndexPage = 0
+
 func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
+	index := c.IndexPage(cv31, cv32)
+	if index > maxCVIndexPage {
+		return errors.New("invalid index page")
+	}
+
 	// Persist any remaining dirty flags
 	if ok := c.cvStore.ProcessChanges(); !ok {
 		// Going to not consider this a critical error at least for now
@@ -14,7 +25,7 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 
 	// Clear out the existing CVs and load the new defaults
 	c.cvStore.Clear()
-	switch c.IndexPage(cv31, cv32) {
+	switch index {
 	// case 0
 	default:
 		// Number, Default, Flags
