@@ -20,10 +20,9 @@ func NewDecoder(cvHandler cv.Handler, pioNum int, pin machine.Pin) (*Decoder, er
 		return nil, err
 	}
 
-	// FIXME: Cleanup
-	// d.address[0] = 0xC0
-	// d.address[1] = 150
-	d.SetAddress(150) // FIXME: Testing
+	// FIXME: Handle setting version number at build time
+
+	d.SetAddress(150) // FIXME: Cleanup
 
 	return d, nil
 }
@@ -46,11 +45,6 @@ func (d *Decoder) SetAddress(addr uint16) error {
 	return nil
 }
 
-// FIXME: Cleanup?
-func (d *Decoder) Address() []byte {
-	return d.address
-}
-
 // Enable or disable the DCC reader
 func (d *Decoder) Enable(enabled bool) {
 	d.sm.SetEnabled(enabled)
@@ -69,7 +63,7 @@ func (d *Decoder) SetOpMode(mode opMode) {
 		d.svcModeReady = false
 	}
 	d.opMode = mode
-	// FIXME: Handle entering/exiting service mode
+	// TODO: Handle exiting service mode
 }
 
 func (d *Decoder) Reset() {

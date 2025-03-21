@@ -82,13 +82,6 @@ func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef machi
 		lastControlTime: time.Now(),
 	}
 
-	// Load our CV values
-	// FIXME: Have the CVHandler call the callback functions for each CV when registering
-	for _, cvNumber := range []uint16{2, 3, 4, 5, 6, 9, 10, 23, 24, 29} {
-		value := conf.CV(cvNumber)
-		m.cv[cvNumber] = value
-	}
-
 	// Set up motor driver pins for PWM
 	err := m.initPWM(hw, pinA, pinB, hal.MaxMotorPWMFreq, 0.0)
 	if err != nil {

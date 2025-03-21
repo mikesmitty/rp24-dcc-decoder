@@ -14,7 +14,6 @@ func (d *Decoder) callFunction(number uint16, state bool) {
 			fn(state)
 		}
 	} else {
-		// FIXME: Log error?
-		// println("function not found:", number)
+		println("function not found:", number)
 	}
 }

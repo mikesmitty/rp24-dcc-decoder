@@ -36,8 +36,9 @@ func NewCVHandler(version []uint8) *CVHandler {
 		cvStore:     s,
 	}
 
-	// FIXME: Make sure the version is the right length. Set arg type to [3]uint8?
-	// Also, figure out how to set it automatically at build time
+	if len(version) != 3 {
+		panic("invalid version length")
+	}
 
 	// Check if the version has changed
 	/* TODO: Check major/minor/patch version
@@ -46,6 +47,10 @@ func NewCVHandler(version []uint8) *CVHandler {
 		// TODO: Do stuff if the version has changed
 	}
 	*/
+
+	// TODO: Handle CVs > 256 properly. Treating CVs as if the index is separate
+	// makes handling callback functions a big problem. Also, defaults get kinda
+	// wonky. Need to refactor for that change if/when CVs > 256 are implemented
 
 	// Load the last-used index from flash
 	cv31, _ := s.IndexedCV(0, 31)
