@@ -67,3 +67,7 @@ func (m *MockHandler) RegisterCallback(cv uint16, fn func(cvNumber uint16, value
 func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 {
 	return 0
 }
+
+func (m *MockHandler) LoadIndex(page1, page2 uint8) error {
+	return nil
+}

@@ -83,11 +83,11 @@ func (d *Decoder) CVCallback() cv.CVCallbackFunc {
 		case 1:
 			// Set the short address
 			// Not allowing 0 because DC mode is out of scope
-			if value >= 1 && value <= 127 {
-				d.SetAddress(uint16(value))
-			} else {
+			if value < 1 || value > 127 {
 				return false
 			}
+			d.SetAddress(uint16(value))
+
 		case 17, 18:
 			// CV17 must be in the range 192-231, CV18 can be any value
 			// The top 2 bits of CV17 are ignored when parsing the address
@@ -96,9 +96,35 @@ func (d *Decoder) CVCallback() cv.CVCallbackFunc {
 			}
 			// Set the extended address bytes
 			d.address[cvNumber-17] = value
+
 		case 19, 20:
 			// Set the consist address bytes
-			// FIXME: Implement, including reverse ndot
+			// TODO: Add validation around CV19 value in extended address mode when standardized
+			d.consistAddress[cvNumber-19] = value
+
+		case 21:
+			// Convert CV21 to a bitmask for enabling the functions via consist address (F1-F8)
+			// Clear the bits for F1-F4
+			mask = d.consistFuncMask[0] & 0b11110000
+			// Set the bits for F1-F4
+			mask |= value & 0b00001111
+			d.consistFuncMask[0] = mask
+
+			// Set the bits for F5-F8
+			d.consistFuncMask[1] = value >> 4
+
+		case 22:
+			// Convert CV22 to a bitmask for enabling the functions via consist address (FLf, FLr, F9-F12)
+			// TODO: Implement this for FLf and FLr separately
+			// Clear the bit for FL (F0)
+			mask = d.consistFuncMask[0] &^ (1 << 4)
+			// Set the bit for FL (F0) (CV bit 0 -> mask bit 4, FLr is CV bit 1)
+			mask |= (value & 1) << 4
+			d.consistFuncMask[0] = mask
+
+			// Set the mask bits for F9-F12 (CV bits 2-5)
+			d.consistFuncMask[2] = (value & 0b00111100) >> 2
+
 		case 29:
 			// CV29 bit 5: 0 = short address, 1 = extended address
 			cv17 := d.cv.CV(17)

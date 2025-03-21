@@ -69,7 +69,7 @@
 				
 				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
 				
-				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (98.0%)</option>
+				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.5%)</option>
 				
 				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (85.2%)</option>
 				
@@ -117,6 +117,7 @@ type Handler interface {
         ProcessChanges()
         RegisterCallback(uint16, func(uint16, uint8) bool)
         IndexPage(...uint8) uint16
+        LoadIndex(uint8, uint8) error
 }
 
 var _ Handler = (*CVHandler)(nil)
@@ -519,6 +520,10 @@ func (m *MockHandler) RegisterCallback(cv uint16, fn func(cvNumber uint16, value
 
 func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 <span class="cov0" title="0">{
         return 0
+}</span>
+
+func (m *MockHandler) LoadIndex(page1, page2 uint8) error <span class="cov0" title="0">{
+        return nil
 }</span>
 </pre>
 		
@@ -956,9 +961,13 @@ func (m *Message) advancedOperationInstruction(b []byte) bool <span class="cov8"
 
 func (m *Message) functionGroupOneInstruction(b uint8) bool <span class="cov8" title="1">{
         // Function Group One Instruction
-        // 100DDDD
+        // 100DDDDD
+        // If message was sent to the consist address, ignore function values according to CVs 21 and 22
+        if m.addr == ConsistAddress </span><span class="cov0" title="0">{
+                b &amp;= m.decoder.consistFuncMask[0]
+        }</span>
         // FL (F0)
-        m.decoder.callFunction(0, b&amp;(1&lt;&lt;4) != 0)
+        <span class="cov8" title="1">m.decoder.callFunction(0, b&amp;(1&lt;&lt;4) != 0)
         // F1-F4
         for i := uint16(0); i &lt; 4; i++ </span><span class="cov8" title="1">{
                 m.decoder.callFunction(i+1, b&amp;(1&lt;&lt;i) != 0)
@@ -971,8 +980,14 @@ func (m *Message) functionGroupTwoInstruction(b uint8) bool <span class="cov8" t
         // 101SDDDD
         // Bit 4 (S) is a shift bit. If set to 1, bits 0-3 (D) are F5-F8. If set to 0, bits 0-3 are F9-F12
         offset := uint16(5)
+        mask := m.decoder.consistFuncMask[1]
         if b&amp;(1&lt;&lt;4) == 0 </span><span class="cov8" title="1">{
                 offset = 9
+                mask = m.decoder.consistFuncMask[2]
+        }</span>
+        // If message was sent to the consist address, ignore function values according to CVs 21 and 22
+        <span class="cov8" title="1">if m.addr == ConsistAddress </span><span class="cov0" title="0">{
+                b &amp;= mask
         }</span>
         <span class="cov8" title="1">for i := uint16(0); i &lt; 4; i++ </span><span class="cov8" title="1">{
                 m.decoder.callFunction(i+offset, b&amp;(1&lt;&lt;i) != 0)
@@ -1095,10 +1110,14 @@ func (m *Message) configVariableAccessInstruction(b []byte) bool <span class="co
                         }</span>
                         // Check for confirmed values
                         <span class="cov8" title="1">if m.cvConfirmCheck(31, b[1]) &amp;&amp; m.cvConfirmCheck(32, b[2]) </span><span class="cov8" title="1">{
-                                // Values confirmed, set the CVs
-                                // FIXME: load the new index
-                                return m.cv.Set(31, b[1]) &amp;&amp; m.cv.Set(32, b[2])
-                        }</span> else<span class="cov8" title="1"> {
+                                // Values confirmed, load the new index
+                                err := m.cv.LoadIndex(b[1], b[2])
+                                if err != nil </span><span class="cov0" title="0">{
+                                        println("could not load index: " + err.Error())
+                                        return false
+                                }</span>
+                                <span class="cov8" title="1">return true</span>
+                        } else<span class="cov8" title="1"> {
                                 // cvConfirmCheck will store the values for the next packet
                                 return true
                         }</span>

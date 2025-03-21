@@ -35,8 +35,8 @@ type Decoder struct {
 
 	fnHandlers map[uint16][]FnHandler
 
-	// FIXME: Add CV callback to adjust?
-	// FIXME: Move to cv package?
+	consistFuncMask [3]uint8
+
 	speedMode motor.SpeedMode
 }
 

@@ -16,6 +16,7 @@ type Handler interface {
 	ProcessChanges()
 	RegisterCallback(uint16, func(uint16, uint8) bool)
 	IndexPage(...uint8) uint16
+	LoadIndex(uint8, uint8) error
 }
 
 var _ Handler = (*CVHandler)(nil)

@@ -124,7 +124,11 @@ func (m *Message) advancedOperationInstruction(b []byte) bool {
 
 func (m *Message) functionGroupOneInstruction(b uint8) bool {
 	// Function Group One Instruction
-	// 100DDDD
+	// 100DDDDD
+	// If message was sent to the consist address, ignore function values according to CVs 21 and 22
+	if m.addr == ConsistAddress {
+		b &= m.decoder.consistFuncMask[0]
+	}
 	// FL (F0)
 	m.decoder.callFunction(0, b&(1<<4) != 0)
 	// F1-F4
@@ -139,8 +143,14 @@ func (m *Message) functionGroupTwoInstruction(b uint8) bool {
 	// 101SDDDD
 	// Bit 4 (S) is a shift bit. If set to 1, bits 0-3 (D) are F5-F8. If set to 0, bits 0-3 are F9-F12
 	offset := uint16(5)
+	mask := m.decoder.consistFuncMask[1]
 	if b&(1<<4) == 0 {
 		offset = 9
+		mask = m.decoder.consistFuncMask[2]
+	}
+	// If message was sent to the consist address, ignore function values according to CVs 21 and 22
+	if m.addr == ConsistAddress {
+		b &= mask
 	}
 	for i := uint16(0); i < 4; i++ {
 		m.decoder.callFunction(i+offset, b&(1<<i) != 0)
@@ -263,9 +273,13 @@ func (m *Message) configVariableAccessInstruction(b []byte) bool {
 			}
 			// Check for confirmed values
 			if m.cvConfirmCheck(31, b[1]) && m.cvConfirmCheck(32, b[2]) {
-				// Values confirmed, set the CVs
-				// FIXME: load the new index
-				return m.cv.Set(31, b[1]) && m.cv.Set(32, b[2])
+				// Values confirmed, load the new index
+				err := m.cv.LoadIndex(b[1], b[2])
+				if err != nil {
+					println("could not load index: " + err.Error())
+					return false
+				}
+				return true
 			} else {
 				// cvConfirmCheck will store the values for the next packet
 				return true
