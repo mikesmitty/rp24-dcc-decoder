@@ -9,10 +9,6 @@ import (
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 )
 
-// TODO: Handle consist addresses (CV19, 21, 22) for ndotReverse
-
-// FIXME: Go over all these CVs and make sure they're all accounted for
-// as well as in cv.go
 func (m *Motor) CVCallback() cv.CVCallbackFunc {
 	return func(cvNumber uint16, value uint8) bool {
 		switch cvNumber {
@@ -39,6 +35,11 @@ func (m *Motor) CVCallback() cv.CVCallbackFunc {
 			// Back EMF motor control cutoff speed
 			// TODO: Implement this
 
+		case 19:
+			// Consist address direction swap modifier
+			// Check for double-uno-reverse
+			m.ndotReverse = (value >> 7) != (m.cv[29] & 1)
+
 		case 29:
 			// CV 29:
 			// Bits 7-5 are not relevant here
@@ -52,7 +53,7 @@ func (m *Motor) CVCallback() cv.CVCallbackFunc {
 				m.speedMode = SpeedMode28
 			}
 			// ndotReverse uno-reverses the normal direction of travel
-			m.ndotReverse = (value & 0b00000001) != 0
+			m.ndotReverse = (value & 1) != (m.cv[19] >> 7)
 
 			// Update speed table in case bit 4 or bit 1 changed
 			// Bit 4: 0 = CV 2,5,6 speed curve, 1 = CV 67-94 speed table
