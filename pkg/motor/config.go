@@ -9,6 +9,8 @@ import (
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 )
 
+// TODO: Handle consist addresses (CV19, 21, 22) for ndotReverse
+
 // FIXME: Go over all these CVs and make sure they're all accounted for
 // as well as in cv.go
 func (m *Motor) CVCallback() cv.CVCallbackFunc {
@@ -65,7 +67,7 @@ func (m *Motor) CVCallback() cv.CVCallbackFunc {
 
 		case 65:
 			// Startup kick to overcome static friction from a stop to speed step 1
-			// FIXME: Implement this
+			// TODO: Implement this
 
 		case 66, 95:
 			// Forward/reverse trim - n/128 * throttle vs. the opposite direction
@@ -164,7 +166,6 @@ func (m *Motor) updatePIDConfig() {
 	m.pid.Config.IntegralGain = float32(m.cv[55]) / 10
 }
 
-// FIXME: Need to generate some tests for all these speed table functions
 // FIXME: Make sure to update the backemf interval when speed changes
 // updateSpeedTable generates the speed table based on CV67-94 and other settings
 func (m *Motor) updateSpeedTable() {

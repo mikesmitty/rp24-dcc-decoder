@@ -77,21 +77,6 @@ func (h *HAL) Init() {
 	// Initialize all pins
 	for name, pin := range h.pins {
 		switch name {
-		case "capCharge":
-			/* FIXME: Handle capacitor PWM
-			// Initialize the capacitor charge control pin as a PWM output
-			pwm, err := h.InitPWM(pin, CapChargeFreq, CapChargeDuty)
-			if err != nil {
-				panic(err.Error())
-			}
-			h.pwms[name] = pwm
-			ch, err := pwm.Channel(pin)
-			if err != nil {
-				panic(err.Error())
-			}
-			// Set 0% duty cycle to start
-			pwm.Set(ch, 0)
-			*/
 		case "dcc":
 			// Enable internal pull-up since an N-channel MOSFET pulls GPIO21 low when rail polarity goes negative
 			pin.Configure(machine.PinConfig{Mode: machine.PinInputPullup})

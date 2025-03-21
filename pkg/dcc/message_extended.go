@@ -44,18 +44,18 @@ func (m *Message) extendedPacket() bool {
 }
 
 func (m *Message) decoderConsistControlInstruction(b []byte) bool {
-	// 0b0000xxxx
 	l := len(b)
 	switch b[0] >> 4 {
+	// 0b0000xxxx
 	case 0b0000:
 		// Decoder control 0000xxxx
 		switch b[0] {
 		case 0b00000000:
-			// Decoder reset packet
-			// FIXME: Duplicate of existing reset packet logic?
-			println("reset packet received")
-			m.decoder.Reset()
-			return true
+			if l == 1 && m.addr == BroadcastAddress {
+				println("reset packet received")
+				m.decoder.Reset()
+				return true
+			}
 		case 0b00000001:
 			// Decoder hard reset packet
 			m.cv.Reset(29)
@@ -77,7 +77,7 @@ func (m *Message) decoderConsistControlInstruction(b []byte) bool {
 	// 0b0001xxxx
 	case 0b0001:
 		/* Consist control 0001xxxx
-		FIXME: Implement the other logic:
+		TODO: Implement the other logic:
 		When Consist Control is in effect, the decoder will ignore any speed or direction instructions
 		addressed to its normal locomotive address (unless this address is the same as its consist address).
 		190 Speed and direction instructions now apply to the consist address only
@@ -114,7 +114,6 @@ func (m *Message) advancedOperationInstruction(b []byte) bool {
 	switch b[0] {
 	case 0b00111111:
 		// speed, reverse, ok := m.motionCommand(b)
-		// println(speed, reverse) // FIXME: Cleanup
 		// FIXME: Do stuff with speed and reverse
 		_, _, ok := m.motionCommand(b)
 		return ok
@@ -169,7 +168,7 @@ func (m *Message) featureExpansion(b []byte) bool {
 	// L = 7-bit low byte
 	// H = optional 8-bit high byte (treated as 0 if not present)
 	// D = data bit
-	// FIXME: Implement
+	// TODO: Implement
 	case 0b11000001:
 	// Model time and date command
 	// Not supported at this time, possibly in the future
@@ -182,7 +181,7 @@ func (m *Message) featureExpansion(b []byte) bool {
 	// 11011101 DLLLLLLL
 	// L = 7-bit low byte
 	// D = data bit
-	// FIXME: Implement
+	// TODO: Implement
 	case 0b11011110:
 		// Functions F13-F20
 		return m.functionGroupNInstruction(13, b[1])
@@ -265,6 +264,7 @@ func (m *Message) configVariableAccessInstruction(b []byte) bool {
 			// Check for confirmed values
 			if m.cvConfirmCheck(31, b[1]) && m.cvConfirmCheck(32, b[2]) {
 				// Values confirmed, set the CVs
+				// FIXME: load the new index
 				return m.cv.Set(31, b[1]) && m.cv.Set(32, b[2])
 			} else {
 				// cvConfirmCheck will store the values for the next packet

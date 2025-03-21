@@ -1,12 +1,9 @@
 package dcc
 
-func (m *Message) isResetPacket() bool {
-	return m.buf[0] == 0 && m.buf[1] == 0 && len(m.buf) == 3
-}
-
 func (m *Message) serviceModePacket() {
 	m.decoder.SetOpMode(ServiceMode)
-	/* For now, service mode is hotel california. We'll depend on losing power to return to operations mode
+	/* TODO: Implement the ability to leave service mode
+	For now, service mode is hotel california. We'll depend on losing power to return to operations mode
 	if time.Now().Sub(m.decoder.lastSvcResetTime) > 20*time.Millisecond {
 		// If it's been more than 20ms since the last reset packet, service mode is no longer ready, back to operations mode
 		// Check to ensure we didn't receive a service mode packet before switching back to operations mode per S-9.2.3C

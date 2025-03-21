@@ -84,7 +84,7 @@ func (m *Message) Length() int {
 }
 
 func (m *Message) Process() {
-	// FIXME: Implement hard-reset mode
+	// TODO: Implement hard-reset mode
 
 	/* FIXME: Check if this is needed here
 	if m.isResetPacket() {
@@ -93,11 +93,10 @@ func (m *Message) Process() {
 		return
 	} */
 
-	if !m.decoder.Snoop && !m.checkAddress() {
-		// Ignore messages not addressed to us
+	if !m.decoder.Snoop && (!m.checkAddress() || m.addr == UnknownAddress) {
+		// Ignore messages not addressed to us if we're not being nosy
 		return
 	}
-	// FIXME: Make sure we disregard UnknownAddress messages
 
 	for i := range m.buf {
 		printUintN(8, uint32(m.buf[i]))
@@ -118,7 +117,7 @@ func (m *Message) Process() {
 		// Unknown message type
 	}
 
-	println() // FIXME: Cleanup
+	println() // TODO: Cleanup
 }
 
 func (m *Message) messageType() MessageType {
@@ -191,7 +190,7 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 			// 28/128 speed modes are selected by the last speed command received
 			m.decoder.speedMode = motor.SpeedMode128
 		} else {
-			// FIXME: Error, invalid speed mode
+			// Invalid speed mode
 			return 1, false, false
 		}
 	default:
@@ -213,8 +212,6 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 }
 
 func (m *Message) checkAddress() bool {
-	// FIXME: Handle consist addresses (CV19, 21, 22), also in motor package for ndotReverse
-
 	switch m.buf[0] {
 	case 0x00:
 		// Broadcast address
@@ -224,7 +221,7 @@ func (m *Message) checkAddress() bool {
 	case 0xFF:
 		// Idle packet, ignore
 		m.addr = IdleAddress
-		// FIXME: Idle packets count as valid data packets to return to operations mode, I think?
+		// TODO: Idle packets count as valid data packets to return to operations mode, I think?
 	case 253, 254:
 		// Advanced extended packet format, not supported yet
 	default:
@@ -243,7 +240,8 @@ func (m *Message) checkAddress() bool {
 			return true
 		}
 
-		// FIXME: Differentiate recognized message types with unrecognized addresses while snooping
+		// TODO: Differentiate recognized message types with unrecognized addresses while snooping?
+		// TODO: Remove snooping once address setting is done being implemented
 		// No recognized addresses
 		m.addr = UnknownAddress
 		// If we're snooping that's okay anyway

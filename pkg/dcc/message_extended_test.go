@@ -24,7 +24,8 @@ func TestExtendedPacket(t *testing.T) {
 		{
 			name: "Decoder Consist Control Instruction",
 			msg: &Message{
-				buf:     []byte{0x03, 0x00, 0x00, 0xFF},
+				addr:    BroadcastAddress,
+				buf:     []byte{0x00, 0x00, 0x00},
 				decoder: &Decoder{address: []byte{3}, speedMode: motor.SpeedMode128},
 			},
 			expect: true,
@@ -128,6 +129,7 @@ func TestDecoderConsistControlInstruction(t *testing.T) {
 		{
 			name: "Decoder Reset Packet",
 			msg: &Message{
+				addr:    BroadcastAddress,
 				decoder: &Decoder{address: []byte{3}},
 			},
 			input:  []byte{0x00},

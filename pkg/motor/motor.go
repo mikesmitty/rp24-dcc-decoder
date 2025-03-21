@@ -83,8 +83,7 @@ func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef machi
 	}
 
 	// Load our CV values
-	// FIXME: Not wild about maintaining a static list here. Already out of date
-	// FIXME: Have the CVHandler call the callback once per CV when registering
+	// FIXME: Have the CVHandler call the callback functions for each CV when registering
 	for _, cvNumber := range []uint16{2, 3, 4, 5, 6, 9, 10, 23, 24, 29} {
 		value := conf.CV(cvNumber)
 		m.cv[cvNumber] = value

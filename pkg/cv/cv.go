@@ -14,7 +14,6 @@ type Handler interface {
 	Reset(uint16) bool
 	ResetAll()
 	ProcessChanges()
-	SetDefault(uint16, uint8, store.CVFlags)
 	RegisterCallback(uint16, func(uint16, uint8) bool)
 	IndexPage(...uint8) uint16
 }
@@ -28,21 +27,33 @@ type CVHandler struct {
 
 type CVCallbackFunc func(uint16, uint8) bool
 
-func NewCVHandler(version uint8) *CVHandler {
+var fwVersion []uint8
+
+func NewCVHandler(version []uint8) *CVHandler {
 	s := store.NewStore()
 	c := &CVHandler{
 		cvCallbacks: make(map[uint16][]func(uint16, uint8) bool),
 		cvStore:     s,
 	}
 
-	lastVersion, _ := s.CV(7)
-	if lastVersion != version {
-		/* FIXME: Do stuff if the version has changed
-		s.ResetAll()
-		*/
-	}
+	// FIXME: Make sure the version is the right length. Set arg type to [3]uint8?
+	// Also, figure out how to set it automatically at build time
 
-	c.setDefaults(s, version)
+	// Check if the version has changed
+	/* TODO: Check major/minor/patch version
+	lastVersion, _ := s.IndexedCV(0, 7)
+	if lastVersion != version {
+		// TODO: Do stuff if the version has changed
+	}
+	*/
+
+	// Load the last-used index from flash
+	cv31, _ := s.IndexedCV(0, 31)
+	cv32, _ := s.IndexedCV(0, 32)
+	err := c.LoadIndex(cv31, cv32)
+	if err != nil {
+		println("could not load index: " + err.Error())
+	}
 
 	return c
 }
@@ -57,12 +68,12 @@ func (c *CVHandler) RegisterCallback(cvNumber uint16, fn func(cvNumber uint16, v
 
 // Return the current index page indicated by CV31/32 or a provided equivalent
 func (c *CVHandler) IndexPage(indexCVs ...uint8) uint16 {
-	// FIXME: Set limits around max index pages
+	// TODO: Set limits around max index pages when indexes are implemented
 
 	var cv31, cv32 uint8
 	if len(indexCVs) < 2 {
-		cv31, _ = c.cvStore.CV(31)
-		cv32, _ = c.cvStore.CV(32)
+		cv31, _ = c.cvStore.IndexedCV(0, 31)
+		cv32, _ = c.cvStore.IndexedCV(0, 32)
 	} else {
 		cv31 = indexCVs[0]
 		cv32 = indexCVs[1]
@@ -93,12 +104,20 @@ func (c *CVHandler) IndexedCV(index, cvNumber uint16) uint8 {
 
 // IndexedCVOk returns the value and pre-existence of a CV given an index page and CV number
 func (c *CVHandler) IndexedCVOk(index, cvNumber uint16) (uint8, bool) {
+	// Keep CV31/32 reads/writes constrained to index 0
+	if cvNumber == 31 || cvNumber == 32 {
+		index = 0
+	}
 	return c.cvStore.IndexedCV(index, cvNumber)
 }
 
 // Set sets a CV value and allows it to be written to flash in batches
 func (c *CVHandler) Set(cvNumber uint16, value uint8) bool {
-	return c.Set(cvNumber, value)
+	if cvNumber == 31 || cvNumber == 32 {
+		// Don't allow setting of CV31/32 directly, only allow through Config Variable Access commands
+		return false
+	}
+	return c.cvStore.Set(cvNumber, value)
 }
 
 // SetSync sets a CV and does not return until it is persisted to flash
@@ -107,7 +126,6 @@ func (c *CVHandler) SetSync(cvNumber uint16, value uint8) bool {
 }
 
 // IndexedSet sets a CV value given a paging index and allows it to be written to flash in batches
-// FIXME: Implement the batching
 func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 	// Check if the CV exists first. Unset CVs are not allowed to be set
 	// FIXME: We are the arbiter of what is allowed to be set, check against our cv bitmaps
@@ -130,6 +148,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 			for _, fn := range callbacks {
 				fn(cvNumber, prev)
 			}
+			return false
 		}
 	}
 	return c.cvStore.Set(cvNumber, value)
@@ -143,17 +162,11 @@ func (c *CVHandler) IndexedSetSync(index, cvNumber uint16, value uint8) bool {
 	return c.cvStore.IndexedPersist(index, cvNumber, value)
 }
 
-func (c *CVHandler) indexedCVNumber(index, cvNumber uint16) uint16 {
-	switch cvNumber {
-	case 31, 32:
-	// These CVs ignore the index
-	default:
-		cvNumber += index * 256
-	}
-	return cvNumber
-}
-
 func (c *CVHandler) Reset(cvNumber uint16) bool {
+	if cvNumber == 31 || cvNumber == 32 {
+		// Don't allow resetting of CV31/32 directly, only allow through Config Variable Access commands
+		return true
+	}
 	return c.cvStore.Reset(cvNumber)
 }
 
@@ -163,8 +176,4 @@ func (c *CVHandler) ResetAll() {
 
 func (c *CVHandler) ProcessChanges() {
 	c.cvStore.ProcessChanges()
-}
-
-func (c *CVHandler) SetDefault(cvNumber uint16, value uint8, flags store.CVFlags) {
-	c.cvStore.SetDefault(cvNumber, value, flags)
 }
