@@ -34,7 +34,7 @@ type Motor struct {
 	emfReading  float32
 	emfTarget   float32
 	emfTrigger  chan struct{}
-	// FIXME: Are these necessary?
+	// TODO: Are these necessary?
 	adcOffsetA float32
 	adcOffsetB float32
 

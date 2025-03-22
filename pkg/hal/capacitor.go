@@ -1,6 +1,6 @@
 package hal
 
-/* FIXME: Implement this
+/* TODO: Implement this
 func (h *HAL) SetCapCharging(enable bool) {
 	// If we're turning off the capacitor charge control pin, wait until we've received a move request again
 	if !enable {

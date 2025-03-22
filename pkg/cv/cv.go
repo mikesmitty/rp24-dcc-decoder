@@ -1,6 +1,9 @@
 package cv
 
-import "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+import (
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+)
 
 type Handler interface {
 	CV(uint16) uint8
@@ -14,7 +17,7 @@ type Handler interface {
 	Reset(uint16) bool
 	ResetAll()
 	ProcessChanges()
-	RegisterCallback(uint16, func(uint16, uint8) bool)
+	RegisterCallback(uint16, cb.CVCallbackFunc)
 	IndexPage(...uint8) uint16
 	LoadIndex(uint8, uint8) error
 }
@@ -25,8 +28,6 @@ type CVHandler struct {
 	cvStore     *store.Store
 	cvCallbacks map[uint16][]func(uint16, uint8) bool
 }
-
-type CVCallbackFunc func(uint16, uint8) bool
 
 var fwVersion []uint8
 
@@ -64,7 +65,7 @@ func NewCVHandler(version []uint8) *CVHandler {
 	return c
 }
 
-func (c *CVHandler) RegisterCallback(cvNumber uint16, fn func(cvNumber uint16, value uint8) bool) {
+func (c *CVHandler) RegisterCallback(cvNumber uint16, fn cb.CVCallbackFunc) {
 	if _, ok := c.CVOk(cvNumber); !ok {
 		// It's not likely this will ever happen, but just to be sure
 		panic("CV not found")

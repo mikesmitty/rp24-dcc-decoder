@@ -9,3 +9,10 @@ const (
 	SpeedMode28  SpeedMode = 28
 	SpeedMode128 SpeedMode = 126
 )
+
+type Direction uint8
+
+const (
+	Reverse Direction = iota
+	Forward
+)

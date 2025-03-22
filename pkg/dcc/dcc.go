@@ -1,18 +1,16 @@
-//go:build rp
-
 package dcc
 
 import (
 	"errors"
-	"machine"
 	"time"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, pioNum int, pin machine.Pin) (*Decoder, error) {
+func NewDecoder(cvHandler cv.Handler, pioNum int, pin Pin) (*Decoder, error) {
 	d := &Decoder{address: make([]byte, 2), cv: cvHandler}
 
 	err := d.initPIO(pioNum, pin)
@@ -20,14 +18,11 @@ func NewDecoder(cvHandler cv.Handler, pioNum int, pin machine.Pin) (*Decoder, er
 		return nil, err
 	}
 
-	// FIXME: Handle setting version number at build time
-
-	d.SetAddress(150) // FIXME: Cleanup
+	// TODO: Handle setting version number at build time
 
 	return d, nil
 }
 
-// FIXME: Cleanup?
 // Set the address of the DCC reader
 func (d *Decoder) SetAddress(addr uint16) error {
 	if addr == 0 || addr > 10239 {
@@ -69,7 +64,7 @@ func (d *Decoder) SetOpMode(mode opMode) {
 func (d *Decoder) Reset() {
 	d.lastSvcResetTime = time.Now()
 	d.svcModeReady = true
-	// FIXME: Implement reset packet handling
+	// TODO: Implement reset packet handling
 	/* When a Digital Decoder receives a Digital Decoder Reset Packet, it shall erase all
 	volatile memory (including any speed and direction data), and return to its normal
 	power-up state. If the Digital Decoder is operating a locomotive at a non-zero speed
@@ -77,7 +72,7 @@ func (d *Decoder) Reset() {
 	immediate stop.  */
 }
 
-func (d *Decoder) CVCallback() cv.CVCallbackFunc {
+func (d *Decoder) CVCallback() cb.CVCallbackFunc {
 	return func(cvNumber uint16, value uint8) bool {
 		switch cvNumber {
 		case 1:
@@ -105,7 +100,7 @@ func (d *Decoder) CVCallback() cv.CVCallbackFunc {
 		case 21:
 			// Convert CV21 to a bitmask for enabling the functions via consist address (F1-F8)
 			// Clear the bits for F1-F4
-			mask = d.consistFuncMask[0] & 0b11110000
+			mask := d.consistFuncMask[0] & 0b11110000
 			// Set the bits for F1-F4
 			mask |= value & 0b00001111
 			d.consistFuncMask[0] = mask
@@ -117,7 +112,7 @@ func (d *Decoder) CVCallback() cv.CVCallbackFunc {
 			// Convert CV22 to a bitmask for enabling the functions via consist address (FLf, FLr, F9-F12)
 			// TODO: Implement this for FLf and FLr separately
 			// Clear the bit for FL (F0)
-			mask = d.consistFuncMask[0] &^ (1 << 4)
+			mask := d.consistFuncMask[0] &^ (1 << 4)
 			// Set the bit for FL (F0) (CV bit 0 -> mask bit 4, FLr is CV bit 1)
 			mask |= (value & 1) << 4
 			d.consistFuncMask[0] = mask
@@ -146,7 +141,27 @@ func (d *Decoder) CVCallback() cv.CVCallbackFunc {
 				d.address = append(d.address[:0], d.cv.CV(1))
 				return false
 			}
+		case 33:
+			// Configure function mapping to output F0f
+			d.outputMapsFwd[0] = uint16(value)
+		case 34:
+			// Configure function mapping to output F0r
+			d.outputMapsRev[0] = uint16(value)
+		case 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46:
+			// Configure function mapping for F1-F12 to outputs AUX1-AUX12 (fwd and rev)
+			outputNum := cvNumber - 33
+			outputs := uint16(value)
+			if cvNumber >= 43 {
+				// AUX5-AUX12
+				outputs = outputs << 6
+			} else if cvNumber >= 38 {
+				// AUX2-AUX9
+				outputs = outputs << 3
+			}
+			d.outputMapsFwd[outputNum] = uint16(value)
+			d.outputMapsRev[outputNum] = uint16(value)
 		}
+
 		return true
 	}
 }

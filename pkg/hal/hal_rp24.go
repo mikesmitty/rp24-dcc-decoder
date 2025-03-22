@@ -85,14 +85,8 @@ func (h *HAL) Init() {
 			pin.Configure(machine.PinConfig{Mode: machine.PinOutput})
 			pin.High()
 		default:
-			// Set all pins to output low by default. This is the default GPIO state on reset for RP2xxx chips
+			// Set all pins to output (low) by default. This is the default GPIO state on reset for RP2xxx chips
 			pin.Configure(machine.PinConfig{Mode: machine.PinOutput})
-			//pin.Low() // FIXME: this is causing the pins to be reset to low after being configured elsewhere
 		}
 	}
-}
-
-func (h *HAL) Pin(name string) (machine.Pin, bool) {
-	_, ok := h.pins[name]
-	return h.pins[name], ok
 }

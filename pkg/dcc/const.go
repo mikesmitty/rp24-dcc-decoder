@@ -3,6 +3,7 @@ package dcc
 import (
 	"time"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
@@ -21,6 +22,7 @@ const (
 
 type Decoder struct {
 	cv cv.Handler
+	// hal *hal.HAL
 
 	sm     StateMachine
 	offset uint8
@@ -33,10 +35,13 @@ type Decoder struct {
 	lastSvcResetTime time.Time
 	svcModeReady     bool
 
-	fnHandlers map[uint16][]FnHandler
+	outputCallbacks map[uint16][]cb.OutputCallback
+	outputMapsFwd   map[uint16]uint16
+	outputMapsRev   map[uint16]uint16
 
 	consistFuncMask [3]uint8
 
+	direction motor.Direction // FIXME: Make sure this is getting set by callbacks
 	speedMode motor.SpeedMode
 }
 

@@ -48,7 +48,7 @@ func (m *Message) handleXPOM(b []byte) bool {
 	// 11 = write bytes
 	// 10 = write bits
 
-	// seq := b[0] & 0b11 // FIXME: What is this for?
+	// seq := b[0] & 0b11 // TODO: What is this for?
 	// Find in https://www.nmra.org/sites/default/files/standards/sandrp/Draft/DCC/s-9.3.2_bi-directional_communication.pdf
 	index := m.cv.IndexPage(b[1], b[2])
 	switch (b[0] >> 2) & 0b11 {

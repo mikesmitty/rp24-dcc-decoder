@@ -7,6 +7,7 @@ type HAL struct {
 }
 
 type Pin interface {
+	Set(bool)
 }
 
 // Stub for non-RP platforms
@@ -16,5 +17,9 @@ func NewHAL() *HAL {
 
 // initI2SPIO is a stub for non-RP platforms
 func (h *HAL) initI2SPIO(_ int, _, _ Pin) (I2S, error) {
+	return nil, nil
+}
+
+func (h *HAL) InitPWM(pin Pin, freq uint64, duty float32) (*SimplePWM, error) {
 	return nil, nil
 }

@@ -12,10 +12,10 @@ func (h *HAL) InitI2S() error {
 		return err
 	}
 
-	// FIXME: Make configurable
-	i2s.SetSampleFrequency(44100) // FIXME: Use 48kHz or 96kHz for ultrasonic frequencies
+	// TODO: Make configurable
+	i2s.SetSampleFrequency(44100) // TODO: Use 48kHz or 96kHz for ultrasonic frequencies
 
-	/* FIXME: Implement
+	/* TODO: Implement
 	i2s.WriteStereo(data)
 	}
 	*/

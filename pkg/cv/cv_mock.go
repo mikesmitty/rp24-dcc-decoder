@@ -1,5 +1,7 @@
 package cv
 
+import "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+
 var _ Handler = (*MockHandler)(nil)
 
 type MockHandler struct {
@@ -61,7 +63,7 @@ func (m *MockHandler) SetSync(cv uint16, value uint8) bool {
 	return m.returnValue
 }
 
-func (m *MockHandler) RegisterCallback(cv uint16, fn func(cvNumber uint16, value uint8) bool) {
+func (m *MockHandler) RegisterCallback(cv uint16, fn cb.CVCallbackFunc) {
 }
 
 func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 {

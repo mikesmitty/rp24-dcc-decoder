@@ -69,7 +69,7 @@ func (m *Motor) CVCallback() cv.CVCallbackFunc {
 			// CV54 High speed Kp gain (proportional)
 			// CV55 Ki gain (integral)
 			// CV56 Low speed PID scaling factor
-			defer m.updatePIDConfig() // FIXME: Is this the right idea? Not sure how to handle high/low speed switch
+			defer m.updatePIDConfig() // TODO: Is this the right idea? Not sure how to handle high/low speed switch
 
 		case 65:
 			// Startup kick to overcome static friction from a stop to speed step 1
@@ -172,7 +172,7 @@ func (m *Motor) updatePIDConfig() {
 	m.pid.Config.IntegralGain = float32(m.cv[55]) / 10
 }
 
-// FIXME: Make sure to update the backemf interval when speed changes
+// TODO: Make sure to update the backemf interval when speed changes
 // updateSpeedTable generates the speed table based on CV67-94 and other settings
 func (m *Motor) updateSpeedTable() {
 	if m.useSpeedTable {

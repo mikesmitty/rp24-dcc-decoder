@@ -69,9 +69,25 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		// Bit 0: 0 = Forward direction, 1 = Reverse direction
 		c.cvStore.SetDefault(29, 0b00000010, store.Persistent) // BiDi disabled, 28/128 speed steps TODO: Enable BiDi
 
-		c.cvStore.SetDefault(30, 0, store.Volatile) // ERROR: Error code
+		c.cvStore.SetDefault(30, 0, store.Volatile) // ERROR: Error code TODO: Implement error codes
 		c.cvStore.SetDefault(31, 0, store.Volatile) // INDEX: CV index paging MSB (0 is disabled, 1-15 are reserved)
 		c.cvStore.SetDefault(32, 0, store.Volatile) // INDEX: CV index paging LSB
+
+		// TODO: Reimplement for more flexibility
+		c.cvStore.SetDefault(33, 0b00000001, store.Persistent) // FUNCTIONS: Output mapping for F0f
+		c.cvStore.SetDefault(34, 0b00000010, store.Persistent) // FUNCTIONS: Output mapping for F0r
+		c.cvStore.SetDefault(35, 0b00000100, store.Persistent) // FUNCTIONS: Output mapping for F1
+		c.cvStore.SetDefault(36, 0b00001000, store.Persistent) // FUNCTIONS: Output mapping for F2
+		c.cvStore.SetDefault(37, 0b00010000, store.Persistent) // FUNCTIONS: Output mapping for F3
+		c.cvStore.SetDefault(38, 0b00000100, store.Persistent) // FUNCTIONS: Output mapping for F4
+		c.cvStore.SetDefault(39, 0b00001000, store.Persistent) // FUNCTIONS: Output mapping for F5
+		c.cvStore.SetDefault(40, 0b00010000, store.Persistent) // FUNCTIONS: Output mapping for F6
+		c.cvStore.SetDefault(41, 0b00100000, store.Persistent) // FUNCTIONS: Output mapping for F7
+		c.cvStore.SetDefault(42, 0b01000000, store.Persistent) // FUNCTIONS: Output mapping for F8
+		c.cvStore.SetDefault(43, 0b00010000, store.Persistent) // FUNCTIONS: Output mapping for F9
+		c.cvStore.SetDefault(44, 0b00100000, store.Persistent) // FUNCTIONS: Output mapping for F10
+		c.cvStore.SetDefault(45, 0b01000000, store.Persistent) // FUNCTIONS: Output mapping for F11
+		c.cvStore.SetDefault(46, 0b10000000, store.Persistent) // FUNCTIONS: Output mapping for F12
 
 		c.cvStore.SetDefault(51, 10, store.Persistent)  // MOTOR: Low to high PID gain cutover speed step
 		c.cvStore.SetDefault(52, 10, store.Persistent)  // MOTOR: Low speed Kp gain (proportional)
@@ -132,25 +148,6 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 	if err != nil {
 		return err
 	}
-
-	/* FIXME: Cleanup. This would require AUX numbers to be n+2 which is annoying (AUX1/output 3, etc.)
-	// Keeping around temporarily to reference the typical default function mapping
-	// Function mapping
-	c.cvStore.SetDefault(33, 0b00000001, store.Persistent) // F0f
-	c.cvStore.SetDefault(34, 0b00000010, store.Persistent) // F0r
-	c.cvStore.SetDefault(35, 0b00000100, store.Persistent) // F1
-	c.cvStore.SetDefault(36, 0b00001000, store.Persistent) // F2
-	c.cvStore.SetDefault(37, 0b00010000, store.Persistent) // F3
-	c.cvStore.SetDefault(38, 0b00000100, store.Persistent) // F4
-	c.cvStore.SetDefault(39, 0b00001000, store.Persistent) // F5
-	c.cvStore.SetDefault(40, 0b00010000, store.Persistent) // F6
-	c.cvStore.SetDefault(41, 0b00100000, store.Persistent) // F7
-	c.cvStore.SetDefault(42, 0b01000000, store.Persistent) // F8
-	c.cvStore.SetDefault(43, 0b00010000, store.Persistent) // F9
-	c.cvStore.SetDefault(44, 0b00100000, store.Persistent) // F10
-	c.cvStore.SetDefault(45, 0b01000000, store.Persistent) // F11
-	c.cvStore.SetDefault(46, 0b10000000, store.Persistent) // F12
-	*/
 
 	return nil
 }
