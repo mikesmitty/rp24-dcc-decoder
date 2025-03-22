@@ -61,31 +61,39 @@
 				
 				<option value="file2">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_mock.go (0.0%)</option>
 				
-				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
+				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (3.3%)</option>
 				
-				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (40.0%)</option>
+				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
 				
-				<option value="file5">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message.go (76.9%)</option>
+				<option value="file5">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (22.6%)</option>
 				
-				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
+				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message.go (76.9%)</option>
 				
-				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.5%)</option>
+				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
 				
-				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (85.2%)</option>
+				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.5%)</option>
 				
-				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_xpom.go (33.3%)</option>
+				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (85.2%)</option>
 				
-				<option value="file10">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/monitor.go (0.0%)</option>
+				<option value="file10">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_xpom.go (33.3%)</option>
 				
-				<option value="file11">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/hal_mock.go (0.0%)</option>
+				<option value="file11">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/monitor.go (0.0%)</option>
 				
-				<option value="file12">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/i2s.go (0.0%)</option>
+				<option value="file12">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/hal.go (0.0%)</option>
 				
-				<option value="file13">github.com/mikesmitty/rp24-dcc-decoder/pkg/iir/iir.go (0.0%)</option>
+				<option value="file13">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/hal_mock.go (0.0%)</option>
 				
-				<option value="file14">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/flash_mock.go (54.5%)</option>
+				<option value="file14">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/i2s.go (0.0%)</option>
 				
-				<option value="file15">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/store.go (72.5%)</option>
+				<option value="file15">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/outputs.go (0.0%)</option>
+				
+				<option value="file16">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/pwm_mock.go (0.0%)</option>
+				
+				<option value="file17">github.com/mikesmitty/rp24-dcc-decoder/pkg/iir/iir.go (0.0%)</option>
+				
+				<option value="file18">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/flash_mock.go (54.5%)</option>
+				
+				<option value="file19">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/store.go (72.5%)</option>
 				
 				</select>
 			</div>
@@ -101,7 +109,10 @@
 		
 		<pre class="file" id="file0" style="display: none">package cv
 
-import "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+import (
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
+)
 
 type Handler interface {
         CV(uint16) uint8
@@ -115,7 +126,7 @@ type Handler interface {
         Reset(uint16) bool
         ResetAll()
         ProcessChanges()
-        RegisterCallback(uint16, func(uint16, uint8) bool)
+        RegisterCallback(uint16, cb.CVCallbackFunc)
         IndexPage(...uint8) uint16
         LoadIndex(uint8, uint8) error
 }
@@ -126,8 +137,6 @@ type CVHandler struct {
         cvStore     *store.Store
         cvCallbacks map[uint16][]func(uint16, uint8) bool
 }
-
-type CVCallbackFunc func(uint16, uint8) bool
 
 var fwVersion []uint8
 
@@ -165,7 +174,7 @@ func NewCVHandler(version []uint8) *CVHandler <span class="cov0" title="0">{
         <span class="cov0" title="0">return c</span>
 }
 
-func (c *CVHandler) RegisterCallback(cvNumber uint16, fn func(cvNumber uint16, value uint8) bool) <span class="cov0" title="0">{
+func (c *CVHandler) RegisterCallback(cvNumber uint16, fn cb.CVCallbackFunc) <span class="cov0" title="0">{
         if _, ok := c.CVOk(cvNumber); !ok </span><span class="cov0" title="0">{
                 // It's not likely this will ever happen, but just to be sure
                 panic("CV not found")</span>
@@ -342,8 +351,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
                 c.cvStore.SetDefault(18, 0, store.Persistent) // ADDR: LSB
                 c.cvStore.SetDefault(19, 0, store.Persistent) // CONSIST: ADDR: Consist address
                 c.cvStore.SetDefault(20, 0, store.Persistent) // CONSIST: ADDR: Consist extended address
-                c.cvStore.SetDefault(21, 0, store.Persistent) // CONSIST: Consist address function activation F1-F8 // FIXME: Implement this
-                c.cvStore.SetDefault(22, 0, store.Persistent) // CONSIST: Consist address function activation F0f, F0r, F9-F12 // FIXME: Implement this
+                c.cvStore.SetDefault(21, 0, store.Persistent) // CONSIST: Consist address function activation F1-F8
+                c.cvStore.SetDefault(22, 0, store.Persistent) // CONSIST: Consist address function activation F0f, F0r, F9-F12
                 c.cvStore.SetDefault(23, 0, store.Persistent) // MOTOR: No acceleration adjustment
                 c.cvStore.SetDefault(24, 0, store.Persistent) // MOTOR: No deceleration adjustment
 
@@ -365,9 +374,25 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
                 // Bit 0: 0 = Forward direction, 1 = Reverse direction
                 c.cvStore.SetDefault(29, 0b00000010, store.Persistent) // BiDi disabled, 28/128 speed steps TODO: Enable BiDi
 
-                c.cvStore.SetDefault(30, 0, store.Volatile) // ERROR: Error code
+                c.cvStore.SetDefault(30, 0, store.Volatile) // ERROR: Error code TODO: Implement error codes
                 c.cvStore.SetDefault(31, 0, store.Volatile) // INDEX: CV index paging MSB (0 is disabled, 1-15 are reserved)
                 c.cvStore.SetDefault(32, 0, store.Volatile) // INDEX: CV index paging LSB
+
+                // TODO: Reimplement for more flexibility
+                c.cvStore.SetDefault(33, 0b00000001, store.Persistent) // FUNCTIONS: Output mapping for F0f
+                c.cvStore.SetDefault(34, 0b00000010, store.Persistent) // FUNCTIONS: Output mapping for F0r
+                c.cvStore.SetDefault(35, 0b00000100, store.Persistent) // FUNCTIONS: Output mapping for F1
+                c.cvStore.SetDefault(36, 0b00001000, store.Persistent) // FUNCTIONS: Output mapping for F2
+                c.cvStore.SetDefault(37, 0b00010000, store.Persistent) // FUNCTIONS: Output mapping for F3
+                c.cvStore.SetDefault(38, 0b00000100, store.Persistent) // FUNCTIONS: Output mapping for F4
+                c.cvStore.SetDefault(39, 0b00001000, store.Persistent) // FUNCTIONS: Output mapping for F5
+                c.cvStore.SetDefault(40, 0b00010000, store.Persistent) // FUNCTIONS: Output mapping for F6
+                c.cvStore.SetDefault(41, 0b00100000, store.Persistent) // FUNCTIONS: Output mapping for F7
+                c.cvStore.SetDefault(42, 0b01000000, store.Persistent) // FUNCTIONS: Output mapping for F8
+                c.cvStore.SetDefault(43, 0b00010000, store.Persistent) // FUNCTIONS: Output mapping for F9
+                c.cvStore.SetDefault(44, 0b00100000, store.Persistent) // FUNCTIONS: Output mapping for F10
+                c.cvStore.SetDefault(45, 0b01000000, store.Persistent) // FUNCTIONS: Output mapping for F11
+                c.cvStore.SetDefault(46, 0b10000000, store.Persistent) // FUNCTIONS: Output mapping for F12
 
                 c.cvStore.SetDefault(51, 10, store.Persistent)  // MOTOR: Low to high PID gain cutover speed step
                 c.cvStore.SetDefault(52, 10, store.Persistent)  // MOTOR: Low speed Kp gain (proportional)
@@ -429,30 +454,13 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
                 return err
         }</span>
 
-        /* FIXME: Cleanup. This would require AUX numbers to be n+2 which is annoying (AUX1/output 3, etc.)
-        // Keeping around temporarily to reference the typical default function mapping
-        // Function mapping
-        c.cvStore.SetDefault(33, 0b00000001, store.Persistent) // F0f
-        c.cvStore.SetDefault(34, 0b00000010, store.Persistent) // F0r
-        c.cvStore.SetDefault(35, 0b00000100, store.Persistent) // F1
-        c.cvStore.SetDefault(36, 0b00001000, store.Persistent) // F2
-        c.cvStore.SetDefault(37, 0b00010000, store.Persistent) // F3
-        c.cvStore.SetDefault(38, 0b00000100, store.Persistent) // F4
-        c.cvStore.SetDefault(39, 0b00001000, store.Persistent) // F5
-        c.cvStore.SetDefault(40, 0b00010000, store.Persistent) // F6
-        c.cvStore.SetDefault(41, 0b00100000, store.Persistent) // F7
-        c.cvStore.SetDefault(42, 0b01000000, store.Persistent) // F8
-        c.cvStore.SetDefault(43, 0b00010000, store.Persistent) // F9
-        c.cvStore.SetDefault(44, 0b00100000, store.Persistent) // F10
-        c.cvStore.SetDefault(45, 0b01000000, store.Persistent) // F11
-        c.cvStore.SetDefault(46, 0b10000000, store.Persistent) // F12
-        */
-
         <span class="cov0" title="0">return nil</span>
 }
 </pre>
 		
 		<pre class="file" id="file2" style="display: none">package cv
+
+import "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
 
 var _ Handler = (*MockHandler)(nil)
 
@@ -515,7 +523,7 @@ func (m *MockHandler) SetSync(cv uint16, value uint8) bool <span class="cov0" ti
         return m.returnValue
 }</span>
 
-func (m *MockHandler) RegisterCallback(cv uint16, fn func(cvNumber uint16, value uint8) bool) {<span class="cov0" title="0">
+func (m *MockHandler) RegisterCallback(cv uint16, fn cb.CVCallbackFunc) {<span class="cov0" title="0">
 }</span>
 
 func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 <span class="cov0" title="0">{
@@ -527,42 +535,271 @@ func (m *MockHandler) LoadIndex(page1, page2 uint8) error <span class="cov0" tit
 }</span>
 </pre>
 		
-		<pre class="file" id="file3" style="display: none">//go:build !rp
+		<pre class="file" id="file3" style="display: none">package dcc
+
+import (
+        "errors"
+        "time"
+
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+)
+
+//go:generate pioasm -o go dcc.pio dcc_pio.go
+
+func NewDecoder(cvHandler cv.Handler, pioNum int, pin Pin) (*Decoder, error) <span class="cov0" title="0">{
+        d := &amp;Decoder{address: make([]byte, 2), cv: cvHandler}
+
+        err := d.initPIO(pioNum, pin)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+
+        // TODO: Handle setting version number at build time
+
+        <span class="cov0" title="0">return d, nil</span>
+}
+
+// Set the address of the DCC reader
+func (d *Decoder) SetAddress(addr uint16) error <span class="cov0" title="0">{
+        if addr == 0 || addr &gt; 10239 </span><span class="cov0" title="0">{
+                return errors.New("address out of range")
+        }</span>
+
+        <span class="cov0" title="0">d.address = d.address[:0]
+        if addr &gt; 127 </span><span class="cov0" title="0">{
+                d.address = append(d.address, 0xC0|byte(addr&gt;&gt;8))
+                d.address = append(d.address, byte(addr))
+        }</span> else<span class="cov0" title="0"> {
+                d.address = append(d.address, byte(addr))
+        }</span>
+
+        <span class="cov0" title="0">return nil</span>
+}
+
+// Enable or disable the DCC reader
+func (d *Decoder) Enable(enabled bool) <span class="cov0" title="0">{
+        d.sm.SetEnabled(enabled)
+}</span>
+
+func (d *Decoder) OpMode() opMode <span class="cov0" title="0">{
+        return d.opMode
+}</span>
+
+func (d *Decoder) SetOpMode(mode opMode) <span class="cov0" title="0">{
+        if mode == ServiceMode </span><span class="cov0" title="0">{
+                // If we've received a service mode reset packet re-up the 20ms timer
+                d.lastSvcResetTime = time.Now()
+                d.svcModeReady = true
+        }</span> else<span class="cov0" title="0"> {
+                d.svcModeReady = false
+        }</span>
+        <span class="cov0" title="0">d.opMode = mode</span>
+        // TODO: Handle exiting service mode
+}
+
+func (d *Decoder) Reset() <span class="cov8" title="1">{
+        d.lastSvcResetTime = time.Now()
+        d.svcModeReady = true
+        // TODO: Implement reset packet handling
+        /* When a Digital Decoder receives a Digital Decoder Reset Packet, it shall erase all
+        volatile memory (including any speed and direction data), and return to its normal
+        power-up state. If the Digital Decoder is operating a locomotive at a non-zero speed
+        when it receives a Digital Decoder Reset, it shall bring the locomotive to an
+        immediate stop.  */
+}</span>
+
+func (d *Decoder) CVCallback() cb.CVCallbackFunc <span class="cov0" title="0">{
+        return func(cvNumber uint16, value uint8) bool </span><span class="cov0" title="0">{
+                switch cvNumber </span>{
+                case 1:<span class="cov0" title="0">
+                        // Set the short address
+                        // Not allowing 0 because DC mode is out of scope
+                        if value &lt; 1 || value &gt; 127 </span><span class="cov0" title="0">{
+                                return false
+                        }</span>
+                        <span class="cov0" title="0">d.SetAddress(uint16(value))</span>
+
+                case 17, 18:<span class="cov0" title="0">
+                        // CV17 must be in the range 192-231, CV18 can be any value
+                        // The top 2 bits of CV17 are ignored when parsing the address
+                        if cvNumber == 17 &amp;&amp; (value &lt; 192 || value &gt; 231) </span><span class="cov0" title="0">{
+                                return false
+                        }</span>
+                        // Set the extended address bytes
+                        <span class="cov0" title="0">d.address[cvNumber-17] = value</span>
+
+                case 19, 20:<span class="cov0" title="0">
+                        // Set the consist address bytes
+                        // TODO: Add validation around CV19 value in extended address mode when standardized
+                        d.consistAddress[cvNumber-19] = value</span>
+
+                case 21:<span class="cov0" title="0">
+                        // Convert CV21 to a bitmask for enabling the functions via consist address (F1-F8)
+                        // Clear the bits for F1-F4
+                        mask := d.consistFuncMask[0] &amp; 0b11110000
+                        // Set the bits for F1-F4
+                        mask |= value &amp; 0b00001111
+                        d.consistFuncMask[0] = mask
+
+                        // Set the bits for F5-F8
+                        d.consistFuncMask[1] = value &gt;&gt; 4</span>
+
+                case 22:<span class="cov0" title="0">
+                        // Convert CV22 to a bitmask for enabling the functions via consist address (FLf, FLr, F9-F12)
+                        // TODO: Implement this for FLf and FLr separately
+                        // Clear the bit for FL (F0)
+                        mask := d.consistFuncMask[0] &amp;^ (1 &lt;&lt; 4)
+                        // Set the bit for FL (F0) (CV bit 0 -&gt; mask bit 4, FLr is CV bit 1)
+                        mask |= (value &amp; 1) &lt;&lt; 4
+                        d.consistFuncMask[0] = mask
+
+                        // Set the mask bits for F9-F12 (CV bits 2-5)
+                        d.consistFuncMask[2] = (value &amp; 0b00111100) &gt;&gt; 2</span>
+
+                case 29:<span class="cov0" title="0">
+                        // CV29 bit 5: 0 = short address, 1 = extended address
+                        cv17 := d.cv.CV(17)
+                        if (value &amp; 0b00100000) != 0 </span><span class="cov0" title="0">{
+                                if cv17 &gt;= 192 &amp;&amp; cv17 &lt;= 231 </span><span class="cov0" title="0">{
+                                        // If CV17 is 192 and CV18 is 0 the long address would be 0, abort
+                                        if cv17 == 192 &amp;&amp; d.cv.CV(18) == 0 </span><span class="cov0" title="0">{
+                                                return false
+                                        }</span>
+                                        // Otherwise, if CV17 is valid, set bit 5 and enable it
+                                        <span class="cov0" title="0">d.address = append(d.address[:0], 0xC0|d.cv.CV(17))
+                                        d.address = append(d.address, d.cv.CV(18))</span>
+                                } else<span class="cov0" title="0"> {
+                                        // If CV17 is invalid, reject the CV29 update
+                                        return false
+                                }</span>
+                        } else<span class="cov0" title="0"> {
+                                // Clear bit 5 and use the short address
+                                d.address = append(d.address[:0], d.cv.CV(1))
+                                return false
+                        }</span>
+                case 33:<span class="cov0" title="0">
+                        // Configure function mapping to output F0f
+                        d.outputMapsFwd[0] = uint16(value)</span>
+                case 34:<span class="cov0" title="0">
+                        // Configure function mapping to output F0r
+                        d.outputMapsRev[0] = uint16(value)</span>
+                case 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46:<span class="cov0" title="0">
+                        // Configure function mapping for F1-F12 to outputs AUX1-AUX12 (fwd and rev)
+                        outputNum := cvNumber - 33
+                        outputs := uint16(value)
+                        if cvNumber &gt;= 43 </span><span class="cov0" title="0">{
+                                // AUX5-AUX12
+                                outputs = outputs &lt;&lt; 6
+                        }</span> else<span class="cov0" title="0"> if cvNumber &gt;= 38 </span><span class="cov0" title="0">{
+                                // AUX2-AUX9
+                                outputs = outputs &lt;&lt; 3
+                        }</span>
+                        <span class="cov0" title="0">d.outputMapsFwd[outputNum] = uint16(value)
+                        d.outputMapsRev[outputNum] = uint16(value)</span>
+                }
+
+                <span class="cov0" title="0">return true</span>
+        }
+}
+
+/* FIXME: Might be useful?
+// SetSampleFrequency sets the sample frequency of the I2S peripheral.
+func (d *DCCReader) SetFrequency(freq uint32) error {
+        freq *= 32 // 32 bits per sample
+        whole, frac, err := pio.ClkDivFromFrequency(freq, machine.CPUFrequency())
+        if err != nil {
+                return err
+        }
+        i2s.sm.SetClkDiv(whole, frac)
+        return nil
+}
+*/
+</pre>
+		
+		<pre class="file" id="file4" style="display: none">//go:build !rp
 
 package dcc
 
 // initPIO is a stub for non-RP platforms
-func initPIO(pioNum int, pin Pin) error <span class="cov0" title="0">{
+func (d *Decoder) initPIO(pioNum int, pin Pin) error <span class="cov0" title="0">{
         return nil
 }</span>
-
-func (d *Decoder) Reset() {<span class="cov8" title="1">}</span>
-
-func (d *Decoder) SetOpMode(mode opMode) {<span class="cov0" title="0">}</span>
 </pre>
 		
-		<pre class="file" id="file4" style="display: none">package dcc
+		<pre class="file" id="file5" style="display: none">package dcc
 
-type FnHandler func(bool)
+import (
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
+)
 
-// Register a function handler
-func (d *Decoder) RegisterFunction(number uint16, fn FnHandler) <span class="cov0" title="0">{
-        d.fnHandlers[number] = append(d.fnHandlers[number], fn)
+func (d *Decoder) RegisterOutput(output string, fn cb.OutputCallback) <span class="cov0" title="0">{
+        index := IndexFromOutput(output)
+        d.outputCallbacks[index] = append(d.outputCallbacks[index], fn)
 }</span>
 
 // Control DCC functions
 func (d *Decoder) callFunction(number uint16, state bool) <span class="cov8" title="1">{
-        if handlers, ok := d.fnHandlers[number]; ok </span><span class="cov0" title="0">{
-                for _, fn := range handlers </span><span class="cov0" title="0">{
-                        fn(state)
-                }</span>
-        } else<span class="cov8" title="1"> {
-                println("function not found:", number)
+        var outputMap uint16
+        var ok bool
+        if d.direction == motor.Forward </span><span class="cov0" title="0">{
+                outputMap, ok = d.outputMapsFwd[number]
+        }</span> else<span class="cov8" title="1"> {
+                outputMap, ok = d.outputMapsRev[number]
         }</span>
+        <span class="cov8" title="1">if !ok </span><span class="cov8" title="1">{
+                println("output map not found:", number)
+                return
+        }</span>
+
+        <span class="cov0" title="0">for i := 0; i &lt; 16; i++ </span><span class="cov0" title="0">{
+                if outputMap&amp;(1&lt;&lt;i) &gt; 0 </span><span class="cov0" title="0">{
+                        if handlers, ok := d.outputCallbacks[number]; ok </span><span class="cov0" title="0">{
+                                for _, fn := range handlers </span><span class="cov0" title="0">{
+                                        fn(number, state)
+                                }</span>
+                        } else<span class="cov0" title="0"> {
+                                println("function not found:", number)
+                        }</span>
+                }
+        }
+}
+
+func IndexFromOutput(output string) uint16 <span class="cov0" title="0">{
+        switch output </span>{
+        case "lampFront":<span class="cov0" title="0">
+                return 0</span>
+        case "lampRear":<span class="cov0" title="0">
+                return 1</span>
+        case "aux1":<span class="cov0" title="0">
+                return 2</span>
+        case "aux2":<span class="cov0" title="0">
+                return 3</span>
+        case "aux3":<span class="cov0" title="0">
+                return 4</span>
+        case "aux4":<span class="cov0" title="0">
+                return 5</span>
+        case "aux5":<span class="cov0" title="0">
+                return 6</span>
+        case "aux6":<span class="cov0" title="0">
+                return 7</span>
+        case "aux7":<span class="cov0" title="0">
+                return 8</span>
+        case "aux8":<span class="cov0" title="0">
+                return 9</span>
+        case "aux10":<span class="cov0" title="0">
+                return 11</span>
+        case "aux11":<span class="cov0" title="0">
+                return 12</span>
+        case "aux12":<span class="cov0" title="0">
+                return 13</span>
+        }
+        <span class="cov0" title="0">return 255</span>
 }
 </pre>
 		
-		<pre class="file" id="file5" style="display: none">package dcc
+		<pre class="file" id="file6" style="display: none">package dcc
 
 import (
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
@@ -828,14 +1065,14 @@ func (m *Message) addressMatch(b []byte) bool <span class="cov8" title="1">{
 }
 </pre>
 		
-		<pre class="file" id="file6" style="display: none">package dcc
+		<pre class="file" id="file7" style="display: none">package dcc
 
 func (m *Message) advancedExtendedPacket() {<span class="cov0" title="0">
         // TODO: To be implemented
 }</span>
 </pre>
 		
-		<pre class="file" id="file7" style="display: none">package dcc
+		<pre class="file" id="file8" style="display: none">package dcc
 
 func (m *Message) extendedPacket() bool <span class="cov8" title="1">{
         // Extended message format
@@ -1155,7 +1392,7 @@ func (m *Message) cvConfirmCheck(cv uint16, value uint8) bool <span class="cov8"
 }
 </pre>
 		
-		<pre class="file" id="file8" style="display: none">package dcc
+		<pre class="file" id="file9" style="display: none">package dcc
 
 func (m *Message) serviceModePacket() <span class="cov0" title="0">{
         m.decoder.SetOpMode(ServiceMode)
@@ -1236,7 +1473,7 @@ func (m *Message) setCVCommand(index uint16, b []byte) bool <span class="cov8" t
 }
 </pre>
 		
-		<pre class="file" id="file9" style="display: none">package dcc
+		<pre class="file" id="file10" style="display: none">package dcc
 
 func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
         // XPOM - Extended Programming On Main
@@ -1286,7 +1523,7 @@ func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
         // 11 = write bytes
         // 10 = write bits
 
-        // seq := b[0] &amp; 0b11 // FIXME: What is this for?
+        // seq := b[0] &amp; 0b11 // TODO: What is this for?
         // Find in https://www.nmra.org/sites/default/files/standards/sandrp/Draft/DCC/s-9.3.2_bi-directional_communication.pdf
         <span class="cov0" title="0">index := m.cv.IndexPage(b[1], b[2])
         switch (b[0] &gt;&gt; 2) &amp; 0b11 </span>{
@@ -1319,7 +1556,7 @@ func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
 }
 </pre>
 		
-		<pre class="file" id="file10" style="display: none">package dcc
+		<pre class="file" id="file11" style="display: none">package dcc
 
 import "runtime"
 
@@ -1429,7 +1666,15 @@ func printUintN(n int, b uint32) <span class="cov0" title="0">{
 }
 </pre>
 		
-		<pre class="file" id="file11" style="display: none">//go:build !rp
+		<pre class="file" id="file12" style="display: none">package hal
+
+func (h *HAL) Pin(name string) (Pin, bool) <span class="cov0" title="0">{
+        _, ok := h.pins[name]
+        return h.pins[name], ok
+}</span>
+</pre>
+		
+		<pre class="file" id="file13" style="display: none">//go:build !rp
 
 package hal
 
@@ -1438,6 +1683,7 @@ type HAL struct {
 }
 
 type Pin interface {
+        Set(bool)
 }
 
 // Stub for non-RP platforms
@@ -1449,9 +1695,13 @@ func NewHAL() *HAL <span class="cov0" title="0">{
 func (h *HAL) initI2SPIO(_ int, _, _ Pin) (I2S, error) <span class="cov0" title="0">{
         return nil, nil
 }</span>
+
+func (h *HAL) InitPWM(pin Pin, freq uint64, duty float32) (*SimplePWM, error) <span class="cov0" title="0">{
+        return nil, nil
+}</span>
 </pre>
 		
-		<pre class="file" id="file12" style="display: none">package hal
+		<pre class="file" id="file14" style="display: none">package hal
 
 type I2S interface {
         SetSampleFrequency(f uint32) error
@@ -1465,10 +1715,10 @@ func (h *HAL) InitI2S() error <span class="cov0" title="0">{
                 return err
         }</span>
 
-        // FIXME: Make configurable
-        <span class="cov0" title="0">i2s.SetSampleFrequency(44100) // FIXME: Use 48kHz or 96kHz for ultrasonic frequencies
+        // TODO: Make configurable
+        <span class="cov0" title="0">i2s.SetSampleFrequency(44100) // TODO: Use 48kHz or 96kHz for ultrasonic frequencies
 
-        /* FIXME: Implement
+        /* TODO: Implement
         i2s.WriteStereo(data)
         }
         */
@@ -1476,7 +1726,31 @@ func (h *HAL) InitI2S() error <span class="cov0" title="0">{
 }
 </pre>
 		
-		<pre class="file" id="file13" style="display: none">package iir
+		<pre class="file" id="file15" style="display: none">package hal
+
+import "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+
+func (h *HAL) GetOutputCallback(output string) cb.OutputCallback <span class="cov0" title="0">{
+        return func(_ uint16, on bool) </span><span class="cov0" title="0">{
+                h.SetOutput(output, on)
+        }</span>
+}
+
+func (h *HAL) SetOutput(output string, state bool) <span class="cov0" title="0">{
+        // TODO: Add support for dimming, strobing, etc.
+        if pin, ok := h.pins[output]; ok </span><span class="cov0" title="0">{
+                pin.Set(state)
+        }</span>
+}
+</pre>
+		
+		<pre class="file" id="file16" style="display: none">package hal
+
+func (s *SimplePWM) Enable(enable bool) {<span class="cov0" title="0">
+}</span>
+</pre>
+		
+		<pre class="file" id="file17" style="display: none">package iir
 
 type IIRFilter struct {
         Alpha float32
@@ -1513,7 +1787,7 @@ func (f *IIRFilter) Reset() <span class="cov0" title="0">{
 }</span>
 </pre>
 		
-		<pre class="file" id="file14" style="display: none">//go:build !rp
+		<pre class="file" id="file18" style="display: none">//go:build !rp
 
 package store
 
@@ -1550,7 +1824,7 @@ func (s *Store) LoadIndex(newIndex uint16) (bool, error) <span class="cov0" titl
 }
 </pre>
 		
-		<pre class="file" id="file15" style="display: none">package store
+		<pre class="file" id="file19" style="display: none">package store
 
 import (
         "tinygo.org/x/tinyfs"
