@@ -45,7 +45,7 @@ jobs:
           sudo dpkg -i tinygo_*.deb
 
       - name: Build
-        run: tinygo build -o rp24-dcc-decoder.uf2 -target pico2 -ldflags="-X 'main.version=${VERSION}'"                             
+        run: tinygo build -o rp24-dcc-decoder_${VERSION}.uf2 -target pico2 -ldflags="-X 'main.version=${VERSION}'"
         env:
           VERSION: ${{ needs.release-please.outputs.version }}
 
