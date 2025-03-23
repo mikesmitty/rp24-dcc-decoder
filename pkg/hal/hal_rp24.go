@@ -1,4 +1,4 @@
-//go:build rp && !pico2
+//go:build rp && !mule
 
 package hal
 

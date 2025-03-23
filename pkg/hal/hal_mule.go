@@ -1,4 +1,4 @@
-//go:build pico2
+//go:build mule
 
 package hal
 
