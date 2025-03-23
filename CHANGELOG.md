@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.1.0...v0.2.0) (2025-03-23)
+
+
+### Features
+
+* add motor control ([26f15c5](https://github.com/mikesmitty/rp24-dcc-decoder/commit/26f15c5dfaf2c012a957807f6a8c6f23504239b2))
+* update go to 1.24.1 ([fa4d50e](https://github.com/mikesmitty/rp24-dcc-decoder/commit/fa4d50ecfa9deb2a11a8e6c42269f53fc977b5fc))
+
+
+### Bug Fixes
+
+* correct function offset indexes ([ea1fa88](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ea1fa88235f76972585350e53caf278e261eab66))
+* disable directional outputs when switching direction ([26f15c5](https://github.com/mikesmitty/rp24-dcc-decoder/commit/26f15c5dfaf2c012a957807f6a8c6f23504239b2))
+* embed tagged version at build time ([009c713](https://github.com/mikesmitty/rp24-dcc-decoder/commit/009c713c4f9f1269592b5a993daec2d3cb00894c))
+
 ## [0.1.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.0.1...v0.1.0) (2025-03-23)
 
 
