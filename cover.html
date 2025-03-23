@@ -61,7 +61,7 @@
 				
 				<option value="file2">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_mock.go (0.0%)</option>
 				
-				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (3.3%)</option>
+				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (2.8%)</option>
 				
 				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
 				
@@ -110,7 +110,7 @@
 		<pre class="file" id="file0" style="display: none">package cv
 
 import (
-        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
 )
 
@@ -126,7 +126,7 @@ type Handler interface {
         Reset(uint16) bool
         ResetAll()
         ProcessChanges()
-        RegisterCallback(uint16, cb.CVCallbackFunc)
+        RegisterCallback(uint16, shared.CVCallbackFunc)
         IndexPage(...uint8) uint16
         LoadIndex(uint8, uint8) error
 }
@@ -150,6 +150,7 @@ func NewCVHandler(version []uint8) *CVHandler <span class="cov0" title="0">{
         if len(version) != 3 </span><span class="cov0" title="0">{
                 panic("invalid version length")</span>
         }
+        <span class="cov0" title="0">fwVersion = version
 
         // Check if the version has changed
         /* TODO: Check major/minor/patch version
@@ -164,7 +165,7 @@ func NewCVHandler(version []uint8) *CVHandler <span class="cov0" title="0">{
         // wonky. Need to refactor for that change if/when CVs &gt; 256 are implemented
 
         // Load the last-used index from flash
-        <span class="cov0" title="0">cv31, _ := s.IndexedCV(0, 31)
+        cv31, _ := s.IndexedCV(0, 31)
         cv32, _ := s.IndexedCV(0, 32)
         err := c.LoadIndex(cv31, cv32)
         if err != nil </span><span class="cov0" title="0">{
@@ -174,12 +175,15 @@ func NewCVHandler(version []uint8) *CVHandler <span class="cov0" title="0">{
         <span class="cov0" title="0">return c</span>
 }
 
-func (c *CVHandler) RegisterCallback(cvNumber uint16, fn cb.CVCallbackFunc) <span class="cov0" title="0">{
+func (c *CVHandler) RegisterCallback(cvNumber uint16, fn shared.CVCallbackFunc) <span class="cov0" title="0">{
         if _, ok := c.CVOk(cvNumber); !ok </span><span class="cov0" title="0">{
                 // It's not likely this will ever happen, but just to be sure
+                println("CV not found: ", cvNumber)
                 panic("CV not found")</span>
         }
-        <span class="cov0" title="0">c.cvCallbacks[cvNumber] = append(c.cvCallbacks[cvNumber], fn)</span>
+        <span class="cov0" title="0">c.cvCallbacks[cvNumber] = append(c.cvCallbacks[cvNumber], fn)
+        // Initialize the callback with the current value
+        fn(cvNumber, c.CV(cvNumber))</span>
 }
 
 // Return the current index page indicated by CV31/32 or a provided equivalent
@@ -322,8 +326,10 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
                 return errors.New("invalid index page")
         }</span>
 
+        <span class="cov0" title="0">println("Loading CV index page", index)
+
         // Persist any remaining dirty flags
-        <span class="cov0" title="0">if ok := c.cvStore.ProcessChanges(); !ok </span><span class="cov0" title="0">{
+        if ok := c.cvStore.ProcessChanges(); !ok </span><span class="cov0" title="0">{
                 // Going to not consider this a critical error at least for now
                 println("could not save changes to flash")
         }</span>
@@ -460,7 +466,7 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
 		
 		<pre class="file" id="file2" style="display: none">package cv
 
-import "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
 var _ Handler = (*MockHandler)(nil)
 
@@ -523,7 +529,7 @@ func (m *MockHandler) SetSync(cv uint16, value uint8) bool <span class="cov0" ti
         return m.returnValue
 }</span>
 
-func (m *MockHandler) RegisterCallback(cv uint16, fn cb.CVCallbackFunc) {<span class="cov0" title="0">
+func (m *MockHandler) RegisterCallback(cv uint16, fn shared.CVCallbackFunc) {<span class="cov0" title="0">
 }</span>
 
 func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 <span class="cov0" title="0">{
@@ -541,14 +547,21 @@ import (
         "errors"
         "time"
 
-        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, pioNum int, pin Pin) (*Decoder, error) <span class="cov0" title="0">{
-        d := &amp;Decoder{address: make([]byte, 2), cv: cvHandler}
+func NewDecoder(cvHandler cv.Handler, pioNum int, pin shared.Pin) (*Decoder, error) <span class="cov0" title="0">{
+        d := &amp;Decoder{
+                address:         make([]byte, 0, 2),
+                consistAddress:  make([]byte, 0, 2),
+                cv:              cvHandler,
+                outputCallbacks: make(map[uint16][]shared.OutputCallback, 12),
+                outputMapsFwd:   make(map[uint16]uint16, 12),
+                outputMapsRev:   make(map[uint16]uint16, 12),
+        }
 
         err := d.initPIO(pioNum, pin)
         if err != nil </span><span class="cov0" title="0">{
@@ -557,7 +570,9 @@ func NewDecoder(cvHandler cv.Handler, pioNum int, pin Pin) (*Decoder, error) <sp
 
         // TODO: Handle setting version number at build time
 
-        <span class="cov0" title="0">return d, nil</span>
+        <span class="cov0" title="0">d.RegisterCallbacks()
+
+        return d, nil</span>
 }
 
 // Set the address of the DCC reader
@@ -609,7 +624,18 @@ func (d *Decoder) Reset() <span class="cov8" title="1">{
         immediate stop.  */
 }</span>
 
-func (d *Decoder) CVCallback() cb.CVCallbackFunc <span class="cov0" title="0">{
+func (d *Decoder) RegisterCallbacks() <span class="cov0" title="0">{
+        d.cv.RegisterCallback(1, d.CVCallback())
+        for i := uint16(17); i &lt;= 22; i++ </span><span class="cov0" title="0">{
+                d.cv.RegisterCallback(i, d.CVCallback())
+        }</span>
+        <span class="cov0" title="0">d.cv.RegisterCallback(29, d.CVCallback())
+        for i := uint16(33); i &lt;= 46; i++ </span><span class="cov0" title="0">{
+                d.cv.RegisterCallback(i, d.CVCallback())
+        }</span>
+}
+
+func (d *Decoder) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0">{
         return func(cvNumber uint16, value uint8) bool </span><span class="cov0" title="0">{
                 switch cvNumber </span>{
                 case 1:<span class="cov0" title="0">
@@ -627,12 +653,20 @@ func (d *Decoder) CVCallback() cb.CVCallbackFunc <span class="cov0" title="0">{
                                 return false
                         }</span>
                         // Set the extended address bytes
-                        <span class="cov0" title="0">d.address[cvNumber-17] = value</span>
+                        <span class="cov0" title="0">if len(d.address) &lt; int(cvNumber)-16 </span><span class="cov0" title="0">{
+                                d.address = append(d.address, value)
+                        }</span> else<span class="cov0" title="0"> {
+                                d.address[cvNumber-17] = value
+                        }</span>
 
                 case 19, 20:<span class="cov0" title="0">
                         // Set the consist address bytes
                         // TODO: Add validation around CV19 value in extended address mode when standardized
-                        d.consistAddress[cvNumber-19] = value</span>
+                        if len(d.address) &lt; int(cvNumber)-18 </span><span class="cov0" title="0">{
+                                d.address = append(d.address, value)
+                        }</span> else<span class="cov0" title="0"> {
+                                d.address[cvNumber-19] = value
+                        }</span>
 
                 case 21:<span class="cov0" title="0">
                         // Convert CV21 to a bitmask for enabling the functions via consist address (F1-F8)
@@ -721,8 +755,10 @@ func (d *DCCReader) SetFrequency(freq uint32) error {
 
 package dcc
 
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+
 // initPIO is a stub for non-RP platforms
-func (d *Decoder) initPIO(pioNum int, pin Pin) error <span class="cov0" title="0">{
+func (d *Decoder) initPIO(pioNum int, pin shared.Pin) error <span class="cov0" title="0">{
         return nil
 }</span>
 </pre>
@@ -730,11 +766,11 @@ func (d *Decoder) initPIO(pioNum int, pin Pin) error <span class="cov0" title="0
 		<pre class="file" id="file5" style="display: none">package dcc
 
 import (
-        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
 
-func (d *Decoder) RegisterOutput(output string, fn cb.OutputCallback) <span class="cov0" title="0">{
+func (d *Decoder) RegisterOutput(output string, fn shared.OutputCallback) <span class="cov0" title="0">{
         index := IndexFromOutput(output)
         d.outputCallbacks[index] = append(d.outputCallbacks[index], fn)
 }</span>
@@ -743,6 +779,7 @@ func (d *Decoder) RegisterOutput(output string, fn cb.OutputCallback) <span clas
 func (d *Decoder) callFunction(number uint16, state bool) <span class="cov8" title="1">{
         var outputMap uint16
         var ok bool
+        // FIXME: Disable outputs if swapping direction
         if d.direction == motor.Forward </span><span class="cov0" title="0">{
                 outputMap, ok = d.outputMapsFwd[number]
         }</span> else<span class="cov8" title="1"> {
@@ -1668,7 +1705,9 @@ func printUintN(n int, b uint32) <span class="cov0" title="0">{
 		
 		<pre class="file" id="file12" style="display: none">package hal
 
-func (h *HAL) Pin(name string) (Pin, bool) <span class="cov0" title="0">{
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+
+func (h *HAL) Pin(name string) (shared.Pin, bool) <span class="cov0" title="0">{
         _, ok := h.pins[name]
         return h.pins[name], ok
 }</span>
@@ -1678,12 +1717,10 @@ func (h *HAL) Pin(name string) (Pin, bool) <span class="cov0" title="0">{
 
 package hal
 
-type HAL struct {
-        pins map[string]Pin
-}
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
-type Pin interface {
-        Set(bool)
+type HAL struct {
+        pins map[string]shared.Pin
 }
 
 // Stub for non-RP platforms
@@ -1692,21 +1729,16 @@ func NewHAL() *HAL <span class="cov0" title="0">{
 }</span>
 
 // initI2SPIO is a stub for non-RP platforms
-func (h *HAL) initI2SPIO(_ int, _, _ Pin) (I2S, error) <span class="cov0" title="0">{
+func (h *HAL) initI2SPIO(_ int, _, _ shared.Pin) (shared.I2S, error) <span class="cov0" title="0">{
         return nil, nil
 }</span>
 
-func (h *HAL) InitPWM(pin Pin, freq uint64, duty float32) (*SimplePWM, error) <span class="cov0" title="0">{
+func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error) <span class="cov0" title="0">{
         return nil, nil
 }</span>
 </pre>
 		
 		<pre class="file" id="file14" style="display: none">package hal
-
-type I2S interface {
-        SetSampleFrequency(f uint32) error
-        WriteMono(data []uint16) (int, error)
-}
 
 func (h *HAL) InitI2S() error <span class="cov0" title="0">{
         // LRCLKPin is expected to be BCLKPin + 1
@@ -1728,9 +1760,9 @@ func (h *HAL) InitI2S() error <span class="cov0" title="0">{
 		
 		<pre class="file" id="file15" style="display: none">package hal
 
-import "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
-func (h *HAL) GetOutputCallback(output string) cb.OutputCallback <span class="cov0" title="0">{
+func (h *HAL) GetOutputCallback(output string) shared.OutputCallback <span class="cov0" title="0">{
         return func(_ uint16, on bool) </span><span class="cov0" title="0">{
                 h.SetOutput(output, on)
         }</span>
@@ -1744,10 +1776,23 @@ func (h *HAL) SetOutput(output string, state bool) <span class="cov0" title="0">
 }
 </pre>
 		
-		<pre class="file" id="file16" style="display: none">package hal
+		<pre class="file" id="file16" style="display: none">//go:build !rp
+
+package hal
+
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
 func (s *SimplePWM) Enable(enable bool) {<span class="cov0" title="0">
 }</span>
+
+type PWM interface {
+        Set(channel uint8, value uint32)
+        SetPeriod(period uint64) error
+        Enable(bool)
+        Top() uint32
+        Configure(config shared.PWMConfig) error
+        Channel(shared.Pin) (uint8, error)
+}
 </pre>
 		
 		<pre class="file" id="file17" style="display: none">package iir
