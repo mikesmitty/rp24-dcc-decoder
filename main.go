@@ -2,6 +2,8 @@ package main
 
 import (
 	"runtime"
+	"strconv"
+	"strings"
 
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
@@ -10,9 +12,11 @@ import (
 
 var hw *hal.HAL
 
+var version string
+
 func main() {
 	hw = hal.NewHAL()
-	cvHandler := cv.NewCVHandler([]uint8{1, 2, 3}) // TODO: Set version number at build time
+	cvHandler := cv.NewCVHandler(versionToBytes(version))
 
 	dccPin, ok := hw.Pin("dcc")
 	if !ok {
@@ -42,6 +46,22 @@ func main() {
 	for {
 		runtime.Gosched() // FIXME: Cleanup
 	}
+}
+
+func versionToBytes(version string) []uint8 {
+	versionParts := strings.Split(version, ".")
+	if len(versionParts) != 3 {
+		panic("invalid version string length")
+	}
+	var versionBytes []uint8
+	for _, part := range versionParts {
+		partInt, err := strconv.Atoi(part)
+		if err != nil {
+			panic("invalid version string")
+		}
+		versionBytes = append(versionBytes, uint8(partInt))
+	}
+	return versionBytes
 }
 
 var outputs = []string{

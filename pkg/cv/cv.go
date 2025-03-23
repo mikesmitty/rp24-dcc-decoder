@@ -43,8 +43,7 @@ func NewCVHandler(version []uint8) *CVHandler {
 	}
 	fwVersion = version
 
-	// Check if the version has changed
-	/* TODO: Check major/minor/patch version
+	/* TODO: Check if the version has changed
 	lastVersion, _ := s.IndexedCV(0, 7)
 	if lastVersion != version {
 		// TODO: Do stuff if the version has changed

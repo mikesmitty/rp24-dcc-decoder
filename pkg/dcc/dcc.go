@@ -25,8 +25,6 @@ func NewDecoder(cvHandler cv.Handler, pioNum int, pin shared.Pin) (*Decoder, err
 		return nil, err
 	}
 
-	// TODO: Handle setting version number at build time
-
 	d.RegisterCallbacks()
 
 	return d, nil
