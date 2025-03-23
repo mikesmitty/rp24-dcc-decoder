@@ -29,4 +29,4 @@ jobs:
           sudo dpkg -i tinygo_*.deb
 
       - name: Build
-        run: tinygo build -o rp24-dcc-decoder.uf2 -target rp2350
+        run: tinygo build -o rp24-dcc-decoder.uf2 -target pico2
