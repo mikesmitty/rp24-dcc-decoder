@@ -63,17 +63,17 @@
 				
 				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_mock.go (0.0%)</option>
 				
-				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (2.8%)</option>
+				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (2.9%)</option>
 				
 				<option value="file5">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
 				
-				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (23.3%)</option>
+				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (20.0%)</option>
 				
 				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message.go (76.9%)</option>
 				
 				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
 				
-				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.5%)</option>
+				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.7%)</option>
 				
 				<option value="file10">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (85.2%)</option>
 				
@@ -93,9 +93,13 @@
 				
 				<option value="file18">github.com/mikesmitty/rp24-dcc-decoder/pkg/iir/iir.go (0.0%)</option>
 				
-				<option value="file19">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/flash_mock.go (54.5%)</option>
+				<option value="file19">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/direction.go (0.0%)</option>
 				
-				<option value="file20">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/store.go (72.5%)</option>
+				<option value="file20">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/motor_mock.go (0.0%)</option>
+				
+				<option value="file21">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/flash_mock.go (54.5%)</option>
+				
+				<option value="file22">github.com/mikesmitty/rp24-dcc-decoder/pkg/store/store.go (72.5%)</option>
 				
 				</select>
 			</div>
@@ -113,26 +117,42 @@
 
 import (
         "runtime"
+        "strconv"
+        "strings"
 
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
 
 var hw *hal.HAL
 
+var version string
+
 func main() <span class="cov0" title="0">{
         hw = hal.NewHAL()
-        cvHandler := cv.NewCVHandler([]uint8{1, 2, 3}) // TODO: Set version number at build time
+        cvHandler := cv.NewCVHandler(versionToBytes(version))
 
         dccPin, ok := hw.Pin("dcc")
         if !ok </span><span class="cov0" title="0">{
                 panic("DCC pin not found")</span>
         }
 
-        <span class="cov0" title="0">println("Starting DCC") // FIXME: Cleanup?
+        <span class="cov0" title="0">motorA, okA := hw.Pin("motorA")
+        motorB, okB := hw.Pin("motorB")
+        emfA, okEA := hw.Pin("emfA")
+        emfB, okEB := hw.Pin("emfB")
+        adcRef, okADC := hw.Pin("adcRef")
+        if !okA || !okB || !okEA || !okEB || !okADC </span><span class="cov0" title="0">{
+                panic("Motor pins not found")</span>
+        }
+
+        <span class="cov0" title="0">m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
+
+        println("Starting DCC") // FIXME: Cleanup?
         pioNum := 0
-        d, err := dcc.NewDecoder(cvHandler, pioNum, dccPin)
+        d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin)
         if err != nil </span><span class="cov0" title="0">{
                 panic(err.Error())</span>
         }
@@ -153,6 +173,22 @@ func main() <span class="cov0" title="0">{
         for </span><span class="cov0" title="0">{
                 runtime.Gosched() // FIXME: Cleanup
         }</span>
+}
+
+func versionToBytes(version string) []uint8 <span class="cov0" title="0">{
+        versionParts := strings.Split(version, ".")
+        if len(versionParts) != 3 </span><span class="cov0" title="0">{
+                panic("invalid version string length")</span>
+        }
+        <span class="cov0" title="0">var versionBytes []uint8
+        for _, part := range versionParts </span><span class="cov0" title="0">{
+                partInt, err := strconv.Atoi(part)
+                if err != nil </span><span class="cov0" title="0">{
+                        panic("invalid version string")</span>
+                }
+                <span class="cov0" title="0">versionBytes = append(versionBytes, uint8(partInt))</span>
+        }
+        <span class="cov0" title="0">return versionBytes</span>
 }
 
 var outputs = []string{
@@ -217,8 +253,7 @@ func NewCVHandler(version []uint8) *CVHandler <span class="cov0" title="0">{
         }
         <span class="cov0" title="0">fwVersion = version
 
-        // Check if the version has changed
-        /* TODO: Check major/minor/patch version
+        /* TODO: Check if the version has changed
         lastVersion, _ := s.IndexedCV(0, 7)
         if lastVersion != version {
                 // TODO: Do stuff if the version has changed
@@ -614,11 +649,12 @@ import (
 
         "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, pioNum int, pin shared.Pin) (*Decoder, error) <span class="cov0" title="0">{
+func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, pin shared.Pin) (*Decoder, error) <span class="cov0" title="0">{
         d := &amp;Decoder{
                 address:         make([]byte, 0, 2),
                 consistAddress:  make([]byte, 0, 2),
@@ -632,8 +668,6 @@ func NewDecoder(cvHandler cv.Handler, pioNum int, pin shared.Pin) (*Decoder, err
         if err != nil </span><span class="cov0" title="0">{
                 return nil, err
         }</span>
-
-        // TODO: Handle setting version number at build time
 
         <span class="cov0" title="0">d.RegisterCallbacks()
 
@@ -794,8 +828,7 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0
                                 // AUX2-AUX9
                                 outputs = outputs &lt;&lt; 3
                         }</span>
-                        <span class="cov0" title="0">d.outputMapsFwd[outputNum] = outputs
-                        d.outputMapsRev[outputNum] = outputs</span>
+                        <span class="cov0" title="0">d.outputMapsFwd[outputNum] = outputs</span>
                 }
 
                 <span class="cov0" title="0">return true</span>
@@ -841,25 +874,46 @@ func (d *Decoder) RegisterOutput(output string, fn shared.OutputCallback) <span 
 }</span>
 
 // Control DCC functions
-func (d *Decoder) callFunction(number uint16, state bool) <span class="cov8" title="1">{
-        var outputMap uint16
+func (d *Decoder) callFunction(number uint16, on bool) <span class="cov8" title="1">{
         var ok bool
-        // FIXME: Disable outputs if swapping direction
-        if d.direction == motor.Forward </span><span class="cov0" title="0">{
+        // If there's no separate reverse callback use forward instead
+        outputMap, hasReverse := d.outputMapsRev[number]
+        direction := d.motor.Direction()
+        if direction == motor.Forward || !hasReverse </span><span class="cov8" title="1">{
                 outputMap, ok = d.outputMapsFwd[number]
-        }</span> else<span class="cov8" title="1"> {
-                outputMap, ok = d.outputMapsRev[number]
         }</span>
         <span class="cov8" title="1">if !ok </span><span class="cov8" title="1">{
                 println("output map not found:", number)
                 return
         }</span>
 
+        // If the direction has changed from reverse to forward and this function has separate forward/reverse
+        // output maps turn off the outputs that would have been on in reverse. Not needed if there's no
+        // separate reverse output map, as the forward map is used for both directions
+        <span class="cov0" title="0">if d.lastDirection != direction &amp;&amp; hasReverse </span><span class="cov0" title="0">{
+                d.lastDirection = direction
+
+                outputMapPrev := d.outputMapsRev[number]
+                if direction == motor.Reverse </span><span class="cov0" title="0">{
+                        outputMapPrev = d.outputMapsFwd[number]
+                }</span>
+                <span class="cov0" title="0">for i := 0; i &lt; 16; i++ </span><span class="cov0" title="0">{
+                        if outputMapPrev&amp;(1&lt;&lt;i) != 0 </span><span class="cov0" title="0">{
+                                // Turn off all the "on" outputs from the previous direction
+                                if handlers, ok := d.outputCallbacks[number]; ok </span><span class="cov0" title="0">{
+                                        for _, fn := range handlers </span><span class="cov0" title="0">{
+                                                fn(outputMap, false)
+                                        }</span>
+                                }
+                        }
+                }
+        }
+
         <span class="cov0" title="0">for i := 0; i &lt; 16; i++ </span><span class="cov0" title="0">{
-                if outputMap&amp;(1&lt;&lt;i) &gt; 0 </span><span class="cov0" title="0">{
+                if outputMap&amp;(1&lt;&lt;i) != 0 </span><span class="cov0" title="0">{
                         if handlers, ok := d.outputCallbacks[number]; ok </span><span class="cov0" title="0">{
                                 for _, fn := range handlers </span><span class="cov0" title="0">{
-                                        fn(number, state)
+                                        fn(number, on)
                                 }</span>
                         }
                 }
@@ -1099,16 +1153,6 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) <span class="c
                 return 1, false, false</span>
         }
 
-        /*
-                if speed == 0 {
-                        print("speed: stop reverse: ", reverse)
-                } else if speed == 1 {
-                        print("speed: emergency stop reverse: ", reverse)
-                } else {
-                        print("speed: ", speed-1, " reverse: ", reverse)
-                }
-        */
-
         <span class="cov8" title="1">return speed, reverse, true</span>
 }
 
@@ -1197,10 +1241,11 @@ func (m *Message) extendedPacket() bool <span class="cov8" title="1">{
                 return m.advancedOperationInstruction(m.buf[fb : l-1])</span>
         case 0b010, 0b011:<span class="cov8" title="1">
                 // Speed and Direction Instruction
-                //speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
-                // FIXME: Do stuff with speed and reverse
-                _, _, ok := m.motionCommand(m.buf[fb : l-1])
-                return ok</span>
+                speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
+                if ok </span><span class="cov8" title="1">{
+                        m.decoder.motor.SetSpeed(speed, reverse)
+                }</span>
+                <span class="cov8" title="1">return ok</span>
         case 0b100:<span class="cov8" title="1">
                 return m.functionGroupOneInstruction(m.buf[fb])</span>
         case 0b101:<span class="cov8" title="1">
@@ -1287,10 +1332,11 @@ func (m *Message) advancedOperationInstruction(b []byte) bool <span class="cov8"
         // 128-step speed control
         switch b[0] </span>{
         case 0b00111111:<span class="cov8" title="1">
-                // speed, reverse, ok := m.motionCommand(b)
-                // FIXME: Do stuff with speed and reverse
-                _, _, ok := m.motionCommand(b)
-                return ok</span>
+                speed, reverse, ok := m.motionCommand(b)
+                if ok </span><span class="cov8" title="1">{
+                        m.decoder.motor.SetSpeed(speed, reverse)
+                }</span>
+                <span class="cov8" title="1">return ok</span>
         default:<span class="cov8" title="1">
                 return false</span>
         }
@@ -1895,7 +1941,42 @@ func (f *IIRFilter) Reset() <span class="cov0" title="0">{
 }</span>
 </pre>
 		
-		<pre class="file" id="file19" style="display: none">//go:build !rp
+		<pre class="file" id="file19" style="display: none">package motor
+
+// Direction returns the current direction of the motor
+func (m *Motor) Direction() Direction <span class="cov0" title="0">{
+        // Double-reverse or double-forward both equal forward
+        if m.reverse == m.ndotReverse </span><span class="cov0" title="0">{
+                return Forward
+        }</span>
+        <span class="cov0" title="0">return Reverse</span>
+}
+</pre>
+		
+		<pre class="file" id="file20" style="display: none">//go:build !rp
+
+package motor
+
+import (
+        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
+)
+
+type Motor struct {
+        ndotReverse bool
+        reverse     bool
+}
+
+func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef shared.Pin) *Motor <span class="cov0" title="0">{
+        return &amp;Motor{}
+}</span>
+
+func (m *Motor) SetSpeed(speed uint8, reverse bool) {<span class="cov0" title="0">
+}</span>
+</pre>
+		
+		<pre class="file" id="file21" style="display: none">//go:build !rp
 
 package store
 
@@ -1932,7 +2013,7 @@ func (s *Store) LoadIndex(newIndex uint16) (bool, error) <span class="cov0" titl
 }
 </pre>
 		
-		<pre class="file" id="file20" style="display: none">package store
+		<pre class="file" id="file22" style="display: none">package store
 
 import (
         "tinygo.org/x/tinyfs"

@@ -7,6 +7,7 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/iir"
@@ -75,12 +76,18 @@ type Motor struct {
 	lastControlTime time.Time
 }
 
-func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef machine.Pin) *Motor {
+func NewMotor(conf cv.Handler, hw *hal.HAL, pA, pB, eA, eB, aRef shared.Pin) *Motor {
 	m := &Motor{
 		cv:              make(map[uint16]uint8),
 		iirAlpha:        0.7,
 		lastControlTime: time.Now(),
 	}
+
+	pinA := pA.(machine.Pin)
+	pinB := pB.(machine.Pin)
+	emfA := eA.(machine.Pin)
+	emfB := eB.(machine.Pin)
+	adcRef := aRef.(machine.Pin)
 
 	// Set up motor driver pins for PWM
 	err := m.initPWM(hw, pinA, pinB, hal.MaxMotorPWMFreq, 0.0)

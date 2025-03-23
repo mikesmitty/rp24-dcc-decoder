@@ -6,11 +6,12 @@ import (
 
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, pioNum int, pin shared.Pin) (*Decoder, error) {
+func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, pin shared.Pin) (*Decoder, error) {
 	d := &Decoder{
 		address:         make([]byte, 0, 2),
 		consistAddress:  make([]byte, 0, 2),
@@ -185,7 +186,6 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 				outputs = outputs << 3
 			}
 			d.outputMapsFwd[outputNum] = outputs
-			d.outputMapsRev[outputNum] = outputs
 		}
 
 		return true

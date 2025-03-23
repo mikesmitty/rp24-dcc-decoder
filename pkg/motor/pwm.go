@@ -32,14 +32,12 @@ func (m *Motor) initPWM(hw *hal.HAL, pinA, pinB machine.Pin, freq uint32, duty f
 
 // applyPWM sets the PWM outputs according to direction and duty cycle
 func (m *Motor) applyPWM(dutyCycle float32) {
-	// One train conductor always drives in reverse, the other always sits backwards
-	// If they both agree on a direction, go the other way
-	if m.reverse == m.ndotReverse {
-		m.pwmA.SetDuty(0.0)
-		m.pwmB.SetDuty(dutyCycle * m.revTrim)
-	} else {
+	if m.Direction() == Forward {
 		m.pwmA.SetDuty(dutyCycle * m.fwdTrim)
 		m.pwmB.SetDuty(0.0)
+	} else {
+		m.pwmA.SetDuty(0.0)
+		m.pwmB.SetDuty(dutyCycle * m.revTrim)
 	}
 }
 

@@ -21,7 +21,8 @@ const (
 )
 
 type Decoder struct {
-	cv cv.Handler
+	cv    cv.Handler
+	motor motor.Motor
 
 	sm     shared.StateMachine
 	offset uint8
@@ -40,8 +41,8 @@ type Decoder struct {
 
 	consistFuncMask [3]uint8
 
-	direction motor.Direction // FIXME: Make sure this is getting set by callbacks
-	speedMode motor.SpeedMode
+	lastDirection motor.Direction
+	speedMode     motor.SpeedMode
 }
 
 type decoderState int

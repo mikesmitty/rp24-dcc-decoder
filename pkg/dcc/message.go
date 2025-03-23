@@ -198,16 +198,6 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 		return 1, false, false
 	}
 
-	/*
-		if speed == 0 {
-			print("speed: stop reverse: ", reverse)
-		} else if speed == 1 {
-			print("speed: emergency stop reverse: ", reverse)
-		} else {
-			print("speed: ", speed-1, " reverse: ", reverse)
-		}
-	*/
-
 	return speed, reverse, true
 }
 

@@ -11,25 +11,46 @@ func (d *Decoder) RegisterOutput(output string, fn shared.OutputCallback) {
 }
 
 // Control DCC functions
-func (d *Decoder) callFunction(number uint16, state bool) {
-	var outputMap uint16
+func (d *Decoder) callFunction(number uint16, on bool) {
 	var ok bool
-	// FIXME: Disable outputs if swapping direction
-	if d.direction == motor.Forward {
+	// If there's no separate reverse callback use forward instead
+	outputMap, hasReverse := d.outputMapsRev[number]
+	direction := d.motor.Direction()
+	if direction == motor.Forward || !hasReverse {
 		outputMap, ok = d.outputMapsFwd[number]
-	} else {
-		outputMap, ok = d.outputMapsRev[number]
 	}
 	if !ok {
 		println("output map not found:", number)
 		return
 	}
 
+	// If the direction has changed from reverse to forward and this function has separate forward/reverse
+	// output maps turn off the outputs that would have been on in reverse. Not needed if there's no
+	// separate reverse output map, as the forward map is used for both directions
+	if d.lastDirection != direction && hasReverse {
+		d.lastDirection = direction
+
+		outputMapPrev := d.outputMapsRev[number]
+		if direction == motor.Reverse {
+			outputMapPrev = d.outputMapsFwd[number]
+		}
+		for i := 0; i < 16; i++ {
+			if outputMapPrev&(1<<i) != 0 {
+				// Turn off all the "on" outputs from the previous direction
+				if handlers, ok := d.outputCallbacks[number]; ok {
+					for _, fn := range handlers {
+						fn(outputMap, false)
+					}
+				}
+			}
+		}
+	}
+
 	for i := 0; i < 16; i++ {
-		if outputMap&(1<<i) > 0 {
+		if outputMap&(1<<i) != 0 {
 			if handlers, ok := d.outputCallbacks[number]; ok {
 				for _, fn := range handlers {
-					fn(number, state)
+					fn(number, on)
 				}
 			}
 		}

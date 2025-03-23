@@ -8,6 +8,7 @@ import (
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
 
 var hw *hal.HAL
@@ -23,9 +24,20 @@ func main() {
 		panic("DCC pin not found")
 	}
 
+	motorA, okA := hw.Pin("motorA")
+	motorB, okB := hw.Pin("motorB")
+	emfA, okEA := hw.Pin("emfA")
+	emfB, okEB := hw.Pin("emfB")
+	adcRef, okADC := hw.Pin("adcRef")
+	if !okA || !okB || !okEA || !okEB || !okADC {
+		panic("Motor pins not found")
+	}
+
+	m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
+
 	println("Starting DCC") // FIXME: Cleanup?
 	pioNum := 0
-	d, err := dcc.NewDecoder(cvHandler, pioNum, dccPin)
+	d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin)
 	if err != nil {
 		panic(err.Error())
 	}

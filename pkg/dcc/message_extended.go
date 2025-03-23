@@ -23,9 +23,10 @@ func (m *Message) extendedPacket() bool {
 		return m.advancedOperationInstruction(m.buf[fb : l-1])
 	case 0b010, 0b011:
 		// Speed and Direction Instruction
-		//speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
-		// FIXME: Do stuff with speed and reverse
-		_, _, ok := m.motionCommand(m.buf[fb : l-1])
+		speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
+		if ok {
+			m.decoder.motor.SetSpeed(speed, reverse)
+		}
 		return ok
 	case 0b100:
 		return m.functionGroupOneInstruction(m.buf[fb])
@@ -113,9 +114,10 @@ func (m *Message) advancedOperationInstruction(b []byte) bool {
 	// 128-step speed control
 	switch b[0] {
 	case 0b00111111:
-		// speed, reverse, ok := m.motionCommand(b)
-		// FIXME: Do stuff with speed and reverse
-		_, _, ok := m.motionCommand(b)
+		speed, reverse, ok := m.motionCommand(b)
+		if ok {
+			m.decoder.motor.SetSpeed(speed, reverse)
+		}
 		return ok
 	default:
 		return false
