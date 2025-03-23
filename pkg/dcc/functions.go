@@ -31,8 +31,6 @@ func (d *Decoder) callFunction(number uint16, state bool) {
 				for _, fn := range handlers {
 					fn(number, state)
 				}
-			} else {
-				println("function not found:", number)
 			}
 		}
 	}

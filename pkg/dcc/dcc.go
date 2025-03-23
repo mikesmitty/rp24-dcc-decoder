@@ -177,7 +177,7 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 			d.outputMapsRev[0] = uint16(value)
 		case 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46:
 			// Configure function mapping for F1-F12 to outputs AUX1-AUX12 (fwd and rev)
-			outputNum := cvNumber - 33
+			outputNum := cvNumber - 34
 			outputs := uint16(value)
 			if cvNumber >= 43 {
 				// AUX5-AUX12
@@ -186,8 +186,8 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 				// AUX2-AUX9
 				outputs = outputs << 3
 			}
-			d.outputMapsFwd[outputNum] = uint16(value)
-			d.outputMapsRev[outputNum] = uint16(value)
+			d.outputMapsFwd[outputNum] = outputs
+			d.outputMapsRev[outputNum] = outputs
 		}
 
 		return true
