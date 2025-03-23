@@ -1,8 +1,8 @@
 package hal
 
-import "github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
-func (h *HAL) GetOutputCallback(output string) cb.OutputCallback {
+func (h *HAL) GetOutputCallback(output string) shared.OutputCallback {
 	return func(_ uint16, on bool) {
 		h.SetOutput(output, on)
 	}

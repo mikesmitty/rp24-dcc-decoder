@@ -6,10 +6,10 @@ import (
 	"machine"
 	"time"
 
-	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 )
 
-func (m *Motor) CVCallback() cv.CVCallbackFunc {
+func (m *Motor) CVCallback() shared.CVCallbackFunc {
 	return func(cvNumber uint16, value uint8) bool {
 		switch cvNumber {
 		case 2, 5, 6:

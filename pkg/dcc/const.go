@@ -3,7 +3,7 @@ package dcc
 import (
 	"time"
 
-	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
@@ -22,9 +22,8 @@ const (
 
 type Decoder struct {
 	cv cv.Handler
-	// hal *hal.HAL
 
-	sm     StateMachine
+	sm     shared.StateMachine
 	offset uint8
 
 	address        []byte
@@ -35,7 +34,7 @@ type Decoder struct {
 	lastSvcResetTime time.Time
 	svcModeReady     bool
 
-	outputCallbacks map[uint16][]cb.OutputCallback
+	outputCallbacks map[uint16][]shared.OutputCallback
 	outputMapsFwd   map[uint16]uint16
 	outputMapsRev   map[uint16]uint16
 
@@ -43,15 +42,6 @@ type Decoder struct {
 
 	direction motor.Direction // FIXME: Make sure this is getting set by callbacks
 	speedMode motor.SpeedMode
-}
-
-type Pin interface{}
-
-// Avoid requiring the rp2-pio package so we can run unit tests
-type StateMachine interface {
-	IsRxFIFOEmpty() bool
-	RxGet() uint32
-	SetEnabled(bool)
 }
 
 type decoderState int

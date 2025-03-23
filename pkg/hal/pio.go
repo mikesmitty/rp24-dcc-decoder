@@ -6,11 +6,12 @@ import (
 	"errors"
 	"machine"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	pio "github.com/tinygo-org/pio/rp2-pio"
 	"github.com/tinygo-org/pio/rp2-pio/piolib"
 )
 
-func (h *HAL) initI2SPIO(pioNum int, dataPin, BCLKPin machine.Pin) (I2S, error) {
+func (h *HAL) initI2SPIO(pioNum int, dataPin, BCLKPin machine.Pin) (shared.I2S, error) {
 	var sm pio.StateMachine
 	var err error
 

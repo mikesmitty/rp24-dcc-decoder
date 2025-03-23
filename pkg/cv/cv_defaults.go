@@ -17,6 +17,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		return errors.New("invalid index page")
 	}
 
+	println("Loading CV index page", index)
+
 	// Persist any remaining dirty flags
 	if ok := c.cvStore.ProcessChanges(); !ok {
 		// Going to not consider this a critical error at least for now

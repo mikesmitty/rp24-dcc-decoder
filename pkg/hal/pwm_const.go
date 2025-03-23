@@ -1,15 +1,16 @@
 package hal
 
+import "machine"
+
+// package machine
 type PWM interface {
 	Set(channel uint8, value uint32)
 	SetPeriod(period uint64) error
 	Enable(bool)
 	Top() uint32
-	Configure(config PWMConfig) error
-	Channel(Pin) (uint8, error)
+	Configure(config machine.PWMConfig) error
+	Channel(machine.Pin) (uint8, error)
 }
-
-type PWMConfig interface{}
 
 type SimplePWM struct {
 	channel uint8

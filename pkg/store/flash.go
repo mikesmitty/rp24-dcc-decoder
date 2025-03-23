@@ -23,20 +23,43 @@ func (s *Store) initFlash() error {
 
 	err := s.fs.Mount()
 	if err != nil {
-		// If the filesystem is corrupted (or blank), format it
-		if err.Error() == "littlefs: Corrupted" {
+		// If the filesystem is un-recoverable, format it
+		if !s.recoverableMountError(err) {
+			println("filesystem unrecoverable, reformatting")
 			if err := s.fs.Format(); err != nil {
+				println("could not format filesystem: " + err.Error())
+				return err
+			}
+			if err := s.fs.Mount(); err != nil {
 				return err
 			}
 		} else {
 			return err
 		}
 	}
-	if err := s.fs.Mount(); err != nil {
+
+	info, err := s.fs.Stat("cvstore")
+	if err != nil && err.Error() != "littlefs: No directory entry" {
 		return err
+	}
+	if info == nil {
+		// The FileMode is ignored in TinyFS
+		if err := s.fs.Mkdir("cvstore", 0x755); err != nil {
+			return err
+		}
 	}
 
 	return nil
+}
+
+func (s *Store) recoverableMountError(err error) bool {
+	switch err.Error() {
+	case "littlefs: Corrupted":
+		return false
+	case "littlefs: Invalid parameter":
+		return false
+	}
+	return true
 }
 
 // persist immediately writes a CV value to onboard flash

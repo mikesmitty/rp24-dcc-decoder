@@ -33,7 +33,7 @@ func NewHAL() *HAL {
 }
 
 func (h *HAL) Init() {
-	h.pins = make(map[string]machine.Pin)
+	clear(h.pins)
 
 	// MOSFET-backed function pins
 	h.pins["aux1"] = machine.GPIO8

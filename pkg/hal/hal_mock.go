@@ -2,12 +2,10 @@
 
 package hal
 
-type HAL struct {
-	pins map[string]Pin
-}
+import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
-type Pin interface {
-	Set(bool)
+type HAL struct {
+	pins map[string]shared.Pin
 }
 
 // Stub for non-RP platforms
@@ -16,10 +14,10 @@ func NewHAL() *HAL {
 }
 
 // initI2SPIO is a stub for non-RP platforms
-func (h *HAL) initI2SPIO(_ int, _, _ Pin) (I2S, error) {
+func (h *HAL) initI2SPIO(_ int, _, _ shared.Pin) (shared.I2S, error) {
 	return nil, nil
 }
 
-func (h *HAL) InitPWM(pin Pin, freq uint64, duty float32) (*SimplePWM, error) {
+func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error) {
 	return nil, nil
 }

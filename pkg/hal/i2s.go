@@ -1,10 +1,5 @@
 package hal
 
-type I2S interface {
-	SetSampleFrequency(f uint32) error
-	WriteMono(data []uint16) (int, error)
-}
-
 func (h *HAL) InitI2S() error {
 	// LRCLKPin is expected to be BCLKPin + 1
 	i2s, err := h.initI2SPIO(0, h.pins["i2sDIN"], h.pins["i2sBLCK"])

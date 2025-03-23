@@ -6,12 +6,14 @@ import (
 	"errors"
 	"machine"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	pio "github.com/tinygo-org/pio/rp2-pio"
 )
 
-func (d *Decoder) initPIO(pioNum int, pin machine.Pin) error {
+func (d *Decoder) initPIO(pioNum int, p shared.Pin) error {
 	var sm pio.StateMachine
 	var err error
+	pin := p.(machine.Pin)
 
 	switch pioNum {
 	case 0:

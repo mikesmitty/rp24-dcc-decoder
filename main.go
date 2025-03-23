@@ -36,6 +36,7 @@ func main() {
 	// FIXME: Initialize motor controller
 
 	d.SetAddress(150) // FIXME: Cleanup
+	// FIXME: Avoid blocking main thread
 	d.Monitor()
 
 	for {

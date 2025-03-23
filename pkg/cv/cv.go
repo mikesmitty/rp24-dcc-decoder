@@ -1,7 +1,7 @@
 package cv
 
 import (
-	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
 )
 
@@ -17,7 +17,7 @@ type Handler interface {
 	Reset(uint16) bool
 	ResetAll()
 	ProcessChanges()
-	RegisterCallback(uint16, cb.CVCallbackFunc)
+	RegisterCallback(uint16, shared.CVCallbackFunc)
 	IndexPage(...uint8) uint16
 	LoadIndex(uint8, uint8) error
 }
@@ -41,6 +41,7 @@ func NewCVHandler(version []uint8) *CVHandler {
 	if len(version) != 3 {
 		panic("invalid version length")
 	}
+	fwVersion = version
 
 	// Check if the version has changed
 	/* TODO: Check major/minor/patch version
@@ -65,12 +66,15 @@ func NewCVHandler(version []uint8) *CVHandler {
 	return c
 }
 
-func (c *CVHandler) RegisterCallback(cvNumber uint16, fn cb.CVCallbackFunc) {
+func (c *CVHandler) RegisterCallback(cvNumber uint16, fn shared.CVCallbackFunc) {
 	if _, ok := c.CVOk(cvNumber); !ok {
 		// It's not likely this will ever happen, but just to be sure
+		println("CV not found: ", cvNumber)
 		panic("CV not found")
 	}
 	c.cvCallbacks[cvNumber] = append(c.cvCallbacks[cvNumber], fn)
+	// Initialize the callback with the current value
+	fn(cvNumber, c.CV(cvNumber))
 }
 
 // Return the current index page indicated by CV31/32 or a provided equivalent

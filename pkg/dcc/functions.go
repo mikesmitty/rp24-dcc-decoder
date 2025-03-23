@@ -1,11 +1,11 @@
 package dcc
 
 import (
-	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
 
-func (d *Decoder) RegisterOutput(output string, fn cb.OutputCallback) {
+func (d *Decoder) RegisterOutput(output string, fn shared.OutputCallback) {
 	index := IndexFromOutput(output)
 	d.outputCallbacks[index] = append(d.outputCallbacks[index], fn)
 }
@@ -14,6 +14,7 @@ func (d *Decoder) RegisterOutput(output string, fn cb.OutputCallback) {
 func (d *Decoder) callFunction(number uint16, state bool) {
 	var outputMap uint16
 	var ok bool
+	// FIXME: Disable outputs if swapping direction
 	if d.direction == motor.Forward {
 		outputMap, ok = d.outputMapsFwd[number]
 	} else {

@@ -6,10 +6,6 @@ import (
 	"machine"
 )
 
-// Interface checks
-var _ PWM = &SimplePWM{}
-var _ machine.PWMConfig = PWMConfig{}
-
 func (s *SimplePWM) Enable(enable bool) {
 	s.pwm.Enable(enable)
 }

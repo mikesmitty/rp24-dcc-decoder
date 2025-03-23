@@ -4,14 +4,21 @@ import (
 	"errors"
 	"time"
 
-	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cb"
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, pioNum int, pin Pin) (*Decoder, error) {
-	d := &Decoder{address: make([]byte, 2), cv: cvHandler}
+func NewDecoder(cvHandler cv.Handler, pioNum int, pin shared.Pin) (*Decoder, error) {
+	d := &Decoder{
+		address:         make([]byte, 0, 2),
+		consistAddress:  make([]byte, 0, 2),
+		cv:              cvHandler,
+		outputCallbacks: make(map[uint16][]shared.OutputCallback, 12),
+		outputMapsFwd:   make(map[uint16]uint16, 12),
+		outputMapsRev:   make(map[uint16]uint16, 12),
+	}
 
 	err := d.initPIO(pioNum, pin)
 	if err != nil {
@@ -19,6 +26,8 @@ func NewDecoder(cvHandler cv.Handler, pioNum int, pin Pin) (*Decoder, error) {
 	}
 
 	// TODO: Handle setting version number at build time
+
+	d.RegisterCallbacks()
 
 	return d, nil
 }
@@ -72,7 +81,18 @@ func (d *Decoder) Reset() {
 	immediate stop.  */
 }
 
-func (d *Decoder) CVCallback() cb.CVCallbackFunc {
+func (d *Decoder) RegisterCallbacks() {
+	d.cv.RegisterCallback(1, d.CVCallback())
+	for i := uint16(17); i <= 22; i++ {
+		d.cv.RegisterCallback(i, d.CVCallback())
+	}
+	d.cv.RegisterCallback(29, d.CVCallback())
+	for i := uint16(33); i <= 46; i++ {
+		d.cv.RegisterCallback(i, d.CVCallback())
+	}
+}
+
+func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 	return func(cvNumber uint16, value uint8) bool {
 		switch cvNumber {
 		case 1:
@@ -90,12 +110,20 @@ func (d *Decoder) CVCallback() cb.CVCallbackFunc {
 				return false
 			}
 			// Set the extended address bytes
-			d.address[cvNumber-17] = value
+			if len(d.address) < int(cvNumber)-16 {
+				d.address = append(d.address, value)
+			} else {
+				d.address[cvNumber-17] = value
+			}
 
 		case 19, 20:
 			// Set the consist address bytes
 			// TODO: Add validation around CV19 value in extended address mode when standardized
-			d.consistAddress[cvNumber-19] = value
+			if len(d.address) < int(cvNumber)-18 {
+				d.address = append(d.address, value)
+			} else {
+				d.address[cvNumber-19] = value
+			}
 
 		case 21:
 			// Convert CV21 to a bitmask for enabling the functions via consist address (F1-F8)
