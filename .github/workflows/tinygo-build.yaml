@@ -35,6 +35,7 @@ jobs:
       - name: Build
         id: build
         run: |
+          tinygo clean
           tinygo build -o rp24-dcc-decoder.uf2 -target pico2
           echo "short_sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
 
