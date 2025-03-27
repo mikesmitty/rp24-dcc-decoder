@@ -34,7 +34,7 @@ type Motor struct {
 	emfDuration time.Duration
 	emfInterval time.Duration
 	emfMax      float32
-	emfMutex    sync.Mutex
+	pwmMutex    sync.Mutex
 	emfTarget   float32
 	emfTicker   *time.Ticker
 	emfTimer    *time.Timer

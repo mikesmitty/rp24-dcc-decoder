@@ -174,7 +174,6 @@ func (m MockPin) Set(bool) {<span class="cov0" title="0">
 import (
         "strconv"
         "strings"
-        "time"
 
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
@@ -187,7 +186,6 @@ var hw *hal.HAL
 var version = "1.1.1"
 
 func main() <span class="cov0" title="0">{
-        time.Sleep(3 * time.Second) // FIXME: Cleanup
         hw = hal.NewHAL()
         cvHandler := cv.NewCVHandler(versionToBytes(version))
 
@@ -207,7 +205,7 @@ func main() <span class="cov0" title="0">{
 
         <span class="cov0" title="0">m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
 
-        println("Starting DCC") // FIXME: Cleanup?
+        println("Starting DCC")
         pioNum := 0
         d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin)
         if err != nil </span><span class="cov0" title="0">{
@@ -2086,15 +2084,14 @@ func (m *Motor) RunEMF() <span class="cov0" title="0">{
 
 // Measure the back EMF voltage to determine the motor speed
 func (m *Motor) measureBackEMF() float32 <span class="cov0" title="0">{
-        // Lock the motor mutex to prevent concurrent access to the motor state
-        m.emfMutex.Lock()
-        defer m.emfMutex.Unlock()
-
         // Temporarily stop PWM for back EMF measurement
         m.stopMotor()
 
+        // Lock the motor mutex to prevent concurrent access to the motor state
+        m.pwmMutex.Lock()
+
         // Wait for motor to stop
-        time.Sleep(100 * time.Millisecond)
+        time.Sleep(100 * time.Millisecond) // TODO: Tune this value
 
         // Kill time waiting for the motor to stop by measuring the ADC reference
         m.emfTicker.Reset(20 * time.Microsecond)
@@ -2136,7 +2133,8 @@ DONE:
         }
 
         // Restore PWM
-        <span class="cov0" title="0">m.applyPWM(m.pwmDuty)
+        <span class="cov0" title="0">m.pwmMutex.Unlock()
+        m.applyPWM(m.pwmDuty)
 
         return m.iir.Output() - m.iirRef.Output()</span>
 }
@@ -2492,7 +2490,7 @@ type Motor struct {
         emfDuration time.Duration
         emfInterval time.Duration
         emfMax      float32
-        emfMutex    sync.Mutex
+        pwmMutex    sync.Mutex
         emfTarget   float32
         emfTicker   *time.Ticker
         emfTimer    *time.Timer
@@ -2728,6 +2726,10 @@ func (m *Motor) initPWM(hw *hal.HAL, pinA, pinB shared.Pin, freq uint64, duty fl
 
 // applyPWM sets the PWM outputs according to direction and duty cycle
 func (m *Motor) applyPWM(dutyCycle float32) <span class="cov0" title="0">{
+        // Lock the pwm mutex to prevent turning on the motor while measuring back EMF
+        m.pwmMutex.Lock()
+        defer m.pwmMutex.Unlock()
+
         // Take into account both m.reverse and m.ndotReverse to select a direction
         if m.Direction() == Reverse </span><span class="cov0" title="0">{
                 m.pwmA.SetDuty(0.0)
@@ -2738,6 +2740,7 @@ func (m *Motor) applyPWM(dutyCycle float32) <span class="cov0" title="0">{
         }</span>
 }
 
+// TODO: Use this function
 // Dither the motor PWM frequency to improve low-speed startup. Window size represents the
 // maximum amount of dithering to apply in 100Hz steps
 func (m *Motor) dither(freq, windowSize uint64) <span class="cov0" title="0">{

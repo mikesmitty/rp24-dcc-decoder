@@ -29,6 +29,10 @@ func (m *Motor) initPWM(hw *hal.HAL, pinA, pinB shared.Pin, freq uint64, duty fl
 
 // applyPWM sets the PWM outputs according to direction and duty cycle
 func (m *Motor) applyPWM(dutyCycle float32) {
+	// Lock the pwm mutex to prevent turning on the motor while measuring back EMF
+	m.pwmMutex.Lock()
+	defer m.pwmMutex.Unlock()
+
 	// Take into account both m.reverse and m.ndotReverse to select a direction
 	if m.Direction() == Reverse {
 		m.pwmA.SetDuty(0.0)
@@ -39,6 +43,7 @@ func (m *Motor) applyPWM(dutyCycle float32) {
 	}
 }
 
+// TODO: Use this function
 // Dither the motor PWM frequency to improve low-speed startup. Window size represents the
 // maximum amount of dithering to apply in 100Hz steps
 func (m *Motor) dither(freq, windowSize uint64) {

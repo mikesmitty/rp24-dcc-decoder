@@ -48,15 +48,14 @@ func (m *Motor) RunEMF() {
 
 // Measure the back EMF voltage to determine the motor speed
 func (m *Motor) measureBackEMF() float32 {
-	// Lock the motor mutex to prevent concurrent access to the motor state
-	m.emfMutex.Lock()
-	defer m.emfMutex.Unlock()
-
 	// Temporarily stop PWM for back EMF measurement
 	m.stopMotor()
 
+	// Lock the motor mutex to prevent concurrent access to the motor state
+	m.pwmMutex.Lock()
+
 	// Wait for motor to stop
-	time.Sleep(100 * time.Millisecond)
+	time.Sleep(100 * time.Millisecond) // TODO: Tune this value
 
 	// Kill time waiting for the motor to stop by measuring the ADC reference
 	m.emfTicker.Reset(20 * time.Microsecond)
@@ -98,6 +97,7 @@ DONE:
 	}
 
 	// Restore PWM
+	m.pwmMutex.Unlock()
 	m.applyPWM(m.pwmDuty)
 
 	return m.iir.Output() - m.iirRef.Output()

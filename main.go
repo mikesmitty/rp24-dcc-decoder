@@ -3,7 +3,6 @@ package main
 import (
 	"strconv"
 	"strings"
-	"time"
 
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
@@ -16,7 +15,6 @@ var hw *hal.HAL
 var version = "1.1.1"
 
 func main() {
-	time.Sleep(3 * time.Second) // FIXME: Cleanup
 	hw = hal.NewHAL()
 	cvHandler := cv.NewCVHandler(versionToBytes(version))
 
@@ -36,7 +34,7 @@ func main() {
 
 	m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
 
-	println("Starting DCC") // FIXME: Cleanup?
+	println("Starting DCC")
 	pioNum := 0
 	d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin)
 	if err != nil {
