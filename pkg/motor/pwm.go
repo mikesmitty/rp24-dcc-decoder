@@ -1,43 +1,41 @@
-//go:build rp
-
 package motor
 
 import (
-	"machine"
 	"math/rand/v2"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
 )
 
-func (m *Motor) initPWM(hw *hal.HAL, pinA, pinB machine.Pin, freq uint32, duty float32) error {
-	pwmA, err := hw.InitPWM(pinA, hal.MaxMotorPWMFreq, 0.0)
+func (m *Motor) initPWM(hw *hal.HAL, pinA, pinB shared.Pin, freq uint64, duty float32) error {
+	if freq == 0 {
+		freq = 40 * shared.KHz
+		println("got pwm freq 0, using default motor PWM frequency of 40kHz")
+	}
+
+	pwmA, err := hw.InitPWM(pinA, freq, 0.0)
 	if err != nil {
 		return err
 	}
-	pwmB, err := hw.InitPWM(pinB, hal.MaxMotorPWMFreq, 0.0)
+	pwmB, err := hw.InitPWM(pinB, freq, 0.0)
 	if err != nil {
 		panic(err.Error())
 	}
 	m.pwmA = pwmA
 	m.pwmB = pwmB
 
-	if pwmA.Slice() == pwmB.Slice() {
-		// If the pins are on the same PWM slice, they should share the same frequency
-		// so we only need to set it once
-		m.pwmShared = true
-	}
-
 	return nil
 }
 
 // applyPWM sets the PWM outputs according to direction and duty cycle
 func (m *Motor) applyPWM(dutyCycle float32) {
-	if m.Direction() == Forward {
-		m.pwmA.SetDuty(dutyCycle * m.fwdTrim)
-		m.pwmB.SetDuty(0.0)
-	} else {
+	// Take into account both m.reverse and m.ndotReverse to select a direction
+	if m.Direction() == Reverse {
 		m.pwmA.SetDuty(0.0)
 		m.pwmB.SetDuty(dutyCycle * m.revTrim)
+	} else {
+		m.pwmA.SetDuty(dutyCycle * m.fwdTrim)
+		m.pwmB.SetDuty(0.0)
 	}
 }
 
@@ -56,7 +54,5 @@ func (m *Motor) dither(freq, windowSize uint64) {
 // setPWMFreq sets the PWM frequency for the motor driver signal
 func (m *Motor) setPWMFreq(freq uint64) {
 	m.pwmA.SetFreq(freq)
-	if !m.pwmShared {
-		m.pwmB.SetFreq(freq)
-	}
+	m.pwmB.SetFreq(freq)
 }

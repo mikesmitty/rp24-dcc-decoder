@@ -74,6 +74,7 @@ func (d *Decoder) Monitor() {
 
 					// Reset the message buffer for the next message
 					msg.Reset()
+					runtime.Gosched()
 				}
 			default:
 				println("ERROR: invalid decoder state: ", state)
@@ -81,7 +82,6 @@ func (d *Decoder) Monitor() {
 				msg.Reset()
 			}
 		}
-		runtime.Gosched()
 	}
 }
 

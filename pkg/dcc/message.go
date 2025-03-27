@@ -38,7 +38,7 @@ type Message struct {
 
 func NewMessage(cvHandler cv.Handler, decoder *Decoder) *Message {
 	return &Message{
-		buf:       make([]byte, 0, 11),
+		buf:       make([]byte, 0, maxMsgLength),
 		cv:        cvHandler,
 		cvConfirm: make(map[uint16]uint8),
 		decoder:   decoder,
@@ -84,23 +84,9 @@ func (m *Message) Length() int {
 }
 
 func (m *Message) Process() {
-	// TODO: Implement hard-reset mode
-
-	/* FIXME: Check if this is needed here
-	if m.isResetPacket() {
-		m.decoder.Reset()
-		println("reset packet received")
-		return
-	} */
-
 	if !m.decoder.Snoop && (!m.checkAddress() || m.addr == UnknownAddress) {
 		// Ignore messages not addressed to us if we're not being nosy
 		return
-	}
-
-	for i := range m.buf {
-		printUintN(8, uint32(m.buf[i]))
-		print(" ")
 	}
 
 	// Check the message type to determine how to handle it
@@ -116,8 +102,6 @@ func (m *Message) Process() {
 	default:
 		// Unknown message type
 	}
-
-	println() // TODO: Cleanup
 }
 
 func (m *Message) messageType() MessageType {
@@ -146,7 +130,7 @@ func (m *Message) messageType() MessageType {
 }
 
 func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
-	if len(bytes) > 1 && m.decoder.speedMode == motor.SpeedMode14 {
+	if len(bytes) > 1 && m.decoder.motor.SpeedMode() == motor.SpeedMode14 {
 		// We're configured for 14 speed mode, ignore 128 speed commands
 		return 1, false, false
 	}
@@ -158,7 +142,7 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 	case 1:
 		speed = uint8(bytes[0] & 0x0F)
 		reverse = (bytes[0] & 0b00100000) == 0
-		if m.decoder.speedMode == motor.SpeedMode14 {
+		if m.decoder.motor.SpeedMode() == motor.SpeedMode14 {
 			// 14-speed mode: 01DCSSSS
 			// D: Direction (0 = reverse, 1 = forward)
 			// S: Speed step (0-15)
@@ -177,7 +161,7 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 				speed -= 2
 			}
 			// 28/128 speed modes are selected by the last speed command received
-			m.decoder.speedMode = motor.SpeedMode28
+			m.decoder.motor.SetSpeedMode(motor.SpeedMode28)
 		}
 	case 2:
 		if bytes[0] == 0b00111111 {
@@ -188,7 +172,7 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 			reverse = (bytes[1] & 0x80) == 0
 
 			// 28/128 speed modes are selected by the last speed command received
-			m.decoder.speedMode = motor.SpeedMode128
+			m.decoder.motor.SetSpeedMode(motor.SpeedMode128)
 		} else {
 			// Invalid speed mode
 			return 1, false, false

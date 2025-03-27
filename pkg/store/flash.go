@@ -12,7 +12,7 @@ import (
 )
 
 func (s *Store) initFlash() error {
-	// FIXME: Make sure to format the filesystem so there is room for the code to grow
+	// TODO: Make sure to format the filesystem so there is room for the code to grow
 
 	// Set up the filesystem
 	fs := littlefs.New(machine.Flash)

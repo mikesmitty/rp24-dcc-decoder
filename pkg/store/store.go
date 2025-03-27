@@ -1,6 +1,9 @@
 package store
 
 import (
+	"runtime"
+	"time"
+
 	"tinygo.org/x/tinyfs"
 )
 
@@ -23,27 +26,14 @@ type Data struct {
 
 type Store struct {
 	// Store is our map of CV number to CVData
+	async bool
 	// uint16 because 64kV ought to be enough for anybody
 	data      map[uint16]Data
 	fs        tinyfs.Filesystem
 	index     uint16
 	indexFile string
+	ticker    *time.Ticker
 }
-
-/* FIXME: Implement periodic batch CV processing somehow, with this or whatnot
-- After Delay:  You could use a time.Timer to implement a delay, resetting the timer on each CV write.
-- On Demand:  This would be triggered by your DCC command parsing logic.
-- Combination:  Combine the ticker with a "last write time" check.  This is the most robust approach.
-
-func StartCVProcessingTimer() {
-	ticker := time.NewTicker(50 * time.Millisecond)
-	go func() {
-		for range ticker.C {
-			ProcessCVChanges()
-		}
-	}()
-}
-*/
 
 // NewStore sets up the CV store and mounts the filesystem
 func NewStore() *Store {
@@ -57,6 +47,20 @@ func NewStore() *Store {
 	}
 
 	return c
+}
+
+// Run periodically processes CV changes and persists them to flash
+func (s *Store) Run() {
+	s.ticker = time.NewTicker(500 * time.Millisecond)
+	s.async = true
+	for {
+		select {
+		case <-s.ticker.C:
+			s.ProcessChanges()
+		default:
+			runtime.Gosched()
+		}
+	}
 }
 
 // SetDefault sets the value, default value and flags for a CV
@@ -108,6 +112,10 @@ func (s *Store) Set(cvNumber uint16, value uint8) bool {
 		s.data[cvNumber] = data // Store back into the map
 	}
 
+	// If we're not running async, persist the change immediately
+	if !s.async && (data.Flags&Dirty) != 0 && (data.Flags&Persistent) != 0 {
+		return s.persist(s.index, cvNumber, value)
+	}
 	return true
 }
 
@@ -121,6 +129,10 @@ func (s *Store) Reset(cvNumber uint16) bool {
 		data.Value = data.Default
 		data.Flags |= Dirty
 		s.data[cvNumber] = data
+		// If we're not running async, persist the change immediately
+		if !s.async {
+			return s.persist(s.index, cvNumber, data.Value)
+		}
 	}
 	return true
 }

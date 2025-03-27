@@ -4,9 +4,11 @@ package hal
 
 import (
 	"machine"
+
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 )
 
-type PWM interface {
+type pwm interface {
 	Set(channel uint8, value uint32)
 	SetPeriod(period uint64) error
 	Enable(bool)
@@ -31,17 +33,17 @@ func (s *SimplePWM) Slice() uint8 {
 	return s.slice
 }
 
-var pwms = [...]PWM{machine.PWM0, machine.PWM1, machine.PWM2, machine.PWM3, machine.PWM4, machine.PWM5, machine.PWM6, machine.PWM7}
+var pwms = [...]pwm{machine.PWM0, machine.PWM1, machine.PWM2, machine.PWM3, machine.PWM4, machine.PWM5, machine.PWM6, machine.PWM7}
 
-func (h *HAL) InitPWM(pin machine.Pin, freq uint64, duty float32) (*SimplePWM, error) {
-	slice, err := machine.PWMPeripheral(pin)
+func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error) {
+	slice, err := machine.PWMPeripheral(pin.(machine.Pin))
 	if err != nil {
 		return nil, err
 	}
 
 	pwm := pwms[slice]
 
-	channel, err := pwm.Channel(pin)
+	channel, err := pwm.Channel(pin.(machine.Pin))
 	if err != nil {
 		return nil, err
 	}

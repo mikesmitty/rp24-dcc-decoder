@@ -26,7 +26,7 @@ func TestExtendedPacket(t *testing.T) {
 			msg: &Message{
 				addr:    BroadcastAddress,
 				buf:     []byte{0x00, 0x00, 0x00},
-				decoder: &Decoder{address: []byte{3}, speedMode: motor.SpeedMode128},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -34,7 +34,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Advanced Operation Instruction",
 			msg: &Message{
 				buf:     []byte{0x03, 0x3F, 0x00, 0xFF},
-				decoder: &Decoder{address: []byte{3}, speedMode: motor.SpeedMode128},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -42,7 +42,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Speed and Direction Instruction Forward",
 			msg: &Message{
 				buf:     []byte{0x03, 0x60, 0xFF},
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -50,7 +50,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Function Group One Instruction",
 			msg: &Message{
 				buf:     []byte{0x03, 0x80, 0x00, 0xFF},
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -58,7 +58,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Function Group Two Instruction F5-F8",
 			msg: &Message{
 				buf:     []byte{0x03, 0xA0, 0xFF},
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -66,7 +66,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Function Group Two Instruction F9-F12",
 			msg: &Message{
 				buf:     []byte{0x03, 0xB0, 0xFF},
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -74,7 +74,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Feature Expansion",
 			msg: &Message{
 				buf:     []byte{0x03, 0xC0, 0x00, 0xFF},
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: false,
 		},
@@ -83,7 +83,7 @@ func TestExtendedPacket(t *testing.T) {
 			name: "Config Variable Access Instruction",
 			msg: &Message{
 				buf:     []byte{0x03, 0xE0, 0x00, 0xFF},
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			expect: false,
 		},
@@ -93,7 +93,7 @@ func TestExtendedPacket(t *testing.T) {
 				addr:    DirectAddress,
 				buf:     []byte{0x03, 0xEC, 0x03, 0x01, 0xFF}, // Write 0x01 to CV3
 				cv:      cv.NewMockHandler(true, make(map[uint16]uint8)),
-				decoder: &Decoder{address: []byte{3}, consistAddress: []byte{1}},
+				decoder: &Decoder{address: []byte{3}, consistAddress: []byte{1}, motor: &motor.Motor{}},
 			},
 			expect: true,
 		},
@@ -103,7 +103,7 @@ func TestExtendedPacket(t *testing.T) {
 				addr:    ConsistAddress,
 				buf:     []byte{0x01, 0xEC, 0x03, 0x01, 0xFF}, // Write 0x01 to CV3
 				cv:      cv.NewMockHandler(true, make(map[uint16]uint8)),
-				decoder: &Decoder{address: []byte{3}, consistAddress: []byte{1}},
+				decoder: &Decoder{address: []byte{3}, consistAddress: []byte{1}, motor: &motor.Motor{}},
 			},
 			expect: false,
 		},
@@ -193,7 +193,7 @@ func TestAdvancedOperationInstruction(t *testing.T) {
 		{
 			name: "128-step speed control",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0x3F, 0x00},
 			expect: true,
@@ -201,7 +201,7 @@ func TestAdvancedOperationInstruction(t *testing.T) {
 		{
 			name: "Invalid command",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0x00},
 			expect: false,
@@ -220,7 +220,7 @@ func TestAdvancedOperationInstruction(t *testing.T) {
 
 func TestFunctionGroupOneInstruction(t *testing.T) {
 	msg := &Message{
-		decoder: &Decoder{address: []byte{3}},
+		decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 	}
 	result := msg.functionGroupOneInstruction(0x10)
 	if !result {
@@ -230,7 +230,7 @@ func TestFunctionGroupOneInstruction(t *testing.T) {
 
 func TestFunctionGroupTwoInstruction(t *testing.T) {
 	msg := &Message{
-		decoder: &Decoder{address: []byte{3}},
+		decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 	}
 	result := msg.functionGroupTwoInstruction(0x10)
 	if !result {
@@ -248,7 +248,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F13-F20",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xDE, 0x01},
 			expect: true,
@@ -256,7 +256,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F21-F28",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xDF, 0x01},
 			expect: true,
@@ -264,7 +264,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F29-F36",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xD8, 0x01},
 			expect: true,
@@ -272,7 +272,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F37-F44",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xD9, 0x01},
 			expect: true,
@@ -280,7 +280,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F45-F52",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xDA, 0x01},
 			expect: true,
@@ -288,7 +288,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F53-F61",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xDB, 0x01},
 			expect: true,
@@ -296,7 +296,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Functions F62-F68",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0xDC, 0x01},
 			expect: true,
@@ -304,7 +304,7 @@ func TestFeatureExpansion(t *testing.T) {
 		{
 			name: "Invalid command",
 			msg: &Message{
-				decoder: &Decoder{address: []byte{3}},
+				decoder: &Decoder{address: []byte{3}, motor: &motor.Motor{}},
 			},
 			input:  []byte{0x00},
 			expect: false,

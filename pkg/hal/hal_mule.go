@@ -4,34 +4,6 @@ package hal
 
 import "machine"
 
-const (
-	// PWM frequency for the capacitor charge control pin
-	CapChargeFreq = 1 * machine.MHz
-	// PWM duty cycle for the capacitor charge control pin
-	CapChargeDuty = 0.1
-
-	// PWM frequency for the motor driver pins
-	MaxMotorPWMFreq = 250 * machine.KHz
-)
-
-type HAL struct {
-	pins map[string]machine.Pin
-	pwms map[machine.Pin]uint8
-
-	capChargeReady bool
-}
-
-func NewHAL() *HAL {
-	h := &HAL{
-		pins: make(map[string]machine.Pin),
-		pwms: make(map[machine.Pin]uint8),
-	}
-
-	h.Init()
-
-	return h
-}
-
 func (h *HAL) Init() {
 	clear(h.pins)
 
@@ -57,8 +29,8 @@ func (h *HAL) Init() {
 
 	// Motor driver pins
 	h.pins["adcRef"] = machine.GPIO28
-	h.pins["backEMFA"] = machine.GPIO26
-	h.pins["backEMFB"] = machine.GPIO27
+	h.pins["emfA"] = machine.GPIO26
+	h.pins["emfB"] = machine.GPIO27
 	h.pins["motorA"] = machine.GPIO16
 	h.pins["motorB"] = machine.GPIO17
 

@@ -195,3 +195,7 @@ func (c *CVHandler) ResetAll() {
 func (c *CVHandler) ProcessChanges() {
 	c.cvStore.ProcessChanges()
 }
+
+func (c *CVHandler) Run() {
+	c.cvStore.Run()
+}

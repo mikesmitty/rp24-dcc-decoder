@@ -1,9 +1,9 @@
 package main
 
 import (
-	"runtime"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
@@ -13,9 +13,10 @@ import (
 
 var hw *hal.HAL
 
-var version string
+var version = "1.1.1"
 
 func main() {
+	time.Sleep(3 * time.Second) // FIXME: Cleanup
 	hw = hal.NewHAL()
 	cvHandler := cv.NewCVHandler(versionToBytes(version))
 
@@ -49,15 +50,10 @@ func main() {
 		}
 	}
 
-	// FIXME: Initialize motor controller
-
 	d.SetAddress(150) // FIXME: Cleanup
-	// FIXME: Avoid blocking main thread
+	go m.Run()
+	go m.RunEMF()
 	d.Monitor()
-
-	for {
-		runtime.Gosched() // FIXME: Cleanup
-	}
 }
 
 func versionToBytes(version string) []uint8 {

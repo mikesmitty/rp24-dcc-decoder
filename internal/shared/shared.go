@@ -2,6 +2,13 @@ package shared
 
 // Avoid requiring packages that require specific hardware so we can run unit tests
 
+const (
+	KHz = 1_000
+	MHz = 1_000_000
+
+	NoPin = MockPin(0xff)
+)
+
 // package rp2-pio
 type I2S interface {
 	SetSampleFrequency(f uint32) error
@@ -30,3 +37,8 @@ type StateMachine interface {
 type CVCallbackFunc func(uint16, uint8) bool
 
 type OutputCallback func(uint16, bool)
+
+type MockPin uint8
+
+func (m MockPin) Set(bool) {
+}

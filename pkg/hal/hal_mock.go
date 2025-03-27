@@ -21,3 +21,13 @@ func (h *HAL) initI2SPIO(_ int, _, _ shared.Pin) (shared.I2S, error) {
 func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error) {
 	return nil, nil
 }
+
+type ADC struct{}
+
+func NewADC(pin shared.Pin) *ADC {
+	return &ADC{}
+}
+
+func (a *ADC) Read() uint16 {
+	return 0
+}

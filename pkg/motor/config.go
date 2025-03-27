@@ -1,11 +1,6 @@
-//go:build rp
-
 package motor
 
 import (
-	"machine"
-	"time"
-
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 )
 
@@ -29,7 +24,7 @@ func (m *Motor) CVCallback() shared.CVCallbackFunc {
 			// PWM freq in kHz (1-250)
 			value = max(1, min(value, 250))
 			// Update PWM frequency
-			m.setPWMFreq(uint64(value) * machine.KHz)
+			m.setPWMFreq(uint64(value) * shared.KHz)
 
 		case 10:
 			// Back EMF motor control cutoff speed
@@ -57,11 +52,13 @@ func (m *Motor) CVCallback() shared.CVCallbackFunc {
 
 			// Update speed table in case bit 4 or bit 1 changed
 			// Bit 4: 0 = CV 2,5,6 speed curve, 1 = CV 67-94 speed table
+			m.userSpeedTable = (value & 0b00010000) != 0
 			defer m.updateSpeedTable()
+			defer m.calculateAccelDecelRates()
 
 		case 53:
 			// Max speed EMF voltage
-			m.emfMax = float32(value) / 100
+			m.emfMax = float32(value) / 10
 
 		case 51, 52, 54, 55, 56:
 			// CV51 Kp gain cutover speed step
@@ -103,8 +100,29 @@ func (m *Motor) CVCallback() shared.CVCallbackFunc {
 	}
 }
 
+func (m *Motor) RegisterCallbacks() {
+	for i := uint16(2); i <= 6; i++ {
+		m.cvHandler.RegisterCallback(i, m.CVCallback())
+	}
+	m.cvHandler.RegisterCallback(9, m.CVCallback())
+	m.cvHandler.RegisterCallback(10, m.CVCallback())
+	m.cvHandler.RegisterCallback(19, m.CVCallback())
+	m.cvHandler.RegisterCallback(23, m.CVCallback())
+	m.cvHandler.RegisterCallback(24, m.CVCallback())
+	m.cvHandler.RegisterCallback(29, m.CVCallback())
+	for i := uint16(51); i <= 56; i++ {
+		m.cvHandler.RegisterCallback(i, m.CVCallback())
+	}
+	for i := uint16(65); i <= 95; i++ {
+		m.cvHandler.RegisterCallback(i, m.CVCallback())
+	}
+	for i := uint16(116); i <= 119; i++ {
+		m.cvHandler.RegisterCallback(i, m.CVCallback())
+	}
+}
+
+/* FIXME: Implement this properly
 func (m *Motor) AckPulse() {
-	// FIXME: Implement this properly?
 	dutyMax := float32(1.0)
 
 	// Full steam ahead 3ms, full reverse 3ms, then stop
@@ -119,6 +137,7 @@ func (m *Motor) AckPulse() {
 	m.pwmA.SetDuty(0.0)
 	m.pwmB.SetDuty(0.0)
 }
+*/
 
 // calculateAccelDecelRates updates the acceleration and deceleration rates
 // based on CVs 3, 4, 23, and 24
@@ -175,9 +194,9 @@ func (m *Motor) updatePIDConfig() {
 // TODO: Make sure to update the backemf interval when speed changes
 // updateSpeedTable generates the speed table based on CV67-94 and other settings
 func (m *Motor) updateSpeedTable() {
-	if m.useSpeedTable {
+	if m.userSpeedTable {
 		// Generate the speed table based on CV67-94
-		m.generateUserSpeedTable()
+		m.generateUserSpeedTable() // TODO: Verify output
 	} else {
 		// Generate the speed table based on CV2, 5, and 6
 		m.generate3PointSpeedTable()
@@ -186,12 +205,13 @@ func (m *Motor) updateSpeedTable() {
 
 // generate3PointSpeedTable creates a speed table using Vstart, Vmid, and Vmax
 func (m *Motor) generate3PointSpeedTable() {
-	vStart := float32(m.cv[2])
-	vMax := float32(m.cv[5])
+	// All speed values are in the range 0-1
+	vStart := float32(m.cv[2]) / 255
+	vMax := float32(m.cv[5]) / 255
 	if vMax == 0 {
-		vMax = 255
+		vMax = 1.0
 	}
-	vMid := float32(m.cv[6])
+	vMid := float32(m.cv[6]) / 255
 	if vMid == 0 {
 		vMid = (vStart + vMax) / 2
 	}
@@ -202,19 +222,26 @@ func (m *Motor) generate3PointSpeedTable() {
 	}
 
 	// Get number of non-stationary speed steps and interpolate
-	steps := float32(m.speedMode)
-	for i := float32(0); i < steps; i++ {
-		var value float32
-		if i <= vMid {
+	steps := int(m.speedMode)
+	segmentSteps := int(m.speedMode / 2)
+	// Per-step speed increase in the first segment
+	lowStep := (vMid - vStart) / float32(segmentSteps)
+	// Per-step speed increase in the second segment
+	highStep := (vMax - vMid) / float32(segmentSteps)
+	var value float32
+	for i := 0; i < steps; i++ {
+		if i <= segmentSteps {
 			// First segment (between Vstart and Vmid)
-			ratio := (i + 1) / vMid
-			value = vStart + ratio*(vMid-vStart)
+			value = vStart + float32(i+1)*lowStep
+		} else if i == steps-1 {
+			// Last segment (Vmax)
+			value = vMax
 		} else {
 			// Second segment (between Vmid and Vmax)
-			ratio := (i + 1 - vMid) / (steps - 1 - vMid)
-			value = vMid + ratio*(vMax-vMid)
+			value = vMid + float32(i+1-segmentSteps)*highStep
 		}
-		m.speedTable[int(i)+2] = float32(value) / 255
+		// Skip the first two speed steps (stop and emergency stop)
+		m.speedTable[i+2] = value
 	}
 }
 
@@ -240,9 +267,9 @@ func (m *Motor) generateUserSpeedTable() {
 		}
 	case SpeedMode128:
 		// Interpolate to 128 steps
-		for i := uint16(0); i < 128; i++ {
+		for i := uint16(0); i < uint16(m.speedMode); i++ {
 			// Calculate the index in the 28-speed table
-			index := i * 28 / 128
+			index := i * uint16(SpeedMode28) / uint16(SpeedMode128)
 			// Interpolate between the two values
 			value := float32(m.cv[index+67]) + float32(m.cv[index+68]-m.cv[index+67])*float32(i)*28/128
 			m.speedTable[i+2] = value / 255

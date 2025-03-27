@@ -10,7 +10,7 @@ import (
 
 func TestNewMessage(t *testing.T) {
 	cvHandler := &cv.CVHandler{}
-	decoder := &Decoder{}
+	decoder := &Decoder{motor: &motor.Motor{}}
 
 	msg := NewMessage(cvHandler, decoder)
 
@@ -271,6 +271,7 @@ func TestMessageType(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			decoder := &Decoder{
+				motor:        &motor.Motor{},
 				opMode:       tt.opMode,
 				svcModeReady: tt.svcModeReady,
 			}
@@ -355,6 +356,7 @@ func TestCheckAddress(t *testing.T) {
 			decoder := &Decoder{
 				address:        tt.decoderAddr,
 				consistAddress: tt.consistAddr,
+				motor:          &motor.Motor{},
 				Snoop:          tt.snoop,
 			}
 			msg := NewMessage(nil, decoder)
@@ -395,9 +397,9 @@ func TestMotionCommand_SpeedMode14(t *testing.T) {
 		0x4F: 15, // 01001111 Speed 14
 	}
 
-	decoder := &Decoder{
-		speedMode: motor.SpeedMode14,
-	}
+	m := &motor.Motor{}
+	m.SetSpeedMode(motor.SpeedMode14)
+	decoder := &Decoder{motor: m}
 	msg := NewMessage(nil, decoder)
 	b := make([]byte, 1)
 
@@ -469,9 +471,7 @@ func TestMotionCommand_SpeedMode28(t *testing.T) {
 		0x5F: 29, // 11111 Step 28
 	}
 
-	decoder := &Decoder{
-		speedMode: motor.SpeedMode28,
-	}
+	decoder := &Decoder{motor: &motor.Motor{}}
 	msg := NewMessage(nil, decoder)
 	b := make([]byte, 1)
 
@@ -508,9 +508,7 @@ func TestMotionCommand_SpeedMode28(t *testing.T) {
 // TestMotionCommand_SpeedMode128 tests the motionCommand function
 func TestMotionCommand_SpeedMode128(t *testing.T) {
 	// There's no need for a map here, the function should just return the speed byte
-	decoder := &Decoder{
-		speedMode: motor.SpeedMode128,
-	}
+	decoder := &Decoder{motor: &motor.Motor{}}
 	msg := NewMessage(nil, decoder)
 	b := make([]byte, 2)
 

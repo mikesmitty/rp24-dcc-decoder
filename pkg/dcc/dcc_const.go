@@ -13,6 +13,7 @@ const (
 	// 2 instructions per counter increment gives the counter in microseconds
 	smFreq = 2_000_000
 
+	maxMsgLength   = 11
 	preambleLength = 11
 	tr1Min         = 52
 	tr1Max         = 64
@@ -22,7 +23,7 @@ const (
 
 type Decoder struct {
 	cv    cv.Handler
-	motor motor.Motor
+	motor *motor.Motor
 
 	sm     shared.StateMachine
 	offset uint8
@@ -42,7 +43,6 @@ type Decoder struct {
 	consistFuncMask [3]uint8
 
 	lastDirection motor.Direction
-	speedMode     motor.SpeedMode
 }
 
 type decoderState int

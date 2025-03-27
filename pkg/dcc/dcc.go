@@ -16,6 +16,7 @@ func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, pin shared.Pin
 		address:         make([]byte, 0, 2),
 		consistAddress:  make([]byte, 0, 2),
 		cv:              cvHandler,
+		motor:           m,
 		outputCallbacks: make(map[uint16][]shared.OutputCallback, 12),
 		outputMapsFwd:   make(map[uint16]uint16, 12),
 		outputMapsRev:   make(map[uint16]uint16, 12),
@@ -192,7 +193,7 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 	}
 }
 
-/* FIXME: Might be useful?
+/* TODO: Might be useful?
 // SetSampleFrequency sets the sample frequency of the I2S peripheral.
 func (d *DCCReader) SetFrequency(freq uint32) error {
 	freq *= 32 // 32 bits per sample
