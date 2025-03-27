@@ -2,6 +2,8 @@
 
 package hal
 
+import "machine"
+
 func (h *HAL) Init() {
 	clear(h.pins)
 
