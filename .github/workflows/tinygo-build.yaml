@@ -19,7 +19,11 @@ jobs:
         run: go get .
 
       - name: Run Tests
-        run: go test -v ./...
+        run: |
+          GOCACHE=$(mktemp -d)
+          go env -w GOCACHE=$GOCACHE
+          go test -v ./...
+          go env -u GOCACHE
 
       - name: Install TinyGo
         env:
