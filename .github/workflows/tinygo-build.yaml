@@ -35,8 +35,10 @@ jobs:
       - name: Build
         id: build
         run: |
-          tinygo clean
+          GOCACHE=$(mktemp -d)
+          go env -w GOCACHE=$GOCACHE
           tinygo build -o rp24-dcc-decoder.uf2 -target pico2
+          go env -u GOCACHE
           echo "short_sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
 
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
