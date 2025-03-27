@@ -227,18 +227,18 @@ func (m *Motor) generate3PointSpeedTable() {
 	// Per-step speed increase in the first segment
 	lowStep := (vMid - vStart) / float32(segmentSteps)
 	// Per-step speed increase in the second segment
-	highStep := (vMax - vMid) / float32(segmentSteps)
+	highStep := (vMax - vMid) / float32(segmentSteps-1)
 	var value float32
 	for i := 0; i < steps; i++ {
 		if i <= segmentSteps {
 			// First segment (between Vstart and Vmid)
-			value = vStart + float32(i+1)*lowStep
+			value = vStart + float32(i)*lowStep
 		} else if i == steps-1 {
 			// Last segment (Vmax)
 			value = vMax
 		} else {
 			// Second segment (between Vmid and Vmax)
-			value = vMid + float32(i+1-segmentSteps)*highStep
+			value = vMid + float32(i-segmentSteps)*highStep
 		}
 		// Skip the first two speed steps (stop and emergency stop)
 		m.speedTable[i+2] = value
