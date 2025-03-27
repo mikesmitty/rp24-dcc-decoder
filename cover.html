@@ -101,7 +101,7 @@
 				
 				<option value="file22">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/backemf.go (0.0%)</option>
 				
-				<option value="file23">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/config.go (0.0%)</option>
+				<option value="file23">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/config.go (20.8%)</option>
 				
 				<option value="file24">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/motor.go (0.0%)</option>
 				
@@ -2361,44 +2361,44 @@ func (m *Motor) updateSpeedTable() <span class="cov0" title="0">{
 }
 
 // generate3PointSpeedTable creates a speed table using Vstart, Vmid, and Vmax
-func (m *Motor) generate3PointSpeedTable() <span class="cov0" title="0">{
+func (m *Motor) generate3PointSpeedTable() <span class="cov8" title="1">{
         // All speed values are in the range 0-1
         vStart := float32(m.cv[2]) / 255
         vMax := float32(m.cv[5]) / 255
-        if vMax == 0 </span><span class="cov0" title="0">{
+        if vMax == 0 </span><span class="cov8" title="1">{
                 vMax = 1.0
         }</span>
-        <span class="cov0" title="0">vMid := float32(m.cv[6]) / 255
-        if vMid == 0 </span><span class="cov0" title="0">{
+        <span class="cov8" title="1">vMid := float32(m.cv[6]) / 255
+        if vMid == 0 </span><span class="cov8" title="1">{
                 vMid = (vStart + vMax) / 2
         }</span>
 
         // Clear the table
-        <span class="cov0" title="0">for i := range m.speedTable </span><span class="cov0" title="0">{
+        <span class="cov8" title="1">for i := range m.speedTable </span><span class="cov8" title="1">{
                 m.speedTable[i] = 0
         }</span>
 
         // Get number of non-stationary speed steps and interpolate
-        <span class="cov0" title="0">steps := int(m.speedMode)
+        <span class="cov8" title="1">steps := int(m.speedMode)
         segmentSteps := int(m.speedMode / 2)
         // Per-step speed increase in the first segment
         lowStep := (vMid - vStart) / float32(segmentSteps)
         // Per-step speed increase in the second segment
         highStep := (vMax - vMid) / float32(segmentSteps)
         var value float32
-        for i := 0; i &lt; steps; i++ </span><span class="cov0" title="0">{
-                if i &lt;= segmentSteps </span><span class="cov0" title="0">{
+        for i := 0; i &lt; steps; i++ </span><span class="cov8" title="1">{
+                if i &lt;= segmentSteps </span><span class="cov8" title="1">{
                         // First segment (between Vstart and Vmid)
                         value = vStart + float32(i+1)*lowStep
-                }</span> else<span class="cov0" title="0"> if i == steps-1 </span><span class="cov0" title="0">{
+                }</span> else<span class="cov8" title="1"> if i == steps-1 </span><span class="cov8" title="1">{
                         // Last segment (Vmax)
                         value = vMax
-                }</span> else<span class="cov0" title="0"> {
+                }</span> else<span class="cov8" title="1"> {
                         // Second segment (between Vmid and Vmax)
                         value = vMid + float32(i+1-segmentSteps)*highStep
                 }</span>
                 // Skip the first two speed steps (stop and emergency stop)
-                <span class="cov0" title="0">m.speedTable[i+2] = value</span>
+                <span class="cov8" title="1">m.speedTable[i+2] = value</span>
         }
 }
 
