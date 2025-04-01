@@ -6266,6 +6266,12 @@
 		(uuid "0c46386f-27dc-48c9-9c1d-4f85686afc94")
 	)
 	(junction
+		(at 68.58 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0da54d8d-6388-4ab9-b16b-77a3bfa09137")
+	)
+	(junction
 		(at 226.06 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6398,7 +6404,7 @@
 		(uuid "3ea9755b-859f-4ab1-a4cc-62453141173d")
 	)
 	(junction
-		(at 45.72 43.18)
+		(at 40.64 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "470f7e06-aa69-44ea-a56b-707fa9c81fb8")
@@ -6416,19 +6422,13 @@
 		(uuid "47835b4d-d14b-4d5e-8ff9-334358089553")
 	)
 	(junction
-		(at 74.93 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4cb08744-da9b-4090-bfbb-ee85b9855425")
-	)
-	(junction
 		(at 157.48 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b26f2b5-a88d-4c59-82f1-00562998fc76")
 	)
 	(junction
-		(at 50.8 48.26)
+		(at 45.72 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d06a2aa-6e0c-420b-bc3d-5b2e28325268")
@@ -6464,7 +6464,7 @@
 		(uuid "70627552-7abc-4f39-a4b6-848621d0a36e")
 	)
 	(junction
-		(at 45.72 53.34)
+		(at 40.64 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "738b127c-2e99-42e4-811f-b77b33f58250")
@@ -6476,7 +6476,13 @@
 		(uuid "740983c0-cf80-4898-8d38-56ab705313fc")
 	)
 	(junction
-		(at 40.64 48.26)
+		(at 74.93 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76a5110b-0a61-46d8-a094-3bcba7f8b811")
+	)
+	(junction
+		(at 35.56 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7884a9cc-4523-4f49-9982-6334104fdea3")
@@ -6510,12 +6516,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82f17f9a-2809-42da-a937-66c889531be7")
-	)
-	(junction
-		(at 74.93 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83c71fd5-1a9f-4a57-8349-5ea0e28ec153")
 	)
 	(junction
 		(at 114.3 167.64)
@@ -6564,6 +6564,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf844b37-2195-4471-8ce3-5e905b65bbae")
+	)
+	(junction
+		(at 74.93 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4a9b42a-ab02-433a-a777-43478a4d79e7")
 	)
 	(junction
 		(at 153.67 50.8)
@@ -6618,6 +6624,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edf396c0-40ba-464d-8e31-bb7a9cb498c3")
+	)
+	(junction
+		(at 74.93 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe57819d-5e6e-4d7d-b172-8ad0abdd2e4a")
 	)
 	(no_connect
 		(at 234.95 196.85)
@@ -6925,6 +6937,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 43.18) (xy 78.74 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f4c4ef0-5f00-4ac6-9541-6f4231325557")
+	)
+	(wire
+		(pts
 			(xy 107.95 220.98) (xy 107.95 222.25)
 		)
 		(stroke
@@ -6932,6 +6954,16 @@
 			(type default)
 		)
 		(uuid "1003ae94-69d4-433b-bdd2-ca7433ed9311")
+	)
+	(wire
+		(pts
+			(xy 74.93 48.26) (xy 78.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b91524-ed1d-40ba-987a-bb3ff492e95a")
 	)
 	(wire
 		(pts
@@ -7425,6 +7457,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 58.42) (xy 68.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "420b2b1e-240d-4f20-b6db-e6cc4012404f")
+	)
+	(wire
+		(pts
 			(xy 356.87 204.47) (xy 356.87 200.66)
 		)
 		(stroke
@@ -7855,7 +7897,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 59.69) (xy 45.72 59.69)
+			(xy 27.94 59.69) (xy 40.64 59.69)
 		)
 		(stroke
 			(width 0)
@@ -8065,7 +8107,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 48.26) (xy 55.88 48.26)
+			(xy 45.72 48.26) (xy 50.8 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8505,7 +8547,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 53.34) (xy 45.72 59.69)
+			(xy 40.64 53.34) (xy 40.64 59.69)
 		)
 		(stroke
 			(width 0)
@@ -8692,16 +8734,6 @@
 			(type default)
 		)
 		(uuid "a59c29aa-ae62-441d-8551-0a80cb9f4e2c")
-	)
-	(wire
-		(pts
-			(xy 74.93 43.18) (xy 78.74 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5d8ace8-b13f-4bf7-93a4-55458ba67461")
 	)
 	(wire
 		(pts
@@ -8955,6 +8987,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 50.8) (xy 74.93 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a7c328-1ea1-4faa-a257-c5f53009d2ce")
+	)
+	(wire
+		(pts
 			(xy 364.49 213.36) (xy 381 213.36)
 		)
 		(stroke
@@ -8995,7 +9037,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 39.37) (xy 45.72 43.18)
+			(xy 40.64 39.37) (xy 40.64 43.18)
 		)
 		(stroke
 			(width 0)
@@ -9475,7 +9517,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 39.37) (xy 45.72 39.37)
+			(xy 27.94 39.37) (xy 40.64 39.37)
 		)
 		(stroke
 			(width 0)
@@ -9502,16 +9544,6 @@
 			(type default)
 		)
 		(uuid "e5068bef-0294-4eca-a4c0-17f2470b5cdf")
-	)
-	(wire
-		(pts
-			(xy 74.93 48.26) (xy 78.74 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5d4ae21-4f66-4a66-ad7c-0edad76077e6")
 	)
 	(wire
 		(pts
@@ -9635,7 +9667,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 48.26) (xy 40.64 48.26)
+			(xy 30.48 48.26) (xy 35.56 48.26)
 		)
 		(stroke
 			(width 0)
@@ -9974,7 +10006,7 @@
 		(uuid "0a095ebf-322b-46e0-ac39-4a9c8f479466")
 	)
 	(label "TRACK_RIGHT"
-		(at 33.02 59.69 0)
+		(at 27.94 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11014,7 +11046,7 @@
 		(uuid "ec201e08-7f99-4a1f-b84f-de5e2c9583a1")
 	)
 	(label "TRACK_LEFT"
-		(at 33.02 39.37 0)
+		(at 27.94 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11383,7 +11415,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:D_45deg")
-		(at 48.26 50.8 90)
+		(at 43.18 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11391,7 +11423,7 @@
 		(dnp no)
 		(uuid "0b8f1480-77fe-4e4a-9bb1-0f660e44e06f")
 		(property "Reference" "D4"
-			(at 51.816 52.324 90)
+			(at 46.736 52.324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11399,7 +11431,7 @@
 			)
 		)
 		(property "Value" "LMBR4020H3T5G"
-			(at 55.372 54.61 90)
+			(at 50.292 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11407,7 +11439,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:U-DFN1608-2_L1.6-W0.8-RD"
-			(at 48.26 50.8 0)
+			(at 43.18 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11416,7 +11448,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2108150030_LRC-LMBR4020H3T5G_C2852608.pdf"
-			(at 48.26 50.8 0)
+			(at 43.18 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11425,7 +11457,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 2A 560mV DFN-2(0.8x1.6) Schottky Diodes ROHS"
-			(at 48.26 50.8 0)
+			(at 43.18 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11434,7 +11466,7 @@
 			)
 		)
 		(property "LCSC" "C2852608"
-			(at 48.26 50.8 0)
+			(at 43.18 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11443,7 +11475,7 @@
 			)
 		)
 		(property "Height" "0.42"
-			(at 48.26 50.8 0)
+			(at 43.18 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11528,15 +11560,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 354.33 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Height" "0.69"
 			(at 354.33 162.56 0)
 			(effects
@@ -11584,7 +11607,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 35.56 48.26 270)
+		(at 30.48 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11593,7 +11616,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ff38f02-e6d9-4549-9880-36c8056f2dad")
 		(property "Reference" "#PWR01"
-			(at 29.21 48.26 0)
+			(at 24.13 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11602,7 +11625,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 48.2599 90)
+			(at 26.67 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11611,7 +11634,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 48.26 0)
+			(at 30.48 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11620,7 +11643,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 48.26 0)
+			(at 30.48 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11629,7 +11652,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 48.26 0)
+			(at 30.48 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12195,15 +12218,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 88.9 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Height" "1.0"
 			(at 88.9 45.72 0)
 			(effects
@@ -12267,7 +12281,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
 			(at 148.2852 60.96 0)
 			(effects
 				(font
@@ -13002,15 +13016,6 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "6V3"
-			(at 241.935 114.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C49062"
 			(at 237.49 113.03 0)
 			(effects
@@ -13513,15 +13518,6 @@
 		)
 		(property "Description" ""
 			(at 189.23 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "2V5"
-			(at 184.785 114.935 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14238,15 +14234,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 115.57 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "716c0be5-380e-4926-a7aa-c2c59c8c5799")
 		)
@@ -14402,15 +14389,6 @@
 			)
 		)
 		(property "LCSC" "C2684662"
-			(at 355.6 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 355.6 213.36 0)
 			(effects
 				(font
@@ -15483,15 +15461,6 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "6V3"
-			(at 219.075 114.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C49062"
 			(at 214.63 113.03 0)
 			(effects
@@ -15572,15 +15541,6 @@
 		)
 		(property "Description" ""
 			(at 236.22 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "6V3"
-			(at 240.665 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15841,15 +15801,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
-			(at 252.73 209.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C270365"
 			(at 252.73 207.01 0)
 			(effects
@@ -15886,7 +15837,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "rp2350-decoder:GND_1")
-		(at 74.93 58.42 0)
+		(at 68.58 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15894,7 +15845,7 @@
 		(dnp no)
 		(uuid "67a825ac-9114-4e09-8aae-46ec4887d1b6")
 		(property "Reference" "#PWR09"
-			(at 74.93 64.77 0)
+			(at 68.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15903,7 +15854,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 62.23 0)
+			(at 68.58 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15911,7 +15862,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 58.42 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15920,7 +15871,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 58.42 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15929,7 +15880,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 58.42 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16833,15 +16784,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 52.07 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Height" "0.55"
 			(at 52.07 125.73 0)
 			(effects
@@ -17401,7 +17343,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:VDC")
-		(at 55.88 48.26 270)
+		(at 50.8 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17410,7 +17352,7 @@
 		(fields_autoplaced yes)
 		(uuid "88f7770a-ceb4-4ad9-8d9d-9b6caadee916")
 		(property "Reference" "#PWR05"
-			(at 52.07 48.26 0)
+			(at 46.99 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17419,7 +17361,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 59.69 48.2599 90)
+			(at 54.61 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17428,7 +17370,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 48.26 0)
+			(at 50.8 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17437,7 +17379,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 48.26 0)
+			(at 50.8 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17446,7 +17388,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 55.88 48.26 0)
+			(at 50.8 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17461,6 +17403,101 @@
 			(project ""
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rp2350-decoder:C")
+		(at 74.93 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "893e9980-ef0e-4bfc-ac1e-5811bbedd708")
+		(property "Reference" "C15"
+			(at 77.47 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 77.47 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rp2350-decoder:C_0402_1005Metric"
+			(at 75.8952 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178967296479232"
+			(at 74.93 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 79.375 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C159814"
+			(at 74.93 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.7"
+			(at 74.93 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d876856-19bc-4f6e-9dd6-3411c5b89746")
+		)
+		(pin "2"
+			(uuid "e12272b8-3ea2-461e-b0c1-0cd792e1d1b4")
+		)
+		(instances
+			(project "rp2350-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -19016,7 +19053,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:D_45deg")
-		(at 48.26 45.72 0)
+		(at 43.18 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19024,7 +19061,7 @@
 		(dnp no)
 		(uuid "aeceab55-256f-4164-bf10-5b3872cce815")
 		(property "Reference" "D3"
-			(at 51.816 43.942 0)
+			(at 46.736 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19032,7 +19069,7 @@
 			)
 		)
 		(property "Value" "LMBR4020H3T5G"
-			(at 55.372 41.91 0)
+			(at 50.292 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19040,7 +19077,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:U-DFN1608-2_L1.6-W0.8-RD"
-			(at 48.26 45.72 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19049,7 +19086,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2108150030_LRC-LMBR4020H3T5G_C2852608.pdf"
-			(at 48.26 45.72 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19058,7 +19095,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 2A 560mV DFN-2(0.8x1.6) Schottky Diodes ROHS"
-			(at 48.26 45.72 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19067,7 +19104,7 @@
 			)
 		)
 		(property "LCSC" "C2852608"
-			(at 48.26 45.72 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19076,16 +19113,7 @@
 			)
 		)
 		(property "Height" "0.42"
-			(at 48.26 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 48.26 45.72 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19110,7 +19138,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:C")
-		(at 74.93 54.61 0)
+		(at 68.58 54.61 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19119,7 +19147,7 @@
 		(dnp no)
 		(uuid "af8293a2-4c56-4fcb-ad83-4b43de96d411")
 		(property "Reference" "C2"
-			(at 72.39 52.705 0)
+			(at 66.04 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19127,8 +19155,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 72.39 54.61 0)
+		(property "Value" "2.2uF"
+			(at 66.04 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19136,8 +19164,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "rp2350-decoder:C_0603_1608Metric"
-			(at 73.9648 58.42 0)
+		(property "Footprint" "rp2350-decoder:C_0402_1005Metric"
+			(at 67.6148 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19145,8 +19173,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8568525238768373760"
-			(at 74.93 54.61 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178967296479232"
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19155,7 +19183,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 54.61 0)
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19164,15 +19192,15 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 70.485 56.515 0)
+			(at 64.135 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C96446"
-			(at 74.93 54.61 0)
+		(property "LCSC" "C159814"
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19180,8 +19208,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.9"
-			(at 74.93 54.61 0)
+		(property "Height" "0.7"
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19206,7 +19234,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:D_45deg")
-		(at 43.18 45.72 90)
+		(at 38.1 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19214,7 +19242,7 @@
 		(dnp no)
 		(uuid "b475622e-7e96-4edb-8771-b561786639b1")
 		(property "Reference" "D1"
-			(at 39.624 43.942 90)
+			(at 34.544 43.942 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19222,7 +19250,7 @@
 			)
 		)
 		(property "Value" "LMBR4020H3T5G"
-			(at 35.814 41.91 90)
+			(at 30.734 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19230,7 +19258,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:U-DFN1608-2_L1.6-W0.8-RD"
-			(at 43.18 45.72 0)
+			(at 38.1 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19239,7 +19267,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2108150030_LRC-LMBR4020H3T5G_C2852608.pdf"
-			(at 43.18 45.72 0)
+			(at 38.1 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19248,7 +19276,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 2A 560mV DFN-2(0.8x1.6) Schottky Diodes ROHS"
-			(at 43.18 45.72 0)
+			(at 38.1 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19257,7 +19285,7 @@
 			)
 		)
 		(property "LCSC" "C2852608"
-			(at 43.18 45.72 0)
+			(at 38.1 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19266,16 +19294,7 @@
 			)
 		)
 		(property "Height" "0.42"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 43.18 45.72 90)
+			(at 38.1 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19754,15 +19773,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 262.89 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Height" "0.35"
 			(at 262.89 207.01 0)
 			(effects
@@ -19920,7 +19930,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:D_45deg")
-		(at 43.18 50.8 0)
+		(at 38.1 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19928,7 +19938,7 @@
 		(dnp no)
 		(uuid "cbb747db-acaa-43b5-a47a-eabde013b06b")
 		(property "Reference" "D2"
-			(at 39.624 52.324 0)
+			(at 34.544 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19936,7 +19946,7 @@
 			)
 		)
 		(property "Value" "LMBR4020H3T5G"
-			(at 35.814 54.61 0)
+			(at 30.734 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19944,7 +19954,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:U-DFN1608-2_L1.6-W0.8-RD"
-			(at 43.18 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19953,7 +19963,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2108150030_LRC-LMBR4020H3T5G_C2852608.pdf"
-			(at 43.18 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19962,7 +19972,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 2A 560mV DFN-2(0.8x1.6) Schottky Diodes ROHS"
-			(at 43.18 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19971,7 +19981,7 @@
 			)
 		)
 		(property "LCSC" "C2852608"
-			(at 43.18 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19980,7 +19990,7 @@
 			)
 		)
 		(property "Height" "0.42"
-			(at 43.18 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20754,15 +20764,6 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "6V3"
-			(at 230.505 114.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C49062"
 			(at 226.06 113.03 0)
 			(effects
@@ -21259,15 +21260,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 157.48 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "2021e2ae-53e8-4256-b5b4-e141160587b4")
 		)
@@ -21477,15 +21469,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
-			(at 157.48 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C423451"
 			(at 153.67 45.72 0)
 			(effects
@@ -21568,15 +21551,6 @@
 		)
 		(property "Description" ""
 			(at 95.25 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "6V3"
-			(at 90.805 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
