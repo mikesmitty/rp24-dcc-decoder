@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.1.0...rp2350-decoder-v0.1.1) (2025-04-01)
+
+
+### Bug Fixes
+
+* use shorter cap on bottom ([dc6b62a](https://github.com/mikesmitty/rp24-dcc-decoder/commit/dc6b62acc13467da5e2ec5f99067f5d8a516d0b7))
+
 ## [0.1.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.0.4...rp2350-decoder-v0.1.0) (2025-03-14)
 
 
