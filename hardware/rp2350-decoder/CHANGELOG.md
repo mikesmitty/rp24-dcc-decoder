@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.1.1...rp2350-decoder-v0.2.0) (2025-06-17)
+
+
+### Features
+
+* move usb to aux11/aux12 pins ([1504977](https://github.com/mikesmitty/rp24-dcc-decoder/commit/150497749cac13fe532cb453d9b3c4474d760645))
+
 ## [0.1.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.1.0...rp2350-decoder-v0.1.1) (2025-04-01)
 
 
