@@ -6827,16 +6827,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 184.15) (xy 189.23 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08de4eaf-e6bc-4b65-bd03-026fbda867b9")
-	)
-	(wire
-		(pts
 			(xy 292.1 62.23) (xy 293.37 62.23)
 		)
 		(stroke
@@ -6987,6 +6977,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 49.53) (xy 264.16 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "156b8a98-75b2-48ad-8967-6f58728c01dc")
+	)
+	(wire
+		(pts
 			(xy 232.41 219.71) (xy 246.38 219.71)
 		)
 		(stroke
@@ -7034,16 +7034,6 @@
 			(type default)
 		)
 		(uuid "1c0f7c46-1115-4680-a511-384825959b62")
-	)
-	(wire
-		(pts
-			(xy 232.41 161.29) (xy 246.38 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d92749c-9420-4576-ac87-88c84f4f3f33")
 	)
 	(wire
 		(pts
@@ -7577,16 +7567,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 158.75) (xy 246.38 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b344277-51bd-4d1a-98ba-12d186f9ea7f")
-	)
-	(wire
-		(pts
 			(xy 157.48 123.19) (xy 157.48 127)
 		)
 		(stroke
@@ -7634,16 +7614,6 @@
 			(type default)
 		)
 		(uuid "500bbc8e-138e-4890-ad32-24d05ae478e6")
-	)
-	(wire
-		(pts
-			(xy 264.16 49.53) (xy 251.46 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52a7c3d3-98d0-4e11-b41e-da6ccb444a70")
 	)
 	(wire
 		(pts
@@ -7817,6 +7787,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 46.99) (xy 264.16 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "607fdfe3-6528-40eb-b504-667b0a251df0")
+	)
+	(wire
+		(pts
 			(xy 177.8 224.79) (xy 189.23 224.79)
 		)
 		(stroke
@@ -7834,6 +7814,16 @@
 			(type default)
 		)
 		(uuid "60f9635c-2d85-433d-9170-bead0e08fd8e")
+	)
+	(wire
+		(pts
+			(xy 177.8 181.61) (xy 189.23 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61b6aade-fc32-488d-b036-cfa4f49825d5")
 	)
 	(wire
 		(pts
@@ -8647,16 +8637,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 181.61) (xy 168.91 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a267444c-934f-49fb-b652-1875f25333a4")
-	)
-	(wire
-		(pts
 			(xy 153.67 50.8) (xy 158.75 50.8)
 		)
 		(stroke
@@ -8794,16 +8774,6 @@
 			(type default)
 		)
 		(uuid "a8e0855f-02cc-4f47-8de7-9cdafff7464c")
-	)
-	(wire
-		(pts
-			(xy 264.16 46.99) (xy 251.46 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8f71fc6-472e-44f4-969d-6709046ad1c4")
 	)
 	(wire
 		(pts
@@ -9027,16 +8997,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 181.61) (xy 189.23 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4e74465-500b-4c14-a6b9-e06a963d8d40")
-	)
-	(wire
-		(pts
 			(xy 40.64 39.37) (xy 40.64 43.18)
 		)
 		(stroke
@@ -9124,6 +9084,16 @@
 			(type default)
 		)
 		(uuid "bdec1e9d-18b5-44f3-b5ca-f034ac5c41ca")
+	)
+	(wire
+		(pts
+			(xy 177.8 184.15) (xy 189.23 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdfb95f4-0c19-42d3-bd40-920b8c8d84bd")
 	)
 	(wire
 		(pts
@@ -9937,16 +9907,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 184.15) (xy 168.91 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fee71819-7959-4a60-8b1a-dc6394b308c0")
-	)
-	(wire
-		(pts
 			(xy 232.41 176.53) (xy 246.38 176.53)
 		)
 		(stroke
@@ -10076,7 +10036,7 @@
 		(uuid "2679778d-b7bb-41d9-8744-b538b6218d88")
 	)
 	(label "SPEAKER_N"
-		(at 304.8 49.53 180)
+		(at 304.8 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10115,6 +10075,16 @@
 		)
 		(uuid "2c020482-7e5e-4cd1-b268-e5a8e40968f5")
 	)
+	(label "USB_N"
+		(at 251.46 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30364e1d-fc06-4645-8e7a-e7de3f7b2126")
+	)
 	(label "LAMP_FRONT"
 		(at 304.8 67.31 180)
 		(effects
@@ -10124,16 +10094,6 @@
 			(justify right bottom)
 		)
 		(uuid "33562d35-d4c1-440a-aead-58dd200db01d")
-	)
-	(label "SPEAKER_P"
-		(at 156.21 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "34fbc05f-3ed0-4684-9443-3a18bd04eed3")
 	)
 	(label "SWDIO"
 		(at 177.8 173.99 0)
@@ -10305,6 +10265,16 @@
 		)
 		(uuid "4f67998a-8984-4d39-b8fe-63006bdc6a64")
 	)
+	(label "USB_P"
+		(at 177.8 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "529009eb-5815-481e-880f-7a8dedbe94a8")
+	)
 	(label "GPIO7"
 		(at 246.38 176.53 180)
 		(effects
@@ -10344,16 +10314,6 @@
 			(justify right bottom)
 		)
 		(uuid "575f94da-1d54-4396-b7b0-2a2e0c0d1481")
-	)
-	(label "USB_P"
-		(at 177.8 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "58515b5c-c123-465c-84ae-9aca980152e6")
 	)
 	(label "AUX3"
 		(at 246.38 194.31 180)
@@ -10426,7 +10386,7 @@
 		(uuid "702898d8-c79a-4b6b-b717-6f0bcb31bf6a")
 	)
 	(label "AUX12"
-		(at 251.46 46.99 0)
+		(at 243.84 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10436,7 +10396,7 @@
 		(uuid "7055215d-ac07-435a-9c54-8506b8bdf9f9")
 	)
 	(label "SPEAKER_P"
-		(at 304.8 46.99 180)
+		(at 304.8 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10746,14 +10706,14 @@
 		(uuid "bdffb65f-2f6e-4c49-9cc4-1090efb47235")
 	)
 	(label "USB_N"
-		(at 177.8 184.15 0)
+		(at 177.8 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "c0684905-c20d-4375-b8e9-ef175d607d0f")
+		(uuid "bfaf1715-b02c-4251-b10b-815cac8b41e2")
 	)
 	(label "AUX8 (VDC)"
 		(at 358.14 71.12 0)
@@ -10925,26 +10885,6 @@
 		)
 		(uuid "d7eb1b5b-4705-4d44-b02b-8c50b1aa2ce6")
 	)
-	(label "SPEAKER_N"
-		(at 156.21 184.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d83935e7-7247-4e04-bcdc-2618e7f15ade")
-	)
-	(label "AUX12"
-		(at 246.38 161.29 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "daf62e28-ae88-4bd7-9792-6a589d8d4d8b")
-	)
 	(label "GPIO8"
 		(at 246.38 179.07 180)
 		(effects
@@ -11004,6 +10944,16 @@
 			(justify right bottom)
 		)
 		(uuid "e1ae3e73-eceb-4e5d-834b-060ae413de92")
+	)
+	(label "USB_P"
+		(at 251.46 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2084a67-e21e-4960-a04a-78948aa55299")
 	)
 	(label "QSPI_SD1"
 		(at 177.8 222.25 0)
@@ -11066,7 +11016,7 @@
 		(uuid "ee4b8b42-684e-441e-bf52-fde1702562e1")
 	)
 	(label "AUX11"
-		(at 251.46 49.53 0)
+		(at 243.84 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11074,16 +11024,6 @@
 			(justify left bottom)
 		)
 		(uuid "f0a2167a-21ce-4f61-87d0-edc4033c9894")
-	)
-	(label "AUX11"
-		(at 246.38 158.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f10a5dfd-bbda-4275-8016-4348a1261556")
 	)
 	(label "XOUT"
 		(at 86.36 167.64 0)
@@ -13290,92 +13230,6 @@
 			(project ""
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:R")
-		(at 172.72 181.61 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "334ad83d-6f36-48af-9001-e79e7b4e3bab")
-		(property "Reference" "R9"
-			(at 172.72 175.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 172.72 177.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 172.72 183.388 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 172.72 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C270355"
-			(at 172.72 181.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.26"
-			(at 172.72 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e7485460-ba7e-4eb7-9584-d9c147f033b0")
-		)
-		(pin "1"
-			(uuid "edfd6e36-18b1-477b-a291-2ae5600534b4")
-		)
-		(instances
-			(project ""
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -18423,92 +18277,6 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:R")
-		(at 172.72 184.15 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a149b7fb-3781-413a-8744-6772fe91f23d")
-		(property "Reference" "R10"
-			(at 172.72 190.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 172.72 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 172.72 182.372 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 172.72 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C270355"
-			(at 172.72 184.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.26"
-			(at 172.72 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5c3cbb29-6e5f-4eb3-b6f4-0f6ef6a2900e")
-		)
-		(pin "1"
-			(uuid "8767ae59-1521-4eba-a6ad-4774412db669")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "R10")
 					(unit 1)
 				)
 			)

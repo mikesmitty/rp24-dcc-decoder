@@ -4425,16 +4425,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 172.72) (xy 171.45 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0595fca0-372c-48e2-9372-b626b7e8b011")
-	)
-	(wire
-		(pts
 			(xy 233.68 36.83) (xy 233.68 35.56)
 		)
 		(stroke
@@ -4522,16 +4512,6 @@
 			(type default)
 		)
 		(uuid "115f45a0-0e59-412a-8443-48323ffd63b1")
-	)
-	(wire
-		(pts
-			(xy 173.99 127) (xy 177.8 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12f26084-adc8-47e6-a922-be887de4ba1f")
 	)
 	(wire
 		(pts
@@ -4915,16 +4895,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 127) (xy 194.31 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c4a7d37-9537-437e-913e-9183a9b07ed3")
-	)
-	(wire
-		(pts
 			(xy 142.24 50.8) (xy 142.24 55.88)
 		)
 		(stroke
@@ -4962,16 +4932,6 @@
 			(type default)
 		)
 		(uuid "530b7540-c4f3-4886-a3bf-ee83c4b50338")
-	)
-	(wire
-		(pts
-			(xy 199.39 129.54) (xy 199.39 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54c9bdd3-556b-4cce-a4bb-b657c6e728d0")
 	)
 	(wire
 		(pts
@@ -5072,16 +5032,6 @@
 			(type default)
 		)
 		(uuid "633ee61e-dbf8-467f-b1be-fb7c5d42bc4c")
-	)
-	(wire
-		(pts
-			(xy 133.35 133.35) (xy 137.16 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64b6fe08-7fd5-4b29-aa8b-93b61b80cdde")
 	)
 	(wire
 		(pts
@@ -5222,16 +5172,6 @@
 			(type default)
 		)
 		(uuid "77e972b0-b644-4ab2-9787-7cd37d5d9e54")
-	)
-	(wire
-		(pts
-			(xy 161.29 177.8) (xy 157.48 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7834d5a3-fd98-433c-ab75-d55d3b2defbc")
 	)
 	(wire
 		(pts
@@ -5435,16 +5375,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 127) (xy 186.69 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a092a954-3a9a-404a-9a46-d1ff68b57e53")
-	)
-	(wire
-		(pts
 			(xy 237.49 148.59) (xy 246.38 148.59)
 		)
 		(stroke
@@ -5522,16 +5452,6 @@
 			(type default)
 		)
 		(uuid "aa99c95d-a123-4c4b-a5fb-ccad3114cfb1")
-	)
-	(wire
-		(pts
-			(xy 157.48 167.64) (xy 151.13 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab71be96-be66-4783-bcf7-de441e9f7725")
 	)
 	(wire
 		(pts
@@ -5625,16 +5545,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 118.11) (xy 173.99 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afb1ecbd-a2c7-4e87-8005-9cfd8a4936f6")
-	)
-	(wire
-		(pts
 			(xy 17.78 133.35) (xy 15.24 133.35)
 		)
 		(stroke
@@ -5662,16 +5572,6 @@
 			(type default)
 		)
 		(uuid "b3600124-bf7a-486f-b14f-48d0155315c8")
-	)
-	(wire
-		(pts
-			(xy 137.16 133.35) (xy 137.16 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b377c93a-490b-4b0a-8bc1-03b33e329c91")
 	)
 	(wire
 		(pts
@@ -5852,16 +5752,6 @@
 			(type default)
 		)
 		(uuid "d3d67e3a-4372-434a-9edb-acede7367b74")
-	)
-	(wire
-		(pts
-			(xy 191.77 134.62) (xy 179.07 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4069df3-e556-4a5a-9e3a-9fe576c01e3b")
 	)
 	(wire
 		(pts
@@ -6065,16 +5955,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 167.64) (xy 143.51 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5b46dbd-3ae5-4bb2-9ec7-821e537b1f2c")
-	)
-	(wire
-		(pts
 			(xy 74.93 46.99) (xy 83.82 46.99)
 		)
 		(stroke
@@ -6223,16 +6103,6 @@
 		)
 		(uuid "254d15b2-b796-4261-8ab9-f5bdaceb41bd")
 	)
-	(label "AUX11"
-		(at 213.36 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2799ee0f-3055-44a0-9a78-eb4807a9274d")
-	)
 	(label "MOTOR_B"
 		(at 274.32 151.13 180)
 		(effects
@@ -6273,6 +6143,16 @@
 		)
 		(uuid "3bab8dd4-f4bd-422d-8601-061899b35340")
 	)
+	(label "AUX12"
+		(at 205.74 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46268934-e179-4d92-87f2-9f12d8ecb387")
+	)
 	(label "CAP+"
 		(at 264.16 62.23 180)
 		(effects
@@ -6284,7 +6164,7 @@
 		(uuid "46cd801d-9a38-4fae-811d-80d9e3f510a0")
 	)
 	(label "SPEAKER_N"
-		(at 250.19 116.84 180)
+		(at 250.19 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6313,16 +6193,6 @@
 		)
 		(uuid "5b46c2fa-813e-43d9-ab3a-a6ea9ad390be")
 	)
-	(label "AUX12"
-		(at 179.07 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "62b78b55-18a7-4ef9-b346-dafdfeb1523e")
-	)
 	(label "AUX8"
 		(at 213.36 72.39 0)
 		(effects
@@ -6334,12 +6204,12 @@
 		(uuid "66af707c-0385-4d4c-a0ad-067284f00b89")
 	)
 	(label "D+"
-		(at 251.46 44.45 180)
+		(at 213.36 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6a463116-b30e-4144-ad73-793fb469d1f9")
 	)
@@ -6353,7 +6223,7 @@
 		)
 		(uuid "6a6310db-64a0-4c76-8177-1079ed4246e7")
 	)
-	(label "AUX11"
+	(label "D-"
 		(at 274.32 137.16 180)
 		(effects
 			(font
@@ -6393,16 +6263,6 @@
 		)
 		(uuid "9afb6dae-03bd-48e8-a7f9-19c18424017d")
 	)
-	(label "AUX11"
-		(at 171.45 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9b08532a-746f-4640-80be-6e7fc3fb5f40")
-	)
 	(label "MOTOR_A"
 		(at 274.32 148.59 180)
 		(effects
@@ -6414,12 +6274,12 @@
 		(uuid "a2e7fdb7-b313-4e08-bae0-95c5c17967f5")
 	)
 	(label "D-"
-		(at 251.46 46.99 180)
+		(at 213.36 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "a3de7a6b-b386-44a6-9176-a39c562aefa1")
 	)
@@ -6563,16 +6423,6 @@
 		)
 		(uuid "e4332b12-3c67-4855-be28-4df5169d251c")
 	)
-	(label "AUX12"
-		(at 213.36 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e65cb8ec-2054-40da-9738-8b7079c505b9")
-	)
 	(label "TRACK_RIGHT"
 		(at 274.32 119.38 180)
 		(effects
@@ -6582,6 +6432,16 @@
 			(justify right bottom)
 		)
 		(uuid "eb7caf6d-d266-487c-98e3-b2ef4dc6064f")
+	)
+	(label "AUX11"
+		(at 205.74 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f42e4f8f-f92a-4b11-b6b5-3ef2a39e9877")
 	)
 	(label "AUX3"
 		(at 213.36 52.07 0)
@@ -6594,7 +6454,7 @@
 		(uuid "f44da137-3a02-49e6-872e-dfc468d82366")
 	)
 	(label "SPEAKER_P"
-		(at 250.19 119.38 180)
+		(at 250.19 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6633,7 +6493,7 @@
 		)
 		(uuid "fd9a7632-d1e9-4f04-9663-866c759f1fc1")
 	)
-	(label "AUX12"
+	(label "D+"
 		(at 274.32 139.7 180)
 		(effects
 			(font
@@ -6970,72 +6830,6 @@
 		)
 	)
 	(symbol
-		(lib_id "rp24-usb-tester:GND")
-		(at 199.39 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "103bbafc-a3b4-4d75-8c96-051b0806d985")
-		(property "Reference" "#PWR017"
-			(at 199.39 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6f9652e0-beaf-4781-aa18-e22cc67f77fe")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp24-usb-tester:R")
 		(at 157.48 59.69 0)
 		(mirror y)
@@ -7356,73 +7150,6 @@
 			(project "rp24-usb-tester"
 				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp24-usb-tester:GND")
-		(at 161.29 177.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24d35591-015c-4d00-821b-907cbcaa1103")
-		(property "Reference" "#PWR011"
-			(at 167.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.1 177.7999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77a90563-9e44-4178-bb9e-423da424bf7e")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -8572,197 +8299,6 @@
 		)
 	)
 	(symbol
-		(lib_id "rp24-usb-tester:R")
-		(at 181.61 127 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c6af9eb-0fdd-474c-bbd1-ddb035e8af32")
-		(property "Reference" "R5"
-			(at 181.61 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 181.61 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 181.61 128.778 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 181.61 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25076"
-			(at 181.61 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 181.61 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 181.61 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "55d475fc-46b3-4a00-8d51-3ba315e1ea74")
-		)
-		(pin "1"
-			(uuid "1952631f-f731-4bd7-9169-a46dbb5281e8")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp24-usb-tester:LED")
-		(at 190.5 127 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ed7bd72-df87-4429-9c9b-037e85a01bab")
-		(property "Reference" "D14"
-			(at 192.0875 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AUX12"
-			(at 192.0875 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 190.5 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 190.5 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2290"
-			(at 190.5 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 190.5 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 190.5 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "af61287b-5d4e-4063-b4ab-af6ade93668d")
-		)
-		(pin "1"
-			(uuid "f653e8c0-a39d-499f-833a-7d1a4f0138de")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp24-usb-tester:LED")
 		(at 147.32 148.59 0)
 		(mirror y)
@@ -9697,118 +9233,6 @@
 			(project "rp24-usb-tester"
 				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
 					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp24-usb-tester:SS8050")
-		(at 196.85 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85e831f5-d2c5-4aef-bd31-3d7a7e59a3c1")
-		(property "Reference" "Q5"
-			(at 201.93 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SS8050"
-			(at 201.93 135.8899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 201.93 141.986 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 201.93 139.446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 230.886 136.906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2150"
-			(at 196.85 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 196.85 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 196.85 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
-			(at 196.85 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "f45232b1-1b9f-4c81-beb5-e451a49dfb0d")
-		)
-		(pin "2"
-			(uuid "4b528835-f525-470d-a072-e8a758f4f0c4")
-		)
-		(pin "1"
-			(uuid "864f1750-0139-4fa3-b90b-4beb25e5a125")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -10795,90 +10219,6 @@
 		)
 	)
 	(symbol
-		(lib_id "rp24-usb-tester:+5V")
-		(at 173.99 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aec7f595-90c8-455a-9ce4-3f2cc8246982")
-		(property "Reference" "#PWR014"
-			(at 173.99 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 173.99 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 173.99 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 173.99 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 173.99 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "422eaa1c-28cc-4ac1-afc3-bc58566b1848")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp24-usb-tester:LED")
 		(at 86.36 152.4 0)
 		(mirror y)
@@ -11675,102 +11015,6 @@
 		)
 	)
 	(symbol
-		(lib_id "rp24-usb-tester:LED")
-		(at 147.32 167.64 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbcbd78e-b032-483b-8444-dfc32e0682d5")
-		(property "Reference" "D12"
-			(at 148.9075 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AUX11"
-			(at 148.9075 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 147.32 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 147.32 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2290"
-			(at 147.32 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 147.32 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 147.32 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0f2e9061-ac1c-400a-8b0e-4f1b57b1e034")
-		)
-		(pin "1"
-			(uuid "996555ff-4b15-4a3d-ac89-eb47dc6fd331")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp24-usb-tester:Conn_01x02_Pin")
 		(at 257.81 116.84 0)
 		(unit 1)
@@ -12108,118 +11352,6 @@
 			(project ""
 				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp24-usb-tester:SS8050")
-		(at 160.02 172.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e4498394-c4f9-4d2c-b7b7-145b72728c60")
-		(property "Reference" "Q4"
-			(at 154.94 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SS8050"
-			(at 154.94 173.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 154.94 180.086 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 154.94 177.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 125.984 175.006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2150"
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "0;0;180"
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a5cf2f06-1c57-4c7e-88d2-85a524d4528a")
-		)
-		(pin "2"
-			(uuid "7810280c-dc53-4dd9-98ea-0f12cda5470f")
-		)
-		(pin "1"
-			(uuid "b16268c3-5252-42ba-89e9-43490d54e14a")
-		)
-		(instances
-			(project "rp24-usb-tester"
-				(path "/d0286ab8-587a-4050-861e-41c0709ea38c"
-					(reference "Q4")
 					(unit 1)
 				)
 			)
