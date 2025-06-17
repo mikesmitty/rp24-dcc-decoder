@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.1...rp24-usb-tester-v0.4.0) (2025-06-17)
+
+
+### Features
+
+* move usb to aux11/aux12 pins ([1504977](https://github.com/mikesmitty/rp24-dcc-decoder/commit/150497749cac13fe532cb453d9b3c4474d760645))
+
 ## [0.3.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.0...rp24-usb-tester-v0.3.1) (2025-02-23)
 
 
