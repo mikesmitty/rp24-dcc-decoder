@@ -1716,7 +1716,7 @@
 		(uuid "2dcb4ddc-8d9e-4001-b438-8cead18585b8")
 	)
 	(label "AUX12"
-		(at 49.53 39.37 0)
+		(at 49.53 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1996,7 +1996,7 @@
 		(uuid "d734b7cf-5739-40e8-a1a9-3a2797e26d37")
 	)
 	(label "AUX11"
-		(at 49.53 41.91 0)
+		(at 49.53 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
