@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.1...rp24-usb-tester-v0.3.2) (2025-06-18)
+
+
+### Bug Fixes
+
+* un-swap usb +/- and aux11/aux12 pins ([1f776d0](https://github.com/mikesmitty/rp24-dcc-decoder/commit/1f776d04f63d8f8768ab01cb2be59e1d0c34c532))
+
 ## [0.3.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.0...rp24-usb-tester-v0.3.1) (2025-02-23)
 
 
