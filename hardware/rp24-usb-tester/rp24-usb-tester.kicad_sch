@@ -6224,7 +6224,7 @@
 		(uuid "254d15b2-b796-4261-8ab9-f5bdaceb41bd")
 	)
 	(label "AUX11"
-		(at 213.36 46.99 0)
+		(at 213.36 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6284,7 +6284,7 @@
 		(uuid "46cd801d-9a38-4fae-811d-80d9e3f510a0")
 	)
 	(label "SPEAKER_N"
-		(at 250.19 116.84 180)
+		(at 250.19 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6334,7 +6334,7 @@
 		(uuid "66af707c-0385-4d4c-a0ad-067284f00b89")
 	)
 	(label "D+"
-		(at 251.46 44.45 180)
+		(at 251.46 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6414,7 +6414,7 @@
 		(uuid "a2e7fdb7-b313-4e08-bae0-95c5c17967f5")
 	)
 	(label "D-"
-		(at 251.46 46.99 180)
+		(at 251.46 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6564,7 +6564,7 @@
 		(uuid "e4332b12-3c67-4855-be28-4df5169d251c")
 	)
 	(label "AUX12"
-		(at 213.36 44.45 0)
+		(at 213.36 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6594,7 +6594,7 @@
 		(uuid "f44da137-3a02-49e6-872e-dfc468d82366")
 	)
 	(label "SPEAKER_P"
-		(at 250.19 119.38 180)
+		(at 250.19 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)

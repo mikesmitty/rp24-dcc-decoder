@@ -10076,7 +10076,7 @@
 		(uuid "2679778d-b7bb-41d9-8744-b538b6218d88")
 	)
 	(label "SPEAKER_N"
-		(at 304.8 49.53 180)
+		(at 304.8 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10126,7 +10126,7 @@
 		(uuid "33562d35-d4c1-440a-aead-58dd200db01d")
 	)
 	(label "SPEAKER_P"
-		(at 156.21 181.61 0)
+		(at 156.21 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10346,7 +10346,7 @@
 		(uuid "575f94da-1d54-4396-b7b0-2a2e0c0d1481")
 	)
 	(label "USB_P"
-		(at 177.8 181.61 0)
+		(at 177.8 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10426,7 +10426,7 @@
 		(uuid "702898d8-c79a-4b6b-b717-6f0bcb31bf6a")
 	)
 	(label "AUX12"
-		(at 251.46 46.99 0)
+		(at 251.46 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10436,7 +10436,7 @@
 		(uuid "7055215d-ac07-435a-9c54-8506b8bdf9f9")
 	)
 	(label "SPEAKER_P"
-		(at 304.8 46.99 180)
+		(at 304.8 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10746,7 +10746,7 @@
 		(uuid "bdffb65f-2f6e-4c49-9cc4-1090efb47235")
 	)
 	(label "USB_N"
-		(at 177.8 184.15 0)
+		(at 177.8 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10926,7 +10926,7 @@
 		(uuid "d7eb1b5b-4705-4d44-b02b-8c50b1aa2ce6")
 	)
 	(label "SPEAKER_N"
-		(at 156.21 184.15 0)
+		(at 156.21 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10936,7 +10936,7 @@
 		(uuid "d83935e7-7247-4e04-bcdc-2618e7f15ade")
 	)
 	(label "AUX12"
-		(at 246.38 161.29 180)
+		(at 246.38 158.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11066,7 +11066,7 @@
 		(uuid "ee4b8b42-684e-441e-bf52-fde1702562e1")
 	)
 	(label "AUX11"
-		(at 251.46 49.53 0)
+		(at 251.46 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11076,7 +11076,7 @@
 		(uuid "f0a2167a-21ce-4f61-87d0-edc4033c9894")
 	)
 	(label "AUX11"
-		(at 246.38 158.75 180)
+		(at 246.38 161.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
