@@ -5,7 +5,7 @@
 	(uuid "f5113d4f-d14d-41e6-9ae9-919ea90fc275")
 	(paper "A4")
 	(title_block
-		(date "2025-02-23")
+		(date "2025-06-18")
 		(rev "v0.1.2")
 	)
 	(lib_symbols
