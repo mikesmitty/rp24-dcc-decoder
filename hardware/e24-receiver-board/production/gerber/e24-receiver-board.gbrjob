@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-03-14T09:56:09-04:00"
+    "CreationDate": "2025-06-18T17:45:13-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "e24-receiver-board",
       "GUID": "6532342d-7265-4636-9569-7665722d626f",
-      "Revision": "v0.1.1"
+      "Revision": "v0.1.2"
     },
     "Size": {
       "X": 70.1,
