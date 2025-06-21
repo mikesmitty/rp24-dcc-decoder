@@ -7284,7 +7284,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX1"
+		(property "Value" "WHITE_LED"
 			(at 39.6875 144.78 0)
 			(effects
 				(font
@@ -8221,7 +8221,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX3"
+		(property "Value" "WHITE_LED"
 			(at 87.9475 115.57 0)
 			(effects
 				(font
@@ -8685,7 +8685,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX12"
+		(property "Value" "WHITE_LED"
 			(at 192.0875 123.19 0)
 			(effects
 				(font
@@ -8781,7 +8781,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX10"
+		(property "Value" "WHITE_LED"
 			(at 148.9075 144.78 0)
 			(effects
 				(font
@@ -9191,7 +9191,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX2"
+		(property "Value" "WHITE_LED"
 			(at 39.6875 156.21 0)
 			(effects
 				(font
@@ -9287,7 +9287,7 @@
 				)
 			)
 		)
-		(property "Value" "LAMP_FRONT"
+		(property "Value" "WHITE_LED"
 			(at 39.6875 121.92 0)
 			(effects
 				(font
@@ -9625,7 +9625,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX4"
+		(property "Value" "WHITE_LED"
 			(at 87.9475 132.08 0)
 			(effects
 				(font
@@ -10387,7 +10387,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX7"
+		(property "Value" "WHITE_LED"
 			(at 148.9075 121.92 0)
 			(effects
 				(font
@@ -10897,7 +10897,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX5"
+		(property "Value" "WHITE_LED"
 			(at 87.9475 148.59 0)
 			(effects
 				(font
@@ -11093,7 +11093,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX8"
+		(property "Value" "WHITE_LED"
 			(at 148.9075 133.35 0)
 			(effects
 				(font
@@ -11406,7 +11406,7 @@
 				)
 			)
 		)
-		(property "Value" "LAMP_REAR"
+		(property "Value" "WHITE_LED"
 			(at 39.6875 133.35 0)
 			(effects
 				(font
@@ -11597,7 +11597,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX6"
+		(property "Value" "WHITE_LED"
 			(at 87.9475 160.02 0)
 			(effects
 				(font
@@ -11693,7 +11693,7 @@
 				)
 			)
 		)
-		(property "Value" "AUX11"
+		(property "Value" "WHITE_LED"
 			(at 148.9075 163.83 0)
 			(effects
 				(font
