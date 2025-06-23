@@ -10256,12 +10256,12 @@
 		(uuid "4c1151f1-542c-410d-b3e2-d21c5bd0784b")
 	)
 	(label "COMP_N"
-		(at 53.34 152.4 0)
+		(at 48.26 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4c359229-2e28-434d-9ac6-e0960d5b7462")
 	)
@@ -10586,12 +10586,12 @@
 		(uuid "92bc89a1-f802-47e5-a775-f55ee025f324")
 	)
 	(label "COMP_P"
-		(at 48.26 152.4 180)
+		(at 53.34 152.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "94b84ec1-587e-4e22-b545-635e10e789a8")
 	)

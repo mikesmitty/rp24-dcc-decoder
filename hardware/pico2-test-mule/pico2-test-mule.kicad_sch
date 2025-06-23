@@ -9345,22 +9345,22 @@
 		(uuid "06df6ddc-3126-4241-93fb-7107a7e5f4ad")
 	)
 	(label "COMP_N"
-		(at 58.42 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "096b2773-b950-4c4b-951e-82dba82706e0")
-	)
-	(label "COMP_P"
 		(at 53.34 157.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
+		)
+		(uuid "096b2773-b950-4c4b-951e-82dba82706e0")
+	)
+	(label "COMP_P"
+		(at 58.42 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
 		(uuid "146e2f6e-3188-470f-81b5-261f0e3ad381")
 	)
@@ -10516,7 +10516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 349.758 226.06 90)
 			(effects
 				(font
@@ -10611,7 +10611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "pico2-test-mule:C_1206_3216Metric"
 			(at 135.5852 55.88 0)
 			(effects
 				(font
@@ -10783,7 +10783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pico2-test-mule:SOT-23"
 			(at 107.95 241.046 0)
 			(effects
 				(font
@@ -10894,7 +10894,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 203.2 219.71 0)
 			(effects
 				(font
@@ -11207,7 +11207,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 68.072 161.29 90)
 			(effects
 				(font
@@ -11530,7 +11530,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:C_0402_1005Metric"
 			(at 38.989 129.7686 0)
 			(effects
 				(font
@@ -11778,7 +11778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "pico2-test-mule:PinHeader_1x02_P2.54mm_Vertical"
 			(at 304.8 146.05 0)
 			(effects
 				(font
@@ -11865,7 +11865,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "pico2-test-mule:SOT-963"
 			(at 209.55 64.77 0)
 			(effects
 				(font
@@ -12123,7 +12123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:C_0402_1005Metric"
 			(at 341.3252 148.59 0)
 			(effects
 				(font
@@ -12342,7 +12342,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Array_Concave_4x0402"
+		(property "Footprint" "pico2-test-mule:R_Array_Concave_4x0402"
 			(at 83.82 213.995 90)
 			(effects
 				(font
@@ -12567,7 +12567,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:C_0402_1005Metric"
 			(at 111.76 51.7652 0)
 			(effects
 				(font
@@ -12652,7 +12652,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "pico2-test-mule:PinHeader_1x04_P2.54mm_Vertical"
 			(at 243.84 252.73 0)
 			(effects
 				(font
@@ -12848,7 +12848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pico2-test-mule:SOT-23"
 			(at 214.63 234.696 0)
 			(effects
 				(font
@@ -13026,7 +13026,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 160.02 241.3 0)
 			(effects
 				(font
@@ -13208,7 +13208,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:C_0402_1005Metric"
 			(at 329.8952 148.59 0)
 			(effects
 				(font
@@ -13822,7 +13822,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 50.8 241.3 0)
 			(effects
 				(font
@@ -14099,7 +14099,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 50.8 252.73 0)
 			(effects
 				(font
@@ -14381,7 +14381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 160.02 218.44 0)
 			(effects
 				(font
@@ -14477,7 +14477,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 210.312 49.53 90)
 			(effects
 				(font
@@ -14755,7 +14755,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "pico2-test-mule:SOT-963"
 			(at 226.06 55.88 0)
 			(effects
 				(font
@@ -14976,7 +14976,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Array_Concave_4x0402"
+		(property "Footprint" "pico2-test-mule:R_Array_Concave_4x0402"
 			(at 140.97 213.995 90)
 			(effects
 				(font
@@ -15213,7 +15213,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 371.602 226.06 90)
 			(effects
 				(font
@@ -15376,7 +15376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 43.688 153.67 90)
 			(effects
 				(font
@@ -15603,7 +15603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "pico2-test-mule:PinHeader_1x06_P2.54mm_Vertical"
 			(at 243.84 233.68 0)
 			(effects
 				(font
@@ -15767,7 +15767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 371.602 236.22 90)
 			(effects
 				(font
@@ -15861,7 +15861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 194.31 221.488 90)
 			(effects
 				(font
@@ -16024,7 +16024,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "pico2-test-mule:SOT-963"
 			(at 229.87 78.74 0)
 			(effects
 				(font
@@ -16198,7 +16198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 153.162 52.07 90)
 			(effects
 				(font
@@ -16502,7 +16502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Array_Concave_4x0402"
+		(property "Footprint" "pico2-test-mule:R_Array_Concave_4x0402"
 			(at 35.56 213.995 90)
 			(effects
 				(font
@@ -16625,7 +16625,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 160.02 229.87 0)
 			(effects
 				(font
@@ -17088,7 +17088,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 349.758 236.22 90)
 			(effects
 				(font
@@ -17184,7 +17184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 43.688 161.29 90)
 			(effects
 				(font
@@ -17336,7 +17336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 215.9 83.058 90)
 			(effects
 				(font
@@ -17424,7 +17424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:C_0603_1608Metric"
 			(at 79.0448 63.5 0)
 			(effects
 				(font
@@ -17519,7 +17519,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 99.06 256.54 0)
 			(effects
 				(font
@@ -17946,7 +17946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:C_0402_1005Metric"
 			(at 381.3048 210.82 0)
 			(effects
 				(font
@@ -18234,7 +18234,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 71.628 153.67 90)
 			(effects
 				(font
@@ -18321,7 +18321,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "pico2-test-mule:C_0805_2012Metric"
 			(at 148.2852 67.31 0)
 			(effects
 				(font
@@ -18400,7 +18400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "pico2-test-mule:C_1206_3216Metric"
 			(at 331.7748 210.82 0)
 			(effects
 				(font
@@ -18563,7 +18563,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pico2-test-mule:SOT-23"
 			(at 167.64 272.796 0)
 			(effects
 				(font
@@ -18675,7 +18675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_THT"
+		(property "Footprint" "pico2-test-mule:RaspberryPi_Pico_Common_THT"
 			(at 255.27 196.85 0)
 			(effects
 				(font
@@ -19351,7 +19351,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 229.87 60.452 90)
 			(effects
 				(font
@@ -19497,7 +19497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-963"
+		(property "Footprint" "pico2-test-mule:SOT-963"
 			(at 201.93 78.74 0)
 			(effects
 				(font
@@ -19774,7 +19774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:C_0603_1608Metric"
 			(at 124.1552 55.88 0)
 			(effects
 				(font
@@ -19926,7 +19926,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 99.06 212.09 0)
 			(effects
 				(font
@@ -20304,7 +20304,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 99.06 228.6 0)
 			(effects
 				(font
@@ -20400,7 +20400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 50.8 218.44 0)
 			(effects
 				(font
@@ -20729,7 +20729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 50.8 229.87 0)
 			(effects
 				(font
@@ -20986,7 +20986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pico2-test-mule:SOT-23"
 			(at 107.95 224.536 0)
 			(effects
 				(font
@@ -21315,7 +21315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pico2-test-mule:SOT-23"
 			(at 167.64 253.746 0)
 			(effects
 				(font
@@ -21426,7 +21426,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 99.06 245.11 0)
 			(effects
 				(font
@@ -21521,7 +21521,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
 			(at 153.162 63.5 90)
 			(effects
 				(font
@@ -21615,7 +21615,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "pico2-test-mule:PinHeader_1x05_P2.54mm_Vertical"
 			(at 274.32 240.03 0)
 			(effects
 				(font
@@ -21711,7 +21711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "pico2-test-mule:LED_0603_1608Metric"
 			(at 160.02 260.35 0)
 			(effects
 				(font
@@ -21805,7 +21805,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "pico2-test-mule:PinHeader_1x02_P2.54mm_Vertical"
 			(at 274.32 254 0)
 			(effects
 				(font
