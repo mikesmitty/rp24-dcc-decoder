@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.4...pico2-test-mule-v0.2.5) (2025-06-26)
+
+
+### Bug Fixes
+
+* un-swap capacitor shutdown circuit inputs ([61e69d1](https://github.com/mikesmitty/rp24-dcc-decoder/commit/61e69d1b25d5a35320f998b9ed846dfaee792550))
+
 ## [0.2.4](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.3...pico2-test-mule-v0.2.4) (2025-03-08)
 
 
