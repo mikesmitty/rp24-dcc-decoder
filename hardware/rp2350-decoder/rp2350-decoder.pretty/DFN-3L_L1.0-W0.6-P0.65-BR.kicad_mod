@@ -1,0 +1,136 @@
+(footprint "DFN-3L_L1.0-W0.6-P0.65-BR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4.22 0)
+		(layer "F.SilkS")
+		(uuid "ed7d3eb3-6486-4b01-bb26-ca2c1ab9619e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DFN-3L_L1.0-W0.6-P0.65-BR"
+		(at 0 4.22 0)
+		(layer "F.Fab")
+		(uuid "9d81eabd-4d73-43f6-a919-3f7999c07997")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef99ca52-3b36-4d14-8ce3-03ea50cd0bf7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a92183b8-4022-4fe2-9fb2-943512c9ccb8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.5 -0.4)
+		(end 0.54 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d058a2a3-f54e-476c-9ed5-a618f1373662")
+	)
+	(fp_line
+		(start 0.5 0.4)
+		(end -0.46 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11e7e584-e751-413c-9cd9-f42c94f68f95")
+	)
+	(fp_circle
+		(center 0.65 0.25)
+		(end 0.7 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "d73e2691-2f49-489e-a81e-d242ff92101a")
+	)
+	(fp_circle
+		(center 0.51 0.3)
+		(end 0.54 0.3)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "250c8115-a012-49ce-baa4-2332c507acac")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ca55c526-d55c-4772-ba3c-566116d6c5ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.34 0.22 90)
+		(size 0.25 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1885dfc2-8836-490b-a233-7f844700a6e6")
+	)
+	(pad "2" smd rect
+		(at 0.34 -0.22 90)
+		(size 0.25 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f763e9b1-5e43-426c-bab9-d21f97d703eb")
+	)
+	(pad "3" smd rect
+		(at -0.34 0 270)
+		(size 0.6 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d163aede-b863-4e1f-933b-7d9b21e0562a")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/rp2350-decoder.3dshapes/DFN-3L_L1.0-W0.6-H0.5-P0.65-BR.wrl"
+		(offset
+			(xyz 0.01 -0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

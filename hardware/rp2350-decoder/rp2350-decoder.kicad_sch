@@ -3202,6 +3202,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "rp2350-decoder:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "rp2350-decoder:GND"
 			(power)
 			(pin_numbers
@@ -4342,6 +4492,293 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rp2350-decoder:Q_NMOS_GSD"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NMOS_GSD"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6065,7 +6502,7 @@
 	)
 	(text "Inrush current is restricted only by PWMing CAP_ENABLE. 100% duty cycle\nnot recommended with large caps, and only after receiving move command."
 		(exclude_from_sim no)
-		(at 100.838 109.728 0)
+		(at 19.558 98.298 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6076,7 +6513,7 @@
 	)
 	(text "CAP_ENABLE is strongly pulled\nlow when VDC drops below 8V"
 		(exclude_from_sim no)
-		(at 30.988 112.014 0)
+		(at 34.798 156.464 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6109,7 +6546,7 @@
 	)
 	(text "Convert DCC rail signals into a logic-level signal"
 		(exclude_from_sim no)
-		(at 136.906 35.56 0)
+		(at 134.366 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6131,7 +6568,7 @@
 	)
 	(text "Oscillator"
 		(exclude_from_sim no)
-		(at 98.552 154.178 0)
+		(at 52.832 224.028 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6164,7 +6601,7 @@
 	)
 	(text "Ext. Capacitor Low Rail Voltage Cutoff"
 		(exclude_from_sim no)
-		(at 17.272 103.886 0)
+		(at 21.082 148.336 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6175,7 +6612,7 @@
 	)
 	(text "Ext. Capacitor Charge Control"
 		(exclude_from_sim no)
-		(at 104.14 103.886 0)
+		(at 22.86 92.456 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6208,7 +6645,7 @@
 	)
 	(text "DCC Signal"
 		(exclude_from_sim no)
-		(at 147.828 31.75 0)
+		(at 145.288 31.75 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6248,19 +6685,13 @@
 		(uuid "05b83987-277a-4995-9e39-5c945cb719a3")
 	)
 	(junction
-		(at 123.19 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "066d8bc9-c090-4465-b0be-c4f0bbda474f")
-	)
-	(junction
-		(at 36.83 130.81)
+		(at 40.64 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c27c495-3bba-484c-9e29-796f584cf73d")
 	)
 	(junction
-		(at 157.48 123.19)
+		(at 63.5 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c46386f-27dc-48c9-9c1d-4f85686afc94")
@@ -6302,13 +6733,13 @@
 		(uuid "16010a1d-76b0-409a-9623-38e4c10860a3")
 	)
 	(junction
-		(at 101.6 167.64)
+		(at 55.88 237.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1682cd06-ca8c-4a0d-a2aa-f9ac40491212")
 	)
 	(junction
-		(at 66.04 114.3)
+		(at 69.85 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "179bb73f-2b8e-4870-ab7e-f7fb40d9006d")
@@ -6362,7 +6793,7 @@
 		(uuid "2c286e2f-12fa-4a72-acd6-d155ece3b333")
 	)
 	(junction
-		(at 64.77 152.4)
+		(at 68.58 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d2e6195-6a2a-4484-bd11-c6c550f579b9")
@@ -6392,7 +6823,7 @@
 		(uuid "38af083a-a4db-43ca-bbb3-aabb6f179011")
 	)
 	(junction
-		(at 149.86 123.19)
+		(at 55.88 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3bbf4c06-57a3-4a3e-bde3-77c386c86957")
@@ -6410,19 +6841,13 @@
 		(uuid "470f7e06-aa69-44ea-a56b-707fa9c81fb8")
 	)
 	(junction
-		(at 107.95 176.53)
+		(at 62.23 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4775bbff-01a4-4418-ab18-bb21a9b17d58")
 	)
 	(junction
-		(at 153.67 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47835b4d-d14b-4d5e-8ff9-334358089553")
-	)
-	(junction
-		(at 157.48 139.7)
+		(at 63.5 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b26f2b5-a88d-4c59-82f1-00562998fc76")
@@ -6518,10 +6943,16 @@
 		(uuid "82f17f9a-2809-42da-a937-66c889531be7")
 	)
 	(junction
-		(at 114.3 167.64)
+		(at 68.58 237.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "954c31d8-13d0-4b88-88b1-62dea7c0b57f")
+	)
+	(junction
+		(at 160.02 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "954f976b-88a1-4841-b08c-6284934c5f5d")
 	)
 	(junction
 		(at 114.3 43.18)
@@ -6554,7 +6985,7 @@
 		(uuid "bb5a2635-fde1-420b-b38a-1a32c6149659")
 	)
 	(junction
-		(at 36.83 152.4)
+		(at 40.64 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdcc79f3-f909-46cc-bedc-08d381662947")
@@ -6572,10 +7003,10 @@
 		(uuid "c4a9b42a-ab02-433a-a777-43478a4d79e7")
 	)
 	(junction
-		(at 153.67 50.8)
+		(at 160.02 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c7fe3b66-dbc2-4083-9b25-b29331b4e078")
+		(uuid "cb563a34-b10f-49bf-9699-fa12f17f2558")
 	)
 	(junction
 		(at 205.74 121.92)
@@ -6620,12 +7051,6 @@
 		(uuid "ec76518f-549c-4f27-873c-9f252ec008d2")
 	)
 	(junction
-		(at 149.86 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "edf396c0-40ba-464d-8e31-bb7a9cb498c3")
-	)
-	(junction
 		(at 74.93 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6636,7 +7061,7 @@
 		(uuid "02c51a39-ede3-4d15-8f47-86ee30280527")
 	)
 	(no_connect
-		(at 40.64 128.27)
+		(at 44.45 172.72)
 		(uuid "03bdc3fc-8f50-4694-b383-67eff1edd0c1")
 	)
 	(no_connect
@@ -6644,7 +7069,7 @@
 		(uuid "149297ca-b2ff-4e54-85e1-23da697fe13b")
 	)
 	(no_connect
-		(at 40.64 123.19)
+		(at 44.45 167.64)
 		(uuid "36cdca6b-0a04-4a3f-b06f-2de02f47ccfe")
 	)
 	(no_connect
@@ -6652,7 +7077,7 @@
 		(uuid "4a5ce23d-25f9-4693-942f-a2599f770738")
 	)
 	(no_connect
-		(at 40.64 125.73)
+		(at 44.45 170.18)
 		(uuid "79e4534d-36e9-4f24-996f-5ddf7fd9b207")
 	)
 	(no_connect
@@ -6664,7 +7089,7 @@
 		(uuid "b726650b-4f23-46d2-8d7d-ad45851fe928")
 	)
 	(no_connect
-		(at 63.5 120.65)
+		(at 67.31 165.1)
 		(uuid "f364f7c4-3413-421a-95c9-d578e9fd58c6")
 	)
 	(no_connect
@@ -6677,7 +7102,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 152.4) (xy 48.26 152.4)
+			(xy 40.64 196.85) (xy 52.07 196.85)
 		)
 		(stroke
 			(width 0)
@@ -6687,7 +7112,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 123.19) (xy 149.86 125.73)
+			(xy 55.88 111.76) (xy 55.88 114.3)
 		)
 		(stroke
 			(width 0)
@@ -6737,6 +7162,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 46.99) (xy 160.02 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04ce35dc-be1b-428d-97d2-e4f92ae90c82")
+	)
+	(wire
+		(pts
 			(xy 304.8 67.31) (xy 292.1 67.31)
 		)
 		(stroke
@@ -6747,7 +7182,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 128.27) (xy 72.39 128.27)
+			(xy 67.31 172.72) (xy 76.2 172.72)
 		)
 		(stroke
 			(width 0)
@@ -6877,7 +7312,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 154.94) (xy 154.94 154.94)
+			(xy 149.86 257.81) (xy 161.29 257.81)
 		)
 		(stroke
 			(width 0)
@@ -7117,7 +7552,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 227.33) (xy 250.19 227.33)
+			(xy 232.41 227.33) (xy 246.38 227.33)
 		)
 		(stroke
 			(width 0)
@@ -7134,26 +7569,6 @@
 			(type default)
 		)
 		(uuid "26b835bc-246d-48a3-a3b4-a522b55cc520")
-	)
-	(wire
-		(pts
-			(xy 153.67 49.53) (xy 153.67 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26e773c3-8933-49f9-a152-bad1aab5f661")
-	)
-	(wire
-		(pts
-			(xy 166.37 55.88) (xy 166.37 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27629951-9aed-4db4-9416-92d3bb78e6ff")
 	)
 	(wire
 		(pts
@@ -7227,16 +7642,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 139.7) (xy 123.19 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c2fb70b-b698-4f63-9fad-3313d1966369")
-	)
-	(wire
-		(pts
 			(xy 207.01 81.28) (xy 207.01 76.2)
 		)
 		(stroke
@@ -7267,17 +7672,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 130.81) (xy 115.57 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dc910ae-4664-4cb8-b7d6-da4c6677f2c9")
-	)
-	(wire
-		(pts
-			(xy 114.3 167.64) (xy 118.11 167.64)
+			(xy 68.58 237.49) (xy 72.39 237.49)
 		)
 		(stroke
 			(width 0)
@@ -7317,7 +7712,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 168.91) (xy 101.6 167.64)
+			(xy 55.88 238.76) (xy 55.88 237.49)
 		)
 		(stroke
 			(width 0)
@@ -7347,7 +7742,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 139.7) (xy 173.99 139.7)
+			(xy 63.5 128.27) (xy 80.01 128.27)
 		)
 		(stroke
 			(width 0)
@@ -7387,7 +7782,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 123.19) (xy 173.99 123.19)
+			(xy 63.5 111.76) (xy 80.01 111.76)
 		)
 		(stroke
 			(width 0)
@@ -7437,16 +7832,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 40.64) (xy 153.67 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "410d3671-c3a5-451f-bbb8-256eaa6ec03e")
-	)
-	(wire
-		(pts
 			(xy 326.39 165.1) (xy 326.39 162.56)
 		)
 		(stroke
@@ -7477,7 +7862,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 130.81) (xy 40.64 130.81)
+			(xy 40.64 175.26) (xy 44.45 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7547,16 +7932,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 123.19) (xy 123.19 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49a87804-2ca0-4858-ae6f-d100b8e66138")
-	)
-	(wire
-		(pts
 			(xy 177.8 217.17) (xy 189.23 217.17)
 		)
 		(stroke
@@ -7587,7 +7962,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 123.19) (xy 157.48 127)
+			(xy 63.5 111.76) (xy 63.5 115.57)
 		)
 		(stroke
 			(width 0)
@@ -7777,7 +8152,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 123.19) (xy 66.04 114.3)
+			(xy 69.85 167.64) (xy 69.85 158.75)
 		)
 		(stroke
 			(width 0)
@@ -7837,6 +8212,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 46.99) (xy 171.45 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "626b53cc-eb17-45ec-b3ca-2dfb890ad818")
+	)
+	(wire
+		(pts
 			(xy 218.44 53.34) (xy 218.44 57.15)
 		)
 		(stroke
@@ -7864,16 +8249,6 @@
 			(type default)
 		)
 		(uuid "6378fb40-2abe-467c-a046-4073c6d983b4")
-	)
-	(wire
-		(pts
-			(xy 147.32 62.23) (xy 153.67 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "638bbe4e-9ad1-4120-9fce-780a7656c06b")
 	)
 	(wire
 		(pts
@@ -7907,17 +8282,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 60.96) (xy 153.67 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65bcc3c4-be79-496a-8a20-4f3efb993967")
-	)
-	(wire
-		(pts
-			(xy 123.19 123.19) (xy 149.86 123.19)
+			(xy 52.07 111.76) (xy 55.88 111.76)
 		)
 		(stroke
 			(width 0)
@@ -8007,16 +8372,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 40.64) (xy 173.99 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c6ee663-a5dd-4a5d-b928-bc88f4eb26e4")
-	)
-	(wire
-		(pts
 			(xy 325.12 55.88) (xy 332.74 55.88)
 		)
 		(stroke
@@ -8054,16 +8409,6 @@
 			(type default)
 		)
 		(uuid "6dbb2ae6-1a22-48e8-b606-c4cd59aa115b")
-	)
-	(wire
-		(pts
-			(xy 123.19 139.7) (xy 149.86 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ecd88a1-eff9-49d1-b071-68e13218e824")
 	)
 	(wire
 		(pts
@@ -8147,7 +8492,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 125.73) (xy 69.85 125.73)
+			(xy 67.31 170.18) (xy 73.66 170.18)
 		)
 		(stroke
 			(width 0)
@@ -8207,7 +8552,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 167.64) (xy 104.14 167.64)
+			(xy 55.88 237.49) (xy 58.42 237.49)
 		)
 		(stroke
 			(width 0)
@@ -8237,7 +8582,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 130.81) (xy 142.24 130.81)
+			(xy 35.56 119.38) (xy 48.26 119.38)
 		)
 		(stroke
 			(width 0)
@@ -8267,7 +8612,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 130.81) (xy 72.39 130.81)
+			(xy 67.31 175.26) (xy 76.2 175.26)
 		)
 		(stroke
 			(width 0)
@@ -8317,7 +8662,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 119.38) (xy 77.47 120.65)
+			(xy 81.28 163.83) (xy 81.28 165.1)
 		)
 		(stroke
 			(width 0)
@@ -8377,7 +8722,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 139.7) (xy 157.48 139.7)
+			(xy 55.88 128.27) (xy 63.5 128.27)
 		)
 		(stroke
 			(width 0)
@@ -8437,16 +8782,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 50.8) (xy 153.67 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9343ed3d-be76-4402-97ed-b3dc6159febb")
-	)
-	(wire
-		(pts
 			(xy 118.11 237.49) (xy 132.08 237.49)
 		)
 		(stroke
@@ -8494,16 +8829,6 @@
 			(type default)
 		)
 		(uuid "98cb5f52-d631-43ef-8284-88913a9a8c70")
-	)
-	(wire
-		(pts
-			(xy 153.67 62.23) (xy 166.37 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9917038e-72be-4fa2-8855-5a56a0176afc")
 	)
 	(wire
 		(pts
@@ -8577,13 +8902,13 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 40.64) (xy 166.37 45.72)
+			(xy 158.75 66.04) (xy 160.02 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d049c31-9ce6-4355-9929-22da8b49c2b1")
+		(uuid "9ce0c1d7-479a-4647-9284-c2ff628a3e03")
 	)
 	(wire
 		(pts
@@ -8657,17 +8982,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 50.8) (xy 158.75 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2937594-560d-4e48-b776-91e44015db45")
-	)
-	(wire
-		(pts
-			(xy 100.33 167.64) (xy 101.6 167.64)
+			(xy 54.61 237.49) (xy 55.88 237.49)
 		)
 		(stroke
 			(width 0)
@@ -8707,7 +9022,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 123.19) (xy 157.48 123.19)
+			(xy 55.88 111.76) (xy 63.5 111.76)
 		)
 		(stroke
 			(width 0)
@@ -8737,33 +9052,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 60.96) (xy 147.32 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a62eb6f2-7dd4-4c8e-a6dd-7a3617fae605")
-	)
-	(wire
-		(pts
-			(xy 86.36 167.64) (xy 92.71 167.64)
+			(xy 40.64 237.49) (xy 46.99 237.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a6a8f5f3-9359-41bd-8fdf-b9aa98ddd8ba")
-	)
-	(wire
-		(pts
-			(xy 142.24 40.64) (xy 153.67 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6ada882-84c1-43a8-962a-28d453132fe6")
 	)
 	(wire
 		(pts
@@ -8784,16 +9079,6 @@
 			(type default)
 		)
 		(uuid "a7cc2f7a-35d9-434a-be0a-4946d186a5c5")
-	)
-	(wire
-		(pts
-			(xy 123.19 123.19) (xy 123.19 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8e0855f-02cc-4f47-8de7-9cdafff7464c")
 	)
 	(wire
 		(pts
@@ -8857,17 +9142,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 53.34) (xy 147.32 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aae04057-84a2-4aa0-9bc6-06e34e62eed7")
-	)
-	(wire
-		(pts
-			(xy 149.86 135.89) (xy 149.86 139.7)
+			(xy 55.88 124.46) (xy 55.88 128.27)
 		)
 		(stroke
 			(width 0)
@@ -8927,7 +9202,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 119.38) (xy 77.47 119.38)
+			(xy 92.71 163.83) (xy 81.28 163.83)
 		)
 		(stroke
 			(width 0)
@@ -8957,7 +9232,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 114.3) (xy 66.04 114.3)
+			(xy 40.64 158.75) (xy 69.85 158.75)
 		)
 		(stroke
 			(width 0)
@@ -8967,13 +9242,23 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 172.72) (xy 107.95 176.53)
+			(xy 62.23 242.57) (xy 62.23 246.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b1355124-8b95-4198-8379-ec7f621efebd")
+	)
+	(wire
+		(pts
+			(xy 139.7 66.04) (xy 151.13 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b232b950-3a0e-47d5-979e-f306516210d5")
 	)
 	(wire
 		(pts
@@ -9067,7 +9352,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 123.19) (xy 111.76 123.19)
+			(xy 43.18 111.76) (xy 44.45 111.76)
 		)
 		(stroke
 			(width 0)
@@ -9077,7 +9362,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 168.91) (xy 114.3 167.64)
+			(xy 68.58 238.76) (xy 68.58 237.49)
 		)
 		(stroke
 			(width 0)
@@ -9097,7 +9382,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 176.53) (xy 107.95 176.53)
+			(xy 55.88 246.38) (xy 62.23 246.38)
 		)
 		(stroke
 			(width 0)
@@ -9184,6 +9469,16 @@
 			(type default)
 		)
 		(uuid "c4b675bc-986c-4fd1-b1ee-d76770f0556e")
+	)
+	(wire
+		(pts
+			(xy 149.86 46.99) (xy 151.13 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c76879d3-4f1d-45d3-935a-1c2625718bf3")
 	)
 	(wire
 		(pts
@@ -9387,7 +9682,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 134.62) (xy 157.48 139.7)
+			(xy 63.5 123.19) (xy 63.5 128.27)
 		)
 		(stroke
 			(width 0)
@@ -9447,7 +9742,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 179.07) (xy 107.95 176.53)
+			(xy 62.23 248.92) (xy 62.23 246.38)
 		)
 		(stroke
 			(width 0)
@@ -9457,7 +9752,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 123.19) (xy 66.04 123.19)
+			(xy 67.31 167.64) (xy 69.85 167.64)
 		)
 		(stroke
 			(width 0)
@@ -9487,7 +9782,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 176.53) (xy 114.3 176.53)
+			(xy 62.23 246.38) (xy 68.58 246.38)
 		)
 		(stroke
 			(width 0)
@@ -9567,26 +9862,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 227.33) (xy 250.19 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e750743b-cc12-4b44-91e7-d18909721a1c")
-	)
-	(wire
-		(pts
-			(xy 147.32 50.8) (xy 153.67 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e816829d-6c81-4dcd-bc30-f5b7a4dd864d")
-	)
-	(wire
-		(pts
 			(xy 189.23 201.93) (xy 168.91 201.93)
 		)
 		(stroke
@@ -9607,7 +9882,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 160.02) (xy 154.94 160.02)
+			(xy 149.86 262.89) (xy 161.29 262.89)
 		)
 		(stroke
 			(width 0)
@@ -9717,7 +9992,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 152.4) (xy 53.34 152.4)
+			(xy 68.58 196.85) (xy 57.15 196.85)
 		)
 		(stroke
 			(width 0)
@@ -9777,7 +10052,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 114.3) (xy 36.83 123.19)
+			(xy 40.64 158.75) (xy 40.64 167.64)
 		)
 		(stroke
 			(width 0)
@@ -9807,17 +10082,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 63.5) (xy 153.67 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5ca4167-6f90-4dc5-8d8b-0fe95a6c5d68")
-	)
-	(wire
-		(pts
-			(xy 111.76 167.64) (xy 114.3 167.64)
+			(xy 66.04 237.49) (xy 68.58 237.49)
 		)
 		(stroke
 			(width 0)
@@ -9955,6 +10220,16 @@
 		)
 		(uuid "ff2963fd-2a06-43ca-86fa-fdd247ebbf3f")
 	)
+	(wire
+		(pts
+			(xy 160.02 66.04) (xy 170.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffbdb6b4-7a51-4651-a65e-f1851a371f5d")
+	)
 	(label "AUX6 (VDC)"
 		(at 251.46 69.85 0)
 		(effects
@@ -10036,7 +10311,7 @@
 		(uuid "14759e85-9e56-4cb3-9b88-15ef638a4b06")
 	)
 	(label "TRACK_LEFT"
-		(at 142.24 40.64 0)
+		(at 139.7 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10146,7 +10421,7 @@
 		(uuid "35f49eaa-eb13-4dbc-8fa7-aee4faec3675")
 	)
 	(label "CAP_VDC"
-		(at 173.99 123.19 180)
+		(at 80.01 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10196,7 +10471,7 @@
 		(uuid "45b7bf0d-c201-4b3b-9b6c-2c3a73e58b43")
 	)
 	(label "SWCLK"
-		(at 143.51 160.02 0)
+		(at 149.86 262.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10226,7 +10501,7 @@
 		(uuid "4ab311ec-dd64-4202-a9bb-f2b1da7349be")
 	)
 	(label "CAP_ENABLE"
-		(at 129.54 130.81 0)
+		(at 35.56 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10256,7 +10531,7 @@
 		(uuid "4c1151f1-542c-410d-b3e2-d21c5bd0784b")
 	)
 	(label "COMP_N"
-		(at 48.26 152.4 180)
+		(at 52.07 196.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10375,7 +10650,7 @@
 		)
 		(uuid "64c5196d-6cb0-4ae6-a8f9-9866d9a32a05")
 	)
-	(label "ADC_OFFSET"
+	(label "VDC_ZENER"
 		(at 246.38 227.33 180)
 		(effects
 			(font
@@ -10505,6 +10780,16 @@
 		)
 		(uuid "7fc11fef-e7e4-468e-98df-98fdf2de3723")
 	)
+	(label "VDC_ZENER"
+		(at 171.45 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "855aca6c-99c6-49d4-ab64-0019b17d5a61")
+	)
 	(label "MOTOR_B"
 		(at 389.89 215.9 180)
 		(effects
@@ -10566,7 +10851,7 @@
 		(uuid "911f3d0b-38e6-432e-a87d-7bee07a6528a")
 	)
 	(label "COMP_P"
-		(at 72.39 130.81 180)
+		(at 76.2 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10586,7 +10871,7 @@
 		(uuid "92bc89a1-f802-47e5-a775-f55ee025f324")
 	)
 	(label "COMP_P"
-		(at 53.34 152.4 0)
+		(at 57.15 196.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10616,7 +10901,7 @@
 		(uuid "9bd3c6b2-a454-49dc-b895-f586800a9de2")
 	)
 	(label "CAP+"
-		(at 173.99 139.7 180)
+		(at 80.01 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10636,7 +10921,7 @@
 		(uuid "a3a0ec8f-d706-4eaf-aaaa-bce83ee54ce5")
 	)
 	(label "DCC_TTL"
-		(at 173.99 40.64 180)
+		(at 170.18 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10696,7 +10981,7 @@
 		(uuid "b07b62f2-a6fe-4d77-a37e-a8568d36cb2b")
 	)
 	(label "XIN"
-		(at 118.11 167.64 180)
+		(at 72.39 237.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10816,7 +11101,7 @@
 		(uuid "c66b1dde-6188-42d5-9f94-e461bf442dce")
 	)
 	(label "COMP_N"
-		(at 72.39 128.27 180)
+		(at 76.2 172.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10834,16 +11119,6 @@
 			(justify left bottom)
 		)
 		(uuid "cd960fad-2c83-4846-b5cf-c35cba1e389e")
-	)
-	(label "CAP_ENABLE"
-		(at 102.87 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d00afb2a-8354-4ec4-aefa-896993fc6e90")
 	)
 	(label "ADC_EMF_A"
 		(at 246.38 229.87 180)
@@ -11026,7 +11301,7 @@
 		(uuid "e7f31661-f26a-4eea-a51c-ba984b51aa09")
 	)
 	(label "SWDIO"
-		(at 143.51 154.94 0)
+		(at 149.86 257.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11036,7 +11311,7 @@
 		(uuid "e9ce5f3c-a1e7-4c63-9282-d7b8584b20eb")
 	)
 	(label "CAP_ENABLE"
-		(at 88.9 119.38 180)
+		(at 92.71 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11086,7 +11361,7 @@
 		(uuid "f10a5dfd-bbda-4275-8016-4348a1261556")
 	)
 	(label "XOUT"
-		(at 86.36 167.64 0)
+		(at 40.64 237.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11107,7 +11382,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 77.47 130.81 0)
+		(at 81.28 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11116,7 +11391,7 @@
 		(fields_autoplaced yes)
 		(uuid "006555ef-89d7-4129-b71d-5d90f697cf1d")
 		(property "Reference" "#PWR010"
-			(at 77.47 137.16 0)
+			(at 81.28 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11125,7 +11400,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 135.89 0)
+			(at 81.28 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11133,7 +11408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 130.81 0)
+			(at 81.28 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11142,7 +11417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 130.81 0)
+			(at 81.28 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11151,7 +11426,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 130.81 0)
+			(at 81.28 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11825,7 +12100,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:R")
-		(at 36.83 156.21 0)
+		(at 40.64 200.66 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11834,7 +12109,7 @@
 		(dnp no)
 		(uuid "1257deb9-6a47-4cb2-80ed-52279d6868f7")
 		(property "Reference" "R2"
-			(at 34.29 154.9399 0)
+			(at 38.1 199.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11843,7 +12118,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 34.29 157.4799 0)
+			(at 38.1 201.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11852,7 +12127,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 38.608 156.21 90)
+			(at 42.418 200.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11861,7 +12136,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 156.21 0)
+			(at 40.64 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11870,7 +12145,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 36.83 156.21 0)
+			(at 40.64 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11879,7 +12154,7 @@
 			)
 		)
 		(property "LCSC" "C270365"
-			(at 36.83 156.21 0)
+			(at 40.64 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11888,7 +12163,7 @@
 			)
 		)
 		(property "Height" "0.26"
-			(at 36.83 156.21 0)
+			(at 40.64 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12255,84 +12530,6 @@
 		)
 	)
 	(symbol
-		(lib_id "rp2350-decoder:C")
-		(at 147.32 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "179fcf9d-4f04-42b4-b69d-38787c0d1249")
-		(property "Reference" "C21"
-			(at 143.51 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "470pF"
-			(at 143.51 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
-			(at 148.2852 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 147.32 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C161493"
-			(at 147.32 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5846b4a-3a17-4430-b9de-7f5f283b0a61")
-		)
-		(pin "2"
-			(uuid "98c44762-eec6-4df8-962f-f0a25de5a92f")
-		)
-		(instances
-			(project ""
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp2350-decoder:GND")
 		(at 306.07 52.07 90)
 		(unit 1)
@@ -12544,7 +12741,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:R")
-		(at 96.52 167.64 270)
+		(at 50.8 237.49 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12553,7 +12750,7 @@
 		(dnp no)
 		(uuid "218ef4c4-a3af-4465-b73f-3a36b31d1015")
 		(property "Reference" "R5"
-			(at 96.52 161.29 90)
+			(at 50.8 231.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12561,7 +12758,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 96.52 163.83 90)
+			(at 50.8 233.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12569,7 +12766,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 96.52 169.418 90)
+			(at 50.8 239.268 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12578,7 +12775,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 167.64 0)
+			(at 50.8 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12587,7 +12784,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 96.52 167.64 0)
+			(at 50.8 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12596,7 +12793,7 @@
 			)
 		)
 		(property "LCSC" "C270365"
-			(at 96.52 167.64 0)
+			(at 50.8 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12605,7 +12802,7 @@
 			)
 		)
 		(property "Height" "0.26"
-			(at 96.52 167.64 0)
+			(at 50.8 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12629,55 +12826,32 @@
 		)
 	)
 	(symbol
-		(lib_id "rp2350-decoder:DMN2991UDA-7B")
-		(at 74.93 125.73 0)
-		(unit 2)
+		(lib_id "rp2350-decoder:R")
+		(at 154.94 46.99 270)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "222d227e-87b9-4482-b17c-65a3723387f7")
-		(property "Reference" "Q1"
-			(at 81.28 126.238 0)
+		(uuid "265f8dc7-d9ee-40ab-841f-e92a940c06aa")
+		(property "Reference" "R7"
+			(at 154.94 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 81.28 128.524 0)
+		(property "Value" "6.8K"
+			(at 154.94 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "rp2350-decoder:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 80.01 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 80.01 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 74.93 138.938 0)
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
+			(at 154.94 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12685,8 +12859,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2937136"
-			(at 74.93 125.73 0)
+		(property "Datasheet" "~"
+			(at 154.94 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12694,8 +12868,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.4"
-			(at 74.93 125.73 0)
+		(property "Description" "Resistor"
+			(at 154.94 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12703,29 +12877,194 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "cc6bd39a-2701-4b99-8cd2-8f063b3c0e37")
+		(property "Height" "0.26"
+			(at 154.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "8d151fe9-4f14-44b7-9f03-25686de792c4")
-		)
-		(pin "5"
-			(uuid "1a0933bd-6a71-409e-95ba-59fb7f46d9f9")
+		(property "LCSC" "C423451"
+			(at 154.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "0d8295cc-79ed-41ce-aac7-d2705559bd3f")
+			(uuid "3e137772-c56e-4981-8a80-6071c3b88276")
 		)
 		(pin "2"
-			(uuid "7526528e-ad41-4d42-a236-c5068e102108")
+			(uuid "99c4e699-a238-4750-867a-f0d82cbe7c51")
 		)
-		(pin "6"
-			(uuid "e57feeac-9701-4a0f-82df-ee628bdbd7c4")
+		(instances
+			(project ""
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rp2350-decoder:Q_NMOS_GSD")
+		(at 78.74 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2813328c-edc8-46e0-96ea-03ab7348f453")
+		(property "Reference" "Q9"
+			(at 84.836 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AP1606"
+			(at 84.836 171.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rp2350-decoder:Diodes_DFN1006-3"
+			(at 83.82 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589040828304408576"
+			(at 78.74 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 78.74 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2849580"
+			(at 78.74 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf39df1d-1c70-477f-9316-2eb9d4a9cf3c")
+		)
+		(pin "1"
+			(uuid "8d0f28ae-864b-4788-8acb-5bb821b7eb46")
+		)
+		(pin "3"
+			(uuid "e885beac-84eb-4468-8d6f-c3fa915331a8")
 		)
 		(instances
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "Q1")
-					(unit 2)
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rp2350-decoder:D_Zener")
+		(at 160.02 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "288a13d0-d0c9-4578-a6d6-52f03cde3ca1")
+		(property "Reference" "D10"
+			(at 162.56 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GDZ3V3LP3-7"
+			(at 162.56 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rp2350-decoder:D_0201_0603Metric"
+			(at 160.02 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560098790000005120"
+			(at 160.02 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 160.02 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5157733"
+			(at 160.02 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eac5bc4d-a2f1-498b-959b-c9ac52bf2843")
+		)
+		(pin "2"
+			(uuid "3d6d841f-5e92-4f2b-985a-288ea0de61cb")
+		)
+		(instances
+			(project "rp2350-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "D10")
+					(unit 1)
 				)
 			)
 		)
@@ -12890,6 +13229,72 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "rp2350-decoder:GND_1")
+		(at 160.02 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c6dd370-21b2-4d2c-88cc-a53597677dbd")
+		(property "Reference" "#PWR036"
+			(at 160.02 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "516f1d8f-df07-4025-a07b-6eece52859a3")
+		)
+		(instances
+			(project "rp2350-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -13142,7 +13547,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:R")
-		(at 36.83 148.59 0)
+		(at 40.64 193.04 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13151,7 +13556,7 @@
 		(dnp no)
 		(uuid "3036e8ad-b5fe-413b-868d-4770a1ef884f")
 		(property "Reference" "R1"
-			(at 34.29 147.3199 0)
+			(at 38.1 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13160,7 +13565,7 @@
 			)
 		)
 		(property "Value" "6.8K"
-			(at 34.29 149.8599 0)
+			(at 38.1 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13169,7 +13574,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 38.608 148.59 90)
+			(at 42.418 193.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13178,7 +13583,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 148.59 0)
+			(at 40.64 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13187,7 +13592,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 36.83 148.59 0)
+			(at 40.64 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13196,7 +13601,7 @@
 			)
 		)
 		(property "LCSC" "C423451"
-			(at 36.83 148.59 0)
+			(at 40.64 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13205,7 +13610,7 @@
 			)
 		)
 		(property "Height" "0.26"
-			(at 36.83 148.59 0)
+			(at 40.64 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13383,7 +13788,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:R")
-		(at 64.77 148.59 0)
+		(at 68.58 193.04 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13392,7 +13797,7 @@
 		(dnp no)
 		(uuid "3559ef0f-822c-4d6a-b102-857bd5a4939a")
 		(property "Reference" "R3"
-			(at 67.31 147.3199 0)
+			(at 71.12 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13401,7 +13806,7 @@
 			)
 		)
 		(property "Value" "2.2K"
-			(at 67.31 149.8599 0)
+			(at 71.12 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13410,7 +13815,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 66.548 148.59 90)
+			(at 70.358 193.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13419,7 +13824,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 148.59 0)
+			(at 68.58 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13428,7 +13833,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 148.59 0)
+			(at 68.58 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13437,7 +13842,7 @@
 			)
 		)
 		(property "LCSC" "C473534"
-			(at 64.77 148.59 0)
+			(at 68.58 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13446,7 +13851,7 @@
 			)
 		)
 		(property "Height" "0.26"
-			(at 64.77 148.59 0)
+			(at 68.58 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13720,101 +14125,6 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:R")
-		(at 153.67 57.15 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3ae3e48c-ee98-4f22-b68c-8aa73eb2a615")
-		(property "Reference" "R8"
-			(at 158.115 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2K"
-			(at 157.48 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 151.892 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 153.67 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 157.48 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C473534"
-			(at 153.67 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.26"
-			(at 153.67 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83a7d5fb-113e-4634-a09a-4b408ab82a86")
-		)
-		(pin "2"
-			(uuid "e826e1f2-a6d2-475b-b529-802f645783ef")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -14165,7 +14475,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:D_Schottky")
-		(at 115.57 123.19 0)
+		(at 48.26 111.76 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14174,7 +14484,7 @@
 		(dnp no)
 		(uuid "3fa41824-d0bf-4d81-bfa7-05aa8d6779b9")
 		(property "Reference" "D5"
-			(at 114.3 116.84 0)
+			(at 46.99 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14182,7 +14492,7 @@
 			)
 		)
 		(property "Value" "RB161QS-40"
-			(at 114.3 119.38 0)
+			(at 46.99 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14190,7 +14500,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:DIO-SMD_L1.0-W0.6-P0.65-RD"
-			(at 115.57 123.19 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14199,7 +14509,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304281727_FUXINSEMI-RB161QS-40_C5563750.pdf"
-			(at 115.57 123.19 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14208,7 +14518,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 115.57 123.19 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14217,7 +14527,7 @@
 			)
 		)
 		(property "LCSC" "C5563750"
-			(at 115.57 123.19 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14226,7 +14536,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 115.57 123.19 0)
+			(at 48.26 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14612,7 +14922,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 64.77 160.02 0)
+		(at 68.58 204.47 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14622,7 +14932,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a6c79a2-e025-4f2f-a98b-eed26116b495")
 		(property "Reference" "#PWR07"
-			(at 64.77 166.37 0)
+			(at 68.58 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14631,7 +14941,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 165.1 0)
+			(at 68.58 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14639,7 +14949,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 160.02 0)
+			(at 68.58 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14648,7 +14958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 160.02 0)
+			(at 68.58 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14657,7 +14967,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 160.02 0)
+			(at 68.58 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14774,74 +15084,8 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
-		(lib_id "rp2350-decoder:GND_1")
-		(at 153.67 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "50dea43d-ae25-4b6f-88f5-bf6b426bdc7c")
-		(property "Reference" "#PWR023"
-			(at 153.67 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 153.67 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2803a5a-eddc-45f5-99ae-8722b7f22b3b")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp2350-decoder:C")
-		(at 114.3 172.72 0)
+		(at 68.58 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14849,7 +15093,7 @@
 		(dnp no)
 		(uuid "516b7c24-3a13-4ec6-b670-4d06dfcce717")
 		(property "Reference" "C6"
-			(at 118.11 171.4499 0)
+			(at 72.39 241.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14858,7 +15102,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 118.11 173.9899 0)
+			(at 72.39 243.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14867,7 +15111,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
-			(at 115.2652 176.53 0)
+			(at 69.5452 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14876,7 +15120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 172.72 0)
+			(at 68.58 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14885,7 +15129,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 114.3 172.72 0)
+			(at 68.58 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14894,7 +15138,7 @@
 			)
 		)
 		(property "LCSC" "C384956"
-			(at 114.3 172.72 0)
+			(at 68.58 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14903,7 +15147,7 @@
 			)
 		)
 		(property "Height" "0.3"
-			(at 114.3 172.72 0)
+			(at 68.58 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15332,7 +15576,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:Conn_01x01")
-		(at 160.02 154.94 0)
+		(at 166.37 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15341,7 +15585,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ed70163-4ade-4f4d-9b74-1a45a7f24d5e")
 		(property "Reference" "J1"
-			(at 162.56 153.6699 0)
+			(at 168.91 256.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15350,7 +15594,7 @@
 			)
 		)
 		(property "Value" "SWDIO"
-			(at 162.56 156.2099 0)
+			(at 168.91 259.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15359,7 +15603,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:Pogo Pad 0.8mm"
-			(at 160.02 154.94 0)
+			(at 166.37 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15368,7 +15612,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 154.94 0)
+			(at 166.37 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15377,7 +15621,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 160.02 154.94 0)
+			(at 166.37 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15386,7 +15630,7 @@
 			)
 		)
 		(property "Height" "0"
-			(at 160.02 154.94 0)
+			(at 166.37 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15401,94 +15645,6 @@
 			(project ""
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:C")
-		(at 214.63 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6004d214-3d19-4b6d-9d6b-e880a5707052")
-		(property "Reference" "C12"
-			(at 217.17 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 217.17 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
-			(at 217.551 115.3414 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 214.63 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C49062"
-			(at 214.63 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.33"
-			(at 214.63 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a811f50c-c5da-4bff-befc-0d2fcde4b7ad")
-		)
-		(pin "2"
-			(uuid "81984f32-191d-4d96-bdaa-5b60c3d2e14e")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -15576,108 +15732,6 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:DMN2991UDA-7B")
-		(at 120.65 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62795384-7651-49ae-ac98-7dff38512040")
-		(property "Reference" "Q2"
-			(at 127 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 127 135.636 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 125.73 132.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 120.65 144.018 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2937136"
-			(at 120.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.4"
-			(at 120.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5510f91b-f725-4ab9-bc48-462a26cee7cd")
-		)
-		(pin "3"
-			(uuid "6ce796a7-51a8-4f96-9207-811f3678590e")
-		)
-		(pin "5"
-			(uuid "57fcd5eb-85a1-43b7-b367-d2b0ea2b699a")
-		)
-		(pin "1"
-			(uuid "53492e63-0473-4235-b6e2-46ecfb6f237a")
-		)
-		(pin "2"
-			(uuid "345ac26f-d12c-4c05-931b-e6724214b9bf")
-		)
-		(pin "6"
-			(uuid "981edeb0-e3d4-4978-b584-9b092cae79f3")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -16380,7 +16434,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:Crystal_GND24")
-		(at 107.95 167.64 180)
+		(at 62.23 237.49 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16388,7 +16442,7 @@
 		(dnp no)
 		(uuid "72ea94f2-aa70-4caa-86c6-7cd37027a3ec")
 		(property "Reference" "Y1"
-			(at 112.014 161.29 0)
+			(at 66.294 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16396,7 +16450,7 @@
 			)
 		)
 		(property "Value" "ABM8-272-T3"
-			(at 118.618 163.8614 0)
+			(at 72.898 233.7114 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16404,7 +16458,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 107.95 167.64 0)
+			(at 62.23 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16413,7 +16467,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8559470777180311552"
-			(at 107.95 167.64 0)
+			(at 62.23 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16422,7 +16476,7 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
-			(at 107.95 167.64 0)
+			(at 62.23 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16431,7 +16485,7 @@
 			)
 		)
 		(property "LCSC" "C20625731"
-			(at 107.95 167.64 0)
+			(at 62.23 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16440,7 +16494,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 107.95 167.64 0)
+			(at 62.23 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16659,7 +16713,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 36.83 130.81 0)
+		(at 40.64 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16668,7 +16722,7 @@
 		(fields_autoplaced yes)
 		(uuid "7646570d-becd-46d9-bc37-d73bc52f3f81")
 		(property "Reference" "#PWR02"
-			(at 36.83 137.16 0)
+			(at 40.64 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16677,7 +16731,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 135.89 0)
+			(at 40.64 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16685,7 +16739,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 130.81 0)
+			(at 40.64 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16694,7 +16748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 130.81 0)
+			(at 40.64 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16703,7 +16757,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 130.81 0)
+			(at 40.64 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16725,7 +16779,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:NCS2220AMUT1G")
-		(at 52.07 125.73 0)
+		(at 55.88 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16733,7 +16787,7 @@
 		(dnp no)
 		(uuid "790ebaff-3648-4ed4-ad81-dad4e54550d4")
 		(property "Reference" "U1"
-			(at 59.69 116.84 0)
+			(at 63.5 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16741,7 +16795,7 @@
 			)
 		)
 		(property "Value" "NCS2220AMUT1G"
-			(at 52.07 135.89 0)
+			(at 55.88 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16749,7 +16803,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:DFN-8_L1.6-W1.6-P0.40-BL-EP"
-			(at 52.07 138.43 0)
+			(at 55.88 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16758,7 +16812,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Analog-Comparators_ON-Semicon-ON-NCS2220AMUT1G_C464059.html"
-			(at 52.07 140.97 0)
+			(at 55.88 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16767,7 +16821,7 @@
 			)
 		)
 		(property "Description" "Single General-Purpose Low-Voltage Comparator, SOT-23-5/SC-70-5"
-			(at 52.07 125.73 0)
+			(at 55.88 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16776,7 +16830,7 @@
 			)
 		)
 		(property "LCSC" "C464059"
-			(at 52.07 125.73 0)
+			(at 55.88 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16785,7 +16839,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 52.07 125.73 0)
+			(at 55.88 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16830,111 +16884,8 @@
 		)
 	)
 	(symbol
-		(lib_id "rp2350-decoder:DMN2991UDA-7B")
-		(at 147.32 130.81 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b3bbe8c-be8f-4376-b67d-e1914bd1a0e8")
-		(property "Reference" "Q2"
-			(at 139.7 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 152.4 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 152.4 132.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 152.4 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 147.32 144.018 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2937136"
-			(at 147.32 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.4"
-			(at 147.32 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "812d5dca-50b4-4ab8-a812-30a3ed7fc7db")
-		)
-		(pin "3"
-			(uuid "12106e84-7ce0-476c-83a0-041ce4ef16d4")
-		)
-		(pin "5"
-			(uuid "b33edb81-00bc-4d80-859d-15adce2c6469")
-		)
-		(pin "1"
-			(uuid "0d8295cc-79ed-41ce-aac7-d2705559bd43")
-		)
-		(pin "2"
-			(uuid "7526528e-ad41-4d42-a236-c5068e10210c")
-		)
-		(pin "6"
-			(uuid "e57feeac-9701-4a0f-82df-ee628bdbd7c8")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "Q2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rp2350-decoder:+3.3V")
-		(at 64.77 144.78 0)
+		(at 68.58 189.23 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16944,7 +16895,7 @@
 		(fields_autoplaced yes)
 		(uuid "805abcbb-6c2d-43d6-9223-f22fb4ab9ae3")
 		(property "Reference" "#PWR06"
-			(at 64.77 148.59 0)
+			(at 68.58 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16953,7 +16904,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 64.77 139.7 0)
+			(at 68.58 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16961,7 +16912,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 144.78 0)
+			(at 68.58 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16970,7 +16921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 144.78 0)
+			(at 68.58 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16979,7 +16930,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 64.77 144.78 0)
+			(at 68.58 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17175,7 +17126,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:VDC")
-		(at 36.83 144.78 0)
+		(at 40.64 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17184,7 +17135,7 @@
 		(fields_autoplaced yes)
 		(uuid "85322e5a-564f-4018-8c8e-8416d237d95c")
 		(property "Reference" "#PWR03"
-			(at 36.83 148.59 0)
+			(at 40.64 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17193,7 +17144,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 36.83 139.7 0)
+			(at 40.64 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17201,7 +17152,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 144.78 0)
+			(at 40.64 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17210,7 +17161,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 144.78 0)
+			(at 40.64 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17219,7 +17170,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 36.83 144.78 0)
+			(at 40.64 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17336,6 +17287,92 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rp2350-decoder:R")
+		(at 154.94 66.04 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "877f86d6-fd91-458a-906e-1706e19fe64a")
+		(property "Reference" "R8"
+			(at 154.94 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6.8K"
+			(at 154.94 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
+			(at 154.94 64.262 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 154.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.26"
+			(at 154.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C423451"
+			(at 154.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ddc9d725-a0b0-4ad3-b9f9-5463bb8ed929")
+		)
+		(pin "2"
+			(uuid "e7703469-3280-4843-ba7c-ead7fb9c7748")
+		)
+		(instances
+			(project "rp2350-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -17505,7 +17542,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:+3.3V")
-		(at 66.04 114.3 0)
+		(at 69.85 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17514,7 +17551,7 @@
 		(fields_autoplaced yes)
 		(uuid "89afc6c7-a39b-481e-9dc0-d8db4f465d94")
 		(property "Reference" "#PWR08"
-			(at 66.04 118.11 0)
+			(at 69.85 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17523,7 +17560,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 66.04 109.22 0)
+			(at 69.85 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17531,7 +17568,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 114.3 0)
+			(at 69.85 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17540,7 +17577,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 114.3 0)
+			(at 69.85 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17549,7 +17586,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 66.04 114.3 0)
+			(at 69.85 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17564,108 +17601,6 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:DMN2991UDA-7B")
-		(at 163.83 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8fb2a998-f5f7-4001-abf5-5f30fe68d260")
-		(property "Reference" "Q1"
-			(at 170.18 51.308 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 170.18 53.594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 168.91 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 168.91 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 163.83 64.008 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2937136"
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.4"
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5510f91b-f725-4ab9-bc48-462a26cee7d0")
-		)
-		(pin "3"
-			(uuid "6ce796a7-51a8-4f96-9207-811f36785911")
-		)
-		(pin "5"
-			(uuid "57fcd5eb-85a1-43b7-b367-d2b0ea2b699d")
-		)
-		(pin "1"
-			(uuid "7aedb16b-c29a-448d-8f34-3818bed47a29")
-		)
-		(pin "2"
-			(uuid "2b534136-0433-454c-a7e9-58802deec168")
-		)
-		(pin "6"
-			(uuid "ab1b5296-80eb-4afe-bf53-f169efbbb160")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -17775,7 +17710,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 36.83 160.02 0)
+		(at 40.64 204.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17784,7 +17719,7 @@
 		(fields_autoplaced yes)
 		(uuid "95122f77-4e67-4bf9-9752-3f03125ccb0b")
 		(property "Reference" "#PWR04"
-			(at 36.83 166.37 0)
+			(at 40.64 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17793,7 +17728,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 165.1 0)
+			(at 40.64 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17801,7 +17736,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 160.02 0)
+			(at 40.64 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17810,7 +17745,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 160.02 0)
+			(at 40.64 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17819,7 +17754,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 160.02 0)
+			(at 40.64 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17840,8 +17775,86 @@
 		)
 	)
 	(symbol
+		(lib_id "rp2350-decoder:D_Zener")
+		(at 160.02 69.85 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "968a8593-48d9-4dba-9b5e-1bb85c0170bb")
+		(property "Reference" "D8"
+			(at 162.56 68.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GDZ3V3LP3-7"
+			(at 162.56 71.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rp2350-decoder:D_0201_0603Metric"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560098790000005120"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5157733"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e93180a-8fa1-4396-9e76-7e9cc5e23909")
+		)
+		(pin "2"
+			(uuid "487309ed-f8ff-4b60-b09b-37729572aa4c")
+		)
+		(instances
+			(project ""
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 107.95 162.56 180)
+		(at 62.23 232.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17850,7 +17863,7 @@
 		(fields_autoplaced yes)
 		(uuid "9778fa2b-6741-47b8-9f54-df08b330be03")
 		(property "Reference" "#PWR014"
-			(at 107.95 156.21 0)
+			(at 62.23 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17859,7 +17872,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 107.95 157.48 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17867,7 +17880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 162.56 0)
+			(at 62.23 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17876,7 +17889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 162.56 0)
+			(at 62.23 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17885,7 +17898,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 162.56 0)
+			(at 62.23 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17894,7 +17907,7 @@
 			)
 		)
 		(property "Frequency" ""
-			(at 107.95 162.56 0)
+			(at 62.23 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18003,7 +18016,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:R")
-		(at 64.77 156.21 0)
+		(at 68.58 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18012,7 +18025,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ae677fb-ba43-418a-b2af-74f09c29ce7b")
 		(property "Reference" "R4"
-			(at 67.31 154.9399 0)
+			(at 71.12 199.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18021,7 +18034,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 67.31 157.4799 0)
+			(at 71.12 201.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18030,7 +18043,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 62.992 156.21 90)
+			(at 66.802 200.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18039,7 +18052,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 156.21 0)
+			(at 68.58 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18048,7 +18061,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 156.21 0)
+			(at 68.58 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18057,7 +18070,7 @@
 			)
 		)
 		(property "LCSC" "C270365"
-			(at 64.77 156.21 0)
+			(at 68.58 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18066,7 +18079,7 @@
 			)
 		)
 		(property "Height" "0.26"
-			(at 64.77 156.21 0)
+			(at 68.58 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18342,7 +18355,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:C")
-		(at 36.83 127 180)
+		(at 40.64 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18350,7 +18363,7 @@
 		(dnp no)
 		(uuid "a01efa0e-f2bc-470b-ae1c-b9401542e857")
 		(property "Reference" "C1"
-			(at 34.29 128.905 0)
+			(at 38.1 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18359,7 +18372,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 34.29 127 0)
+			(at 38.1 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18368,7 +18381,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
-			(at 33.909 124.6886 0)
+			(at 37.719 169.1386 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18378,7 +18391,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 127 0)
+			(at 40.64 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18387,7 +18400,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 127 0)
+			(at 40.64 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18396,7 +18409,7 @@
 			)
 		)
 		(property "LCSC" "C49062"
-			(at 36.83 127 0)
+			(at 40.64 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18405,7 +18418,7 @@
 			)
 		)
 		(property "Height" "0.33"
-			(at 36.83 127 0)
+			(at 40.64 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18515,6 +18528,72 @@
 		)
 	)
 	(symbol
+		(lib_id "rp2350-decoder:VDC")
+		(at 149.86 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2e724ab-aa24-47b8-a6af-df0e5998858b")
+		(property "Reference" "#PWR057"
+			(at 149.86 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDC"
+			(at 149.86 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 149.86 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2947c5a-e753-474b-9fc5-7ba928a637be")
+		)
+		(instances
+			(project "rp2350-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "rp2350-decoder:GND_1")
 		(at 118.11 50.8 0)
@@ -18582,7 +18661,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:VDC")
-		(at 110.49 123.19 90)
+		(at 43.18 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18591,7 +18670,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4d7c46f-541b-4cdf-8589-2927abf81674")
 		(property "Reference" "#PWR016"
-			(at 114.3 123.19 0)
+			(at 46.99 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18600,7 +18679,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 106.68 123.1899 90)
+			(at 39.37 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18609,7 +18688,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 123.19 0)
+			(at 43.18 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18618,7 +18697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 123.19 0)
+			(at 43.18 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18627,7 +18706,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 110.49 123.19 0)
+			(at 43.18 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18826,7 +18905,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:Conn_01x01")
-		(at 160.02 160.02 0)
+		(at 166.37 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18835,7 +18914,7 @@
 		(fields_autoplaced yes)
 		(uuid "a95f02cd-1574-4b6f-a603-5002318e1758")
 		(property "Reference" "J2"
-			(at 162.56 158.7499 0)
+			(at 168.91 261.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18844,7 +18923,7 @@
 			)
 		)
 		(property "Value" "SWCLK"
-			(at 162.56 161.2899 0)
+			(at 168.91 264.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18853,7 +18932,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:Pogo Pad 0.8mm"
-			(at 160.02 160.02 0)
+			(at 166.37 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18862,7 +18941,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 160.02 0)
+			(at 166.37 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18871,7 +18950,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 160.02 160.02 0)
+			(at 166.37 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18880,7 +18959,7 @@
 			)
 		)
 		(property "Height" "0"
-			(at 160.02 160.02 0)
+			(at 166.37 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19312,6 +19391,72 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "rp2350-decoder:GND_1")
+		(at 160.02 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b491fe1a-db11-4a38-8e2b-0a3fbaa14787")
+		(property "Reference" "#PWR058"
+			(at 160.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a09a9409-7832-4a13-8d61-c51cabba5a3c")
+		)
+		(instances
+			(project "rp2350-decoder"
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -20799,7 +20944,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:C")
-		(at 101.6 172.72 0)
+		(at 55.88 242.57 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20808,7 +20953,7 @@
 		(dnp no)
 		(uuid "dbd402d7-96de-45d6-88df-04b4cc622a3c")
 		(property "Reference" "C4"
-			(at 97.79 171.4499 0)
+			(at 52.07 241.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20817,7 +20962,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 97.79 173.9899 0)
+			(at 52.07 243.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20826,7 +20971,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:C_0201_0603Metric"
-			(at 100.6348 176.53 0)
+			(at 54.9148 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20835,7 +20980,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 172.72 0)
+			(at 55.88 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20844,7 +20989,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 101.6 172.72 0)
+			(at 55.88 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20853,7 +20998,7 @@
 			)
 		)
 		(property "LCSC" "C384956"
-			(at 101.6 172.72 0)
+			(at 55.88 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20862,7 +21007,7 @@
 			)
 		)
 		(property "Height" "0.3"
-			(at 101.6 172.72 0)
+			(at 55.88 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21114,6 +21259,87 @@
 		)
 	)
 	(symbol
+		(lib_id "rp2350-decoder:Q_NMOS_GSD")
+		(at 53.34 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5b5a305-55c1-41e1-99d0-c75d316519d9")
+		(property "Reference" "Q2"
+			(at 42.164 122.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AP1606"
+			(at 42.164 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rp2350-decoder:Diodes_DFN1006-3"
+			(at 58.42 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589040828304408576"
+			(at 53.34 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 53.34 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2849580"
+			(at 53.34 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5d54eb7-e605-49fe-ae35-4e6b0bc43ece")
+		)
+		(pin "1"
+			(uuid "02db7727-3ad3-4649-a34b-5c791883d8cc")
+		)
+		(pin "3"
+			(uuid "fbdafcd8-6e1b-409a-a511-29f36e222c18")
+		)
+		(instances
+			(project ""
+				(path "/139be664-fb54-41f1-a01f-7316e3835554"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "rp2350-decoder:GND")
 		(at 144.78 232.41 270)
 		(mirror x)
@@ -21191,7 +21417,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:D_Schottky")
-		(at 157.48 130.81 90)
+		(at 63.5 119.38 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21200,7 +21426,7 @@
 		(dnp no)
 		(uuid "e919a903-d292-4433-acc8-474e4dd4064a")
 		(property "Reference" "D6"
-			(at 162.306 129.54 90)
+			(at 68.326 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21208,7 +21434,7 @@
 			)
 		)
 		(property "Value" "RB161QS-40"
-			(at 167.386 132.08 90)
+			(at 73.406 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21216,7 +21442,7 @@
 			)
 		)
 		(property "Footprint" "rp2350-decoder:DIO-SMD_L1.0-W0.6-P0.65-RD"
-			(at 157.48 130.81 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21225,7 +21451,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304281727_FUXINSEMI-RB161QS-40_C5563750.pdf"
-			(at 157.48 130.81 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21234,7 +21460,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 157.48 130.81 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21243,7 +21469,7 @@
 			)
 		)
 		(property "LCSC" "C5563750"
-			(at 157.48 130.81 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21252,7 +21478,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 157.48 130.81 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21277,7 +21503,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:GND")
-		(at 107.95 179.07 0)
+		(at 62.23 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21286,7 +21512,7 @@
 		(fields_autoplaced yes)
 		(uuid "eaa3f205-7aa0-4057-8521-133406a255ac")
 		(property "Reference" "#PWR015"
-			(at 107.95 185.42 0)
+			(at 62.23 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21295,7 +21521,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 107.95 184.15 0)
+			(at 62.23 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21303,7 +21529,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 179.07 0)
+			(at 62.23 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21312,7 +21538,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 179.07 0)
+			(at 62.23 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21321,7 +21547,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 179.07 0)
+			(at 62.23 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21330,7 +21556,7 @@
 			)
 		)
 		(property "Frequency" ""
-			(at 107.95 179.07 0)
+			(at 62.23 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21411,92 +21637,6 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:R")
-		(at 153.67 45.72 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f2a8ea8f-7812-4a3b-8c78-a3c45c663d7c")
-		(property "Reference" "R7"
-			(at 158.115 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6.8K"
-			(at 157.48 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rp2350-decoder:R_0201_0603Metric"
-			(at 151.892 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 153.67 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C423451"
-			(at 153.67 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.26"
-			(at 153.67 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "207c68d4-d9df-4cd4-810a-30976d0ba12e")
-		)
-		(pin "2"
-			(uuid "3cea4836-5367-44a4-a7b6-513cca70147d")
-		)
-		(instances
-			(project "rp2350-decoder"
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -21586,72 +21726,6 @@
 			(project "rp2350-decoder"
 				(path "/139be664-fb54-41f1-a01f-7316e3835554"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rp2350-decoder:GND")
-		(at 250.19 229.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6764e41-1647-4e54-a375-dfab873eb0cf")
-		(property "Reference" "#PWR036"
-			(at 250.19 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 250.19 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 250.19 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.19 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 250.19 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63ed57e2-959f-4b49-9f9b-ce5d738d4886")
-		)
-		(instances
-			(project ""
-				(path "/139be664-fb54-41f1-a01f-7316e3835554"
-					(reference "#PWR036")
 					(unit 1)
 				)
 			)

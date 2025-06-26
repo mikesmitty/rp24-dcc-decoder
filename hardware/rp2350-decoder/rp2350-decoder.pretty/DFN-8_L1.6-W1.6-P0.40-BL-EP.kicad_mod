@@ -7,7 +7,7 @@
 		(at 0 -4.7 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d7f208d2-2305-443e-a219-0d44c4828382")
+		(uuid "89eb1d98-e0fb-4b3d-9537-dffef95094cc")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 4.7 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0124016c-4ec8-40ae-a44c-8222ce666096")
+		(uuid "b52a0124-a3dd-4860-a957-f6a3dd943a99")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b701a5f5-b4bb-470c-9eef-a3ba9536c12b")
+		(uuid "0844262c-3198-4647-8530-887a414b41a8")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "838c8395-05f6-4abd-8833-4a9576e11e4b")
+		(uuid "32b34666-e0fd-4ddb-8b24-6889f9921c32")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,20 +56,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3294ef81-e8dd-40fb-a7dc-2d47c450b746")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "JLCPCB_CORRECTION" "0;0;0"
-		(at 0 0 180)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "46073c81-c358-4da4-bcb5-dfded95dc85b")
+		(uuid "0f7ab430-2381-4a98-b117-84c63a603f0f")
 		(effects
 			(font
 				(size 1 1)
@@ -82,7 +69,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8fffb537-b052-4ec8-b5fe-be42808da47a")
+		(uuid "ab70b48a-0e1c-45d0-913f-6e9ae2a5beda")
 		(effects
 			(font
 				(size 1 1)
@@ -99,7 +86,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e1ce22e3-6810-4fb3-a060-ac864a2be3ba")
+		(uuid "284c56f0-24da-4cf3-9bc1-d63457acd951")
 	)
 	(fp_line
 		(start -0.9 0.9)
@@ -109,7 +96,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "46223090-959c-4bc4-b579-d80bdde21b90")
+		(uuid "99b2695b-1835-4c1e-ac0c-958345399e5d")
 	)
 	(fp_circle
 		(center -0.6 1.2)
@@ -120,7 +107,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "cb3a4ab0-9baf-4cce-b220-44ff89efdb26")
+		(uuid "2de48c68-3ce5-4800-a56d-0a5b23df207e")
 	)
 	(fp_rect
 		(start -1.05 -1.05)
@@ -131,7 +118,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "d2bbab82-87a2-4601-8027-1a5cf2e16ed6")
+		(uuid "cf28d1e8-2ece-4b97-8e67-22f2c7ef09f0")
 	)
 	(fp_circle
 		(center -0.8 0.8)
@@ -142,13 +129,13 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "18a07361-3f6d-4196-a014-d0e750f26f81")
+		(uuid "ae047ffa-bd23-4365-83b9-dce3061f8b8a")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "96238b84-dee0-4390-b75d-8e871f019191")
+		(uuid "8af63985-5d22-4908-9d2c-3f566e79d01f")
 		(effects
 			(font
 				(size 1 1)
@@ -160,55 +147,55 @@
 		(at -0.6 0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "4bca3080-4544-4a6d-88df-cb8dbb6fe0ad")
+		(uuid "15bd8582-eaa0-49f4-9051-07bfdb42ef0d")
 	)
 	(pad "2" smd rect
 		(at -0.2 0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "139d67d1-fcbd-4b99-a900-78eb56c37b16")
+		(uuid "84b85e7c-b32e-4acd-8361-08871f82cbe7")
 	)
 	(pad "3" smd rect
 		(at 0.2 0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "0c9134ba-d3c9-4d77-8ecf-cbbfb3f2b88c")
+		(uuid "18d3b0b5-9a7d-4035-9be2-7661f362bd43")
 	)
 	(pad "4" smd rect
 		(at 0.6 0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "06987581-4bb9-4484-be1b-3f4300d40a0e")
+		(uuid "7b8a20df-c868-4ff6-9b11-74322096e098")
 	)
 	(pad "5" smd rect
 		(at 0.6 -0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "5558660c-7d26-43a8-9b99-6dd2e1b5246f")
+		(uuid "922134cf-450c-4385-b0b7-a0941dc8b7ac")
 	)
 	(pad "6" smd rect
 		(at 0.2 -0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "738b415f-607b-4ffa-ae02-7779b8c66c9a")
+		(uuid "d45f9469-07e1-4558-86b4-2a5bde3ee7b3")
 	)
 	(pad "7" smd rect
 		(at -0.2 -0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "c2621272-4cd2-4f47-988f-9a3ac4ae1a86")
+		(uuid "2df97cd5-dd8f-4c56-8f9f-ce4c33079ed9")
 	)
 	(pad "8" smd rect
 		(at -0.6 -0.7 270)
 		(size 0.4 0.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "603d8077-35c7-4555-97b3-8ce4ab766086")
+		(uuid "184cdfa1-df1b-417f-91e0-761bd5eed651")
 	)
 	(pad "9" smd rect
 		(at 0 0 270)
 		(size 0.5 0.9)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "b4d247d9-1e13-47a1-a2f2-36da36787800")
+		(uuid "c46c0eaa-e52b-4f37-a11c-730864f0f252")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Micrel_MLF-8-1EP_2x2mm_P0.5mm_EP0.6x1.2mm.wrl"
