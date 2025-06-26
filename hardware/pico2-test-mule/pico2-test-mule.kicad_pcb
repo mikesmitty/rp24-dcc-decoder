@@ -639,7 +639,7 @@
 			(uuid "88e76a9a-c1b3-48f2-b041-22a13fdcab93")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-963.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-963.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -881,7 +881,7 @@
 			(uuid "9fe3a183-2063-4a65-88e7-b9630b49a306")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1123,7 +1123,7 @@
 			(uuid "e0c39ef4-50fb-48b5-8589-c6447fd783d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1432,7 +1432,7 @@
 			(uuid "3cfe6916-9985-4c26-9504-a625db846add")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Concave_4x0402.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_Array_Concave_4x0402.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1696,7 +1696,7 @@
 			(uuid "51ede5f8-2578-4b81-ac7f-ea2a77c44c47")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1960,7 +1960,7 @@
 			(uuid "85518d99-fdad-4f3a-a4da-b5b1ad4866aa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2189,7 +2189,7 @@
 			(uuid "53864559-6048-4b28-ac0f-3c75b6d717cb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2472,7 +2472,7 @@
 			(uuid "642f19f6-d495-4631-b22e-de9c436871d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2736,7 +2736,7 @@
 			(uuid "3b334832-f8ac-4d3d-8904-54364f5a8ce0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3043,7 +3043,7 @@
 			(uuid "32de6ca7-3455-4554-b63f-1c047fc93ad5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3486,7 +3486,7 @@
 			(uuid "97f87306-455e-4bbf-ac9e-63bb43abcf9b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3795,7 +3795,7 @@
 			(uuid "b70671b8-996f-49bc-9335-aae907edea72")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Concave_4x0402.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_Array_Concave_4x0402.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4100,7 +4100,7 @@
 			(uuid "6435b0d8-859d-4e6a-be2d-c078ebf4c4f7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4569,7 +4569,7 @@
 			(uuid "c6642fca-4bdd-4223-b622-4d891e3af080")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6195,7 +6195,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_DIP-40_W17.78mm_H8.51mm_Socket.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_WH_Socketed.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6207,7 +6207,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_AddedHeaders.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_WH.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6219,7 +6219,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_AddedHeaders_Socketed.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_W_AddedHeaders_Socketed.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6231,18 +6231,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_H.wrl"
-			(offset
-				(xyz 8.89 -24.13 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_H_Socketed.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_W_AddedHeaders.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6254,7 +6243,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_W_AddedHeaders.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_H_Socketed.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6266,7 +6255,18 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_W_AddedHeaders_Socketed.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_H.wrl"
+			(offset
+				(xyz 8.89 -24.13 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_AddedHeaders_Socketed.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6278,7 +6278,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_WH.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_AddedHeaders.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -6290,7 +6290,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico_WH_Socketed.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/RaspberryPi_Pico_DIP-40_W17.78mm_H8.51mm_Socket.wrl"
 			(hide yes)
 			(offset
 				(xyz 8.89 -24.13 0)
@@ -7085,7 +7085,7 @@
 			(uuid "d8755067-0927-42f5-a941-beafb8647b3f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Concave_4x0402.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_Array_Concave_4x0402.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7327,7 +7327,7 @@
 			(uuid "213bce2f-1618-4042-929e-ded5ab383168")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7654,7 +7654,7 @@
 			(uuid "9042bff8-c84b-4bfc-8a5b-c5d752bb9ce5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7896,7 +7896,7 @@
 			(uuid "40fee9d8-0312-4700-ae67-6a30917c9bf6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8138,7 +8138,7 @@
 			(uuid "41a8eed6-5fe8-4b8f-b80e-ead23f4dfc15")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8402,7 +8402,7 @@
 			(uuid "c246e006-fe87-450d-bc5c-b88d63c494c0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8631,7 +8631,7 @@
 			(uuid "690ef527-0a87-4edb-95ad-519da54edce4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8847,7 +8847,7 @@
 			(uuid "16db02fc-2040-40c0-80ab-53689fb96025")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9111,7 +9111,7 @@
 			(uuid "57c82985-18c3-4ef0-b2a0-5d49923268a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9340,7 +9340,7 @@
 			(uuid "695c0624-5d9b-4a45-b0ef-73f096b752b4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9620,7 +9620,7 @@
 			(uuid "9762d145-cc1b-454a-a2c0-c432d53a787f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-963.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-963.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9862,7 +9862,7 @@
 			(uuid "23a17fcb-8833-44a3-89d7-2251993a2105")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10126,7 +10126,7 @@
 			(uuid "00086bb3-af79-428e-b1f6-8ea9405c18c8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10368,7 +10368,7 @@
 			(uuid "0f227a11-766f-4b78-8f4f-d6e26931cf4a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10651,7 +10651,7 @@
 			(uuid "258cffce-0691-4fa0-8409-aa40cd199f7f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10880,7 +10880,7 @@
 			(uuid "3f62ba29-da5b-42ef-94e9-34390a3d6170")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11187,7 +11187,7 @@
 			(uuid "2058eb3e-7089-4e14-b0da-9c11a71c0c0e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11494,7 +11494,7 @@
 			(uuid "c0087c70-28b4-4330-bbf2-c1248ba04edf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11758,7 +11758,7 @@
 			(uuid "29410676-c398-4274-85e6-2bb92babba5b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11987,7 +11987,7 @@
 			(uuid "66242646-0dc3-4b15-89ea-75d94dd1369d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12251,7 +12251,7 @@
 			(uuid "f7f2a24e-6bcf-4195-bd47-14881afd1162")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13538,7 +13538,7 @@
 			(uuid "c15e2b6a-9e67-4d37-a09b-31d36bad0926")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13767,7 +13767,7 @@
 			(uuid "7c26e33a-9025-47d9-b458-8567ffec1235")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14210,7 +14210,7 @@
 			(uuid "b688a3f0-d696-4b3a-82a4-a0f02a8cbe87")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14452,7 +14452,7 @@
 			(uuid "f97a37e3-5236-4f34-b6a4-86678906ea48")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14681,7 +14681,7 @@
 			(uuid "299a0fab-74f4-4749-9b9c-c1189c83168f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14910,7 +14910,7 @@
 			(uuid "9b3c9b77-22da-439f-9fc8-a2862c92ffe2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15401,7 +15401,7 @@
 			(uuid "10451ca2-639e-4211-b7a6-32c91c6e7acc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15665,7 +15665,7 @@
 			(uuid "afdcf37c-988c-4ed3-9c20-f257ccf532d2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15894,7 +15894,7 @@
 			(uuid "5999d3f6-e382-4131-97f1-bd1f0f700682")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16201,7 +16201,7 @@
 			(uuid "b1f16e3b-d426-4204-a82b-0036baac9f54")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16679,7 +16679,7 @@
 			(uuid "978db1d9-476b-4e73-a7ef-3602832e8b36")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16908,7 +16908,7 @@
 			(uuid "16b2bd3b-a937-485f-a122-0c8d0220695b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17172,7 +17172,7 @@
 			(uuid "429e3763-4923-4217-bac7-4d7d46a86ee2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17479,7 +17479,7 @@
 			(uuid "02b35031-15e8-4e19-990d-c994f92d4a9a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17909,7 +17909,7 @@
 			(uuid "e9768077-9ed0-4c78-909f-d7b090e891af")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18225,7 +18225,7 @@
 			(uuid "1698b31d-bf00-465f-a897-a4f905899d28")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19170,7 +19170,7 @@
 			(uuid "3c3f3d5b-ea31-47dc-bb7a-94726da6d7f1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/pico2-test-mule.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
