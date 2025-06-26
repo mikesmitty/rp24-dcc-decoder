@@ -2721,6 +2721,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "pico2-test-mule:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "pico2-test-mule:GND"
 			(power)
 			(pin_numbers
@@ -4985,6 +5135,293 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "pico2-test-mule:Q_NMOS_GSD"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NMOS_GSD"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "pico2-test-mule:R"
 			(pin_numbers
 				(hide yes)
@@ -6031,7 +6468,13 @@
 		(uuid "37b62d61-2a89-4267-b4f0-3c466bb2884e")
 	)
 	(junction
-		(at 162.56 144.78)
+		(at 163.83 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49009145-3016-4bd9-b364-a7282dbf0f84")
+	)
+	(junction
+		(at 144.78 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b656351-1b6b-4bfa-9669-1d824841689f")
@@ -6049,22 +6492,10 @@
 		(uuid "57d13ff7-940a-4c7d-b0fb-9c8842592381")
 	)
 	(junction
-		(at 154.94 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c15dc2c-1765-4c9d-aa46-6ee9d1fa7674")
-	)
-	(junction
 		(at 382.27 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f75f683-beec-4d22-a83f-68aa847622af")
-	)
-	(junction
-		(at 154.94 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60997dc3-6c7b-401e-9bc3-8ca0d51976e6")
 	)
 	(junction
 		(at 373.38 220.98)
@@ -6091,7 +6522,7 @@
 		(uuid "7a719be5-eeb9-4289-a223-284d8094015c")
 	)
 	(junction
-		(at 154.94 128.27)
+		(at 137.16 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81e60847-c6d5-4243-ab14-50ceda76dd05")
@@ -6119,6 +6550,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95c0a1de-7660-4391-b777-01098a87f70f")
+	)
+	(junction
+		(at 163.83 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99543d0a-13f8-47f7-b1dd-62b59d8a6aa1")
 	)
 	(junction
 		(at 76.2 220.98)
@@ -6157,12 +6594,6 @@
 		(uuid "b222b449-4f0d-49c1-aa2f-8307166015e5")
 	)
 	(junction
-		(at 128.27 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b47119b7-414f-475d-bc76-086e5e35d932")
-	)
-	(junction
 		(at 50.8 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6181,7 +6612,7 @@
 		(uuid "bacd9f6e-9b16-49a4-b6ab-a7fdb0722c5d")
 	)
 	(junction
-		(at 162.56 128.27)
+		(at 144.78 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bea968be-c342-41f0-8737-5a7ab6333326")
@@ -6197,18 +6628,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1461900-20f8-4108-bb3e-d9dc954ad88d")
-	)
-	(junction
-		(at 154.94 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d6cbe25d-2ccc-4b12-ae25-acf83ed9abc5")
-	)
-	(junction
-		(at 287.02 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d945598a-8b1b-43ad-805f-8f0bb2a2c10e")
 	)
 	(junction
 		(at 41.91 157.48)
@@ -6326,16 +6745,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 67.31) (xy 147.32 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02f0a141-1668-41fc-bb1e-69b77693f711")
-	)
-	(wire
-		(pts
 			(xy 271.78 173.99) (xy 285.75 173.99)
 		)
 		(stroke
@@ -6356,7 +6765,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 128.27) (xy 162.56 132.08)
+			(xy 144.78 128.27) (xy 144.78 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6576,7 +6985,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 128.27) (xy 154.94 130.81)
+			(xy 137.16 128.27) (xy 137.16 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6593,16 +7002,6 @@
 			(type default)
 		)
 		(uuid "14ef4d42-359b-4490-b841-5a1dfd884ff5")
-	)
-	(wire
-		(pts
-			(xy 154.94 68.58) (xy 167.64 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14fa82fe-351a-4104-902b-8f29bbeb3966")
 	)
 	(wire
 		(pts
@@ -6746,6 +7145,16 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 151.13) (xy 285.75 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22d93f0f-be8b-4efa-b7c7-b99ba8242ac4")
+	)
+	(wire
+		(pts
 			(xy 332.74 201.93) (xy 358.14 201.93)
 		)
 		(stroke
@@ -6763,6 +7172,16 @@
 			(type default)
 		)
 		(uuid "2458684d-05b4-417d-8eca-47be5920e62d")
+	)
+	(wire
+		(pts
+			(xy 153.67 50.8) (xy 154.94 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25934826-6576-4616-8bf0-ee02eacd7e37")
 	)
 	(wire
 		(pts
@@ -7016,16 +7435,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 57.15) (xy 160.02 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bce7d2d-b9f6-407f-b7af-e5b3ffb55236")
-	)
-	(wire
-		(pts
 			(xy 382.27 201.93) (xy 386.08 201.93)
 		)
 		(stroke
@@ -7073,6 +7482,16 @@
 			(type default)
 		)
 		(uuid "43416b54-b11d-499f-a91a-4af2c2362bfa")
+	)
+	(wire
+		(pts
+			(xy 163.83 50.8) (xy 175.26 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "437ffd96-3e9d-4b80-acb5-5ee3c83809e2")
 	)
 	(wire
 		(pts
@@ -7216,16 +7635,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 128.27) (xy 128.27 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e40ac41-3540-44dd-bb4c-bd014378b634")
-	)
-	(wire
-		(pts
 			(xy 104.14 53.34) (xy 119.38 53.34)
 		)
 		(stroke
@@ -7263,26 +7672,6 @@
 			(type default)
 		)
 		(uuid "502429c2-3e37-45ac-bedf-ecae9a734e11")
-	)
-	(wire
-		(pts
-			(xy 128.27 128.27) (xy 128.27 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53636c01-93c1-46a6-80d8-89887a14dc9c")
-	)
-	(wire
-		(pts
-			(xy 128.27 144.78) (xy 128.27 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53f4a58d-ea90-45e1-abba-dd383f53f5b9")
 	)
 	(wire
 		(pts
@@ -7406,16 +7795,6 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 151.13) (xy 287.02 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a98d109-9cb0-47fd-9aad-3a36518f03b6")
-	)
-	(wire
-		(pts
 			(xy 173.99 270.51) (xy 170.18 270.51)
 		)
 		(stroke
@@ -7426,6 +7805,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 69.85) (xy 154.94 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cc30981-f433-4df8-a4bb-8c35c44ad0fa")
+	)
+	(wire
+		(pts
 			(xy 135.89 218.44) (xy 133.35 218.44)
 		)
 		(stroke
@@ -7433,16 +7822,6 @@
 			(type default)
 		)
 		(uuid "5cf0d552-a03c-4c09-b47a-a58a58507102")
-	)
-	(wire
-		(pts
-			(xy 166.37 46.99) (xy 154.94 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d4192e2-a2ab-4ed2-bc4c-caa3831a27ad")
 	)
 	(wire
 		(pts
@@ -7526,6 +7905,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 69.85) (xy 173.99 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "636b3c40-9bd2-4c71-bee0-a34c59f42a69")
+	)
+	(wire
+		(pts
 			(xy 340.36 162.56) (xy 341.63 162.56)
 		)
 		(stroke
@@ -7556,23 +7945,13 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 128.27) (xy 179.07 128.27)
+			(xy 144.78 128.27) (xy 161.29 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "650bb8f7-4606-4c50-a070-efc829f0b404")
-	)
-	(wire
-		(pts
-			(xy 154.94 46.99) (xy 154.94 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6528ff3f-87bd-48c6-b97e-93230f2c845e")
 	)
 	(wire
 		(pts
@@ -7676,7 +8055,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 128.27) (xy 154.94 128.27)
+			(xy 133.35 128.27) (xy 137.16 128.27)
 		)
 		(stroke
 			(width 0)
@@ -7696,37 +8075,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 68.58) (xy 154.94 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e2deda3-7604-49ae-8ad6-d9280a35ba0d")
-	)
-	(wire
-		(pts
-			(xy 128.27 144.78) (xy 154.94 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70692f30-afff-473d-9b60-d5e3d618ca19")
-	)
-	(wire
-		(pts
-			(xy 154.94 69.85) (xy 154.94 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70849197-8882-4c25-9852-ddeecce26da2")
-	)
-	(wire
-		(pts
-			(xy 134.62 135.89) (xy 147.32 135.89)
+			(xy 116.84 135.89) (xy 129.54 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7886,16 +8235,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 135.89) (xy 120.65 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "815ce1c6-d155-4961-920a-f067866da5be")
-	)
-	(wire
-		(pts
 			(xy 237.49 135.89) (xy 223.52 135.89)
 		)
 		(stroke
@@ -7986,23 +8325,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 140.97) (xy 154.94 144.78)
+			(xy 137.16 140.97) (xy 137.16 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8ae9015e-551c-46ee-baf5-a4ac628bd9b8")
-	)
-	(wire
-		(pts
-			(xy 154.94 57.15) (xy 154.94 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b1a9fd4-76f3-4121-b857-185f4af43620")
 	)
 	(wire
 		(pts
@@ -8076,7 +8405,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 139.7) (xy 162.56 144.78)
+			(xy 144.78 139.7) (xy 144.78 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8216,6 +8545,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 50.8) (xy 163.83 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a24af17a-3b8c-4101-97a0-339fabb8a5a9")
+	)
+	(wire
+		(pts
 			(xy 271.78 135.89) (xy 287.02 135.89)
 		)
 		(stroke
@@ -8223,16 +8562,6 @@
 			(type default)
 		)
 		(uuid "a324b0d8-fb53-44ee-9305-9b45c8c29735")
-	)
-	(wire
-		(pts
-			(xy 167.64 62.23) (xy 167.64 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3afdf69-f0be-446f-bf5e-ea8ce0afe5b2")
 	)
 	(wire
 		(pts
@@ -8336,7 +8665,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 128.27) (xy 162.56 128.27)
+			(xy 137.16 128.27) (xy 144.78 128.27)
 		)
 		(stroke
 			(width 0)
@@ -8413,16 +8742,6 @@
 			(type default)
 		)
 		(uuid "b6fa9dcb-34b3-4360-9284-ce6510832428")
-	)
-	(wire
-		(pts
-			(xy 167.64 46.99) (xy 175.26 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b738a633-e136-4160-9cb8-0026aecbf011")
 	)
 	(wire
 		(pts
@@ -8503,26 +8822,6 @@
 			(type default)
 		)
 		(uuid "bee4cd3e-ad63-498c-8d33-d007ba59fe1b")
-	)
-	(wire
-		(pts
-			(xy 147.32 59.69) (xy 147.32 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0d33ed5-dcc2-4d1e-8c6b-1665dfd898d0")
-	)
-	(wire
-		(pts
-			(xy 154.94 55.88) (xy 154.94 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c10fb86c-3071-4178-8f62-825db94f6833")
 	)
 	(wire
 		(pts
@@ -8646,16 +8945,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 151.13) (xy 287.02 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdaecd6a-2179-46ce-8910-8f4c109d065f")
-	)
-	(wire
-		(pts
 			(xy 359.41 209.55) (xy 359.41 205.74)
 		)
 		(stroke
@@ -8676,7 +8965,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 144.78) (xy 162.56 144.78)
+			(xy 137.16 144.78) (xy 144.78 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8766,16 +9055,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 67.31) (xy 154.94 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2ddc0cb-0061-476c-a97b-b47ec0b65892")
-	)
-	(wire
-		(pts
 			(xy 248.92 252.73) (xy 255.27 252.73)
 		)
 		(stroke
@@ -8826,7 +9105,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 128.27) (xy 116.84 128.27)
+			(xy 124.46 128.27) (xy 125.73 128.27)
 		)
 		(stroke
 			(width 0)
@@ -8956,16 +9235,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 46.99) (xy 167.64 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de2e365e-dda8-4221-9cb9-6b594c85bfa4")
-	)
-	(wire
-		(pts
 			(xy 237.49 176.53) (xy 223.52 176.53)
 		)
 		(stroke
@@ -8983,6 +9252,16 @@
 			(type default)
 		)
 		(uuid "de51fe46-c3f5-4286-ad34-16a5b4e91dee")
+	)
+	(wire
+		(pts
+			(xy 162.56 69.85) (xy 163.83 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1718c94-fd2b-4b16-9bb9-0e50a177d10d")
 	)
 	(wire
 		(pts
@@ -9086,7 +9365,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 144.78) (xy 179.07 144.78)
+			(xy 144.78 144.78) (xy 161.29 144.78)
 		)
 		(stroke
 			(width 0)
@@ -9143,16 +9422,6 @@
 			(type default)
 		)
 		(uuid "ead5107a-aa42-473a-9048-9dd08649c04a")
-	)
-	(wire
-		(pts
-			(xy 147.32 57.15) (xy 154.94 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb025e5f-3a52-44ff-9595-68c7a564f69d")
 	)
 	(wire
 		(pts
@@ -9314,6 +9583,16 @@
 		)
 		(uuid "00ab7531-317c-4461-8968-d9ea017cfa5e")
 	)
+	(label "VDC_ZENER"
+		(at 285.75 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00cb339b-dd6e-44be-be7c-49d24bd60b40")
+	)
 	(label "GPIO2"
 		(at 330.2 82.55 0)
 		(effects
@@ -9353,6 +9632,16 @@
 			(justify right bottom)
 		)
 		(uuid "096b2773-b950-4c4b-951e-82dba82706e0")
+	)
+	(label "DCC_TTL"
+		(at 173.99 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0fb4f3c0-1b0b-4864-90c8-463863559d4e")
 	)
 	(label "COMP_P"
 		(at 58.42 157.48 0)
@@ -9433,16 +9722,6 @@
 			(justify right bottom)
 		)
 		(uuid "27afdf15-5e73-4bbe-a9d0-7a7171819c52")
-	)
-	(label "DCC_TTL"
-		(at 175.26 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "27b9df86-98db-4937-835d-aa37a93146d1")
 	)
 	(label "GPIO5"
 		(at 359.41 60.96 0)
@@ -9565,7 +9844,7 @@
 		(uuid "44e6d957-cfc2-45b5-91f1-c7686536d4b9")
 	)
 	(label "CAP_VDC"
-		(at 179.07 128.27 180)
+		(at 161.29 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9605,7 +9884,7 @@
 		(uuid "4f276f38-bc23-41d9-ba28-9a00589b847d")
 	)
 	(label "CAP+"
-		(at 179.07 144.78 180)
+		(at 161.29 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9653,6 +9932,16 @@
 			(justify left bottom)
 		)
 		(uuid "5f2b29f1-5d1a-417f-9918-7d2c63019900")
+	)
+	(label "VDC_ZENER"
+		(at 175.26 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "60ec7175-4ef0-484c-a0b6-ac2e619a078e")
 	)
 	(label "AUX10"
 		(at 184.15 246.38 180)
@@ -9714,16 +10003,6 @@
 		)
 		(uuid "6d008043-253e-443d-80bc-d2f9e6fb545b")
 	)
-	(label "TRACK_LEFT"
-		(at 166.37 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6dfec755-290c-4043-ab85-a4a5368709fa")
-	)
 	(label "GPIO17"
 		(at 378.46 215.9 180)
 		(effects
@@ -9765,7 +10044,7 @@
 		(uuid "76eb49c6-36b4-4b7a-8dfb-abf83ca0744a")
 	)
 	(label "CAP_ENABLE"
-		(at 134.62 135.89 0)
+		(at 116.84 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9813,16 +10092,6 @@
 			(justify left bottom)
 		)
 		(uuid "809a8b10-a23c-4748-8f35-1ec6e1a1a348")
-	)
-	(label "CAP_ENABLE"
-		(at 107.95 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8597ee71-8976-4641-9668-f3a12964ee63")
 	)
 	(label "ADC_EMF_B"
 		(at 285.75 156.21 180)
@@ -9983,6 +10252,16 @@
 			(justify right bottom)
 		)
 		(uuid "a0bd157c-70cf-4d54-bdd2-3bbb547858bf")
+	)
+	(label "TRACK_LEFT"
+		(at 143.51 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a212d301-12bc-4a5b-bdc6-1df3bcf25003")
 	)
 	(label "AUX12"
 		(at 191.77 227.33 0)
@@ -10214,16 +10493,6 @@
 		)
 		(uuid "dfe9adfb-17c6-4054-868d-405a2389d726")
 	)
-	(label "ADC_OFFSET"
-		(at 285.75 151.13 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e0ecc9fc-c784-4d21-b521-6622855ac667")
-	)
 	(label "AUX2 (VDC)"
 		(at 69.85 252.73 180)
 		(effects
@@ -10334,6 +10603,72 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "pico2-test-mule:GND_1")
+		(at 163.83 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07b2606a-a3b9-4302-be14-b2e0d460e288")
+		(property "Reference" "#PWR063"
+			(at 163.83 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "102d2ea8-8bb4-476c-9b07-f018e40e464f")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -11929,108 +12264,6 @@
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 165.1 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2778dac0-2866-416f-8bc5-3766c4885c6f")
-		(property "Reference" "Q1"
-			(at 171.45 57.658 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 171.45 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 170.18 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 170.18 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 165.1 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2937136"
-			(at 165.1 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.4"
-			(at 165.1 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5510f91b-f725-4ab9-bc48-462a26cee7d0")
-		)
-		(pin "3"
-			(uuid "6ce796a7-51a8-4f96-9207-811f36785911")
-		)
-		(pin "5"
-			(uuid "57fcd5eb-85a1-43b7-b367-d2b0ea2b699d")
-		)
-		(pin "1"
-			(uuid "01e6d373-a647-4eb4-9b1c-f10e527c750b")
-		)
-		(pin "2"
-			(uuid "2583df00-46ee-4f7b-9c22-f28110d1ad11")
-		)
-		(pin "6"
-			(uuid "0eef9a93-2dd7-40ce-bfb5-f6a0b8e318cc")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pico2-test-mule:GND")
 		(at 212.09 232.41 0)
 		(unit 1)
@@ -12178,6 +12411,87 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico2-test-mule:Q_NMOS_GSD")
+		(at 80.01 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2beedee1-7810-4ac1-8cda-d44afcd93b8f")
+		(property "Reference" "Q1"
+			(at 86.106 129.286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AP1606"
+			(at 86.106 131.826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pico2-test-mule:Diodes_DFN1006-3"
+			(at 85.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589040828304408576"
+			(at 80.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 80.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2849580"
+			(at 80.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0a27356-3e3e-4956-bb6d-7c9cfdc73f01")
+		)
+		(pin "1"
+			(uuid "35b06875-4f39-4766-a4ad-5f3d7bba499a")
+		)
+		(pin "3"
+			(uuid "045a10f4-1950-4ac2-8c50-11be981ead71")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -12434,109 +12748,6 @@
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "RN2")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 152.4 135.89 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2d0e1a88-0ea5-4f39-9dd7-0ab60ffa31f8")
-		(property "Reference" "Q4"
-			(at 144.78 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 157.48 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 157.48 137.795 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 157.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 152.4 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2937136"
-			(at 152.4 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.4"
-			(at 152.4 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "c31f553e-10aa-4948-8d13-93acb017ce89")
-		)
-		(pin "3"
-			(uuid "3d60ff79-cfb9-4aa2-a732-11dcc032b545")
-		)
-		(pin "5"
-			(uuid "0d1543c6-6c7f-489d-938b-df94dee94cfb")
-		)
-		(pin "1"
-			(uuid "0d8295cc-79ed-41ce-aac7-d2705559bd43")
-		)
-		(pin "2"
-			(uuid "7526528e-ad41-4d42-a236-c5068e10210c")
-		)
-		(pin "6"
-			(uuid "e57feeac-9701-4a0f-82df-ee628bdbd7c8")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q4")
-					(unit 2)
 				)
 			)
 		)
@@ -12933,6 +13144,84 @@
 		)
 	)
 	(symbol
+		(lib_id "pico2-test-mule:D_Zener")
+		(at 163.83 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3526c6f7-089f-40e4-b9f8-e66ea6c7263b")
+		(property "Reference" "D20"
+			(at 166.37 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C3V3S"
+			(at 166.37 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pico2-test-mule:D_SOD-323"
+			(at 163.83 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8564879653317214208"
+			(at 163.83 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 163.83 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19077437"
+			(at 163.83 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d60beabe-732a-4083-8372-8436ae3614a6")
+		)
+		(pin "2"
+			(uuid "5cf3d35b-e0b7-471e-b75a-e6d3a3affa1d")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "pico2-test-mule:GND")
 		(at 69.85 165.1 0)
 		(mirror y)
@@ -13090,6 +13379,72 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "pico2-test-mule:GND_1")
+		(at 163.83 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39bb04ec-bdce-4ee2-a155-7eae4da63d21")
+		(property "Reference" "#PWR062"
+			(at 163.83 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7adf0d61-2cac-4fe0-9c00-271a417a5829")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -16173,101 +16528,6 @@
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:R")
-		(at 154.94 52.07 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8d81bc61-b270-4df7-a508-7753d89487a9")
-		(property "Reference" "R5"
-			(at 159.385 50.165 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6.8K"
-			(at 158.75 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
-			(at 153.162 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 158.75 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25944"
-			(at 154.94 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.26"
-			(at 154.94 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aa22de5f-da64-445c-855c-2fb7b2d4925f")
-		)
-		(pin "2"
-			(uuid "248985ca-ee85-4671-967e-e3a23483c733")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pico2-test-mule:DMN2991UDA-7B")
 		(at 372.11 39.37 0)
 		(unit 2)
@@ -16695,6 +16955,92 @@
 		)
 	)
 	(symbol
+		(lib_id "pico2-test-mule:R")
+		(at 158.75 69.85 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99a25bc6-4686-4599-8f3e-118e8105ab97")
+		(property "Reference" "R16"
+			(at 158.75 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6.8K"
+			(at 158.75 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
+			(at 158.75 68.072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.26"
+			(at 158.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25944"
+			(at 158.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "472ffcd2-72e3-41c5-9849-1d2babd0575c")
+		)
+		(pin "2"
+			(uuid "7821d3f0-1561-4aa8-809a-a403ec8501d6")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "pico2-test-mule:GND_1")
 		(at 332.74 212.09 0)
@@ -16992,72 +17338,6 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "Q10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "pico2-test-mule:GND_1")
-		(at 154.94 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a48152b5-b1a2-4554-b9c0-2a9e9c971ba0")
-		(property "Reference" "#PWR020"
-			(at 154.94 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.94 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40df0c52-a4c6-4a8d-9b9e-1d356f0ce258")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -17750,108 +18030,6 @@
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 125.73 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b0c863ab-91cf-454b-96a0-470e2c9fda9e")
-		(property "Reference" "Q4"
-			(at 132.08 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 132.08 140.716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 130.81 137.795 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 130.81 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 125.73 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2937136"
-			(at 125.73 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.4"
-			(at 125.73 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5510f91b-f725-4ab9-bc48-462a26cee7cd")
-		)
-		(pin "3"
-			(uuid "6ce796a7-51a8-4f96-9207-811f3678590e")
-		)
-		(pin "5"
-			(uuid "57fcd5eb-85a1-43b7-b367-d2b0ea2b699a")
-		)
-		(pin "1"
-			(uuid "120d3556-ecd7-4217-94f3-77ce3986ca99")
-		)
-		(pin "2"
-			(uuid "fbc2290e-eebb-453e-8242-c18fa81e61a1")
-		)
-		(pin "6"
-			(uuid "61f2de38-2a9e-4251-87ff-0b17b0d163f0")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pico2-test-mule:+3.3V")
 		(at 299.72 148.59 90)
 		(mirror x)
@@ -18289,84 +18467,6 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "pico2-test-mule:C")
-		(at 147.32 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b46cf8c6-16d6-46fe-afc4-411d91bb8bc9")
-		(property "Reference" "C6"
-			(at 143.51 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "470pF"
-			(at 143.51 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "pico2-test-mule:C_0805_2012Metric"
-			(at 148.2852 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 147.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1743"
-			(at 147.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b97a575e-f59e-4bc2-bf5c-b6c9fe07c0cb")
-		)
-		(pin "2"
-			(uuid "cacfbc48-7a33-4fe2-8b4e-148d35c96aad")
-		)
-		(instances
-			(project ""
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -18860,7 +18960,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:VDC")
-		(at 115.57 128.27 90)
+		(at 124.46 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18869,7 +18969,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd2f37d0-7141-48c6-abda-968631be247f")
 		(property "Reference" "#PWR016"
-			(at 119.38 128.27 0)
+			(at 128.27 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18878,7 +18978,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 111.76 128.2699 90)
+			(at 120.65 128.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18887,7 +18987,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 128.27 0)
+			(at 124.46 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18896,7 +18996,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 128.27 0)
+			(at 124.46 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18905,7 +19005,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 115.57 128.27 0)
+			(at 124.46 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19646,55 +19746,32 @@
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:DMN2991UDA-7B")
-		(at 80.01 130.81 0)
-		(unit 2)
+		(lib_id "pico2-test-mule:R")
+		(at 158.75 50.8 270)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ce3be158-c674-42bb-a73b-5583dfaaabda")
-		(property "Reference" "Q1"
-			(at 86.36 131.318 0)
+		(uuid "cf53aecb-c3e9-48d2-bd1f-1d1f64c6ea71")
+		(property "Reference" "R15"
+			(at 158.75 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "DMN2991UDA-7B"
-			(at 86.36 133.604 0)
+		(property "Value" "6.8K"
+			(at 158.75 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "pico2-test-mule:X2-DFN0806-6_L0.8-W0.6_X2-DFN0806-6"
-			(at 85.09 132.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_Diodes-Incorporated-DMN2991UDA-7B_C2937136.pdf"
-			(at 85.09 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 450mA 310mW 990mΩ@100mA,4.5V 1V@250uA 2 N-Channel X2-DFN0806-6 MOSFETs ROHS"
-			(at 80.01 144.018 0)
+		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
+			(at 158.75 49.022 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19702,8 +19779,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2937136"
-			(at 80.01 130.81 0)
+		(property "Datasheet" "~"
+			(at 158.75 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19711,8 +19788,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.4"
-			(at 80.01 130.81 0)
+		(property "Description" "Resistor"
+			(at 158.75 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19720,29 +19797,116 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "f7855cad-ca79-4f60-a204-dd1afca88b74")
+		(property "Height" "0.26"
+			(at 158.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "f67d14c4-e8cf-47a8-9137-f056bb43531c")
-		)
-		(pin "5"
-			(uuid "658dccf7-89b1-414a-824f-e87460ccd592")
+		(property "LCSC" "C25944"
+			(at 158.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "0d8295cc-79ed-41ce-aac7-d2705559bd3f")
+			(uuid "7a95db56-c219-45a7-aa81-d7324b6e78c8")
 		)
 		(pin "2"
-			(uuid "7526528e-ad41-4d42-a236-c5068e102108")
-		)
-		(pin "6"
-			(uuid "e57feeac-9701-4a0f-82df-ee628bdbd7c4")
+			(uuid "ca53e2c1-1064-4a51-a698-d2aa52fe554b")
 		)
 		(instances
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "Q1")
-					(unit 2)
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico2-test-mule:Q_NMOS_GSD")
+		(at 134.62 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cfcd0a22-bbda-4f4b-b061-52a3c756eae7")
+		(property "Reference" "Q4"
+			(at 123.444 139.446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AP1606"
+			(at 123.444 141.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pico2-test-mule:Diodes_DFN1006-3"
+			(at 139.7 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589040828304408576"
+			(at 134.62 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 134.62 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2849580"
+			(at 134.62 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6fa6f091-609d-434e-a0dc-fbb2d00b14f1")
+		)
+		(pin "1"
+			(uuid "711ff0c7-7769-48a9-b467-521999df6d5f")
+		)
+		(pin "3"
+			(uuid "bf11c7c5-5db0-4a51-b7a6-9097d3854cb3")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "Q4")
+					(unit 1)
 				)
 			)
 		)
@@ -20099,7 +20263,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:D_Schottky")
-		(at 162.56 135.89 90)
+		(at 144.78 135.89 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20108,7 +20272,7 @@
 		(dnp no)
 		(uuid "d60fd550-ae86-4160-a09f-444950f56abf")
 		(property "Reference" "D18"
-			(at 167.386 134.62 90)
+			(at 149.606 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20116,7 +20280,7 @@
 			)
 		)
 		(property "Value" "RB161QS-40"
-			(at 172.466 137.16 90)
+			(at 154.686 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20124,7 +20288,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:DIO-SMD_L1.0-W0.6-P0.65-RD"
-			(at 162.56 135.89 0)
+			(at 144.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20133,7 +20297,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304281727_FUXINSEMI-RB161QS-40_C5563750.pdf"
-			(at 162.56 135.89 0)
+			(at 144.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20142,7 +20306,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 162.56 135.89 0)
+			(at 144.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20151,7 +20315,7 @@
 			)
 		)
 		(property "LCSC" "C5563750"
-			(at 162.56 135.89 0)
+			(at 144.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20160,7 +20324,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 162.56 135.89 0)
+			(at 144.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20169,7 +20333,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 162.56 135.89 90)
+			(at 144.78 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20272,6 +20436,84 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico2-test-mule:D_Zener")
+		(at 163.83 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7da035f-5a1d-475a-bfac-ed730c945305")
+		(property "Reference" "D21"
+			(at 166.37 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C3V3S"
+			(at 166.37 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pico2-test-mule:D_SOD-323"
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8564879653317214208"
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19077437"
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "788ffc1c-1ee9-44c4-bcb4-877253432c8c")
+		)
+		(pin "2"
+			(uuid "108c885c-0208-4f03-a4a5-9f092d586187")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -20865,7 +21107,7 @@
 	)
 	(symbol
 		(lib_id "pico2-test-mule:D_Schottky")
-		(at 120.65 128.27 0)
+		(at 129.54 128.27 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20874,7 +21116,7 @@
 		(dnp no)
 		(uuid "e8cda485-fa23-45ae-a9e1-7f2d69ad255b")
 		(property "Reference" "D13"
-			(at 119.38 121.92 0)
+			(at 128.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20882,7 +21124,7 @@
 			)
 		)
 		(property "Value" "RB161QS-40"
-			(at 119.38 124.46 0)
+			(at 128.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20890,7 +21132,7 @@
 			)
 		)
 		(property "Footprint" "pico2-test-mule:DIO-SMD_L1.0-W0.6-P0.65-RD"
-			(at 120.65 128.27 0)
+			(at 129.54 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20899,7 +21141,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304281727_FUXINSEMI-RB161QS-40_C5563750.pdf"
-			(at 120.65 128.27 0)
+			(at 129.54 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20908,7 +21150,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 120.65 128.27 0)
+			(at 129.54 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20917,7 +21159,7 @@
 			)
 		)
 		(property "LCSC" "C5563750"
-			(at 120.65 128.27 0)
+			(at 129.54 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20926,7 +21168,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 120.65 128.27 0)
+			(at 129.54 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20935,7 +21177,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 120.65 128.27 0)
+			(at 129.54 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21496,101 +21738,6 @@
 		)
 	)
 	(symbol
-		(lib_id "pico2-test-mule:R")
-		(at 154.94 63.5 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f5be963d-bf3f-47cb-92b9-f61d4a1296e3")
-		(property "Reference" "R6"
-			(at 159.385 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2K"
-			(at 158.75 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pico2-test-mule:R_0402_1005Metric"
-			(at 153.162 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 158.75 65.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25879"
-			(at 154.94 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.26"
-			(at 154.94 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4384c4d-a86a-4e73-b3be-431d12eb10df")
-		)
-		(pin "2"
-			(uuid "751dc576-5faa-4ddf-aa7d-7cd571d448cd")
-		)
-		(instances
-			(project "pico2-test-mule"
-				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pico2-test-mule:Conn_01x05_Pin")
 		(at 274.32 240.03 0)
 		(unit 1)
@@ -21860,6 +22007,72 @@
 			(project "pico2-test-mule"
 				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico2-test-mule:VDC")
+		(at 153.67 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd291420-df4d-4c41-82b1-a6323afd6bb4")
+		(property "Reference" "#PWR061"
+			(at 153.67 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDC"
+			(at 153.67 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 153.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0571b38-2d4c-4ff6-a740-41e32acc2514")
+		)
+		(instances
+			(project "pico2-test-mule"
+				(path "/031d6905-cbf1-4a9d-babe-060fa5402248"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
