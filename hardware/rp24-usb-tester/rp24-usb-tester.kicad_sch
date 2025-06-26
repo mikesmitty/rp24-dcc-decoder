@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(date "2025-06-21")
-		(rev "v0.3.2")
+		(rev "v0.3.3")
 	)
 	(lib_symbols
 		(symbol "rp24-usb-tester:+5V"
