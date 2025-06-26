@@ -9,7 +9,7 @@
 		(at 0 -1.68 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "24a30bc8-009c-40e4-abfb-9b9e7fa858e6")
+		(uuid "4985b7a0-97fb-4d5d-ab8e-49d754c9ae07")
 		(effects
 			(font
 				(size 1 1)
@@ -21,7 +21,7 @@
 		(at 0 1.68 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4b10fbde-b71c-436d-b0aa-ddcdb16af1fd")
+		(uuid "23c68859-e109-4290-b188-597f3c5b65e2")
 		(effects
 			(font
 				(size 1 1)
@@ -34,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "46062f21-06c4-4703-9f6a-571c0d473e0a")
+		(uuid "a2e6e7fa-8644-482d-b4c9-dfd50a539ce6")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -47,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "16794db2-243b-48d3-99cd-7a8b46f78433")
+		(uuid "0651f992-01a0-4c6c-8296-c6f6378e8b85")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e2c8dd63-09cd-4496-857a-49cde2f19947")
+		(uuid "51c9da2a-b56a-4c8a-957f-bdc9d5563c4b")
 		(effects
 			(font
 				(size 1 1)
@@ -73,7 +73,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b108e3f6-6818-469d-940f-9f0d274d4bd2")
+		(uuid "18878401-acdb-43fe-b0a1-c368df2ef674")
 		(effects
 			(font
 				(size 1 1)
@@ -86,7 +86,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6afbedde-a7b1-45b6-8467-f9ff5f1f41d8")
+		(uuid "8047865b-fd47-45c4-bcf4-eb308714d269")
 		(effects
 			(font
 				(size 1 1)
@@ -103,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "019748b0-b3bd-4cfa-8c52-d56e3bff4a3a")
+		(uuid "1169f6db-6e10-41dd-bac1-7fd0c50a4112")
 	)
 	(fp_line
 		(start -0.261252 0.735)
@@ -113,7 +113,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "eb8ba7b9-6f90-4750-b99a-68f989b069f5")
+		(uuid "b66ce897-d7d4-48e8-872a-9c4cb686c7c0")
 	)
 	(fp_line
 		(start -1.7 -0.98)
@@ -123,7 +123,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "fce1fa91-fcde-4936-be0e-03317dc6b7b7")
+		(uuid "e9e17202-e82a-4d06-ad82-c04226a64ec9")
 	)
 	(fp_line
 		(start -1.7 0.98)
@@ -133,7 +133,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "fc7bb34b-5e25-4185-a057-81b758485cc2")
+		(uuid "80d7b116-0799-4fd0-8d7a-5477d1c0e2f4")
 	)
 	(fp_line
 		(start 1.7 -0.98)
@@ -143,7 +143,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f12f9558-63c7-41c6-b177-6860b1834c21")
+		(uuid "f31dca55-930e-4f7d-b503-85fc6ea46729")
 	)
 	(fp_line
 		(start 1.7 0.98)
@@ -153,7 +153,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "d5a0ad43-33fc-4519-9f9a-1287182fddcd")
+		(uuid "353800c6-69d2-4e9f-9476-66b7063df4b9")
 	)
 	(fp_line
 		(start -1 -0.625)
@@ -163,7 +163,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1306dfbb-a6cd-48a3-9215-87a89aef7e07")
+		(uuid "62b744a6-c050-4baa-9a3f-b8f32663e8ee")
 	)
 	(fp_line
 		(start -1 0.625)
@@ -173,7 +173,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "3d7125f5-8679-4d25-9ca0-24e2e9ed152b")
+		(uuid "1f396c4c-41ef-4862-94e1-b38176120984")
 	)
 	(fp_line
 		(start 1 -0.625)
@@ -183,7 +183,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "ae28adf5-8984-48f2-b08e-38e94d742796")
+		(uuid "031872cc-7d07-4f37-bb15-49b6666a088a")
 	)
 	(fp_line
 		(start 1 0.625)
@@ -193,12 +193,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9d844f4a-8bc4-4b05-8d83-c4784532cefc")
+		(uuid "716da3fa-569b-4e0e-b0f4-229cadbad52a")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "6340c6eb-9312-4baf-8445-c2e32f655af1")
+		(uuid "d9fa66b3-7171-4a6f-97d8-ceac813e935e")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -211,14 +211,14 @@
 		(size 1 1.45)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "6064aba7-3289-48fd-8a31-02d540b50a7e")
+		(uuid "6dbc2d21-d383-4f96-ae99-2c8bf072dd9d")
 	)
 	(pad "2" smd roundrect
 		(at 0.95 0)
 		(size 1 1.45)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "684a78b7-c1dc-4d0c-9e13-8651923b76e0")
+		(uuid "97e792ec-9e69-4e0e-9b8a-8821b4261ebb")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"

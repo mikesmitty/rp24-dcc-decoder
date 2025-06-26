@@ -179,7 +179,7 @@
 	(net 48 "/SW")
 	(net 49 "Net-(D14-K)")
 	(net 50 "Net-(U1-FB)")
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+	(footprint "rp24-usb-tester:PinHeader_1x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "0a8135f0-3f99-4ff7-bd56-0eb4e2679017")
 		(at 138.04 116.1 90)
@@ -483,7 +483,7 @@
 			(uuid "52fd4892-21e0-4b1f-845a-746ad4680dde")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -495,7 +495,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "10ab148a-fc5c-499c-8773-9516ea3d1d74")
 		(at 156.96296 120.775 90)
@@ -747,7 +747,7 @@
 			(uuid "a366c012-6078-4fdd-8ed0-c3c890ea9322")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1264,7 +1264,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "rp24-usb-tester:SOT-23"
 		(layer "F.Cu")
 		(uuid "1ae7f62d-ba44-4678-93f3-19f14cf84c9b")
 		(at 139.7 102.8 90)
@@ -1559,7 +1559,7 @@
 			(uuid "f9c68453-4373-40cf-bc25-3f794653d307")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1571,7 +1571,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+	(footprint "rp24-usb-tester:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "1d75bc48-9d5b-4a19-af32-88ec2c4190eb")
 		(at 133.625 103 90)
@@ -1842,7 +1842,7 @@
 			(uuid "ce0d47b9-58d8-4b5e-988e-d6f8fdf3d344")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1854,7 +1854,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+	(footprint "rp24-usb-tester:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "247b0163-2210-4a0e-958c-63b49228e230")
 		(at 164.325 103 90)
@@ -2125,7 +2125,7 @@
 			(uuid "ac274cf9-1bdd-4ce0-88d4-e8e01aa5b412")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2137,7 +2137,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "2867c72d-610c-4fb4-8259-efb634075f89")
 		(at 148.05648 120.775 90)
@@ -2389,7 +2389,7 @@
 			(uuid "7262c9df-e332-4741-b6a7-6a495e460608")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2401,7 +2401,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "rp24-usb-tester:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "31e786a3-5861-4d13-85a3-fbb136eb2617")
 		(at 165.6 117.2)
@@ -2605,7 +2605,7 @@
 			(uuid "9c309b3f-aa97-4027-b941-be190902aa14")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2617,7 +2617,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
+	(footprint "rp24-usb-tester:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "326aa464-d3a8-44ae-abf9-3baec897fc56")
 		(at 137.15 120.825)
@@ -2914,7 +2914,7 @@
 			(uuid "309fbc29-1c2e-4bcb-8ae6-4afc9d7cc79b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Concave_4x0402.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_Array_Concave_4x0402.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2926,7 +2926,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "379f6281-6dc5-4946-9340-27288b7c1c3e")
 		(at 146.275184 120.775 90)
@@ -3178,7 +3178,7 @@
 			(uuid "134d8a82-e0a4-45ab-b19d-c4b4fd2b9603")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3190,7 +3190,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "45c31478-5b21-4eee-a9b8-7733dc41409e")
 		(at 158.744256 120.775 90)
@@ -3442,7 +3442,7 @@
 			(uuid "98702350-411c-4afa-9590-7c61a6c46edf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3454,7 +3454,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SMA"
+	(footprint "rp24-usb-tester:D_SMA"
 		(layer "F.Cu")
 		(uuid "53061ebb-00aa-4119-8a47-34c89b81b6a3")
 		(at 134.2 119.1 90)
@@ -3756,7 +3756,7 @@
 			(uuid "c9c2adc7-d4b9-49e7-94df-d6af5ab9a9f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/D_SMA.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3768,7 +3768,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "rp24-usb-tester:SOT-23"
 		(layer "F.Cu")
 		(uuid "5ccb5344-9855-4877-8cc5-168316b42025")
 		(at 149.9 102.8 90)
@@ -4063,7 +4063,7 @@
 			(uuid "8ab509f2-9591-45d7-8220-dd0c09572247")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4075,7 +4075,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "rp24-usb-tester:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "64b36829-fb3a-4b55-9736-8f9d9b884daa")
 		(at 135.5 112.3 90)
@@ -4305,7 +4305,7 @@
 			(uuid "e5cd47ab-c0ee-4e39-ad65-632a9d83a4bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4317,7 +4317,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "rp24-usb-tester:SOT-23"
 		(layer "F.Cu")
 		(uuid "66fa63ba-0be5-456c-a32a-bc8ab5bcf090")
 		(at 143.1 102.8 90)
@@ -4612,7 +4612,7 @@
 			(uuid "f5080e31-9cf7-4e94-8b72-726564f0c400")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4624,7 +4624,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "rp24-usb-tester:SOT-23"
 		(layer "F.Cu")
 		(uuid "6a2d665b-dadc-4c0e-80e2-9880ab814903")
 		(at 146.5 102.8 90)
@@ -4919,7 +4919,7 @@
 			(uuid "1d54f428-4376-49c2-8de1-862e85addbbb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4931,7 +4931,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6b335ac8-bc25-4a8d-9f83-906cb318e0ee")
 		(at 149.837776 120.775 90)
@@ -5183,7 +5183,7 @@
 			(uuid "c135e481-f828-4968-981f-fbd51388f020")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5195,7 +5195,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6f19ece0-d3a7-4d42-b904-602272f5c5d4")
 		(at 139.15 120.775 90)
@@ -5447,7 +5447,7 @@
 			(uuid "324eb954-1602-46a5-99d3-bfc103d24a8c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5459,7 +5459,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23-6"
+	(footprint "rp24-usb-tester:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "75d2a4d3-0b2d-4c08-9935-d9cfe88e2163")
 		(at 166 114.5)
@@ -5758,7 +5758,7 @@
 			(uuid "38b4a0a7-dc12-4d21-84cd-29a6c75aa666")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/SOT-23-6.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5770,7 +5770,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "79b18e63-3bc3-4536-868f-8c69115a2b24")
 		(at 144.493888 120.775 90)
@@ -6022,7 +6022,7 @@
 			(uuid "c53571b2-5ff4-43f7-8787-1f24ae89b3e4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6034,7 +6034,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "rp24-usb-tester:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "7a36a2a6-e031-41b9-8833-5be6cf8064c8")
 		(at 165.6 107)
@@ -6264,7 +6264,7 @@
 			(uuid "2e4fe9f8-8181-49b8-96f5-1795fc36e436")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6276,7 +6276,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "rp24-usb-tester:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "7eb4571c-5f2a-4cea-a0d7-9fe065ee38f0")
 		(at 135.5 108.3 90)
@@ -6506,7 +6506,7 @@
 			(uuid "a3f21fdf-fe13-45be-8dd4-7c969d5b6869")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6518,7 +6518,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+	(footprint "rp24-usb-tester:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "7f3f64a5-78e6-4b09-abeb-8eed906a0c70")
 		(at 130.575 117.4 -90)
@@ -6789,7 +6789,7 @@
 			(uuid "da75dd2a-e26a-4259-bd10-1989f82fdae0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6801,7 +6801,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
+	(footprint "rp24-usb-tester:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "9931e3f6-e672-456e-aa44-b04b7c065450")
 		(at 162.55 120.825 180)
@@ -7098,7 +7098,7 @@
 			(uuid "ed145413-5e17-4b8e-8402-38cad2acae58")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Concave_4x0402.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_Array_Concave_4x0402.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7110,7 +7110,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "rp24-usb-tester:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9feb929c-fb8e-4afa-9079-3a0ace45f211")
 		(at 163.441172 113.316153 90)
@@ -7314,7 +7314,7 @@
 			(uuid "a41950dc-4a78-4880-90e1-dc5d406dbdda")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7326,7 +7326,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a10112ce-b97c-4e93-a20c-808a9e4f4477")
 		(at 140.931296 120.775 90)
@@ -7578,7 +7578,7 @@
 			(uuid "c06665dc-1695-44c8-9f7b-db525f18da40")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7590,7 +7590,7 @@
 			)
 		)
 	)
-	(footprint "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+	(footprint "rp24-usb-tester:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 		(layer "F.Cu")
 		(uuid "a127b545-f95c-4d0d-ab5e-4e0dc119c7c6")
 		(at 129.095 110.2 -90)
@@ -8004,7 +8004,7 @@
 			(uuid "20b86a60-39f7-47ac-bb3d-67160692dc80")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8016,7 +8016,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a4019a9c-c68e-4694-a377-67ee2170dce9")
 		(at 142.712592 120.775 90)
@@ -8268,7 +8268,7 @@
 			(uuid "2d04f2fa-557c-4c29-9ade-18137a894195")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8489,7 +8489,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+	(footprint "rp24-usb-tester:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "bbe7b352-d7e5-4d69-8bd5-e067db056594")
 		(at 156.8 103 90)
@@ -8760,7 +8760,7 @@
 			(uuid "aba0b1ce-dd1b-4d98-8915-b7b93a4d06e0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8772,7 +8772,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23"
+	(footprint "rp24-usb-tester:SOT-23"
 		(layer "F.Cu")
 		(uuid "cb39ddd4-cc5f-452a-bacd-61d7887e94d9")
 		(at 153.3 102.8 90)
@@ -9067,7 +9067,7 @@
 			(uuid "52b8e1a2-7750-453e-bbb9-e307a01d73f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9079,7 +9079,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "cd8b075d-f0eb-444f-abd0-bf40ebc3a383")
 		(at 160.525556 120.775 90)
@@ -9331,7 +9331,7 @@
 			(uuid "c481a34c-62cb-41d1-b4d2-8b09cb57120e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9343,7 +9343,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "rp24-usb-tester:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "d16347b9-59e5-4167-870e-30dcf731faf0")
 		(at 164.1 121.1 90)
@@ -9573,7 +9573,7 @@
 			(uuid "e0fcb6dc-4247-4180-a2ac-1f3de4251385")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9585,7 +9585,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Concave_4x0402"
+	(footprint "rp24-usb-tester:R_Array_Concave_4x0402"
 		(layer "F.Cu")
 		(uuid "d840330f-cf15-403c-80db-2af3baa41f4b")
 		(at 151.2 116.089478 -90)
@@ -9882,7 +9882,7 @@
 			(uuid "a04b840b-c733-42d3-8ce0-35e370eab113")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Concave_4x0402.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_Array_Concave_4x0402.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9894,7 +9894,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "rp24-usb-tester:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "d86788b7-a942-4afd-aa33-d6843d8ab173")
 		(at 169.1 115.5 -90)
@@ -10124,7 +10124,7 @@
 			(uuid "0aaa2946-bac7-44c9-bf53-9c2ebf55cefb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10136,7 +10136,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e5d849cc-9c8e-46b4-bcf2-240553d0f490")
 		(at 151.619072 120.775 90)
@@ -10388,7 +10388,7 @@
 			(uuid "3733a975-f8b1-489f-bb3c-2b4b329dd32c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10400,7 +10400,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "rp24-usb-tester:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e6193bce-f888-48c2-8a1d-3cc6f704529e")
 		(at 165.6 118.7)
@@ -10604,7 +10604,7 @@
 			(uuid "87afe9e4-b2ee-490f-ba15-343d78136408")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10616,7 +10616,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "eada49f8-53be-4916-b961-19b1ff60c3cf")
 		(at 155.181664 120.775 90)
@@ -10868,7 +10868,7 @@
 			(uuid "0ed8500c-04ef-4777-8acd-a600c207819a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10880,7 +10880,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "rp24-usb-tester:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "ed3adc2d-0cea-4b0c-93c4-0d02e257920b")
 		(at 153.400368 120.775 90)
@@ -11132,7 +11132,7 @@
 			(uuid "24e74dd0-3926-4593-9a29-e4ebf001c971")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11144,7 +11144,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+	(footprint "rp24-usb-tester:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f119bbf7-75ff-43b0-9360-62df54cdadc1")
 		(at 154.2 116.1 90)
@@ -11437,7 +11437,7 @@
 			(uuid "1f04e963-f013-408e-9c9c-db3f202ed5fc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/rp24-usb-tester.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13177,7 +13177,7 @@
 			)
 			(justify mirror)
 		)
-		(render_cache "RP24 Decoder\nUSB Programmer\nv0.3.2" 0
+		(render_cache "RP24 Decoder\nUSB Programmer\nv0.3.3" 0
 			(polygon
 				(pts
 					(xy 165.811255 106.911685) (xy 165.901786 106.920952) (xy 165.988355 106.935133) (xy 165.988355 108.082)
@@ -13654,20 +13654,25 @@
 			)
 			(polygon
 				(pts
-					(xy 158.316175 111.255168) (xy 158.322471 111.317647) (xy 158.34138 111.377681) (xy 158.370072 111.434979)
-					(xy 158.406813 111.49096) (xy 158.449364 111.544128) (xy 158.497525 111.595887) (xy 158.596517 111.691508)
-					(xy 158.651105 111.744411) (xy 158.707305 111.803982) (xy 158.755152 111.860182) (xy 158.773212 111.885691)
-					(xy 158.781164 111.902974) (xy 158.280857 111.902974) (xy 158.280857 112.114) (xy 159.056524 112.114)
-					(xy 159.059894 112.067032) (xy 159.059894 112.026732) (xy 159.053209 111.948475) (xy 159.033882 111.879013)
-					(xy 159.00379 111.814089) (xy 158.965812 111.753937) (xy 158.921225 111.698009) (xy 158.870997 111.645639)
-					(xy 158.76607 111.544889) (xy 158.690526 111.471836) (xy 158.62839 111.404718) (xy 158.60402 111.371295)
-					(xy 158.586405 111.339212) (xy 158.575018 111.305966) (xy 158.571311 111.2729) (xy 158.576684 111.225644)
-					(xy 158.591024 111.192185) (xy 158.613296 111.168853) (xy 158.659113 111.146512) (xy 158.717417 111.138591)
-					(xy 158.76164 111.142229) (xy 158.802193 111.152879) (xy 158.874367 111.186512) (xy 158.930641 111.225127)
-					(xy 158.965885 111.256121) (xy 159.090083 111.080706) (xy 159.010821 111.018378) (xy 158.918038 110.967353)
-					(xy 158.851308 110.942746) (xy 158.781313 110.927901) (xy 158.707305 110.922876) (xy 158.608877 110.929191)
-					(xy 158.531084 110.946397) (xy 158.462291 110.975467) (xy 158.409378 111.012635) (xy 158.367906 111.059933)
-					(xy 158.338889 111.116683) (xy 158.322094 111.180483)
+					(xy 158.76607 112.137447) (xy 158.861764 112.131585) (xy 158.959144 112.115831) (xy 159.044727 112.094289)
+					(xy 159.105177 112.072674) (xy 159.056524 111.865971) (xy 158.944856 111.905465) (xy 158.872535 111.920689)
+					(xy 158.776108 111.926421) (xy 158.699763 111.920574) (xy 158.645021 111.905224) (xy 158.606555 111.882604)
+					(xy 158.576821 111.850179) (xy 158.559046 111.81152) (xy 158.552846 111.764635) (xy 158.557951 111.721674)
+					(xy 158.57219 111.687991) (xy 158.594869 111.659919) (xy 158.625093 111.637433) (xy 158.660861 111.621304)
+					(xy 158.704814 111.610468) (xy 158.802999 111.602848) (xy 158.900379 111.602848) (xy 158.900379 111.401201)
+					(xy 158.789591 111.401201) (xy 158.718223 111.39446) (xy 158.685244 111.385264) (xy 158.656967 111.371819)
+					(xy 158.632883 111.352957) (xy 158.614175 111.328075) (xy 158.602477 111.297956) (xy 158.598202 111.258319)
+					(xy 158.601712 111.227909) (xy 158.611684 111.202852) (xy 158.627084 111.181266) (xy 158.646049 111.164163)
+					(xy 158.66838 111.151046) (xy 158.694702 111.141449) (xy 158.750976 111.133902) (xy 158.821273 111.139501)
+					(xy 158.884406 111.155737) (xy 158.943544 111.180368) (xy 158.996073 111.209446) (xy 159.085027 111.026704)
+					(xy 159.022085 110.991606) (xy 158.942364 110.958047) (xy 158.849161 110.932914) (xy 158.798759 110.925443)
+					(xy 158.744235 110.922876) (xy 158.645692 110.929405) (xy 158.567134 110.947276) (xy 158.497571 110.977489)
+					(xy 158.443743 111.016299) (xy 158.401257 111.064827) (xy 158.371569 111.120639) (xy 158.354069 111.182331)
+					(xy 158.348048 111.251065) (xy 158.352234 111.296022) (xy 158.36491 111.340399) (xy 158.386663 111.384861)
+					(xy 158.415605 111.424833) (xy 158.450116 111.457422) (xy 158.490711 111.483267) (xy 158.433796 111.512467)
+					(xy 158.387527 111.548913) (xy 158.35054 111.592883) (xy 158.323498 111.643464) (xy 158.306825 111.701194)
+					(xy 158.301007 111.767712) (xy 158.30789 111.845762) (xy 158.327898 111.915796) (xy 158.362098 111.978664)
+					(xy 158.411796 112.032886) (xy 158.474789 112.075789) (xy 158.557023 112.109823) (xy 158.649698 112.130047)
 				)
 			)
 		)
