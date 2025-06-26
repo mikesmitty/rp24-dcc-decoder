@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.5...pico2-test-mule-v0.3.0) (2025-06-26)
+
+
+### Features
+
+* zener diodes to detect both waves and cutouts ([4520e62](https://github.com/mikesmitty/rp24-dcc-decoder/commit/4520e620aadee4b4d5b46caad65a14fe12c72eaa))
+
 ## [0.2.5](https://github.com/mikesmitty/rp24-dcc-decoder/compare/pico2-test-mule-v0.2.4...pico2-test-mule-v0.2.5) (2025-06-26)
 
 
