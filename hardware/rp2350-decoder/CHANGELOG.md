@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.1.2...rp2350-decoder-v0.2.0) (2025-06-26)
+
+
+### Features
+
+* zener diodes to detect both waves and cutouts ([e85a1f7](https://github.com/mikesmitty/rp24-dcc-decoder/commit/e85a1f764ec8e276c3f0ad8270ab0958ef19c064))
+
+
+### Bug Fixes
+
+* un-swap capacitor shutdown circuit inputs ([61e69d1](https://github.com/mikesmitty/rp24-dcc-decoder/commit/61e69d1b25d5a35320f998b9ed846dfaee792550))
+
 ## [0.1.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.1.1...rp2350-decoder-v0.1.2) (2025-06-18)
 
 
