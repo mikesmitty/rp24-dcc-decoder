@@ -2635,7 +2635,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "220R"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2673,7 +2673,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C48442"
+		(property "LCSC" "C326868"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6819,7 +6819,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "220R"
 			(at 0 2.1 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6857,7 +6857,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C48442"
+		(property "LCSC" "C326868"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9603,7 +9603,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "220R"
 			(at 0 2.1 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -9641,7 +9641,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C48442"
+		(property "LCSC" "C326868"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")

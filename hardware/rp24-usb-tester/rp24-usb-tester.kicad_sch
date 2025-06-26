@@ -8401,7 +8401,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "220R"
 			(at 71.12 121.92 90)
 			(effects
 				(font
@@ -8436,7 +8436,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48442"
+		(property "LCSC" "C326868"
 			(at 71.12 128.27 90)
 			(effects
 				(font
@@ -9917,7 +9917,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "220R"
 			(at 128.27 121.92 90)
 			(effects
 				(font
@@ -9952,7 +9952,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48442"
+		(property "LCSC" "C326868"
 			(at 128.27 130.81 90)
 			(effects
 				(font
@@ -11283,7 +11283,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "220R"
 			(at 22.86 121.92 90)
 			(effects
 				(font
@@ -11318,7 +11318,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48442"
+		(property "LCSC" "C326868"
 			(at 22.86 128.27 90)
 			(effects
 				(font
