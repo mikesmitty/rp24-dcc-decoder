@@ -1,5 +1,5 @@
 Drill report for pico2-test-mule.kicad_pcb
-Created on 2025-03-14T09:56:35-0400
+Created on 2025-06-25T20:28:33-0400
 
 Copper Layer Stackup:
     =============================================================
@@ -10,10 +10,10 @@ Copper Layer Stackup:
 Drill file 'pico2-test-mule-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (74 holes)
+    T1  0.300mm  0.0118"  (75 holes)
     T2  1.000mm  0.0394"  (59 holes)
 
-    Total plated holes count 133
+    Total plated holes count 134
 
 
 Drill file 'pico2-test-mule-NPTH.drl' contains

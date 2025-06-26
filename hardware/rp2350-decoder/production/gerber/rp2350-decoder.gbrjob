@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-06-25T19:57:04-04:00"
+    "CreationDate": "2025-06-25T20:27:42-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "rp2350-decoder",
       "GUID": "72703233-3530-42d6-9465-636f6465722e",
-      "Revision": "v0.1.2"
+      "Revision": "v0.2.0"
     },
     "Size": {
       "X": 70.1,
