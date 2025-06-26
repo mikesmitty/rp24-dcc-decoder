@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.2...rp24-usb-tester-v0.3.3) (2025-06-26)
+
+
+### Bug Fixes
+
+* bump resistors to make LEDs less blinding ([2c4b003](https://github.com/mikesmitty/rp24-dcc-decoder/commit/2c4b00311665386e5128b5ffa2d54e06a1cdbff7))
+
 ## [0.3.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.1...rp24-usb-tester-v0.3.2) (2025-06-18)
 
 
