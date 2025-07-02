@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.2.0...v0.3.0) (2025-07-02)
+
+
+### Features
+
+* add basic ack functionality ([f5d5ae6](https://github.com/mikesmitty/rp24-dcc-decoder/commit/f5d5ae6a7456e60b06a05bcb1aa5879a4456d067))
+* overhaul motor controller ([99d4ee8](https://github.com/mikesmitty/rp24-dcc-decoder/commit/99d4ee804c4e48eec4de7833bd355d6945b4c168))
+
+
+### Bug Fixes
+
+* add missing import ([c64d183](https://github.com/mikesmitty/rp24-dcc-decoder/commit/c64d183ea62e0248e458cf550c6ac9474b331468))
+* enable motor control lockout mutex ([a0d5d45](https://github.com/mikesmitty/rp24-dcc-decoder/commit/a0d5d454318a02a385601f88090ae5ff6baa3785))
+
 ## [0.2.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.1.0...v0.2.0) (2025-03-23)
 
 
