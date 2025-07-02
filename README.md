@@ -4,6 +4,9 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 ![decoder top](images/rp2350-decoder-top.png)
 ![decoder bottom](images/rp2350-decoder-bottom.png)
 
+![decoder on USB programmer](images/decoder-on-usb-programmer.jpg)
+![decoder being read by JMRI](images/decoder-in-jmri.mp4)
+
 ## Features
 - 8x MOSFET-switched functions
 - 5x GPIO pins (3.3V input/output)
