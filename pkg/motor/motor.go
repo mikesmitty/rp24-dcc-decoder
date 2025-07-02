@@ -127,7 +127,7 @@ func (m *Motor) runMotorControl() {
 	} else {
 		m.pwmDuty = m.pid.State.ControlSignal
 	}
-	m.applyPWM(m.pwmDuty)
+	m.ApplyPWM(m.pwmDuty)
 
 	// Update the last control time
 	m.lastControlTime = now
@@ -175,7 +175,7 @@ func (m *Motor) SetSpeed(speed uint8, reverse bool) {
 
 // stopMotor stops the motor
 func (m *Motor) stopMotor() {
-	m.applyPWM(0.0)
+	m.ApplyPWM(0.0)
 }
 
 // emergencyStop immediately stops the motor

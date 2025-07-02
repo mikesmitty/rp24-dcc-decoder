@@ -4,6 +4,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
@@ -18,37 +19,49 @@ func main() {
 	hw = hal.NewHAL()
 	cvHandler := cv.NewCVHandler(versionToBytes(version))
 
-	dccPin, ok := hw.Pin("dcc")
+	dccPin, ok := hw.PinOk("dcc")
 	if !ok {
 		panic("DCC pin not found")
 	}
 
-	motorA, okA := hw.Pin("motorA")
-	motorB, okB := hw.Pin("motorB")
-	emfA, okEA := hw.Pin("emfA")
-	emfB, okEB := hw.Pin("emfB")
-	adcRef, okADC := hw.Pin("adcRef")
+	motorA, okA := hw.PinOk("motorA")
+	motorB, okB := hw.PinOk("motorB")
+	emfA, okEA := hw.PinOk("emfA")
+	emfB, okEB := hw.PinOk("emfB")
+	adcRef, okADC := hw.PinOk("adcRef")
 	if !okA || !okB || !okEA || !okEB || !okADC {
 		panic("Motor pins not found")
 	}
 
 	m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
 
+	outputPins := make([]shared.Pin, 0, len(outputs))
+	for _, output := range outputs {
+		if pin, ok := hw.PinOk(output); ok {
+			outputPins = append(outputPins, pin)
+		}
+	}
+
 	println("Starting DCC")
+	capPin := hw.Pin("capCharge")
+	rcTxPin := hw.Pin("railcom")
 	pioNum := 0
-	d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin)
+	d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin, capPin, rcTxPin, outputPins)
 	if err != nil {
 		panic(err.Error())
 	}
 
 	// Register available outputs
 	for _, output := range outputs {
-		if _, ok := hw.Pin(output); ok {
+		if _, ok := hw.PinOk(output); ok {
 			d.RegisterOutput(output, hw.GetOutputCallback(output))
 		}
 	}
 
-	d.SetAddress(150) // FIXME: Cleanup
+	cvHandler.IndexPage()
+	d.SetAddress(2350)                // FIXME: Cleanup
+	cvHandler.SetSync(29, 0b00100010) // FIXME: Cleanup
+
 	go m.Run()
 	go m.RunEMF()
 	d.Monitor()

@@ -1,20 +1,39 @@
 package dcc
 
-import "runtime"
+import (
+	"runtime"
+	"time"
+)
 
 func (d *Decoder) Monitor() {
+	// The earlier rev rp2350 decoder's smoothing cap adds ~6us to one half-wave
+	// TODO: Make this configurable
+	delay := uint32(6)
+
+	tr1Min := tr1MinTime + delay
+	tr1Max := tr1MaxTime + delay
+	tr0Min := tr0MinTime + delay
+	tr0Max := tr0MaxTime + delay
+
 	var bit int
 	var out byte
-	var ticks uint32
 
 	msg := NewMessage(d.cv, d)
 
 	i := 0
 	state := Preamble
 	for {
-		if !d.sm.IsRxFIFOEmpty() {
+		// Save the wave time readings in the ring buffer so we don't lose any
+		for !d.sm.IsRxFIFOEmpty() && !d.buf.Full() {
+			d.buf.Put(d.sm.RxGet())
+		}
+		for d.buf.Used() > 0 {
 			// Two cycles per loop / 2 MHz clock = 1 microsecond per tick
-			ticks = d.sm.RxGet()
+			ticks, ok := d.buf.Get()
+			if !ok {
+				// No data available, sleep and wait for more data to be processed
+				break
+			}
 
 			// Make sure the bit is within the valid ranges
 			bit = 0
@@ -63,10 +82,10 @@ func (d *Decoder) Monitor() {
 					state = Preamble
 
 					if !msg.XOR() {
-						for _, b := range msg.Bytes() {
-							printByte(b)
-							print(" ")
-						}
+						// FIXME: Cleanup
+						// for _, b := range msg.Bytes() {
+						// 	fmt.Printf("%08b ", b)
+						// }
 						println("checksum error")
 					} else {
 						msg.Process()
@@ -82,17 +101,7 @@ func (d *Decoder) Monitor() {
 				msg.Reset()
 			}
 		}
-	}
-}
-
-// Print a byte as bits
-func printByte(b byte) {
-	for i := 7; i >= 0; i-- {
-		if b&(1<<i) != 0 {
-			print("1")
-		} else {
-			print("0")
-		}
+		time.Sleep(100 * time.Microsecond) // Sleep a bit to avoid busy-waiting
 	}
 }
 

@@ -21,6 +21,7 @@ func (d *Decoder) initPIO(pioNum int, p shared.Pin) error {
 	case 1:
 		sm, err = pio.PIO1.ClaimStateMachine()
 	case 2:
+		// TODO: Enable PIO2 support when available
 		// sm, err = pio.PIO2.ClaimStateMachine()
 		return errors.New("PIO2 not yet supported")
 	}

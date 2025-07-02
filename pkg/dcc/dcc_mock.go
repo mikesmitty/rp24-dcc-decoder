@@ -8,3 +8,6 @@ import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 func (d *Decoder) initPIO(pioNum int, pin shared.Pin) error {
 	return nil
 }
+
+func (d *Decoder) BasicAck() {
+}

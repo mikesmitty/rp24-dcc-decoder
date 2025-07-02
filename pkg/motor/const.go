@@ -16,3 +16,14 @@ const (
 	Reverse Direction = iota
 	Forward
 )
+
+func (d Direction) String() string {
+	switch d {
+	case Reverse:
+		return "Reverse"
+	case Forward:
+		return "Forward"
+	default:
+		return "Unknown"
+	}
+}

@@ -1,8 +1,6 @@
-//go:build rp
+//go:build !rp
 
 package shared
-
-import "machine"
 
 // Avoid requiring packages that require specific hardware so we can run unit tests
 
@@ -21,12 +19,12 @@ type I2S interface {
 
 // package machine
 type Pin interface {
-	Configure(machine.PinConfig)
+	Configure(MockPinConfig)
 	Get() bool
 	High()
 	Low()
 	Set(bool)
-	SetInterrupt(machine.PinChange, func(machine.Pin)) error
+	SetInterrupt(MockPinChange, func(Pin)) error
 }
 
 // package machine
@@ -50,7 +48,7 @@ type OutputCallback func(uint16, bool)
 
 type MockPin uint8
 
-func (m MockPin) Configure(mode machine.PinConfig) {}
+func (m MockPin) Configure(mode MockPinConfig) {}
 
 func (m MockPin) Get() bool {
 	return false
@@ -62,6 +60,14 @@ func (m MockPin) Low() {}
 
 func (m MockPin) Set(bool) {}
 
-func (m MockPin) SetInterrupt(machine.PinChange, func(machine.Pin)) error {
+func (m MockPin) SetInterrupt(MockPinChange, func(Pin)) error {
 	return nil
 }
+
+type MockPinChange uint8
+
+type MockPinConfig struct {
+	Mode MockPinMode
+}
+
+type MockPinMode uint8

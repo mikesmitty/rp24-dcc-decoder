@@ -27,8 +27,8 @@ func (m *Motor) initPWM(hw *hal.HAL, pinA, pinB shared.Pin, freq uint64, duty fl
 	return nil
 }
 
-// applyPWM sets the PWM outputs according to direction and duty cycle
-func (m *Motor) applyPWM(dutyCycle float32) {
+// ApplyPWM sets the PWM outputs according to direction and duty cycle
+func (m *Motor) ApplyPWM(dutyCycle float32) {
 	// Lock the pwm mutex to prevent turning on the motor while measuring back EMF
 	m.pwmMutex.Lock()
 	defer m.pwmMutex.Unlock()

@@ -134,7 +134,7 @@ func (m *Message) functionGroupOneInstruction(b uint8) bool {
 	// FL (F0)
 	m.decoder.callFunction(0, b&(1<<4) != 0)
 	// F1-F4
-	for i := uint16(0); i < 4; i++ {
+	for i := range uint16(4) {
 		m.decoder.callFunction(i+1, b&(1<<i) != 0)
 	}
 	return true
@@ -154,7 +154,7 @@ func (m *Message) functionGroupTwoInstruction(b uint8) bool {
 	if m.addr == ConsistAddress {
 		b &= mask
 	}
-	for i := uint16(0); i < 4; i++ {
+	for i := range uint16(4) {
 		m.decoder.callFunction(i+offset, b&(1<<i) != 0)
 	}
 	return true
@@ -163,7 +163,7 @@ func (m *Message) functionGroupTwoInstruction(b uint8) bool {
 func (m *Message) functionGroupNInstruction(n uint16, b uint8) bool {
 	// Function Group N Instruction
 	// Each bit in the command byte represents a function (starting with F13)
-	for i := uint16(0); i < 8; i++ {
+	for i := range uint16(8) {
 		m.decoder.callFunction(i+n, b&(1<<i) != 0)
 	}
 	return true
@@ -229,7 +229,7 @@ func (m *Message) configVariableAccessInstruction(b []byte) bool {
 	if b[0]&0xF0 == 0xE0 {
 		if l == 3 {
 			// Format is 1110CCAA AAAAAAAA DDDDDDDD
-			return m.setCVCommand(m.cv.IndexPage(), b)
+			return m.cvCommand(m.cv.IndexPage(), b)
 		} else if l > 3 {
 			// XPOM - Extended Programming On Main
 			// Up to 8 bytes plus short/long address and checksum (max 11 bytes)

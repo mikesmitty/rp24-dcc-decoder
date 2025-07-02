@@ -7,22 +7,27 @@ import (
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/ringbuffer"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, pin shared.Pin) (*Decoder, error) {
+func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, dccPin, capPin, rcTxPin shared.Pin, outputs []shared.Pin) (*Decoder, error) {
 	d := &Decoder{
 		address:         make([]byte, 0, 2),
+		buf:             ringbuffer.NewRingBuffer[uint32](),
+		capPin:          capPin,
 		consistAddress:  make([]byte, 0, 2),
 		cv:              cvHandler,
 		motor:           m,
 		outputCallbacks: make(map[uint16][]shared.OutputCallback, 12),
 		outputMapsFwd:   make(map[uint16]uint16, 12),
 		outputMapsRev:   make(map[uint16]uint16, 12),
+		outputPins:      outputs,
+		rcTxPin:         rcTxPin,
 	}
 
-	err := d.initPIO(pioNum, pin)
+	err := d.initPIO(pioNum, dccPin)
 	if err != nil {
 		return nil, err
 	}
@@ -34,6 +39,22 @@ func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, pin shared.Pin
 
 // Set the address of the DCC reader
 func (d *Decoder) SetAddress(addr uint16) error {
+	if addr > 127 {
+		if ok := d.cv.SetSync(17, 0xC0|byte(addr>>8)); !ok {
+			return errors.New("failed to set extended address MSB")
+		}
+		if ok := d.cv.SetSync(18, byte(addr)); !ok {
+			return errors.New("failed to set extended address LSB")
+		}
+	} else {
+		if ok := d.cv.SetSync(1, byte(addr)); !ok {
+			return errors.New("failed to set short address")
+		}
+	}
+	return nil
+}
+
+func (d *Decoder) setAddress(addr uint16) error {
 	if addr == 0 || addr > 10239 {
 		return errors.New("address out of range")
 	}
@@ -78,7 +99,7 @@ func (d *Decoder) Reset() {
 	volatile memory (including any speed and direction data), and return to its normal
 	power-up state. If the Digital Decoder is operating a locomotive at a non-zero speed
 	when it receives a Digital Decoder Reset, it shall bring the locomotive to an
-	immediate stop.  */
+	immediate stop. */
 }
 
 func (d *Decoder) RegisterCallbacks() {
@@ -101,7 +122,7 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 			if value < 1 || value > 127 {
 				return false
 			}
-			d.SetAddress(uint16(value))
+			d.setAddress(uint16(value))
 
 		case 17, 18:
 			// CV17 must be in the range 192-231, CV18 can be any value

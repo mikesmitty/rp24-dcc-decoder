@@ -68,11 +68,11 @@ func (m *Message) handleXPOM(b []byte) bool {
 		if len(b) < 5 {
 			return false
 		}
-		m.setCVCommand(index, b[3:])
+		m.cvCommand(index, b[3:])
 	}
 
 	// Return the four bytes via BiDi communication
-	for i := uint16(0); i < 4; i++ {
+	for i := range uint16(4) {
 		// FIXME: Do BiDi communication
 		m.cv.IndexedCV(index, uint16(b[3])+i)
 	}

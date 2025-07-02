@@ -6,6 +6,7 @@ import (
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/ringbuffer"
 )
 
 const (
@@ -13,12 +14,14 @@ const (
 	// 2 instructions per counter increment gives the counter in microseconds
 	smFreq = 2_000_000
 
-	maxMsgLength   = 11
-	preambleLength = 11
-	tr1Min         = 52
-	tr1Max         = 64
-	tr0Min         = 90
-	tr0Max         = 10_000
+	maxMsgLength     = 11
+	preambleLength   = 11
+	rcCutoutStartMin = 26
+	rcCutoutStartMax = 32
+	tr1MinTime       = 52
+	tr1MaxTime       = 64
+	tr0MinTime       = 90
+	tr0MaxTime       = 10_000
 )
 
 type Decoder struct {
@@ -27,10 +30,16 @@ type Decoder struct {
 
 	sm     shared.StateMachine
 	offset uint8
+	buf    *ringbuffer.RingBuffer[uint32]
 
 	address        []byte
 	consistAddress []byte
 	Snoop          bool
+
+	capPin     shared.Pin
+	outputPins []shared.Pin
+	rcTxPin    shared.Pin
+	rcTxQueued bool
 
 	opMode           opMode
 	lastSvcResetTime time.Time

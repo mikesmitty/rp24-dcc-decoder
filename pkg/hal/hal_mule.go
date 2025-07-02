@@ -49,10 +49,10 @@ func (h *HAL) Init() {
 	// Initialize all pins
 	for name, pin := range h.pins {
 		switch name {
-		case "dcc":
+		case "dcc", "capCharge":
 			// Enable internal pull-up since an N-channel MOSFET pulls GPIO21 low when rail polarity goes negative
 			pin.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
-		case "railcom":
+		case "railcom", "led":
 			// RailCom logic levels are inverted, logic high is the low power state
 			pin.Configure(machine.PinConfig{Mode: machine.PinOutput})
 			pin.High()

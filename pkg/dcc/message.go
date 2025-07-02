@@ -92,16 +92,32 @@ func (m *Message) Process() {
 	// Check the message type to determine how to handle it
 	m.msgType = m.messageType()
 
+	ok := false
 	switch m.msgType {
 	case ServiceMsg:
-		m.serviceModePacket()
+		ok = m.serviceModePacket()
 	case ExtendedMsg:
-		m.extendedPacket()
+		ok = m.extendedPacket()
 	case AdvancedExtendedMsg:
-		m.advancedExtendedPacket()
+		ok = m.advancedExtendedPacket()
 	default:
 		// Unknown message type
 	}
+
+	if ok {
+		m.decoder.BasicAck()
+		// FIXME: Advanced Ack usage?
+		// m.decoder.AdvancedAck([]byte{ackByte}, []byte{})
+	}
+
+	// respByte := nackByte
+	// if ok {
+	// 	respByte = ackByte
+	// }
+	// err := m.decoder.AdvancedAck([]byte{respByte}, []byte{})
+	// if err != nil {
+	// 	// println("Error sending ack:", err.Error()) // FIXME: Cleanup
+	// }
 }
 
 func (m *Message) messageType() MessageType {
@@ -190,7 +206,6 @@ func (m *Message) checkAddress() bool {
 	case 0x00:
 		// Broadcast address
 		m.addr = BroadcastAddress
-		println("broadcast message")
 		return true
 	case 0xFF:
 		// Idle packet, ignore

@@ -121,24 +121,6 @@ func (m *Motor) RegisterCallbacks() {
 	}
 }
 
-/* FIXME: Implement this properly
-func (m *Motor) AckPulse() {
-	dutyMax := float32(1.0)
-
-	// Full steam ahead 3ms, full reverse 3ms, then stop
-	m.pwmA.SetDuty(dutyMax)
-	m.pwmB.SetDuty(0.0)
-	time.Sleep(3 * time.Millisecond)
-
-	m.pwmA.SetDuty(0.0)
-	m.pwmB.SetDuty(dutyMax)
-	time.Sleep(3 * time.Millisecond)
-
-	m.pwmA.SetDuty(0.0)
-	m.pwmB.SetDuty(0.0)
-}
-*/
-
 // calculateAccelDecelRates updates the acceleration and deceleration rates
 // based on CVs 3, 4, 23, and 24
 func (m *Motor) calculateAccelDecelRates() {
@@ -229,7 +211,7 @@ func (m *Motor) generate3PointSpeedTable() {
 	// Per-step speed increase in the second segment
 	highStep := (vMax - vMid) / float32(segmentSteps-1)
 	var value float32
-	for i := 0; i < steps; i++ {
+	for i := range steps {
 		if i <= segmentSteps {
 			// First segment (between Vstart and Vmid)
 			value = vStart + float32(i)*lowStep
@@ -255,14 +237,14 @@ func (m *Motor) generateUserSpeedTable() {
 	switch m.speedMode {
 	case SpeedMode14:
 		// Skip every other CV value in 14-speed mode
-		for i := uint16(0); i < 14; i++ {
+		for i := range uint16(14) {
 			// Use every other CV value
 			m.speedTable[i+2] = float32(m.cv[2*i+67]) / 255
 		}
 		m.speedTable[15] = float32(m.cv[94]) / 255
 	case SpeedMode28:
 		// Use all CV values
-		for i := uint16(0); i < 28; i++ {
+		for i := range uint16(28) {
 			m.speedTable[i+2] = float32(m.cv[i+67]) / 255
 		}
 	case SpeedMode128:

@@ -98,7 +98,7 @@ DONE:
 
 	// Restore PWM
 	m.pwmMutex.Unlock()
-	m.applyPWM(m.pwmDuty)
+	m.ApplyPWM(m.pwmDuty)
 
 	return m.iir.Output() - m.iirRef.Output()
 }

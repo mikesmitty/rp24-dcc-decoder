@@ -512,7 +512,7 @@ func TestMotionCommand_SpeedMode128(t *testing.T) {
 	msg := NewMessage(nil, decoder)
 	b := make([]byte, 2)
 
-	for i := uint8(0); i < 128; i++ {
+	for i := range uint8(128) {
 		// Test forward motion
 		b[0] = 0x3F     // 00111111
 		b[1] = i | 0x80 // Set bit 7 for forward

@@ -54,10 +54,10 @@ func TestGenerate3PointSpeedTable(t *testing.T) {
 }
 
 func printThrottleGraph(width int, m *Motor) {
-	for i := 0; i < int(m.speedMode)+2; i++ {
+	for i := range int(m.speedMode) + 2 {
 		steps := int(float32(width-6) * m.speedTable[i])
 		fmt.Printf("%3d: ", i)
-		for j := 0; j < steps; j++ {
+		for range steps {
 			print("#")
 		}
 		fmt.Printf(" %0.3f\n", m.speedTable[i])

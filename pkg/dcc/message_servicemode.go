@@ -1,6 +1,6 @@
 package dcc
 
-func (m *Message) serviceModePacket() {
+func (m *Message) serviceModePacket() bool {
 	m.decoder.SetOpMode(ServiceMode)
 	/* TODO: Implement the ability to leave service mode
 	For now, service mode is hotel california. We'll depend on losing power to return to operations mode
@@ -10,16 +10,20 @@ func (m *Message) serviceModePacket() {
 		//m.decoder.SetOpMode(UndefinedMode)
 		return
 	} */
+
+	ack := false
+
+	// Direct CV Addressing commands
 	// 0111CCAA AAAAAAAA DDDDDDDD EEEEEEEE
 	if m.buf[0]&0b11110000 == 0b01110000 {
-		// CV programming command
-		if m.setCVCommand(m.cv.IndexPage(), m.buf) {
-			// FIXME: Acknowledge
-		}
+		// CV access/programming command
+		ack = m.cvCommand(m.cv.IndexPage(), m.buf)
 	}
+
+	return ack
 }
 
-func (m *Message) setCVCommand(index uint16, b []byte) bool {
+func (m *Message) cvCommand(index uint16, b []byte) bool {
 	// CV programming command format
 	// C = command type, A = address, D = data
 	// C: 01 = verify, 11 = write byte
@@ -31,9 +35,9 @@ func (m *Message) setCVCommand(index uint16, b []byte) bool {
 	// B: bit position
 	// xxxxCCAA AAAAAAAA 111FDBBB
 
-	op := (b[0] >> 2) & 0b11                     // CC
-	cvNum := uint16(b[0]&0b11)<<8 | uint16(b[1]) // AA AAAAAAAA
-	data := b[2]                                 // DDDDDDDD
+	op := (b[0] >> 2) & 0b11                         // CC
+	cvNum := uint16(b[0]&0b11)<<8 | uint16(b[1]) + 1 // AA AAAAAAAA (n-1, CV1 = 0)
+	data := b[2]                                     // DDDDDDDD
 
 	ack := false
 	switch op {

@@ -20,7 +20,6 @@ func (d *Decoder) callFunction(number uint16, on bool) {
 		outputMap, ok = d.outputMapsFwd[number]
 	}
 	if !ok {
-		println("output map not found:", number)
 		return
 	}
 
@@ -34,7 +33,7 @@ func (d *Decoder) callFunction(number uint16, on bool) {
 		if direction == motor.Reverse {
 			outputMapPrev = d.outputMapsFwd[number]
 		}
-		for i := 0; i < 16; i++ {
+		for i := range 16 {
 			if outputMapPrev&(1<<i) != 0 {
 				// Turn off all the "on" outputs from the previous direction
 				if handlers, ok := d.outputCallbacks[number]; ok {
@@ -46,7 +45,7 @@ func (d *Decoder) callFunction(number uint16, on bool) {
 		}
 	}
 
-	for i := 0; i < 16; i++ {
+	for i := range 16 {
 		if outputMap&(1<<i) != 0 {
 			if handlers, ok := d.outputCallbacks[number]; ok {
 				for _, fn := range handlers {
@@ -58,6 +57,7 @@ func (d *Decoder) callFunction(number uint16, on bool) {
 }
 
 func IndexFromOutput(output string) uint16 {
+	// TODO: Switch away from strings?
 	switch output {
 	case "lampFront":
 		return 0
@@ -80,11 +80,11 @@ func IndexFromOutput(output string) uint16 {
 	case "aux8":
 		return 9
 	case "aux10":
-		return 11
+		return 10
 	case "aux11":
-		return 12
+		return 11
 	case "aux12":
-		return 13
+		return 12
 	}
 	return 255
 }
