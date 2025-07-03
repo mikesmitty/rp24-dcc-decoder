@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.2.0...rp2350-decoder-v0.3.0) (2025-07-03)
+
+
+### Features
+
+* detect right rail instead of VDC ([ddb6ea3](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ddb6ea383b4f5dc82e747a8a50b871392123b382))
+
 ## [0.2.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.1.2...rp2350-decoder-v0.2.0) (2025-06-26)
 
 
