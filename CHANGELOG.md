@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.3.0...v0.4.0) (2025-07-03)
+
+
+### Features
+
+* detect right rail instead of VDC ([ddb6ea3](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ddb6ea383b4f5dc82e747a8a50b871392123b382))
+
+
+### Bug Fixes
+
+* fix cv write bugs ([bde219d](https://github.com/mikesmitty/rp24-dcc-decoder/commit/bde219d6429ba6914b5c6cf0a966d8f1f6285c03))
+
 ## [0.3.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.2.0...v0.3.0) (2025-07-02)
 
 
