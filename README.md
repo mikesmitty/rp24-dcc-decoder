@@ -25,8 +25,8 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 # RP24 Decoder Pinout
 | E24 Pin | Function | GPIO Pin |
 | --- | --- | --- |
-| 1 | Speaker+ | USB D+ |
-| 2 | Speaker- | USB D- |
+| 1 | Speaker- | USB D- |
+| 2 | Speaker+ | USB D+ |
 | 3 | GND | GND |
 | 4-5 | Motor- | N/A |
 | 6-7 | Motor+ | N/A |
@@ -51,8 +51,8 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 | N/A | Motor Driver B | GPIO26 |
 | N/A | Back EMF A | GPIO28 |
 | N/A | Back EMF B | GPIO29 |
-| N/A | ADC Reference (ADC pin connected to GND)| GPIO27 |
-| N/A | DCC signal TTL | GPIO21 |
+| N/A | DCC signal Left Rail | GPIO21 |
+| N/A | DCC signal Right Rail | GPIO27 |
 | N/A | RailCom Out | GPIO11 |
 | N/A | Status LED | GPIO19 |
 | N/A | i2s DIN | GPIO22 |
@@ -67,8 +67,8 @@ DIY DCC decoder for model railroad locomotives in an E24 form factor suitable fo
 ## Receiver Board Solder Pads
 | E24 Pin | Function | Label |
 | --- | --- | --- |
-| 1 | Speaker+ | SPK |
-| 2 | Speaker- | SPK |
+| 1 | Speaker- | SPK |
+| 2 | Speaker+ | SPK |
 | 3 | GND | G |
 | 4-5 | Motor- | - MOTOR + |
 | 6-7 | Motor+ | - MOTOR + |
