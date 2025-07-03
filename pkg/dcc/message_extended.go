@@ -73,7 +73,7 @@ func (m *Message) decoderConsistControlInstruction(b []byte) bool {
 			return m.cv.Set(29, (cv29&^0b00100000)|(b[0]&1)<<5)
 		case 0b00001111:
 			// Decoder ack request
-			// FIXME: Implement
+			return true
 		}
 	// 0b0001xxxx
 	case 0b0001:

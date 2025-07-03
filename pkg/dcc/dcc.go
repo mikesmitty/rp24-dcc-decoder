@@ -183,7 +183,9 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 					d.address = append(d.address, d.cv.CV(18))
 				} else {
 					// If CV17 is invalid, reject the CV29 update
-					return false
+					// FIXME: Sometimes CV29 is set before CV17, so we can't reject it here
+					// return false
+					return true
 				}
 			} else {
 				// Clear bit 5 and use the short address

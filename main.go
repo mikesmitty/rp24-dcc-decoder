@@ -58,10 +58,6 @@ func main() {
 		}
 	}
 
-	cvHandler.IndexPage()
-	d.SetAddress(2350)                // FIXME: Cleanup
-	cvHandler.SetSync(29, 0b00100010) // FIXME: Cleanup
-
 	go m.Run()
 	go m.RunEMF()
 	d.Monitor()

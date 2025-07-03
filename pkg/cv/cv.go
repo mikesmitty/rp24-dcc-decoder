@@ -1,6 +1,8 @@
 package cv
 
 import (
+	"fmt"
+
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
 )
@@ -138,10 +140,18 @@ func (c *CVHandler) SetSync(cvNumber uint16, value uint8) bool {
 	return c.cvStore.Persist(cvNumber, value)
 }
 
+// TODO: Cleanup - Set vs. Persist isn't really necessary
 // IndexedSet sets a CV value given a paging index and allows it to be written to flash in batches
 func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 	// Ignore indexes beyond those we support
 	if index > maxCVIndexPage {
+		fmt.Printf("CV index %d is out of range, max is %d\r\n", index, maxCVIndexPage)
+		return false
+	}
+
+	if index != c.IndexPage() {
+		// Don't allow changing the index page implicitly
+		fmt.Printf("CV index %d does not match current index %d\r\n", index, c.IndexPage())
 		return false
 	}
 
@@ -149,6 +159,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 	// TODO: Need some way of checking if a CV in another index is valid before using higher level CVs
 	prev, ok := c.IndexedCVOk(index, cvNumber)
 	if !ok {
+		fmt.Printf("CV %d does not exist in index %d\r\n", cvNumber, index)
 		return false
 	}
 	rejected := false
@@ -157,6 +168,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 	if callbacks, ok := c.cvCallbacks[cvNumber]; ok {
 		for _, fn := range callbacks {
 			if !fn(cvNumber, value) {
+				fmt.Printf("CV %d rejected by callback\r\n", cvNumber) // FIXME: Cleanup
 				rejected = true
 			}
 		}
@@ -169,7 +181,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 			return false
 		}
 	}
-	return c.IndexedSet(index, cvNumber, value)
+	return c.cvStore.Set(cvNumber, value)
 }
 
 // IndexedSetSync sets a CV given a paging index and does not return until it is persisted to flash
