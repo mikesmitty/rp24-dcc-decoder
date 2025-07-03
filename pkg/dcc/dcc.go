@@ -125,17 +125,11 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 			d.setAddress(uint16(value))
 
 		case 17, 18:
-			// CV17 must be in the range 192-231, CV18 can be any value
-			// The top 2 bits of CV17 are ignored when parsing the address
-			if cvNumber == 17 && (value < 192 || value > 231) {
-				return false
+			cv17 := d.cv.CV(17)
+			if cvNumber == 17 {
+				cv17 = value
 			}
-			// Set the extended address bytes
-			if len(d.address) < int(cvNumber)-16 {
-				d.address = append(d.address, value)
-			} else {
-				d.address[cvNumber-17] = value
-			}
+			return d.setExtendedAddress(cv17)
 
 		case 19, 20:
 			// Set the consist address bytes
@@ -171,22 +165,8 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 
 		case 29:
 			// CV29 bit 5: 0 = short address, 1 = extended address
-			cv17 := d.cv.CV(17)
 			if (value & 0b00100000) != 0 {
-				if cv17 >= 192 && cv17 <= 231 {
-					// If CV17 is 192 and CV18 is 0 the long address would be 0, abort
-					if cv17 == 192 && d.cv.CV(18) == 0 {
-						return false
-					}
-					// Otherwise, if CV17 is valid, set bit 5 and enable it
-					d.address = append(d.address[:0], 0xC0|d.cv.CV(17))
-					d.address = append(d.address, d.cv.CV(18))
-				} else {
-					// If CV17 is invalid, reject the CV29 update
-					// FIXME: Sometimes CV29 is set before CV17, so we can't reject it here
-					// return false
-					return true
-				}
+				return d.setExtendedAddress(d.cv.CV(17))
 			} else {
 				// Clear bit 5 and use the short address
 				d.address = append(d.address[:0], d.cv.CV(1))
@@ -214,6 +194,19 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 
 		return true
 	}
+}
+
+func (d *Decoder) setExtendedAddress(cv17 uint8) bool {
+	if cv17 >= 192 && cv17 <= 231 {
+		// If CV17 is 192 and CV18 is 0 the long address would be 0, abort
+		if cv17 == 192 && d.cv.CV(18) == 0 {
+			return false
+		}
+		// Otherwise, if CV17 is valid, set bit 5 and enable it
+		d.address = append(d.address[:0], 0xC0|cv17)
+		d.address = append(d.address, d.cv.CV(18))
+	}
+	return true
 }
 
 /* TODO: Might be useful?

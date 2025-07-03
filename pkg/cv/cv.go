@@ -168,7 +168,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool {
 	if callbacks, ok := c.cvCallbacks[cvNumber]; ok {
 		for _, fn := range callbacks {
 			if !fn(cvNumber, value) {
-				fmt.Printf("CV %d rejected by callback\r\n", cvNumber) // FIXME: Cleanup
+				fmt.Printf("CV %d rejected by callback\r\n", cvNumber)
 				rejected = true
 			}
 		}
