@@ -122,10 +122,10 @@ func (m *Motor) runMotorControl() {
 	})
 
 	// Apply the PWM duty cycle
-	if m.DisablePID {
-		m.pwmDuty = m.speedTable[m.currentSpeed]
-	} else {
+	if !m.DisablePID {
 		m.pwmDuty = m.pid.State.ControlSignal
+	} else {
+		m.pwmDuty = m.speedTable[m.currentSpeed]
 	}
 	m.ApplyPWM(m.pwmDuty)
 
@@ -203,7 +203,7 @@ func (m *Motor) updateSpeedStep(elapsed time.Duration) {
 
 	// TODO: Handle going from 0 to non-zero speed after startup from dirty rail
 	if m.currentSpeed > m.targetSpeed && m.rawSpeed-m.targetRaw > 0.5 {
-		fmt.Printf("slow down - current: %d target: %d duty: %0.2f\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
+		fmt.Printf("slow down - current: %d target: %d duty: %0.2f\r\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
 		if m.decelRate > 0 {
 			// decelRate: seconds per step * elapsed seconds = steps decreased
 			m.rawSpeed -= m.decelRate * float32(elapsed.Seconds())
@@ -212,7 +212,7 @@ func (m *Motor) updateSpeedStep(elapsed time.Duration) {
 			m.rawSpeed = m.targetRaw
 		}
 	} else if m.currentSpeed < m.targetSpeed && m.targetRaw-m.rawSpeed > 0.5 {
-		fmt.Printf("speed up - current: %d target: %d duty: %0.2f\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
+		fmt.Printf("speed up - current: %d target: %d duty: %0.2f\r\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
 		if m.accelRate > 0 {
 			// accelRate: seconds per step * elapsed seconds = steps increased
 			m.rawSpeed += m.accelRate * float32(elapsed.Seconds())

@@ -58,6 +58,9 @@ func (m *Message) handleXPOM(b []byte) bool {
 		// This one just doesn't write anything
 	case 0b11:
 		// Write bytes
+		if len(b) < 5 {
+			return false
+		}
 		for i, v := range b[4:] {
 			if !m.cv.IndexedSet(index, uint16(b[3])+uint16(i), v) {
 				return false

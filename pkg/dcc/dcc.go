@@ -12,6 +12,37 @@ import (
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
+type Decoder struct {
+	cv    cv.Handler
+	motor *motor.Motor
+
+	sm     shared.StateMachine
+	offset uint8
+	buf    *ringbuffer.RingBuffer[uint32]
+
+	address            []byte
+	consistAddress     []byte
+	Snoop              bool
+	checksumErrorCount uint32
+
+	capPin     shared.Pin
+	outputPins []shared.Pin
+	rcTxPin    shared.Pin
+	rcTxQueued bool
+
+	opMode           opMode
+	lastSvcResetTime time.Time
+	svcModeReady     bool
+
+	outputCallbacks map[uint16][]shared.OutputCallback
+	outputMapsFwd   map[uint16]uint16
+	outputMapsRev   map[uint16]uint16
+
+	consistFuncMask [3]uint8
+
+	lastDirection motor.Direction
+}
+
 func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, dccPin, capPin, rcTxPin shared.Pin, outputs []shared.Pin) (*Decoder, error) {
 	d := &Decoder{
 		address:         make([]byte, 0, 2),

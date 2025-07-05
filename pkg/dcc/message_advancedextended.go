@@ -1,6 +1,6 @@
 package dcc
 
-func (m *Message) advancedExtendedPacket() bool {
+func (m *Message) advancedExtendedPacket(b []byte) bool {
 	// TODO: To be implemented
 	return false
 }

@@ -1,8 +1,8 @@
 package dcc
 
-func (m *Message) extendedPacket() bool {
+func (m *Message) extendedPacket(b []byte) bool {
 	// Extended message format
-	l := len(m.buf)
+	l := len(b)
 
 	// First command byte
 	fb := 1
@@ -15,36 +15,45 @@ func (m *Message) extendedPacket() bool {
 		fb = len(m.decoder.consistAddress)
 	}
 
+	if l < fb+1 {
+		// Not enough bytes for a valid extended packet
+		return false
+	}
+
 	// Command type is in the top 3 bits of the first command byte
-	switch m.buf[fb] >> 5 {
+	switch b[fb] >> 5 {
 	case 0b000:
-		return m.decoderConsistControlInstruction(m.buf[fb : l-1])
+		return m.decoderConsistControlInstruction(b[fb : l-1])
 	case 0b001:
-		return m.advancedOperationInstruction(m.buf[fb : l-1])
+		return m.advancedOperationInstruction(b[fb : l-1])
 	case 0b010, 0b011:
 		// Speed and Direction Instruction
-		speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
+		speed, reverse, ok := m.motionCommand(b[fb : l-1])
 		if ok {
 			m.decoder.motor.SetSpeed(speed, reverse)
 		}
 		return ok
 	case 0b100:
-		return m.functionGroupOneInstruction(m.buf[fb])
+		return m.functionGroupOneInstruction(b[fb])
 	case 0b101:
-		return m.functionGroupTwoInstruction(m.buf[fb])
+		return m.functionGroupTwoInstruction(b[fb])
 	case 0b110:
-		return m.featureExpansion(m.buf[fb : l-1])
+		return m.featureExpansion(b[fb : l-1])
 	case 0b111:
 		// Don't allow editing CVs from consist-addressed messages
 		if m.addr == ConsistAddress {
 			return false
 		}
-		return m.configVariableAccessInstruction(m.buf[fb : l-1])
+		return m.configVariableAccessInstruction(b[fb : l-1])
 	}
 	return false
 }
 
 func (m *Message) decoderConsistControlInstruction(b []byte) bool {
+	if len(b) < 1 {
+		return false
+	}
+
 	l := len(b)
 	switch b[0] >> 4 {
 	// 0b0000xxxx
@@ -170,6 +179,10 @@ func (m *Message) functionGroupNInstruction(n uint16, b uint8) bool {
 }
 
 func (m *Message) featureExpansion(b []byte) bool {
+	if len(b) < 2 {
+		return false
+	}
+
 	// Feature Expansion Instruction
 	// 110GGGGG DDDDDDDD [DDDDDDDD]
 	switch b[0] {
@@ -311,8 +324,8 @@ func (m *Message) configVariableAccessInstruction(b []byte) bool {
 
 // Confirm we've received the same value for a CV twice before setting it
 func (m *Message) cvConfirmCheck(cv uint16, value uint8) bool {
-	value, ok := m.cvConfirm[cv]
-	if ok && value == value {
+	v, ok := m.cvConfirm[cv]
+	if ok && v == value {
 		return true
 	}
 	m.cvConfirm[cv] = value

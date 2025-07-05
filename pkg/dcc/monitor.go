@@ -81,14 +81,10 @@ func (d *Decoder) Monitor() {
 					// End of message terminator bit received, wait for a preamble next loop
 					state = Preamble
 
-					if !msg.XOR() {
-						// FIXME: Cleanup
-						// for _, b := range msg.Bytes() {
-						// 	fmt.Printf("%08b ", b)
-						// }
-						println("checksum error")
-					} else {
+					if msg.XOR() {
 						msg.Process()
+					} else {
+						d.checksumErrorCount++
 					}
 
 					// Reset the message buffer for the next message
@@ -102,16 +98,5 @@ func (d *Decoder) Monitor() {
 			}
 		}
 		time.Sleep(100 * time.Microsecond) // Sleep a bit to avoid busy-waiting
-	}
-}
-
-// Print the n leftmost bits of b as a binary number
-func printUintN(n int, b uint32) {
-	for i := n - 1; i >= 0; i-- {
-		if b&(1<<i) != 0 {
-			print("1")
-		} else {
-			print("0")
-		}
 	}
 }

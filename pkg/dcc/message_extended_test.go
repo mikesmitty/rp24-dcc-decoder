@@ -111,7 +111,7 @@ func TestExtendedPacket(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := tt.msg.extendedPacket()
+			result := tt.msg.extendedPacket(tt.msg.buf)
 			if result != tt.expect {
 				t.Errorf("expected %v, got %v", tt.expect, result)
 			}

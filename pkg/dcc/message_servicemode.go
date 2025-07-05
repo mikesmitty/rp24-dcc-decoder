@@ -1,6 +1,6 @@
 package dcc
 
-func (m *Message) serviceModePacket() bool {
+func (m *Message) serviceModePacket(b []byte) bool {
 	m.decoder.SetOpMode(ServiceMode)
 	/* TODO: Implement the ability to leave service mode
 	For now, service mode is hotel california. We'll depend on losing power to return to operations mode
@@ -15,9 +15,9 @@ func (m *Message) serviceModePacket() bool {
 
 	// Direct CV Addressing commands
 	// 0111CCAA AAAAAAAA DDDDDDDD EEEEEEEE
-	if m.buf[0]&0b11110000 == 0b01110000 {
+	if b[0]&0b11110000 == 0b01110000 {
 		// CV access/programming command
-		ack = m.cvCommand(m.cv.IndexPage(), m.buf)
+		ack = m.cvCommand(m.cv.IndexPage(), b)
 	}
 
 	return ack

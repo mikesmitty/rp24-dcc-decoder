@@ -1,6 +1,8 @@
 package dcc
 
 import (
+	"sync"
+
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
@@ -28,6 +30,7 @@ type Message struct {
 	addr    AddressType
 	buf     []byte
 	msgType MessageType
+	mutex   sync.Mutex
 
 	cv      cv.Handler
 	decoder *Decoder
@@ -47,10 +50,14 @@ func NewMessage(cvHandler cv.Handler, decoder *Decoder) *Message {
 }
 
 func (m *Message) AddByte(b byte) {
+	m.mutex.Lock()
+	defer m.mutex.Unlock()
 	m.buf = append(m.buf, b)
 }
 
 func (m *Message) AddBytes(b []byte) {
+	m.mutex.Lock()
+	defer m.mutex.Unlock()
 	m.buf = append(m.buf, b...)
 }
 
@@ -59,6 +66,8 @@ func (m *Message) Bytes() []byte {
 }
 
 func (m *Message) Reset() {
+	m.mutex.Lock()
+	defer m.mutex.Unlock()
 	m.buf = m.buf[:0]
 	m.msgType = UnknownMsg
 }
@@ -84,6 +93,15 @@ func (m *Message) Length() int {
 }
 
 func (m *Message) Process() {
+	if len(m.buf) == 0 {
+		// No message received yet, nothing to process
+		return
+	}
+
+	// Make sure we don't overlap message processing
+	m.mutex.Lock()
+	defer m.mutex.Unlock()
+
 	if !m.decoder.Snoop && (!m.checkAddress() || m.addr == UnknownAddress) {
 		// Ignore messages not addressed to us if we're not being nosy
 		return
@@ -95,11 +113,11 @@ func (m *Message) Process() {
 	ok := false
 	switch m.msgType {
 	case ServiceMsg:
-		ok = m.serviceModePacket()
+		ok = m.serviceModePacket(m.buf)
 	case ExtendedMsg:
-		ok = m.extendedPacket()
+		m.extendedPacket(m.buf)
 	case AdvancedExtendedMsg:
-		ok = m.advancedExtendedPacket()
+		m.advancedExtendedPacket(m.buf)
 	default:
 		// Unknown message type
 	}
@@ -121,6 +139,11 @@ func (m *Message) Process() {
 }
 
 func (m *Message) messageType() MessageType {
+	if len(m.buf) == 0 {
+		// No message received yet, return unknown
+		return UnknownMsg
+	}
+
 	b := m.buf[0]
 
 	if m.decoder.opMode == ServiceMode || m.decoder.svcModeReady {
@@ -202,6 +225,11 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) {
 }
 
 func (m *Message) checkAddress() bool {
+	if len(m.buf) == 0 {
+		// No message received yet, return invalid
+		return false
+	}
+
 	switch m.buf[0] {
 	case 0x00:
 		// Broadcast address
