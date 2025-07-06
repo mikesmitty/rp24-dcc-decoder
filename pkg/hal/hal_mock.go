@@ -31,3 +31,5 @@ func NewADC(pin shared.Pin) *ADC {
 func (a *ADC) Read() uint16 {
 	return 0
 }
+
+func WatchdogReset() {}

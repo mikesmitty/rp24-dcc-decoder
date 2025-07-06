@@ -3,6 +3,8 @@ package dcc
 import (
 	"runtime"
 	"time"
+
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
 )
 
 func (d *Decoder) Monitor() {
@@ -97,6 +99,8 @@ func (d *Decoder) Monitor() {
 				msg.Reset()
 			}
 		}
+		// Make sure we get reset if we stop processing messages
+		hal.WatchdogReset()
 		time.Sleep(100 * time.Microsecond) // Sleep a bit to avoid busy-waiting
 	}
 }

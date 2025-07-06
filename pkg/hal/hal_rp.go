@@ -29,6 +29,7 @@ func NewHAL() *HAL {
 	}
 
 	h.Init()
+	watchdogInit()
 
 	return h
 }
