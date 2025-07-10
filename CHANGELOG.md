@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.4.0...v0.4.1) (2025-07-10)
+
+
+### Bug Fixes
+
+* add watchdog timer ([11b6576](https://github.com/mikesmitty/rp24-dcc-decoder/commit/11b657602e25fd6cb13ee2e36697979c7ffdf19e))
+* defend against panics from invalid messages ([ffdcd00](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ffdcd002d98769922d42dc0cb6c4ae6520a1eed1))
+
 ## [0.4.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.3.0...v0.4.0) (2025-07-03)
 
 
