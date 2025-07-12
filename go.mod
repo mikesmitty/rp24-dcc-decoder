@@ -8,4 +8,4 @@ require github.com/mikesmitty/tinypid v1.1.1
 
 require tinygo.org/x/tinyfs v0.5.0
 
-require golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b
+require golang.org/x/exp v0.0.0-20250711185948-6ae5c78190dc
