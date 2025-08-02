@@ -6511,7 +6511,7 @@
 		)
 		(uuid "0d007afa-2cff-4311-912f-dc5cfe536d5b")
 	)
-	(text "CAP_ENABLE is strongly pulled\nlow when VDC drops below 8V"
+	(text "CAP_ENABLE is strongly pulled\nlow when VDC drops below 8V\nin accordance with RCN-530"
 		(exclude_from_sim no)
 		(at 42.418 156.464 0)
 		(effects
@@ -14220,7 +14220,7 @@
 	)
 	(symbol
 		(lib_id "rp2350-decoder:AOTA-B201610S3R3-101-T")
-		(at 168.91 198.12 90)
+		(at 168.91 198.12 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14229,25 +14229,25 @@
 		(fields_autoplaced yes)
 		(uuid "3ec33bf2-348f-473a-961a-dd8f876a8864")
 		(property "Reference" "L2"
-			(at 170.18 196.8499 90)
+			(at 171.45 196.8499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "3.3uH"
-			(at 170.18 199.3899 90)
+			(at 171.45 199.3899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "rp2350-decoder:IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T"
-			(at 176.53 198.12 0)
+		(property "Footprint" "rp2350-decoder:L_pol_2016"
+			(at 161.29 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14274,7 +14274,7 @@
 			)
 		)
 		(property "LCSC" "C42411119"
-			(at 179.07 198.12 0)
+			(at 158.75 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
