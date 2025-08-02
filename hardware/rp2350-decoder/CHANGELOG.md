@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.0...rp2350-decoder-v0.3.1) (2025-08-02)
+
+
+### Bug Fixes
+
+* remove vdc from under connector ([96dd000](https://github.com/mikesmitty/rp24-dcc-decoder/commit/96dd00003e3252300e009753ae7b70a3d9992b5f))
+
 ## [0.3.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.2.0...rp2350-decoder-v0.3.0) (2025-07-03)
 
 
