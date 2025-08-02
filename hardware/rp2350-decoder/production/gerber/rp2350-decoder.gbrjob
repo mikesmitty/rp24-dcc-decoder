@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.0"
+      "Version": "9.0.3"
     },
-    "CreationDate": "2025-07-03T19:10:07-04:00"
+    "CreationDate": "2025-08-02T15:43:23-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "rp2350-decoder",
       "GUID": "72703233-3530-42d6-9465-636f6465722e",
-      "Revision": "v0.3.0"
+      "Revision": "v0.3.1"
     },
     "Size": {
       "X": 70.1,
