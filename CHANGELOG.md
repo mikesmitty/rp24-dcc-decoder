@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.5.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.4.0...v0.5.0) (2025-08-02)
+
+
+### Features
+
+* add early stage backemf motor control ([a25211d](https://github.com/mikesmitty/rp24-dcc-decoder/commit/a25211db5da32ed0f17aac7e8010aa097b95d403))
+* add watchdog for signal cutout ([a25211d](https://github.com/mikesmitty/rp24-dcc-decoder/commit/a25211db5da32ed0f17aac7e8010aa097b95d403))
+
+
+### Bug Fixes
+
+* add watchdog timer ([11b6576](https://github.com/mikesmitty/rp24-dcc-decoder/commit/11b657602e25fd6cb13ee2e36697979c7ffdf19e))
+* defend against panics from invalid messages ([ffdcd00](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ffdcd002d98769922d42dc0cb6c4ae6520a1eed1))
+* **deps:** update golang.org/x/exp digest to 645b1fa ([#48](https://github.com/mikesmitty/rp24-dcc-decoder/issues/48)) ([313a73c](https://github.com/mikesmitty/rp24-dcc-decoder/commit/313a73c76a07aca35d5ec08aace8f12d40190b84))
+
 ## [0.4.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.3.0...v0.4.0) (2025-07-03)
 
 

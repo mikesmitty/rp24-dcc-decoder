@@ -1,5 +1,5 @@
 {
-    ".": "0.4.0",
+    ".": "0.5.0",
     "hardware/e24-receiver-board": "0.1.2",
     "hardware/pico2-test-mule": "0.3.0",
     "hardware/rp2350-decoder": "0.3.1",
