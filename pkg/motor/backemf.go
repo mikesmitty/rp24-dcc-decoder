@@ -9,24 +9,15 @@ import (
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/iir"
 )
 
-const (
-	emfSettleWait = 100 * time.Microsecond // TODO: Tune these values
-	emfReadDelay  = 100 * time.Microsecond
-)
-
-func (m *Motor) initBackEMF(emfA, emfB, adcRef shared.Pin) {
+func (m *Motor) initBackEMF(emfA, emfB shared.Pin) {
 	m.emfA = emfA
 	m.emfB = emfB
-	m.emfTicker = time.NewTicker(emfSettleWait)
-	m.emfTimer = time.NewTimer(emfSettleWait)
+	m.emfTicker = time.NewTicker(100 * time.Microsecond)
+	m.emfTimer = time.NewTimer(100 * time.Microsecond)
 
 	// Set up back EMF pins for ADC
 	m.iir = iir.NewIIRFilter(m.iirAlpha)
 	m.setupADC(m.Direction())
-	if adcRef != shared.NoPin {
-		m.adcRef = hal.NewADC(adcRef)
-		m.iirRef = iir.NewIIRFilter(m.iirAlpha)
-	}
 }
 
 func (m *Motor) setupADC(direction Direction) {
@@ -42,7 +33,9 @@ func (m *Motor) setupADC(direction Direction) {
 func (m *Motor) RunEMF() {
 	for {
 		time.Sleep(m.emfInterval)
-		m.emfValue = m.measureBackEMF()
+		if !m.DisablePID {
+			m.emfValue = m.measureBackEMF()
+		}
 	}
 }
 
@@ -54,31 +47,12 @@ func (m *Motor) measureBackEMF() float32 {
 	// Lock the motor mutex to prevent concurrent access to the motor state
 	m.pwmMutex.Lock()
 
-	// Wait for motor to stop
-	time.Sleep(100 * time.Millisecond) // TODO: Tune this value
+	// Wait for EMF to settle
+	time.Sleep(m.emfSettle)
 
-	// Kill time waiting for the motor to stop by measuring the ADC reference
-	m.emfTicker.Reset(20 * time.Microsecond)
-	m.emfTimer.Reset(emfSettleWait)
-PREP:
-	for {
-		select {
-		// Wait for the back EMF to settle before measuring
-		case <-m.emfTimer.C:
-			// EMF settling time is done, break out of the double loop
-			m.emfTicker.Stop()
-			break PREP
-		case <-m.emfTicker.C:
-			// Measure the ADC reference attached to ground to help establish a noise baseline while we wait
-			m.iirRef.Filter(float32(m.adcRef.Read()))
-		default:
-			// Allow other tasks to run while waiting
-			runtime.Gosched()
-		}
-	}
-
-	m.emfTicker.Reset(emfReadDelay)
-	m.emfTimer.Reset(m.emfDuration - emfSettleWait)
+	// Read back EMF every 100us during the cutout window
+	m.emfTicker.Reset(100 * time.Microsecond)
+	m.emfTimer.Reset(m.emfDuration)
 DONE:
 	for {
 		select {
@@ -100,7 +74,7 @@ DONE:
 	m.pwmMutex.Unlock()
 	m.ApplyPWM(m.pwmDuty)
 
-	return m.iir.Output() - m.iirRef.Output()
+	return m.iir.Output()
 }
 
 func (m *Motor) updateBackEMFTiming() {

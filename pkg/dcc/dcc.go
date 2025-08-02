@@ -6,6 +6,7 @@ import (
 
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/ringbuffer"
 )
@@ -14,6 +15,7 @@ import (
 
 type Decoder struct {
 	cv    cv.Handler
+	hw    *hal.HAL
 	motor *motor.Motor
 
 	sm     shared.StateMachine
@@ -43,22 +45,23 @@ type Decoder struct {
 	lastDirection motor.Direction
 }
 
-func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, dccPin, capPin, rcTxPin shared.Pin, outputs []shared.Pin) (*Decoder, error) {
+func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, hw *hal.HAL, outputs []shared.Pin) (*Decoder, error) {
 	d := &Decoder{
 		address:         make([]byte, 0, 2),
 		buf:             ringbuffer.NewRingBuffer[uint32](),
-		capPin:          capPin,
+		capPin:          hw.Pin("capCharge"),
 		consistAddress:  make([]byte, 0, 2),
 		cv:              cvHandler,
+		hw:              hw,
 		motor:           m,
 		outputCallbacks: make(map[uint16][]shared.OutputCallback, 12),
 		outputMapsFwd:   make(map[uint16]uint16, 12),
 		outputMapsRev:   make(map[uint16]uint16, 12),
 		outputPins:      outputs,
-		rcTxPin:         rcTxPin,
+		rcTxPin:         hw.Pin("railcom"),
 	}
 
-	err := d.initPIO(pioNum, dccPin)
+	err := d.initPIO(pioNum, hw.Pin("dcc"))
 	if err != nil {
 		return nil, err
 	}
@@ -142,6 +145,7 @@ func (d *Decoder) RegisterCallbacks() {
 	for i := uint16(33); i <= 46; i++ {
 		d.cv.RegisterCallback(i, d.CVCallback())
 	}
+	d.cv.RegisterCallback(113, d.CVCallback())
 }
 
 func (d *Decoder) CVCallback() shared.CVCallbackFunc {
@@ -221,6 +225,11 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc {
 				outputs = outputs << 3
 			}
 			d.outputMapsFwd[outputNum] = outputs
+		case 113:
+			// Set watchdog timeout in 32.768ms steps
+			// Controls when the decoder will reset when running on a keepalive capacitor
+			ms := float32(max(1, value)) * 32.768
+			d.hw.WatchdogSet(time.Duration(ms) * time.Millisecond)
 		}
 
 		return true

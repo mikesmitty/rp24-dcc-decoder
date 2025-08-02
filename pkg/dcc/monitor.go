@@ -3,8 +3,6 @@ package dcc
 import (
 	"runtime"
 	"time"
-
-	"github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
 )
 
 func (d *Decoder) Monitor() {
@@ -27,6 +25,7 @@ func (d *Decoder) Monitor() {
 	for {
 		// Save the wave time readings in the ring buffer so we don't lose any
 		for !d.sm.IsRxFIFOEmpty() && !d.buf.Full() {
+			// FIXME: Buffered channel instead?
 			d.buf.Put(d.sm.RxGet())
 		}
 		for d.buf.Used() > 0 {
@@ -85,6 +84,9 @@ func (d *Decoder) Monitor() {
 
 					if msg.XOR() {
 						msg.Process()
+
+						// Make sure we reset if we stop receiving valid messages
+						d.hw.WatchdogReset()
 					} else {
 						d.checksumErrorCount++
 					}
@@ -99,8 +101,6 @@ func (d *Decoder) Monitor() {
 				msg.Reset()
 			}
 		}
-		// Make sure we get reset if we stop processing messages
-		hal.WatchdogReset()
 		time.Sleep(100 * time.Microsecond) // Sleep a bit to avoid busy-waiting
 	}
 }

@@ -91,6 +91,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		c.cvStore.SetDefault(45, 0b01000000, store.Persistent) // FUNCTIONS: Output mapping for F11
 		c.cvStore.SetDefault(46, 0b10000000, store.Persistent) // FUNCTIONS: Output mapping for F12
 
+		c.cvStore.SetDefault(49, 1, store.Persistent)   // MOTOR: Enable back EMF motor control
+		c.cvStore.SetDefault(50, 40, store.Persistent)  // MOTOR: Back EMF measurement settle delay in 5us steps
 		c.cvStore.SetDefault(51, 10, store.Persistent)  // MOTOR: Low to high PID gain cutover speed step
 		c.cvStore.SetDefault(52, 10, store.Persistent)  // MOTOR: Low speed Kp gain (proportional)
 		c.cvStore.SetDefault(53, 130, store.Persistent) // MOTOR: Max speed EMF voltage
@@ -137,6 +139,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error {
 		c.cvStore.SetDefault(109, fwVersion[0], roPersist) // SYS: Major version number
 		c.cvStore.SetDefault(110, fwVersion[1], roPersist) // SYS: Minor version number
 		c.cvStore.SetDefault(111, fwVersion[2], roPersist) // SYS: Patch version number
+
+		c.cvStore.SetDefault(113, 32, store.Persistent) // SYS: Watchdog timeout in 32.768ms steps (1-255)
 
 		c.cvStore.SetDefault(116, 50, store.Persistent)  // MOTOR: Speed step 1 back EMF measurement interval in 0.1ms steps (50-200)
 		c.cvStore.SetDefault(117, 150, store.Persistent) // MOTOR: Speed step max back EMF measurement interval in 0.1ms steps (50-200)

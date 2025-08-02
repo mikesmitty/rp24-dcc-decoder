@@ -2,7 +2,10 @@
 
 package hal
 
-import "machine"
+import (
+	"machine"
+	"time"
+)
 
 const (
 	// PWM frequency for the capacitor charge control pin
@@ -29,7 +32,19 @@ func NewHAL() *HAL {
 	}
 
 	h.Init()
-	watchdogInit()
 
 	return h
+}
+
+func (h *HAL) WatchdogSet(timeout time.Duration) {
+	config := machine.WatchdogConfig{
+		TimeoutMillis: uint32(timeout.Milliseconds()),
+	}
+	machine.Watchdog.Configure(config)
+
+	machine.Watchdog.Start()
+}
+
+func (h *HAL) WatchdogReset() {
+	machine.Watchdog.Update()
 }

@@ -24,16 +24,16 @@ type Motor struct {
 
 	iirAlpha float32
 	iir      *iir.IIRFilter
-	iirRef   *iir.IIRFilter
 
 	// Back-EMF measurement state for estimating speed
-	adcRef      *hal.ADC
 	emfADC      *hal.ADC
 	emfA        shared.Pin
 	emfB        shared.Pin
+	emfCutoff   uint8
 	emfDuration time.Duration
 	emfInterval time.Duration
 	emfMax      float32
+	emfSettle   time.Duration
 	pwmMutex    sync.Mutex
 	emfTarget   float32
 	emfTicker   *time.Ticker
@@ -71,7 +71,7 @@ type Motor struct {
 	lastControlTime time.Time
 }
 
-func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef shared.Pin) *Motor {
+func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB shared.Pin) *Motor {
 	m := &Motor{
 		cv:              make(map[uint16]uint8),
 		cvHandler:       conf,
@@ -80,7 +80,7 @@ func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef share
 	}
 
 	// Set up back EMF pins for ADC
-	m.initBackEMF(emfA, emfB, adcRef)
+	m.initBackEMF(emfA, emfB)
 
 	// Set up motor driver pins for PWM
 	m.pwmInterval = 100 * time.Millisecond // TODO: Adjust this?
@@ -122,7 +122,7 @@ func (m *Motor) runMotorControl() {
 	})
 
 	// Apply the PWM duty cycle
-	if !m.DisablePID {
+	if !m.DisablePID && m.currentSpeed > (m.emfCutoff/28)*uint8(m.speedMode) { // FIXME: Handle 28/128 speed modes better
 		m.pwmDuty = m.pid.State.ControlSignal
 	} else {
 		m.pwmDuty = m.speedTable[m.currentSpeed]

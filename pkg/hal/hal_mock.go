@@ -2,7 +2,11 @@
 
 package hal
 
-import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+import (
+	"time"
+
+	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+)
 
 type HAL struct {
 	pins map[string]shared.Pin
@@ -22,6 +26,10 @@ func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, er
 	return nil, nil
 }
 
+func (h *HAL) WatchdogSet(timeout time.Duration) {}
+
+func (h *HAL) WatchdogReset() {}
+
 type ADC struct{}
 
 func NewADC(pin shared.Pin) *ADC {
@@ -31,5 +39,3 @@ func NewADC(pin shared.Pin) *ADC {
 func (a *ADC) Read() uint16 {
 	return 0
 }
-
-func WatchdogReset() {}

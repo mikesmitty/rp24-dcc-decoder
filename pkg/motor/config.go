@@ -1,6 +1,8 @@
 package motor
 
 import (
+	"time"
+
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 )
 
@@ -56,11 +58,22 @@ func (m *Motor) CVCallback() shared.CVCallbackFunc {
 			defer m.updateSpeedTable()
 			defer m.calculateAccelDecelRates()
 
-		case 53:
-			// Max speed EMF voltage
-			m.emfMax = float32(value) / 10
+		case 49:
+			m.DisablePID = value&1 == 0
 
-		case 51, 52, 54, 55, 56:
+		case 50:
+			// Back EMF settle time in 5us steps (0-255)
+			// This is the time to wait after stopping the motor before starting the back EMF measurement
+			m.emfSettle = time.Duration(value) * 5 * time.Microsecond
+
+		case 51:
+			m.emfCutoff = value
+
+		case 53:
+			// Max speed EMF voltage, converted to ADC equivalent
+			m.emfMax = float32(value) / 10 * 65535 / 3.3
+
+		case 52, 54, 55, 56:
 			// CV51 Kp gain cutover speed step
 			// CV52 Low speed Kp gain (proportional)
 			// CV54 High speed Kp gain (proportional)
@@ -110,7 +123,7 @@ func (m *Motor) RegisterCallbacks() {
 	m.cvHandler.RegisterCallback(23, m.CVCallback())
 	m.cvHandler.RegisterCallback(24, m.CVCallback())
 	m.cvHandler.RegisterCallback(29, m.CVCallback())
-	for i := uint16(51); i <= 56; i++ {
+	for i := uint16(49); i <= 56; i++ {
 		m.cvHandler.RegisterCallback(i, m.CVCallback())
 	}
 	for i := uint16(65); i <= 95; i++ {

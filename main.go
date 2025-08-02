@@ -19,7 +19,7 @@ func main() {
 	hw = hal.NewHAL()
 	cvHandler := cv.NewCVHandler(versionToBytes(version))
 
-	dccPin, ok := hw.PinOk("dcc")
+	_, ok := hw.PinOk("dcc")
 	if !ok {
 		panic("DCC pin not found")
 	}
@@ -28,12 +28,11 @@ func main() {
 	motorB, okB := hw.PinOk("motorB")
 	emfA, okEA := hw.PinOk("emfA")
 	emfB, okEB := hw.PinOk("emfB")
-	adcRef, okADC := hw.PinOk("adcRef")
-	if !okA || !okB || !okEA || !okEB || !okADC {
+	if !okA || !okB || !okEA || !okEB {
 		panic("Motor pins not found")
 	}
 
-	m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
+	m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB)
 
 	outputPins := make([]shared.Pin, 0, len(outputs))
 	for _, output := range outputs {
@@ -43,10 +42,8 @@ func main() {
 	}
 
 	println("Starting DCC")
-	capPin := hw.Pin("capCharge")
-	rcTxPin := hw.Pin("railcom")
 	pioNum := 0
-	d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin, capPin, rcTxPin, outputPins)
+	d, err := dcc.NewDecoder(cvHandler, m, pioNum, hw, outputPins)
 	if err != nil {
 		panic(err.Error())
 	}
