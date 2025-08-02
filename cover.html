@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>shared: Go Coverage Report</title>
+		<title>deleteme-motor: Go Coverage Report</title>
 		<style>
 			body {
 				background: black;
@@ -55,37 +55,37 @@
 			<div id="nav">
 				<select id="files">
 				
-				<option value="file0">github.com/mikesmitty/rp24-dcc-decoder/internal/shared/shared_mock.go (0.0%)</option>
+				<option value="file0">github.com/mikesmitty/rp24-dcc-decoder/deleteme-archive/deleteme-motor/direction.go (0.0%)</option>
 				
-				<option value="file1">github.com/mikesmitty/rp24-dcc-decoder/main.go (0.0%)</option>
+				<option value="file1">github.com/mikesmitty/rp24-dcc-decoder/deleteme-archive/deleteme-motor/motor_mock.go (0.0%)</option>
 				
-				<option value="file2">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv.go (0.0%)</option>
+				<option value="file2">github.com/mikesmitty/rp24-dcc-decoder/internal/shared/shared_mock.go (0.0%)</option>
 				
-				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_defaults.go (0.0%)</option>
+				<option value="file3">github.com/mikesmitty/rp24-dcc-decoder/main.go (0.0%)</option>
 				
-				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_mock.go (0.0%)</option>
+				<option value="file4">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv.go (0.0%)</option>
 				
-				<option value="file5">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (2.5%)</option>
+				<option value="file5">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_defaults.go (0.0%)</option>
 				
-				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
+				<option value="file6">github.com/mikesmitty/rp24-dcc-decoder/pkg/cv/cv_mock.go (0.0%)</option>
 				
-				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (17.9%)</option>
+				<option value="file7">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc.go (2.5%)</option>
 				
-				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message.go (76.6%)</option>
+				<option value="file8">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/dcc_mock.go (0.0%)</option>
 				
-				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
+				<option value="file9">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/functions.go (17.9%)</option>
 				
-				<option value="file10">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.7%)</option>
+				<option value="file10">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message.go (85.6%)</option>
 				
-				<option value="file11">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (79.3%)</option>
+				<option value="file11">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_advancedextended.go (0.0%)</option>
 				
-				<option value="file12">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_xpom.go (33.3%)</option>
+				<option value="file12">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_extended.go (94.2%)</option>
 				
-				<option value="file13">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/monitor.go (0.0%)</option>
+				<option value="file13">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_servicemode.go (79.3%)</option>
 				
-				<option value="file14">github.com/mikesmitty/rp24-dcc-decoder/pkg/deleteme-motor/direction.go (0.0%)</option>
+				<option value="file14">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/message_xpom.go (31.0%)</option>
 				
-				<option value="file15">github.com/mikesmitty/rp24-dcc-decoder/pkg/deleteme-motor/motor_mock.go (0.0%)</option>
+				<option value="file15">github.com/mikesmitty/rp24-dcc-decoder/pkg/dcc/monitor.go (0.0%)</option>
 				
 				<option value="file16">github.com/mikesmitty/rp24-dcc-decoder/pkg/hal/hal.go (0.0%)</option>
 				
@@ -101,7 +101,7 @@
 				
 				<option value="file22">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/backemf.go (0.0%)</option>
 				
-				<option value="file23">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/config.go (20.8%)</option>
+				<option value="file23">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/config.go (20.2%)</option>
 				
 				<option value="file24">github.com/mikesmitty/rp24-dcc-decoder/pkg/motor/const.go (0.0%)</option>
 				
@@ -127,7 +127,45 @@
 		</div>
 		<div id="content">
 		
-		<pre class="file" id="file0" style="display: none">//go:build !rp
+		<pre class="file" id="file0" style="display: none">package oldmotor
+
+// Direction returns the current direction of the motor
+func (m *Motor) Direction() Direction <span class="cov0" title="0">{
+        // Double-reverse or double-forward both equal forward
+        if m.reverse == m.ndotReverse </span><span class="cov0" title="0">{
+                return Forward
+        }</span>
+        <span class="cov0" title="0">return Reverse</span>
+}
+</pre>
+		
+		<pre class="file" id="file1" style="display: none">//go:build !rp
+
+package oldmotor
+
+import (
+        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
+)
+
+type Motor struct {
+        ndotReverse bool
+        reverse     bool
+}
+
+func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef shared.Pin) *Motor <span class="cov0" title="0">{
+        return &amp;Motor{}
+}</span>
+
+func (m *Motor) SetSpeed(speed uint8, reverse bool) {<span class="cov0" title="0">
+}</span>
+
+func (m *Motor) Run() {<span class="cov0" title="0">
+}</span>
+</pre>
+		
+		<pre class="file" id="file2" style="display: none">//go:build !rp
 
 package shared
 
@@ -202,12 +240,11 @@ type MockPinConfig struct {
 type MockPinMode uint8
 </pre>
 		
-		<pre class="file" id="file1" style="display: none">package main
+		<pre class="file" id="file3" style="display: none">package main
 
 import (
         "strconv"
         "strings"
-        "time"
 
         "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
@@ -221,12 +258,10 @@ var hw *hal.HAL
 var version = "1.1.1"
 
 func main() <span class="cov0" title="0">{
-        time.Sleep(3 * time.Second) // FIXME: Cleanup
-
         hw = hal.NewHAL()
         cvHandler := cv.NewCVHandler(versionToBytes(version))
 
-        dccPin, ok := hw.PinOk("dcc")
+        _, ok := hw.PinOk("dcc")
         if !ok </span><span class="cov0" title="0">{
                 panic("DCC pin not found")</span>
         }
@@ -235,12 +270,11 @@ func main() <span class="cov0" title="0">{
         motorB, okB := hw.PinOk("motorB")
         emfA, okEA := hw.PinOk("emfA")
         emfB, okEB := hw.PinOk("emfB")
-        adcRef, okADC := hw.PinOk("adcRef")
-        if !okA || !okB || !okEA || !okEB || !okADC </span><span class="cov0" title="0">{
+        if !okA || !okB || !okEA || !okEB </span><span class="cov0" title="0">{
                 panic("Motor pins not found")</span>
         }
 
-        <span class="cov0" title="0">m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB, adcRef)
+        <span class="cov0" title="0">m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB)
 
         outputPins := make([]shared.Pin, 0, len(outputs))
         for _, output := range outputs </span><span class="cov0" title="0">{
@@ -250,10 +284,8 @@ func main() <span class="cov0" title="0">{
         }
 
         <span class="cov0" title="0">println("Starting DCC")
-        capPin := hw.Pin("capCharge")
-        rcTxPin := hw.Pin("railcom")
         pioNum := 0
-        d, err := dcc.NewDecoder(cvHandler, m, pioNum, dccPin, capPin, rcTxPin, outputPins)
+        d, err := dcc.NewDecoder(cvHandler, m, pioNum, hw, outputPins)
         if err != nil </span><span class="cov0" title="0">{
                 panic(err.Error())</span>
         }
@@ -265,11 +297,7 @@ func main() <span class="cov0" title="0">{
                 }</span>
         }
 
-        <span class="cov0" title="0">cvHandler.IndexPage()
-        // d.SetAddress(3)    // FIXME: Cleanup
-        d.SetAddress(2350)                // FIXME: Cleanup
-        cvHandler.SetSync(29, 0b00100010) // FIXME: Cleanup
-        go m.Run()
+        <span class="cov0" title="0">go m.Run()
         go m.RunEMF()
         d.Monitor()</span>
 }
@@ -307,9 +335,11 @@ var outputs = []string{
 }
 </pre>
 		
-		<pre class="file" id="file2" style="display: none">package cv
+		<pre class="file" id="file4" style="display: none">package cv
 
 import (
+        "fmt"
+
         "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/store"
 )
@@ -427,9 +457,6 @@ func (c *CVHandler) IndexedCVOk(index, cvNumber uint16) (uint8, bool) <span clas
                 index = 0
         }</span>
         <span class="cov0" title="0">return c.cvStore.IndexedCV(index, cvNumber)</span>
-        // v, ok := c.cvStore.IndexedCV(index, cvNumber)    // FIXME: Cleanup
-        // fmt.Printf("CV %d: %08b %d\r\n", cvNumber, v, v) // FIXME: Cleanup
-        // return v, ok                                     // FIXME: Cleanup
 }
 
 // Set sets a CV value and allows it to be written to flash in batches
@@ -450,10 +477,18 @@ func (c *CVHandler) SetSync(cvNumber uint16, value uint8) bool <span class="cov0
         <span class="cov0" title="0">return c.cvStore.Persist(cvNumber, value)</span>
 }
 
+// TODO: Cleanup - Set vs. Persist isn't really necessary
 // IndexedSet sets a CV value given a paging index and allows it to be written to flash in batches
 func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool <span class="cov0" title="0">{
         // Ignore indexes beyond those we support
         if index &gt; maxCVIndexPage </span><span class="cov0" title="0">{
+                fmt.Printf("CV index %d is out of range, max is %d\r\n", index, maxCVIndexPage)
+                return false
+        }</span>
+
+        <span class="cov0" title="0">if index != c.IndexPage() </span><span class="cov0" title="0">{
+                // Don't allow changing the index page implicitly
+                fmt.Printf("CV index %d does not match current index %d\r\n", index, c.IndexPage())
                 return false
         }</span>
 
@@ -461,6 +496,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool <span c
         // TODO: Need some way of checking if a CV in another index is valid before using higher level CVs
         <span class="cov0" title="0">prev, ok := c.IndexedCVOk(index, cvNumber)
         if !ok </span><span class="cov0" title="0">{
+                fmt.Printf("CV %d does not exist in index %d\r\n", cvNumber, index)
                 return false
         }</span>
         <span class="cov0" title="0">rejected := false
@@ -469,6 +505,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool <span c
         if callbacks, ok := c.cvCallbacks[cvNumber]; ok </span><span class="cov0" title="0">{
                 for _, fn := range callbacks </span><span class="cov0" title="0">{
                         if !fn(cvNumber, value) </span><span class="cov0" title="0">{
+                                fmt.Printf("CV %d rejected by callback\r\n", cvNumber)
                                 rejected = true
                         }</span>
                 }
@@ -481,7 +518,7 @@ func (c *CVHandler) IndexedSet(index, cvNumber uint16, value uint8) bool <span c
                         <span class="cov0" title="0">return false</span>
                 }
         }
-        <span class="cov0" title="0">return c.IndexedSet(index, cvNumber, value)</span>
+        <span class="cov0" title="0">return c.cvStore.Set(cvNumber, value)</span>
 }
 
 // IndexedSetSync sets a CV given a paging index and does not return until it is persisted to flash
@@ -513,7 +550,7 @@ func (c *CVHandler) Run() <span class="cov0" title="0">{
 }</span>
 </pre>
 		
-		<pre class="file" id="file3" style="display: none">package cv
+		<pre class="file" id="file5" style="display: none">package cv
 
 import (
         "errors"
@@ -606,6 +643,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
                 c.cvStore.SetDefault(45, 0b01000000, store.Persistent) // FUNCTIONS: Output mapping for F11
                 c.cvStore.SetDefault(46, 0b10000000, store.Persistent) // FUNCTIONS: Output mapping for F12
 
+                c.cvStore.SetDefault(49, 1, store.Persistent)   // MOTOR: Enable back EMF motor control
+                c.cvStore.SetDefault(50, 40, store.Persistent)  // MOTOR: Back EMF measurement settle delay in 5us steps
                 c.cvStore.SetDefault(51, 10, store.Persistent)  // MOTOR: Low to high PID gain cutover speed step
                 c.cvStore.SetDefault(52, 10, store.Persistent)  // MOTOR: Low speed Kp gain (proportional)
                 c.cvStore.SetDefault(53, 130, store.Persistent) // MOTOR: Max speed EMF voltage
@@ -653,6 +692,8 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
                 c.cvStore.SetDefault(110, fwVersion[1], roPersist) // SYS: Minor version number
                 c.cvStore.SetDefault(111, fwVersion[2], roPersist) // SYS: Patch version number
 
+                c.cvStore.SetDefault(113, 32, store.Persistent) // SYS: Watchdog timeout in 32.768ms steps (1-255)
+
                 c.cvStore.SetDefault(116, 50, store.Persistent)  // MOTOR: Speed step 1 back EMF measurement interval in 0.1ms steps (50-200)
                 c.cvStore.SetDefault(117, 150, store.Persistent) // MOTOR: Speed step max back EMF measurement interval in 0.1ms steps (50-200)
                 c.cvStore.SetDefault(118, 15, store.Persistent)  // MOTOR: Speed step 1 back EMF measurement cutout duration in 0.1ms steps (10-40)
@@ -670,7 +711,7 @@ func (c *CVHandler) LoadIndex(cv31, cv32 uint8) error <span class="cov0" title="
 }
 </pre>
 		
-		<pre class="file" id="file4" style="display: none">package cv
+		<pre class="file" id="file6" style="display: none">package cv
 
 import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 
@@ -747,37 +788,70 @@ func (m *MockHandler) LoadIndex(page1, page2 uint8) error <span class="cov0" tit
 }</span>
 </pre>
 		
-		<pre class="file" id="file5" style="display: none">package dcc
+		<pre class="file" id="file7" style="display: none">package dcc
 
 import (
         "errors"
-        "fmt"
         "time"
 
         "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
+        "github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/ringbuffer"
 )
 
 //go:generate pioasm -o go dcc.pio dcc_pio.go
 
-func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, dccPin, capPin, rcTxPin shared.Pin, outputs []shared.Pin) (*Decoder, error) <span class="cov0" title="0">{
+type Decoder struct {
+        cv    cv.Handler
+        hw    *hal.HAL
+        motor *motor.Motor
+
+        sm     shared.StateMachine
+        offset uint8
+        buf    *ringbuffer.RingBuffer[uint32]
+
+        address            []byte
+        consistAddress     []byte
+        Snoop              bool
+        checksumErrorCount uint32
+
+        capPin     shared.Pin
+        outputPins []shared.Pin
+        rcTxPin    shared.Pin
+        rcTxQueued bool
+
+        opMode           opMode
+        lastSvcResetTime time.Time
+        svcModeReady     bool
+
+        outputCallbacks map[uint16][]shared.OutputCallback
+        outputMapsFwd   map[uint16]uint16
+        outputMapsRev   map[uint16]uint16
+
+        consistFuncMask [3]uint8
+
+        lastDirection motor.Direction
+}
+
+func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, hw *hal.HAL, outputs []shared.Pin) (*Decoder, error) <span class="cov0" title="0">{
         d := &amp;Decoder{
                 address:         make([]byte, 0, 2),
                 buf:             ringbuffer.NewRingBuffer[uint32](),
-                capPin:          capPin,
+                capPin:          hw.Pin("capCharge"),
                 consistAddress:  make([]byte, 0, 2),
                 cv:              cvHandler,
+                hw:              hw,
                 motor:           m,
                 outputCallbacks: make(map[uint16][]shared.OutputCallback, 12),
                 outputMapsFwd:   make(map[uint16]uint16, 12),
                 outputMapsRev:   make(map[uint16]uint16, 12),
                 outputPins:      outputs,
-                rcTxPin:         rcTxPin,
+                rcTxPin:         hw.Pin("railcom"),
         }
 
-        err := d.initPIO(pioNum, dccPin)
+        err := d.initPIO(pioNum, hw.Pin("dcc"))
         if err != nil </span><span class="cov0" title="0">{
                 return nil, err
         }</span>
@@ -790,12 +864,10 @@ func NewDecoder(cvHandler cv.Handler, m *motor.Motor, pioNum int, dccPin, capPin
 // Set the address of the DCC reader
 func (d *Decoder) SetAddress(addr uint16) error <span class="cov0" title="0">{
         if addr &gt; 127 </span><span class="cov0" title="0">{
-                fmt.Printf("Setting extended address MSB to %d\r\n", 0xC0|byte(addr&gt;&gt;8)) // FIXME: Cleanup
                 if ok := d.cv.SetSync(17, 0xC0|byte(addr&gt;&gt;8)); !ok </span><span class="cov0" title="0">{
                         return errors.New("failed to set extended address MSB")
                 }</span>
-                <span class="cov0" title="0">fmt.Printf("Setting extended address LSB to %d\r\n", byte(addr)) // FIXME: Cleanup
-                if ok := d.cv.SetSync(18, byte(addr)); !ok </span><span class="cov0" title="0">{
+                <span class="cov0" title="0">if ok := d.cv.SetSync(18, byte(addr)); !ok </span><span class="cov0" title="0">{
                         return errors.New("failed to set extended address LSB")
                 }</span>
         } else<span class="cov0" title="0"> {
@@ -807,7 +879,6 @@ func (d *Decoder) SetAddress(addr uint16) error <span class="cov0" title="0">{
 }
 
 func (d *Decoder) setAddress(addr uint16) error <span class="cov0" title="0">{
-        fmt.Printf("Setting address to %d\r\n", addr) // FIXME: Cleanup
         if addr == 0 || addr &gt; 10239 </span><span class="cov0" title="0">{
                 return errors.New("address out of range")
         }</span>
@@ -864,6 +935,7 @@ func (d *Decoder) RegisterCallbacks() <span class="cov0" title="0">{
         for i := uint16(33); i &lt;= 46; i++ </span><span class="cov0" title="0">{
                 d.cv.RegisterCallback(i, d.CVCallback())
         }</span>
+        <span class="cov0" title="0">d.cv.RegisterCallback(113, d.CVCallback())</span>
 }
 
 func (d *Decoder) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0">{
@@ -878,17 +950,11 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0
                         <span class="cov0" title="0">d.setAddress(uint16(value))</span>
 
                 case 17, 18:<span class="cov0" title="0">
-                        // CV17 must be in the range 192-231, CV18 can be any value
-                        // The top 2 bits of CV17 are ignored when parsing the address
-                        if cvNumber == 17 &amp;&amp; (value &lt; 192 || value &gt; 231) </span><span class="cov0" title="0">{
-                                return false
+                        cv17 := d.cv.CV(17)
+                        if cvNumber == 17 </span><span class="cov0" title="0">{
+                                cv17 = value
                         }</span>
-                        // Set the extended address bytes
-                        <span class="cov0" title="0">if len(d.address) &lt; int(cvNumber)-16 </span><span class="cov0" title="0">{
-                                d.address = append(d.address, value)
-                        }</span> else<span class="cov0" title="0"> {
-                                d.address[cvNumber-17] = value
-                        }</span>
+                        <span class="cov0" title="0">return d.setExtendedAddress(cv17)</span>
 
                 case 19, 20:<span class="cov0" title="0">
                         // Set the consist address bytes
@@ -924,21 +990,9 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0
 
                 case 29:<span class="cov0" title="0">
                         // CV29 bit 5: 0 = short address, 1 = extended address
-                        cv17 := d.cv.CV(17)
                         if (value &amp; 0b00100000) != 0 </span><span class="cov0" title="0">{
-                                if cv17 &gt;= 192 &amp;&amp; cv17 &lt;= 231 </span><span class="cov0" title="0">{
-                                        // If CV17 is 192 and CV18 is 0 the long address would be 0, abort
-                                        if cv17 == 192 &amp;&amp; d.cv.CV(18) == 0 </span><span class="cov0" title="0">{
-                                                return false
-                                        }</span>
-                                        // Otherwise, if CV17 is valid, set bit 5 and enable it
-                                        <span class="cov0" title="0">d.address = append(d.address[:0], 0xC0|d.cv.CV(17))
-                                        d.address = append(d.address, d.cv.CV(18))</span>
-                                } else<span class="cov0" title="0"> {
-                                        // If CV17 is invalid, reject the CV29 update
-                                        return false
-                                }</span>
-                        } else<span class="cov0" title="0"> {
+                                return d.setExtendedAddress(d.cv.CV(17))
+                        }</span> else<span class="cov0" title="0"> {
                                 // Clear bit 5 and use the short address
                                 d.address = append(d.address[:0], d.cv.CV(1))
                                 return false
@@ -961,10 +1015,28 @@ func (d *Decoder) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0
                                 outputs = outputs &lt;&lt; 3
                         }</span>
                         <span class="cov0" title="0">d.outputMapsFwd[outputNum] = outputs</span>
+                case 113:<span class="cov0" title="0">
+                        // Set watchdog timeout in 32.768ms steps
+                        // Controls when the decoder will reset when running on a keepalive capacitor
+                        ms := float32(max(1, value)) * 32.768
+                        d.hw.WatchdogSet(time.Duration(ms) * time.Millisecond)</span>
                 }
 
                 <span class="cov0" title="0">return true</span>
         }
+}
+
+func (d *Decoder) setExtendedAddress(cv17 uint8) bool <span class="cov0" title="0">{
+        if cv17 &gt;= 192 &amp;&amp; cv17 &lt;= 231 </span><span class="cov0" title="0">{
+                // If CV17 is 192 and CV18 is 0 the long address would be 0, abort
+                if cv17 == 192 &amp;&amp; d.cv.CV(18) == 0 </span><span class="cov0" title="0">{
+                        return false
+                }</span>
+                // Otherwise, if CV17 is valid, set bit 5 and enable it
+                <span class="cov0" title="0">d.address = append(d.address[:0], 0xC0|cv17)
+                d.address = append(d.address, d.cv.CV(18))</span>
+        }
+        <span class="cov0" title="0">return true</span>
 }
 
 /* TODO: Might be useful?
@@ -981,7 +1053,7 @@ func (d *DCCReader) SetFrequency(freq uint32) error {
 */
 </pre>
 		
-		<pre class="file" id="file6" style="display: none">//go:build !rp
+		<pre class="file" id="file8" style="display: none">//go:build !rp
 
 package dcc
 
@@ -996,7 +1068,7 @@ func (d *Decoder) BasicAck() {<span class="cov0" title="0">
 }</span>
 </pre>
 		
-		<pre class="file" id="file7" style="display: none">package dcc
+		<pre class="file" id="file9" style="display: none">package dcc
 
 import (
         "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
@@ -1088,9 +1160,11 @@ func IndexFromOutput(output string) uint16 <span class="cov0" title="0">{
 }
 </pre>
 		
-		<pre class="file" id="file8" style="display: none">package dcc
+		<pre class="file" id="file10" style="display: none">package dcc
 
 import (
+        "sync"
+
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/motor"
 )
@@ -1118,6 +1192,7 @@ type Message struct {
         addr    AddressType
         buf     []byte
         msgType MessageType
+        mutex   sync.Mutex
 
         cv      cv.Handler
         decoder *Decoder
@@ -1137,10 +1212,14 @@ func NewMessage(cvHandler cv.Handler, decoder *Decoder) *Message <span class="co
 }</span>
 
 func (m *Message) AddByte(b byte) <span class="cov8" title="1">{
+        m.mutex.Lock()
+        defer m.mutex.Unlock()
         m.buf = append(m.buf, b)
 }</span>
 
 func (m *Message) AddBytes(b []byte) <span class="cov8" title="1">{
+        m.mutex.Lock()
+        defer m.mutex.Unlock()
         m.buf = append(m.buf, b...)
 }</span>
 
@@ -1149,6 +1228,8 @@ func (m *Message) Bytes() []byte <span class="cov8" title="1">{
 }</span>
 
 func (m *Message) Reset() <span class="cov8" title="1">{
+        m.mutex.Lock()
+        defer m.mutex.Unlock()
         m.buf = m.buf[:0]
         m.msgType = UnknownMsg
 }</span>
@@ -1173,52 +1254,40 @@ func (m *Message) Length() int <span class="cov8" title="1">{
         return len(m.buf)
 }</span>
 
-func (m *Message) Process() <span class="cov0" title="0">{
-        if !m.decoder.Snoop &amp;&amp; (!m.checkAddress() || m.addr == UnknownAddress) </span><span class="cov0" title="0">{
+func (m *Message) Process() <span class="cov8" title="1">{
+        if len(m.buf) == 0 </span><span class="cov0" title="0">{
+                // No message received yet, nothing to process
+                return
+        }</span>
+
+        // Make sure we don't overlap message processing
+        <span class="cov8" title="1">m.mutex.Lock()
+        defer m.mutex.Unlock()
+
+        if !m.decoder.Snoop &amp;&amp; (!m.checkAddress() || m.addr == UnknownAddress) </span><span class="cov8" title="1">{
                 // Ignore messages not addressed to us if we're not being nosy
                 return
         }</span>
 
         // Check the message type to determine how to handle it
-        <span class="cov0" title="0">m.msgType = m.messageType()
+        <span class="cov8" title="1">m.msgType = m.messageType()
 
-        // packetType := "" // FIXME: Cleanup
         ok := false
         switch m.msgType </span>{
         case ServiceMsg:<span class="cov0" title="0">
-                ok = m.serviceModePacket()</span>
-                // packetType = "Svc " // FIXME: Cleanup
-                // if ok { // FIXME: Cleanup
-                //         print("1 ")
-                // } else {
-                //         print("0 ")
-                // }
-                // for _, b := range m.Bytes() {
-                //         fmt.Printf("%08b ", b)
-                // }
-                // println("")
-        case ExtendedMsg:<span class="cov0" title="0">
-                ok = m.extendedPacket()</span>
-                // packetType = "Ext " // FIXME: Cleanup
+                ok = m.serviceModePacket(m.buf)</span>
+        case ExtendedMsg:<span class="cov8" title="1">
+                m.extendedPacket(m.buf)</span>
         case AdvancedExtendedMsg:<span class="cov0" title="0">
-                ok = m.advancedExtendedPacket()</span>
-                // packetType = "Adv " // FIXME: Cleanup
-        default:<span class="cov0" title="0">
+                m.advancedExtendedPacket(m.buf)</span>
+        default:<span class="cov0" title="0"></span>
                 // Unknown message type
-                return</span> // FIXME: Is this correct?
         }
 
-        <span class="cov0" title="0">if ok </span><span class="cov0" title="0">{
+        <span class="cov8" title="1">if ok </span><span class="cov0" title="0">{
                 m.decoder.BasicAck()
                 // FIXME: Advanced Ack usage?
                 // m.decoder.AdvancedAck([]byte{ackByte}, []byte{})
-                // } else {
-                //         // FIXME: Cleanup
-                //         // print(packetType) // FIXME: Cleanup
-                //         for _, b := range m.Bytes() {
-                //                 fmt.Printf("%08b ", b)
-                //         }
-                //         println("")
         }</span>
 
         // respByte := nackByte
@@ -1232,7 +1301,12 @@ func (m *Message) Process() <span class="cov0" title="0">{
 }
 
 func (m *Message) messageType() MessageType <span class="cov8" title="1">{
-        b := m.buf[0]
+        if len(m.buf) == 0 </span><span class="cov0" title="0">{
+                // No message received yet, return unknown
+                return UnknownMsg
+        }</span>
+
+        <span class="cov8" title="1">b := m.buf[0]
 
         if m.decoder.opMode == ServiceMode || m.decoder.svcModeReady </span><span class="cov8" title="1">{
                 if b &gt;= 112 &amp;&amp; b &lt;= 127 </span><span class="cov8" title="1">{
@@ -1313,7 +1387,12 @@ func (m *Message) motionCommand(bytes []byte) (uint8, bool, bool) <span class="c
 }
 
 func (m *Message) checkAddress() bool <span class="cov8" title="1">{
-        switch m.buf[0] </span>{
+        if len(m.buf) == 0 </span><span class="cov0" title="0">{
+                // No message received yet, return invalid
+                return false
+        }</span>
+
+        <span class="cov8" title="1">switch m.buf[0] </span>{
         case 0x00:<span class="cov8" title="1">
                 // Broadcast address
                 m.addr = BroadcastAddress
@@ -1364,19 +1443,19 @@ func (m *Message) addressMatch(b []byte) bool <span class="cov8" title="1">{
 }
 </pre>
 		
-		<pre class="file" id="file9" style="display: none">package dcc
+		<pre class="file" id="file11" style="display: none">package dcc
 
-func (m *Message) advancedExtendedPacket() bool <span class="cov0" title="0">{
+func (m *Message) advancedExtendedPacket(b []byte) bool <span class="cov0" title="0">{
         // TODO: To be implemented
         return false
 }</span>
 </pre>
 		
-		<pre class="file" id="file10" style="display: none">package dcc
+		<pre class="file" id="file12" style="display: none">package dcc
 
-func (m *Message) extendedPacket() bool <span class="cov8" title="1">{
+func (m *Message) extendedPacket(b []byte) bool <span class="cov8" title="1">{
         // Extended message format
-        l := len(m.buf)
+        l := len(b)
 
         // First command byte
         fb := 1
@@ -1389,37 +1468,46 @@ func (m *Message) extendedPacket() bool <span class="cov8" title="1">{
                 fb = len(m.decoder.consistAddress)</span>
         }
 
+        <span class="cov8" title="1">if l &lt; fb+1 </span><span class="cov0" title="0">{
+                // Not enough bytes for a valid extended packet
+                return false
+        }</span>
+
         // Command type is in the top 3 bits of the first command byte
-        <span class="cov8" title="1">switch m.buf[fb] &gt;&gt; 5 </span>{
+        <span class="cov8" title="1">switch b[fb] &gt;&gt; 5 </span>{
         case 0b000:<span class="cov8" title="1">
-                return m.decoderConsistControlInstruction(m.buf[fb : l-1])</span>
+                return m.decoderConsistControlInstruction(b[fb : l-1])</span>
         case 0b001:<span class="cov8" title="1">
-                return m.advancedOperationInstruction(m.buf[fb : l-1])</span>
+                return m.advancedOperationInstruction(b[fb : l-1])</span>
         case 0b010, 0b011:<span class="cov8" title="1">
                 // Speed and Direction Instruction
-                speed, reverse, ok := m.motionCommand(m.buf[fb : l-1])
+                speed, reverse, ok := m.motionCommand(b[fb : l-1])
                 if ok </span><span class="cov8" title="1">{
                         m.decoder.motor.SetSpeed(speed, reverse)
                 }</span>
                 <span class="cov8" title="1">return ok</span>
         case 0b100:<span class="cov8" title="1">
-                return m.functionGroupOneInstruction(m.buf[fb])</span>
+                return m.functionGroupOneInstruction(b[fb])</span>
         case 0b101:<span class="cov8" title="1">
-                return m.functionGroupTwoInstruction(m.buf[fb])</span>
+                return m.functionGroupTwoInstruction(b[fb])</span>
         case 0b110:<span class="cov8" title="1">
-                return m.featureExpansion(m.buf[fb : l-1])</span>
+                return m.featureExpansion(b[fb : l-1])</span>
         case 0b111:<span class="cov8" title="1">
                 // Don't allow editing CVs from consist-addressed messages
                 if m.addr == ConsistAddress </span><span class="cov8" title="1">{
                         return false
                 }</span>
-                <span class="cov8" title="1">return m.configVariableAccessInstruction(m.buf[fb : l-1])</span>
+                <span class="cov8" title="1">return m.configVariableAccessInstruction(b[fb : l-1])</span>
         }
         <span class="cov0" title="0">return false</span>
 }
 
 func (m *Message) decoderConsistControlInstruction(b []byte) bool <span class="cov8" title="1">{
-        l := len(b)
+        if len(b) &lt; 1 </span><span class="cov8" title="1">{
+                return false
+        }</span>
+
+        <span class="cov8" title="1">l := len(b)
         switch b[0] &gt;&gt; 4 </span>{
         // 0b0000xxxx
         case 0b0000:<span class="cov8" title="1">
@@ -1445,9 +1533,9 @@ func (m *Message) decoderConsistControlInstruction(b []byte) bool <span class="c
                         // Set advanced addressing mode (CV29 bit 5)
                         cv29 := m.cv.CV(29)
                         return m.cv.Set(29, (cv29&amp;^0b00100000)|(b[0]&amp;1)&lt;&lt;5)</span>
-                case 0b00001111:<span class="cov0" title="0"></span>
+                case 0b00001111:<span class="cov0" title="0">
                         // Decoder ack request
-                        // FIXME: Implement
+                        return true</span>
                 }
         // 0b0001xxxx
         case 0b0001:<span class="cov8" title="1">
@@ -1480,7 +1568,7 @@ func (m *Message) decoderConsistControlInstruction(b []byte) bool <span class="c
                         }</span>
                 }
         }
-        <span class="cov0" title="0">return false</span>
+        <span class="cov8" title="1">return false</span>
 }
 
 func (m *Message) advancedOperationInstruction(b []byte) bool <span class="cov8" title="1">{
@@ -1544,9 +1632,13 @@ func (m *Message) functionGroupNInstruction(n uint16, b uint8) bool <span class=
 }
 
 func (m *Message) featureExpansion(b []byte) bool <span class="cov8" title="1">{
+        if len(b) &lt; 2 </span><span class="cov8" title="1">{
+                return false
+        }</span>
+
         // Feature Expansion Instruction
         // 110GGGGG DDDDDDDD [DDDDDDDD]
-        switch b[0] </span>{
+        <span class="cov8" title="1">switch b[0] </span>{
         case 0b11000000:<span class="cov8" title="1"></span>
         // Binary state control long form
         // 32,767 binary states, 0 resets all states to off
@@ -1685,8 +1777,8 @@ func (m *Message) configVariableAccessInstruction(b []byte) bool <span class="co
 
 // Confirm we've received the same value for a CV twice before setting it
 func (m *Message) cvConfirmCheck(cv uint16, value uint8) bool <span class="cov8" title="1">{
-        value, ok := m.cvConfirm[cv]
-        if ok &amp;&amp; value == value </span><span class="cov8" title="1">{
+        v, ok := m.cvConfirm[cv]
+        if ok &amp;&amp; v == value </span><span class="cov8" title="1">{
                 return true
         }</span>
         <span class="cov8" title="1">m.cvConfirm[cv] = value
@@ -1694,9 +1786,9 @@ func (m *Message) cvConfirmCheck(cv uint16, value uint8) bool <span class="cov8"
 }
 </pre>
 		
-		<pre class="file" id="file11" style="display: none">package dcc
+		<pre class="file" id="file13" style="display: none">package dcc
 
-func (m *Message) serviceModePacket() bool <span class="cov0" title="0">{
+func (m *Message) serviceModePacket(b []byte) bool <span class="cov0" title="0">{
         m.decoder.SetOpMode(ServiceMode)
         /* TODO: Implement the ability to leave service mode
         For now, service mode is hotel california. We'll depend on losing power to return to operations mode
@@ -1711,9 +1803,9 @@ func (m *Message) serviceModePacket() bool <span class="cov0" title="0">{
 
         // Direct CV Addressing commands
         // 0111CCAA AAAAAAAA DDDDDDDD EEEEEEEE
-        if m.buf[0]&amp;0b11110000 == 0b01110000 </span><span class="cov0" title="0">{
+        if b[0]&amp;0b11110000 == 0b01110000 </span><span class="cov0" title="0">{
                 // CV access/programming command
-                ack = m.cvCommand(m.cv.IndexPage(), m.buf)
+                ack = m.cvCommand(m.cv.IndexPage(), b)
         }</span>
 
         <span class="cov0" title="0">return ack</span>
@@ -1779,7 +1871,7 @@ func (m *Message) cvCommand(index uint16, b []byte) bool <span class="cov8" titl
 }
 </pre>
 		
-		<pre class="file" id="file12" style="display: none">package dcc
+		<pre class="file" id="file14" style="display: none">package dcc
 
 func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
         // XPOM - Extended Programming On Main
@@ -1839,7 +1931,10 @@ func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
                 // This one just doesn't write anything
         case 0b11:<span class="cov0" title="0">
                 // Write bytes
-                for i, v := range b[4:] </span><span class="cov0" title="0">{
+                if len(b) &lt; 5 </span><span class="cov0" title="0">{
+                        return false
+                }</span>
+                <span class="cov0" title="0">for i, v := range b[4:] </span><span class="cov0" title="0">{
                         if !m.cv.IndexedSet(index, uint16(b[3])+uint16(i), v) </span><span class="cov0" title="0">{
                                 return false
                         }</span>
@@ -1862,7 +1957,7 @@ func (m *Message) handleXPOM(b []byte) bool <span class="cov8" title="1">{
 }
 </pre>
 		
-		<pre class="file" id="file13" style="display: none">package dcc
+		<pre class="file" id="file15" style="display: none">package dcc
 
 import (
         "runtime"
@@ -1889,6 +1984,7 @@ func (d *Decoder) Monitor() <span class="cov0" title="0">{
         for </span><span class="cov0" title="0">{
                 // Save the wave time readings in the ring buffer so we don't lose any
                 for !d.sm.IsRxFIFOEmpty() &amp;&amp; !d.buf.Full() </span><span class="cov0" title="0">{
+                        // FIXME: Buffered channel instead?
                         d.buf.Put(d.sm.RxGet())
                 }</span>
                 <span class="cov0" title="0">for d.buf.Used() &gt; 0 </span><span class="cov0" title="0">{
@@ -1945,16 +2041,13 @@ func (d *Decoder) Monitor() <span class="cov0" title="0">{
                                         // End of message terminator bit received, wait for a preamble next loop
                                         state = Preamble
 
-                                        if !msg.XOR() </span><span class="cov0" title="0">{
-                                                // FIXME: Cleanup
-                                                // for _, b := range msg.Bytes() {
-                                                //         fmt.Printf("%08b ", b)
-                                                //         // printByte(b)
-                                                //         // print(" ")
-                                                // }
-                                                println("checksum error")
-                                        }</span> else<span class="cov0" title="0"> {
+                                        if msg.XOR() </span><span class="cov0" title="0">{
                                                 msg.Process()
+
+                                                // Make sure we reset if we stop receiving valid messages
+                                                d.hw.WatchdogReset()
+                                        }</span> else<span class="cov0" title="0"> {
+                                                d.checksumErrorCount++
                                         }</span>
 
                                         // Reset the message buffer for the next message
@@ -1970,55 +2063,6 @@ func (d *Decoder) Monitor() <span class="cov0" title="0">{
                 <span class="cov0" title="0">time.Sleep(100 * time.Microsecond)</span> // Sleep a bit to avoid busy-waiting
         }
 }
-
-// Print the n leftmost bits of b as a binary number
-func printUintN(n int, b uint32) <span class="cov0" title="0">{
-        for i := n - 1; i &gt;= 0; i-- </span><span class="cov0" title="0">{
-                if b&amp;(1&lt;&lt;i) != 0 </span><span class="cov0" title="0">{
-                        print("1")
-                }</span> else<span class="cov0" title="0"> {
-                        print("0")
-                }</span>
-        }
-}
-</pre>
-		
-		<pre class="file" id="file14" style="display: none">package oldmotor
-
-// Direction returns the current direction of the motor
-func (m *Motor) Direction() Direction <span class="cov0" title="0">{
-        // Double-reverse or double-forward both equal forward
-        if m.reverse == m.ndotReverse </span><span class="cov0" title="0">{
-                return Forward
-        }</span>
-        <span class="cov0" title="0">return Reverse</span>
-}
-</pre>
-		
-		<pre class="file" id="file15" style="display: none">//go:build !rp
-
-package oldmotor
-
-import (
-        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
-        "github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
-        "github.com/mikesmitty/rp24-dcc-decoder/pkg/hal"
-)
-
-type Motor struct {
-        ndotReverse bool
-        reverse     bool
-}
-
-func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef shared.Pin) *Motor <span class="cov0" title="0">{
-        return &amp;Motor{}
-}</span>
-
-func (m *Motor) SetSpeed(speed uint8, reverse bool) {<span class="cov0" title="0">
-}</span>
-
-func (m *Motor) Run() {<span class="cov0" title="0">
-}</span>
 </pre>
 		
 		<pre class="file" id="file16" style="display: none">package hal
@@ -2043,7 +2087,11 @@ func (h *HAL) Pin(name string) shared.Pin <span class="cov0" title="0">{
 
 package hal
 
-import "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+import (
+        "time"
+
+        "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
+)
 
 type HAL struct {
         pins map[string]shared.Pin
@@ -2062,6 +2110,10 @@ func (h *HAL) initI2SPIO(_ int, _, _ shared.Pin) (shared.I2S, error) <span class
 func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error) <span class="cov0" title="0">{
         return nil, nil
 }</span>
+
+func (h *HAL) WatchdogSet(timeout time.Duration) {<span class="cov0" title="0">}</span>
+
+func (h *HAL) WatchdogReset() {<span class="cov0" title="0">}</span>
 
 type ADC struct{}
 
@@ -2185,25 +2237,16 @@ import (
         "github.com/mikesmitty/rp24-dcc-decoder/pkg/iir"
 )
 
-const (
-        emfSettleWait = 100 * time.Microsecond // TODO: Tune these values
-        emfReadDelay  = 100 * time.Microsecond
-)
-
-func (m *Motor) initBackEMF(emfA, emfB, adcRef shared.Pin) <span class="cov0" title="0">{
+func (m *Motor) initBackEMF(emfA, emfB shared.Pin) <span class="cov0" title="0">{
         m.emfA = emfA
         m.emfB = emfB
-        m.emfTicker = time.NewTicker(emfSettleWait)
-        m.emfTimer = time.NewTimer(emfSettleWait)
+        m.emfTicker = time.NewTicker(100 * time.Microsecond)
+        m.emfTimer = time.NewTimer(100 * time.Microsecond)
 
         // Set up back EMF pins for ADC
         m.iir = iir.NewIIRFilter(m.iirAlpha)
         m.setupADC(m.Direction())
-        if adcRef != shared.NoPin </span><span class="cov0" title="0">{
-                m.adcRef = hal.NewADC(adcRef)
-                m.iirRef = iir.NewIIRFilter(m.iirAlpha)
-        }</span>
-}
+}</span>
 
 func (m *Motor) setupADC(direction Direction) <span class="cov0" title="0">{
         // Set up back EMF pin for ADC
@@ -2218,8 +2261,10 @@ func (m *Motor) setupADC(direction Direction) <span class="cov0" title="0">{
 func (m *Motor) RunEMF() <span class="cov0" title="0">{
         for </span><span class="cov0" title="0">{
                 time.Sleep(m.emfInterval)
-                m.emfValue = m.measureBackEMF()
-        }</span>
+                if !m.DisablePID </span><span class="cov0" title="0">{
+                        m.emfValue = m.measureBackEMF()
+                }</span>
+        }
 }
 
 // Measure the back EMF voltage to determine the motor speed
@@ -2230,31 +2275,12 @@ func (m *Motor) measureBackEMF() float32 <span class="cov0" title="0">{
         // Lock the motor mutex to prevent concurrent access to the motor state
         m.pwmMutex.Lock()
 
-        // Wait for motor to stop
-        time.Sleep(100 * time.Millisecond) // TODO: Tune this value
+        // Wait for EMF to settle
+        time.Sleep(m.emfSettle)
 
-        // Kill time waiting for the motor to stop by measuring the ADC reference
-        m.emfTicker.Reset(20 * time.Microsecond)
-        m.emfTimer.Reset(emfSettleWait)
-PREP:
-        for </span><span class="cov0" title="0">{
-                select </span>{
-                // Wait for the back EMF to settle before measuring
-                case &lt;-m.emfTimer.C:<span class="cov0" title="0">
-                        // EMF settling time is done, break out of the double loop
-                        m.emfTicker.Stop()
-                        break PREP</span>
-                case &lt;-m.emfTicker.C:<span class="cov0" title="0">
-                        // Measure the ADC reference attached to ground to help establish a noise baseline while we wait
-                        m.iirRef.Filter(float32(m.adcRef.Read()))</span>
-                default:<span class="cov0" title="0">
-                        // Allow other tasks to run while waiting
-                        runtime.Gosched()</span>
-                }
-        }
-
-        <span class="cov0" title="0">m.emfTicker.Reset(emfReadDelay)
-        m.emfTimer.Reset(m.emfDuration - emfSettleWait)
+        // Read back EMF every 100us during the cutout window
+        m.emfTicker.Reset(100 * time.Microsecond)
+        m.emfTimer.Reset(m.emfDuration)
 DONE:
         for </span><span class="cov0" title="0">{
                 select </span>{
@@ -2276,7 +2302,7 @@ DONE:
         <span class="cov0" title="0">m.pwmMutex.Unlock()
         m.ApplyPWM(m.pwmDuty)
 
-        return m.iir.Output() - m.iirRef.Output()</span>
+        return m.iir.Output()</span>
 }
 
 func (m *Motor) updateBackEMFTiming() <span class="cov0" title="0">{
@@ -2298,6 +2324,8 @@ func (m *Motor) varyBySpeed(min, max uint8) time.Duration <span class="cov0" tit
 		<pre class="file" id="file23" style="display: none">package motor
 
 import (
+        "time"
+
         "github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 )
 
@@ -2353,11 +2381,22 @@ func (m *Motor) CVCallback() shared.CVCallbackFunc <span class="cov0" title="0">
                         defer m.updateSpeedTable()
                         defer m.calculateAccelDecelRates()</span>
 
-                case 53:<span class="cov0" title="0">
-                        // Max speed EMF voltage
-                        m.emfMax = float32(value) / 10</span>
+                case 49:<span class="cov0" title="0">
+                        m.DisablePID = value&amp;1 == 0</span>
 
-                case 51, 52, 54, 55, 56:<span class="cov0" title="0">
+                case 50:<span class="cov0" title="0">
+                        // Back EMF settle time in 5us steps (0-255)
+                        // This is the time to wait after stopping the motor before starting the back EMF measurement
+                        m.emfSettle = time.Duration(value) * 5 * time.Microsecond</span>
+
+                case 51:<span class="cov0" title="0">
+                        m.emfCutoff = value</span>
+
+                case 53:<span class="cov0" title="0">
+                        // Max speed EMF voltage, converted to ADC equivalent
+                        m.emfMax = float32(value) / 10 * 65535 / 3.3</span>
+
+                case 52, 54, 55, 56:<span class="cov0" title="0">
                         // CV51 Kp gain cutover speed step
                         // CV52 Low speed Kp gain (proportional)
                         // CV54 High speed Kp gain (proportional)
@@ -2407,7 +2446,7 @@ func (m *Motor) RegisterCallbacks() <span class="cov0" title="0">{
         m.cvHandler.RegisterCallback(23, m.CVCallback())
         m.cvHandler.RegisterCallback(24, m.CVCallback())
         m.cvHandler.RegisterCallback(29, m.CVCallback())
-        for i := uint16(51); i &lt;= 56; i++ </span><span class="cov0" title="0">{
+        for i := uint16(49); i &lt;= 56; i++ </span><span class="cov0" title="0">{
                 m.cvHandler.RegisterCallback(i, m.CVCallback())
         }</span>
         <span class="cov0" title="0">for i := uint16(65); i &lt;= 95; i++ </span><span class="cov0" title="0">{
@@ -2633,16 +2672,16 @@ type Motor struct {
 
         iirAlpha float32
         iir      *iir.IIRFilter
-        iirRef   *iir.IIRFilter
 
         // Back-EMF measurement state for estimating speed
-        adcRef      *hal.ADC
         emfADC      *hal.ADC
         emfA        shared.Pin
         emfB        shared.Pin
+        emfCutoff   uint8
         emfDuration time.Duration
         emfInterval time.Duration
         emfMax      float32
+        emfSettle   time.Duration
         pwmMutex    sync.Mutex
         emfTarget   float32
         emfTicker   *time.Ticker
@@ -2680,7 +2719,7 @@ type Motor struct {
         lastControlTime time.Time
 }
 
-func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef shared.Pin) *Motor <span class="cov0" title="0">{
+func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB shared.Pin) *Motor <span class="cov0" title="0">{
         m := &amp;Motor{
                 cv:              make(map[uint16]uint8),
                 cvHandler:       conf,
@@ -2689,7 +2728,7 @@ func NewMotor(conf cv.Handler, hw *hal.HAL, pinA, pinB, emfA, emfB, adcRef share
         }
 
         // Set up back EMF pins for ADC
-        m.initBackEMF(emfA, emfB, adcRef)
+        m.initBackEMF(emfA, emfB)
 
         // Set up motor driver pins for PWM
         m.pwmInterval = 100 * time.Millisecond // TODO: Adjust this?
@@ -2731,10 +2770,10 @@ func (m *Motor) runMotorControl() <span class="cov0" title="0">{
         })
 
         // Apply the PWM duty cycle
-        if m.DisablePID </span><span class="cov0" title="0">{
-                m.pwmDuty = m.speedTable[m.currentSpeed]
-        }</span> else<span class="cov0" title="0"> {
+        if !m.DisablePID &amp;&amp; m.currentSpeed &gt; (m.emfCutoff/28)*uint8(m.speedMode) </span><span class="cov0" title="0">{ // FIXME: Handle 28/128 speed modes better
                 m.pwmDuty = m.pid.State.ControlSignal
+        }</span> else<span class="cov0" title="0"> {
+                m.pwmDuty = m.speedTable[m.currentSpeed]
         }</span>
         <span class="cov0" title="0">m.ApplyPWM(m.pwmDuty)
 
@@ -2812,7 +2851,7 @@ func (m *Motor) updateSpeedStep(elapsed time.Duration) <span class="cov0" title=
 
         // TODO: Handle going from 0 to non-zero speed after startup from dirty rail
         <span class="cov0" title="0">if m.currentSpeed &gt; m.targetSpeed &amp;&amp; m.rawSpeed-m.targetRaw &gt; 0.5 </span><span class="cov0" title="0">{
-                fmt.Printf("slow down - current: %d target: %d duty: %0.2f\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
+                fmt.Printf("slow down - current: %d target: %d duty: %0.2f\r\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
                 if m.decelRate &gt; 0 </span><span class="cov0" title="0">{
                         // decelRate: seconds per step * elapsed seconds = steps decreased
                         m.rawSpeed -= m.decelRate * float32(elapsed.Seconds())
@@ -2821,7 +2860,7 @@ func (m *Motor) updateSpeedStep(elapsed time.Duration) <span class="cov0" title=
                         m.rawSpeed = m.targetRaw
                 }</span>
         } else<span class="cov0" title="0"> if m.currentSpeed &lt; m.targetSpeed &amp;&amp; m.targetRaw-m.rawSpeed &gt; 0.5 </span><span class="cov0" title="0">{
-                fmt.Printf("speed up - current: %d target: %d duty: %0.2f\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
+                fmt.Printf("speed up - current: %d target: %d duty: %0.2f\r\n", m.currentSpeed, m.targetSpeed, m.speedTable[m.targetSpeed]) // TODO: Cleanup
                 if m.accelRate &gt; 0 </span><span class="cov0" title="0">{
                         // accelRate: seconds per step * elapsed seconds = steps increased
                         m.rawSpeed += m.accelRate * float32(elapsed.Seconds())
