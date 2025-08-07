@@ -6,13 +6,14 @@
     },
     "tabs": {
         "type": "fixed",
+        "vcount": 0,
         "width": "2mm"
     },
     "cuts": {
         "type": "mousebites",
         "drill": "0.3mm",
         "spacing": "0.6mm",
-        "offset": "-0.03mm"
+        "offset": "-0.05mm"
     },
     "source": {
         "tolerance": "10mm"
