@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.3...rp24-usb-tester-v0.3.4) (2025-09-01)
+
+
+### Bug Fixes
+
+* 5.1k resistors go to gnd ([8d3d4cb](https://github.com/mikesmitty/rp24-dcc-decoder/commit/8d3d4cb1ccdc5ea720a21019bf442bf9b9f3356d))
+
 ## [0.3.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp24-usb-tester-v0.3.2...rp24-usb-tester-v0.3.3) (2025-06-26)
 
 
