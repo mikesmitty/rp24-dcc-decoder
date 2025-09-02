@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.5.0...v0.5.1) (2025-09-02)
+
+
+### Bug Fixes
+
+* **deps:** update golang.org/x/exp digest to 42675ad ([#55](https://github.com/mikesmitty/rp24-dcc-decoder/issues/55)) ([8c79fb0](https://github.com/mikesmitty/rp24-dcc-decoder/commit/8c79fb0a1e2817a186f70df58597ea7953df09a9))
+* **deps:** update golang.org/x/exp digest to 51f8813 ([#51](https://github.com/mikesmitty/rp24-dcc-decoder/issues/51)) ([7244902](https://github.com/mikesmitty/rp24-dcc-decoder/commit/724490245d16994d8783d3452a990d92a2ad6594))
+* **deps:** update golang.org/x/exp digest to 8b4c13b ([#56](https://github.com/mikesmitty/rp24-dcc-decoder/issues/56)) ([41abde0](https://github.com/mikesmitty/rp24-dcc-decoder/commit/41abde0aa6662b7aac0c94eba1e1472ebc4626d6))
+
 ## [0.5.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.4.0...v0.5.0) (2025-08-02)
 
 
