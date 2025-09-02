@@ -13164,7 +13164,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GDZ3V3LP3-7"
+		(property "Value" "BZX884C3V3"
 			(at 162.56 66.0399 90)
 			(effects
 				(font
@@ -13173,7 +13173,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "rp2350-decoder:D_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:DFN1006-2L-RD"
 			(at 160.02 64.77 0)
 			(effects
 				(font
@@ -13182,7 +13182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560098790000005120"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8602912185496580096"
 			(at 160.02 64.77 0)
 			(effects
 				(font
@@ -13191,7 +13191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Zener diode"
+		(property "Description" ""
 			(at 160.02 64.77 0)
 			(effects
 				(font
@@ -13200,7 +13200,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5157733"
+		(property "LCSC" "C7529009"
 			(at 160.02 64.77 0)
 			(effects
 				(font
@@ -18078,7 +18078,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GDZ3V3LP3-7"
+		(property "Value" "BZX884C3V3"
 			(at 162.56 46.9899 90)
 			(effects
 				(font
@@ -18087,7 +18087,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "rp2350-decoder:D_0201_0603Metric"
+		(property "Footprint" "rp2350-decoder:DFN1006-2L-RD"
 			(at 160.02 45.72 0)
 			(effects
 				(font
@@ -18096,7 +18096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560098790000005120"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8602912185496580096"
 			(at 160.02 45.72 0)
 			(effects
 				(font
@@ -18105,7 +18105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Zener diode"
+		(property "Description" ""
 			(at 160.02 45.72 0)
 			(effects
 				(font
@@ -18114,7 +18114,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5157733"
+		(property "LCSC" "C7529009"
 			(at 160.02 45.72 0)
 			(effects
 				(font
