@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.1...rp2350-decoder-v0.3.2) (2025-09-02)
+
+
+### Bug Fixes
+
+* switch rail ttl zeners to more common dfn1006 ([5c28789](https://github.com/mikesmitty/rp24-dcc-decoder/commit/5c2878904d47dc9064c75f49efb4027531c81caa))
+
 ## [0.3.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.0...rp2350-decoder-v0.3.1) (2025-08-02)
 
 
