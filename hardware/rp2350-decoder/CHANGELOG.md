@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.2...rp2350-decoder-v0.3.3) (2025-09-02)
+
+
+### Bug Fixes
+
+* clean up silkscreen items ([80477e9](https://github.com/mikesmitty/rp24-dcc-decoder/commit/80477e9bc5986381e135d9b4ac6735943684b929))
+
 ## [0.3.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.1...rp2350-decoder-v0.3.2) (2025-09-02)
 
 
