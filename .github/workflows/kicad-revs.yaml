@@ -18,7 +18,7 @@ jobs:
 
       - name: Get release directory
         id: changed-files
-        uses: tj-actions/changed-files@v46
+        uses: tj-actions/changed-files@v47
         with:
           dir_names: true
           files: |
