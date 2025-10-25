@@ -68,7 +68,7 @@ jobs:
           bash hardware/images.sh $MODULE_NAME
 
       - name: Store exported images
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: images-${{ steps.get-paths.outputs.module-name }}
           path: |
@@ -113,7 +113,7 @@ jobs:
           bash hardware/export.sh $MODULE_NAME
 
       - name: Store exported gerbers
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: gerbers-${{ steps.get-paths.outputs.module-name }}
           path: "hardware/${{ steps.get-paths.outputs.module-name }}/production"
@@ -133,7 +133,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download images
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           path: images
           pattern: images-*
