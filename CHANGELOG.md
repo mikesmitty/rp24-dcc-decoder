@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.5.1...v0.5.2) (2025-11-24)
+
+
+### Bug Fixes
+
+* **deps:** update golang.org/x/exp digest to e25ba8c ([#68](https://github.com/mikesmitty/rp24-dcc-decoder/issues/68)) ([ddd0e29](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ddd0e299a88e69853f8f733d55ec5d8c079d945e))
+* Update module github.com/mikesmitty/tinypid to v1.1.2 ([#66](https://github.com/mikesmitty/rp24-dcc-decoder/issues/66)) ([368d651](https://github.com/mikesmitty/rp24-dcc-decoder/commit/368d651679ab84afcd6bbbe5192ec00418eea2de))
+
 ## [0.5.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.5.0...v0.5.1) (2025-10-31)
 
 
