@@ -83,7 +83,7 @@ jobs:
 
     name: Export Gerbers
     runs-on: ubuntu-latest
-    container: yaqwsx/kikit:v1.7.0-v9
+    container: yaqwsx/kikit:v1.8.0-v9
 
     strategy:
       matrix:
