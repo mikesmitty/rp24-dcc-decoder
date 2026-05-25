@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/e24-receiver-board-v0.1.2...e24-receiver-board-v0.1.3) (2026-05-25)
+
+
+### Bug Fixes
+
+* **e24-receiver-board:** switch to 1.0mm thick pcb ([0ce120b](https://github.com/mikesmitty/rp24-dcc-decoder/commit/0ce120b274af8b35ff21393b15e6bb2e795d1627))
+
 ## [0.1.2](https://github.com/mikesmitty/rp24-dcc-decoder/compare/e24-receiver-board-v0.1.1...e24-receiver-board-v0.1.2) (2025-06-18)
 
 

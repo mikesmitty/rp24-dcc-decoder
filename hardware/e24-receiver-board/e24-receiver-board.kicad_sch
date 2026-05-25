@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(date "2025-06-18")
-		(rev "v0.1.2")
+		(rev "v0.1.3")
 	)
 	(lib_symbols
 		(symbol "e24-receiver-board:505070-2422"
