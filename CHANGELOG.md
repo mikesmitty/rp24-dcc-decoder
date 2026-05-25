@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.6.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.5.1...v0.6.0) (2026-05-25)
+
+
+### Features
+
+* Update module github.com/tinygo-org/pio to v0.3.0 ([#76](https://github.com/mikesmitty/rp24-dcc-decoder/issues/76)) ([c56449e](https://github.com/mikesmitty/rp24-dcc-decoder/commit/c56449e195b2d09360eefeda9650cc8935bdbf73))
+
+
+### Bug Fixes
+
+* **deps:** update golang.org/x/exp digest to 74f9aab ([#72](https://github.com/mikesmitty/rp24-dcc-decoder/issues/72)) ([b6f4512](https://github.com/mikesmitty/rp24-dcc-decoder/commit/b6f4512f8ab333e81455b3949f5a69fc011e2c3c))
+* **deps:** update golang.org/x/exp digest to e25ba8c ([#68](https://github.com/mikesmitty/rp24-dcc-decoder/issues/68)) ([ddd0e29](https://github.com/mikesmitty/rp24-dcc-decoder/commit/ddd0e299a88e69853f8f733d55ec5d8c079d945e))
+* Update module github.com/mikesmitty/tinypid to v1.1.2 ([#66](https://github.com/mikesmitty/rp24-dcc-decoder/issues/66)) ([368d651](https://github.com/mikesmitty/rp24-dcc-decoder/commit/368d651679ab84afcd6bbbe5192ec00418eea2de))
+
 ## [0.5.1](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.5.0...v0.5.1) (2025-10-31)
 
 
