@@ -2,7 +2,7 @@ module github.com/mikesmitty/rp24-dcc-decoder
 
 go 1.24.1
 
-require github.com/tinygo-org/pio v0.2.0
+require github.com/tinygo-org/pio v0.3.0
 
 require github.com/mikesmitty/tinypid v1.1.2
 
