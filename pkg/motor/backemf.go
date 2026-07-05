@@ -70,6 +70,19 @@ DONE:
 		}
 	}
 
+	// Wake the driver from autosleep if needed: autosleep drivers fall asleep
+	// during cutouts longer than their sleep timeout and need an input held
+	// solid-high for their wake time before they can accept PWM again, so
+	// drive full-on briefly, bypassing direction trim to keep the pin high
+	if m.DriverWakeTime > 0 && m.pwmDuty > 0 {
+		pin := m.pwmA
+		if m.Direction() == Reverse {
+			pin = m.pwmB
+		}
+		pin.SetDuty(1.0)
+		time.Sleep(m.DriverWakeTime)
+	}
+
 	// Restore PWM
 	m.pwmMutex.Unlock()
 	m.ApplyPWM(m.pwmDuty)

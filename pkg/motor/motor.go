@@ -22,6 +22,12 @@ type Motor struct {
 	pwmDuty     float32
 	pwmInterval time.Duration
 
+	// DriverWakeTime, when non-zero, holds the driven output solid-high for this
+	// long after each back-EMF cutout so H-bridge drivers with autosleep
+	// (e.g. DRV8220, tWAKE 65us) are awake before PWM resumes.
+	// Leave at 0 for drivers without autosleep (MD9927/DRV8837)
+	DriverWakeTime time.Duration
+
 	iirAlpha float32
 	iir      *iir.IIRFilter
 
