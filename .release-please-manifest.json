@@ -2,6 +2,6 @@
     ".": "0.6.0",
     "hardware/e24-receiver-board": "0.1.3",
     "hardware/pico2-test-mule": "0.3.0",
-    "hardware/rp2350-decoder": "0.3.3",
+    "hardware/rp2350-decoder": "0.4.0",
     "hardware/rp24-usb-tester": "0.3.4"
 }
