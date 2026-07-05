@@ -3,6 +3,7 @@ package main
 import (
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/mikesmitty/rp24-dcc-decoder/internal/shared"
 	"github.com/mikesmitty/rp24-dcc-decoder/pkg/cv"
@@ -33,6 +34,9 @@ func main() {
 	}
 
 	m := motor.NewMotor(cvHandler, hw, motorA, motorB, emfA, emfB)
+	// The DRV8220 autosleeps during back-EMF cutouts and needs an input held
+	// high for tWAKE (65us) before PWM resumes; harmless on the MD9927 rev
+	m.DriverWakeTime = 100 * time.Microsecond
 
 	outputPins := make([]shared.Pin, 0, len(outputs))
 	for _, output := range outputs {
