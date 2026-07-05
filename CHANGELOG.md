@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.7.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.6.0...v0.7.0) (2026-07-05)
+
+
+### Features
+
+* enable motor driver autosleep wake for DRV8220 ([2f0997a](https://github.com/mikesmitty/rp24-dcc-decoder/commit/2f0997aed69c1303e7a6c53e05ff63dc6131cb76))
+* **motor:** add driver autosleep wake support for DRV8220 ([b369158](https://github.com/mikesmitty/rp24-dcc-decoder/commit/b3691580d80d88e22c3654849073cb3a1e63d30c))
+
+
+### Bug Fixes
+
+* **motor:** correct back-EMF scaling and PID configuration ([a95fb68](https://github.com/mikesmitty/rp24-dcc-decoder/commit/a95fb68ff73f362e5de25b42acfd945c5516fa7a))
+
 ## [0.6.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/v0.5.1...v0.6.0) (2026-05-25)
 
 
