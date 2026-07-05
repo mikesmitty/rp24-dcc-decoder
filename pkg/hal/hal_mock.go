@@ -14,7 +14,9 @@ type HAL struct {
 
 // Stub for non-RP platforms
 func NewHAL() *HAL {
-	return &HAL{}
+	return &HAL{
+		pins: make(map[string]shared.Pin),
+	}
 }
 
 // initI2SPIO is a stub for non-RP platforms
@@ -22,20 +24,35 @@ func (h *HAL) initI2SPIO(_ int, _, _ shared.Pin) (shared.I2S, error) {
 	return nil, nil
 }
 
+// Hook for ADC reading in tests
+var ADCReadHook func(pin shared.Pin) uint16
+
+// Hook for PWM initialization in tests
+var PWMInitHook func(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error)
+
 func (h *HAL) InitPWM(pin shared.Pin, freq uint64, duty float32) (*SimplePWM, error) {
-	return nil, nil
+	if PWMInitHook != nil {
+		return PWMInitHook(pin, freq, duty)
+	}
+	return &SimplePWM{}, nil
 }
 
 func (h *HAL) WatchdogSet(timeout time.Duration) {}
 
 func (h *HAL) WatchdogReset() {}
 
-type ADC struct{}
+type ADC struct {
+	pin shared.Pin
+}
 
 func NewADC(pin shared.Pin) *ADC {
-	return &ADC{}
+	return &ADC{pin: pin}
 }
 
 func (a *ADC) Read() uint16 {
+	if ADCReadHook != nil {
+		return ADCReadHook(a.pin)
+	}
 	return 0
 }
+

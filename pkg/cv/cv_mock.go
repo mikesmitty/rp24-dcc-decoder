@@ -7,17 +7,22 @@ var _ Handler = (*MockHandler)(nil)
 type MockHandler struct {
 	returnValue bool
 	store       map[uint16]uint8
+	callbacks   map[uint16][]shared.CVCallbackFunc
 }
 
 func NewMockHandler(returnValue bool, values map[uint16]uint8) *MockHandler {
 	return &MockHandler{
 		returnValue: returnValue,
 		store:       values,
+		callbacks:   make(map[uint16][]shared.CVCallbackFunc),
 	}
 }
 
 func (m *MockHandler) SetCV(cv uint16, value uint8) bool {
 	m.store[cv] = value
+	for _, fn := range m.callbacks[cv] {
+		fn(cv, value)
+	}
 	return m.returnValue
 }
 
@@ -64,6 +69,9 @@ func (m *MockHandler) SetSync(cv uint16, value uint8) bool {
 }
 
 func (m *MockHandler) RegisterCallback(cv uint16, fn shared.CVCallbackFunc) {
+	m.callbacks[cv] = append(m.callbacks[cv], fn)
+	// Initialize the callback with the current value, matching CVHandler
+	fn(cv, m.store[cv])
 }
 
 func (m *MockHandler) IndexPage(indexCVs ...uint8) uint16 {
