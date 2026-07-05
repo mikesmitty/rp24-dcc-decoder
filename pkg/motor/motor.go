@@ -35,7 +35,7 @@ type Motor struct {
 	emfMax      float32
 	emfSettle   time.Duration
 	pwmMutex    sync.Mutex
-	emfTarget   float32
+	emfTarget   float32 // Target back-EMF as a 0-1 fraction of emfMax
 	emfTicker   *time.Ticker
 	emfTimer    *time.Timer
 	emfValue    float32
@@ -112,18 +112,24 @@ func (m *Motor) runMotorControl() {
 	if prevSpeed != m.currentSpeed {
 		// If the speed step changed, update the PID controller config (update proportional gain for new speed step) and EMF target
 		m.updatePIDConfig()
-		m.emfTarget = m.speedTable[m.currentSpeed] * m.emfMax
+		m.emfTarget = m.speedTable[m.currentSpeed]
 	}
 
-	// Run the PID loop
-	m.pid.Update(tinypid.PIControllerInput{
-		ReferenceSignal: m.emfTarget,
-		ActualSignal:    m.emfValue,
-	})
+	// Run the PID loop with both signals normalized to 0-1 fractions of emfMax,
+	// keeping the CV-configured gains in a usable range and the output in duty-cycle units
+	pidActive := !m.DisablePID && m.emfMax > 0
+	if pidActive {
+		m.pid.Update(tinypid.PIControllerInput{
+			ReferenceSignal:  m.emfTarget,
+			ActualSignal:     m.emfValue / m.emfMax,
+			SamplingInterval: elapsed,
+		})
+	}
 
 	// Apply the PWM duty cycle
-	if !m.DisablePID && m.currentSpeed > (m.emfCutoff/28)*uint8(m.speedMode) { // FIXME: Handle 28/128 speed modes better
-		m.pwmDuty = m.pid.State.ControlSignal
+	if pidActive && m.currentSpeed > (m.emfCutoff/28)*uint8(m.speedMode) { // FIXME: Handle 28/128 speed modes better
+		// The PI controller does not clamp its output, so keep it in valid duty-cycle range
+		m.pwmDuty = min(1.0, max(0.0, m.pid.State.ControlSignal))
 	} else {
 		m.pwmDuty = m.speedTable[m.currentSpeed]
 	}

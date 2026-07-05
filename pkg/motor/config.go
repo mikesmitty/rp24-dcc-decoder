@@ -70,8 +70,9 @@ func (m *Motor) CVCallback() shared.CVCallbackFunc {
 			m.emfCutoff = value
 
 		case 53:
-			// Max speed EMF voltage, converted to ADC equivalent
-			m.emfMax = float32(value) / 10 * 65535 / 3.3
+			// Max speed EMF voltage in 0.1V units, converted to ADC counts
+			// via the BEMF sense divider (e.g. CV53=90 for a 9V max-speed BEMF)
+			m.emfMax = float32(value) / 10 * bemfCountsPerVolt
 
 		case 52, 54, 55, 56:
 			// CV51 Kp gain cutover speed step
@@ -184,6 +185,11 @@ func (m *Motor) updatePIDConfig() {
 
 	// Get the Ki gain
 	m.pid.Config.IntegralGain = float32(m.cv[55]) / 10
+
+	// Limit integral windup; the error signal is normalized to a 0-1 fraction
+	// of emfMax, so an integrated error of 1.0 represents full-scale for a second
+	m.pid.Config.MaxIntegralError = 1.0
+	m.pid.Config.MinIntegralError = -1.0
 }
 
 // TODO: Make sure to update the backemf interval when speed changes
