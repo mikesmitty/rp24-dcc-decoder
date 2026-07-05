@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.3...rp2350-decoder-v0.4.0) (2026-07-05)
+
+
+### Features
+
+* **rp2350-decoder:** swap motor driver to DRV8220 and add VDC bulk capacitance ([109a436](https://github.com/mikesmitty/rp24-dcc-decoder/commit/109a43686e56b93c357c6848bc9c6e68a3a0e1a4))
+
 ## [0.3.3](https://github.com/mikesmitty/rp24-dcc-decoder/compare/rp2350-decoder-v0.3.2...rp2350-decoder-v0.3.3) (2025-09-02)
 
 
