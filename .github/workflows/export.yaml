@@ -37,7 +37,7 @@ jobs:
     name: Render PCB
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/kicad/kicad:9.0
+      image: ghcr.io/kicad/kicad:10.0
       options: --user 1001
 
     strategy:
