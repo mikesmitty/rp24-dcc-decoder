@@ -38,7 +38,7 @@ jobs:
           tinygo build -o rp24-dcc-decoder.uf2 -target pico2
           echo "short_sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: rp24-dcc-decoder-${{ steps.build.outputs.short_sha }}.uf2
           path: rp24-dcc-decoder.uf2
